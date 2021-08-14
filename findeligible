@@ -38,13 +38,11 @@ grep -Fxv -f mergedhashes mainhashes > eligiblehashes
 # use parallel: Tange (2011): GNU Parallel - The Command-Line Power Tool,
 # ;login: The USENIX Magazine, February 2011:42-47.
 # get eligible hashes from git times
-parallel -j `nproc` git log --name-status --no-merges -1 <eligiblehashes
+parallel -j `nproc` --keep-order git log --name-status --no-merges -1 <eligiblehashes
 # get eligible revs from svn times
-parallel -j `nproc` -I{} git log --name-status $MERGE_BASE..$TRUNK_HASH --grep='trunk@{}' <eligiblerevs
+parallel -j `nproc` --keep-order -I{} git log --name-status $MERGE_BASE..$TRUNK_HASH --grep='trunk@{}' <eligiblerevs
 
 # cleanup
-exit 0
-
 rm mergedhashes
 rm mergedrevs
 rm mainhashes
