@@ -767,17 +767,6 @@ Date:   Thu Jul 8 20:40:10 2021 +0000
     git-svn-id: trunk@49586 -
 
 M	compiler/x86/aoptx86.pas
-commit 86ac03e07eb88209245c46397a124bafb6d87d81
-Author: florian <florian@freepascal.org>
-Date:   Wed Jul 7 20:28:04 2021 +0000
-
-      + support SHLX and SHRX in TX86AsmOptimizer.RegLoadedWithNewValue, resolves #39178
-    
-    git-svn-id: trunk@49583 -
-
-M	.gitattributes
-M	compiler/x86/aoptx86.pas
-A	tests/webtbs/tw39178.pp
 commit 5ca73c61f4d95f688a592a93cea607417a734c9c
 Author: florian <florian@freepascal.org>
 Date:   Wed Jul 7 20:26:59 2021 +0000
@@ -817,18 +806,6 @@ Date:   Mon Jul 5 21:07:46 2021 +0000
 M	compiler/i386/aoptcpu.pas
 M	compiler/x86/aoptx86.pas
 M	compiler/x86_64/aoptcpu.pas
-commit 9377d9a029ae4df501f9c25297b9bd2f963f52c1
-Author: florian <florian@freepascal.org>
-Date:   Sun Jul 4 20:46:28 2021 +0000
-
-      * CMOV does not read the second operand
-    
-    git-svn-id: trunk@49578 -
-
-M	compiler/i386/i386prop.inc
-M	compiler/i8086/i8086prop.inc
-M	compiler/x86/x86ins.dat
-M	compiler/x86_64/x8664pro.inc
 commit 7a4110cca91f7fcb4097d156104bf7e12021bc52
 Author: florian <florian@freepascal.org>
 Date:   Sun Jul 4 20:46:02 2021 +0000
@@ -20051,30 +20028,6 @@ Date:   Wed Sep 2 14:11:04 2020 +0000
     git-svn-id: trunk@46750 -
 
 M	packages/pastojs/src/fppas2js.pp
-commit 05edd719d5e5d68e5e20cf97fac7e04a3cc7193c
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Wed Sep 2 14:03:26 2020 +0000
-
-    pastojs: delay RTTI init of dynamic and static array specializations
-    
-    git-svn-id: trunk@46749 -
-
-M	packages/fcl-passrc/src/pparser.pp
-M	packages/pastojs/src/fppas2js.pp
-M	packages/pastojs/tests/tcgenerics.pas
-commit 4db51d69e40a294ea88629acad5e18c0b83fea27
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Wed Sep 2 12:42:55 2020 +0000
-
-    pastojs: delay RTTI init of record/class/proctype specializations
-    
-    git-svn-id: trunk@46748 -
-
-M	packages/fcl-passrc/tests/tcresolvegenerics.pas
-M	packages/pastojs/src/fppas2js.pp
-M	packages/pastojs/tests/tcgenerics.pas
-M	packages/pastojs/tests/tcmodules.pas
-M	utils/pas2js/dist/rtl.js
 commit 6a0ea119e9f21e3165386ba48765fbd154da6848
 Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
 Date:   Tue Sep 1 22:01:52 2020 +0000
@@ -23033,16 +22986,6 @@ Date:   Thu Jul 23 21:34:24 2020 +0000
     git-svn-id: trunk@45838 -
 
 M	packages/fpmkunit/src/fpmkunit.pp
-commit e26e824700777baed7b121a9f28d4ac8ab9dad58
-Author: florian <florian@freepascal.org>
-Date:   Thu Jul 23 20:57:45 2020 +0000
-
-      + more helper routine to check for CPU features added
-    
-    git-svn-id: trunk@45835 -
-
-M	rtl/i386/cpu.pp
-M	rtl/x86_64/cpu.pp
 commit a258774ba958dc8332d0d0064bf8fd4eedbd9f47
 Author: yury <jura@cp-lab.com>
 Date:   Thu Jul 23 13:10:50 2020 +0000

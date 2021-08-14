@@ -37,10 +37,18 @@ grep -Fxv -f mergedhashes mainhashes > eligiblehashes
 
 # use parallel: Tange (2011): GNU Parallel - The Command-Line Power Tool,
 # ;login: The USENIX Magazine, February 2011:42-47.
+# get eligible revs from svn times
+parallel -j `nproc` --keep-order -I{} git log $MERGE_BASE..$TRUNK_HASH --grep='trunk@{}' --pretty=format:"%H%n" <eligiblerevs > eligiblesvnhashes
+
+# find all hashes not in fixes but in eligiblesvnhash, so filter out commits
+# commited to trunk in svn but cherry-picked in git
+grep -Fxv -f mergedhashes eligiblesvnhashes > eligiblehashesfromsvn
+
+# use parallel: Tange (2011): GNU Parallel - The Command-Line Power Tool,
+# ;login: The USENIX Magazine, February 2011:42-47.
 # get eligible hashes from git times
 parallel -j `nproc` --keep-order git log --name-status --no-merges -1 <eligiblehashes
-# get eligible revs from svn times
-parallel -j `nproc` --keep-order -I{} git log --name-status $MERGE_BASE..$TRUNK_HASH --grep='trunk@{}' <eligiblerevs
+parallel -j `nproc` --keep-order git log --name-status -1 <eligiblehashesfromsvn
 
 # cleanup
 rm mergedhashes
@@ -49,3 +57,4 @@ rm mainhashes
 rm trunkrevs
 rm eligiblehashes
 rm eligiblerevs
+rm eligiblehashesfromsvn
