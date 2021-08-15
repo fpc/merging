@@ -1,4 +1,23 @@
 ******************************************************************************
+commit c64c0e617d070de85b11e171d895886c064b1bec
+Author: Ondrej Pokorny <ondrej@kluug.net>
+Date:   Sun Aug 15 11:39:05 2021 +0000
+
+    fphttpclient keepalive: failed socket operations raise exceptions - try to reconnect also in this case
+
+M	packages/fcl-web/src/base/fphttpclient.pp
+******************************************************************************
+commit 246bff92d2c595840ff748a2996a25ce8aa46fb7
+Author: florian <florian@freepascal.org>
+Date:   Sun Aug 15 11:51:42 2021 +0200
+
+      + include fcl-passrc in regression tests
+
+R100	packages/fcl-passrc/tests/tcgenerics.pp	packages/fcl-passrc/tests/tcgenerics.pas
+A	packages/fcl-passrc/tests/testpassrc.pp
+M	tests/Makefile
+M	tests/Makefile.fpc
+******************************************************************************
 commit dd4b4af6a53514749c8ed329cbd9c41ab6f1b7b5
 Author: Karl-Michael Schindler <609203+kamischi@users.noreply.github.com>
 Date:   Sat Aug 14 23:48:45 2021 +0200
@@ -10411,36 +10430,6 @@ M	compiler/x86/nx86mat.pas
 M	compiler/x86/nx86set.pas
 M	compiler/x86/rax86.pas
 ******************************************************************************
-commit 7ffa9631276ebad245a5fb05b1b2619bb756c36d
-Author: yury <jura@cp-lab.com>
-Date:   Sun Jan 24 11:05:34 2021 +0000
-
-    * Moved the tregistry2 test back to packages and added more test OS targets.
-    
-    git-svn-id: trunk@48383 -
-
-M	.gitattributes
-R099	tests/test/packages/fcl-registry/tregistry2.pp	packages/fcl-registry/tests/tregistry2.pp
-M	packages/fcl-registry/tests/tregtestframework.pp
-******************************************************************************
-commit ddf0ce014b1cf14b352d343314589e5a860a2304
-Author: yury <jura@cp-lab.com>
-Date:   Sun Jan 24 11:01:33 2021 +0000
-
-    * Include packages/fcl-registry/tests to be run by the testsuite. Renamed files so only the main test files start with "t".
-    
-    git-svn-id: trunk@48382 -
-
-M	.gitattributes
-M	packages/fcl-registry/fpmake.pp
-M	packages/fcl-registry/tests/Makefile
-M	packages/fcl-registry/tests/Makefile.fpc
-R099	packages/fcl-registry/tests/tcxmlreg.pp	packages/fcl-registry/tests/regtcxmlreg.pp
-R099	packages/fcl-registry/tests/testbasics.pp	packages/fcl-registry/tests/regtestbasics.pp
-R080	packages/fcl-registry/tests/regtestframework.pp	packages/fcl-registry/tests/tregtestframework.pp
-M	tests/Makefile
-M	tests/Makefile.fpc
-******************************************************************************
 commit 67a3af29a0eb072b08e9e18990a2c1104136691e
 Author: michael <michael@freepascal.org>
 Date:   Sun Jan 24 10:58:05 2021 +0000
@@ -10460,16 +10449,6 @@ Date:   Sun Jan 24 10:56:11 2021 +0000
     git-svn-id: trunk@48380 -
 
 M	packages/rtl-objpas/src/inc/dateutil.inc
-******************************************************************************
-commit 31135b38908d9fe3bbc7d6a8acaf104949b7e2e7
-Author: yury <jura@cp-lab.com>
-Date:   Sun Jan 24 10:14:36 2021 +0000
-
-    * Delete the test.xml file on exit.
-    
-    git-svn-id: trunk@48379 -
-
-M	packages/fcl-registry/tests/tcxmlreg.pp
 ******************************************************************************
 commit e84fbcedaca496d292598a9800c89b90cf8ed6c5
 Author: yury <jura@cp-lab.com>
@@ -10580,16 +10559,6 @@ Date:   Thu Jan 21 15:20:11 2021 +0000
 
 M	utils/fpdoc/dwriter.pp
 ******************************************************************************
-commit d83e1a33ca66fb1ae5d6927aceecdf1686cfda37
-Author: yury <jura@cp-lab.com>
-Date:   Thu Jan 21 10:42:07 2021 +0000
-
-    * tregistry2 test: Use cwstring on unices. Perform the test only on Windows and Linux.
-    
-    git-svn-id: trunk@48263 -
-
-M	tests/test/packages/fcl-registry/tregistry2.pp
-******************************************************************************
 commit 3bfb995a4871cfe088d6753086b13b06a613e4b1
 Author: pierre <pierre@freepascal.org>
 Date:   Thu Jan 21 09:20:19 2021 +0000
@@ -10685,16 +10654,6 @@ Date:   Wed Jan 20 13:20:11 2021 +0000
 
 M	tests/webtbs/tw37060.pp
 ******************************************************************************
-commit fe09efbd0e08995b6df13d4927613a0921b5c66c
-Author: yury <jura@cp-lab.com>
-Date:   Wed Jan 20 09:46:44 2021 +0000
-
-    * Removed usage the Windows unit from the tregistry2 test.
-    
-    git-svn-id: trunk@48226 -
-
-M	tests/test/packages/fcl-registry/tregistry2.pp
-******************************************************************************
 commit 4111e13017f90f992971a522ec67f3bdf3b46b85
 Author: pierre <pierre@freepascal.org>
 Date:   Tue Jan 19 22:33:32 2021 +0000
@@ -10781,16 +10740,6 @@ Date:   Tue Jan 19 17:25:56 2021 +0000
 
 M	packages/fcl-registry/src/xmlreg.pp
 ******************************************************************************
-commit ffff24593df898d7880b58f336df4b42a18f28e0
-Author: yury <jura@cp-lab.com>
-Date:   Tue Jan 19 17:21:18 2021 +0000
-
-    * To be Delphi compatible TRegistry.DeleteKey() must delete the specified key and all its child keys.
-    
-    git-svn-id: trunk@48207 -
-
-M	packages/fcl-registry/src/winreg.inc
-******************************************************************************
 commit 2c196ee8a9f1c0cc419b561f55996b7b86a04f5d
 Author: yury <jura@cp-lab.com>
 Date:   Tue Jan 19 17:13:44 2021 +0000
@@ -10800,38 +10749,6 @@ Date:   Tue Jan 19 17:13:44 2021 +0000
     git-svn-id: trunk@48206 -
 
 M	packages/fcl-registry/src/registry.pp
-******************************************************************************
-commit 9fd0f94d7ca41dd8656324d4920d7030631555b3
-Author: yury <jura@cp-lab.com>
-Date:   Tue Jan 19 17:10:55 2021 +0000
-
-    * tregistry2 test: Delete reg.xml and the app config dir.
-    
-    git-svn-id: trunk@48205 -
-
-M	tests/test/packages/fcl-registry/tregistry2.pp
-******************************************************************************
-commit a29bfe5505471ef64ac0cb43ea1833d054740a53
-Author: yury <jura@cp-lab.com>
-Date:   Tue Jan 19 16:52:43 2021 +0000
-
-    * Moved the tregistry2.pp test from packages to tests in order it to be run by daily test runs. tregistry2 has been failing for years and nobody has noticed this.
-    
-    git-svn-id: trunk@48204 -
-
-M	.gitattributes
-M	packages/fcl-registry/tests/testbasics.pp
-R097	packages/fcl-registry/tests/tregistry2.pp	tests/test/packages/fcl-registry/tregistry2.pp
-******************************************************************************
-commit 4bf19e9d92fa3cc17fa65d6d6e2829774a69823d
-Author: yury <jura@cp-lab.com>
-Date:   Tue Jan 19 16:40:45 2021 +0000
-
-    * Extended the tregistry2 test.
-    
-    git-svn-id: trunk@48203 -
-
-M	packages/fcl-registry/tests/tregistry2.pp
 ******************************************************************************
 commit 25fd38b2da861f635599fce9e7c4d7bedcac6401
 Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
@@ -11285,19 +11202,6 @@ Date:   Thu Jan 7 22:44:49 2021 +0000
 M	rtl/linux/ossysc.inc
 M	rtl/linux/ostypes.inc
 M	rtl/linux/system.pp
-******************************************************************************
-commit 63c603cf32f2b80f2c5c87663faba8d1abdce56b
-Author: florian <florian@freepascal.org>
-Date:   Thu Jan 7 22:05:22 2021 +0000
-
-      * include also regexpr test in normal regression tests
-    
-    git-svn-id: trunk@48105 -
-
-M	packages/regexpr/tests/tcregexp.pp
-M	packages/regexpr/tests/testregexpr.pp
-M	tests/Makefile
-M	tests/Makefile.fpc
 ******************************************************************************
 commit de28024427f97c269f6f178e620453f031639289
 Author: michael <michael@freepascal.org>
@@ -11804,18 +11708,6 @@ Date:   Sat Jan 2 21:13:03 2021 +0000
     git-svn-id: trunk@47980 -
 
 M	utils/fpdoc/dw_chm.pp
-******************************************************************************
-commit 9430436a246637f1ab7de2b271c3cb8aec205ca5
-Author: florian <florian@freepascal.org>
-Date:   Sat Jan 2 19:27:01 2021 +0000
-
-      + include package/hash in regression tests
-    
-    git-svn-id: trunk@47979 -
-
-M	packages/hash/tests/tests.pp
-M	tests/Makefile
-M	tests/Makefile.fpc
 ******************************************************************************
 commit 33d7935b938817659f98980d09a60496b3dad527
 Author: michael <michael@freepascal.org>
@@ -16528,26 +16420,6 @@ Date:   Fri Nov 13 21:35:40 2020 +0000
     git-svn-id: trunk@47412 -
 
 M	packages/fcl-db/src/base/sqlscript.pp
-******************************************************************************
-commit 891acabe5bf0a2b69f61fd7e7bb83422ec871a39
-Author: michael <michael@freepascal.org>
-Date:   Fri Nov 13 21:01:09 2020 +0000
-
-    * Apply patch from  mgr.inz.Player for bug ID #36842
-    
-    git-svn-id: trunk@47411 -
-
-M	packages/fcl-registry/src/xregreg.inc
-******************************************************************************
-commit 88db3fb50218b9edcfbc8751cef52a1d7c6abcda
-Author: michael <michael@freepascal.org>
-Date:   Fri Nov 13 20:45:40 2020 +0000
-
-    * Fix bug ID #37483, correct closesection, patch by C. Western
-    
-    git-svn-id: trunk@47410 -
-
-M	packages/fcl-registry/src/regini.inc
 ******************************************************************************
 commit fb87b423feee3a47a7791ee51db7123218b4121b
 Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
@@ -51306,16 +51178,6 @@ Date:   Mon Apr 1 17:06:56 2019 +0000
 
 M	packages/fcl-registry/src/xmlreg.pp
 ******************************************************************************
-commit d13f0c3f80e535e1f709f80310345418b45d9e81
-Author: michael <michael@freepascal.org>
-Date:   Mon Apr 1 17:04:34 2019 +0000
-
-    * Added stringlist and int64 tests
-    
-    git-svn-id: trunk@41815 -
-
-M	packages/fcl-registry/tests/testbasics.pp
-******************************************************************************
 commit 1c8a1407f5388f8d18c31162e71017c873db0d89
 Author: michael <michael@freepascal.org>
 Date:   Mon Apr 1 16:54:53 2019 +0000
@@ -51329,16 +51191,6 @@ A	packages/fcl-registry/examples/testunicode.lpi
 A	packages/fcl-registry/examples/testunicode2.lpi
 A	packages/fcl-registry/examples/testunicode2.pas
 ******************************************************************************
-commit 8daccbf4c1109c764aa635f69b200895c09633f7
-Author: michael <michael@freepascal.org>
-Date:   Mon Apr 1 16:52:24 2019 +0000
-
-    * use cwstring on non-windows
-    
-    git-svn-id: trunk@41813 -
-
-M	packages/fcl-registry/tests/regtestframework.pp
-******************************************************************************
 commit cddc52a69fa7c3b75b7d3d3d94974670f69efe7d
 Author: michael <michael@freepascal.org>
 Date:   Mon Apr 1 16:51:39 2019 +0000
@@ -51348,16 +51200,6 @@ Date:   Mon Apr 1 16:51:39 2019 +0000
     git-svn-id: trunk@41812 -
 
 M	packages/fcl-registry/tests/tcxmlreg.pp
-******************************************************************************
-commit afa9ef279ed38ff8d67444469d88c2f3ff2bebaf
-Author: michael <michael@freepascal.org>
-Date:   Mon Apr 1 16:51:05 2019 +0000
-
-    * Use cwstring on non-windows
-    
-    git-svn-id: trunk@41811 -
-
-M	packages/fcl-registry/examples/testunicode.pp
 ******************************************************************************
 commit 17aa8da99f5fe4049cb9050522830c9798630f36
 Author: michael <michael@freepascal.org>

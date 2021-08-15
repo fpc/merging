@@ -14,9 +14,11 @@ GIT_START_HASH=37863a61
 
 MERGE_BASE=`git merge-base $SVNFIXES_HASH $MAIN_HASH`
 
+# the following is not needed as the eliglible revisions from svn times are taken from
+# a file ($SCRIPTDIR/eeligiblerevs) which was created once from svn by svn mergelist ...
 # GREPPATTERN='\-\-\- Merging .* into\|\* Merging revisions [0-9]* from\|\* Merging revisions .* from'
-# get all merged revisions
-git log $MERGE_BASE..$SVNFIXES_HASH | grep -oh "$GREPPATTERN" | sed 's/and/,/g' | tr -cd '[0-9,\n]' | tr ','  '\012' > mergedrevs
+## get all merged revisions
+# git log $MERGE_BASE..$SVNFIXES_HASH | grep -oh "$GREPPATTERN" | sed 's/and/,/g' | tr -cd '[0-9,\n]' | tr ','  '\012' > mergedrevs
 
 # get all trunk revisions
 git log $MERGE_BASE..$MAIN_HASH | grep 'git-svn-id: trunk@[0-9]* -' | sed 's/[^0-9]*//g' > trunkrevs
@@ -52,7 +54,7 @@ grep -Fxv -f mergedhashes eligiblesvnhashes > eligiblehashesfromsvn
 
 # cleanup
 rm mergedhashes
-rm mergedrevs
+# rm mergedrevs
 rm mainhashes
 rm trunkrevs
 rm eligiblehashes
