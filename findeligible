@@ -21,7 +21,7 @@ MERGE_BASE=`git merge-base $SVNFIXES_HASH $MAIN_HASH`
 # git log $MERGE_BASE..$SVNFIXES_HASH | grep -oh "$GREPPATTERN" | sed 's/and/,/g' | tr -cd '[0-9,\n]' | tr ','  '\012' > mergedrevs
 
 # get all trunk revisions
-git log $MERGE_BASE..$MAIN_HASH | grep 'git-svn-id: trunk@[0-9]* -' | sed 's/[^0-9]*//g' > trunkrevs
+# git log $MERGE_BASE..$MAIN_HASH | grep 'git-svn-id: trunk@[0-9]* -' | sed 's/[^0-9]*//g' > trunkrevs
 
 # get all hashes of merged commits created in git
 git log $SVNFIXES_HASH..$FIXES_HASH --grep="cherry picked from commit" | grep -oh "cherry picked from commit [0-9a-f]*" | sed 's/cherry picked from commit \([0-9a-f]*\)/\1/' > mergedhashes
@@ -57,7 +57,7 @@ grep -Fxv -f mergedhashes $SCRIPTDIR/eligiblesvnhashes > eligiblehashesfromsvn
 rm mergedhashes
 # rm mergedrevs
 rm mainhashes
-rm trunkrevs
+# rm trunkrevs
 # rm eligiblehashes
 # rm eligiblerevs
 rm eligiblehashesfromsvn
