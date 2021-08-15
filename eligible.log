@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 5479663e560bbe906bf05274b74cd168dac41627
+Author: Ondrej Pokorny <ondrej@kluug.net>
+Date:   Sun Aug 15 11:47:01 2021 +0000
+
+    Move GetStatusCode from fphttpserver.pp to httpprotocol.pp in order to use it outside fphttpserver
+
+M	packages/fcl-web/src/base/fphttpserver.pp
+M	packages/fcl-web/src/base/fphttpstatus.pas
+M	packages/fcl-web/src/base/httpprotocol.pp
+******************************************************************************
 commit c64c0e617d070de85b11e171d895886c064b1bec
 Author: Ondrej Pokorny <ondrej@kluug.net>
 Date:   Sun Aug 15 11:39:05 2021 +0000
@@ -6,17 +16,6 @@ Date:   Sun Aug 15 11:39:05 2021 +0000
     fphttpclient keepalive: failed socket operations raise exceptions - try to reconnect also in this case
 
 M	packages/fcl-web/src/base/fphttpclient.pp
-******************************************************************************
-commit 246bff92d2c595840ff748a2996a25ce8aa46fb7
-Author: florian <florian@freepascal.org>
-Date:   Sun Aug 15 11:51:42 2021 +0200
-
-      + include fcl-passrc in regression tests
-
-R100	packages/fcl-passrc/tests/tcgenerics.pp	packages/fcl-passrc/tests/tcgenerics.pas
-A	packages/fcl-passrc/tests/testpassrc.pp
-M	tests/Makefile
-M	tests/Makefile.fpc
 ******************************************************************************
 commit dd4b4af6a53514749c8ed329cbd9c41ab6f1b7b5
 Author: Karl-Michael Schindler <609203+kamischi@users.noreply.github.com>
@@ -795,16 +794,6 @@ Date:   Sat Jul 10 12:25:46 2021 +0000
 M	.gitattributes
 M	packages/x11/fpmake.pp
 A	packages/x11/src/xext.pp
-******************************************************************************
-commit c7690907e7cdd53fc3d5a9698a84e9361d2e1316
-Author: michael <michael@freepascal.org>
-Date:   Sat Jul 10 10:01:48 2021 +0000
-
-    Correctly handle subclasses, patch by Henrique Werlang (issue #39195)
-    
-    git-svn-id: trunk@49589 -
-
-M	packages/fcl-passrc/src/paswrite.pp
 ******************************************************************************
 commit c185ce02cc24c43f5213563669fce7c2c9727747
 Author: florian <florian@freepascal.org>

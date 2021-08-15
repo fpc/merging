@@ -48,7 +48,7 @@ grep -Fxv -f mergedhashes eligiblesvnhashes > eligiblehashesfromsvn
 # get eligible hashes from git times
 # use parallel: Tange, O. (2021, June 22). GNU Parallel 20210622 ('Protasevich'). Zenodo. https://doi.org/10.5281/zenodo.5013933
 {
-    parallel -j `getconf _NPROCESSORS_ONLN` --keep-order git show --name-status --no-merges  <eligiblehashes
+    parallel -j `getconf _NPROCESSORS_ONLN` --keep-order git show --name-status --no-merges <eligiblehashes
     parallel -j `getconf _NPROCESSORS_ONLN` --keep-order git show --name-status <eligiblehashesfromsvn 
 } | sed 's/^commit /******************************************************************************\ncommit /g'
 
