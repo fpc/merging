@@ -25,7 +25,7 @@ git log $MERGE_BASE..$MAIN_HASH | grep 'git-svn-id: trunk@[0-9]* -' | sed 's/[^0
 git log $SVNFIXES_HASH..$FIXES_HASH --grep="cherry picked from commit" | grep -oh "cherry picked from commit [0-9a-f]*" | sed 's/cherry picked from commit \([0-9a-f]*\)/\1/' > mergedhashes
 
 # get all hashes of commits created to main in git
-git log $GIT_START_HASH..HEAD --pretty=format:"%H" > mainhashes
+git log $GIT_START_HASH..$MAIN_HASH --pretty=format:"%H" > mainhashes
 
 # find all revs not in fixes but in trunk
 # grep -Fxv -f mergedrevs trunkrevs > eligiblerevs
@@ -35,20 +35,18 @@ cat $SCRIPTDIR/eligiblerevs > eligiblerevs
 # find all hashes not in fixes but in main
 grep -Fxv -f mergedhashes mainhashes > eligiblehashes
 
-# use parallel: Tange (2011): GNU Parallel - The Command-Line Power Tool,
-# ;login: The USENIX Magazine, February 2011:42-47.
 # get eligible revs from svn times
-parallel -j `nproc` --keep-order -I{} git log $MERGE_BASE..$TRUNK_HASH --grep='trunk@{}' --pretty=format:"%H%n" <eligiblerevs > eligiblesvnhashes
+# use parallel: Tange, O. (2021, June 22). GNU Parallel 20210622 ('Protasevich'). Zenodo. https://doi.org/10.5281/zenodo.5013933
+parallel -j `getconf _NPROCESSORS_ONLN` --keep-order -I{} git log $MERGE_BASE..$TRUNK_HASH --grep='trunk@{}' --pretty=format:"%H%n" <eligiblerevs > eligiblesvnhashes
 
 # find all hashes not in fixes but in eligiblesvnhash, so filter out commits
 # commited to trunk in svn but cherry-picked in git
 grep -Fxv -f mergedhashes eligiblesvnhashes > eligiblehashesfromsvn
 
-# use parallel: Tange (2011): GNU Parallel - The Command-Line Power Tool,
-# ;login: The USENIX Magazine, February 2011:42-47.
 # get eligible hashes from git times
-parallel -j `nproc` --keep-order git log --name-status --no-merges -1 <eligiblehashes
-parallel -j `nproc` --keep-order git log --name-status -1 <eligiblehashesfromsvn
+# use parallel: Tange, O. (2021, June 22). GNU Parallel 20210622 ('Protasevich'). Zenodo. https://doi.org/10.5281/zenodo.5013933
+parallel -j `getconf _NPROCESSORS_ONLN` --keep-order git show --name-status --no-merges  <eligiblehashes | sed 's/^commit /******************************************************************************\ncommit /g'
+parallel -j `getconf _NPROCESSORS_ONLN` --keep-order git log --name-status -1 <eligiblehashesfromsvn
 
 # cleanup
 rm mergedhashes

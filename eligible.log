@@ -1,3 +1,13 @@
+******************************************************************************
+commit dd4b4af6a53514749c8ed329cbd9c41ab6f1b7b5
+Author: Karl-Michael Schindler <609203+kamischi@users.noreply.github.com>
+Date:   Sat Aug 14 23:48:45 2021 +0200
+
+    compiler/msg/errord*.msg: Update of German error messages
+
+M	compiler/msg/errord.msg
+M	compiler/msg/errordu.msg
+******************************************************************************
 commit a7d608dd431df9e641b147bb9370daae4750f723
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Fri Aug 13 14:09:34 2021 +0200
@@ -5,20 +15,7 @@ Date:   Fri Aug 13 14:09:34 2021 +0200
     * Add DB testsuite config file to ignore list
 
 M	.gitignore
-commit a7d608dd431df9e641b147bb9370daae4750f723
-Author: Michaël Van Canneyt <michael@freepascal.org>
-Date:   Fri Aug 13 14:09:34 2021 +0200
-
-    * Add DB testsuite config file to ignore list
-
-M	.gitignore
-commit a7d608dd431df9e641b147bb9370daae4750f723
-Author: Michaël Van Canneyt <michael@freepascal.org>
-Date:   Fri Aug 13 14:09:34 2021 +0200
-
-    * Add DB testsuite config file to ignore list
-
-M	.gitignore
+******************************************************************************
 commit 07698050e56747de32c7ce580467cc8bbebb2a28
 Author: Yuriy Sydorov <jura@cp-lab.com>
 Date:   Fri Aug 13 13:53:22 2021 +0300
@@ -28,6 +25,7 @@ Date:   Fri Aug 13 13:53:22 2021 +0300
 
 M	compiler/nld.pas
 M	compiler/optloadmodifystore.pas
+******************************************************************************
 commit 777d536d9bc826fcf5d580dd80ba2c25a73de1ee
 Author: florian <florian@freepascal.org>
 Date:   Thu Aug 12 21:19:50 2021 +0200
@@ -35,6 +33,7 @@ Date:   Thu Aug 12 21:19:50 2021 +0200
       * extended routines int/frac/trunc shouldn't mess with precision or exception flags, should fix #39275
 
 M	rtl/x86_64/math.inc
+******************************************************************************
 commit 306fae299e2b90543f863504cd9a35be802d103e
 Author: florian <florian@freepascal.org>
 Date:   Wed Aug 11 22:59:40 2021 +0200
@@ -42,6 +41,7 @@ Date:   Wed Aug 11 22:59:40 2021 +0200
       * patch by J. Gareth Moreton: AND/CMP optimisation, resolves #39287
 
 M	compiler/x86/aoptx86.pas
+******************************************************************************
 commit 25e937b0c92ee809951e29942089dda9e77d4675
 Author: Michaël Van Canneyt <michael.vancanneyt@cquel.be>
 Date:   Wed Aug 11 22:03:36 2021 +0200
@@ -49,6 +49,7 @@ Date:   Wed Aug 11 22:03:36 2021 +0200
     * Correct reader signatures
 
 M	packages/fcl-db/src/base/bufdataset.pas
+******************************************************************************
 commit 2f81580e04990ab194d0beb6fc8a4681c084cffc
 Author: Michaël Van Canneyt <michael.vancanneyt@cquel.be>
 Date:   Wed Aug 11 21:53:49 2021 +0200
@@ -56,6 +57,7 @@ Date:   Wed Aug 11 21:53:49 2021 +0200
     * cast empty string to char no longer compiles
 
 M	packages/fcl-db/tests/testdbexport.pas
+******************************************************************************
 commit 776790d01488b14c46ec0c912ba0604126056c43
 Author: Michaël Van Canneyt <michael.vancanneyt@cquel.be>
 Date:   Wed Aug 11 21:53:00 2021 +0200
@@ -63,6 +65,7 @@ Date:   Wed Aug 11 21:53:00 2021 +0200
     * Rework packet handling
 
 M	packages/fcl-db/src/base/bufdataset.pas
+******************************************************************************
 commit a55794d80d6f8af398d44f26c94b7abba55a6634
 Author: Ondrej Pokorny <lazarus@kluug.net>
 Date:   Wed Aug 11 11:57:53 2021 +0200
@@ -70,13 +73,7 @@ Date:   Wed Aug 11 11:57:53 2021 +0200
     DateTimeToString: do not write #0 separators
 
 M	rtl/objpas/sysutils/dati.inc
-commit a55794d80d6f8af398d44f26c94b7abba55a6634
-Author: Ondrej Pokorny <lazarus@kluug.net>
-Date:   Wed Aug 11 11:57:53 2021 +0200
-
-    DateTimeToString: do not write #0 separators
-
-M	rtl/objpas/sysutils/dati.inc
+******************************************************************************
 commit 0ae0e741cfbbe66e0a87f5162608075bb359244f
 Author: Ondrej Pokorny <lazarus@kluug.net>
 Date:   Wed Aug 11 11:06:17 2021 +0200
@@ -84,13 +81,7 @@ Date:   Wed Aug 11 11:06:17 2021 +0200
     win: fix default ShortDateFormat and LongDateFormat
 
 M	rtl/win/sysutils.pp
-commit 0ae0e741cfbbe66e0a87f5162608075bb359244f
-Author: Ondrej Pokorny <lazarus@kluug.net>
-Date:   Wed Aug 11 11:06:17 2021 +0200
-
-    win: fix default ShortDateFormat and LongDateFormat
-
-M	rtl/win/sysutils.pp
+******************************************************************************
 commit 2c81b44b1c9a5581dd20c7d6f6c49394f930cc13
 Author: Ondrej Pokorny <lazarus@kluug.net>
 Date:   Wed Aug 11 11:06:17 2021 +0200
@@ -98,6 +89,7 @@ Date:   Wed Aug 11 11:06:17 2021 +0200
     win: fix default ShortDateFormat and LongDateFormat
 
 M	rtl/win/sysutils.pp
+******************************************************************************
 commit 10acbca82824b6a3ebf5dd829941da61211f947c
 Author: Yuriy Sydorov <jura@cp-lab.com>
 Date:   Mon Aug 9 23:49:58 2021 +0300
@@ -105,6 +97,7 @@ Date:   Mon Aug 9 23:49:58 2021 +0300
     * x86: Added the "test $-1,%reg" condition to the MovAndTest2Test optimization.
 
 M	compiler/x86/aoptx86.pas
+******************************************************************************
 commit c0d57d03c232bafa06d80fee74b07e91300944c5
 Author: Marcus Sackrow <alb42@web.de>
 Date:   Mon Aug 9 17:20:48 2021 +0100
@@ -112,6 +105,7 @@ Date:   Mon Aug 9 17:20:48 2021 +0100
     amiga: removed some debugging settings
 
 M	packages/rtl-console/src/amicommon/video.pp
+******************************************************************************
 commit 8117c97d921cb0b56f4e958a0ddb7b6d34acf0dd
 Author: Marcus Sackrow <alb42@web.de>
 Date:   Sun Aug 8 14:50:25 2021 +0100
@@ -119,6 +113,7 @@ Date:   Sun Aug 8 14:50:25 2021 +0100
     amiga: FPC_DOKEYCONVERSION env var if key conversation Ansi to IBM should be done for every key
 
 M	packages/rtl-console/src/amicommon/keyboard.pp
+******************************************************************************
 commit e1a75bf6588284851b11c20f55791b496a764a86
 Author: Marcus Sackrow <alb42@web.de>
 Date:   Sun Aug 8 14:49:27 2021 +0100
@@ -127,6 +122,7 @@ Date:   Sun Aug 8 14:49:27 2021 +0100
 
 M	packages/amunits/src/coreunits/amigados.pas
 M	packages/rtl-console/src/amicommon/video.pp
+******************************************************************************
 commit 6a3f32ba6983dfda5250d03b9b2d33c8ffc6022a
 Author: Yuriy Sydorov <jura@cp-lab.com>
 Date:   Mon Aug 9 18:38:31 2021 +0300
@@ -134,6 +130,7 @@ Date:   Mon Aug 9 18:38:31 2021 +0300
     * optimize tests for a single bit "(a and one_bit_mask_const) = <> one_bit_mask_const" into "(a and one_bit_mask_const) <> = 0" to enable further CPU specific optimizations.
 
 M	compiler/nadd.pas
+******************************************************************************
 commit 45c683325867989800e574edc8e013030c56d33d
 Author: Michaël Van Canneyt <michael.vancanneyt@cquel.be>
 Date:   Mon Aug 9 16:46:30 2021 +0200
@@ -144,6 +141,7 @@ M	utils/fpdoc/dglobals.pp
 M	utils/fpdoc/fpdoc.pp
 M	utils/fpdoc/fpdocstrs.pp
 M	utils/fpdoc/mkfpdoc.pp
+******************************************************************************
 commit 3cfec8f905a3edc27473e9ddf12f888e74d19bb5
 Author: Michaël Van Canneyt <michael.vancanneyt@cquel.be>
 Date:   Mon Aug 9 16:34:35 2021 +0200
@@ -151,6 +149,7 @@ Date:   Mon Aug 9 16:34:35 2021 +0200
     * Fix error in calclookupvalue
 
 M	packages/fcl-db/src/base/fields.inc
+******************************************************************************
 commit 352435cb75c53e081baf0dd311fc6cf90a804884
 Author: Michaël Van Canneyt <michael.vancanneyt@cquel.be>
 Date:   Mon Aug 9 11:49:44 2021 +0200
@@ -158,6 +157,7 @@ Date:   Mon Aug 9 11:49:44 2021 +0200
     * only .pp is needed
 
 D	packages/gitlab/examples/closetodo/closetodo.lpr
+******************************************************************************
 commit 5d826cfe3cf1bcb0c5da68e0d584ddeb6a3220f9
 Author: Michaël Van Canneyt <michael.vancanneyt@cquel.be>
 Date:   Mon Aug 9 10:55:13 2021 +0200
@@ -165,6 +165,7 @@ Date:   Mon Aug 9 10:55:13 2021 +0200
     * Some additional filters
 
 M	packages/gitlab/examples/closetodo/closetodo.pp
+******************************************************************************
 commit c5a128fae7e1c7671b05bbe286b4bf927a6c67b2
 Author: Michaël Van Canneyt <michael.vancanneyt@cquel.be>
 Date:   Sun Aug 8 15:22:33 2021 +0200
@@ -180,6 +181,7 @@ A	packages/gitlab/examples/closetodo/closetodo.pp
 A	packages/gitlab/examples/closetodo/sample.cfg
 A	packages/gitlab/fpmake.pp
 A	packages/gitlab/src/gitlabclient.pas
+******************************************************************************
 commit c1f6a7afdd035f96168c58b3af8e453962c69de7
 Author: Marcus Sackrow <alb42@web.de>
 Date:   Fri Aug 6 19:48:27 2021 +0100
@@ -200,6 +202,7 @@ M	packages/fcl-process/src/amicommon/pipes.inc
 M	packages/rtl-console/src/amicommon/crt.pp
 M	packages/rtl-console/src/amicommon/keyboard.pp
 M	packages/rtl-console/src/amicommon/video.pp
+******************************************************************************
 commit 136f0429725919c7759358a0499a4cec09f8a3ad
 Author: Yuriy Sydorov <jura@cp-lab.com>
 Date:   Fri Aug 6 21:43:10 2021 +0300
@@ -207,6 +210,7 @@ Date:   Fri Aug 6 21:43:10 2021 +0300
     * It is still needed to release the temp allocated for the result of an assembler function if the result is not referenced. This fixes some EXTDEBUG warnings.
 
 M	compiler/hlcgobj.pas
+******************************************************************************
 commit 5920d169c096737ad6288a96a37a9377fd8697dc
 Author: Yuriy Sydorov <jura@cp-lab.com>
 Date:   Fri Aug 6 21:29:05 2021 +0300
@@ -214,6 +218,7 @@ Date:   Fri Aug 6 21:29:05 2021 +0300
     * Prevent double release of a temp.
 
 M	compiler/x86/nx86cnv.pas
+******************************************************************************
 commit 5350ac7d65f1f595ba4e3b6d582829fc9ad3bca1
 Author: Marcus Sackrow <alb42@web.de>
 Date:   Fri Aug 6 17:41:51 2021 +0100
@@ -221,6 +226,7 @@ Date:   Fri Aug 6 17:41:51 2021 +0100
     fpts2junit: prevent double entries in junit xml (in test log are double entries, one for compiles, one for runs)
 
 M	tests/utils/fpts2junit.pp
+******************************************************************************
 commit 9e1606f221458e434f406658f641c9b790ceef38
 Author: marcoonthegit <marco@freepascal.org>
 Date:   Fri Aug 6 12:05:34 2021 +0200
@@ -228,13 +234,7 @@ Date:   Fri Aug 6 12:05:34 2021 +0200
      * add BI_ALPHABITFIELDS
 
 M	packages/fcl-image/src/bmpcomn.pp
-commit 9e1606f221458e434f406658f641c9b790ceef38
-Author: marcoonthegit <marco@freepascal.org>
-Date:   Fri Aug 6 12:05:34 2021 +0200
-
-     * add BI_ALPHABITFIELDS
-
-M	packages/fcl-image/src/bmpcomn.pp
+******************************************************************************
 commit b3744bf11fc50891c3769b1268f72dc93824d5bb
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Fri Aug 6 04:30:09 2021 +0300
@@ -242,6 +242,7 @@ Date:   Fri Aug 6 04:30:09 2021 +0300
     + added dependency on unit xmd for unit dpms
 
 M	packages/x11/fpmake.pp
+******************************************************************************
 commit a061b2e76386729992137803cb9259df66202ab9
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Fri Aug 6 04:29:12 2021 +0300
@@ -252,6 +253,7 @@ M	packages/x11/fpmake.pp
 A	packages/x11/src/xtestext1.pp
 A	packages/x11/src/xtestext1const.inc
 A	packages/x11/tests/xtestext1_linktest.pp
+******************************************************************************
 commit 68e026ab2dc225e950bdd85a59d9106cd9de77aa
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Fri Aug 6 03:59:41 2021 +0300
@@ -262,6 +264,7 @@ M	packages/x11/fpmake.pp
 A	packages/x11/src/sync.pp
 A	packages/x11/src/syncconst.inc
 A	packages/x11/tests/sync_linktest.pp
+******************************************************************************
 commit 650d2fcaa9a463f90e17de0b719c41b7cdb4e8ed
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Fri Aug 6 02:56:40 2021 +0300
@@ -273,6 +276,7 @@ A	packages/x11/src/secur.inc
 A	packages/x11/src/security.pp
 A	packages/x11/src/xauth.inc
 A	packages/x11/tests/security_linktest.pp
+******************************************************************************
 commit d33e6d639b70ace8f97c4a47953b0b910612d2a1
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Fri Aug 6 02:27:14 2021 +0300
@@ -283,6 +287,7 @@ M	packages/x11/fpmake.pp
 A	packages/x11/src/multibuf.pp
 A	packages/x11/src/multibufconst.inc
 A	packages/x11/tests/multibuf_linktest.pp
+******************************************************************************
 commit 68c964bf59c8380843fda383273a05d5aa44b27d
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Fri Aug 6 01:40:53 2021 +0300
@@ -294,6 +299,7 @@ A	packages/x11/src/dpms.pp
 A	packages/x11/src/dpmsconst.inc
 M	packages/x11/src/xlib.pp
 A	packages/x11/tests/dpms_linktest.pp
+******************************************************************************
 commit 261aff9de8ba3435e87d996689a074c6bcbcc783
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Fri Aug 6 01:24:41 2021 +0300
@@ -302,6 +308,7 @@ Date:   Fri Aug 6 01:24:41 2021 +0300
 
 M	packages/x11/fpmake.pp
 A	packages/x11/src/xmd.pp
+******************************************************************************
 commit 63760fce6a05ed9743d7af4a758009b9ee8e1bb0
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Fri Aug 6 00:15:21 2021 +0300
@@ -309,6 +316,7 @@ Date:   Fri Aug 6 00:15:21 2021 +0300
     + added packrecords C directive to the xevi unit, because it contains records
 
 M	packages/x11/src/xevi.pp
+******************************************************************************
 commit c6ef087850f57667612964049242965bbd452481
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Fri Aug 6 00:14:01 2021 +0300
@@ -319,6 +327,7 @@ M	packages/x11/fpmake.pp
 A	packages/x11/src/dbe.inc
 A	packages/x11/src/xdbe.pp
 A	packages/x11/tests/xdbe_linktest.pp
+******************************************************************************
 commit c3798a4a38335681a17ee0a35a63baaf8daa93d8
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Thu Aug 5 23:48:05 2021 +0300
@@ -330,6 +339,7 @@ A	packages/x11/src/cup.inc
 A	packages/x11/src/xcup.pp
 M	packages/x11/src/xlib.pp
 A	packages/x11/tests/xcup_linktest.pp
+******************************************************************************
 commit 9846fd3f37424ef692f286dac238da33de9cd31b
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Thu Aug 5 23:36:27 2021 +0300
@@ -340,6 +350,7 @@ M	packages/x11/fpmake.pp
 A	packages/x11/src/ag.inc
 A	packages/x11/src/xag.pp
 A	packages/x11/tests/xag_linktest.pp
+******************************************************************************
 commit 1699471b8dfba863d6624edaf18b63e075286b5c
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Thu Aug 5 23:09:40 2021 +0300
@@ -350,6 +361,7 @@ M	packages/x11/fpmake.pp
 A	packages/x11/src/lbx.inc
 A	packages/x11/src/xlbx.pp
 A	packages/x11/tests/xlbx_linktest.pp
+******************************************************************************
 commit cf1d3539feebe1e8726a42a1929b19449defec2a
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Thu Aug 5 22:48:32 2021 +0300
