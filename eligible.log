@@ -1,4 +1,109 @@
 ******************************************************************************
+commit 07dcd22b1c812f4dc659995c84c51fc580383a59
+Author: Yuriy Sydorov <jura@cp-lab.com>
+Date:   Mon Aug 16 21:53:17 2021 +0300
+
+    * sizeof(array) and length(array) must return sizeUint in case the array
+      size does not fit in sizeint. This fixes a range check error during
+      compilation on small CPU targets where allowed array size is 64K, but
+      sizeint is 32K max.
+
+M	compiler/ncon.pas
+M	compiler/ninl.pas
+M	compiler/pexpr.pas
+
+******************************************************************************
+commit 40c359a5510fdbda573a1eb75a50977382f0996d
+Author: Ondrej Pokorny <lazarus@kluug.net>
+Date:   Mon Aug 16 17:42:01 2021 +0200
+
+    TFPCustomHTTPClient: do not reconnect when terminated
+
+M	packages/fcl-web/src/base/fphttpclient.pp
+
+******************************************************************************
+commit 3ca73da91282ae5ea53ab61ece3301dacb454a43
+Author: Yuriy Sydorov <jura@cp-lab.com>
+Date:   Mon Aug 16 17:35:23 2021 +0300
+
+    * In TP-style INLINE, allowed the > modifier for global vars and relaxed range checks.
+
+M	compiler/pstatmnt.pas
+
+******************************************************************************
+commit fdaa1a12d03ab0af27d783a6ebd8c989673f145b
+Author: Ondrej Pokorny <ondrej@kluug.net>
+Date:   Mon Aug 16 13:59:51 2021 +0000
+
+    fphttpclient: new DoDataWrite/OnDataSent event
+
+M	packages/fcl-web/src/base/fphttpclient.pp
+
+******************************************************************************
+commit fc3685819c07008860e35f2d727d55365a4586e0
+Author: Yuriy Sydorov <jura@cp-lab.com>
+Date:   Mon Aug 16 16:12:21 2021 +0300
+
+    + Added a test for the TP-style INLINE() statement.
+
+A	tests/test/ttpinl.pp
+
+******************************************************************************
+commit d502a38f2044a641fac2eb94501f1b49d3b698a5
+Author: Ondrej Pokorny <lazarus@kluug.net>
+Date:   Mon Aug 16 11:33:53 2021 +0200
+
+    TFPHTTPConnection: clear FBuffer when read from it in ReadRequestContent
+
+M	packages/fcl-web/src/base/fphttpserver.pp
+
+******************************************************************************
+commit 675312c201c678c8446482f7e53b1209684b45bd
+Author: Ondrej Pokorny <lazarus@kluug.net>
+Date:   Mon Aug 16 07:04:20 2021 +0200
+
+    *http client: rewind RequestBody in SendRequest
+
+M	packages/fcl-web/src/base/fphttpclient.pp
+
+******************************************************************************
+commit 64ddf22e1b77cea0a29d13f5bcd1e09e8bb17ebf
+Author: Yuriy Sydorov <jura@cp-lab.com>
+Date:   Mon Aug 16 00:40:06 2021 +0300
+
+    * TP compatibility: For retro CPUs always copy the function result to
+      the register(s) on function exit if assembler blocks are present.
+
+M	compiler/pstatmnt.pas
+
+******************************************************************************
+commit c78e9557f81f7711a60400f8709b5b1fe017bdd5
+Author: Yuriy Sydorov <jura@cp-lab.com>
+Date:   Mon Aug 16 00:31:08 2021 +0300
+
+    * Added support for the old Turbo Pascal INLINE(data/data/...) statement.
+      It is available only in the TP mode.
+
+M	compiler/ncgbas.pas
+M	compiler/pstatmnt.pas
+M	compiler/tokens.pas
+
+******************************************************************************
+commit 122ed4b76a4e735ab76b44d52c845879e6fa5535
+Author: Yuriy Sydorov <jura@cp-lab.com>
+Date:   Sun Aug 15 14:25:15 2021 +0300
+
+    * Support for sleb128 and uleb128 constants in the NASM writer.
+    * Added sleb128tostr() and uleb128tostr() methods to TExternalAssembler.
+    * Use these methods in assembler writers instead of code duplication.
+
+M	compiler/aggas.pas
+M	compiler/assemble.pas
+M	compiler/x86/agx86nsm.pas
+M	compiler/z80/agsdasz80.pas
+M	compiler/z80/agz80vasm.pas
+
+******************************************************************************
 commit 5479663e560bbe906bf05274b74cd168dac41627
 Author: Ondrej Pokorny <ondrej@kluug.net>
 Date:   Sun Aug 15 11:47:01 2021 +0000
@@ -1146,32 +1251,6 @@ Date:   Thu Jun 24 20:02:26 2021 +0000
     git-svn-id: trunk@49559 -
 
 M	compiler/aarch64/cgcpu.pas
-
-******************************************************************************
-commit 7a7abea0ee38efa4848971a1140b52f0378c46ea
-Author: michael <michael@freepascal.org>
-Date:   Thu Jun 24 13:20:34 2021 +0000
-
-    * Remove debug statement
-    
-    git-svn-id: trunk@49558 -
-
-M	packages/fcl-json/src/fpjsonapply.pp
-
-******************************************************************************
-commit d56ddc28e8e79dd655f6459ee538b2474f5e496d
-Author: michael <michael@freepascal.org>
-Date:   Thu Jun 24 12:37:47 2021 +0000
-
-    * Apply one JSON to another JSON object
-    
-    git-svn-id: trunk@49557 -
-
-M	.gitattributes
-A	packages/fcl-json/examples/jsonmerge.lpi
-A	packages/fcl-json/examples/jsonmerge.pp
-M	packages/fcl-json/fpmake.pp
-A	packages/fcl-json/src/fpjsonapply.pp
 
 ******************************************************************************
 commit 5eac35664fa0a3df98a3fa7b6bbe8c129e5fe7c0
@@ -3892,28 +3971,6 @@ Date:   Mon May 3 19:32:52 2021 +0000
 M	utils/pas2js/dist/rtl.js
 
 ******************************************************************************
-commit 23c913c65c4cdd8aaaf989c854adc6531c312609
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Mon May 3 19:03:41 2021 +0000
-
-    pastojs: updated logo year
-    
-    git-svn-id: trunk@49332 -
-
-M	packages/pastojs/src/pas2jscompiler.pp
-
-******************************************************************************
-commit f5d138eb087a46053efb39c6b3e417ef30cfe551
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Mon May 3 18:52:49 2021 +0000
-
-    pastojs: createCallback: store events in $events to create unique method pointers, issue #38845
-    
-    git-svn-id: trunk@49331 -
-
-M	utils/pas2js/dist/rtl.js
-
-******************************************************************************
 commit dd9179043e1dd2839249ca4aa2b5eb25bb4760e3
 Author: pierre <pierre@freepascal.org>
 Date:   Mon May 3 16:10:59 2021 +0000
@@ -4372,17 +4429,6 @@ Date:   Mon Apr 26 21:50:53 2021 +0000
 M	compiler/arm/rgcpu.pas
 
 ******************************************************************************
-commit 06709809813724d4e01de733cfcf7d12d8a1ac3b
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Mon Apr 26 21:16:28 2021 +0000
-
-    fcl-passrc: fixed (intf as tobject).ClassType, issue #38805
-    
-    git-svn-id: trunk@49272 -
-
-M	packages/fcl-passrc/src/pasresolver.pp
-
-******************************************************************************
 commit f1d30a5bc63f4bf5916ad20a81c12922ceae68e3
 Author: pierre <pierre@freepascal.org>
 Date:   Mon Apr 26 21:14:27 2021 +0000
@@ -4416,19 +4462,6 @@ Date:   Mon Apr 26 21:10:25 2021 +0000
     git-svn-id: trunk@49269 -
 
 M	compiler/aarch64/agcpugas.pas
-
-******************************************************************************
-commit 2d296fd879ae8e9c4123408f65ea0dcec80775f8
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Mon Apr 26 21:02:43 2021 +0000
-
-    pastojs: fixed rtti method flags
-    
-    git-svn-id: trunk@49268 -
-
-M	packages/pastojs/src/fppas2js.pp
-M	packages/pastojs/tests/tcmodules.pas
-M	utils/pas2js/dist/rtl.js
 
 ******************************************************************************
 commit 1b22962140eee3b11bef19380d071ce49f5f4329
@@ -4564,56 +4597,6 @@ Date:   Sat Apr 24 14:06:36 2021 +0000
     git-svn-id: trunk@49257 -
 
 M	rtl/aarch64/mathu.inc
-
-******************************************************************************
-commit 6d551fad4c964faf8735e8aa11bfe391ea6831f0
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Sat Apr 24 13:53:28 2021 +0000
-
-    fcl-passrc: started specialize type reference a<b>.c
-    
-    git-svn-id: trunk@49256 -
-
-M	packages/fcl-passrc/src/pasresolver.pp
-M	packages/fcl-passrc/src/pasuseanalyzer.pas
-M	packages/fcl-passrc/src/pparser.pp
-M	packages/fcl-passrc/tests/tcresolvegenerics.pas
-
-******************************************************************************
-commit 1ab2ad3b063e03f1d75d3ff52caf0dfbb6ef6915
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Sat Apr 24 12:04:37 2021 +0000
-
-    pastojs: rtti of async function: pfAsync
-    
-    git-svn-id: trunk@49255 -
-
-M	packages/pastojs/src/fppas2js.pp
-M	packages/pastojs/tests/tcmodules.pas
-
-******************************************************************************
-commit 74b8ccb99206354c7cf0d8e6ab4b3d09eb082638
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Sat Apr 24 11:49:01 2021 +0000
-
-    fcl-passrc: started example issue #38784
-    
-    git-svn-id: trunk@49254 -
-
-M	packages/fcl-passrc/tests/tcresolvegenerics.pas
-
-******************************************************************************
-commit be9b0adf7153543d0571e78097f8ae016150b679
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Sat Apr 24 10:55:03 2021 +0000
-
-    pastojs: specialize try except on, issue #38795
-    
-    git-svn-id: trunk@49253 -
-
-M	packages/fcl-passrc/tests/tcresolvegenerics.pas
-M	packages/pastojs/src/fppas2js.pp
-M	packages/pastojs/tests/tcgenerics.pas
 
 ******************************************************************************
 commit 17e3c31b7ef802363f2b721f076427735d7802e7
@@ -4885,30 +4868,6 @@ M	compiler/pdecsub.pas
 A	tests/webtbf/tw38771.pp
 
 ******************************************************************************
-commit a8f8f0ef4ef4c4bb6212492a3ce45b3c6a8362ef
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Sun Apr 18 12:59:48 2021 +0000
-
-    pastojs: clean up
-    
-    git-svn-id: trunk@49227 -
-
-M	packages/pastojs/tests/testpas2js.pp
-
-******************************************************************************
-commit 1861dc83d971ab4e0c5135bf97e1d29dfd503726
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Sun Apr 18 12:51:54 2021 +0000
-
-    pas2js: fixed delay init specializations after loading impl sections
-    
-    git-svn-id: trunk@49226 -
-
-M	packages/pastojs/src/fppas2js.pp
-M	packages/pastojs/tests/tcgenerics.pas
-M	packages/pastojs/tests/testpas2js.pp
-
-******************************************************************************
 commit f5e5f9645cc90c01a6fcc2c89413ccbf0d1d3d5d
 Author: pierre <pierre@freepascal.org>
 Date:   Sat Apr 17 22:17:46 2021 +0000
@@ -5053,17 +5012,6 @@ Date:   Fri Apr 16 11:42:04 2021 +0000
     git-svn-id: trunk@49210 -
 
 M	compiler/m68k/ag68kvasm.pas
-
-******************************************************************************
-commit b64d1f9dfd864f981f5af330db6cdc53cf787182
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Thu Apr 15 21:05:08 2021 +0000
-
-    pastojs: fixed insert array
-    
-    git-svn-id: trunk@49209 -
-
-M	utils/pas2js/dist/rtl.js
 
 ******************************************************************************
 commit 5442e9f9d86ab7807f917694eab6a06e037ef45a
@@ -6872,40 +6820,6 @@ M	utils/fpcm/fpcmake.inc
 M	utils/fpcm/fpcmake.ini
 
 ******************************************************************************
-commit 204f2a3bc12c9d783dc54deb225711448d2ffad7
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Mon Apr 5 10:28:52 2021 +0000
-
-    pastojs: fixed multi add element position
-    
-    git-svn-id: trunk@49122 -
-
-M	packages/pastojs/src/fppas2js.pp
-M	packages/pastojs/tests/tcmodules.pas
-
-******************************************************************************
-commit d28cf7c393008263d66ebec22f16c48a417f2ee6
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Mon Apr 5 10:27:58 2021 +0000
-
-    fcl-passrc: comment
-    
-    git-svn-id: trunk@49121 -
-
-M	packages/fcl-passrc/src/pasresolver.pp
-
-******************************************************************************
-commit c28ab0a8b80e315b1000d5b2f71ead39f3e60a4b
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Mon Apr 5 10:19:14 2021 +0000
-
-    fcl-passrc: fixed resolve multi add
-    
-    git-svn-id: trunk@49120 -
-
-M	packages/fcl-passrc/src/pasresolver.pp
-
-******************************************************************************
 commit 755c574a87c2505c793dc7fa51fdcb2c572ace70
 Author: florian <florian@freepascal.org>
 Date:   Sun Apr 4 14:54:56 2021 +0000
@@ -7141,19 +7055,6 @@ Date:   Wed Mar 31 20:53:08 2021 +0000
 M	compiler/ncal.pas
 
 ******************************************************************************
-commit b5a8164233319a52f092dbfc5b203e56a49ff4ae
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Wed Mar 31 20:50:37 2021 +0000
-
-    pastojs: specialzie anonymous function
-    
-    git-svn-id: trunk@49093 -
-
-M	packages/fcl-passrc/src/pasresolver.pp
-M	packages/pastojs/tests/tcgenerics.pas
-M	packages/pastojs/tests/tcmodules.pas
-
-******************************************************************************
 commit 07a8e6c1d61cfa4a588d3e88997940c22f25fd6a
 Author: florian <florian@freepascal.org>
 Date:   Wed Mar 31 18:53:31 2021 +0000
@@ -7266,29 +7167,6 @@ M	packages/fcl-db/src/base/db.pas
 M	packages/fcl-db/src/base/fields.inc
 
 ******************************************************************************
-commit 1fe486d8f61c28e1f3990c67a11b928873b0cb4e
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Mon Mar 29 18:08:55 2021 +0000
-
-    pastojs: fixed -O- and record const, issue #38683
-    
-    git-svn-id: trunk@49081 -
-
-M	packages/pastojs/src/fppas2js.pp
-
-******************************************************************************
-commit e7e2b7db41eba9a7eabe0a440847a6eb378a6679
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Mon Mar 29 09:26:54 2021 +0000
-
-    pastojs: clean up
-    
-    git-svn-id: trunk@49079 -
-
-M	packages/pastojs/src/fppas2js.pp
-M	packages/pastojs/tests/tcmodules.pas
-
-******************************************************************************
 commit 0d895c5826f0425712611001128e5575e06b392b
 Author: pierre <pierre@freepascal.org>
 Date:   Sun Mar 28 21:51:30 2021 +0000
@@ -7298,19 +7176,6 @@ Date:   Sun Mar 28 21:51:30 2021 +0000
     git-svn-id: trunk@49077 -
 
 M	installer/install.dat
-
-******************************************************************************
-commit a3576453846bf5ebdad6fbcf9bc1b44853285396
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Sun Mar 28 21:41:22 2021 +0000
-
-    pastojs: fixed published field with anonymous array
-    
-    git-svn-id: trunk@49076 -
-
-M	packages/fcl-passrc/src/pasresolver.pp
-M	packages/pastojs/src/fppas2js.pp
-M	packages/pastojs/tests/tcmodules.pas
 
 ******************************************************************************
 commit b4eb1780adc03586278a8780b376300308b33727
@@ -7334,20 +7199,6 @@ Date:   Sun Mar 28 21:09:35 2021 +0000
     git-svn-id: trunk@49074 -
 
 M	tests/webtbs/tw38636.pp
-
-******************************************************************************
-commit 97fd8638d5b6df2783ab5e5b97b089212c1e1664
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Sun Mar 28 19:19:32 2021 +0000
-
-    pastojs: fixed insert(item,array,pos) when array=nil
-    
-    git-svn-id: trunk@49073 -
-
-M	packages/pastojs/src/fppas2js.pp
-M	packages/pastojs/tests/tcgenerics.pas
-M	packages/pastojs/tests/tcmodules.pas
-M	utils/pas2js/dist/rtl.js
 
 ******************************************************************************
 commit 9b61b538d8216a27fc02e03c203ddaaf5ca1b96b
@@ -7541,17 +7392,6 @@ Date:   Thu Mar 25 21:51:52 2021 +0000
 M	compiler/nbas.pas
 
 ******************************************************************************
-commit e89e010155466aafa1004ebe1c107a80b38e668e
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Thu Mar 25 21:32:08 2021 +0000
-
-    pastojs: filer: restore global shortref names
-    
-    git-svn-id: trunk@49053 -
-
-M	packages/pastojs/src/fppas2js.pp
-
-******************************************************************************
 commit 50cb5707eff57d51a30dc2d2953dcf91a7a93f68
 Author: Károly Balogh <karoly@freepascal.org>
 Date:   Thu Mar 25 16:33:22 2021 +0000
@@ -7586,18 +7426,6 @@ M	packages/fcl-db/src/sqldb/odbc/odbcconn.pas
 M	packages/odbc/src/odbcsql.inc
 
 ******************************************************************************
-commit 5eda61e136416fe812ad7f7597f14ec64ddac019
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Wed Mar 24 19:50:02 2021 +0000
-
-    fcl-js: fixed writing multi add
-    
-    git-svn-id: trunk@49048 -
-
-M	packages/fcl-js/src/jswriter.pp
-M	packages/pastojs/tests/tcmodules.pas
-
-******************************************************************************
 commit 7a0c6ab591659dd05274fb4c8a05d39b760bb12d
 Author: Jonas Maebe <jonas@freepascal.org>
 Date:   Wed Mar 24 14:33:13 2021 +0000
@@ -7621,17 +7449,6 @@ Date:   Wed Mar 24 14:33:09 2021 +0000
 
 M	Makefile
 M	Makefile.fpc
-
-******************************************************************************
-commit 6fb57f8a92ca95af55ccd02a65a1fb669213c146
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Wed Mar 24 10:18:29 2021 +0000
-
-    pastojs: filer: fixed writing class destructor
-    
-    git-svn-id: trunk@49043 -
-
-M	packages/pastojs/src/pas2jsfiler.pp
 
 ******************************************************************************
 commit e99c9ddd7522d2d07c1bf4f736ea33aa0d0bba55
@@ -7699,17 +7516,6 @@ M	rtl/embedded/Makefile.fpc
 A	rtl/embedded/arm/samd51p19a.pp
 
 ******************************************************************************
-commit cae74485cfd6225e5e3e5b39d4dea1769f20d227
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Mon Mar 22 18:24:53 2021 +0000
-
-    fcl-js: fixed mem leak
-    
-    git-svn-id: trunk@49033 -
-
-M	packages/fcl-js/tests/tcsrcmap.pas
-
-******************************************************************************
 commit bae6ca6883d84aff6c9061af6ddf35a7766b51b4
 Author: florian <florian@freepascal.org>
 Date:   Mon Mar 22 18:11:41 2021 +0000
@@ -7719,42 +7525,6 @@ Date:   Mon Mar 22 18:11:41 2021 +0000
     git-svn-id: trunk@49032 -
 
 M	compiler/dbgdwarf.pas
-
-******************************************************************************
-commit d62da7bc5d4af2303e031bf0118feb9549990bff
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Mon Mar 22 17:35:51 2021 +0000
-
-    pastojs: convert TBinaryExpr left lists without stack
-    
-    git-svn-id: trunk@49031 -
-
-M	packages/pastojs/src/fppas2js.pp
-
-******************************************************************************
-commit 3c18b7e3b6bca2bb59e9514d251b6b9ccbbe4e18
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Mon Mar 22 17:29:50 2021 +0000
-
-    fcl-passrc: process TBinaryExpr left lists without stack
-    
-    git-svn-id: trunk@49030 -
-
-M	packages/fcl-passrc/src/pasresolveeval.pas
-M	packages/fcl-passrc/src/pastree.pp
-M	packages/fcl-passrc/src/pasuseanalyzer.pas
-
-******************************************************************************
-commit de0e5919c988d5687e136b74b998e057bf9a5d9d
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Mon Mar 22 17:28:35 2021 +0000
-
-    fcl-js: write and free TBinaryExpr left lists without stack
-    
-    git-svn-id: trunk@49029 -
-
-M	packages/fcl-js/src/jstree.pp
-M	packages/fcl-js/src/jswriter.pp
 
 ******************************************************************************
 commit a32a870f33a547985a175555c7de0c305612a324
@@ -7768,18 +7538,6 @@ Date:   Sun Mar 21 21:39:57 2021 +0000
 M	compiler/nflw.pas
 
 ******************************************************************************
-commit 786688eef6d9438bb934f181827227c8fb6f4502
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Sun Mar 21 20:10:01 2021 +0000
-
-    fcl-passrc: resolver: resolve multi add expressions without stack
-    
-    git-svn-id: trunk@49027 -
-
-M	packages/fcl-passrc/src/pasresolveeval.pas
-M	packages/fcl-passrc/src/pasresolver.pp
-
-******************************************************************************
 commit 4c209a7dc2aa1f0fe43b104255d7d7670942bd4d
 Author: nickysn <nickysn@gmail.com>
 Date:   Sun Mar 21 18:21:53 2021 +0000
@@ -7789,29 +7547,6 @@ Date:   Sun Mar 21 18:21:53 2021 +0000
     git-svn-id: trunk@49026 -
 
 M	rtl/java/jsystemh.inc
-
-******************************************************************************
-commit 8b09375ec2f414e9767ad60935398242fce62634
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Sun Mar 21 17:57:44 2021 +0000
-
-    pastojs: precompiled proc: store shortref to enumtype of enumvalue
-    
-    git-svn-id: trunk@49025 -
-
-M	packages/pastojs/src/fppas2js.pp
-M	packages/pastojs/tests/tcprecompile.pas
-
-******************************************************************************
-commit 8b63a69f597c29471ba708245af4ac97e1092e7b
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Sun Mar 21 17:56:00 2021 +0000
-
-    pastojs: fixed compileserver --simpleserver and -d relative path
-    
-    git-svn-id: trunk@49024 -
-
-M	utils/pas2js/httpcompiler.pp
 
 ******************************************************************************
 commit e8b92a4a7692c4922d7f8d4e394c6f145b193103
@@ -7903,30 +7638,6 @@ Date:   Fri Mar 19 17:39:52 2021 +0000
 M	compiler/riscv64/cgcpu.pas
 
 ******************************************************************************
-commit 452cdf73b9c06cb52297bb93deff266c1424024e
-Author: michael <michael@freepascal.org>
-Date:   Fri Mar 19 14:39:20 2021 +0000
-
-    * Remove debug statement
-    
-    git-svn-id: trunk@49014 -
-
-M	utils/fpdoc/dwriter.pp
-
-******************************************************************************
-commit 702322cfde322c702e5b9faefd71ae90d09f9437
-Author: michael <michael@freepascal.org>
-Date:   Fri Mar 19 14:36:05 2021 +0000
-
-    * discardresult modifier
-    
-    git-svn-id: trunk@49013 -
-
-M	packages/fcl-passrc/src/pastree.pp
-M	packages/fcl-passrc/tests/tcprocfunc.pas
-M	packages/pastojs/src/pas2jsfiler.pp
-
-******************************************************************************
 commit 2a96ad2715a9699b5a592e11b6e319557c953d4d
 Author: michael <michael@freepascal.org>
 Date:   Fri Mar 19 14:25:21 2021 +0000
@@ -7958,17 +7669,6 @@ Date:   Fri Mar 19 14:09:02 2021 +0000
     git-svn-id: trunk@49010 -
 
 M	packages/fcl-db/src/sqldb/postgres/pqconnection.pp
-
-******************************************************************************
-commit 29dee4a0d3dd89e0d9e9c0808e8d29d6ddf59368
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Fri Mar 19 10:31:46 2021 +0000
-
-    pas2js: fixed option --simpleserver and -d relative path
-    
-    git-svn-id: trunk@49008 -
-
-M	utils/pas2js/httpcompiler.pp
 
 ******************************************************************************
 commit 3575369989aec5abd254bca433d60df24e47f2a8
@@ -8065,40 +7765,6 @@ Date:   Wed Mar 17 19:16:38 2021 +0000
 M	compiler/pdecvar.pas
 
 ******************************************************************************
-commit 9e9859f14529a75098b16ba693b7edc87d880160
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Wed Mar 17 18:22:11 2021 +0000
-
-    fcl-passrc: fixed no hint when published method hides ancestor method
-    
-    git-svn-id: trunk@48997 -
-
-M	packages/fcl-passrc/src/pasresolver.pp
-M	packages/pastojs/tests/tcmodules.pas
-
-******************************************************************************
-commit 970e039b9a5d96dda8ae4449ee633e665762f641
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Wed Mar 17 17:13:40 2021 +0000
-
-    fcl-json: less hints
-    
-    git-svn-id: trunk@48996 -
-
-M	packages/fcl-json/src/jsonscanner.pp
-
-******************************************************************************
-commit c813fafa3748319a77085f0e98f8827d91f40799
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Wed Mar 17 17:13:30 2021 +0000
-
-    pastojs: fixed wrong setting rtl.TObjectDestroy
-    
-    git-svn-id: trunk@48995 -
-
-M	packages/pastojs/src/fppas2js.pp
-
-******************************************************************************
 commit 39c060dfa726274fa05e22652431622de3cf57c4
 Author: pierre <pierre@freepascal.org>
 Date:   Wed Mar 17 09:33:14 2021 +0000
@@ -8121,17 +7787,6 @@ Date:   Tue Mar 16 22:19:21 2021 +0000
 
 M	compiler/aoptobj.pas
 M	compiler/x86/aoptx86.pas
-
-******************************************************************************
-commit b9b08f37fecf309cba86a43466574eb2f5b47cba
-Author: michael <michael@freepascal.org>
-Date:   Tue Mar 16 22:15:37 2021 +0000
-
-    * Patch method contribution
-    
-    git-svn-id: trunk@48992 -
-
-M	packages/fcl-web/src/base/fphttpclient.pp
 
 ******************************************************************************
 commit 82450e1d57d684b3858b280cf96f045a4505b631
@@ -8222,17 +7877,6 @@ Date:   Mon Mar 15 18:06:44 2021 +0000
 M	compiler/cclasses.pas
 
 ******************************************************************************
-commit 43753442c05a8c6785ca466ebfcd4102de536cce
-Author: michael <michael@freepascal.org>
-Date:   Mon Mar 15 18:06:40 2021 +0000
-
-    * Remove debug writel
-    
-    git-svn-id: trunk@48983 -
-
-M	packages/fcl-json/src/jsonscanner.pp
-
-******************************************************************************
 commit a70feeca7e984ee20d6e36298bca6a59db539ca8
 Author: pierre <pierre@freepascal.org>
 Date:   Mon Mar 15 15:39:30 2021 +0000
@@ -8243,31 +7887,6 @@ Date:   Mon Mar 15 15:39:30 2021 +0000
 
 M	.gitattributes
 A	rtl/sinclairql/Makefile
-
-******************************************************************************
-commit 5e913147ab8e1976abbb36804baa358daff31f37
-Author: michael <michael@freepascal.org>
-Date:   Mon Mar 15 15:13:08 2021 +0000
-
-    * Fix bug ID #38624
-    
-    git-svn-id: trunk@48980 -
-
-M	packages/fcl-json/src/fpjson.pp
-M	packages/fcl-json/src/jsonscanner.pp
-M	packages/fcl-json/tests/testjsondata.pp
-M	packages/fcl-json/tests/testjsonreader.pp
-
-******************************************************************************
-commit ffa69353f36e74007f998f4bccdc59b3c9e14a0b
-Author: michael <michael@freepascal.org>
-Date:   Mon Mar 15 14:33:37 2021 +0000
-
-    * Remove debug writeln
-    
-    git-svn-id: trunk@48979 -
-
-M	packages/fcl-json/tests/testjsonrtti.pp
 
 ******************************************************************************
 commit a7de0b365b9d10dac141f7a7b8889e92e12370fb
@@ -8378,19 +7997,6 @@ Date:   Sun Mar 14 15:06:13 2021 +0000
 M	compiler/wasm32/hlcgcpu.pas
 
 ******************************************************************************
-commit 0d1fb4190172c974f3be79c8045932f3b2a74292
-Author: michael <michael@freepascal.org>
-Date:   Sun Mar 14 15:04:12 2021 +0000
-
-    * Fix bug #38618
-    
-    git-svn-id: trunk@48965 -
-
-M	packages/fcl-json/src/jsonscanner.pp
-M	packages/fcl-json/tests/testjsondata.pp
-M	packages/fcl-json/tests/testjsonreader.pp
-
-******************************************************************************
 commit 74854eee5848c1ab60da7b6da92a800382552553
 Author: nickysn <nickysn@gmail.com>
 Date:   Sun Mar 14 15:03:58 2021 +0000
@@ -8401,18 +8007,6 @@ Date:   Sun Mar 14 15:03:58 2021 +0000
 
 M	compiler/wasm32/hlcgcpu.pas
 M	compiler/wasm32/symcpu.pas
-
-******************************************************************************
-commit 2aab9b1f9bc47b84b10449b2ab43ddb30ec35335
-Author: michael <michael@freepascal.org>
-Date:   Sun Mar 14 14:16:16 2021 +0000
-
-    * Patch from Bart Broersma for issue ID #38622
-    
-    git-svn-id: trunk@48962 -
-
-M	packages/fcl-json/src/fpjson.pp
-M	packages/fcl-json/tests/testjsondata.pp
 
 ******************************************************************************
 commit d399df83ba9478ed63150abb045fb2db9fb2a186
@@ -8938,18 +8532,6 @@ Date:   Mon Mar 8 22:07:07 2021 +0000
 M	rtl/unix/cthreads.pp
 
 ******************************************************************************
-commit f7b819526c18781ff3344f2dc6054988a67a040c
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Mon Mar 8 20:29:55 2021 +0000
-
-    pastojs: fixed creating enum shortrefs for precompiled code
-    
-    git-svn-id: trunk@48924 -
-
-M	packages/pastojs/src/fppas2js.pp
-M	packages/pastojs/src/pas2jsfiler.pp
-
-******************************************************************************
 commit c603477ec4c19a62a35e5ca3036705ffe565a1dc
 Author: florian <florian@freepascal.org>
 Date:   Mon Mar 8 17:12:19 2021 +0000
@@ -8959,28 +8541,6 @@ Date:   Mon Mar 8 17:12:19 2021 +0000
     git-svn-id: trunk@48914 -
 
 M	tests/webtbs/tw2242.pp
-
-******************************************************************************
-commit e668f8732a85e5a40c318fce70eba53fcbb99458
-Author: marcus <marcus@idefix.freepascal.org>
-Date:   Mon Mar 8 15:00:07 2021 +0000
-
-    fcl-passrc: improvement for Amiga, OS4, MorphOS syscalls
-    
-    git-svn-id: trunk@48909 -
-
-M	packages/fcl-passrc/src/pparser.pp
-
-******************************************************************************
-commit fc6769329fcac77b2f5c75a31382e4cf6145d474
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Mon Mar 8 12:01:28 2021 +0000
-
-    pastojs: read old pcu files from 2.0.0
-    
-    git-svn-id: trunk@48907 -
-
-M	packages/pastojs/src/fppas2js.pp
 
 ******************************************************************************
 commit 813cf7b45ec3dc7c0b5c4e3fc681ac9026fb56b6
@@ -9033,19 +8593,6 @@ Date:   Sun Mar 7 14:11:09 2021 +0000
     git-svn-id: trunk@48897 -
 
 M	compiler/options.pas
-
-******************************************************************************
-commit 9fbaa28df7d40c856f156ef60a6f1d5a6fa21893
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Sun Mar 7 12:48:14 2021 +0000
-
-    pastojs: fixed attributes of indirectly used class
-    
-    git-svn-id: trunk@48896 -
-
-M	packages/fcl-passrc/src/pasuseanalyzer.pas
-M	packages/pastojs/src/fppas2js.pp
-M	packages/pastojs/tests/tcmodules.pas
 
 ******************************************************************************
 commit 6166084f08a6ca4141a846c45b4e07708539a9d7
@@ -9132,17 +8679,6 @@ Date:   Sat Mar 6 22:00:30 2021 +0000
     git-svn-id: trunk@48890 -
 
 M	compiler/entfile.pas
-
-******************************************************************************
-commit bb83bb4203208e161177b6e55d9884448b0e107d
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Sat Mar 6 21:34:45 2021 +0000
-
-    pastojs: fixed create TGUID object literal
-    
-    git-svn-id: trunk@48889 -
-
-M	packages/pastojs/src/fppas2js.pp
 
 ******************************************************************************
 commit d7a45c646e8e557dde5917cb7ca1451d8c502fb5
@@ -9284,17 +8820,6 @@ Date:   Tue Mar 2 21:27:43 2021 +0000
 M	compiler/x86/aoptx86.pas
 
 ******************************************************************************
-commit 49830232d70cf11ff020da6d06b8a79372770829
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Tue Mar 2 09:20:18 2021 +0000
-
-    fcl-passrc: fixed spaces
-    
-    git-svn-id: trunk@48863 -
-
-M	packages/fcl-passrc/src/pasuseanalyzer.pas
-
-******************************************************************************
 commit 893cf511bc5240d230c70c233c4cf768ac308c59
 Author: svenbarth <pascaldragon@googlemail.com>
 Date:   Tue Mar 2 08:06:05 2021 +0000
@@ -9304,52 +8829,6 @@ Date:   Tue Mar 2 08:06:05 2021 +0000
     git-svn-id: trunk@48862 -
 
 M	rtl/objpas/sysutils/fina.inc
-
-******************************************************************************
-commit 8c38953440b52e427e92b51c796a3a8d08f770b9
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Mon Mar 1 22:01:31 2021 +0000
-
-    fcl-passrc: useanalyzer: fixed marking nested type
-    
-    git-svn-id: trunk@48861 -
-
-M	packages/fcl-passrc/src/pasuseanalyzer.pas
-M	packages/fcl-passrc/tests/tcresolver.pas
-M	packages/fcl-passrc/tests/tcuseanalyzer.pas
-
-******************************************************************************
-commit c6f5d37d3eb7d4c982825d27f007e8307ce235ed
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Mon Mar 1 21:56:42 2021 +0000
-
-    fcl-passrc: fixed debugging
-    
-    git-svn-id: trunk@48860 -
-
-M	packages/fcl-passrc/src/pasresolver.pp
-
-******************************************************************************
-commit 9e5ff2186b227d5f923e80a6fd1daa26e0944a68
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Mon Mar 1 21:25:46 2021 +0000
-
-    pastojs: fixed IsTGUID
-    
-    git-svn-id: trunk@48859 -
-
-M	packages/pastojs/src/fppas2js.pp
-
-******************************************************************************
-commit 4ed82dcc1c18924aceee5cf2b94498f3a5633bab
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Mon Mar 1 21:25:03 2021 +0000
-
-    fcl-passrc: fixed IsTGUID
-    
-    git-svn-id: trunk@48858 -
-
-M	packages/fcl-passrc/src/pasresolver.pp
 
 ******************************************************************************
 commit 8ffa01e95fec30fbec3961b0df8080020e5b71ac
@@ -9406,19 +8885,6 @@ Date:   Sun Feb 28 21:58:32 2021 +0000
     git-svn-id: trunk@48843 -
 
 M	packages/hash/examples/sha1performancetest.pas
-
-******************************************************************************
-commit ce3edc8c95736568b51b73bd9ddb3ffb8af652c0
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Sun Feb 28 21:26:56 2021 +0000
-
-    pastojs: fixed calling Instance.StaticMethod
-    
-    git-svn-id: trunk@48842 -
-
-M	packages/pastojs/src/fppas2js.pp
-M	packages/pastojs/tests/tcgenerics.pas
-M	packages/pastojs/tests/tcmodules.pas
 
 ******************************************************************************
 commit e0a1bc66750d810d57af27e21139203bfc2f3125
@@ -9708,20 +9174,6 @@ Date:   Tue Feb 23 20:39:25 2021 +0000
     git-svn-id: trunk@48794 -
 
 M	rtl/linux/arm/sighnd.inc
-
-******************************************************************************
-commit 1b6eab81eff6dae4414001d06462b96bf9fb9f01
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Tue Feb 23 01:37:05 2021 +0000
-
-    pastojs: anonymous vartype
-    
-    git-svn-id: trunk@48793 -
-
-M	packages/fcl-passrc/src/pasresolver.pp
-M	packages/pastojs/src/fppas2js.pp
-M	packages/pastojs/tests/tcgenerics.pas
-M	packages/pastojs/tests/tcmodules.pas
 
 ******************************************************************************
 commit 2cd695120564fd22f063cefeddc882523a86fd69
@@ -10282,18 +9734,6 @@ Date:   Sat Feb 13 14:37:07 2021 +0000
 M	compiler/options.pas
 
 ******************************************************************************
-commit 17d2873aec4e54c59417c6e316d5cfd1a730ce17
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Sat Feb 13 13:19:31 2021 +0000
-
-    fcl-passrc: useanalyzer: fixed omitting not used hints for properties
-    
-    git-svn-id: trunk@48667 -
-
-M	packages/fcl-passrc/src/pasuseanalyzer.pas
-M	packages/fcl-passrc/tests/tcuseanalyzer.pas
-
-******************************************************************************
 commit 98a748bdd6e3220c299e6cfcbdd64d92e1b335a3
 Author: florian <florian@freepascal.org>
 Date:   Fri Feb 12 21:39:31 2021 +0000
@@ -10526,19 +9966,6 @@ M	.gitattributes
 A	tests/webtbs/tw32139.pp
 
 ******************************************************************************
-commit d4d401b26d5238495c3e8a2257961519948b157c
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Mon Feb 1 22:12:48 2021 +0000
-
-    fcl-passrc: resolver: include(intset,int)
-    
-    git-svn-id: trunk@48497 -
-
-M	packages/fcl-passrc/src/pasresolver.pp
-M	packages/fcl-passrc/tests/tcresolver.pas
-M	packages/pastojs/tests/tcmodules.pas
-
-******************************************************************************
 commit 3922926d17a594a84ec3a39a8d6d3c0d9bfb21d2
 Author: florian <florian@freepascal.org>
 Date:   Mon Feb 1 21:05:23 2021 +0000
@@ -10548,30 +9975,6 @@ Date:   Mon Feb 1 21:05:23 2021 +0000
     git-svn-id: trunk@48495 -
 
 M	rtl/linux/linux.pp
-
-******************************************************************************
-commit f2a4a9d0d4ef7f4e2dae42025c03640ab14d97ac
-Author: michael <michael@freepascal.org>
-Date:   Mon Feb 1 13:16:20 2021 +0000
-
-    * Specify mode
-    
-    git-svn-id: trunk@48490 -
-
-M	utils/fpdoc/dw_chm.pp
-M	utils/fpdoc/fpdoc.pp
-
-******************************************************************************
-commit f128e64ccbe51503d1d2c6ca98ca43619f21b305
-Author: michael <michael@freepascal.org>
-Date:   Mon Feb 1 13:15:05 2021 +0000
-
-    * Some small improvements from Andrey Sobol: better specialization declaration in markdown, write more detailed end log
-    
-    git-svn-id: trunk@48489 -
-
-M	utils/fpdoc/dw_markdown.pp
-M	utils/fpdoc/dwriter.pp
 
 ******************************************************************************
 commit b4a1c27c5827ed633802b6b6c6e0f9486156b719
@@ -10790,28 +10193,6 @@ Date:   Thu Jan 28 20:56:15 2021 +0000
 M	.gitattributes
 M	compiler/nmem.pas
 A	tests/webtbs/tw38413.pp
-
-******************************************************************************
-commit 89149a2f9f35385c81e3b768265736475165f66f
-Author: michael <michael@freepascal.org>
-Date:   Thu Jan 28 07:01:38 2021 +0000
-
-    * Small fix from Andrey to improve link resolving
-    
-    git-svn-id: trunk@48441 -
-
-M	utils/fpdoc/dwriter.pp
-
-******************************************************************************
-commit c3aca47e502c6fd1850b8a7fac2f4027e16dfb6b
-Author: michael <michael@freepascal.org>
-Date:   Wed Jan 27 21:29:12 2021 +0000
-
-    * Patch from Andrey Sobol to fix broken topic links
-    
-    git-svn-id: trunk@48439 -
-
-M	utils/fpdoc/dw_chm.pp
 
 ******************************************************************************
 commit 706e72e1fd681d688ba504b2e7ce1f78694ad686
@@ -11264,33 +10645,6 @@ M	compiler/scanner.pas
 A	tests/webtbf/tw38287.pp
 
 ******************************************************************************
-commit e3481eecfb13248e34790c9b7de4214b0f0b1475
-Author: michael <michael@freepascal.org>
-Date:   Sat Jan 23 14:29:56 2021 +0000
-
-    * Patch from Andrey Sobol to improve display of specialized types
-    
-    git-svn-id: trunk@48349 -
-
-M	utils/fpdoc/dw_basehtml.pp
-M	utils/fpdoc/dw_html.pp
-M	utils/fpdoc/dw_markdown.pp
-M	utils/fpdoc/fpdocclasstree.pp
-
-******************************************************************************
-commit b51fd7079ad19e56665a6642a13b6a8ddeb74343
-Author: michael <michael@freepascal.org>
-Date:   Sat Jan 23 11:42:21 2021 +0000
-
-    * Allow single page mode for multi-page writers
-    
-    git-svn-id: trunk@48348 -
-
-M	utils/fpdoc/dwriter.pp
-M	utils/fpdoc/fpdoc.lpi
-M	utils/fpdoc/fpdocstrs.pp
-
-******************************************************************************
 commit 2519fb126663d9dc4184d8ed9d7edca2e65baf78
 Author: florian <florian@freepascal.org>
 Date:   Fri Jan 22 22:02:44 2021 +0000
@@ -11337,17 +10691,6 @@ Date:   Thu Jan 21 16:15:35 2021 +0000
 M	tests/utils/testsuite/utests.pp
 
 ******************************************************************************
-commit 79f2398e6a18e8b47c4a2d6ee50a74680d02a49c
-Author: michael <michael@freepascal.org>
-Date:   Thu Jan 21 15:20:11 2021 +0000
-
-    Small fix by Andrey to fix links
-    
-    git-svn-id: trunk@48269 -
-
-M	utils/fpdoc/dwriter.pp
-
-******************************************************************************
 commit 3bfb995a4871cfe088d6753086b13b06a613e4b1
 Author: pierre <pierre@freepascal.org>
 Date:   Thu Jan 21 09:20:19 2021 +0000
@@ -11381,30 +10724,6 @@ Date:   Wed Jan 20 22:11:15 2021 +0000
 M	compiler/options.pas
 
 ******************************************************************************
-commit c32ef4af38c7202020988a32551a59203b99a639
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Wed Jan 20 21:22:07 2021 +0000
-
-    pastojs: ord(integer)
-    
-    git-svn-id: trunk@48237 -
-
-M	packages/pastojs/src/fppas2js.pp
-M	packages/pastojs/tests/tcmodules.pas
-
-******************************************************************************
-commit af5a6cd9d2d630e000caa6371be8e019aea09d77
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Wed Jan 20 21:21:56 2021 +0000
-
-    fcl-passrc: resolver: ord(integer)
-    
-    git-svn-id: trunk@48236 -
-
-M	packages/fcl-passrc/src/pasresolver.pp
-M	packages/fcl-passrc/tests/tcresolver.pas
-
-******************************************************************************
 commit 7a3eb453d40af468faa5c395a6bf301cc0a0cc40
 Author: florian <florian@freepascal.org>
 Date:   Wed Jan 20 21:14:09 2021 +0000
@@ -11414,30 +10733,6 @@ Date:   Wed Jan 20 21:14:09 2021 +0000
     git-svn-id: trunk@48235 -
 
 M	compiler/armgen/aoptarm.pas
-
-******************************************************************************
-commit 13318117ed328b48f40cc1303266f4e7f4d4de8d
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Wed Jan 20 21:04:27 2021 +0000
-
-    pastojs: nicer filer error messages
-    
-    git-svn-id: trunk@48233 -
-
-M	packages/pastojs/src/pas2jsfiler.pp
-M	packages/pastojs/src/pas2jspcucompiler.pp
-
-******************************************************************************
-commit eaa519209e54dfc36c2daf66bf75b157f13656e5
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Wed Jan 20 20:24:38 2021 +0000
-
-    pastojs: fixed if then asm a;b end
-    
-    git-svn-id: trunk@48231 -
-
-M	packages/pastojs/src/fppas2js.pp
-M	packages/pastojs/tests/tcmodules.pas
 
 ******************************************************************************
 commit 62edfa558412e5708469db173957eb5799ce828b
@@ -11498,19 +10793,6 @@ Date:   Tue Jan 19 21:04:41 2021 +0000
 M	compiler/nbas.pas
 
 ******************************************************************************
-commit b460f87fd425c853769e9d63e3ec0e239f8cba79
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Tue Jan 19 19:08:26 2021 +0000
-
-    fcl-passrc: fixed checking statement after except-on
-    
-    git-svn-id: trunk@48211 -
-
-M	packages/fcl-passrc/src/pasresolver.pp
-M	packages/fcl-passrc/src/pparser.pp
-M	packages/fcl-passrc/tests/tcresolver.pas
-
-******************************************************************************
 commit 30587299ea290ed23669ba95a96e1d1503a347b3
 Author: yury <jura@cp-lab.com>
 Date:   Tue Jan 19 17:38:36 2021 +0000
@@ -11557,17 +10839,6 @@ Date:   Tue Jan 19 17:13:44 2021 +0000
 M	packages/fcl-registry/src/registry.pp
 
 ******************************************************************************
-commit 25fd38b2da861f635599fce9e7c4d7bedcac6401
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Tue Jan 19 09:42:56 2021 +0000
-
-    pastojs: fixed o as intftype, when o is nil
-    
-    git-svn-id: trunk@48188 -
-
-M	utils/pas2js/dist/rtl.js
-
-******************************************************************************
 commit dc799a9d49d234980b4184d2561bb0ba04337177
 Author: pierre <pierre@freepascal.org>
 Date:   Mon Jan 18 23:29:24 2021 +0000
@@ -11588,58 +10859,6 @@ Date:   Mon Jan 18 21:29:52 2021 +0000
     git-svn-id: trunk@48174 -
 
 M	compiler/nflw.pas
-
-******************************************************************************
-commit 92c3aedac47a60d68f05061fc9ee1b080f082ebb
-Author: michael <michael@freepascal.org>
-Date:   Mon Jan 18 15:30:19 2021 +0000
-
-    * Fix typo
-    
-    git-svn-id: trunk@48171 -
-
-M	utils/fpdoc/mkfpdoc.pp
-
-******************************************************************************
-commit 005448f305307f9deb16e3efc447393683ed65e1
-Author: michael <michael@freepascal.org>
-Date:   Mon Jan 18 15:27:58 2021 +0000
-
-    * Some restructuring by Andrey, add fallback link
-    
-    git-svn-id: trunk@48170 -
-
-M	utils/fpdoc/dglobals.pp
-M	utils/fpdoc/dw_basehtml.pp
-M	utils/fpdoc/dw_basemd.pp
-M	utils/fpdoc/dw_chm.pp
-M	utils/fpdoc/dw_dxml.pp
-M	utils/fpdoc/dw_html.pp
-M	utils/fpdoc/dw_latex.pp
-M	utils/fpdoc/dw_linrtf.pp
-M	utils/fpdoc/dw_man.pp
-M	utils/fpdoc/dw_markdown.pp
-M	utils/fpdoc/dw_txt.pp
-M	utils/fpdoc/dw_xml.pp
-M	utils/fpdoc/dwlinear.pp
-M	utils/fpdoc/dwriter.pp
-M	utils/fpdoc/fpdoc.pp
-M	utils/fpdoc/fpdocproj.pas
-M	utils/fpdoc/fpdocstrs.pp
-M	utils/fpdoc/mkfpdoc.pp
-
-******************************************************************************
-commit 38b6bb7385ff361644a253078cb4c0d880969720
-Author: michael <michael@freepascal.org>
-Date:   Mon Jan 18 13:23:52 2021 +0000
-
-    * Patch from Andrey Sobol to improve inheritance tree
-    
-    git-svn-id: trunk@48169 -
-
-M	utils/fpdoc/dw_chm.pp
-M	utils/fpdoc/dw_html.pp
-M	utils/fpdoc/dw_xml.pp
 
 ******************************************************************************
 commit d4ad618a702802f02fe4196ce6487f15c5535bed
@@ -11677,19 +10896,6 @@ M	compiler/x86/nx86mat.pas
 M	compiler/x86_64/nx64mat.pas
 
 ******************************************************************************
-commit 4c22d66aac5663804f6f4b9af16ce267ec06ac7b
-Author: michael <michael@freepascal.org>
-Date:   Sat Jan 16 16:55:48 2021 +0000
-
-    * Fix compilation
-    
-    git-svn-id: trunk@48165 -
-
-M	utils/fpdoc/fpdocxmlopts.pas
-M	utils/fpdoc/fpmake.pp
-M	utils/fpdoc/makeskel.pp
-
-******************************************************************************
 commit 8618a3b21f4079b12a7b439c9026d3ace63d3925
 Author: florian <florian@freepascal.org>
 Date:   Sat Jan 16 15:38:29 2021 +0000
@@ -11700,39 +10906,6 @@ Date:   Sat Jan 16 15:38:29 2021 +0000
     git-svn-id: trunk@48164 -
 
 M	compiler/x86_64/nx64mat.pas
-
-******************************************************************************
-commit b30d54b06466072b47197a54ced7cf420b3b87de
-Author: michael <michael@freepascal.org>
-Date:   Sat Jan 16 15:05:44 2021 +0000
-
-    * Patches from Andrey Sobol, more control over warnings, improve class tree and resolving
-    
-    git-svn-id: trunk@48163 -
-
-M	.gitattributes
-M	utils/fpdoc/dglobals.pp
-M	utils/fpdoc/dw_basehtml.pp
-M	utils/fpdoc/dw_basemd.pp
-M	utils/fpdoc/dw_chm.pp
-M	utils/fpdoc/dw_html.pp
-M	utils/fpdoc/dw_ipflin.pas
-M	utils/fpdoc/dw_latex.pp
-M	utils/fpdoc/dw_linrtf.pp
-M	utils/fpdoc/dw_man.pp
-M	utils/fpdoc/dw_markdown.pp
-M	utils/fpdoc/dw_txt.pp
-M	utils/fpdoc/dw_xml.pp
-M	utils/fpdoc/dwlinear.pp
-M	utils/fpdoc/dwriter.pp
-M	utils/fpdoc/fpclasschart.pp
-M	utils/fpdoc/fpdoc.lpi
-M	utils/fpdoc/fpdoc.pp
-M	utils/fpdoc/fpdocclasstree.pp
-M	utils/fpdoc/fpdocproj.pas
-A	utils/fpdoc/fpdocstrs.pp
-M	utils/fpdoc/fpmake.pp
-M	utils/fpdoc/mkfpdoc.pp
 
 ******************************************************************************
 commit 707bce74d765b6442a28036f5bbb0320c61b7560
@@ -11769,17 +10942,6 @@ M	compiler/ogbase.pas
 M	compiler/x86_64/cpuelf.pas
 
 ******************************************************************************
-commit c21e777c856e6658b238c86a2e607c5bbebf3061
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Thu Jan 14 12:30:57 2021 +0000
-
-    pastojs: fixed freeing temp intf var if nil
-    
-    git-svn-id: trunk@48155 -
-
-M	utils/pas2js/dist/rtl.js
-
-******************************************************************************
 commit 1fa5edd34e6fe5bb45b76893a5a8b3b83f8d03ce
 Author: pierre <pierre@freepascal.org>
 Date:   Wed Jan 13 10:07:37 2021 +0000
@@ -11807,39 +10969,6 @@ Date:   Tue Jan 12 21:45:38 2021 +0000
 M	compiler/ncnv.pas
 
 ******************************************************************************
-commit 000de377b9986a921288e8838374756d8be1b323
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Mon Jan 11 22:05:20 2021 +0000
-
-    fcl-passrc: fixed compile with pas2js
-    
-    git-svn-id: trunk@48139 -
-
-M	packages/fcl-passrc/src/pasresolver.pp
-
-******************************************************************************
-commit 2833bf671000e14079c2e2c2fe2da52016661e45
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Mon Jan 11 22:04:22 2021 +0000
-
-    fcl-passrc: fixed mem leak
-    
-    git-svn-id: trunk@48138 -
-
-M	packages/fcl-passrc/src/pparser.pp
-
-******************************************************************************
-commit 05d916a65227badd5385f5ac032a97dae8dfc20d
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Mon Jan 11 22:03:40 2021 +0000
-
-    pastojs: clean up
-    
-    git-svn-id: trunk@48137 -
-
-M	packages/pastojs/src/fppas2js.pp
-
-******************************************************************************
 commit a286ad9d774c19718bea0cbfc84347dc67dd4862
 Author: florian <florian@freepascal.org>
 Date:   Mon Jan 11 21:47:32 2021 +0000
@@ -11850,18 +10979,6 @@ Date:   Mon Jan 11 21:47:32 2021 +0000
     git-svn-id: trunk@48136 -
 
 M	compiler/x86_64/cpupara.pas
-
-******************************************************************************
-commit 22864b47e45fa6be6cc7f5c7aae41f4cfc1dc65b
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Sun Jan 10 22:56:39 2021 +0000
-
-    pastojs: record complex only for records with class vars
-    
-    git-svn-id: trunk@48131 -
-
-M	packages/pastojs/src/fppas2js.pp
-M	packages/pastojs/tests/tcmodules.pas
 
 ******************************************************************************
 commit 5c2303a76b1a616d24f9e41679bf61f79020f4c4
@@ -11959,30 +11076,6 @@ M	rtl/linux/system.pp
 M	rtl/linux/x86_64/si_prc.inc
 
 ******************************************************************************
-commit c99a97cc556fae2e8be10331d80f4ea84c1164a7
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Sat Jan 9 13:57:13 2021 +0000
-
-    pastojs: started library
-    
-    git-svn-id: trunk@48119 -
-
-M	packages/pastojs/src/fppas2js.pp
-M	packages/pastojs/tests/tcmodules.pas
-
-******************************************************************************
-commit 3b0df17bd1aef745b10b393855a3908a40725bf2
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Sat Jan 9 13:56:28 2021 +0000
-
-    fcl-passrc: resolver: check library export function overload
-    
-    git-svn-id: trunk@48118 -
-
-M	packages/fcl-passrc/src/pasresolver.pp
-M	packages/fcl-passrc/tests/tcresolver.pas
-
-******************************************************************************
 commit f42f62565bf31b15c943b91eab9fc5a9569e01fe
 Author: florian <florian@freepascal.org>
 Date:   Fri Jan 8 22:29:24 2021 +0000
@@ -12048,23 +11141,6 @@ M	rtl/linux/ostypes.inc
 M	rtl/linux/system.pp
 
 ******************************************************************************
-commit de28024427f97c269f6f178e620453f031639289
-Author: michael <michael@freepascal.org>
-Date:   Thu Jan 7 13:24:12 2021 +0000
-
-    * Patch from Andrey Sobol to improve names, improve XML structure
-    
-    git-svn-id: trunk@48103 -
-
-M	utils/fpdoc/dglobals.pp
-M	utils/fpdoc/dw_chm.pp
-M	utils/fpdoc/dw_html.pp
-M	utils/fpdoc/dw_markdown.pp
-M	utils/fpdoc/dw_xml.pp
-M	utils/fpdoc/dwriter.pp
-M	utils/fpdoc/fpdocclasstree.pp
-
-******************************************************************************
 commit 80282d6effe141239c36d02d418c51142b38f6f5
 Author: Jonas Maebe <jonas@freepascal.org>
 Date:   Wed Jan 6 22:35:40 2021 +0000
@@ -12116,54 +11192,6 @@ Date:   Wed Jan 6 12:52:36 2021 +0000
 M	compiler/ncgcon.pas
 
 ******************************************************************************
-commit 26a446308bf5e3c4f94b139e47ce6d0e92587ad8
-Author: michael <michael@freepascal.org>
-Date:   Wed Jan 6 12:25:17 2021 +0000
-
-    * Fix compilation with CheckPasTreeRefCount define
-    
-    git-svn-id: trunk@48094 -
-
-M	utils/fpdoc/dglobals.pp
-
-******************************************************************************
-commit 498805c1ca93d4c0784d2d3b7a0a1dbcfa7e5e54
-Author: michael <michael@freepascal.org>
-Date:   Wed Jan 6 12:24:09 2021 +0000
-
-    * Patch from Andrey Sobol to control XML file layout
-    
-    git-svn-id: trunk@48093 -
-
-M	utils/fpdoc/dw_html.pp
-M	utils/fpdoc/dw_xml.pp
-M	utils/fpdoc/dwriter.pp
-
-******************************************************************************
-commit e2ffecb4c8f67de55db5462dae208bf62d5353c4
-Author: michael <michael@freepascal.org>
-Date:   Wed Jan 6 10:07:05 2021 +0000
-
-    * Fix GetFileBaseDir
-    
-    git-svn-id: trunk@48092 -
-
-M	utils/fpdoc/dwriter.pp
-
-******************************************************************************
-commit cccff5826e2deb66371aaf7cbe359af9f62932b3
-Author: michael <michael@freepascal.org>
-Date:   Wed Jan 6 09:13:33 2021 +0000
-
-    * Fix memleak, additional list/indent, patch from Andrey Sobol
-    
-    git-svn-id: trunk@48091 -
-
-M	utils/fpdoc/dw_basemd.pp
-M	utils/fpdoc/dw_markdown.pp
-M	utils/fpdoc/dwriter.pp
-
-******************************************************************************
 commit aec18c2426a503c0c85e057bbc2f029d649fe3bf
 Author: florian <florian@freepascal.org>
 Date:   Tue Jan 5 22:39:16 2021 +0000
@@ -12195,17 +11223,6 @@ A	tests/webtbs/tw38310b.pp
 A	tests/webtbs/tw38310c.pp
 
 ******************************************************************************
-commit 87f2c282d1615706b9e3f3f68658550bc6984f2e
-Author: michael <michael@freepascal.org>
-Date:   Tue Jan 5 17:00:32 2021 +0000
-
-    * Patch from Andrey Sobol to reduce indentation
-    
-    git-svn-id: trunk@48087 -
-
-M	utils/fpdoc/dw_chm.pp
-
-******************************************************************************
 commit 28efcfba65295ebf1b88238906b79594fe54fda4
 Author: florian <florian@freepascal.org>
 Date:   Tue Jan 5 15:15:41 2021 +0000
@@ -12219,28 +11236,6 @@ M	compiler/x86/aoptx86.pas
 M	compiler/x86_64/aoptcpu.pas
 
 ******************************************************************************
-commit b31305810c4b859baa6238de5168fae0c174b3c5
-Author: michael <michael@freepascal.org>
-Date:   Tue Jan 5 09:21:25 2021 +0000
-
-    * print context in Release in debug mode
-    
-    git-svn-id: trunk@48083 -
-
-M	packages/fcl-passrc/src/pastree.pp
-
-******************************************************************************
-commit 7adcd2a8a27ff89558856756c8f7abd002623d88
-Author: michael <michael@freepascal.org>
-Date:   Tue Jan 5 09:20:45 2021 +0000
-
-    * Fix memleak when using packages
-    
-    git-svn-id: trunk@48082 -
-
-M	packages/fcl-passrc/src/pparser.pp
-
-******************************************************************************
 commit de36d6c0499c2ce4ceba4825d004767f0ba944bb
 Author: florian <florian@freepascal.org>
 Date:   Mon Jan 4 21:54:36 2021 +0000
@@ -12250,17 +11245,6 @@ Date:   Mon Jan 4 21:54:36 2021 +0000
     git-svn-id: trunk@48070 -
 
 M	compiler/x86/rgx86.pas
-
-******************************************************************************
-commit d42c334de9e1ef0539a332070e03c71e6a8d6a65
-Author: michael <michael@freepascal.org>
-Date:   Mon Jan 4 09:13:08 2021 +0000
-
-    * Fix memory leak, patch from Andrey Sobol
-    
-    git-svn-id: trunk@48025 -
-
-M	utils/fpdoc/dwriter.pp
 
 ******************************************************************************
 commit 38ddf2e8c5883189c13fdce704f28862c91fec07
@@ -12347,29 +11331,6 @@ M	compiler/x86/nx86inl.pas
 A	tests/webtbs/tw38295.pp
 
 ******************************************************************************
-commit 743e7c1c1b262e4759249841f36d12241bd5a252
-Author: michael <michael@freepascal.org>
-Date:   Sun Jan 3 15:30:41 2021 +0000
-
-    * Forgot to commit
-    
-    git-svn-id: trunk@48014 -
-
-M	.gitattributes
-A	utils/fpdoc/dw_basehtml.pp
-
-******************************************************************************
-commit 1332915a102f8e7866820466706c371988d8d453
-Author: marco <marco@freepascal.org>
-Date:   Sun Jan 3 15:21:43 2021 +0000
-
-     * still add files that start with ., just not to FTS
-    
-    git-svn-id: trunk@48013 -
-
-M	utils/fpdoc/dw_chm.pp
-
-******************************************************************************
 commit 12adb47d65e06d4d730cbb860c711bb668a94367
 Author: florian <florian@freepascal.org>
 Date:   Sun Jan 3 15:03:27 2021 +0000
@@ -12381,35 +11342,6 @@ Date:   Sun Jan 3 15:03:27 2021 +0000
 M	compiler/nadd.pas
 
 ******************************************************************************
-commit 7ee4954b0b14278ddb80ab8f63cf25e4ece27bdf
-Author: michael <michael@freepascal.org>
-Date:   Sun Jan 3 14:08:48 2021 +0000
-
-    * Refactor HTML engine so it can more easily be extended
-    
-    git-svn-id: trunk@48010 -
-
-M	utils/fpdoc/dglobals.pp
-M	utils/fpdoc/dw_basemd.pp
-M	utils/fpdoc/dw_chm.pp
-M	utils/fpdoc/dw_html.pp
-M	utils/fpdoc/dw_markdown.pp
-M	utils/fpdoc/dwriter.pp
-M	utils/fpdoc/fpdoc.lpi
-M	utils/fpdoc/fpdoc.pp
-
-******************************************************************************
-commit 7be3d2f80ce7a98a905d86f22b52b1b7240f3bea
-Author: michael <michael@freepascal.org>
-Date:   Sun Jan 3 14:08:02 2021 +0000
-
-    * get rid of some warnings
-    
-    git-svn-id: trunk@48009 -
-
-M	utils/fpdoc/fpdocclasstree.pp
-
-******************************************************************************
 commit b8578f804f48a7e7fc45a176f4556cf729dab2db
 Author: svenbarth <pascaldragon@googlemail.com>
 Date:   Sun Jan 3 12:11:44 2021 +0000
@@ -12419,45 +11351,6 @@ Date:   Sun Jan 3 12:11:44 2021 +0000
     git-svn-id: trunk@48007 -
 
 M	compiler/dbgstabs.pas
-
-******************************************************************************
-commit 1afca037c69906e6da5f5a3361082afc693997cd
-Author: michael <michael@freepascal.org>
-Date:   Sun Jan 3 08:37:52 2021 +0000
-
-    * Help for markdown
-    
-    git-svn-id: trunk@48005 -
-
-M	utils/fpdoc/dglobals.pp
-M	utils/fpdoc/dw_markdown.pp
-
-******************************************************************************
-commit 9825d3b552bf219121ac50cccf8dedb4399cd535
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Sun Jan 3 01:06:04 2021 +0000
-
-    pastojs: filer export nameexpr
-    
-    git-svn-id: trunk@48004 -
-
-M	packages/pastojs/src/pas2jsfiler.pp
-M	packages/pastojs/tests/tcfiler.pas
-
-******************************************************************************
-commit e911431ed44dfbe86cf44a0b5251571f0184ba72
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Sun Jan 3 01:04:26 2021 +0000
-
-    fcl-passrc: parser: export unit.symbol, resolver: started library export
-    
-    git-svn-id: trunk@48003 -
-
-M	packages/fcl-passrc/src/pasresolveeval.pas
-M	packages/fcl-passrc/src/pasresolver.pp
-M	packages/fcl-passrc/src/pastree.pp
-M	packages/fcl-passrc/src/pparser.pp
-M	packages/fcl-passrc/tests/tcresolver.pas
 
 ******************************************************************************
 commit c96029ebd57c852dd3f006cf8769d9fd5473a605
@@ -12575,40 +11468,6 @@ M	compiler/nadd.pas
 M	tests/webtbs/tw38267b.pp
 
 ******************************************************************************
-commit b387dd8a94d9b8cb731f1af22f067bb2fde0b2b2
-Author: michael <michael@freepascal.org>
-Date:   Sat Jan 2 22:05:34 2021 +0000
-
-    * Fix AV
-    
-    git-svn-id: trunk@47981 -
-
-M	utils/fpdoc/dw_html.pp
-
-******************************************************************************
-commit bb8fd96eaab194716923c358ab0d2059a2fbbe98
-Author: marco <marco@freepascal.org>
-Date:   Sat Jan 2 21:13:03 2021 +0000
-
-     * fix destructor
-    
-    git-svn-id: trunk@47980 -
-
-M	utils/fpdoc/dw_chm.pp
-
-******************************************************************************
-commit 33d7935b938817659f98980d09a60496b3dad527
-Author: michael <michael@freepascal.org>
-Date:   Sat Jan 2 19:05:31 2021 +0000
-
-    * Fix class tree & lists
-    
-    git-svn-id: trunk@47978 -
-
-M	utils/fpdoc/dw_basemd.pp
-M	utils/fpdoc/dw_markdown.pp
-
-******************************************************************************
 commit 7de94e7a1dd1ee7de675c334fc936a64f72fb978
 Author: florian <florian@freepascal.org>
 Date:   Sat Jan 2 17:18:54 2021 +0000
@@ -12632,41 +11491,6 @@ Date:   Sat Jan 2 16:39:39 2021 +0000
     git-svn-id: trunk@47976 -
 
 M	rtl/inc/astrings.inc
-
-******************************************************************************
-commit 390be003270ebc451ae48945805c9a39bfbbf603
-Author: michael <michael@freepascal.org>
-Date:   Sat Jan 2 14:28:45 2021 +0000
-
-    * Markdown support for fpdoc
-    
-    git-svn-id: trunk@47973 -
-
-M	.gitattributes
-M	utils/fpdoc/dglobals.pp
-A	utils/fpdoc/dw_basemd.pp
-M	utils/fpdoc/dw_chm.pp
-M	utils/fpdoc/dw_html.pp
-A	utils/fpdoc/dw_markdown.pp
-M	utils/fpdoc/dwriter.pp
-M	utils/fpdoc/fpdoc.lpi
-M	utils/fpdoc/fpdoc.pp
-M	utils/fpdoc/fpmake.pp
-
-******************************************************************************
-commit f0122bd4a0d3c4897a53355d607138136b5c00a1
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Fri Jan 1 22:29:58 2021 +0000
-
-    fcl-passrc: resolver: parse library
-    
-    git-svn-id: trunk@47936 -
-
-M	packages/fcl-passrc/src/pasresolveeval.pas
-M	packages/fcl-passrc/src/pasresolver.pp
-M	packages/fcl-passrc/src/pastree.pp
-M	packages/fcl-passrc/src/pparser.pp
-M	packages/fcl-passrc/tests/tcresolver.pas
 
 ******************************************************************************
 commit e6037961e3be89a55dcb273dd8327fdb85d5338c
@@ -12717,45 +11541,6 @@ Date:   Thu Dec 31 15:33:39 2020 +0000
 M	compiler/avr/aoptcpu.pas
 
 ******************************************************************************
-commit c1a2b6279e7e289be8a8fb507f2fc8c9a0d9a48e
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Thu Dec 31 01:07:33 2020 +0000
-
-    pastojs: fixed delay init specialized interface
-    
-    git-svn-id: trunk@47919 -
-
-M	packages/pastojs/src/fppas2js.pp
-M	packages/pastojs/tests/tcgenerics.pas
-M	packages/pastojs/tests/tcmodules.pas
-
-******************************************************************************
-commit 4353d365164ae502be72eba16d6edcadfafbc52b
-Author: marco <marco@freepascal.org>
-Date:   Wed Dec 30 20:37:24 2020 +0000
-
-     * commited patch(-5) by Andrey Sobol from mantis #38153 .
-    
-    git-svn-id: trunk@47915 -
-
-M	utils/fpdoc/dglobals.pp
-M	utils/fpdoc/dw_chm.pp
-M	utils/fpdoc/dw_html.pp
-M	utils/fpdoc/fpdoc.pp
-
-******************************************************************************
-commit 7032cba91ed5026a738f088df2e6af00ec884e6f
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Wed Dec 30 16:12:47 2020 +0000
-
-    fcl-passrc: resolver: fixed typecast a(b.func) marking implicit call
-    
-    git-svn-id: trunk@47914 -
-
-M	packages/fcl-passrc/src/pasresolver.pp
-M	packages/pastojs/tests/tcgenerics.pas
-
-******************************************************************************
 commit 32999fbaba853286412aed98a5d2a89262a0cd65
 Author: joost <joost@cnoc.nl>
 Date:   Wed Dec 30 15:41:44 2020 +0000
@@ -12767,18 +11552,6 @@ Date:   Wed Dec 30 15:41:44 2020 +0000
 M	compiler/utils/samplecfg
 
 ******************************************************************************
-commit 46d301b7b2eb4b7f6e9d9b538fa9c1697c1586f0
-Author: michael <michael@freepascal.org>
-Date:   Wed Dec 30 14:35:30 2020 +0000
-
-    * Function result can also contain ^ in type
-    
-    git-svn-id: trunk@47911 -
-
-M	packages/fcl-passrc/src/pparser.pp
-M	packages/fcl-passrc/tests/tcprocfunc.pas
-
-******************************************************************************
 commit b5725ac3ed071ec564e8f49a80e89b9d46b54bf6
 Author: florian <florian@freepascal.org>
 Date:   Wed Dec 30 09:34:22 2020 +0000
@@ -12788,32 +11561,6 @@ Date:   Wed Dec 30 09:34:22 2020 +0000
     git-svn-id: trunk@47901 -
 
 M	rtl/i386/cpu.pp
-
-******************************************************************************
-commit 6dafbfb7caf4236a6ae2e641781eb037f7c750c1
-Author: michael <michael@freepascal.org>
-Date:   Wed Dec 30 08:52:38 2020 +0000
-
-    * Fix Pointer types as arguments
-    
-    git-svn-id: trunk@47900 -
-
-M	packages/fcl-passrc/src/pparser.pp
-M	packages/fcl-passrc/tests/tcprocfunc.pas
-
-******************************************************************************
-commit 8eafcd94903fe7432fe15d90fe3533e88c155a18
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Tue Dec 29 23:18:41 2020 +0000
-
-    pastojs: await with one param must be async function
-    
-    git-svn-id: trunk@47895 -
-
-M	packages/fcl-passrc/tests/tcresolver.pas
-M	packages/pastojs/src/fppas2js.pp
-M	packages/pastojs/tests/tcmodules.pas
-M	utils/pas2js/docs/translation.html
 
 ******************************************************************************
 commit edfbf2ce30215262b7e8c2d5f0b9c516bead4fc3
@@ -12866,79 +11613,6 @@ Date:   Tue Dec 29 13:07:41 2020 +0000
 M	compiler/x86/nx86inl.pas
 
 ******************************************************************************
-commit 73dd1afd7da796221696f4f8865915e206e7907f
-Author: michael <michael@freepascal.org>
-Date:   Tue Dec 29 10:42:40 2020 +0000
-
-    * Fix bug ID #38269 (caret can be start of string)
-    
-    git-svn-id: trunk@47889 -
-
-M	packages/fcl-passrc/src/pscanner.pp
-M	packages/fcl-passrc/tests/tcscanner.pas
-
-******************************************************************************
-commit 50c659b1ca7ff84d6c361b46afb131e33ac41ec0
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Tue Dec 29 02:38:12 2020 +0000
-
-    fcl-passrc: separate hints for not used fields: 4501, 4502
-    
-    git-svn-id: trunk@47882 -
-
-M	packages/fcl-passrc/src/pasuseanalyzer.pas
-M	packages/fcl-passrc/tests/tcuseanalyzer.pas
-
-******************************************************************************
-commit baac8efaab1bf695dadcedbc646fd5d213210b74
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Tue Dec 29 01:54:31 2020 +0000
-
-    fcl-passrc: resolver: fixed resolving string lit switching to utf-16
-    
-    git-svn-id: trunk@47881 -
-
-M	packages/fcl-passrc/src/pasresolveeval.pas
-
-******************************************************************************
-commit db0fe18de51927920bbcecc14da26d2e5b164821
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Tue Dec 29 01:16:22 2020 +0000
-
-    fcl-passrc: fixed implicit call of specialized method
-    
-    git-svn-id: trunk@47880 -
-
-M	packages/fcl-passrc/src/pasresolver.pp
-M	packages/pastojs/tests/tcgenerics.pas
-
-******************************************************************************
-commit 1f4868caa8dc3fd6271e2b525cadc05e29958a07
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Tue Dec 29 00:26:00 2020 +0000
-
-    fcl-passrc: fixed parsing a(b).c<d>()
-    
-    git-svn-id: trunk@47879 -
-
-M	packages/fcl-passrc/src/pasresolver.pp
-M	packages/fcl-passrc/src/pastree.pp
-M	packages/fcl-passrc/src/pparser.pp
-M	packages/fcl-passrc/tests/tcresolvegenerics.pas
-
-******************************************************************************
-commit 1d1dce1f60673a24304e4d91778c292e31e37e76
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Mon Dec 28 18:19:35 2020 +0000
-
-    fcl-passrc: fixed resolve string lit on non utf-8 system
-    
-    git-svn-id: trunk@47872 -
-
-M	packages/fcl-passrc/src/pasresolveeval.pas
-M	packages/fcl-passrc/tests/tcresolver.pas
-
-******************************************************************************
 commit ea55c5f7e39447230d15779135130b2aa860cee0
 Author: Jonas Maebe <jonas@freepascal.org>
 Date:   Mon Dec 28 16:58:58 2020 +0000
@@ -12951,19 +11625,6 @@ Date:   Mon Dec 28 16:58:58 2020 +0000
 M	packages/hash/src/sha1.pp
 
 ******************************************************************************
-commit 1cc31e73da4d17e0a1c1910c7913efa86e75210e
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Mon Dec 28 16:51:02 2020 +0000
-
-    fcl-passrc: fixed typecast specialized array to specialized type
-    
-    git-svn-id: trunk@47870 -
-
-M	packages/fcl-passrc/src/pasresolveeval.pas
-M	packages/fcl-passrc/src/pasresolver.pp
-M	packages/fcl-passrc/tests/tcresolvegenerics.pas
-
-******************************************************************************
 commit 93be88b270d425ff7725db6f653519d2459ae3dc
 Author: florian <florian@freepascal.org>
 Date:   Mon Dec 28 16:18:55 2020 +0000
@@ -12973,20 +11634,6 @@ Date:   Mon Dec 28 16:18:55 2020 +0000
     git-svn-id: trunk@47869 -
 
 M	compiler/dirparse.pas
-
-******************************************************************************
-commit f1db695809e6e10fb92acc7ae1162c07b21c91e8
-Author: michael <michael@freepascal.org>
-Date:   Mon Dec 28 13:55:22 2020 +0000
-
-    * Move chm writer to separate unit
-    
-    git-svn-id: trunk@47868 -
-
-M	.gitattributes
-R096	utils/fpdoc/dw_htmlchm.inc	utils/fpdoc/dw_chm.pp
-M	utils/fpdoc/dw_html.pp
-M	utils/fpdoc/fpdoc.pp
 
 ******************************************************************************
 commit 185f20b9ecfaa598d6d6e3c042707c4e87273e0f
@@ -13009,19 +11656,6 @@ Date:   Sun Dec 27 21:54:01 2020 +0000
     git-svn-id: trunk@47862 -
 
 M	compiler/dirparse.pas
-
-******************************************************************************
-commit 968ea5c38bd9d81d61de6744187b0f5e951afc0f
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Sun Dec 27 20:51:52 2020 +0000
-
-    fcl-passrc: check class intf impl proc type modifiers match
-    
-    git-svn-id: trunk@47861 -
-
-M	packages/fcl-passrc/src/pasresolver.pp
-M	packages/fcl-passrc/tests/tcresolvegenerics.pas
-M	packages/pastojs/tests/tcmodules.pas
 
 ******************************************************************************
 commit 6d03f2807a94366b797af7c01350beda4fd19b3b
@@ -13306,18 +11940,6 @@ Date:   Wed Dec 23 10:19:44 2020 +0000
 M	compiler/x86/aoptx86.pas
 
 ******************************************************************************
-commit ed3741f06e1a008c4f430b3fdaf40ba0aa2e0d0d
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Wed Dec 23 01:07:00 2020 +0000
-
-    fcl-passrc: typecast generic template type to generic template type
-    
-    git-svn-id: trunk@47836 -
-
-M	packages/fcl-passrc/src/pasresolver.pp
-M	packages/fcl-passrc/tests/tcresolvegenerics.pas
-
-******************************************************************************
 commit 01691e9ecbe3a4cccd531799227886d3d1ac92b1
 Author: Károly Balogh <karoly@freepascal.org>
 Date:   Tue Dec 22 23:14:25 2020 +0000
@@ -13366,42 +11988,6 @@ Date:   Mon Dec 21 21:43:06 2020 +0000
 M	rtl/freertos/xtensa/esp8266.pp
 
 ******************************************************************************
-commit f0961c17c8812014bde80bd29a236cd5eac36788
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Mon Dec 21 15:52:23 2020 +0000
-
-    pastojs: fixed UTF-16 chars
-    
-    git-svn-id: trunk@47831 -
-
-M	packages/pastojs/src/fppas2js.pp
-M	packages/pastojs/tests/tcmodules.pas
-
-******************************************************************************
-commit fe4fda2a359439d0696f3270ea1876e1d0b448b7
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Mon Dec 21 15:50:50 2020 +0000
-
-    fcl-passrc: resolver: split source and target codepage
-    
-    git-svn-id: trunk@47830 -
-
-M	packages/fcl-passrc/src/pasresolveeval.pas
-M	packages/fcl-passrc/src/pasresolver.pp
-M	packages/fcl-passrc/tests/tcresolver.pas
-
-******************************************************************************
-commit 049af48bd8c5d759b341fc8edfb36184ea57a31a
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Mon Dec 21 15:48:48 2020 +0000
-
-    fcl-js: writer: fixed writing invalid UTF-16
-    
-    git-svn-id: trunk@47829 -
-
-M	packages/fcl-js/src/jswriter.pp
-
-******************************************************************************
 commit 2a990b8167e0da36ce24a4e90263ac8e6cb47aae
 Author: florian <florian@freepascal.org>
 Date:   Sun Dec 20 18:05:43 2020 +0000
@@ -13436,41 +12022,6 @@ Date:   Sat Dec 19 11:57:58 2020 +0000
 
 M	rtl/win/sysutils.pp
 M	rtl/win/wininc/redef.inc
-
-******************************************************************************
-commit 3f7d3e17cdcef7d7f1779cdeb59d24ad5716a8ab
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Sat Dec 19 11:46:53 2020 +0000
-
-    fcl-passrc: use fmShareDenyNone when writing pas
-    
-    git-svn-id: trunk@47816 -
-
-M	packages/fcl-passrc/src/paswrite.pp
-
-******************************************************************************
-commit 58421e40c66877cf706c8ca6badcd9a0420bf113
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Sat Dec 19 11:46:06 2020 +0000
-
-    pastojs: use fmShareDenyNone when writing js
-    
-    git-svn-id: trunk@47815 -
-
-M	packages/pastojs/src/pas2jsfilecache.pp
-
-******************************************************************************
-commit c7d29ec1185c41eec255b0380679f4365f9674b1
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Sat Dec 19 11:37:36 2020 +0000
-
-    pastojs: test #256+
-    
-    git-svn-id: trunk@47814 -
-
-M	packages/fcl-passrc/src/pasresolveeval.pas
-M	packages/pastojs/src/fppas2js.pp
-M	packages/pastojs/tests/tcmodules.pas
 
 ******************************************************************************
 commit 1d92cc43bb5a80894d732202acd658d0add06c70
@@ -13636,17 +12187,6 @@ Date:   Mon Dec 14 11:21:10 2020 +0000
 M	compiler/aarch64/agcpugas.pas
 
 ******************************************************************************
-commit 6668e265e82b64d14294736bf0a0d9e17da2a110
-Author: michael <michael@freepascal.org>
-Date:   Sun Dec 13 11:57:58 2020 +0000
-
-    * Allow appending files
-    
-    git-svn-id: trunk@47770 -
-
-M	packages/pastojs/src/pas2jscompiler.pp
-
-******************************************************************************
 commit 6d7d567a25a28dccb3f5603644a4fccbb9f1bacf
 Author: florian <florian@freepascal.org>
 Date:   Sun Dec 13 09:52:45 2020 +0000
@@ -13729,44 +12269,6 @@ Date:   Fri Dec 11 22:14:16 2020 +0000
 M	compiler/m68k/cpubase.pas
 
 ******************************************************************************
-commit 879bc83d7bda5008dc3ce1ac0f3f03d206f683fc
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Fri Dec 11 20:04:02 2020 +0000
-
-    pastojs: fixed record member type
-    
-    git-svn-id: trunk@47760 -
-
-M	packages/pastojs/src/fppas2js.pp
-M	packages/pastojs/tests/tcmodules.pas
-M	packages/pastojs/tests/tcoptimizations.pas
-
-******************************************************************************
-commit 7e1cb64d5da303701915e3eb87bcd4a2ca18203b
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Fri Dec 11 17:33:45 2020 +0000
-
-    pastojs: fixed unit without implementation
-    
-    git-svn-id: trunk@47759 -
-
-M	packages/pastojs/src/fppas2js.pp
-M	packages/pastojs/src/pas2jsfiler.pp
-M	packages/pastojs/tests/tcprecompile.pas
-
-******************************************************************************
-commit 508d4baa688cdd81a1ead03cea07aef7e939d9a9
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Fri Dec 11 17:32:51 2020 +0000
-
-    fcl-passrc: resolver: fixed unit without implementation
-    
-    git-svn-id: trunk@47758 -
-
-M	packages/fcl-passrc/src/pasresolver.pp
-M	packages/fcl-passrc/src/pasuseanalyzer.pas
-
-******************************************************************************
 commit f0298f63d0a2442d867f9565155ac77ead27541c
 Author: florian <florian@freepascal.org>
 Date:   Fri Dec 11 17:32:41 2020 +0000
@@ -13788,17 +12290,6 @@ Date:   Fri Dec 11 14:17:18 2020 +0000
 
 M	.gitattributes
 A	tests/test/cg/texit2.pp
-
-******************************************************************************
-commit 3db8f5c91f3f96b30a174228294571a0aee4383e
-Author: michael <michael@freepascal.org>
-Date:   Fri Dec 11 13:34:44 2020 +0000
-
-    * Fix compilation
-    
-    git-svn-id: trunk@47754 -
-
-M	utils/pas2js/webfilecache.pp
 
 ******************************************************************************
 commit 0d592e8d1a3c232754f0de04a8803ed0dfc1b8a8
@@ -13899,40 +12390,6 @@ Date:   Thu Dec 10 04:17:06 2020 +0000
 M	compiler/m68k/cgcpu.pas
 
 ******************************************************************************
-commit 7f2c8857da7d6c320578e7465dd8200e5f73c502
-Author: michael <michael@freepascal.org>
-Date:   Wed Dec 9 23:33:53 2020 +0000
-
-    * Endianness
-    
-    git-svn-id: trunk@47743 -
-
-M	utils/fpdoc/fpdocproj.pas
-M	utils/fpdoc/mkfpdoc.pp
-
-******************************************************************************
-commit 07819e011571944e1419bc2c96cd77aee3139587
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Wed Dec 9 21:42:20 2020 +0000
-
-    pastojs: precompiled code: always store with unix line ending, write with platform line ending
-    
-    git-svn-id: trunk@47742 -
-
-M	packages/pastojs/src/fppas2js.pp
-
-******************************************************************************
-commit 2df2986a4b46d89d43e7a8d4577e852bc7dc86ef
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Wed Dec 9 21:42:13 2020 +0000
-
-    fcl-js: added TTextWriter.LineBreak
-    
-    git-svn-id: trunk@47741 -
-
-M	packages/fcl-js/src/jswriter.pp
-
-******************************************************************************
 commit a849e51a3c698f59fe89facb9b161b2d8d91bfdb
 Author: florian <florian@freepascal.org>
 Date:   Wed Dec 9 20:57:06 2020 +0000
@@ -13945,31 +12402,6 @@ M	compiler/m68k/aoptcpu.pas
 M	compiler/m68k/cpubase.pas
 
 ******************************************************************************
-commit 5682783489396616f5b574d08554b0cdde0aa5bd
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Wed Dec 9 20:51:20 2020 +0000
-
-    fcl-passrc: clean up
-    
-    git-svn-id: trunk@47739 -
-
-M	packages/fcl-passrc/src/pparser.pp
-M	packages/fcl-passrc/src/pscanner.pp
-
-******************************************************************************
-commit 7540f10aa684ca63655a8bccc3b507ed5dece16a
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Wed Dec 9 20:47:19 2020 +0000
-
-    pastojs: shortrefglobals: enumvalue
-    
-    git-svn-id: trunk@47738 -
-
-M	packages/pastojs/src/fppas2js.pp
-M	packages/pastojs/tests/tcmodules.pas
-M	packages/pastojs/tests/tcoptimizations.pas
-
-******************************************************************************
 commit a0e96fd55111b9f4512653f9f782b43a8e7b479d
 Author: pierre <pierre@freepascal.org>
 Date:   Wed Dec 9 12:36:46 2020 +0000
@@ -13979,62 +12411,6 @@ Date:   Wed Dec 9 12:36:46 2020 +0000
     git-svn-id: trunk@47737 -
 
 M	compiler/node.pas
-
-******************************************************************************
-commit 3a952d9346538099b97d4955bf03d27c7a104cd7
-Author: michael <michael@freepascal.org>
-Date:   Wed Dec 9 10:55:09 2020 +0000
-
-    * Fix from Pascal Riekenberg
-    
-    git-svn-id: trunk@47736 -
-
-M	packages/pastojs/src/pas2jsfiler.pp
-
-******************************************************************************
-commit 97341c24fbc70ce7c35ecd901470286b5c8fd81f
-Author: michael <michael@freepascal.org>
-Date:   Wed Dec 9 09:12:21 2020 +0000
-
-    * Actually allow multilinestrings
-    
-    git-svn-id: trunk@47734 -
-
-M	packages/pastojs/src/fppas2js.pp
-
-******************************************************************************
-commit 9766bd65337cc241f20b3e366205e77976fd6341
-Author: michael <michael@freepascal.org>
-Date:   Wed Dec 9 09:11:38 2020 +0000
-
-    * Small fix, refactoring broke linefeed
-    
-    git-svn-id: trunk@47733 -
-
-M	packages/fcl-passrc/src/pscanner.pp
-
-******************************************************************************
-commit 63a21876c801ed497d48f3cc498faebffff0262d
-Author: michael <michael@freepascal.org>
-Date:   Wed Dec 9 08:54:55 2020 +0000
-
-    * Fix compilation
-    
-    git-svn-id: trunk@47732 -
-
-M	packages/pastojs/src/pas2jsfiler.pp
-
-******************************************************************************
-commit 9e238f47240d9f5762a0300e1079992e9f365dbc
-Author: michael <michael@freepascal.org>
-Date:   Wed Dec 9 01:09:21 2020 +0000
-
-    * Multiline strings and INCLUDESTRING(FILE)
-    
-    git-svn-id: trunk@47731 -
-
-M	packages/fcl-passrc/src/pscanner.pp
-M	packages/fcl-passrc/tests/tcscanner.pas
 
 ******************************************************************************
 commit 3707cb4b1ec8931596f2e0c33e820358bbf0a085
@@ -14050,58 +12426,6 @@ M	compiler/nflw.pas
 M	tests/test/tminmax.pp
 
 ******************************************************************************
-commit 8fd3beb35bf6747eee5b7b913f39d60eee534d96
-Author: michael <michael@freepascal.org>
-Date:   Tue Dec 8 20:35:41 2020 +0000
-
-    * Fix compilation
-    
-    git-svn-id: trunk@47728 -
-
-M	packages/pastojs/src/pas2jsfiler.pp
-
-******************************************************************************
-commit b27054e170c308eebd5df68557dbf1b5cd0795f5
-Author: michael <michael@freepascal.org>
-Date:   Tue Dec 8 16:25:50 2020 +0000
-
-    * Parse Apple universal interfaces
-    
-    git-svn-id: trunk@47724 -
-
-M	packages/fcl-passrc/src/pastree.pp
-M	packages/fcl-passrc/src/pparser.pp
-M	packages/fcl-passrc/src/pscanner.pp
-M	packages/fcl-passrc/tests/tcpaswritestatements.pas
-M	packages/fcl-passrc/tests/tcprocfunc.pas
-M	packages/fcl-passrc/tests/tcresolver.pas
-M	packages/fcl-passrc/tests/tcscanner.pas
-M	packages/fcl-passrc/tests/tctypeparser.pas
-
-******************************************************************************
-commit 2421d6ab152478b72000eaa5446ac774ac7b9f18
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Tue Dec 8 11:52:47 2020 +0000
-
-    fcl-passrc: useanalyzer: when member needs typeinfo, mark parent too
-    
-    git-svn-id: trunk@47722 -
-
-M	packages/fcl-passrc/src/pasuseanalyzer.pas
-M	packages/fcl-passrc/tests/tcuseanalyzer.pas
-
-******************************************************************************
-commit bc88571884c8225326f760de9167de0e344e16a2
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Tue Dec 8 11:52:07 2020 +0000
-
-    pastojs: clean up
-    
-    git-svn-id: trunk@47721 -
-
-M	packages/pastojs/src/fppas2js.pp
-
-******************************************************************************
 commit 348be7657df8af9c28ad0230bd81e85ebb42dc2c
 Author: pierre <pierre@freepascal.org>
 Date:   Tue Dec 8 11:28:50 2020 +0000
@@ -14111,18 +12435,6 @@ Date:   Tue Dec 8 11:28:50 2020 +0000
     git-svn-id: trunk@47720 -
 
 M	compiler/node.pas
-
-******************************************************************************
-commit 9ac84262f66c36aea80d16ec475a0e3c2cae9352
-Author: michael <michael@freepascal.org>
-Date:   Tue Dec 8 09:49:44 2020 +0000
-
-    * Last patch from Andrey Sobol to fix bug ID #38141
-    
-    git-svn-id: trunk@47719 -
-
-M	utils/fpdoc/dw_html.pp
-M	utils/fpdoc/dw_htmlchm.inc
 
 ******************************************************************************
 commit 674c3f04e042493b93c3b89990bc321b20df1287
@@ -14138,59 +12450,6 @@ M	compiler/compinnr.pas
 M	compiler/x86/nx86inl.pas
 
 ******************************************************************************
-commit 18919b774d3db16411838794a85b464f6e14d4f5
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Mon Dec 7 18:49:54 2020 +0000
-
-    pastojs: fixed writing map file when OnWriteJS handler returns true
-    
-    git-svn-id: trunk@47714 -
-
-M	packages/pastojs/src/pas2jscompiler.pp
-
-******************************************************************************
-commit dbdd90a9896cdbad584b3c08b227b8daf168e59d
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Mon Dec 7 17:06:58 2020 +0000
-
-    pastojs: on handled error set LastErrorClass empty
-    
-    git-svn-id: trunk@47713 -
-
-M	packages/pastojs/src/pas2jslibcompiler.pp
-
-******************************************************************************
-commit e25848ab327f10bf844707d0d9af60df710aadd8
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Mon Dec 7 16:58:52 2020 +0000
-
-    pastojs: catch load file exceptions and turn into regular errors
-    
-    git-svn-id: trunk@47712 -
-
-M	packages/pastojs/src/pas2jscompiler.pp
-M	utils/pas2js/pas2js.pp
-
-******************************************************************************
-commit 9fc390877e7b139d3e23c734626c7c4e725802fb
-Author: michael <michael@freepascal.org>
-Date:   Mon Dec 7 11:55:51 2020 +0000
-
-    * Partially resolved ID 38141 : better handling of class hierarchy and cross-package links
-    
-    git-svn-id: trunk@47710 -
-
-M	utils/fpdoc/dglobals.pp
-M	utils/fpdoc/dw_html.pp
-M	utils/fpdoc/dw_txt.pp
-M	utils/fpdoc/dwriter.pp
-M	utils/fpdoc/fpclasschart.pp
-M	utils/fpdoc/fpdoc.lpi
-M	utils/fpdoc/fpdoc.pp
-M	utils/fpdoc/fpdocclasstree.pp
-M	utils/fpdoc/mkfpdoc.pp
-
-******************************************************************************
 commit a7232669fff29a5a4054bb64ea000f402d31bc45
 Author: pierre <pierre@freepascal.org>
 Date:   Mon Dec 7 07:28:04 2020 +0000
@@ -14204,29 +12463,6 @@ Date:   Mon Dec 7 07:28:04 2020 +0000
     git-svn-id: trunk@47709 -
 
 M	compiler/psub.pas
-
-******************************************************************************
-commit 54627fe1e76217fef3063d3385aa730390d940f6
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Sun Dec 6 22:18:05 2020 +0000
-
-    pastojs: filer: restore method decl SelfArg
-    
-    git-svn-id: trunk@47706 -
-
-M	packages/pastojs/src/fppas2js.pp
-M	packages/pastojs/src/pas2jsfiler.pp
-
-******************************************************************************
-commit bf5a2a46de09d0317a6805eb5c8181f407f56521
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Sun Dec 6 22:16:55 2020 +0000
-
-    fcl-passrc: fixed calling type helper method when unit implementation is not yet read
-    
-    git-svn-id: trunk@47705 -
-
-M	packages/fcl-passrc/src/pasresolver.pp
 
 ******************************************************************************
 commit 8d238cfaa17fdc886d8465f3d2416243400f30bc
@@ -14420,28 +12656,6 @@ Date:   Fri Dec 4 22:43:55 2020 +0000
 M	compiler/nadd.pas
 
 ******************************************************************************
-commit 0be298802b29e2546240f596cdedb1756a842741
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Fri Dec 4 13:54:29 2020 +0000
-
-    pastojs: filer: record values
-    
-    git-svn-id: trunk@47684 -
-
-M	packages/pastojs/src/pas2jsfiler.pp
-
-******************************************************************************
-commit d1cfb15a2ab797d207dd7d7eec470a1d455918ac
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Fri Dec 4 11:06:42 2020 +0000
-
-    pastojs: filer: fixed checking signature in interface used unit referenced by implementation and needing indirect implementation unit
-    
-    git-svn-id: trunk@47682 -
-
-M	packages/pastojs/src/pas2jsfiler.pp
-
-******************************************************************************
 commit 9c6bdcfbb793f7557fc0339c251a727e8f14b701
 Author: florian <florian@freepascal.org>
 Date:   Thu Dec 3 21:22:07 2020 +0000
@@ -14454,42 +12668,6 @@ Date:   Thu Dec 3 21:22:07 2020 +0000
 M	compiler/psub.pas
 
 ******************************************************************************
-commit b90504a45859fa6980399309d9bd80e6e32ff7d6
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Thu Dec 3 20:53:13 2020 +0000
-
-    pastojs: filer skip not fully specialized
-    
-    git-svn-id: trunk@47679 -
-
-M	packages/fcl-passrc/src/pasresolver.pp
-M	packages/fcl-passrc/src/pasuseanalyzer.pas
-M	packages/pastojs/src/pas2jsfiler.pp
-
-******************************************************************************
-commit 988b67ae718c89cb8c6ec676bed6f332570f0637
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Thu Dec 3 16:20:21 2020 +0000
-
-    pastojs: filer: fixed specialize A<B<C>>
-    
-    git-svn-id: trunk@47677 -
-
-M	packages/pastojs/src/pas2jsfiler.pp
-
-******************************************************************************
-commit 055cfa28b7b8240ce0a0351be532f77cc02c5e1c
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Thu Dec 3 16:20:10 2020 +0000
-
-    fcl-passrc: resolver: fixed specialize name of A<B<C>>
-    
-    git-svn-id: trunk@47676 -
-
-M	packages/fcl-passrc/src/pasresolveeval.pas
-M	packages/fcl-passrc/src/pasresolver.pp
-
-******************************************************************************
 commit 0cc91a50c782509d8fac0ed8f977f60a727fb387
 Author: pierre <pierre@freepascal.org>
 Date:   Thu Dec 3 11:05:36 2020 +0000
@@ -14499,66 +12677,6 @@ Date:   Thu Dec 3 11:05:36 2020 +0000
     git-svn-id: trunk@47675 -
 
 M	compiler/z80/raz80asm.pas
-
-******************************************************************************
-commit 0eac775cead23ff361fd0228c92a946334f10b5d
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Thu Dec 3 10:44:32 2020 +0000
-
-    pastojs: filer: fixed restoring overload names of specialized methods
-    
-    git-svn-id: trunk@47674 -
-
-M	packages/fcl-passrc/src/pasresolver.pp
-M	packages/pastojs/src/fppas2js.pp
-M	packages/pastojs/src/pas2jsfiler.pp
-
-******************************************************************************
-commit 7b223eafe1bd7325d5baf1ddaebe5b125c7da6df
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Thu Dec 3 09:48:52 2020 +0000
-
-    pastojs: filer: read inline specialize expr
-    
-    git-svn-id: trunk@47673 -
-
-M	packages/pastojs/src/pas2jsfiler.pp
-M	packages/pastojs/tests/tcfiler.pas
-
-******************************************************************************
-commit e2fb9a43b433914a63fba398e3f9878e9b11f640
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Thu Dec 3 08:42:26 2020 +0000
-
-    pastojs: filer: skip generic references to generic types
-    
-    git-svn-id: trunk@47672 -
-
-M	packages/pastojs/src/pas2jsfiler.pp
-
-******************************************************************************
-commit e17365b12a931c98d72f9c872ddf357d1671eaf3
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Thu Dec 3 00:02:19 2020 +0000
-
-    pastojs: fixed specialize impl procs
-    
-    git-svn-id: trunk@47670 -
-
-M	packages/pastojs/src/fppas2js.pp
-M	packages/pastojs/src/pas2jsfiler.pp
-M	packages/pastojs/tests/tcprecompile.pas
-
-******************************************************************************
-commit c1496a266e4e62f62b3bed2fadde559238b56195
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Thu Dec 3 00:01:54 2020 +0000
-
-    fcl-passrc: resolver: use declproc signature
-    
-    git-svn-id: trunk@47669 -
-
-M	packages/fcl-passrc/src/pasresolver.pp
 
 ******************************************************************************
 commit 482698e566a62166d5cbb129409ba2d4cba8ea86
@@ -14589,29 +12707,6 @@ M	compiler/symdef.pas
 M	compiler/symsym.pas
 M	compiler/symtype.pas
 M	compiler/verbose.pas
-
-******************************************************************************
-commit 01766a3ff702e3817bf4ea1c56422acf233fcc35
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Wed Dec 2 15:11:35 2020 +0000
-
-    pas2js: filer: fixed storing reference to await and debugger
-    
-    git-svn-id: trunk@47666 -
-
-M	packages/fcl-passrc/src/pasresolver.pp
-M	packages/pastojs/src/fppas2js.pp
-
-******************************************************************************
-commit 1c1e994ffca10483cb556aef789e4d33590a401f
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Wed Dec 2 13:58:53 2020 +0000
-
-    pastojs: delayed inits only for fully specialized types
-    
-    git-svn-id: trunk@47665 -
-
-M	packages/pastojs/src/fppas2js.pp
 
 ******************************************************************************
 commit a7fa31aa10ffd22de56175d14a6321fdcad160b5
@@ -14744,19 +12839,6 @@ M	compiler/x86/x86ins.dat
 M	compiler/x86_64/x8664ats.inc
 
 ******************************************************************************
-commit fc0b513c3aa0b1935f952701302ce7d4e7937566
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Mon Nov 30 22:04:34 2020 +0000
-
-    pastojs: shortrefglobals: unit initialization and empty implementation
-    
-    git-svn-id: trunk@47649 -
-
-M	packages/pastojs/src/fppas2js.pp
-M	packages/pastojs/src/pas2jsfiler.pp
-M	packages/pastojs/tests/tcoptimizations.pas
-
-******************************************************************************
 commit a82ac3fb6a78dc97743ef5200f97080c6d8c89c3
 Author: michael <michael@freepascal.org>
 Date:   Mon Nov 30 17:13:07 2020 +0000
@@ -14778,19 +12860,6 @@ Date:   Mon Nov 30 14:55:46 2020 +0000
 
 M	packages/fcl-db/src/base/bufdataset.pas
 M	packages/fcl-db/src/base/dbconst.pas
-
-******************************************************************************
-commit 05065e1d861998048fb5308c95a0195ad4646b7e
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Sun Nov 29 23:12:26 2020 +0000
-
-    pastojs: filer: add identifiers to scope for immediate specializations of TPasSpecializeType
-    
-    git-svn-id: trunk@47639 -
-
-M	packages/fcl-passrc/src/pasresolver.pp
-M	packages/pastojs/src/pas2jsfiler.pp
-M	packages/pastojs/tests/tcoptimizations.pas
 
 ******************************************************************************
 commit 8ddcb34e60d63a85c93a845c968d5bfb89816b97
@@ -14905,19 +12974,6 @@ Date:   Sun Nov 29 09:40:54 2020 +0000
 M	compiler/ppc68k.lpi
 
 ******************************************************************************
-commit 8431584251fc5ba36f8f2babd06d40e709e4b9c0
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Sun Nov 29 00:06:19 2020 +0000
-
-    fcl-passrc: resolver: error on using generic types without params
-    
-    git-svn-id: trunk@47627 -
-
-M	packages/fcl-passrc/src/pasresolver.pp
-M	packages/fcl-passrc/tests/tcresolvegenerics.pas
-M	packages/pastojs/tests/tcmodules.pas
-
-******************************************************************************
 commit 8e13adad4c6ad7e1b5a3a2f6358f0ae564eef30b
 Author: pierre <pierre@freepascal.org>
 Date:   Sat Nov 28 18:32:46 2020 +0000
@@ -15008,30 +13064,6 @@ M	.gitattributes
 D	rtl/linux/m68k/cprt21.as
 
 ******************************************************************************
-commit 150e78c56a5421f32380ea009e76137def681e98
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Sat Nov 28 13:19:30 2020 +0000
-
-    pastojs: fixed test TestExternalClass_SameNamePublishedProperty
-    
-    git-svn-id: trunk@47617 -
-
-M	packages/pastojs/tests/tcmodules.pas
-
-******************************************************************************
-commit fc04a83ff58d670422f6583277dda1b4cdb5766d
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Sat Nov 28 13:09:02 2020 +0000
-
-    pastojs: fixed -OoShortRefGlobals
-    
-    git-svn-id: trunk@47616 -
-
-M	packages/pastojs/src/fppas2js.pp
-M	packages/pastojs/src/pas2jscompiler.pp
-M	packages/pastojs/tests/tcprecompile.pas
-
-******************************************************************************
 commit f8c84dd1fd36d1647cca55943c640964579d13d9
 Author: pierre <pierre@freepascal.org>
 Date:   Sat Nov 28 12:06:36 2020 +0000
@@ -15041,31 +13073,6 @@ Date:   Sat Nov 28 12:06:36 2020 +0000
     git-svn-id: trunk@47615 -
 
 M	compiler/entfile.pas
-
-******************************************************************************
-commit 3808d9c7b6cf639f52c3e34346981eb5e8f62090
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Sat Nov 28 11:42:42 2020 +0000
-
-    pastojs: fixed typeinfo path of inline specialize type
-    
-    git-svn-id: trunk@47614 -
-
-M	packages/pastojs/src/fppas2js.pp
-M	packages/pastojs/tests/tcmodules.pas
-
-******************************************************************************
-commit f858ee635569ad7dfbd1a6aca36aa27dc197b75d
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Sat Nov 28 10:41:53 2020 +0000
-
-    pastojs: fixed crash when parser error in inline specialize expression
-    
-    git-svn-id: trunk@47613 -
-
-M	packages/fcl-passrc/src/pasresolver.pp
-M	packages/fcl-passrc/src/pastree.pp
-M	packages/fcl-passrc/src/pparser.pp
 
 ******************************************************************************
 commit eb098a3d116984e3c2fb2ca35e039f060efe8550
@@ -15088,33 +13095,6 @@ Date:   Fri Nov 27 17:16:20 2020 +0000
     git-svn-id: trunk@47611 -
 
 M	packages/fpmkunit/src/fpmkunit.pp
-
-******************************************************************************
-commit c7383e54cfec6f49d14cb23ae66936a02b32e470
-Author: michael <michael@freepascal.org>
-Date:   Fri Nov 27 16:59:40 2020 +0000
-
-    * Some fixes in fpdoc generation
-    
-    git-svn-id: trunk@47610 -
-
-M	packages/fpmkunit/src/fpmkunit.pp
-
-******************************************************************************
-commit e1dd6fd93275de94df00769c1cfba9ed2660ccf9
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Fri Nov 27 16:57:08 2020 +0000
-
-    pastojs: filer: fixed testsuite using shortrefglobals for all tests, added FormData js keyword, fixed shortrefglobals new/free instance fields
-    
-    git-svn-id: trunk@47609 -
-
-M	packages/pastojs/src/fppas2js.pp
-M	packages/pastojs/src/pas2jscompiler.pp
-M	packages/pastojs/src/pas2jsfiler.pp
-M	packages/pastojs/src/pas2jspcucompiler.pp
-M	packages/pastojs/tests/tcoptimizations.pas
-M	packages/pastojs/tests/tcunitsearch.pas
 
 ******************************************************************************
 commit 63a231a93d93ce645fcdf97141314ef42784af8a
@@ -15253,28 +13233,6 @@ Date:   Wed Nov 25 23:40:02 2020 +0000
 
 M	compiler/fppu.pas
 M	compiler/ppu.pas
-
-******************************************************************************
-commit 3d7c9690e0f74e9b962adb4f24716c2115c31a12
-Author: svenbarth <pascaldragon@googlemail.com>
-Date:   Wed Nov 25 22:48:48 2020 +0000
-
-    * the "otherwise" clause is in fact allowed in ISO Extended Pascal (see 6.1.2 and 6.9.3.5 of ISO 10206)
-    
-    git-svn-id: trunk@47596 -
-
-M	packages/fcl-passrc/src/pscanner.pp
-
-******************************************************************************
-commit 5ce84538a48ea77979cddaf43cbfadbfe1cb0f35
-Author: svenbarth <pascaldragon@googlemail.com>
-Date:   Wed Nov 25 22:48:38 2020 +0000
-
-    * name of the mode for ISO Extended Pascal is ExtendedPascal, not Extended
-    
-    git-svn-id: trunk@47595 -
-
-M	packages/fcl-passrc/src/pscanner.pp
 
 ******************************************************************************
 commit 787899b9216cf4e13cc1f584e803b2081baa8987
@@ -15670,29 +13628,6 @@ M	rtl/unix/dos.pp
 M	rtl/unix/sysutils.pp
 
 ******************************************************************************
-commit 0323f0b07d2733f03b904b2e34ab3127cff6c428
-Author: michael <michael@freepascal.org>
-Date:   Mon Nov 23 12:26:53 2020 +0000
-
-    * Fix compilation after class tree changes
-    
-    git-svn-id: trunk@47540 -
-
-M	utils/fpdoc/fpclasschart.pp
-
-******************************************************************************
-commit f1aca7f877d78b3f544426dde797749b0b46f225
-Author: michael <michael@freepascal.org>
-Date:   Mon Nov 23 08:30:17 2020 +0000
-
-    * Improved class tree building
-    
-    git-svn-id: trunk@47537 -
-
-M	utils/fpdoc/dw_html.pp
-M	utils/fpdoc/fpdocclasstree.pp
-
-******************************************************************************
 commit 95394d7f988e4ce245c1069ba4415e52c2844394
 Author: Tomas Hajny <hajny@freepascal.org>
 Date:   Mon Nov 23 01:08:39 2020 +0000
@@ -15844,255 +13779,6 @@ Date:   Sat Nov 21 21:42:33 2020 +0000
 M	compiler/options.pas
 
 ******************************************************************************
-commit bb3d4722519b13cf5ffe86d1c62c669efcd1a0a3
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Sat Nov 21 17:59:44 2020 +0000
-
-    fcl-passrc: fixed tests
-    
-    git-svn-id: trunk@47515 -
-
-M	packages/fcl-passrc/tests/tcresolvegenerics.pas
-M	packages/fcl-passrc/tests/tcresolver.pas
-
-******************************************************************************
-commit 0f391f5e1a05a43a6822eabac47b761a5df19bab
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Sat Nov 21 17:59:24 2020 +0000
-
-    undo
-    
-    git-svn-id: trunk@47514 -
-
-M	packages/fcl-passrc/tests/tcresolvegenerics.pas
-M	packages/fcl-passrc/tests/tcresolver.pas
-M	packages/pastojs/src/pas2jsfiler.pp
-
-******************************************************************************
-commit b8d5e9c8d2418c48155955bc216000c2a35dab3c
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Sat Nov 21 17:57:58 2020 +0000
-
-    fcl-passrc: fixed tests
-    
-    git-svn-id: trunk@47513 -
-
-M	packages/fcl-passrc/tests/tcresolvegenerics.pas
-M	packages/fcl-passrc/tests/tcresolver.pas
-M	packages/pastojs/src/pas2jsfiler.pp
-
-******************************************************************************
-commit 58bbf7e26530813a2426ce22bf80275890a25ee9
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Sat Nov 21 17:54:06 2020 +0000
-
-    fcl-passrc: fixed tests TTestProcedureFunction
-    
-    git-svn-id: trunk@47512 -
-
-M	packages/fcl-passrc/tests/tcprocfunc.pas
-
-******************************************************************************
-commit 132186a5aabd153569488d1828aebfee0540af38
-Author: michael <michael@freepascal.org>
-Date:   Sat Nov 21 12:12:07 2020 +0000
-
-    No advanced records
-    
-    git-svn-id: trunk@47511 -
-
-M	utils/fpdoc/fpdocclasstree.pp
-
-******************************************************************************
-commit 5354cf2a619e306e6779b5e5d4853ed62c58a467
-Author: michael <michael@freepascal.org>
-Date:   Sat Nov 21 12:11:38 2020 +0000
-
-    * Advanced records structure changed, fixed fpdoc
-    
-    git-svn-id: trunk@47510 -
-
-M	packages/fcl-passrc/src/pastree.pp
-M	packages/fcl-passrc/src/pparser.pp
-M	packages/fcl-passrc/tests/tcprocfunc.pas
-M	packages/fcl-passrc/tests/tctypeparser.pas
-M	packages/pastojs/src/pas2jsfiler.pp
-M	utils/fpdoc/dglobals.pp
-
-******************************************************************************
-commit 713d6a06499ba68b8e7461a679f9d59a572dbaba
-Author: michael <michael@freepascal.org>
-Date:   Sat Nov 21 10:43:48 2020 +0000
-
-    * Empty sections in advanced records
-    
-    git-svn-id: trunk@47509 -
-
-M	packages/fcl-passrc/src/pastree.pp
-M	packages/fcl-passrc/src/paswrite.pp
-M	packages/fcl-passrc/src/pparser.pp
-M	packages/fcl-passrc/tests/tctypeparser.pas
-
-******************************************************************************
-commit b00450437bdd138454f87901a818313b1035b5bc
-Author: michael <michael@freepascal.org>
-Date:   Fri Nov 20 21:07:11 2020 +0000
-
-    * Changed customization method texts
-    
-    git-svn-id: trunk@47504 -
-
-M	utils/fpdoc/dglobals.pp
-
-******************************************************************************
-commit a65ad26bca1b89650d0af2fd40cf84db5c57d9a0
-Author: michael <michael@freepascal.org>
-Date:   Fri Nov 20 21:06:44 2020 +0000
-
-    * More customization methods
-    
-    git-svn-id: trunk@47503 -
-
-M	utils/fpdoc/dw_html.pp
-
-******************************************************************************
-commit ce40a219ba0bc17167459e4d6b490a5c07981128
-Author: michael <michael@freepascal.org>
-Date:   Fri Nov 20 21:04:01 2020 +0000
-
-    * Test for cascaded types
-    
-    git-svn-id: trunk@47502 -
-
-M	packages/fcl-passrc/tests/tcgenerics.pp
-
-******************************************************************************
-commit 988cd7235cce3ebf252792022e6c10ecfa66a1c6
-Author: michael <michael@freepascal.org>
-Date:   Fri Nov 20 20:48:41 2020 +0000
-
-    * Fix FItems: ^TArray<A>;
-    
-    git-svn-id: trunk@47501 -
-
-M	packages/fcl-passrc/src/pparser.pp
-M	packages/fcl-passrc/tests/tcgenerics.pp
-
-******************************************************************************
-commit 5c18d04732fbf7d4fdb5b120aedf68c550861ea7
-Author: michael <michael@freepascal.org>
-Date:   Fri Nov 20 20:48:13 2020 +0000
-
-    * Fix far test
-    
-    git-svn-id: trunk@47500 -
-
-M	packages/fcl-passrc/tests/tcprocfunc.pas
-
-******************************************************************************
-commit 215dab8c8a0d57eb2ad58bcbe617045249030bd5
-Author: michael <michael@freepascal.org>
-Date:   Fri Nov 20 20:19:49 2020 +0000
-
-    * far is a procedure type modifier, can appear in type defs
-    
-    git-svn-id: trunk@47499 -
-
-M	packages/fcl-passrc/src/pastree.pp
-M	packages/fcl-passrc/src/pparser.pp
-M	packages/fcl-passrc/tests/tcvarparser.pas
-M	packages/pastojs/src/pas2jsfiler.pp
-
-******************************************************************************
-commit 37b827c6a099244ab066eea9d2824e5f68fc43cd
-Author: michael <michael@freepascal.org>
-Date:   Fri Nov 20 19:47:19 2020 +0000
-
-    * Fix hex number evaluation in conditional expressions
-    
-    git-svn-id: trunk@47498 -
-
-M	packages/fcl-passrc/src/pscanner.pp
-
-******************************************************************************
-commit f8eac112d15f9b48809bcfb673bcf11e8ac6b998
-Author: michael <michael@freepascal.org>
-Date:   Fri Nov 20 18:30:50 2020 +0000
-
-    * Absolute is allowed as variable/type/const name
-    
-    git-svn-id: trunk@47497 -
-
-M	packages/fcl-passrc/src/pparser.pp
-M	packages/fcl-passrc/tests/tconstparser.pas
-M	packages/fcl-passrc/tests/tctypeparser.pas
-M	packages/fcl-passrc/tests/tcvarparser.pas
-
-******************************************************************************
-commit 185048c63143ae47791950629202583dbe718baa
-Author: michael <michael@freepascal.org>
-Date:   Fri Nov 20 18:13:46 2020 +0000
-
-    * Last field before end does not need a semicolon
-    
-    git-svn-id: trunk@47496 -
-
-M	packages/fcl-passrc/src/pparser.pp
-M	packages/fcl-passrc/tests/tcclasstype.pas
-
-******************************************************************************
-commit bd571fdd319f42d902eb302e8940e8a8fd518d2e
-Author: michael <michael@freepascal.org>
-Date:   Fri Nov 20 16:27:17 2020 +0000
-
-    * absolute can also take address on some platforms
-    
-    git-svn-id: trunk@47495 -
-
-M	packages/fcl-passrc/src/pparser.pp
-M	packages/fcl-passrc/tests/tcvarparser.pas
-
-******************************************************************************
-commit 6ee3d6064f4f4e7344eac79e0759d0ad22666af9
-Author: michael <michael@freepascal.org>
-Date:   Fri Nov 20 16:14:49 2020 +0000
-
-    * Fix generics >=Class and type ^File and external vars
-    
-    git-svn-id: trunk@47494 -
-
-M	packages/fcl-passrc/src/pparser.pp
-M	packages/fcl-passrc/tests/tcgenerics.pp
-M	packages/fcl-passrc/tests/tctypeparser.pas
-M	packages/fcl-passrc/tests/tcvarparser.pas
-
-******************************************************************************
-commit 45e2c837b852819053bae52c56c6c35724200d5d
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Fri Nov 20 16:11:18 2020 +0000
-
-    pastojs: fixed search include file mode objfpc in dir of current include file
-    
-    git-svn-id: trunk@47493 -
-
-M	packages/pastojs/src/pas2jsfilecache.pp
-M	packages/pastojs/src/pas2jsfs.pp
-M	packages/pastojs/tests/tcmodules.pas
-M	packages/pastojs/tests/tcunitsearch.pas
-
-******************************************************************************
-commit 909d34e1eb6c132afc0a6e2ddd72df83a4b6f1b0
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Fri Nov 20 16:08:35 2020 +0000
-
-    fcl-passrc: fixed search include file mode objfpc in dir of current include file
-    
-    git-svn-id: trunk@47492 -
-
-M	packages/fcl-passrc/src/passrcutil.pp
-M	packages/fcl-passrc/src/pscanner.pp
-
-******************************************************************************
 commit f68804e9cdc1a0489145ddd82b4a7e8ea9713b09
 Author: pierre <pierre@freepascal.org>
 Date:   Fri Nov 20 15:15:17 2020 +0000
@@ -16133,17 +13819,6 @@ M	compiler/msg/errore.msg
 M	compiler/msgidx.inc
 M	compiler/msgtxt.inc
 M	compiler/options.pas
-
-******************************************************************************
-commit 81344a6f5c180405887d32946629eff3f9966d35
-Author: michael <michael@freepascal.org>
-Date:   Fri Nov 20 14:31:48 2020 +0000
-
-    * test for missing semicolon after fields in class declaration
-    
-    git-svn-id: trunk@47487 -
-
-M	packages/fcl-passrc/tests/tcclasstype.pas
 
 ******************************************************************************
 commit c06a931d5b7366d766fc9e5f2797ed557e9a95fd
@@ -16643,17 +14318,6 @@ Date:   Fri Nov 20 14:01:51 2020 +0000
 M	utils/fpcm/fpcmake.ini
 
 ******************************************************************************
-commit 95addf15ced2ad0e1c1374e68d2cf3b1263e6a5f
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Fri Nov 20 13:56:24 2020 +0000
-
-    fcl-passrc: clean up
-    
-    git-svn-id: trunk@47482 -
-
-M	packages/fcl-passrc/src/pscanner.pp
-
-******************************************************************************
 commit d88db13211bae46e7a9f05841288708d6a7e7ff2
 Author: michael <michael@freepascal.org>
 Date:   Fri Nov 20 13:18:53 2020 +0000
@@ -16663,149 +14327,6 @@ Date:   Fri Nov 20 13:18:53 2020 +0000
     git-svn-id: trunk@47481 -
 
 M	packages/fcl-db/src/sqldb/postgres/pqconnection.pp
-
-******************************************************************************
-commit ebb1d78ced5ad33e9e211de2502b2c23af46be8d
-Author: michael <michael@freepascal.org>
-Date:   Fri Nov 20 13:15:16 2020 +0000
-
-    * objcprotocol can have multiple parents
-    
-    git-svn-id: trunk@47480 -
-
-M	packages/fcl-passrc/src/pparser.pp
-M	packages/fcl-passrc/tests/tcclasstype.pas
-
-******************************************************************************
-commit 319c00b8320ec7672b23506cd81f82c024cbd983
-Author: michael <michael@freepascal.org>
-Date:   Fri Nov 20 13:03:07 2020 +0000
-
-    * Protocol can also be external
-    
-    git-svn-id: trunk@47479 -
-
-M	packages/fcl-passrc/src/pparser.pp
-M	packages/fcl-passrc/tests/tcclasstype.pas
-
-******************************************************************************
-commit 9d4a1d1ac5340c7bf45b6d56a1ab65b350ad64e9
-Author: michael <michael@freepascal.org>
-Date:   Fri Nov 20 11:42:39 2020 +0000
-
-    * Consoledevice
-    
-    git-svn-id: trunk@47478 -
-
-M	packages/fcl-passrc/src/pparser.pp
-M	packages/fcl-passrc/tests/tcprocfunc.pas
-
-******************************************************************************
-commit be4d0be10cd79935869ee57b2a2bb1c95d633335
-Author: michael <michael@freepascal.org>
-Date:   Fri Nov 20 11:35:51 2020 +0000
-
-    * More base address fixes
-    
-    git-svn-id: trunk@47477 -
-
-M	packages/fcl-passrc/src/pparser.pp
-M	packages/fcl-passrc/tests/tcprocfunc.pas
-
-******************************************************************************
-commit 60ecdb00aec55bcadfbffbca7ad2549e3f624f8b
-Author: michael <michael@freepascal.org>
-Date:   Fri Nov 20 11:22:23 2020 +0000
-
-    * More syscall fixes
-    
-    git-svn-id: trunk@47476 -
-
-M	packages/fcl-passrc/src/pparser.pp
-M	packages/fcl-passrc/tests/tcprocfunc.pas
-
-******************************************************************************
-commit 8de1e91f4b7ffc23f2384d0c46e87e2da653d06e
-Author: michael <michael@freepascal.org>
-Date:   Fri Nov 20 11:07:37 2020 +0000
-
-    * Fix compilation, new visibility sections
-    
-    git-svn-id: trunk@47473 -
-
-M	utils/fpdoc/dglobals.pp
-
-******************************************************************************
-commit 08ab526a10a7a9df5ec4f9a31ebe0f6f008eddc9
-Author: michael <michael@freepascal.org>
-Date:   Fri Nov 20 11:05:00 2020 +0000
-
-    * Added new visibility sections for objcprotocol
-    
-    git-svn-id: trunk@47472 -
-
-M	packages/pastojs/src/pas2jsfiler.pp
-
-******************************************************************************
-commit cf68d1f96526327bb327b6af8b6b8f91a29e8698
-Author: michael <michael@freepascal.org>
-Date:   Fri Nov 20 10:48:43 2020 +0000
-
-    * Fix syscall calling convention parsing
-    
-    git-svn-id: trunk@47471 -
-
-M	packages/fcl-passrc/src/pparser.pp
-M	packages/fcl-passrc/tests/tcprocfunc.pas
-
-******************************************************************************
-commit 3ef12409c97368c22f494725fb76f9774372e134
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Fri Nov 20 10:28:47 2020 +0000
-
-    pastojs: async modifier not needed in impl proc
-    
-    git-svn-id: trunk@47470 -
-
-M	packages/fcl-passrc/src/pasresolver.pp
-M	packages/pastojs/tests/tcmodules.pas
-
-******************************************************************************
-commit 873354beaa8e44c445c8b7d896119322936f02c3
-Author: michael <michael@freepascal.org>
-Date:   Fri Nov 20 09:51:30 2020 +0000
-
-    * Allow optional/required sections in objcprotocol classes
-    
-    git-svn-id: trunk@47469 -
-
-M	packages/fcl-passrc/src/pastree.pp
-M	packages/fcl-passrc/src/pparser.pp
-M	packages/fcl-passrc/tests/tcclasstype.pas
-
-******************************************************************************
-commit ec4df539c3824932d31f871a0c796108e83b9f98
-Author: michael <michael@freepascal.org>
-Date:   Fri Nov 20 09:09:44 2020 +0000
-
-    * Includefile also must set basename
-    
-    git-svn-id: trunk@47468 -
-
-M	packages/fcl-passrc/src/pscanner.pp
-M	packages/fcl-passrc/tests/tcscanner.pas
-
-******************************************************************************
-commit a38da538af321e118f33cef0d98bdc737a05f7c5
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Thu Nov 19 23:29:24 2020 +0000
-
-    pastojs: check await(T,callasyncfunc) type match
-    
-    git-svn-id: trunk@47462 -
-
-M	packages/pastojs/src/fppas2js.pp
-M	packages/pastojs/tests/tcmodules.pas
 
 ******************************************************************************
 commit bcdfd07bdd1cf31d609bc0fed933ad5d83d4114b
@@ -17321,31 +14842,6 @@ Date:   Thu Nov 19 02:43:42 2020 +0000
 M	packages/tosunits/Makefile.fpc
 
 ******************************************************************************
-commit bd3093e176a44072994460744120d0b2cb96e6e1
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Wed Nov 18 15:56:13 2020 +0000
-
-    pastojs: added experimental target os electron
-    
-    git-svn-id: trunk@47445 -
-
-M	packages/pastojs/src/fppas2js.pp
-M	packages/pastojs/src/pas2jscompiler.pp
-M	packages/pastojs/src/pas2jsfiler.pp
-
-******************************************************************************
-commit f5acaf10eeb18c797391f8c6534604c598e1871d
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Wed Nov 18 14:34:22 2020 +0000
-
-    pastojs: fixed aPromise:=AsyncFunctionWithCOMIntfResult
-    
-    git-svn-id: trunk@47444 -
-
-M	packages/pastojs/src/fppas2js.pp
-M	packages/pastojs/tests/tcmodules.pas
-
-******************************************************************************
 commit b0deefec4530dad64851d3aec5f1d55b003049fa
 Author: florian <florian@freepascal.org>
 Date:   Tue Nov 17 20:32:10 2020 +0000
@@ -17355,18 +14851,6 @@ Date:   Tue Nov 17 20:32:10 2020 +0000
     git-svn-id: trunk@47442 -
 
 M	tests/webtbs/tw37621.pp
-
-******************************************************************************
-commit 97d4d635c85c0f79f8914a7e7b7c89eb01146ea8
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Tue Nov 17 10:05:23 2020 +0000
-
-    pastojs: fixed await(arg) and fixed hint await needs a promise
-    
-    git-svn-id: trunk@47440 -
-
-M	packages/pastojs/src/fppas2js.pp
-M	packages/pastojs/tests/tcmodules.pas
 
 ******************************************************************************
 commit e154b9933fc030f4f4e894c48c91b026f688f8c0
@@ -17474,30 +14958,6 @@ Date:   Sun Nov 15 23:19:38 2020 +0000
     git-svn-id: trunk@47432 -
 
 M	rtl/sinclairql/si_prc.pp
-
-******************************************************************************
-commit 45fb1fcb445f32b7d2d39973bc1cd434c7609955
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Sun Nov 15 23:12:34 2020 +0000
-
-    pastojs: fixed await on as operator
-    
-    git-svn-id: trunk@47431 -
-
-M	packages/fcl-passrc/src/pasresolveeval.pas
-M	packages/fcl-passrc/src/pasresolver.pp
-M	packages/pastojs/src/fppas2js.pp
-
-******************************************************************************
-commit 284b50de3ca7754b7a234988b2c197fc11e38960
-Author: michael <michael@freepascal.org>
-Date:   Sun Nov 15 23:04:37 2020 +0000
-
-    * Allow to create fpdoc project file based on package targets
-    
-    git-svn-id: trunk@47430 -
-
-M	packages/fpmkunit/src/fpmkunit.pp
 
 ******************************************************************************
 commit f2ee1dae523eb5b505aa1f9aaf78fa2a7cf5ea8b
@@ -17641,65 +15101,6 @@ Date:   Fri Nov 13 21:35:40 2020 +0000
     git-svn-id: trunk@47412 -
 
 M	packages/fcl-db/src/base/sqlscript.pp
-
-******************************************************************************
-commit fb87b423feee3a47a7791ee51db7123218b4121b
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Fri Nov 13 10:31:01 2020 +0000
-
-    pastojs: fixed ord(widechar)
-    
-    git-svn-id: trunk@47408 -
-
-M	packages/pastojs/src/fppas2js.pp
-M	packages/pastojs/tests/tcmodules.pas
-
-******************************************************************************
-commit bd8362dfcee6f9ea9ab9d60754afdca8335d05f1
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Fri Nov 13 10:22:45 2020 +0000
-
-    pastojs: typecast integer to widechar
-    
-    git-svn-id: trunk@47407 -
-
-M	packages/pastojs/src/fppas2js.pp
-M	packages/pastojs/tests/tcmodules.pas
-
-******************************************************************************
-commit 5c161e8542fa48a9f5608b6706d2f06b6af1cc81
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Fri Nov 13 01:19:18 2020 +0000
-
-    fcl-passrc: useanalyzer: fixed implementation class forward
-    
-    git-svn-id: trunk@47406 -
-
-M	packages/fcl-passrc/src/pasuseanalyzer.pas
-M	packages/fcl-passrc/tests/tcuseanalyzer.pas
-
-******************************************************************************
-commit 9155a87239e169454cf34aaf9c34d53cc21786b8
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Thu Nov 12 23:38:53 2020 +0000
-
-    fcl-passrc: fixed var arg char=widechar
-    
-    git-svn-id: trunk@47405 -
-
-M	packages/fcl-passrc/src/pasresolver.pp
-M	packages/pastojs/tests/tcmodules.pas
-
-******************************************************************************
-commit e5790765f052bdb909cec7d1b4c8c84e9a7556d4
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Thu Nov 12 23:12:27 2020 +0000
-
-    pastojs: typeinfo unicodestring andf widechar
-    
-    git-svn-id: trunk@47404 -
-
-M	packages/pastojs/src/fppas2js.pp
 
 ******************************************************************************
 commit e440bf0e00d4d344b855693664da99ed9221e3aa
@@ -17956,19 +15357,6 @@ Date:   Tue Nov 10 22:04:55 2020 +0000
 M	compiler/armgen/aoptarm.pas
 
 ******************************************************************************
-commit df4fc55214808649e08ae3d87ed5c2028ef3b3e4
-Author: michael <michael@freepascal.org>
-Date:   Tue Nov 10 21:53:25 2020 +0000
-
-    * Support for $I %unit% %module% %filename% includes
-    
-    git-svn-id: trunk@47379 -
-
-M	packages/fcl-passrc/src/pparser.pp
-M	packages/fcl-passrc/src/pscanner.pp
-M	packages/pastojs/src/fppas2js.pp
-
-******************************************************************************
 commit c06a020c9cd174fd641da587b10283ef56329d04
 Author: Károly Balogh <karoly@freepascal.org>
 Date:   Tue Nov 10 21:36:48 2020 +0000
@@ -18036,19 +15424,6 @@ M	packages/unzip/fpmake.pp
 M	packages/webidl/fpmake.pp
 M	rtl/sinclairql/Makefile.fpc
 M	utils/fpcm/fpcmmain.pp
-
-******************************************************************************
-commit e6b327b920b2ba51d829de13e0a09ad6fb2b9231
-Author: michael <michael@freepascal.org>
-Date:   Tue Nov 10 21:28:56 2020 +0000
-
-    * -JRnone disables resource parsing altogether
-    
-    git-svn-id: trunk@47375 -
-
-M	packages/fcl-passrc/src/pscanner.pp
-M	packages/pastojs/src/pas2jscompiler.pp
-M	packages/pastojs/src/pas2jsfiler.pp
 
 ******************************************************************************
 commit bcd52d66eebc596272727d608126b6bc81cf43a3
@@ -18364,34 +15739,6 @@ Date:   Sun Nov 8 19:39:17 2020 +0000
 M	compiler/x86/nx86add.pas
 
 ******************************************************************************
-commit a798ba3fcaeb689e28463cee0671c56953b7fd2b
-Author: michael <michael@freepascal.org>
-Date:   Sun Nov 8 12:57:32 2020 +0000
-
-    * Fix small typo
-    
-    git-svn-id: trunk@47341 -
-
-M	packages/fcl-web/src/base/fpjwt.pp
-
-******************************************************************************
-commit 5ec7ffa8d9cf72e1af5dab796dd3a55680966f09
-Author: michael <michael@freepascal.org>
-Date:   Sun Nov 8 12:56:55 2020 +0000
-
-    * Fix bug #37980: correct verifypeercert
-    
-    git-svn-id: trunk@47340 -
-
-M	packages/fcl-net/src/sslbase.pp
-M	packages/fcl-net/src/sslsockets.pp
-M	packages/fcl-net/src/ssockets.pp
-M	packages/fcl-web/examples/httpclient/httpget.pas
-M	packages/fcl-web/src/base/fphttpclient.pp
-M	packages/gnutls/src/gnutlssockets.pp
-M	packages/openssl/src/opensslsockets.pp
-
-******************************************************************************
 commit 4fa33623552902ffcb2719b7d16b2147ee0d3457
 Author: ondrej <ondrej@idefix.freepascal.org>
 Date:   Sun Nov 8 07:18:49 2020 +0000
@@ -18413,41 +15760,6 @@ Date:   Sat Nov 7 16:09:51 2020 +0000
 
 M	.gitattributes
 A	tests/webtbs/tw36381.pp
-
-******************************************************************************
-commit 71b8d5643ddcd964f2432d45dc59544f028d443e
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Sat Nov 7 12:09:59 2020 +0000
-
-    pastojs: fixed shortrefglobals for minimal class interface, issue #38042
-    
-    git-svn-id: trunk@47336 -
-
-M	packages/pastojs/src/fppas2js.pp
-
-******************************************************************************
-commit a2af4429f94b5dd88ca0b7cdcb42986f1bc52c53
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Sat Nov 7 11:04:43 2020 +0000
-
-    pastojs: fixed shortrefglobals for proc without args, issue #38043
-    
-    git-svn-id: trunk@47335 -
-
-M	packages/pastojs/src/fppas2js.pp
-
-******************************************************************************
-commit 280c0d90f780c386a7538f18718ba4e21c5307a3
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Sat Nov 7 10:56:30 2020 +0000
-
-    pastojs: fixed diable optimization using fpc syntax prepend No, issue #38045
-    
-    git-svn-id: trunk@47334 -
-
-M	packages/fcl-passrc/src/pscanner.pp
-M	packages/pastojs/src/fppas2js.pp
-M	utils/pas2js/docs/translation.html
 
 ******************************************************************************
 commit f7050ef41ab48de9884816ddda2c2b1f713fe200
@@ -18473,18 +15785,6 @@ M	compiler/i386/i386prop.inc
 M	compiler/i8086/i8086prop.inc
 M	compiler/x86/x86ins.dat
 M	compiler/x86_64/x8664pro.inc
-
-******************************************************************************
-commit e69cd3fd1cdc08e403096041e041ffdebb9cef51
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Sat Nov 7 10:23:46 2020 +0000
-
-    pastojs: fixed diable optimization using fpc syntax prepend No, issue #38045
-    
-    git-svn-id: trunk@47331 -
-
-M	packages/pastojs/src/pas2jscompiler.pp
-M	utils/pas2js/docs/translation.html
 
 ******************************************************************************
 commit 6ec460c619cb339eefb54d4b83a456882a2047a3
@@ -18590,30 +15890,6 @@ Date:   Thu Nov 5 12:45:35 2020 +0000
 M	rtl/unix/sysutils.pp
 M	rtl/unix/timezone.inc
 M	rtl/unix/unix.pp
-
-******************************************************************************
-commit 2bb083acf1a3b7a72a18340b563e952700de03c8
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Thu Nov 5 10:35:09 2020 +0000
-
-    pastojs: set version 2.1.1
-    
-    git-svn-id: trunk@47320 -
-
-M	packages/pastojs/src/pas2jscompiler.pp
-M	utils/pas2js/dist/rtl.js
-
-******************************************************************************
-commit b308412a370d2d08427a683eb58a22bb0191e83d
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Wed Nov 4 23:13:04 2020 +0000
-
-    pastojs: filer: generic constraints
-    
-    git-svn-id: trunk@47319 -
-
-M	packages/pastojs/src/pas2jsfiler.pp
-M	packages/pastojs/tests/tcfiler.pas
 
 ******************************************************************************
 commit 0d36b05df5d7e045c106817d54e9d4df0ea6af7f
@@ -19063,18 +16339,6 @@ Date:   Mon Nov 2 16:42:32 2020 +0000
 M	rtl/inc/ustrings.inc
 
 ******************************************************************************
-commit 6ed331d6e7d0b8d33532e121752744acfad3a77b
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Mon Nov 2 15:03:50 2020 +0000
-
-    fcl-passrc: useanalyzer: mark attributes of class/record type even if typeinfo is not used
-    
-    git-svn-id: trunk@47283 -
-
-M	packages/fcl-passrc/src/pasuseanalyzer.pas
-M	packages/fcl-passrc/tests/tcuseanalyzer.pas
-
-******************************************************************************
 commit 58a56e38d108e6ec129ccf1ffe1bca4822dc74a6
 Author: pierre <pierre@freepascal.org>
 Date:   Mon Nov 2 08:50:34 2020 +0000
@@ -19108,45 +16372,6 @@ Date:   Mon Nov 2 02:01:24 2020 +0000
 M	compiler/m68k/cpupara.pas
 
 ******************************************************************************
-commit 0b670d0d3130db60dd73d0d3f161ddb4e239e5f8
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Mon Nov 2 01:59:19 2020 +0000
-
-    pastojs: shortrefglobals: generic helper method
-    
-    git-svn-id: trunk@47278 -
-
-M	packages/pastojs/src/fppas2js.pp
-M	packages/pastojs/tests/tcoptimizations.pas
-
-******************************************************************************
-commit 088aacfb26b0e0da6176e31a9f469e5a6d722855
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Mon Nov 2 01:27:07 2020 +0000
-
-    pastojs: shortrefglobals: proc var of generic method
-    
-    git-svn-id: trunk@47277 -
-
-M	packages/pastojs/src/fppas2js.pp
-M	packages/pastojs/tests/tcoptimizations.pas
-
-******************************************************************************
-commit 8fe5a1e894b2428cb15e9efe7251bbc61f39b6ee
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Sun Nov 1 20:58:45 2020 +0000
-
-    pastojs: shortrefglobals: call static method
-    
-    git-svn-id: trunk@47276 -
-
-M	packages/fcl-passrc/src/pasresolver.pp
-M	packages/fcl-passrc/tests/tcresolvegenerics.pas
-M	packages/fcl-passrc/tests/tcuseanalyzer.pas
-M	packages/pastojs/src/fppas2js.pp
-M	packages/pastojs/tests/tcoptimizations.pas
-
-******************************************************************************
 commit 71c30761dd68aab76b080b3388f55118321ded10
 Author: svenbarth <pascaldragon@googlemail.com>
 Date:   Sun Nov 1 19:40:39 2020 +0000
@@ -19156,42 +16381,6 @@ Date:   Sun Nov 1 19:40:39 2020 +0000
     git-svn-id: trunk@47274 -
 
 M	rtl/win/sysutils.pp
-
-******************************************************************************
-commit 5b4e028da46f7d19a743c286e796e273ba92198c
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Sun Nov 1 18:32:40 2020 +0000
-
-    pastojs: precompiled proc: local var for generic function
-    
-    git-svn-id: trunk@47273 -
-
-M	packages/pastojs/src/fppas2js.pp
-M	packages/pastojs/src/pas2jsfiler.pp
-M	packages/pastojs/tests/tcfiler.pas
-M	packages/pastojs/tests/tcoptimizations.pas
-
-******************************************************************************
-commit c4f8070035a37a67bb5a305d1782deb8ba3f76df
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Sun Nov 1 18:31:53 2020 +0000
-
-    fcl-passrc: TPasResolver.ProcHasSelf
-    
-    git-svn-id: trunk@47272 -
-
-M	packages/fcl-passrc/src/pasresolver.pp
-
-******************************************************************************
-commit 04de97bc091ca90ab85cf20e004aa93377677467
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Sun Nov 1 18:30:56 2020 +0000
-
-    fcl-js: TJSCallExpression.InsertArg
-    
-    git-svn-id: trunk@47271 -
-
-M	packages/fcl-js/src/jstree.pp
 
 ******************************************************************************
 commit 5c119d5f67a4c54069636bc7cded4d0b497d02c5
@@ -19341,66 +16530,6 @@ Date:   Wed Oct 28 21:37:26 2020 +0000
     git-svn-id: trunk@47245 -
 
 M	compiler/scanner.pas
-
-******************************************************************************
-commit 2ab0b76f3c93b66e79b4a34f3d56867a431d0bfa
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Wed Oct 28 20:34:36 2020 +0000
-
-    pastojs: fixed error on Arr+=
-    
-    git-svn-id: trunk@47244 -
-
-M	packages/pastojs/src/fppas2js.pp
-M	packages/pastojs/tests/tcmodules.pas
-
-******************************************************************************
-commit b51c89df41fe84d4b355ce10017bd47092e41aa3
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Wed Oct 28 20:12:17 2020 +0000
-
-    pastojs: fixed a.specialize b<c>
-    
-    git-svn-id: trunk@47243 -
-
-M	packages/pastojs/src/fppas2js.pp
-M	packages/pastojs/tests/tcgenerics.pas
-
-******************************************************************************
-commit 20a8b05beee9a3df7d30115b1c869eaf53774af1
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Wed Oct 28 20:11:02 2020 +0000
-
-    fcl-passrc: fixed a.specialize b<c>, creating tbinary as parent of tinlinespecializeexpr
-    
-    git-svn-id: trunk@47242 -
-
-M	packages/fcl-passrc/src/pasresolver.pp
-M	packages/fcl-passrc/src/pparser.pp
-
-******************************************************************************
-commit 42e48d016bc5cb730303b169d9ffcf04d551aeb0
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Wed Oct 28 19:07:22 2020 +0000
-
-    pastojs: filer: generic proc type
-    
-    git-svn-id: trunk@47241 -
-
-M	packages/pastojs/src/pas2jsfiler.pp
-M	packages/pastojs/tests/tcfiler.pas
-
-******************************************************************************
-commit 57cdc30a62c5cdf45bdc4743361b8ee318de460b
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Wed Oct 28 18:53:20 2020 +0000
-
-    pastojs: filer: generic array
-    
-    git-svn-id: trunk@47240 -
-
-M	packages/pastojs/src/pas2jsfiler.pp
-M	packages/pastojs/tests/tcfiler.pas
 
 ******************************************************************************
 commit 28d1ad595a784269d56e2e4c34dffdf128e7475d
@@ -19665,29 +16794,6 @@ M	compiler/ncal.pas
 M	compiler/psub.pas
 
 ******************************************************************************
-commit b864cc4723e89d7479544b677603e833e5d0d319
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Mon Oct 26 21:47:31 2020 +0000
-
-    pastojs: fixed a/b<0 for currency
-    
-    git-svn-id: trunk@47213 -
-
-M	packages/pastojs/tests/tcmodules.pas
-
-******************************************************************************
-commit b52744bcbf9d358a95bc897fa80731704794a3cf
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Mon Oct 26 21:23:34 2020 +0000
-
-    pastojs: fixed a div b<0
-    
-    git-svn-id: trunk@47212 -
-
-M	packages/pastojs/src/fppas2js.pp
-M	utils/pas2js/dist/rtl.js
-
-******************************************************************************
 commit dfaee4f04b1c2ec66e01978b3d2377685f366354
 Author: florian <florian@freepascal.org>
 Date:   Mon Oct 26 20:58:24 2020 +0000
@@ -19759,17 +16865,6 @@ M	rtl/win/wininc/struct.inc
 M	rtl/wince/sysutils.pp
 
 ******************************************************************************
-commit f15deb164098b7bac384dd8144b47cf063addaff
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Mon Oct 26 12:15:09 2020 +0000
-
-    pastojs: uses in filename: if not found try pcu
-    
-    git-svn-id: trunk@47205 -
-
-M	packages/pastojs/src/pas2jscompiler.pp
-
-******************************************************************************
 commit f529253c0b39dd374ef076e83f9416a3b96e156e
 Author: ondrej <ondrej@idefix.freepascal.org>
 Date:   Mon Oct 26 09:31:54 2020 +0000
@@ -19792,17 +16887,6 @@ Date:   Mon Oct 26 09:15:26 2020 +0000
 M	rtl/objpas/sysutils/filutil.inc
 
 ******************************************************************************
-commit 46f527f593ee5dd1dba169709de1c8419fa8ca95
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Sun Oct 25 20:39:42 2020 +0000
-
-    pastojs: filer: use precompiled names for shortrefs
-    
-    git-svn-id: trunk@47202 -
-
-M	packages/pastojs/src/fppas2js.pp
-
-******************************************************************************
 commit 17c0291e86d90a27181304b8adb1d51d79c5b618
 Author: florian <florian@freepascal.org>
 Date:   Sun Oct 25 19:07:44 2020 +0000
@@ -19823,19 +16907,6 @@ Date:   Sun Oct 25 17:04:33 2020 +0000
     git-svn-id: trunk@47200 -
 
 M	compiler/comphook.pas
-
-******************************************************************************
-commit 375c9c544b4ed34a99517ab4078cc098e73b5de3
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Sun Oct 25 16:29:08 2020 +0000
-
-    pastojs: filer: specializetype after spec was already created
-    
-    git-svn-id: trunk@47199 -
-
-M	packages/pastojs/src/fppas2js.pp
-M	packages/pastojs/src/pas2jsfiler.pp
-M	packages/pastojs/tests/tcfiler.pas
 
 ******************************************************************************
 commit 16eb670e67cc8243cf2122e992f1cebf00cf4904
@@ -20087,19 +17158,6 @@ Date:   Thu Oct 22 21:25:36 2020 +0000
 M	compiler/ncgmat.pas
 
 ******************************************************************************
-commit 993c5115548c192c86688630281b6baccbdf1f49
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Thu Oct 22 20:07:02 2020 +0000
-
-    pastojs: filer: class forward
-    
-    git-svn-id: trunk@47153 -
-
-M	packages/pastojs/src/fppas2js.pp
-M	packages/pastojs/src/pas2jsfiler.pp
-M	packages/pastojs/tests/tcfiler.pas
-
-******************************************************************************
 commit 6fc930a0fc30a339624476fe1f0f79a261632387
 Author: florian <florian@freepascal.org>
 Date:   Wed Oct 21 20:46:28 2020 +0000
@@ -20188,31 +17246,6 @@ M	compiler/arm/cpubase.pas
 M	compiler/armgen/aoptarm.pas
 
 ******************************************************************************
-commit 764b035c23fa60c1bad4a572b11dbe41b2bd3df6
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Mon Oct 19 07:21:16 2020 +0000
-
-    pastojs: fixed compile
-    
-    git-svn-id: trunk@47136 -
-
-M	packages/pastojs/src/pas2jsfiler.pp
-M	packages/pastojs/tests/tcfiler.pas
-
-******************************************************************************
-commit 79935d8579707300e98c3173333afedca75360cf
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Sun Oct 18 20:29:54 2020 +0000
-
-    pastojs: filer: local specialize type
-    
-    git-svn-id: trunk@47134 -
-
-M	packages/fcl-passrc/src/pasuseanalyzer.pas
-M	packages/pastojs/src/pas2jsfiler.pp
-M	packages/pastojs/tests/tcfiler.pas
-
-******************************************************************************
 commit 201281ae2a98d79e9fc49ec4a3e5b35e7d757027
 Author: florian <florian@freepascal.org>
 Date:   Sun Oct 18 17:13:39 2020 +0000
@@ -20241,54 +17274,6 @@ M	compiler/options.pas
 M	compiler/scanner.pas
 
 ******************************************************************************
-commit 1299e585c951e9b700b35bfc9e29c3ad1f9b519e
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Sun Oct 18 16:24:03 2020 +0000
-
-    pastojs: filer: restore original order before checking specializations
-    
-    git-svn-id: trunk@47131 -
-
-M	packages/pastojs/tests/tcfiler.pas
-
-******************************************************************************
-commit f2712a50df28a5fbdee2bd02d053c4fdf5a631f4
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Sun Oct 18 15:24:18 2020 +0000
-
-    pastojs: undo commit error
-    
-    git-svn-id: trunk@47130 -
-
-M	packages/pastojs/src/pas2jslibcompiler.pp
-
-******************************************************************************
-commit 2f83458c33629a9b3cf6c2edb02911189ba84aec
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Sun Oct 18 15:19:11 2020 +0000
-
-    pastojs: filer: store precompiled short references
-    
-    git-svn-id: trunk@47129 -
-
-M	packages/pastojs/src/fppas2js.pp
-M	packages/pastojs/src/pas2jsfiler.pp
-M	packages/pastojs/src/pas2jslibcompiler.pp
-M	packages/pastojs/tests/tcfiler.pas
-
-******************************************************************************
-commit f5d4e54ab39d07e3cdc9489d79979d98578fc2dd
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Sun Oct 18 15:18:15 2020 +0000
-
-    fcl-passrc:
-    
-    git-svn-id: trunk@47128 -
-
-M	packages/fcl-passrc/src/pasresolver.pp
-M	packages/fcl-passrc/src/pasuseanalyzer.pas
-
-******************************************************************************
 commit 080d8c28f7a9725d93943ed6e4014ea729627046
 Author: Jonas Maebe <jonas@freepascal.org>
 Date:   Sat Oct 17 14:59:04 2020 +0000
@@ -20299,17 +17284,6 @@ Date:   Sat Oct 17 14:59:04 2020 +0000
 
 M	compiler/llvm/agllvm.pas
 M	compiler/llvm/llvminfo.pas
-
-******************************************************************************
-commit 827bb70333d54f3be7d2d3840914a36678a4bd77
-Author: michael <michael@freepascal.org>
-Date:   Sat Oct 17 09:04:42 2020 +0000
-
-    * Remove debug statement (bug ID 37940)
-    
-    git-svn-id: trunk@47120 -
-
-M	packages/fcl-web/src/base/custmicrohttpapp.pp
 
 ******************************************************************************
 commit 80394fc6e8bbc3965ab72236e2c51f99f99156ff
@@ -20846,34 +17820,6 @@ Date:   Wed Oct 7 19:48:35 2020 +0000
 M	compiler/x86/aoptx86.pas
 
 ******************************************************************************
-commit 8ca7446bf067dac40d0712fcdbf1cd573204b71a
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Tue Oct 6 21:40:52 2020 +0000
-
-    pastojs: fixed anonymous asm proc in mode delphi
-    
-    git-svn-id: trunk@47060 -
-
-M	packages/fcl-passrc/src/pparser.pp
-M	packages/pastojs/tests/tcfiler.pas
-M	packages/pastojs/tests/tcmodules.pas
-
-******************************************************************************
-commit 29b6e4d6deac95165a8e0a3e18915bb2f5143e5c
-Author: michael <michael@freepascal.org>
-Date:   Tue Oct 6 21:08:09 2020 +0000
-
-    * Start of write tests by Joe Care, case writing  (bug id 0037834)
-    
-    git-svn-id: trunk@47059 -
-
-M	.gitattributes
-M	packages/fcl-passrc/src/pastree.pp
-M	packages/fcl-passrc/src/paswrite.pp
-M	packages/fcl-passrc/tests/tcbaseparser.pas
-A	packages/fcl-passrc/tests/tcpaswritestatements.pas
-
-******************************************************************************
 commit c9fcc68ec19dcebaf16dedb4cb0d3d3c69bfe726
 Author: florian <florian@freepascal.org>
 Date:   Tue Oct 6 19:43:17 2020 +0000
@@ -20930,65 +17876,6 @@ Date:   Mon Oct 5 20:11:41 2020 +0000
 M	compiler/x86/nx86con.pas
 
 ******************************************************************************
-commit a8bc2f6947005f5988b1bd233d7b5028934d46fc
-Author: michael <michael@freepascal.org>
-Date:   Mon Oct 5 17:37:45 2020 +0000
-
-    * Patch from Henrique Werlang to allow setting log config page
-    
-    git-svn-id: trunk@47052 -
-
-M	packages/pastojs/src/pas2jslibcompiler.pp
-M	utils/pas2js/pas2jslib.pp
-
-******************************************************************************
-commit c4ab6b08cd732c7e7d58b8fe7af983815c6237b3
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Mon Oct 5 14:48:19 2020 +0000
-
-    fcl-passrc: resolver: check class-is-class for specialization params forward class
-    
-    git-svn-id: trunk@47051 -
-
-M	packages/fcl-passrc/src/pasresolver.pp
-
-******************************************************************************
-commit 301809cc4aa44436fed03db32e4a64c4653f7457
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Sun Oct 4 22:00:46 2020 +0000
-
-    pastojs: enumrange in set
-    
-    git-svn-id: trunk@47050 -
-
-M	packages/pastojs/src/fppas2js.pp
-M	packages/pastojs/tests/tcmodules.pas
-
-******************************************************************************
-commit c746b0e4004dd477d966cbb091a4920a3aa88ced
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Sun Oct 4 21:41:01 2020 +0000
-
-    pastojs: enum range built in functions, issue #37860
-    
-    git-svn-id: trunk@47049 -
-
-M	packages/pastojs/src/fppas2js.pp
-M	packages/pastojs/tests/tcmodules.pas
-
-******************************************************************************
-commit 1b569bf329e63c3b3fed8619621689d4548f1fc6
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Sun Oct 4 21:40:34 2020 +0000
-
-    fcl-passrc: resolver: enum range str, ord, typecast
-    
-    git-svn-id: trunk@47048 -
-
-M	packages/fcl-passrc/src/pasresolver.pp
-M	packages/fcl-passrc/tests/tcresolver.pas
-
-******************************************************************************
 commit e718cb985ebb6cb444455abc48ac674cd3fd44a5
 Author: florian <florian@freepascal.org>
 Date:   Sun Oct 4 20:50:39 2020 +0000
@@ -20998,29 +17885,6 @@ Date:   Sun Oct 4 20:50:39 2020 +0000
     git-svn-id: trunk@47047 -
 
 M	rtl/inc/system.inc
-
-******************************************************************************
-commit c62d4e117cb98b34d22ff2c8eeff2af662d252ca
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Sun Oct 4 20:33:17 2020 +0000
-
-    fcl-passrc: resolver: case EnumRg of end; issue #37860
-    
-    git-svn-id: trunk@47046 -
-
-M	packages/fcl-passrc/src/pasresolver.pp
-M	packages/fcl-passrc/tests/tcresolver.pas
-
-******************************************************************************
-commit 8771856e7a1e3439b989fab262c5808ae6341c0b
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Sat Oct 3 17:25:47 2020 +0000
-
-    fcl-passrc: comment
-    
-    git-svn-id: trunk@47044 -
-
-M	packages/fcl-passrc/tests/tcresolvegenerics.pas
 
 ******************************************************************************
 commit 399552d3509eafa399565e66ab36f3a89fd4665e
@@ -21084,42 +17948,6 @@ Date:   Sat Oct 3 14:23:52 2020 +0000
     git-svn-id: trunk@47041 -
 
 M	compiler/powerpc/agppcmpw.pas
-
-******************************************************************************
-commit 65bcfe36b37703169afc2d62574a8e7cabcbf477
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Sat Oct 3 13:42:43 2020 +0000
-
-    fcl-json: fixed writing boolean lowercase, as expected by reader
-    
-    git-svn-id: trunk@47040 -
-
-M	packages/fcl-json/src/fpjson.pp
-M	packages/fcl-json/tests/testjsondata.pp
-
-******************************************************************************
-commit 18f5fab782da835580fb3e8cd07be9a819960c05
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Sat Oct 3 13:19:46 2020 +0000
-
-    fcl-passrc: fixed typecast TList<TBird> to TList<TEagle>
-    
-    git-svn-id: trunk@47039 -
-
-M	packages/fcl-passrc/src/pasresolver.pp
-M	packages/fcl-passrc/tests/tcresolvegenerics.pas
-
-******************************************************************************
-commit fdd3d163ff9f2cb71cdb24a6a46e47d0cd3d36c7
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Sat Oct 3 13:05:15 2020 +0000
-
-    fcl-passrc: fixed mem leak specialize with param self
-    
-    git-svn-id: trunk@47038 -
-
-M	packages/fcl-passrc/src/pastree.pp
-M	packages/fcl-passrc/tests/tcresolvegenerics.pas
 
 ******************************************************************************
 commit bb51a2134a6d5b19ca3300a0b7f262feb7b0c834
@@ -21188,19 +18016,6 @@ Date:   Thu Oct 1 20:33:02 2020 +0000
 M	rtl/inc/compproc.inc
 M	rtl/inc/system.inc
 M	rtl/inc/systemh.inc
-
-******************************************************************************
-commit 43b236a4df5c11f9d809ed0883c592c0e134239a
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Thu Oct 1 19:59:50 2020 +0000
-
-    fcl-passrc: resolver: mark inherited a:= as assignment, issue #37851
-    
-    git-svn-id: trunk@47028 -
-
-M	packages/fcl-passrc/src/pasresolver.pp
-M	packages/fcl-passrc/tests/tcresolver.pas
-M	packages/fcl-passrc/tests/tcuseanalyzer.pas
 
 ******************************************************************************
 commit 7e0c21fa5fffcbf548f70ca3d59e436ff3d6a045
@@ -21272,39 +18087,6 @@ M	rtl/watcom/Makefile
 M	rtl/watcom/Makefile.fpc
 
 ******************************************************************************
-commit 52bc9d5d8028360daa8041134eb0f6edec0a0046
-Author: michael <michael@freepascal.org>
-Date:   Wed Sep 30 15:01:35 2020 +0000
-
-    * Extra test for case else/else
-    
-    git-svn-id: trunk@47021 -
-
-M	packages/fcl-passrc/tests/tcstatements.pas
-
-******************************************************************************
-commit 8775fac416d41f9432b55043abb39769ca9091ac
-Author: michael <michael@freepascal.org>
-Date:   Wed Sep 30 14:02:29 2020 +0000
-
-    * Correct test
-    
-    git-svn-id: trunk@47020 -
-
-M	packages/fcl-passrc/tests/tcstatements.pas
-
-******************************************************************************
-commit abe463d576e7291c30340b6b70a1b14190edfb34
-Author: michael <michael@freepascal.org>
-Date:   Wed Sep 30 14:01:00 2020 +0000
-
-    * Fix for bug #37760
-    
-    git-svn-id: trunk@47019 -
-
-M	packages/fcl-passrc/src/pparser.pp
-
-******************************************************************************
 commit 4a6358bfc1c2433ca4a17ff95cec2844b51f7e3e
 Author: pierre <pierre@freepascal.org>
 Date:   Wed Sep 30 13:50:43 2020 +0000
@@ -21316,28 +18098,6 @@ Date:   Wed Sep 30 13:50:43 2020 +0000
     git-svn-id: trunk@47018 -
 
 M	compiler/x86/agx86int.pas
-
-******************************************************************************
-commit 2fc63a4f17b1340c5195c0acab8263b64e616d45
-Author: michael <michael@freepascal.org>
-Date:   Wed Sep 30 13:36:24 2020 +0000
-
-    * Additional test for 37760
-    
-    git-svn-id: trunk@47017 -
-
-M	packages/fcl-passrc/tests/tcstatements.pas
-
-******************************************************************************
-commit 4ad6c98d826ca9410810e15460f91ba42add1df1
-Author: michael <michael@freepascal.org>
-Date:   Wed Sep 30 13:33:16 2020 +0000
-
-    * Test for bug ID #27760
-    
-    git-svn-id: trunk@47016 -
-
-M	packages/fcl-passrc/tests/tcstatements.pas
 
 ******************************************************************************
 commit d72170f9a33cc70bff2748a07978964d28526d38
@@ -21468,35 +18228,6 @@ Date:   Mon Sep 28 13:23:43 2020 +0000
 M	packages/openssl/src/openssl.pas
 
 ******************************************************************************
-commit a66b6cd7c771e2b0f6830cc17c7fa9d3fca048a8
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Mon Sep 28 09:39:24 2020 +0000
-
-    pastojs: classname=typeinfoname
-    
-    git-svn-id: trunk@46986 -
-
-M	packages/pastojs/src/fppas2js.pp
-M	packages/pastojs/tests/tcgenerics.pas
-M	packages/pastojs/tests/tcmodules.pas
-M	packages/pastojs/tests/tcoptimizations.pas
-M	packages/pastojs/tests/tcsrcmap.pas
-M	packages/pastojs/tests/testpas2js.lpi
-M	packages/pastojs/tests/testpas2js.pp
-M	utils/pas2js/dist/rtl.js
-
-******************************************************************************
-commit b9158ed31171163f69aed30c29bdc3d52eae94f2
-Author: michael <michael@freepascal.org>
-Date:   Mon Sep 28 07:50:08 2020 +0000
-
-    * Fix bug #37830, always append dot even if signature empty
-    
-    git-svn-id: trunk@46984 -
-
-M	packages/fcl-web/src/base/fpjwt.pp
-
-******************************************************************************
 commit 9f8417ba522dddcbf40268f500d7cb3eaec440de
 Author: Károly Balogh <karoly@freepascal.org>
 Date:   Sun Sep 27 22:58:01 2020 +0000
@@ -21554,94 +18285,6 @@ M	compiler/arm/aoptcpu.pas
 M	compiler/armgen/aoptarm.pas
 
 ******************************************************************************
-commit ea0fb9a8b46cee635ea4ef58b8e7112231fd4cc7
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Sun Sep 27 08:21:21 2020 +0000
-
-    pastojs: specialize with interface constraints, issue #37690
-    
-    git-svn-id: trunk@46971 -
-
-M	packages/fcl-passrc/src/pasresolver.pp
-M	packages/pastojs/src/fppas2js.pp
-M	packages/pastojs/tests/tcgenerics.pas
-
-******************************************************************************
-commit 35f59b6736bf1d36cbf71e43b0f13009cebf5ff5
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Sat Sep 26 22:56:41 2020 +0000
-
-    pastojs: shortrefglobals: local recordtype
-    
-    git-svn-id: trunk@46969 -
-
-M	packages/fcl-passrc/src/pparser.pp
-M	packages/pastojs/src/fppas2js.pp
-M	packages/pastojs/tests/tcoptimizations.pas
-
-******************************************************************************
-commit 7945631ff1fcc7bb28de9c4eba81fe5c74058233
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Sat Sep 26 22:36:55 2020 +0000
-
-    pastojs: clean up
-    
-    git-svn-id: trunk@46968 -
-
-M	packages/pastojs/src/fppas2js.pp
-M	packages/pastojs/src/fppjssrcmap.pp
-M	packages/pastojs/src/pas2jscompiler.pp
-M	packages/pastojs/src/pas2jscompilercfg.pp
-M	packages/pastojs/src/pas2jsfscompiler.pp
-M	packages/pastojs/src/pas2jsresstrfile.pp
-
-******************************************************************************
-commit d5d9635cd9fbdfdcf22c86c5a6b0a1d43cd6b9aa
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Sat Sep 26 22:36:45 2020 +0000
-
-    fcl-passrc: clean up
-    
-    git-svn-id: trunk@46967 -
-
-M	packages/fcl-passrc/src/pscanner.pp
-
-******************************************************************************
-commit c1e700b3fe10d2139af666528fcacad6041afa45
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Sat Sep 26 22:36:30 2020 +0000
-
-    fcl-js: clean up
-    
-    git-svn-id: trunk@46966 -
-
-M	packages/fcl-js/src/jsbase.pp
-
-******************************************************************************
-commit 8246aae1aed25c3e856694d1bf9b27e4f9dc714c
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Sat Sep 26 22:27:57 2020 +0000
-
-    fcl-passrc: fixed compile with pas2js
-    
-    git-svn-id: trunk@46965 -
-
-M	packages/fcl-passrc/src/pscanner.pp
-
-******************************************************************************
-commit 4d4cdfb8047c8d770bf52a615bc49cac400223ba
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Sat Sep 26 22:03:13 2020 +0000
-
-    pastojs: ShortRefGlobals: same module class, record and enumtype
-    
-    git-svn-id: trunk@46964 -
-
-M	packages/fcl-passrc/src/pasresolver.pp
-M	packages/pastojs/src/fppas2js.pp
-M	packages/pastojs/tests/tcoptimizations.pas
-
-******************************************************************************
 commit 7f53d04ffdc6b44800ac1caf9276116754975ef1
 Author: florian <florian@freepascal.org>
 Date:   Sat Sep 26 22:03:13 2020 +0000
@@ -21690,18 +18333,6 @@ M	compiler/aoptobj.pas
 M	compiler/xtensa/cgcpu.pas
 
 ******************************************************************************
-commit ffef243908b12907c42577c5129820251ca82a47
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Sat Sep 26 16:37:27 2020 +0000
-
-    pastojs: ShortRefGlobals: local var for TEnumType
-    
-    git-svn-id: trunk@46959 -
-
-M	packages/pastojs/src/fppas2js.pp
-M	packages/pastojs/tests/tcoptimizations.pas
-
-******************************************************************************
 commit aa8fdabe1f0ed4157fef8c25c4a4ef688877a843
 Author: florian <florian@freepascal.org>
 Date:   Sat Sep 26 15:44:37 2020 +0000
@@ -21736,19 +18367,6 @@ Date:   Fri Sep 25 20:06:26 2020 +0000
     git-svn-id: trunk@46954 -
 
 M	compiler/hlcgobj.pas
-
-******************************************************************************
-commit 86c25c678318ced6b42fc17212124327217edc7a
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Fri Sep 25 08:54:52 2020 +0000
-
-    pastojs: generic function names similar to generic types using $G, ShortRefGlobals: static functions
-    
-    git-svn-id: trunk@46952 -
-
-M	packages/pastojs/src/fppas2js.pp
-M	packages/pastojs/tests/tcgenerics.pas
-M	packages/pastojs/tests/tcoptimizations.pas
 
 ******************************************************************************
 commit 882ab946ed9db7e860e6eedc3b1659fa1bd276ab
@@ -21809,40 +18427,6 @@ Date:   Thu Sep 24 10:14:42 2020 +0000
 M	.gitignore
 
 ******************************************************************************
-commit 81bc4d9fece065d2946722463680b744eb55ba28
-Author: michael <michael@freepascal.org>
-Date:   Thu Sep 24 10:09:04 2020 +0000
-
-    * Fix compilation on non-windows
-    
-    git-svn-id: trunk@46941 -
-
-M	packages/fcl-passrc/src/pscanner.pp
-
-******************************************************************************
-commit f44ce539a3362e420ce54acf0049ab960f382669
-Author: michael <michael@freepascal.org>
-Date:   Thu Sep 24 10:08:46 2020 +0000
-
-    * Enable all tests
-    
-    git-svn-id: trunk@46940 -
-
-M	packages/fcl-passrc/tests/testpassrc.lpr
-
-******************************************************************************
-commit 409dacf52faa6fd994b893c33536ad97f170fefe
-Author: michael <michael@freepascal.org>
-Date:   Thu Sep 24 10:02:34 2020 +0000
-
-    * Fix lineending being converted to LF char in comments, patch by Joe Care (Bug ID 37808)
-    
-    git-svn-id: trunk@46939 -
-
-M	packages/fcl-passrc/src/pscanner.pp
-M	packages/fcl-passrc/tests/tcscanner.pas
-
-******************************************************************************
 commit 78dca42b0e30644e0514a9abc0ca62e92933dbe2
 Author: pierre <pierre@freepascal.org>
 Date:   Thu Sep 24 10:00:53 2020 +0000
@@ -21853,18 +18437,6 @@ Date:   Thu Sep 24 10:00:53 2020 +0000
 
 M	rtl/zxspectrum/Makefile
 M	rtl/zxspectrum/Makefile.fpc
-
-******************************************************************************
-commit 0ef66a8631aca06ea472d7ab2fc4dfd39b7ea0a6
-Author: michael <michael@freepascal.org>
-Date:   Thu Sep 24 09:56:48 2020 +0000
-
-    * Fix from Joe care to implement .) as alternative for ], bug ID #37807
-    
-    git-svn-id: trunk@46937 -
-
-M	packages/fcl-passrc/src/pscanner.pp
-M	packages/fcl-passrc/tests/tcscanner.pas
 
 ******************************************************************************
 commit 85f14ad3577848238a217654db0fe5087bc6dc8e
@@ -21890,19 +18462,6 @@ Date:   Thu Sep 24 09:48:49 2020 +0000
 M	rtl/inc/heaptrc.pp
 
 ******************************************************************************
-commit 69b1d61a76e6072361e0d7819287a5a56d8d78b5
-Author: joost <joost@cnoc.nl>
-Date:   Wed Sep 23 21:39:24 2020 +0000
-
-     * TPasParser.ParseAdhocExpression implemented + test
-    
-    git-svn-id: trunk@46933 -
-
-M	packages/fcl-passrc/src/pparser.pp
-M	packages/fcl-passrc/tests/tcexprparser.pas
-M	packages/fcl-passrc/tests/testpassrc.lpr
-
-******************************************************************************
 commit dfc485c4f44ff22cab66875a50e9a7e4178f8391
 Author: florian <florian@freepascal.org>
 Date:   Wed Sep 23 20:25:04 2020 +0000
@@ -21914,68 +18473,6 @@ Date:   Wed Sep 23 20:25:04 2020 +0000
 M	compiler/ngtcon.pas
 
 ******************************************************************************
-commit 5cde0fc1e2fb87c495450f1ac9672f3b9e3fbf4f
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Wed Sep 23 15:48:21 2020 +0000
-
-    pastojs: fixed spezialize other unit generic with param in unit intf of spezialize, issue #37762
-    
-    git-svn-id: trunk@46930 -
-
-M	packages/pastojs/src/fppas2js.pp
-M	packages/pastojs/tests/tcgenerics.pas
-
-******************************************************************************
-commit 135f3745d6ea5f610ee50e6a1d70bfb05477da9f
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Wed Sep 23 14:35:38 2020 +0000
-
-    pastojs: docs
-    
-    git-svn-id: trunk@46929 -
-
-M	utils/pas2js/docs/translation.html
-
-******************************************************************************
-commit cf4ca3a280e4551240e0029fff369149328fe5af
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Wed Sep 23 14:32:47 2020 +0000
-
-    pastojs: optimization ShortRefGlobals
-    
-    git-svn-id: trunk@46928 -
-
-M	utils/pas2js/docs/translation.html
-
-******************************************************************************
-commit 755773caadf4b0e3f54bbe36773d2eb301c4b47a
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Wed Sep 23 14:31:17 2020 +0000
-
-    pastojs: optimization ShortRefGlobals
-    
-    git-svn-id: trunk@46927 -
-
-M	packages/pastojs/src/fppas2js.pp
-M	packages/pastojs/src/pas2jscompiler.pp
-M	packages/pastojs/src/pas2jsutils.pp
-M	packages/pastojs/tests/tcgenerics.pas
-M	packages/pastojs/tests/tcmodules.pas
-M	packages/pastojs/tests/tcoptimizations.pas
-M	packages/pastojs/tests/testpas2js.lpi
-
-******************************************************************************
-commit 54f08ea60fded3ed6c98e9b1a8f8672a350f7597
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Wed Sep 23 14:30:39 2020 +0000
-
-    pastojs: set $ancestor of pascal descending of external class to null
-    
-    git-svn-id: trunk@46926 -
-
-M	utils/pas2js/dist/rtl.js
-
-******************************************************************************
 commit 37f1d085104ede10a8118595679d8fce7db34c94
 Author: pierre <pierre@freepascal.org>
 Date:   Wed Sep 23 12:07:06 2020 +0000
@@ -21985,17 +18482,6 @@ Date:   Wed Sep 23 12:07:06 2020 +0000
     git-svn-id: trunk@46925 -
 
 M	rtl/xtensa/setjump.inc
-
-******************************************************************************
-commit 56fbaf23da268068eaae5b896c4e554c3fa2acc6
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Tue Sep 22 21:20:29 2020 +0000
-
-    fcl-passrc: comments
-    
-    git-svn-id: trunk@46919 -
-
-M	packages/fcl-passrc/src/pasresolver.pp
 
 ******************************************************************************
 commit 4de5195a9ac9a3dd0e90af7f93c717a3c6b10cd1
@@ -22144,17 +18630,6 @@ M	compiler/scanner.pas
 M	tests/webtbs/tw37428.pp
 
 ******************************************************************************
-commit 85a11c82041e47d847e5ad97b0c428b989a55f8f
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Sat Sep 19 23:41:36 2020 +0000
-
-    fcl-passrc: resolver: fixed inteface constraints, iisue #37624
-    
-    git-svn-id: trunk@46902 -
-
-M	packages/fcl-passrc/src/pasresolver.pp
-
-******************************************************************************
 commit 2c372071fd140265dafc10645cabda2080c57e2e
 Author: svenbarth <pascaldragon@googlemail.com>
 Date:   Sat Sep 19 21:20:07 2020 +0000
@@ -22253,17 +18728,6 @@ M	rtl/inc/dynarr.inc
 A	tests/test/tarray22.pp
 
 ******************************************************************************
-commit f8b5c81b8bfa55ba3340854d41d1fb1c88a9d1c2
-Author: michael <michael@freepascal.org>
-Date:   Fri Sep 18 14:30:39 2020 +0000
-
-    * Avoid double begin/end
-    
-    git-svn-id: trunk@46889 -
-
-M	packages/fcl-passrc/src/paswrite.pp
-
-******************************************************************************
 commit de180d765636fe651f86a239e98b0ebb5538041f
 Author: Károly Balogh <karoly@freepascal.org>
 Date:   Thu Sep 17 20:51:25 2020 +0000
@@ -22289,17 +18753,6 @@ M	compiler/msgidx.inc
 M	compiler/msgtxt.inc
 M	compiler/ninl.pas
 A	tests/webtbf/tw37763.pp
-
-******************************************************************************
-commit e2647ea07267611af28080421e05f74ccc9308e9
-Author: michael <michael@freepascal.org>
-Date:   Thu Sep 17 08:21:15 2020 +0000
-
-    * Fix bug ID #0037760
-    
-    git-svn-id: trunk@46884 -
-
-M	packages/fcl-passrc/src/paswrite.pp
 
 ******************************************************************************
 commit f316121d53dcb540390ca8fcda64a67e53cf0f17
@@ -22335,17 +18788,6 @@ Date:   Wed Sep 16 20:37:04 2020 +0000
     git-svn-id: trunk@46881 -
 
 M	utils/fpcm/revision.inc
-
-******************************************************************************
-commit 48c86637b470da0daf8d614907cc672ebaf6052b
-Author: michael <michael@freepascal.org>
-Date:   Wed Sep 16 19:17:12 2020 +0000
-
-    * Patch from Joe Care to fix bug ID #37758 (wrong brackets for array params)
-    
-    git-svn-id: trunk@46878 -
-
-M	packages/fcl-passrc/src/pastree.pp
 
 ******************************************************************************
 commit 660cfc49e86ae4b141544a526281883538397a49
@@ -22444,18 +18886,6 @@ Date:   Sat Sep 12 10:13:00 2020 +0000
 M	compiler/rgobj.pas
 
 ******************************************************************************
-commit 96cb396d56b8a9666d1f8d30943fa31d1ad6d393
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Sat Sep 12 07:59:05 2020 +0000
-
-    pastojs: jsglobalalias: references in init to elements from implementation uses
-    
-    git-svn-id: trunk@46854 -
-
-M	packages/pastojs/src/fppas2js.pp
-M	packages/pastojs/tests/tcoptimizations.pas
-
-******************************************************************************
 commit f8b17c410b1e347f39de7d988b5f95336b73a1a4
 Author: florian <florian@freepascal.org>
 Date:   Fri Sep 11 21:51:48 2020 +0000
@@ -22479,29 +18909,6 @@ Date:   Fri Sep 11 21:24:59 2020 +0000
     git-svn-id: trunk@46850 -
 
 M	compiler/symdef.pas
-
-******************************************************************************
-commit af7008ee2f435baf09d3c5e1d57a1e11dcf99ae2
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Fri Sep 11 15:59:20 2020 +0000
-
-    pastojs: jsglobalalias: references to elements from implementation uses
-    
-    git-svn-id: trunk@46847 -
-
-M	packages/pastojs/src/fppas2js.pp
-M	packages/pastojs/tests/tcoptimizations.pas
-
-******************************************************************************
-commit aed1866db9b2d639cb1f7848a7ed7a02e0a675dc
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Fri Sep 11 15:58:41 2020 +0000
-
-    fcl-passrc: added TPasResolver.ImplementationUsesUnit
-    
-    git-svn-id: trunk@46846 -
-
-M	packages/fcl-passrc/src/pasresolver.pp
 
 ******************************************************************************
 commit b5abefe03ed357ffdc0e7c69f76827899c9fb87f
@@ -22562,43 +18969,6 @@ Date:   Wed Sep 9 21:08:03 2020 +0000
 M	compiler/xtensa/aasmcpu.pas
 
 ******************************************************************************
-commit edd10be1e2be0475a034c743fe270c5dfafcc77d
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Wed Sep 9 20:40:58 2020 +0000
-
-    pastojs: docs updated
-    
-    git-svn-id: trunk@46818 -
-
-M	utils/pas2js/docs/translation.html
-
-******************************************************************************
-commit aae5c452cba018e82b3fe564f9b1cd72e93fc70d
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Wed Sep 9 20:32:01 2020 +0000
-
-    pastojs: fixed impl rtti
-    
-    git-svn-id: trunk@46817 -
-
-M	utils/pas2js/dist/rtl.js
-
-******************************************************************************
-commit 02c72dd5c43d53115aa774d1c14f6853f8f05329
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Wed Sep 9 19:56:43 2020 +0000
-
-    pastojs: moved unit implementation js function into unit interface to share local vars
-    
-    git-svn-id: trunk@46816 -
-
-M	packages/pastojs/src/fppas2js.pp
-M	packages/pastojs/tests/tcgenerics.pas
-M	packages/pastojs/tests/tcmodules.pas
-M	packages/pastojs/tests/tcoptimizations.pas
-M	utils/pas2js/dist/rtl.js
-
-******************************************************************************
 commit 277d98431c0aa3a72664b639fcc02124bf870a14
 Author: Károly Balogh <karoly@freepascal.org>
 Date:   Wed Sep 9 15:15:52 2020 +0000
@@ -22619,63 +18989,6 @@ Date:   Wed Sep 9 14:58:45 2020 +0000
     git-svn-id: trunk@46810 -
 
 M	rtl/linux/ostypes.inc
-
-******************************************************************************
-commit 0f466cbed7401e3e042e8398a6eb060e31ab7b95
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Wed Sep 9 11:43:57 2020 +0000
-
-    fcl-passrc: fixed compile with pas2js
-    
-    git-svn-id: trunk@46809 -
-
-M	packages/fcl-passrc/src/pasresolver.pp
-
-******************************************************************************
-commit 13c10cc6225e37aa6113c82a9f8f97017ce0ed49
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Wed Sep 9 11:40:53 2020 +0000
-
-    fcl-passrc: fixed compile with pas2js
-    
-    git-svn-id: trunk@46808 -
-
-M	packages/fcl-passrc/src/pasresolver.pp
-
-******************************************************************************
-commit 342771c0c74445d93e86ff10a6b49c804abe24d1
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Wed Sep 9 11:24:56 2020 +0000
-
-    pastojs: fixed create pascal class descendent from a pascal class descendent of a JS function
-    
-    git-svn-id: trunk@46807 -
-
-M	utils/pas2js/dist/rtl.js
-
-******************************************************************************
-commit 9d3daca70c48851842d4fab3b43eea98713debaa
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Wed Sep 9 10:54:26 2020 +0000
-
-    pastojs: pass impl uses as [] instead of null
-    
-    git-svn-id: trunk@46806 -
-
-M	packages/pastojs/src/fppas2js.pp
-M	packages/pastojs/tests/tcgenerics.pas
-
-******************************************************************************
-commit 1d3ea626747a277a9ca137d67f688d6cb103f128
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Wed Sep 9 10:39:29 2020 +0000
-
-    pastojs: renamed aliasglobals to jsaliasglobals
-    
-    git-svn-id: trunk@46805 -
-
-M	packages/pastojs/src/fppas2js.pp
-M	packages/pastojs/tests/tcoptimizations.pas
 
 ******************************************************************************
 commit c8f592d26055bf2ad05afb611fc5bef0522a732e
@@ -22725,30 +19038,6 @@ M	compiler/xtensa/cpupara.pas
 M	compiler/xtensa/cpupi.pas
 
 ******************************************************************************
-commit ce9d7f9995d87e199fcc2728bffb6bc8f2329d78
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Mon Sep 7 19:44:04 2020 +0000
-
-    pastojs: specialize procedure using pascal name
-    
-    git-svn-id: trunk@46796 -
-
-M	packages/pastojs/src/fppas2js.pp
-
-******************************************************************************
-commit 2f661371fe969b19b3508db8aaf302ffea74154a
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Mon Sep 7 17:21:15 2020 +0000
-
-    pastojs: specialize class/record type using pascal name
-    
-    git-svn-id: trunk@46795 -
-
-M	packages/pastojs/src/fppas2js.pp
-M	packages/pastojs/tests/tcgenerics.pas
-M	utils/pas2js/dist/rtl.js
-
-******************************************************************************
 commit 60c23daa91f9ed7154c8566e86113aee573e53f7
 Author: yury <jura@cp-lab.com>
 Date:   Mon Sep 7 12:54:20 2020 +0000
@@ -22759,42 +19048,6 @@ Date:   Mon Sep 7 12:54:20 2020 +0000
 
 M	compiler/ncgutil.pas
 M	compiler/rgobj.pas
-
-******************************************************************************
-commit e50916a93cbfdf4ea74c5752106e893ba9a4bc26
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Mon Sep 7 12:24:19 2020 +0000
-
-    pastojs: specialize array type using pascal name
-    
-    git-svn-id: trunk@46793 -
-
-M	packages/fcl-passrc/src/pasresolver.pp
-M	packages/pastojs/src/fppas2js.pp
-M	packages/pastojs/tests/tcgenerics.pas
-
-******************************************************************************
-commit a577fa3e584cf03fd9b9de3088135fb4e2c8415f
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Mon Sep 7 11:10:40 2020 +0000
-
-    pastojs: specialized procedure type RTTI now uses  pascal name
-    
-    git-svn-id: trunk@46792 -
-
-M	packages/pastojs/src/fppas2js.pp
-M	packages/pastojs/tests/tcgenerics.pas
-
-******************************************************************************
-commit 7159e636143e3778b35a057985e9627dd5a2c4af
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Mon Sep 7 10:53:13 2020 +0000
-
-    pastojs: using pascal names for RTTI
-    
-    git-svn-id: trunk@46791 -
-
-M	packages/pastojs/src/fppas2js.pp
 
 ******************************************************************************
 commit cdf1f710e58de512d1e3504b5cd61b66cfebc49b
@@ -22839,30 +19092,6 @@ Date:   Sun Sep 6 20:23:22 2020 +0000
     git-svn-id: trunk@46788 -
 
 M	tests/Makefile.fpc
-
-******************************************************************************
-commit 43aa4c6b40035ec56b8085a377f4793261ff8200
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Sun Sep 6 09:06:30 2020 +0000
-
-    pastojs: override specialize name
-    
-    git-svn-id: trunk@46787 -
-
-M	packages/pastojs/src/fppas2js.pp
-M	packages/pastojs/tests/tcgenerics.pas
-
-******************************************************************************
-commit f3579bf5267eb818260876497c3cd452388e35ec
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Sun Sep 6 09:06:03 2020 +0000
-
-    fcl-passrc: resolver specialize name with params
-    
-    git-svn-id: trunk@46786 -
-
-M	packages/fcl-passrc/src/pasresolver.pp
-M	packages/fcl-passrc/tests/tcresolvegenerics.pas
 
 ******************************************************************************
 commit 9337b2a3acf2ffdc6a43077a4902e71e7f4f616f
@@ -23009,17 +19238,6 @@ M	tests/webtbs/tw29367.pp
 M	tests/webtbs/tw8180.pp
 
 ******************************************************************************
-commit c45e56bc91ed843802bb55eb386f88bb9ae0ae2c
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Sat Sep 5 11:52:44 2020 +0000
-
-    pastojs: specializations: create initSpec for class/record only if typeinfo or global field exists
-    
-    git-svn-id: trunk@46772 -
-
-M	packages/pastojs/src/fppas2js.pp
-
-******************************************************************************
 commit 965f759c0df8ec5383a0f0f6fad9b5203d86d99a
 Author: florian <florian@freepascal.org>
 Date:   Fri Sep 4 20:58:14 2020 +0000
@@ -23029,41 +19247,6 @@ Date:   Fri Sep 4 20:58:14 2020 +0000
     git-svn-id: trunk@46770 -
 
 M	compiler/xtensa/cpupara.pas
-
-******************************************************************************
-commit 6c8b0614b198cf5da0ca9f6f57ecc88cf083af1e
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Fri Sep 4 17:57:19 2020 +0000
-
-    pastojs: specializations: create initSpec if params need it
-    
-    git-svn-id: trunk@46769 -
-
-M	packages/pastojs/src/fppas2js.pp
-
-******************************************************************************
-commit fc4c48a11c21a159bd45397d01feead8a8bcdbb2
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Fri Sep 4 17:17:46 2020 +0000
-
-    pastojs: override scope class array and proctype
-    
-    git-svn-id: trunk@46768 -
-
-M	packages/pastojs/src/fppas2js.pp
-M	packages/pastojs/tests/tcgenerics.pas
-
-******************************************************************************
-commit 9140e9414d242296a1a4df902f95c26de9757d7e
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Fri Sep 4 17:17:12 2020 +0000
-
-    fcl-passrc: allow override scope class array and proctype
-    
-    git-svn-id: trunk@46767 -
-
-M	packages/fcl-passrc/src/pasresolveeval.pas
-M	packages/fcl-passrc/src/pasresolver.pp
 
 ******************************************************************************
 commit b2177fb50e628d3a1fccde2245428b431940ca4b
@@ -23154,17 +19337,6 @@ M	tests/test/cg/tsubst.pp
 M	tests/test/cg/tvec.pp
 
 ******************************************************************************
-commit c7628c11c663224710fc10f03943bfd722aa07a8
-Author: michael <michael@freepascal.org>
-Date:   Thu Sep 3 08:38:43 2020 +0000
-
-    * Better error message for array types (bug ID 37685, patch from Henrique Werlang)
-    
-    git-svn-id: trunk@46755 -
-
-M	packages/fcl-passrc/src/pasresolveeval.pas
-
-******************************************************************************
 commit 1e38369d06eea6c5e8c7fbda743b6af27d147a62
 Author: florian <florian@freepascal.org>
 Date:   Wed Sep 2 20:47:53 2020 +0000
@@ -23174,42 +19346,6 @@ Date:   Wed Sep 2 20:47:53 2020 +0000
     git-svn-id: trunk@46752 -
 
 M	compiler/xtensa/ncpumat.pas
-
-******************************************************************************
-commit dd82f63c3f9f7a23a3d00ace434e1c7a52f380a9
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Wed Sep 2 20:23:27 2020 +0000
-
-    fcl-passrc: fixed unit implementation uses namespace as unit intf identifier
-    
-    git-svn-id: trunk@46751 -
-
-M	packages/fcl-passrc/src/pasresolver.pp
-M	packages/fcl-passrc/tests/tcresolver.pas
-
-******************************************************************************
-commit 545ee82ec4cc89fda822f2b44196ba3dac61ebae
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Wed Sep 2 14:11:04 2020 +0000
-
-    pastojs: delay RTTI init of dynamic and static array specializations
-    
-    git-svn-id: trunk@46750 -
-
-M	packages/pastojs/src/fppas2js.pp
-
-******************************************************************************
-commit 6a0ea119e9f21e3165386ba48765fbd154da6848
-Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
-Date:   Tue Sep 1 22:01:52 2020 +0000
-
-    pastojs: fixed concat(a) calling arrayRef
-    
-    git-svn-id: trunk@46745 -
-
-M	packages/pastojs/src/fppas2js.pp
-M	packages/pastojs/tests/tcmodules.pas
-M	utils/pas2js/dist/rtl.js
 
 ******************************************************************************
 commit 1cbdc9cc9aadd23470954741b89771f417014e35
@@ -23232,17 +19368,6 @@ Date:   Tue Sep 1 20:32:44 2020 +0000
     git-svn-id: trunk@46742 -
 
 M	rtl/freertos/systhrd.inc
-
-******************************************************************************
-commit 6f979c9278ca7c52f3c4250d0c06e45ff1927f50
-Author: michael <michael@freepascal.org>
-Date:   Tue Sep 1 18:35:41 2020 +0000
-
-    * Fix again 37656
-    
-    git-svn-id: trunk@46741 -
-
-M	utils/pas2js/dist/rtl.js
 
 ******************************************************************************
 commit d5ce344b67a811e9360b47ee0f02cbeeebd44953
@@ -50231,18 +46356,6 @@ Date:   Mon Aug 5 08:50:37 2019 +0000
 M	compiler/powerpc64/nppcadd.pas
 
 ******************************************************************************
-commit 754b1bd930eceb011dad120d1241ebe828040ffb
-Author: pierre <pierre@freepascal.org>
-Date:   Mon Aug 5 08:10:02 2019 +0000
-
-     Add PPUDUMP variable to be able to specify explicit version of ppudump program, defaulting to ppudump executable in SEARCHPATH
-    
-    git-svn-id: trunk@42580 -
-
-M	compiler/Makefile
-M	compiler/Makefile.fpc
-
-******************************************************************************
 commit d6c5a1799ced537479b012392478218b5aa59ef6
 Author: pierre <pierre@freepascal.org>
 Date:   Mon Aug 5 06:47:51 2019 +0000
@@ -54338,7 +50451,6 @@ Date:   Sun Apr 28 09:26:52 2019 +0000
     git-svn-id: trunk@41952 -
 
 M	packages/fcl-registry/src/winreg.inc
-
 ******************************************************************************
 commit 639adc314f4660859264f647b2b5172847265dcf
 Author: pierre <pierre@freepascal.org>
