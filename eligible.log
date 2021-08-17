@@ -1,4 +1,52 @@
 ******************************************************************************
+commit 6b36229d3c1e202665ca7b34d731194534fccdf9
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Tue Aug 17 16:47:00 2021 +0200
+
+    * Allocate min threads
+
+M	packages/fcl-base/src/fpthreadpool.pp
+
+******************************************************************************
+commit 6e8775f2a9934349c3f13921aaeed6945f9f919c
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Tue Aug 17 16:25:24 2021 +0200
+
+    * Add thread pool to fpmake
+
+M	packages/fcl-base/fpmake.pp
+
+******************************************************************************
+commit 2e0a88901e2b1ee57dae1caa5b803c012cbf315c
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Tue Aug 17 16:21:16 2021 +0200
+
+    * Initial thread pool implementation
+
+M	packages/fcl-base/examples/README.txt
+A	packages/fcl-base/examples/testthreadpool.pp
+A	packages/fcl-base/src/fpthreadpool.pp
+
+******************************************************************************
+commit c426791a1b8f2e947b5c66e5b5e0ab0be2121a66
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Tue Aug 17 13:47:51 2021 +0000
+
+     Also ignore compiler/gppc* pattern
+
+M	.gitignore
+
+******************************************************************************
+commit 400e11e6cfdef0bc217dd92b5214e21222f09f08
+Author: Ondrej Pokorny <ondrej@kluug.net>
+Date:   Tue Aug 17 10:20:25 2021 +0000
+
+    Propagate SSL initialization errors as exceptions
+
+M	packages/fcl-net/src/ssockets.pp
+M	packages/openssl/src/opensslsockets.pp
+
+******************************************************************************
 commit 07dcd22b1c812f4dc659995c84c51fc580383a59
 Author: Yuriy Sydorov <jura@cp-lab.com>
 Date:   Mon Aug 16 21:53:17 2021 +0300
@@ -7028,20 +7076,6 @@ Date:   Wed Mar 31 21:03:50 2021 +0000
     git-svn-id: trunk@49096 -
 
 M	compiler/arm/aasmcpu.pas
-
-******************************************************************************
-commit cc64d9eb4e036d8185c75393c21968cdbbb73e87
-Author: florian <florian@freepascal.org>
-Date:   Wed Mar 31 20:53:18 2021 +0000
-
-      * do not swap left/right code generation for assignment nodes if
-        conditional expressions are involved, resolves #38129
-    
-    git-svn-id: trunk@49095 -
-
-M	.gitattributes
-M	compiler/ncgld.pas
-A	tests/webtbs/tw38129.pp
 
 ******************************************************************************
 commit c8c6e647be33882b84c2ffffd9c4b84ea4fee1a0
@@ -50451,6 +50485,7 @@ Date:   Sun Apr 28 09:26:52 2019 +0000
     git-svn-id: trunk@41952 -
 
 M	packages/fcl-registry/src/winreg.inc
+
 ******************************************************************************
 commit 639adc314f4660859264f647b2b5172847265dcf
 Author: pierre <pierre@freepascal.org>
@@ -53201,21 +53236,6 @@ M	compiler/arm/aoptcpu.pas
 M	compiler/avr/aoptcpu.pas
 M	compiler/sparcgen/aoptcpu.pas
 M	compiler/x86/aoptx86.pas
-
-******************************************************************************
-commit e24449bcfd24e482e286b294830bcc76044c4a82
-Author: florian <florian@freepascal.org>
-Date:   Sun Jan 20 12:55:20 2019 +0000
-
-    * if sub nodes of a commutative node contain conditionally executed nodes, these sub nodes might not be swapped
-      as this might result in some nodes not being executed, like temp. create nodes with init. code, see e.g. issue #34653, resolves #34653
-    
-    git-svn-id: trunk@40934 -
-
-M	.gitattributes
-M	compiler/ncgutil.pas
-M	compiler/nutils.pas
-A	tests/webtbs/tw34653.pp
 
 ******************************************************************************
 commit 925531b99c1ffcb99a838a3991005eee827bfa9b
