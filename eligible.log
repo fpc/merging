@@ -1,4 +1,45 @@
 ******************************************************************************
+commit f6636c9c1c447ce1a2018b3389257c7bc0870a74
+Author: Don <LongDirtyAnimAlf@gmail.com>
+Date:   Thu Aug 19 07:51:36 2021 +0100
+
+    Allow custom definition of GIT.
+
+M	compiler/Makefile
+M	compiler/Makefile.fpc
+
+******************************************************************************
+commit aa9ff6c225997c84ded257d33219b60374470786
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Wed Aug 18 16:03:32 2021 +0200
+
+    fcl-json: fixed testjson.lpi
+
+M	packages/fcl-json/tests/testjson.lpi
+
+******************************************************************************
+commit a4878d892ce392fb3ede434650d246c63e6f4dd6
+Author: florian <florian@freepascal.org>
+Date:   Wed Aug 18 15:16:51 2021 +0200
+
+      * always use $(GIT) to call git
+
+M	compiler/Makefile
+M	compiler/Makefile.fpc
+
+******************************************************************************
+commit 4401ef32bb51ed138015821fc2c8f51c467fec6d
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Wed Aug 18 09:45:26 2021 +0200
+
+    pastojs: emulate compile time assign integer constant of different type
+
+M	packages/fcl-passrc/src/pasresolveeval.pas
+M	packages/fcl-passrc/src/pasresolver.pp
+M	packages/pastojs/src/fppas2js.pp
+M	packages/pastojs/tests/tcmodules.pas
+
+******************************************************************************
 commit 6b36229d3c1e202665ca7b34d731194534fccdf9
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Tue Aug 17 16:47:00 2021 +0200
