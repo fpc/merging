@@ -1,12 +1,61 @@
 ******************************************************************************
-commit f6636c9c1c447ce1a2018b3389257c7bc0870a74
-Author: Don <LongDirtyAnimAlf@gmail.com>
-Date:   Thu Aug 19 07:51:36 2021 +0100
+commit 6c8b7577958cb4d7589ecaf9705a4568e24c7656
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Aug 21 09:20:50 2021 +0200
 
-    Allow custom definition of GIT.
+    * Fix compation
 
-M	compiler/Makefile
-M	compiler/Makefile.fpc
+M	utils/fpdoc/dw_html.pp
+
+******************************************************************************
+commit f138af02b9b67d26c31bdf1c5ce4bdd19a359dd8
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Aug 21 09:13:06 2021 +0200
+
+    * Fix by Mark Paley to add IfThen for StringList and TStringDynArray. Issue #39314
+
+M	packages/rtl-objpas/src/inc/strutils.pp
+M	rtl/objpas/classes/classes.inc
+M	rtl/objpas/classes/classesh.inc
+
+******************************************************************************
+commit f069f272670ebc7579e80238ab10a55e37bc3b8f
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Aug 21 09:11:24 2021 +0200
+
+    * fix compilation
+
+M	rtl/objpas/types.pp
+
+******************************************************************************
+commit 06d99b1e6822a8c8cbf63b0af2b820068feb530b
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Aug 21 09:05:57 2021 +0200
+
+    * Remove unneeded diagnostic output
+
+M	utils/fpdoc/dw_html.pp
+
+******************************************************************************
+commit 7b6f273023059d3a905fd35897f2db9eb5bf46d0
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Aug 21 09:05:23 2021 +0200
+
+    * Remove spurious var, prevents fpdoc from handling record
+
+M	rtl/objpas/types.pp
+
+******************************************************************************
+commit 61a3f6603d2fac4f4b88cabb5c1ab1361bf6429b
+Author: florian <florian@freepascal.org>
+Date:   Fri Aug 20 23:54:49 2021 +0200
+
+      * change information for round* fixed
+
+M	compiler/i386/i386prop.inc
+M	compiler/i8086/i8086prop.inc
+M	compiler/x86/x86ins.dat
+M	compiler/x86_64/x8664pro.inc
 
 ******************************************************************************
 commit aa9ff6c225997c84ded257d33219b60374470786
@@ -16,16 +65,6 @@ Date:   Wed Aug 18 16:03:32 2021 +0200
     fcl-json: fixed testjson.lpi
 
 M	packages/fcl-json/tests/testjson.lpi
-
-******************************************************************************
-commit a4878d892ce392fb3ede434650d246c63e6f4dd6
-Author: florian <florian@freepascal.org>
-Date:   Wed Aug 18 15:16:51 2021 +0200
-
-      * always use $(GIT) to call git
-
-M	compiler/Makefile
-M	compiler/Makefile.fpc
 
 ******************************************************************************
 commit 4401ef32bb51ed138015821fc2c8f51c467fec6d
@@ -17321,34 +17360,6 @@ M	compiler/arm/cpubase.pas
 M	compiler/armgen/aoptarm.pas
 
 ******************************************************************************
-commit 201281ae2a98d79e9fc49ec4a3e5b35e7d757027
-Author: florian <florian@freepascal.org>
-Date:   Sun Oct 18 17:13:39 2020 +0000
-
-      * compiler Makefile checks if SOURCE_SOURCE_DATE_EPOCH_DATE is set or if git is used, in either case the former or the latter are used for the build date reported by the compiler
-    
-    git-svn-id: trunk@47133 -
-
-M	compiler/Makefile
-M	compiler/Makefile.fpc
-
-******************************************************************************
-commit 9ea52b8578053c1c4b89c9be35d994901f28e7ad
-Author: florian <florian@freepascal.org>
-Date:   Sun Oct 18 17:13:38 2020 +0000
-
-      + new switches -DD and DT which allow to pass an arbitrary string which is used by %DATE%/%TIME%
-    
-    git-svn-id: trunk@47132 -
-
-M	compiler/globals.pas
-M	compiler/msg/errore.msg
-M	compiler/msgidx.inc
-M	compiler/msgtxt.inc
-M	compiler/options.pas
-M	compiler/scanner.pas
-
-******************************************************************************
 commit 080d8c28f7a9725d93943ed6e4014ea729627046
 Author: Jonas Maebe <jonas@freepascal.org>
 Date:   Sat Oct 17 14:59:04 2020 +0000
@@ -22884,19 +22895,6 @@ Date:   Wed Jul 22 23:15:03 2020 +0000
 M	rtl/linux/ostypes.inc
 M	tests/tbs/tb0561a.pp
 M	tests/tbs/tb0561b.pp
-
-******************************************************************************
-commit ed158f1e52f826525aa2f6ad5005cee9cfab0ad3
-Author: florian <florian@freepascal.org>
-Date:   Wed Jul 22 20:47:12 2020 +0000
-
-      * set register size correctly for popcnt(<byte>), resolves #37400
-    
-    git-svn-id: trunk@45828 -
-
-M	.gitattributes
-M	compiler/x86/nx86inl.pas
-A	tests/webtbs/tw37400.pp
 
 ******************************************************************************
 commit 6478a727d78ec4d0fda9522f279b1cf3c7184c46
