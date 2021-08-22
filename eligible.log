@@ -1,4 +1,27 @@
 ******************************************************************************
+commit 0558fefc5179a79f11240d503789e3e538162a6a
+Author: pierre <pierre@freepascal.org>
+Date:   Fri Jan 22 12:51:53 2021 +0000
+
+    Avoid range check errors
+    (cherry picked from commit 1351ccb3bfe6adad6be0246acb7645203df8b3b0)
+    
+    # Conflicts:
+    #       .gitattributes
+
+M	tests/bench/bcase.pp
+
+******************************************************************************
+commit a73ee4f403dc037bdc0d45e2ae793f55f994771a
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sun Aug 22 14:56:19 2021 +0000
+
+    Solves #39296: x86-64 parameter zero/sign extension
+
+M	compiler/x86_64/cpupara.pas
+A	tests/webtbs/tw39296.pp
+
+******************************************************************************
 commit 6c8b7577958cb4d7589ecaf9705a4568e24c7656
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Sat Aug 21 09:20:50 2021 +0200
@@ -663,6 +686,920 @@ M	packages/x11/fpmake.pp
 A	packages/x11/src/evi.inc
 A	packages/x11/src/xevi.pp
 A	packages/x11/tests/xevi_linktest.pp
+
+******************************************************************************
+commit 7368fcf4c5a6845a0c2257ae0479556850184565
+Author: tg74 <tg74@idefix.freepascal.org>
+Date:   Fri Jun 18 14:07:13 2021 +0000
+
+    activate 'compressed disp8*N' for VCVTQQ2PS xmmreg, xmmrm and VCVTTPD2UDQ xmmreg, xmmrm
+    
+    git-svn-id: branches/tg74/avx512-0037785@49513 -
+
+M	compiler/i386/i386tab.inc
+M	compiler/i8086/i8086tab.inc
+M	compiler/x86_64/x8664tab.inc
+
+******************************************************************************
+commit 43b29375899276a2734571d2be8daef68e5b9008
+Author: tg74 <tg74@idefix.freepascal.org>
+Date:   Fri Jun 18 14:06:55 2021 +0000
+
+    activate 'compressed disp8*N' for VCVTQQ2PS xmmreg, xmmrm and VCVTTPD2UDQ xmmreg, xmmrm
+    
+    git-svn-id: branches/tg74/avx512-0037785@49512 -
+
+M	compiler/x86/x86ins.dat
+
+******************************************************************************
+commit b4a002e3e777f7a26040bf42a2372a8f1908e9ba
+Author: tg74 <tg74@idefix.freepascal.org>
+Date:   Tue Mar 9 16:31:02 2021 +0000
+
+    working on new testmethods avx512-memref-operands - 'compressed disp8*N'
+    
+    git-svn-id: branches/tg74/avx512-0037785@48927 -
+
+M	tests/utils/avx/asmtestgenerator.pas
+M	tests/utils/avx/avxopcodes.pas
+
+******************************************************************************
+commit ad753c0bbd52d42685ef5cdb0406c2c7e369c605
+Author: tg74 <tg74@idefix.freepascal.org>
+Date:   Fri Mar 5 16:08:34 2021 +0000
+
+    working on new testmethods avx512-memref-operands - 'compressed disp8*N'
+    
+    git-svn-id: branches/tg74/avx512-0037785@48880 -
+
+M	tests/utils/avx/asmtestgenerator.pas
+
+******************************************************************************
+commit d6235174ac37b3aa7ba6ee1e03a5abe450d2a4d5
+Author: tg74 <tg74@idefix.freepascal.org>
+Date:   Fri Mar 5 09:02:53 2021 +0000
+
+    working on new testmethods avx512-memref-operands - 'compressed disp8*N'
+    
+    git-svn-id: branches/tg74/avx512-0037785@48879 -
+
+M	tests/utils/avx/asmtestgenerator.pas
+
+******************************************************************************
+commit 5d3faa5ebd1f1d4acbf58d563b5b38c9a4ae6cf1
+Author: tg74 <tg74@idefix.freepascal.org>
+Date:   Thu Mar 4 15:54:43 2021 +0000
+
+    working on new testmethods avx512-memref-operands - 'compressed disp8*N'
+    
+    git-svn-id: branches/tg74/avx512-0037785@48877 -
+
+M	tests/utils/avx/asmtestgenerator.pas
+
+******************************************************************************
+commit 798eb0e768dee97be6c729e35445765dbedb7d36
+Author: tg74 <tg74@idefix.freepascal.org>
+Date:   Thu Mar 4 05:47:14 2021 +0000
+
+    avxtestgenerator: working on new tests for compressed disp8*N
+    
+    git-svn-id: branches/tg74/avx512-0037785@48875 -
+
+M	tests/utils/avx/asmtestgenerator.pas
+
+******************************************************************************
+commit bc42999a09d3acb45eb1b3daf3a2223e828f93ff
+Author: tg74 <tg74@idefix.freepascal.org>
+Date:   Wed Mar 3 16:27:21 2021 +0000
+
+    working on new testmethods avx512-memref-operands - 'compressed disp8*N'
+    
+    git-svn-id: branches/tg74/avx512-0037785@48873 -
+
+M	tests/utils/avx/asmtestgenerator.pas
+
+******************************************************************************
+commit fa8bbc43960c51ef1fa09ef630ab53c08e76ea29
+Author: tg74 <tg74@idefix.freepascal.org>
+Date:   Wed Mar 3 05:26:29 2021 +0000
+
+    avxtestgenerator: working on new tests for compressed disp8*N
+    
+    git-svn-id: branches/tg74/avx512-0037785@48872 -
+
+M	tests/utils/avx/asmtestgenerator.pas
+
+******************************************************************************
+commit 0569ab4a2859d1e5ff60e996deaa0bcf2fff737c
+Author: tg74 <tg74@idefix.freepascal.org>
+Date:   Tue Mar 2 16:30:31 2021 +0000
+
+    working on new testmethods avx512-memref-operands - 'compressed disp8*N'
+    
+    git-svn-id: branches/tg74/avx512-0037785@48870 -
+
+M	tests/utils/avx/asmtestgenerator.pas
+
+******************************************************************************
+commit 3b408e6a6a986e8c1f0493e00e1645db3ee502ef
+Author: tg74 <tg74@idefix.freepascal.org>
+Date:   Mon Mar 1 16:28:11 2021 +0000
+
+    working on new testmethods avx512-memref-operands - 'compressed disp8*N'
+    
+    git-svn-id: branches/tg74/avx512-0037785@48853 -
+
+M	tests/utils/avx/asmtestgenerator.pas
+
+******************************************************************************
+commit 493879d28cc1c2f76193c44458344f838ac17160
+Author: tg74 <tg74@idefix.freepascal.org>
+Date:   Mon Mar 1 05:54:29 2021 +0000
+
+    avxtestgenerator: working on new tests for compressed disp8*N
+    
+    git-svn-id: branches/tg74/avx512-0037785@48845 -
+
+M	tests/utils/avx/asmtestgenerator.pas
+
+******************************************************************************
+commit 41399354ce3fdfa9683f310e168427480c01f9d1
+Author: tg74 <tg74@idefix.freepascal.org>
+Date:   Thu Feb 25 05:30:42 2021 +0000
+
+    avxtestgenerator: working on new tests for compressed disp8*N
+    
+    git-svn-id: branches/tg74/avx512-0037785@48807 -
+
+M	tests/utils/avx/asmtestgenerator.pas
+
+******************************************************************************
+commit ca0d11e308a6c64fa6494d7c904032280ec83111
+Author: tg74 <tg74@idefix.freepascal.org>
+Date:   Wed Feb 24 16:29:26 2021 +0000
+
+    working on new testmethods avx512-memref-operands - 'compressed disp8*N'
+    
+    git-svn-id: branches/tg74/avx512-0037785@48804 -
+
+M	tests/utils/avx/asmtestgenerator.pas
+
+******************************************************************************
+commit e430c92fcbb5b00680ac84579d6f969a4aa1c1c4
+Author: tg74 <tg74@idefix.freepascal.org>
+Date:   Mon Feb 22 15:59:58 2021 +0000
+
+    bugfix 0037785 cvtsi2ss and cvtsi2sd in x86_64 { att}
+    
+    git-svn-id: branches/tg74/avx512-0037785@48790 -
+
+M	compiler/ppcx64.lpi
+M	compiler/x86/itcpugas.pas
+
+******************************************************************************
+commit 1f12cdefb98091c855b0e61d2f899204f943f0ca
+Author: tg74 <tg74@idefix.freepascal.org>
+Date:   Mon Feb 15 16:03:49 2021 +0000
+
+    avxtestgenerator: working on new tests for compressed disp8*N
+    
+    git-svn-id: branches/tg74/avx512-0037785@48683 -
+
+M	tests/utils/avx/asmtestgenerator.pas
+
+******************************************************************************
+commit 1cd0364c50e44b6d2b7d859b4e4bc556bfd3593a
+Author: tg74 <tg74@idefix.freepascal.org>
+Date:   Mon Feb 15 05:33:27 2021 +0000
+
+    avxtestgenerator: working on new tests for compressed disp8*N
+    
+    git-svn-id: branches/tg74/avx512-0037785@48682 -
+
+M	tests/utils/avx/asmtestgenerator.pas
+M	tests/utils/avx/avxopcodes.pas
+
+******************************************************************************
+commit 8d21ab9d67d41f06f26a890ab7e346517c1f4f2d
+Author: tg74 <tg74@idefix.freepascal.org>
+Date:   Fri Feb 12 16:23:55 2021 +0000
+
+    avxtestgenerator: working on new tests for compressed disp8*N
+    
+    git-svn-id: branches/tg74/avx512-0037785@48658 -
+
+M	tests/utils/avx/asmtestgenerator.pas
+M	tests/utils/avx/avxopcodes.pas
+
+******************************************************************************
+commit 3d37b958bcc1c171c66cb654aafbb5546217e7ea
+Author: tg74 <tg74@idefix.freepascal.org>
+Date:   Fri Feb 12 08:22:01 2021 +0000
+
+    avxtestgenerator: working on new tests for compressed disp8*N
+    
+    git-svn-id: branches/tg74/avx512-0037785@48656 -
+
+M	tests/utils/avx/asmtestgenerator.pas
+M	tests/utils/avx/avxopcodes.pas
+
+******************************************************************************
+commit dfc65acfa8a117265260964da616d70a7f4d80bf
+Author: tg74 <tg74@idefix.freepascal.org>
+Date:   Wed Feb 10 14:13:30 2021 +0000
+
+    working on new testmethods avx512-memref-operands - 'compressed disp8*N'
+    
+    git-svn-id: branches/tg74/avx512-0037785@48606 -
+
+M	tests/utils/avx/avxopcodes.pas
+
+******************************************************************************
+commit 4e151d5a6d8b1b11617cc17f3fa3e08f612efe4a
+Author: tg74 <tg74@idefix.freepascal.org>
+Date:   Mon Feb 8 11:04:21 2021 +0000
+
+    bugfix 0037785 cvtsi2sd,cvtsi2ss for platform i386
+    
+    git-svn-id: branches/tg74/avx512-0037785@48526 -
+
+M	compiler/i386/i386atts.inc
+M	compiler/i8086/i8086atts.inc
+M	compiler/x86/aasmcpu.pas
+M	compiler/x86/rax86.pas
+M	compiler/x86/x86ins.dat
+M	compiler/x86_64/x8664ats.inc
+
+******************************************************************************
+commit e309c47ed619cf7161ef355b4d1fa3128efaaa38
+Author: tg74 <tg74@idefix.freepascal.org>
+Date:   Thu Feb 4 04:53:13 2021 +0000
+
+    avxtestgenerator: working on new tests for compressed disp8*N
+    
+    git-svn-id: branches/tg74/avx512-0037785@48508 -
+
+M	tests/utils/avx/avxopcodes.pas
+
+******************************************************************************
+commit c43787f7f8f30126563b9189d33f178916b47c1f
+Author: tg74 <tg74@idefix.freepascal.org>
+Date:   Wed Feb 3 16:30:41 2021 +0000
+
+    working on new testmethods avx512-memref-operands - 'compressed disp8*N'
+    
+    git-svn-id: branches/tg74/avx512-0037785@48506 -
+
+M	tests/utils/avx/asmtestgenerator.pas
+M	tests/utils/avx/avxopcodes.pas
+
+******************************************************************************
+commit bc9629c446de8fbfec27dcd77e348adca0b1c218
+Author: tg74 <tg74@idefix.freepascal.org>
+Date:   Wed Feb 3 09:03:04 2021 +0000
+
+    avxtestgenerator: working on new tests for compressed disp8*N
+    
+    git-svn-id: branches/tg74/avx512-0037785@48505 -
+
+M	tests/utils/avx/asmtestgenerator.pas
+
+******************************************************************************
+commit 66cdab722370350681f7b381b815a23033ce7602
+Author: tg74 <tg74@idefix.freepascal.org>
+Date:   Tue Feb 2 16:24:36 2021 +0000
+
+    avxtestgenerator: working on new testmethods avx512-memref-operands - 'compressed disp8*N'
+    
+    git-svn-id: branches/tg74/avx512-0037785@48500 -
+
+M	tests/utils/avx/asmtestgenerator.pas
+M	tests/utils/avx/avxopcodes.pas
+
+******************************************************************************
+commit e844f748825dc710c80277804bddfe65b90e1ec9
+Author: tg74 <tg74@idefix.freepascal.org>
+Date:   Mon Feb 1 16:16:06 2021 +0000
+
+    avxtestgenerator: working on new testmethods avx512-memref-operands - 'compressed disp8*N'
+    
+    git-svn-id: branches/tg74/avx512-0037785@48492 -
+
+M	tests/utils/avx/asmtestgenerator.pas
+M	tests/utils/avx/avxopcodes.pas
+
+******************************************************************************
+commit 6eb2cd6dfde2bb99e1bf7dac9fc7b963497f09e4
+Author: tg74 <tg74@idefix.freepascal.org>
+Date:   Mon Feb 1 14:54:18 2021 +0000
+
+    avxtestgenerator: working on new tests for compressed disp8*N
+    
+    git-svn-id: branches/tg74/avx512-0037785@48491 -
+
+M	tests/utils/avx/avxopcodes.pas
+
+******************************************************************************
+commit 1bcf50ce701c200fb6962226b2f48274d8a68985
+Author: tg74 <tg74@idefix.freepascal.org>
+Date:   Wed Jan 27 15:48:20 2021 +0000
+
+    avxtestgenerator: working on new testmethods avx512-memref-operands - 'compressed disp8*N'
+    
+    git-svn-id: branches/tg74/avx512-0037785@48437 -
+
+M	tests/utils/avx/asmtestgenerator.pas
+M	tests/utils/avx/avxopcodes.pas
+M	tests/utils/avx/avxtestgenerator.pp
+
+******************************************************************************
+commit ae97668967c8d2dd3ddc05e8ae7e4e54519bb6a0
+Author: tg74 <tg74@idefix.freepascal.org>
+Date:   Mon Jan 25 16:23:56 2021 +0000
+
+    avxtestgenerator: working on new testmethods avx512-memref-operands - 'compressed disp8*N'
+    
+    git-svn-id: branches/tg74/avx512-0037785@48420 -
+
+M	tests/utils/avx/asmtestgenerator.pas
+
+******************************************************************************
+commit 684bdb0245b603c5c116d90f5fe2438089e1201f
+Author: tg74 <tg74@idefix.freepascal.org>
+Date:   Mon Jan 25 16:01:01 2021 +0000
+
+    avxtestgenerator: working on new testmethods avx512-memref-operands - 'compressed disp8*N'
+    
+    git-svn-id: branches/tg74/avx512-0037785@48419 -
+
+M	tests/utils/avx/asmtestgenerator.pas
+M	tests/utils/avx/avxtestgenerator.lpi
+
+******************************************************************************
+commit 0a254b46bc0c01773778e93497609b5e27d139a9
+Author: tg74 <tg74@idefix.freepascal.org>
+Date:   Mon Jan 25 05:24:29 2021 +0000
+
+    avxtestgenerator: working on new tests for compressed disp8*N
+    
+    git-svn-id: branches/tg74/avx512-0037785@48416 -
+
+M	tests/utils/avx/asmtestgenerator.pas
+M	tests/utils/avx/avxopcodes.pas
+M	tests/utils/avx/avxtestgenerator.lpi
+M	tests/utils/avx/options.pas
+
+******************************************************************************
+commit 22e8cd3fd3ebf6b1747cb17064419d9d90450985
+Author: tg74 <tg74@idefix.freepascal.org>
+Date:   Thu Jan 21 04:57:47 2021 +0000
+
+    avxtestgenerator: working on new testmethods avx512-memref-operands - 'compressed disp8*N'
+    
+    git-svn-id: branches/tg74/avx512-0037785@48261 -
+
+M	tests/utils/avx/asmtestgenerator.pas
+
+******************************************************************************
+commit 149f8ddfe9965e73e3e0acb94b46c623a9c0c087
+Author: tg74 <tg74@idefix.freepascal.org>
+Date:   Wed Jan 20 16:30:38 2021 +0000
+
+    working on new testmethods avx512-memref-operands - 'compressed disp8*N'
+    
+    git-svn-id: branches/tg74/avx512-0037785@48230 -
+
+M	tests/utils/avx/asmtestgenerator.pas
+
+******************************************************************************
+commit c2a3f03093d6a4814d0d740244afa7800194781d
+Author: tg74 <tg74@idefix.freepascal.org>
+Date:   Tue Jan 19 11:01:32 2021 +0000
+
+    working on new testmethods avx512-memref-operands - 'compressed disp8*N'
+    
+    git-svn-id: branches/tg74/avx512-0037785@48189 -
+
+M	tests/utils/avx/asmtestgenerator.pas
+M	tests/utils/avx/avxopcodes.pas
+M	tests/utils/avx/avxtestgenerator.lpi
+
+******************************************************************************
+commit 555ecd826bd9b6d28784f7e285eb648d49e251ee
+Author: tg74 <tg74@idefix.freepascal.org>
+Date:   Tue Jan 19 05:12:39 2021 +0000
+
+    avxtestgenerator: working on new testmethods avx512-memref-operands - 'compressed disp8*N'
+    
+    git-svn-id: branches/tg74/avx512-0037785@48187 -
+
+M	tests/utils/avx/asmtestgenerator.pas
+M	tests/utils/avx/avxopcodes.pas
+M	tests/utils/avx/avxtestgenerator.pp
+
+******************************************************************************
+commit 54ea8468fc0fa0c2775c82a10ad62785c2a8f11a
+Author: tg74 <tg74@idefix.freepascal.org>
+Date:   Tue Jan 12 16:27:07 2021 +0000
+
+    cleanup
+    
+    git-svn-id: branches/tg74/avx512-0037785@48149 -
+
+M	compiler/x86/rax86.pas
+
+******************************************************************************
+commit ecdac1dd399df3d5dade5151e320686db821ef9e
+Author: tg74 <tg74@idefix.freepascal.org>
+Date:   Tue Jan 12 16:19:53 2021 +0000
+
+    cleanup + add internal error if all asmr_e_not_supported_combination_attsuffix_memrefsize_type are reported
+    
+    git-svn-id: branches/tg74/avx512-0037785@48148 -
+
+M	compiler/x86/aasmcpu.pas
+
+******************************************************************************
+commit 7a536df60e1acc939157b2608c7a68f33223c9b4
+Author: tg74 <tg74@idefix.freepascal.org>
+Date:   Tue Jan 12 11:01:31 2021 +0000
+
+    avxtestgenerator add attsuffix in 'opcode-memrefsize-state - list' (command-line option '-l')
+    
+    git-svn-id: branches/tg74/avx512-0037785@48147 -
+
+M	tests/utils/avx/asmtestgenerator.pas
+
+******************************************************************************
+commit db2051e2d2c07c5190c93d7f19409b2eec5c11c3
+Author: tg74 <tg74@idefix.freepascal.org>
+Date:   Tue Jan 12 10:57:15 2021 +0000
+
+    bugfix testcases 0037785
+    
+    git-svn-id: branches/tg74/avx512-0037785@48146 -
+
+M	tests/utils/avx/avxopcodes.pas
+
+******************************************************************************
+commit 64e796ace2f58eda26c7c732c8d592029f5cf297
+Author: tg74 <tg74@idefix.freepascal.org>
+Date:   Tue Jan 12 09:47:18 2021 +0000
+
+    cleanup bugfix 0037785
+    
+    git-svn-id: branches/tg74/avx512-0037785@48145 -
+
+M	compiler/x86/aasmcpu.pas
+M	compiler/x86/rax86.pas
+
+******************************************************************************
+commit c3b5d0d5d5b522e8d1a594183e2b49dce34decfb
+Author: florian <florian@freepascal.org>
+Date:   Tue Jan 5 13:52:29 2021 +0000
+
+      * use str(...) instead of typinfo unit
+    
+    git-svn-id: branches/tg74/avx512-0037785@48085 -
+
+M	compiler/x86/aasmcpu.pas
+
+******************************************************************************
+commit 09c009868604cb1a9a065ea9c739a37c41c93923
+Author: florian <florian@freepascal.org>
+Date:   Tue Jan 5 13:13:43 2021 +0000
+
+    -- Rückwärtiges Zusammenführen von r47837 bis r47033 in »ppcx64.lpi«:
+    U    ppcx64.lpi
+    -- Aufzeichnung der Informationen für rückwärtiges Zusammenführen von r47837 bis r47033 in »ppcx64.lpi«:
+     G   ppcx64.lpi
+    -- Entfernung der Zusammenführungsinformationen von »ppcx64.lpi«:
+     U   ppcx64.lpi
+    
+    git-svn-id: branches/tg74/avx512-0037785@48084 -
+
+M	compiler/ppcx64.lpi
+
+******************************************************************************
+commit f8fc0073248b2be95224d2419bb844b4bec0d5e9
+Author: tg74 <tg74@idefix.freepascal.org>
+Date:   Sat Jan 2 22:13:27 2021 +0000
+
+    internal assembler-reader x86 (local/global var) - validate asm-opcode-attsuffix and memrefsize
+    
+    git-svn-id: branches/tg74/avx512-0037785@47984 -
+
+M	compiler/i386/i386atts.inc
+M	compiler/i8086/i8086atts.inc
+M	compiler/msg/errore.msg
+M	compiler/msgidx.inc
+M	compiler/msgtxt.inc
+M	compiler/x86/aasmcpu.pas
+M	compiler/x86/rax86.pas
+M	compiler/x86/x86ins.dat
+M	compiler/x86_64/x8664ats.inc
+
+******************************************************************************
+commit 7bba64854b52c877aac354180ba7928a903ff23f
+Author: tg74 <tg74@idefix.freepascal.org>
+Date:   Wed Dec 30 07:10:37 2020 +0000
+
+    internal assembler-reader x86 opsize local/global var - cleanup
+    
+    git-svn-id: branches/tg74/avx512-0037785@47899 -
+
+M	compiler/x86/aasmcpu.pas
+
+******************************************************************************
+commit 507f0b3362db9513e09255168306a3c46d35f0b3
+Author: tg74 <tg74@idefix.freepascal.org>
+Date:   Tue Dec 29 05:12:47 2020 +0000
+
+    working on internal assembler-reader x86 opsize local/global var
+    
+    git-svn-id: branches/tg74/avx512-0037785@47886 -
+
+M	compiler/x86/rax86.pas
+
+******************************************************************************
+commit 2452e991b86091045a296ca6251b66ca3f6cea5d
+Author: tg74 <tg74@idefix.freepascal.org>
+Date:   Tue Dec 29 04:49:52 2020 +0000
+
+    internal assembler-reader x86 opsize local/global var - cleanup
+    
+    git-svn-id: branches/tg74/avx512-0037785@47885 -
+
+M	compiler/x86/aasmcpu.pas
+M	compiler/x86/rax86.pas
+M	tests/utils/avx/asmtestgenerator.pas
+
+******************************************************************************
+commit 9b2bed6fdf168b694b7c62751b208bc82d075c16
+Author: tg74 <tg74@idefix.freepascal.org>
+Date:   Mon Dec 28 05:00:58 2020 +0000
+
+    external gas assembler: special handling for correct suffix in vfpclass-opcodes
+    
+    git-svn-id: branches/tg74/avx512-0037785@47865 -
+
+M	compiler/x86/rax86.pas
+
+******************************************************************************
+commit 402f0d348e68536880a06507689e175ab7428226
+Author: tg74 <tg74@idefix.freepascal.org>
+Date:   Mon Dec 28 04:56:47 2020 +0000
+
+    avxtestgenerator: add new commandline param '-m', create only these testfile(s)
+    
+    git-svn-id: branches/tg74/avx512-0037785@47864 -
+
+M	tests/utils/avx/avxopcodes.pas
+M	tests/utils/avx/avxtestgenerator.lpi
+M	tests/utils/avx/avxtestgenerator.pp
+M	tests/utils/avx/options.pas
+
+******************************************************************************
+commit a0d21148b453cf1c6e879c4989737b829b0c8229
+Author: tg74 <tg74@idefix.freepascal.org>
+Date:   Mon Dec 28 04:35:22 2020 +0000
+
+    avx512: external gas assembler not supported gather/scatter-opcodes without mask-register =>> not generate testcode
+    
+    git-svn-id: branches/tg74/avx512-0037785@47863 -
+
+M	tests/utils/avx/asmtestgenerator.pas
+
+******************************************************************************
+commit 2ec8145ec543c0babf24ecd8de10d0114a91dca0
+Author: tg74 <tg74@idefix.freepascal.org>
+Date:   Wed Dec 23 03:56:23 2020 +0000
+
+    external gas-assembler - handling special opcodes with multiple memref-size e.g. vfpclassps/pd - if operand-opsize < S_XMM =>> use memref-min-size
+    
+    git-svn-id: branches/tg74/avx512-0037785@47837 -
+
+M	compiler/i386/i386atts.inc
+M	compiler/i8086/i8086atts.inc
+M	compiler/ppcx64.lpi
+M	compiler/x86/rax86.pas
+M	compiler/x86/x86ins.dat
+M	compiler/x86_64/x8664ats.inc
+
+******************************************************************************
+commit 213f84ad6ce093b49829e9411b597b626fb113b8
+Author: tg74 <tg74@idefix.freepascal.org>
+Date:   Sun Dec 20 04:44:37 2020 +0000
+
+    working on new testmethods and bug-fixing size of (memref-operands | global and local variable - append correct gas-suffix on any vcvt.. opcodes
+    
+    git-svn-id: branches/tg74/avx512-0037785@47821 -
+
+M	compiler/x86/rax86.pas
+
+******************************************************************************
+commit 518db35eb075e4bbee9fd9f55324b96d292abe4b
+Author: tg74 <tg74@idefix.freepascal.org>
+Date:   Fri Dec 18 16:24:57 2020 +0000
+
+    working on internal assembler-reader x86 opsize local/global var
+    
+    git-svn-id: branches/tg74/avx512-0037785@47811 -
+
+M	compiler/x86/rax86.pas
+
+******************************************************************************
+commit 76dd6ff6e784410972d33fdd3aa77d0252a46ea5
+Author: tg74 <tg74@idefix.freepascal.org>
+Date:   Fri Dec 18 05:27:56 2020 +0000
+
+    working on new testmethods and bug-fixing size of (memref-operands | global and local variable
+    
+    git-svn-id: branches/tg74/avx512-0037785@47807 -
+
+M	tests/utils/avx/asmtestgenerator.pas
+
+******************************************************************************
+commit 25b27281375284e07b7b9047d7cfcb14f2805555
+Author: tg74 <tg74@idefix.freepascal.org>
+Date:   Wed Dec 16 15:43:34 2020 +0000
+
+    cleanup x86ins.dat
+    
+    git-svn-id: branches/tg74/avx512-0037785@47789 -
+
+M	compiler/i386/i386nop.inc
+M	compiler/i386/i386tab.inc
+M	compiler/i8086/i8086nop.inc
+M	compiler/i8086/i8086tab.inc
+M	compiler/x86_64/x8664nop.inc
+M	compiler/x86_64/x8664tab.inc
+
+******************************************************************************
+commit 04b059268bb291cb1b5471481bacf5aa93a756eb
+Author: tg74 <tg74@idefix.freepascal.org>
+Date:   Wed Dec 16 15:39:19 2020 +0000
+
+    cleanup x86ins.dat
+    
+    git-svn-id: branches/tg74/avx512-0037785@47788 -
+
+M	compiler/x86/x86ins.dat
+
+******************************************************************************
+commit d6fdb384590bf8306e16b990dac52ca86f90deab
+Author: tg74 <tg74@idefix.freepascal.org>
+Date:   Wed Dec 16 11:02:14 2020 +0000
+
+    cleanup and add comments to div. vcvt.. opcodes
+    
+    git-svn-id: branches/tg74/avx512-0037785@47785 -
+
+M	compiler/x86/x86ins.dat
+
+******************************************************************************
+commit 324032941a3b4171b59c99a1663c2a6407dbeec0
+Author: tg74 <tg74@idefix.freepascal.org>
+Date:   Sat Dec 12 21:36:31 2020 +0000
+
+    add new option to avxtestgenerator to list opcodes-memrefsize-state
+    
+    git-svn-id: branches/tg74/avx512-0037785@47764 -
+
+M	tests/utils/avx/asmtestgenerator.pas
+M	tests/utils/avx/avxopcodes.pas
+M	tests/utils/avx/avxtestgenerator.lpi
+M	tests/utils/avx/avxtestgenerator.pp
+M	tests/utils/avx/options.pas
+
+******************************************************************************
+commit 8c98be824df6e28fad2a957e4908cf96be65d400
+Author: tg74 <tg74@idefix.freepascal.org>
+Date:   Thu Dec 10 04:43:24 2020 +0000
+
+    cleanup bugfix internal assembler-reader x86 opsize local/global var
+    
+    git-svn-id: branches/tg74/avx512-0037785@47745 -
+
+M	compiler/x86/rax86.pas
+
+******************************************************************************
+commit 7aa94f6191bb586ebf69cd93e13c3bebdf10001e
+Author: tg74 <tg74@idefix.freepascal.org>
+Date:   Mon Dec 7 04:45:24 2020 +0000
+
+    bugfixing operandsize from 32-bit to (correct) 64-bit
+    
+    git-svn-id: branches/tg74/avx512-0037785@47708 -
+
+M	tests/utils/avx/avxopcodes.pas
+
+******************************************************************************
+commit aeca33e80ad2db7c2c885c624b534c0b19aaef21
+Author: tg74 <tg74@idefix.freepascal.org>
+Date:   Mon Dec 7 04:39:36 2020 +0000
+
+    working on internal assembler-reader x86 opsize local var
+    
+    git-svn-id: branches/tg74/avx512-0037785@47707 -
+
+M	compiler/x86/rax86.pas
+
+******************************************************************************
+commit b2615a9ba11f613a7920efd59b2199cfbc4f4017
+Author: tg74 <tg74@idefix.freepascal.org>
+Date:   Fri Dec 4 16:19:48 2020 +0000
+
+    working on new testmethods and bug-fixing size of (memref-operands | global and local variable
+    
+    git-svn-id: branches/tg74/avx512-0037785@47685 -
+
+M	compiler/x86/rax86.pas
+M	tests/utils/avx/asmtestgenerator.pas
+M	tests/utils/avx/avxopcodes.pas
+
+******************************************************************************
+commit d8d472cf68aaa59c255456d23a5698d70858c45f
+Author: tg74 <tg74@idefix.freepascal.org>
+Date:   Fri Dec 4 08:35:00 2020 +0000
+
+    bugfix internal assembler-reader x86 opsize local va
+    
+    git-svn-id: branches/tg74/avx512-0037785@47681 -
+
+M	compiler/i386/i386tab.inc
+M	compiler/i8086/i8086tab.inc
+M	compiler/ppcx64.lpi
+M	compiler/x86/aasmcpu.pas
+M	compiler/x86/rax86.pas
+M	compiler/x86/x86ins.dat
+M	compiler/x86_64/x8664tab.inc
+
+******************************************************************************
+commit 28fdba2c08f6fdee34557b1419e310e70b864a41
+Author: tg74 <tg74@idefix.freepascal.org>
+Date:   Thu Dec 3 16:24:00 2020 +0000
+
+    working on new testmethods and bug-fixing size of (memref-operands | global and local variable
+    
+    git-svn-id: branches/tg74/avx512-0037785@47678 -
+
+M	compiler/i386/i386nop.inc
+M	compiler/i386/i386tab.inc
+M	compiler/i8086/i8086nop.inc
+M	compiler/i8086/i8086tab.inc
+M	compiler/ppcx64.lpi
+M	compiler/x86/aasmcpu.pas
+M	compiler/x86/rax86.pas
+M	compiler/x86/x86ins.dat
+M	compiler/x86_64/x8664nop.inc
+M	compiler/x86_64/x8664tab.inc
+M	tests/utils/avx/avxopcodes.pas
+
+******************************************************************************
+commit 06b229e1c33157af5d90c1596dd62b675ae34bc8
+Author: tg74 <tg74@idefix.freepascal.org>
+Date:   Wed Dec 2 09:19:41 2020 +0000
+
+    working on internal assembler-reader x86 opsize local var
+    
+    git-svn-id: branches/tg74/avx512-0037785@47663 -
+
+M	compiler/x86/rax86.pas
+
+******************************************************************************
+commit 84bf87b20dbacb2db9bc8770043968fe1d4e35d9
+Author: tg74 <tg74@idefix.freepascal.org>
+Date:   Tue Dec 1 05:43:17 2020 +0000
+
+    working on new testmethods (memref-operands)
+    
+    git-svn-id: branches/tg74/avx512-0037785@47654 -
+
+M	compiler/x86/rax86.pas
+
+******************************************************************************
+commit ae71ab728462e24367107623c19c4ba6aaaf8716
+Author: tg74 <tg74@idefix.freepascal.org>
+Date:   Mon Nov 30 16:31:51 2020 +0000
+
+    working on new testmethods memref operands
+    
+    git-svn-id: branches/tg74/avx512-0037785@47642 -
+
+M	compiler/x86/rax86.pas
+M	tests/utils/avx/avxopcodes.pas
+
+******************************************************************************
+commit 0a3d980f7e883862dec13db1745e75646c5f6f09
+Author: tg74 <tg74@idefix.freepascal.org>
+Date:   Mon Nov 30 13:53:25 2020 +0000
+
+    working on new testmethods (memref-operands)
+    
+    git-svn-id: branches/tg74/avx512-0037785@47640 -
+
+M	compiler/ppcx64.lpi
+M	tests/utils/avx/asmtestgenerator.pas
+M	tests/utils/avx/avxopcodes.pas
+
+******************************************************************************
+commit f4251bc11a21d64cf80df90db853c8df12558b73
+Author: tg74 <tg74@idefix.freepascal.org>
+Date:   Fri Nov 27 15:54:47 2020 +0000
+
+    working on new testmethods (memref-operands)
+    
+    git-svn-id: branches/tg74/avx512-0037785@47608 -
+
+M	tests/utils/avx/avxopcodes.pas
+M	tests/utils/avx/avxtestgenerator.lpi
+
+******************************************************************************
+commit 3af6a9826347573ff8a33b50748e48541e41a1e9
+Author: tg74 <tg74@idefix.freepascal.org>
+Date:   Fri Nov 27 05:45:44 2020 +0000
+
+    bugfix internal assembler-reader x86 opsize local var
+    
+    git-svn-id: branches/tg74/avx512-0037785@47606 -
+
+M	compiler/x86/rax86.pas
+M	tests/utils/avx/avxopcodes.pas
+
+******************************************************************************
+commit 5207d0ee25a8bb2f37088e654b25dae2a5ade454
+Author: tg74 <tg74@idefix.freepascal.org>
+Date:   Thu Nov 26 16:27:48 2020 +0000
+
+    working on new testmethods (memref-operands)
+    
+    git-svn-id: branches/tg74/avx512-0037785@47600 -
+
+M	tests/utils/avx/asmtestgenerator.pas
+M	tests/utils/avx/avxopcodes.pas
+
+******************************************************************************
+commit c69f1a20f498f1e8b5db8a59e83c3e5c53ec95fa
+Author: tg74 <tg74@idefix.freepascal.org>
+Date:   Wed Nov 25 11:50:10 2020 +0000
+
+    working on new testmethods (memref-operands)
+    
+    git-svn-id: branches/tg74/avx512-0037785@47580 -
+
+M	tests/utils/avx/asmtestgenerator.pas
+M	tests/utils/avx/avxopcodes.pas
+
+******************************************************************************
+commit 912f8e8817dd15d27d7dddffcc471737c23050ef
+Author: tg74 <tg74@idefix.freepascal.org>
+Date:   Wed Nov 25 09:11:07 2020 +0000
+
+    add new testmethods (memref-operands)
+    
+    git-svn-id: branches/tg74/avx512-0037785@47579 -
+
+M	tests/utils/avx/asmtestgenerator.pas
+M	tests/utils/avx/avxopcodes.pas
+M	tests/utils/avx/avxtestgenerator.pp
+M	tests/utils/avx/options.pas
+
+******************************************************************************
+commit 33b4772eab459420afb5788ee18e4f4c5d21efc7
+Author: tg74 <tg74@idefix.freepascal.org>
+Date:   Wed Nov 18 04:38:21 2020 +0000
+
+    bugfix gnu-assembler platform i386 vcvtsi2sd,vcvtsi2ss,vcvtusi2sd,vcvtusi2ss
+    
+    git-svn-id: branches/tg74/avx512-0037785@47443 -
+
+M	compiler/x86/rax86.pas
+
+******************************************************************************
+commit d41579fb2b8c8a5c35d280065944a2fa4aee3d7a
+Author: tg74 <tg74@idefix.freepascal.org>
+Date:   Tue Nov 17 16:22:27 2020 +0000
+
+    bugfix gnu-assembler platform i386 vcvtsi2sd,vcvtsi2ss,vcvtusi2sd,vcvtusi2ss
+    
+    git-svn-id: branches/tg74/avx512-0037785@47441 -
+
+M	compiler/i386/i386atts.inc
+M	compiler/i386/i386nop.inc
+M	compiler/i386/i386tab.inc
+M	compiler/i8086/i8086atts.inc
+M	compiler/i8086/i8086nop.inc
+M	compiler/i8086/i8086tab.inc
+M	compiler/utils/mkx86ins.pp
+M	compiler/x86/itcpugas.pas
+M	compiler/x86/rax86.pas
+M	compiler/x86/rax86att.pas
+M	compiler/x86/x86ins.dat
+M	compiler/x86_64/x8664ats.inc
+M	compiler/x86_64/x8664nop.inc
+M	compiler/x86_64/x8664tab.inc
+M	tests/utils/avx/avxopcodes.pas
 
 ******************************************************************************
 commit b878d461c8e7f1eaa4a928c285f0208ea8f5ad7a
@@ -50590,7 +51527,6 @@ Date:   Mon Apr 22 15:16:33 2019 +0000
     git-svn-id: trunk@41924 -
 
 M	compiler/entfile.pas
-
 ******************************************************************************
 commit 8d19bb12a2326177304ca963f406dc9a90961cd4
 Author: Jonas Maebe <jonas@freepascal.org>
