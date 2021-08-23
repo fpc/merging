@@ -58,6 +58,6 @@ rm mergedhashes
 # rm mergedrevs
 rm mainhashes
 # rm trunkrevs
-# rm eligiblehashes
+rm eligiblehashes
 # rm eligiblerevs
 rm eligiblehashesfromsvn
