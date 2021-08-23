@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 26f4d957a0e50653dfac5a7e594d30154146fe89
+Author: florian <florian@freepascal.org>
+Date:   Mon Aug 23 23:46:45 2021 +0200
+
+      * moved fwait
+
+M	rtl/x86_64/math.inc
+
+******************************************************************************
 commit 0558fefc5179a79f11240d503789e3e538162a6a
 Author: pierre <pierre@freepascal.org>
 Date:   Fri Jan 22 12:51:53 2021 +0000
@@ -3454,17 +3463,6 @@ Date:   Sun Jun 6 20:51:46 2021 +0000
 M	tests/test/tcustomvar1.pp
 
 ******************************************************************************
-commit a988c0fab165f3146d13b8aae172680a079437ad
-Author: florian <florian@freepascal.org>
-Date:   Sun Jun 6 20:33:09 2021 +0000
-
-      * explicitly reset successor if noreturn is set
-    
-    git-svn-id: trunk@49487 -
-
-M	compiler/optutils.pas
-
-******************************************************************************
 commit 2b3edb2c53ec39856b771cee3717044c93164ec3
 Author: svenbarth <pascaldragon@googlemail.com>
 Date:   Sun Jun 6 17:06:24 2021 +0000
@@ -5059,19 +5057,6 @@ Date:   Mon May 3 16:04:19 2021 +0000
 M	compiler/nflw.pas
 
 ******************************************************************************
-commit 1e1848da92eb5db956acfb7d43c1470ae8102d3c
-Author: florian <florian@freepascal.org>
-Date:   Sun May 2 19:45:09 2021 +0000
-
-      * fix exception generation in ln(...), resolves #38832
-    
-    git-svn-id: trunk@49328 -
-
-M	.gitattributes
-M	rtl/inc/genmath.inc
-A	tests/webtbs/tw38832.pp
-
-******************************************************************************
 commit f383cf4deb29c6ba3d89c830bd40fc1e6632e98c
 Author: svenbarth <pascaldragon@googlemail.com>
 Date:   Sun May 2 19:08:42 2021 +0000
@@ -5651,17 +5636,6 @@ Date:   Sat Apr 24 14:31:56 2021 +0000
     git-svn-id: trunk@49258 -
 
 M	compiler/wasm32/nwasmflw.pas
-
-******************************************************************************
-commit 047d13e7e139153f1fe3e281b78c280c8b859655
-Author: florian <florian@freepascal.org>
-Date:   Sat Apr 24 14:06:36 2021 +0000
-
-      * fpsr and fpcr are 64 bit on aarch64
-    
-    git-svn-id: trunk@49257 -
-
-M	rtl/aarch64/mathu.inc
 
 ******************************************************************************
 commit 17e3c31b7ef802363f2b721f076427735d7802e7
@@ -6333,17 +6307,6 @@ Date:   Sun Apr 11 17:30:22 2021 +0000
     git-svn-id: trunk@49183 -
 
 M	tests/test/units/sysutils/tfilenamecase1.pp
-
-******************************************************************************
-commit 0a990281289f31ab95741e61f985f1328c36783b
-Author: florian <florian@freepascal.org>
-Date:   Sun Apr 11 17:30:22 2021 +0000
-
-      * newer linux distros might have powerpc64 libraries in /usr/lib or /lib
-    
-    git-svn-id: trunk@49182 -
-
-M	compiler/systems/t_linux.pas
 
 ******************************************************************************
 commit 1bd9d4173e21a73f4b2fefd1b7daa2207e17d7d4
@@ -7077,19 +7040,6 @@ Date:   Fri Apr 9 23:11:53 2021 +0000
 M	compiler/powerpc/aoptcpu.pas
 
 ******************************************************************************
-commit 09628e56cbe6ae513c2d1530514531ad6314bb0a
-Author: florian <florian@freepascal.org>
-Date:   Fri Apr 9 20:38:46 2021 +0000
-
-      * even if currency is handled by torddef, it is a real number, so using / is perfectly right, resolves #38718
-    
-    git-svn-id: trunk@49154 -
-
-M	.gitattributes
-M	compiler/ncnv.pas
-A	tests/webtbs/tw38718.pp
-
-******************************************************************************
 commit 243ddea68697120e162f5facac53b0ed59578ee0
 Author: florian <florian@freepascal.org>
 Date:   Fri Apr 9 20:20:53 2021 +0000
@@ -7397,17 +7347,6 @@ Date:   Tue Apr 6 15:50:28 2021 +0000
 M	.gitattributes
 M	compiler/x86/aoptx86.pas
 A	tests/webtbs/tw38703.pp
-
-******************************************************************************
-commit 05cf47f995cef31840beb68045e2092f8e8a6df7
-Author: florian <florian@freepascal.org>
-Date:   Tue Apr 6 11:49:48 2021 +0000
-
-      * AVR: fixed TCpuAsmOptimizer.RegLoadedWithNewValue
-    
-    git-svn-id: trunk@49126 -
-
-M	compiler/avr/aoptcpu.pas
 
 ******************************************************************************
 commit e4cc8af8fc4e66ca5bf7d2741d749c2b5d30c195
@@ -7873,18 +7812,6 @@ M	utils/unicode/Makefile
 M	utils/wasmbin/Makefile
 
 ******************************************************************************
-commit fe06cddbbf179ec6f700e74a9150ea1107c4de34
-Author: florian <florian@freepascal.org>
-Date:   Mon Apr 5 15:38:37 2021 +0000
-
-      * pass suitable sysroot to aarch64-darwin compiler, if none is supplied by SYSROOTPATH
-    
-    git-svn-id: trunk@49123 -
-
-M	utils/fpcm/fpcmake.inc
-M	utils/fpcm/fpcmake.ini
-
-******************************************************************************
 commit 755c574a87c2505c793dc7fa51fdcb2c572ace70
 Author: florian <florian@freepascal.org>
 Date:   Sun Apr 4 14:54:56 2021 +0000
@@ -8142,20 +8069,6 @@ Date:   Tue Mar 30 21:43:20 2021 +0000
     git-svn-id: trunk@49090 -
 
 M	compiler/xtensa/ncpuinl.pas
-
-******************************************************************************
-commit aa1a68000b00d922b037b82c28a76410302c6407
-Author: florian <florian@freepascal.org>
-Date:   Tue Mar 30 21:24:00 2021 +0000
-
-      * prefetch instructions read only the operand
-    
-    git-svn-id: trunk@49089 -
-
-M	compiler/i386/i386prop.inc
-M	compiler/i8086/i8086prop.inc
-M	compiler/x86/x86ins.dat
-M	compiler/x86_64/x8664pro.inc
 
 ******************************************************************************
 commit 47557e0ad24e6df119fecbf2d42a65dc9cd20b8a
@@ -8576,17 +8489,6 @@ Date:   Mon Mar 22 18:11:41 2021 +0000
     git-svn-id: trunk@49032 -
 
 M	compiler/dbgdwarf.pas
-
-******************************************************************************
-commit a32a870f33a547985a175555c7de0c305612a324
-Author: florian <florian@freepascal.org>
-Date:   Sun Mar 21 21:39:57 2021 +0000
-
-      * another loop counter copying fix
-    
-    git-svn-id: trunk@49028 -
-
-M	compiler/nflw.pas
 
 ******************************************************************************
 commit 4c209a7dc2aa1f0fe43b104255d7d7670942bd4d
@@ -9891,17 +9793,6 @@ Date:   Mon Mar 1 20:39:57 2021 +0000
     git-svn-id: trunk@48857 -
 
 M	compiler/x86/aoptx86.pas
-
-******************************************************************************
-commit 90710d055b93d4a16c4b6496107a89fdc6366f1f
-Author: florian <florian@freepascal.org>
-Date:   Mon Mar 1 20:29:58 2021 +0000
-
-      * fix spilling of (v)min/max/s/ps/d operations
-    
-    git-svn-id: trunk@48856 -
-
-M	compiler/x86/rgx86.pas
 
 ******************************************************************************
 commit 316f2429f02f3f4ceb1d1fdbd857df0c500ee5b1
@@ -12367,19 +12258,6 @@ M	rtl/sparc64/mathu.inc
 M	rtl/x86_64/mathu.inc
 M	rtl/xtensa/mathu.inc
 M	tests/test/units/math/trndcurr.pp
-
-******************************************************************************
-commit 9592c033e51063a1d36be454e17abcc2b5ff3b98
-Author: florian <florian@freepascal.org>
-Date:   Sun Jan 3 17:08:58 2021 +0000
-
-      * process fma intrinsic parameters in an order which takes care of multiple x87 stack parameters, resolves #38295
-    
-    git-svn-id: trunk@48017 -
-
-M	.gitattributes
-M	compiler/x86/nx86inl.pas
-A	tests/webtbs/tw38295.pp
 
 ******************************************************************************
 commit 12adb47d65e06d4d730cbb860c711bb668a94367
@@ -51527,6 +51405,7 @@ Date:   Mon Apr 22 15:16:33 2019 +0000
     git-svn-id: trunk@41924 -
 
 M	compiler/entfile.pas
+
 ******************************************************************************
 commit 8d19bb12a2326177304ca963f406dc9a90961cd4
 Author: Jonas Maebe <jonas@freepascal.org>
@@ -51667,7 +51546,6 @@ Date:   Mon Apr 15 15:02:24 2019 +0000
     git-svn-id: trunk@41877 -
 
 M	rtl/openbsd/t_openbsd.h2paschk
-
 ******************************************************************************
 commit f6e13c50a91459873d9da21f14ad9e1eebf9a7ca
 Author: nickysn <nickysn@gmail.com>
