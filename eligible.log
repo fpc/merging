@@ -12874,17 +12874,6 @@ M	compiler/x86/nx86inl.pas
 M	compiler/x86_64/cpuinfo.pas
 
 ******************************************************************************
-commit b28aa5c68422eb2fb6cdd7a7c85bae568387a251
-Author: florian <florian@freepascal.org>
-Date:   Wed Dec 23 16:10:08 2020 +0000
-
-      * properly handle result size for avx/sse based frac function, resolves #38248
-    
-    git-svn-id: trunk@47839 -
-
-M	compiler/x86/nx86inl.pas
-
-******************************************************************************
 commit 2bcd2a4a937cb2c8eb5e2e090e03816e934b8549
 Author: pierre <pierre@freepascal.org>
 Date:   Wed Dec 23 10:19:44 2020 +0000
@@ -51573,6 +51562,7 @@ Date:   Mon Apr 15 15:02:24 2019 +0000
     git-svn-id: trunk@41877 -
 
 M	rtl/openbsd/t_openbsd.h2paschk
+
 ******************************************************************************
 commit f6e13c50a91459873d9da21f14ad9e1eebf9a7ca
 Author: nickysn <nickysn@gmail.com>
@@ -51583,7 +51573,6 @@ Date:   Mon Apr 15 14:33:33 2019 +0000
     git-svn-id: trunk@41875 -
 
 M	rtl/openbsd/t_openbsd.h2paschk
-
 ******************************************************************************
 commit 9b7cbb0e0b99bb2697e93057853c1cfdd1c99599
 Author: nickysn <nickysn@gmail.com>
