@@ -1,4 +1,14 @@
 ******************************************************************************
+commit a18a6b4391ee8c0786fdbccf8154949b41be86b1
+Author: florian <florian@freepascal.org>
+Date:   Tue Aug 24 23:16:52 2021 +0200
+
+      + Aarch64: FMovFMov2FMov 2 optimization
+
+M	compiler/aarch64/aoptcpu.pas
+M	compiler/avr/aoptcpu.pas
+
+******************************************************************************
 commit 968d00fedf64ee56f23796069752cac3207d48e5
 Author: ccrause <christo.crause@gmail.com>
 Date:   Tue Aug 24 17:01:50 2021 +0000
