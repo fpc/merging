@@ -1,13 +1,4 @@
 ******************************************************************************
-commit 0bc827e9e26e8dcd65d0adaa23ccf0ffe6bbe2a6
-Author: Pierre Muller <pierre@freepascal.org>
-Date:   Tue Aug 24 13:04:50 2021 +0000
-
-    Add test for bug report 38973 (already fixed in trunk/main)
-
-A	tests/webtbs/tw38973.pp
-
-******************************************************************************
 commit 26f4d957a0e50653dfac5a7e594d30154146fe89
 Author: florian <florian@freepascal.org>
 Date:   Mon Aug 23 23:46:45 2021 +0200
