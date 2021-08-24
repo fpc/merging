@@ -1,4 +1,21 @@
 ******************************************************************************
+commit 968d00fedf64ee56f23796069752cac3207d48e5
+Author: ccrause <christo.crause@gmail.com>
+Date:   Tue Aug 24 17:01:50 2021 +0000
+
+      + Add support for -Adefault.
+      * Move help message for option -sT to the correct group of messages.
+      * Use shorter message to indicate switch to external asm.
+      * Adapted -sX messages because -sT doesn't force external assembler writer.
+
+M	compiler/msg/errore.msg
+M	compiler/msgidx.inc
+M	compiler/msgtxt.inc
+M	compiler/options.pas
+M	compiler/systems.inc
+M	compiler/systems.pas
+
+******************************************************************************
 commit 26f4d957a0e50653dfac5a7e594d30154146fe89
 Author: florian <florian@freepascal.org>
 Date:   Mon Aug 23 23:46:45 2021 +0200
