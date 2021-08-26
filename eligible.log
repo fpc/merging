@@ -52683,28 +52683,6 @@ M	packages/lua/src/lua.pas
 M	packages/lua/src/lualib.pas
 
 ******************************************************************************
-commit 07bd4ba517485517b0365fb5f41a13e97e540515
-Author: Jonas Maebe <jonas@freepascal.org>
-Date:   Sun Feb 24 19:58:37 2019 +0000
-
-      * let all the case code generation work with tconstexprint instead of aint,
-        so it also works for 32 bit targets and a high level code generator
-        (where aint is still 32 bit, but 64 bit operations are not decomposed)
-    
-    git-svn-id: trunk@41441 -
-
-M	compiler/aarch64/ncpuset.pas
-M	compiler/arm/narmset.pas
-M	compiler/i386/n386set.pas
-M	compiler/mips/ncpuset.pas
-M	compiler/ncgset.pas
-M	compiler/ppcgen/ngppcset.pas
-M	compiler/riscv/nrvset.pas
-M	compiler/sparcgen/ncpuset.pas
-M	compiler/x86/nx86set.pas
-M	compiler/x86_64/nx64set.pas
-
-******************************************************************************
 commit 38a7f7c9756100e5777b9337aa0823709a46ed96
 Author: florian <florian@freepascal.org>
 Date:   Sun Feb 24 09:54:05 2019 +0000
