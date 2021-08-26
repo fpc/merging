@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 98574a88a3546b679b5a83afaff710b6123a759a
+Author: FPK <florian@freepascal.org>
+Date:   Thu Aug 26 16:03:26 2021 +0000
+
+      + do fullcycle
+
+M	.gitlab-ci.yml
+
+******************************************************************************
 commit 683e5b873b5c7d00f56fd9178ffc3656dfb4b89a
 Author: FPK <florian@freepascal.org>
 Date:   Thu Aug 26 15:11:39 2021 +0000
