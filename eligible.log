@@ -1,4 +1,23 @@
 ******************************************************************************
+commit 683e5b873b5c7d00f56fd9178ffc3656dfb4b89a
+Author: FPK <florian@freepascal.org>
+Date:   Thu Aug 26 15:11:39 2021 +0000
+
+      * build fpts2junit after testing so all directories are present
+
+M	.gitlab-ci.yml
+
+******************************************************************************
+commit 2be893cb179ac147d3df8cb74189a40455e2864d
+Author: FPK <florian@freepascal.org>
+Date:   Thu Aug 26 15:04:59 2021 +0000
+
+      + build fpts2junit
+      + generate testresult.xml artifact
+
+M	.gitlab-ci.yml
+
+******************************************************************************
 commit 21914bf43bac54b0d18d6e97702b44d7061f174f
 Author: FPK <florian@freepascal.org>
 Date:   Thu Aug 26 12:57:49 2021 +0000
