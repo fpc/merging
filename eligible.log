@@ -1,4 +1,41 @@
 ******************************************************************************
+commit 21914bf43bac54b0d18d6e97702b44d7061f174f
+Author: FPK <florian@freepascal.org>
+Date:   Thu Aug 26 12:57:49 2021 +0000
+
+      * build and test must be one job
+
+M	.gitlab-ci.yml
+
+******************************************************************************
+commit db677c9fe3893752b58c83a3d716617ec82d7efb
+Author: FPK <florian@freepascal.org>
+Date:   Thu Aug 26 12:48:51 2021 +0000
+
+      * Cleaned up .gitlab-ci.yml
+      * Added regression testing
+
+M	.gitlab-ci.yml
+
+******************************************************************************
+commit ff69b7479e8b683b1c2acbcee5fa4025374f1a51
+Author: FPK <florian@freepascal.org>
+Date:   Thu Aug 26 12:33:57 2021 +0000
+
+    Added make command to .gitlab-ci.yml
+
+M	.gitlab-ci.yml
+
+******************************************************************************
+commit 0919916ba7102963f41214f2590bc874eeff20d9
+Author: FPK <florian@freepascal.org>
+Date:   Thu Aug 26 12:26:00 2021 +0000
+
+    Initial .gitlab-ci.yml file
+
+A	.gitlab-ci.yml
+
+******************************************************************************
 commit 4a67f098ee5f2077417ed8b47e6912a0e4794d1e
 Author: florian <florian@freepascal.org>
 Date:   Wed Aug 25 10:41:03 2021 +0200
