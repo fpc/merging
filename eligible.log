@@ -52470,17 +52470,6 @@ M	compiler/powerpc/cpupara.pas
 M	compiler/powerpc64/cpupara.pas
 
 ******************************************************************************
-commit eb71a309337d2629e5de488e0694798a6025029d
-Author: Jonas Maebe <jonas@freepascal.org>
-Date:   Mon Feb 25 20:48:49 2019 +0000
-
-      * fix false possitive tconstexprint range errors after r41441 (mantis #35144)
-    
-    git-svn-id: trunk@41469 -
-
-M	compiler/ncgset.pas
-
-******************************************************************************
 commit a04e4971fc3ef9b3bf5adf3dbc2a3b97de28b287
 Author: yury <jura@cp-lab.com>
 Date:   Mon Feb 25 15:48:41 2019 +0000
