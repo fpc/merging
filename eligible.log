@@ -176,15 +176,6 @@ A	packages/fcl-base/examples/testthreadpool.pp
 A	packages/fcl-base/src/fpthreadpool.pp
 
 ******************************************************************************
-commit c426791a1b8f2e947b5c66e5b5e0ab0be2121a66
-Author: Pierre Muller <pierre@freepascal.org>
-Date:   Tue Aug 17 13:47:51 2021 +0000
-
-     Also ignore compiler/gppc* pattern
-
-M	.gitignore
-
-******************************************************************************
 commit 400e11e6cfdef0bc217dd92b5214e21222f09f08
 Author: Ondrej Pokorny <ondrej@kluug.net>
 Date:   Tue Aug 17 10:20:25 2021 +0000
