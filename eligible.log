@@ -13,15 +13,6 @@ M	compiler/symtable.pas
 A	tests/webtbs/tw39310.pp
 
 ******************************************************************************
-commit e9b880c94770696d7db39f43d59762103a0a9b6e
-Author: FPK <florian@freepascal.org>
-Date:   Sat Aug 28 17:22:31 2021 +0000
-
-      * factored out the fullcycle job as proposed by Marcus
-
-M	.gitlab-ci.yml
-
-******************************************************************************
 commit 4a67f098ee5f2077417ed8b47e6912a0e4794d1e
 Author: florian <florian@freepascal.org>
 Date:   Wed Aug 25 10:41:03 2021 +0200
