@@ -1,4 +1,15 @@
 ******************************************************************************
+commit f134e3b0eec1866a21572feb012813fa14623b87
+Author: ccrause <christo.crause@gmail.com>
+Date:   Wed Aug 25 20:46:48 2021 +0200
+
+    Sorted help options.
+
+M	compiler/msg/errore.msg
+M	compiler/msgidx.inc
+M	compiler/msgtxt.inc
+
+******************************************************************************
 commit efd0c250dfeaa0bbffb4d61e90e6d99dd2b94b0f
 Author: Sven Barth <pascaldragon@gmail.com>
 Date:   Sat Aug 28 17:58:34 2021 +0200
