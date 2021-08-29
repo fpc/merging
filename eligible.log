@@ -1,13 +1,4 @@
 ******************************************************************************
-commit d3615788a8e4c57f113f1d1cd6e76be97bf96664
-Author: florian <florian@freepascal.org>
-Date:   Sun Aug 29 21:00:51 2021 +0200
-
-      * generate a def. file only if really necessary
-
-M	compiler/options.pas
-
-******************************************************************************
 commit efd0c250dfeaa0bbffb4d61e90e6d99dd2b94b0f
 Author: Sven Barth <pascaldragon@gmail.com>
 Date:   Sat Aug 28 17:58:34 2021 +0200
