@@ -1,4 +1,13 @@
 ******************************************************************************
+commit fec8cb76297e8a30e5c705c54e13cd769745f40f
+Author: Ondrej Pokorny <lazarus@kluug.net>
+Date:   Sat Aug 28 16:53:04 2021 +0200
+
+    * TEncoding.GetEncoding - create unicode encodings, not only MBCS
+
+M	rtl/objpas/sysutils/sysencoding.inc
+
+******************************************************************************
 commit f134e3b0eec1866a21572feb012813fa14623b87
 Author: ccrause <christo.crause@gmail.com>
 Date:   Wed Aug 25 20:46:48 2021 +0200
