@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 133f76c8b7d13e00c891007cebc4a4ceaee80594
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Mon Aug 30 17:33:32 2021 +0200
+
+     Ignore all BuildUnit_{package_name}.pp generated file
+
+M	.gitignore
+
+******************************************************************************
 commit fec8cb76297e8a30e5c705c54e13cd769745f40f
 Author: Ondrej Pokorny <lazarus@kluug.net>
 Date:   Sat Aug 28 16:53:04 2021 +0200
