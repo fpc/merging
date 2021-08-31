@@ -1,4 +1,23 @@
 ******************************************************************************
+commit 1f272f8f90cb1fc0a0a9ba3723aad13ebfcc5f03
+Author: florian <florian@freepascal.org>
+Date:   Tue Aug 31 21:24:28 2021 +0200
+
+      * we cannot do SSA during partial writes to arrays which span multiple registers, resolves #39325
+
+M	compiler/hlcgobj.pas
+A	tests/webtbs/tw39325.pp
+
+******************************************************************************
+commit 4d8ecfb42270e418060c9de45ac5a1527150c66c
+Author: florian <florian@freepascal.org>
+Date:   Tue Aug 31 20:28:23 2021 +0200
+
+      * unified internal error
+
+M	compiler/cgobj.pas
+
+******************************************************************************
 commit 757868983c28a1dc93b564dcc8e38582566255bb
 Author: Sven Barth <pascaldragon@gmail.com>
 Date:   Mon Aug 30 14:51:35 2021 +0200
