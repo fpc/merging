@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 757868983c28a1dc93b564dcc8e38582566255bb
+Author: Sven Barth <pascaldragon@gmail.com>
+Date:   Mon Aug 30 14:51:35 2021 +0200
+
+    * fix #39329: adjust visibilties of PT and TArr in TVector<> and TDeque<> so that they can be correctly used either by descendants or users outside of the class
+
+M	packages/fcl-stl/src/gdeque.pp
+M	packages/fcl-stl/src/gvector.pp
+
+******************************************************************************
 commit bb2fd561bb253910d57a33b067c269e7894acf08
 Author: florian <florian@freepascal.org>
 Date:   Thu Aug 26 23:51:20 2021 +0200
