@@ -1,4 +1,15 @@
 ******************************************************************************
+commit ccfb34c518291419b1ba48edbf651335b8d4f8ac
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Wed Sep 1 12:50:23 2021 +0200
+
+    * Add http client pool from Ondrej Pokorny
+
+M	packages/fcl-web/fpmake.pp
+A	packages/fcl-web/src/base/fphttpclientasyncpool.pas
+A	packages/fcl-web/src/base/fphttpclientpool.pas
+
+******************************************************************************
 commit 54e418c5e87435e6e1889d755c499da4554a1562
 Author: Ondrej Pokorny <lazarus@kluug.net>
 Date:   Sun Aug 29 13:33:39 2021 +0200
