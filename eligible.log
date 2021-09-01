@@ -1,4 +1,22 @@
 ******************************************************************************
+commit 0b96cc3a30112d75805553572a4ac75d9ad6110c
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Wed Sep 1 14:05:27 2021 +0200
+
+    * Fix for non-compilation on non-supported platforms: linux -> unix
+
+M	packages/fcl-net/src/ssockets.pp
+
+******************************************************************************
+commit 6e5103f3c5da7a9ca8bc7881a543890de47ae30b
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Wed Sep 1 14:03:36 2021 +0200
+
+    * Fix for non-compilation on non-supported platforms
+
+M	packages/fcl-net/src/ssockets.pp
+
+******************************************************************************
 commit ccfb34c518291419b1ba48edbf651335b8d4f8ac
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Wed Sep 1 12:50:23 2021 +0200
