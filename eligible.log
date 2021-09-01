@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 3069d74ecce6a302ef844f6fa2819f46af7eff2d
+Author: florian <florian@freepascal.org>
+Date:   Wed Sep 1 21:32:27 2021 +0200
+
+      * handle constant folding correctly for <pointer>+<ord. constant>+<ord. constant>, resolves #39332
+
+M	compiler/nadd.pas
+A	tests/webtbs/tw39332.pp
+
+******************************************************************************
 commit cb22b7a1d5d331b571b6efbcdff7a1eb8ff7659e
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Wed Sep 1 14:57:51 2021 +0200
