@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 40dc7380dc3dda2d7b08082437de6bf285e21700
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Wed Sep 1 22:43:36 2021 +0200
+
+    * Correct precisions
+
+M	utils/pas2js/dist/rtl.js
+
+******************************************************************************
 commit 3069d74ecce6a302ef844f6fa2819f46af7eff2d
 Author: florian <florian@freepascal.org>
 Date:   Wed Sep 1 21:32:27 2021 +0200
