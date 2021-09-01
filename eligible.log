@@ -1,4 +1,22 @@
 ******************************************************************************
+commit cb22b7a1d5d331b571b6efbcdff7a1eb8ff7659e
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Wed Sep 1 14:57:51 2021 +0200
+
+    * Fopefully last fix for non-select platforms
+
+M	packages/fcl-net/src/ssockets.pp
+
+******************************************************************************
+commit 71457e64081e43116c8293ed7b28bf2594c53c27
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Wed Sep 1 14:26:28 2021 +0200
+
+    * More platform fixes
+
+M	packages/fcl-net/src/ssockets.pp
+
+******************************************************************************
 commit 0b96cc3a30112d75805553572a4ac75d9ad6110c
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Wed Sep 1 14:05:27 2021 +0200
