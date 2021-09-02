@@ -1,4 +1,25 @@
 ******************************************************************************
+commit 261c0ff708862fd8bfa3fc7487ef6747ff91ca45
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Thu Sep 2 15:13:53 2021 +0200
+
+    pastojs: fixed typecast jsvalue to external class instance not checking if Object
+
+M	packages/pastojs/src/fppas2js.pp
+M	packages/pastojs/tests/tcmodules.pas
+M	packages/pastojs/tests/testpas2js.lpi
+
+******************************************************************************
+commit 84c2a0d89e1de298659b7e54ed7cf1b589493839
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Thu Sep 2 15:13:08 2021 +0200
+
+    fcl-web: example missing semicolon and gitignore linux bin
+
+A	packages/fcl-web/examples/websocket/server/.gitignore
+M	packages/fcl-web/examples/websocket/server/wsserver.lpr
+
+******************************************************************************
 commit 22101432395ad7c81f2334e4f6db5079a7fd9a64
 Author: Bernd Kreuss <b.kreuss@xecro.com>
 Date:   Thu Sep 2 11:16:56 2021 +0200
