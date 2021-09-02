@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 22101432395ad7c81f2334e4f6db5079a7fd9a64
+Author: Bernd Kreuss <b.kreuss@xecro.com>
+Date:   Thu Sep 2 11:16:56 2021 +0200
+
+    fix wording of error message when field not found during reading of lfm file
+
+M	rtl/objpas/classes/reader.inc
+M	rtl/objpas/rtlconst.inc
+
+******************************************************************************
 commit fe656ab4ef825d18ed9673ca1ce975f061aab621
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Thu Sep 2 09:32:43 2021 +0200
