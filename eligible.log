@@ -1,4 +1,13 @@
 ******************************************************************************
+commit fe656ab4ef825d18ed9673ca1ce975f061aab621
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Thu Sep 2 09:32:43 2021 +0200
+
+    fix for issue #39333
+
+M	packages/hash/src/hmac.pp
+
+******************************************************************************
 commit 40dc7380dc3dda2d7b08082437de6bf285e21700
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Wed Sep 1 22:43:36 2021 +0200
