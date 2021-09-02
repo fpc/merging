@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 2ce34f7bd3a648cfa5c7af111bbd0ef0fc991f8f
+Author: florian <florian@freepascal.org>
+Date:   Thu Sep 2 22:03:54 2021 +0200
+
+      * do constant folding on div <const. int> div <const. int>, resolves #39301
+
+M	compiler/nmat.pas
+
+******************************************************************************
 commit 261c0ff708862fd8bfa3fc7487ef6747ff91ca45
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Thu Sep 2 15:13:53 2021 +0200
