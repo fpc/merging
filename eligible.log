@@ -1,4 +1,22 @@
 ******************************************************************************
+commit cb73bb939bc433b9ce5137492fc69a6b5d993b7e
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Fri Sep 3 17:41:06 2021 +0200
+
+    * Use FPC server by default
+
+M	packages/fcl-web/examples/simpleserver/simpleserver.pas
+
+******************************************************************************
+commit 7ef2012151438c314d82b279c06939140dbf0c41
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Fri Sep 3 17:40:46 2021 +0200
+
+    * Fix wrong read loop
+
+M	packages/fcl-web/src/base/fphttpserver.pp
+
+******************************************************************************
 commit 2ce34f7bd3a648cfa5c7af111bbd0ef0fc991f8f
 Author: florian <florian@freepascal.org>
 Date:   Thu Sep 2 22:03:54 2021 +0200
