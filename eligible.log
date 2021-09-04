@@ -1,4 +1,22 @@
 ******************************************************************************
+commit b36154671b20b843607d3093c673f23bcfc89fcc
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Sep 4 17:49:32 2021 +0200
+
+    * Bring compileserver functionality up-to-date with simpleserver
+
+M	utils/pas2js/httpcompiler.pp
+
+******************************************************************************
+commit bfc5fcb8d15ac2ce9dfcafc7cefe67b387b7fc8b
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Sep 4 17:48:21 2021 +0200
+
+    * Compile httpjson
+
+M	packages/fcl-web/fpmake.pp
+
+******************************************************************************
 commit 06ab6d7fa71af5b4f14a4a31b9d5dfa74c3a4ea3
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Sat Sep 4 13:15:56 2021 +0200
