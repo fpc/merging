@@ -9369,35 +9369,6 @@ Date:   Thu Apr 8 19:50:37 2021 +0000
 M	rtl/darwin/Makefile
 
 ******************************************************************************
-commit 0eb9dd387936da0011ef99b85b1dba0ebb784233
-Author: Jonas Maebe <jonas@freepascal.org>
-Date:   Thu Apr 8 19:50:34 2021 +0000
-
-      * Darwin support for printing line info for backtraces when using Dwarf,
-        based on patches by Colin Western, mantis #38483)
-       o requires that the program/library is compiled with -Xg (or that
-         dsymutil is run on it after compiling), and that the .dSYM bundle
-         is in the same directory as the program/library
-       o always use the "dl" unit in exeinfo for Darwin, as that's needed for
-         dynamic library support, and this does not cause an extra dependency
-         since on Darwin we always use libc
-       o cleaned up the exeinfo unit for Darwin, and sped it up by using mmap
-         instead of small reads
-       o fixed unit dependencies for exeinfo, lineinfo and lnfodwarf in Darwin
-         RTL Makefile
-      * use the process address info from the original exe even when reading
-        the debug information from an external file
-      - removed outdated ifdef'd darwin code from dl.pp (no longer needed now
-        that processaddress gets set correctly in exeinfo for that platform)
-    
-    git-svn-id: trunk@49140 -
-
-M	rtl/darwin/Makefile.fpc
-M	rtl/inc/exeinfo.pp
-M	rtl/inc/lnfodwrf.pp
-M	rtl/unix/dl.pp
-
-******************************************************************************
 commit 4166e8c46409c6730e19c5dd3b1cc651b7bcc1de
 Author: Jonas Maebe <jonas@freepascal.org>
 Date:   Thu Apr 8 19:50:30 2021 +0000
@@ -53729,6 +53700,7 @@ D	rtl/linux/riscv64/prt0.as
 A	rtl/linux/riscv64/si_c.inc
 A	rtl/linux/riscv64/si_dll.inc
 A	rtl/linux/riscv64/si_prc.inc
+
 ******************************************************************************
 commit 2b78a8fd3dec629d91b9fb74a01d06d904384117
 Author: Jeppe Johansen <jeppe@j-software.dk>
@@ -53746,7 +53718,6 @@ M	compiler/fpcdefs.inc
 A	compiler/riscv/rarvgas.pas
 M	compiler/riscv64/cgcpu.pas
 M	compiler/riscv64/rarv64gas.pas
-
 ******************************************************************************
 commit 349bb2ff38a56baf6960a0196326aafbb1aff9a5
 Author: Jonas Maebe <jonas@freepascal.org>
