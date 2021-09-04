@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 396a030fc2e0389249e58231d8c3134952c7a78a
+Author: florian <florian@freepascal.org>
+Date:   Sat Sep 4 19:11:41 2021 +0200
+
+      + debugging statement
+
+M	rtl/inc/exeinfo.pp
+
+******************************************************************************
 commit b36154671b20b843607d3093c673f23bcfc89fcc
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Sat Sep 4 17:49:32 2021 +0200
