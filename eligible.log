@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 714f0364205c9d439ed762a868648c34dd3c3677
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Sep 4 22:49:37 2021 +0200
+
+    * Parse linklib directive
+
+M	packages/fcl-passrc/src/pscanner.pp
+M	packages/fcl-passrc/tests/tcscanner.pas
+
+******************************************************************************
 commit 396a030fc2e0389249e58231d8c3134952c7a78a
 Author: florian <florian@freepascal.org>
 Date:   Sat Sep 4 19:11:41 2021 +0200
