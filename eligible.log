@@ -1,4 +1,67 @@
 ******************************************************************************
+commit 06ab6d7fa71af5b4f14a4a31b9d5dfa74c3a4ea3
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Sep 4 13:15:56 2021 +0200
+
+    * Enable location management API
+
+M	packages/fcl-web/examples/simpleserver/simpleserver.pas
+
+******************************************************************************
+commit 886baf4cb901337929a5bbc7a21510835c089b41
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Sep 4 13:15:38 2021 +0200
+
+    * location management API
+
+M	packages/fcl-web/src/base/fpwebfile.pp
+
+******************************************************************************
+commit a206deddfb5f6b634e5da5a7925c1f867d61eda9
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Sep 4 13:15:14 2021 +0200
+
+    * Improved solution for issue #38435, json helpers for http request/response
+
+A	packages/fcl-web/src/base/httpjson.pp
+
+******************************************************************************
+commit 4dc1e22f1f8a8d1bf150c3ed1ebb6498439909d2
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Sep 4 13:12:53 2021 +0200
+
+    * Allow to move routes, make route management thread-safe
+
+M	packages/fcl-web/src/base/httproute.pp
+
+******************************************************************************
+commit a390a2742024ea5a1820ea20ada0ba0ca325111d
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Sep 4 13:12:17 2021 +0200
+
+    * Uppercase argument for GetHTTPStatusText
+
+M	packages/fcl-web/src/base/httpprotocol.pp
+
+******************************************************************************
+commit 66a1486f325f7404ddc3679422366fc020185525
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Sep 4 13:11:45 2021 +0200
+
+    * SetStatus convenience call
+
+M	packages/fcl-web/src/base/httpdefs.pp
+
+******************************************************************************
+commit f9c006ca9f5eff265bf1fdba8697e58a1d09a1ef
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Sep 4 13:11:18 2021 +0200
+
+    * Remove module, move module before default
+
+M	packages/fcl-web/src/base/fphttp.pp
+
+******************************************************************************
 commit cb73bb939bc433b9ce5137492fc69a6b5d993b7e
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Fri Sep 3 17:41:06 2021 +0200
