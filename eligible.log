@@ -21192,18 +21192,6 @@ M	rtl/darwin/Makefile
 M	rtl/linux/Makefile
 
 ******************************************************************************
-commit de095258a755929f4ac0114853236f49b3c65df9
-Author: Jonas Maebe <jonas@freepascal.org>
-Date:   Mon Sep 28 14:02:00 2020 +0000
-
-      * add missing unixtype dependencies
-    
-    git-svn-id: trunk@46989 -
-
-M	rtl/darwin/Makefile.fpc
-M	rtl/linux/Makefile.fpc
-
-******************************************************************************
 commit f3e140fc50d30b617fb1bab28b7e20e7eac13cd3
 Author: Jonas Maebe <jonas@freepascal.org>
 Date:   Mon Sep 28 14:01:55 2020 +0000
@@ -45852,18 +45840,6 @@ Date:   Sun Oct 27 16:53:26 2019 +0000
 M	compiler/nutils.pas
 
 ******************************************************************************
-commit c7fb1b8db790d1d2947a32bd605733c70a8ba57f
-Author: florian <florian@freepascal.org>
-Date:   Sun Oct 27 12:45:20 2019 +0000
-
-      * update dependencies of sysutils
-    
-    git-svn-id: trunk@43315 -
-
-M	rtl/linux/Makefile
-M	rtl/linux/Makefile.fpc
-
-******************************************************************************
 commit 31e5b2d9a4e1874058b586667429956b61a46101
 Author: florian <florian@freepascal.org>
 Date:   Sun Oct 27 12:40:08 2019 +0000
@@ -53655,6 +53631,7 @@ Date:   Mon Apr 15 14:33:33 2019 +0000
     git-svn-id: trunk@41875 -
 
 M	rtl/openbsd/t_openbsd.h2paschk
+
 ******************************************************************************
 commit 9b7cbb0e0b99bb2697e93057853c1cfdd1c99599
 Author: nickysn <nickysn@gmail.com>
@@ -53689,7 +53666,6 @@ D	rtl/linux/riscv64/prt0.as
 A	rtl/linux/riscv64/si_c.inc
 A	rtl/linux/riscv64/si_dll.inc
 A	rtl/linux/riscv64/si_prc.inc
-
 ******************************************************************************
 commit 2b78a8fd3dec629d91b9fb74a01d06d904384117
 Author: Jeppe Johansen <jeppe@j-software.dk>
