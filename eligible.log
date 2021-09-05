@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 3cddfb4e2ff9fc38925ce973bd29fe36cef3fc98
+Author: florian <florian@freepascal.org>
+Date:   Sun Sep 5 22:15:57 2021 +0200
+
+      * patch by J. Gareth Moreton: x86: SETcc/TEST/SETcc -> SETcc/SETcc optimisation, resolves #39271
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
 commit a5f6505edc01ba35c0fd05c2b048b6ab7aa306af
 Author: florian <florian@freepascal.org>
 Date:   Sun Sep 5 21:03:31 2021 +0200
