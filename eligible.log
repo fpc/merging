@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 677f8297324e2c089d0cada4a7a9185594088a8e
+Author: florian <florian@freepascal.org>
+Date:   Sun Sep 5 23:12:34 2021 +0200
+
+      * tw39323  needs to turn on range check to test what it is supposed to test
+
+M	tests/webtbs/tw39323.pp
+
+******************************************************************************
 commit 3cddfb4e2ff9fc38925ce973bd29fe36cef3fc98
 Author: florian <florian@freepascal.org>
 Date:   Sun Sep 5 22:15:57 2021 +0200
