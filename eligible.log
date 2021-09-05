@@ -1,4 +1,18 @@
 ******************************************************************************
+commit 468975aa3046e252c5ebbf4c9a01088dc7d86952
+Author: florian <florian@freepascal.org>
+Date:   Sun Aug 29 20:38:29 2021 +0200
+
+      + move often used floating point constants into registers
+
+M	compiler/aarch64/cpuinfo.pas
+M	compiler/globtype.pas
+M	compiler/optcse.pas
+M	compiler/psub.pas
+M	compiler/utils/ppuutils/ppudump.pp
+M	compiler/x86_64/cpuinfo.pas
+
+******************************************************************************
 commit d2921dfb55646401ff156f85a7997ba1d17f2d22
 Author: florian <florian@freepascal.org>
 Date:   Sun Sep 5 18:00:11 2021 +0200
