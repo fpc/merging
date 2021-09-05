@@ -1,4 +1,18 @@
 ******************************************************************************
+commit a5f6505edc01ba35c0fd05c2b048b6ab7aa306af
+Author: florian <florian@freepascal.org>
+Date:   Sun Sep 5 21:03:31 2021 +0200
+
+      * fix range checking for zero based strings, resolves #39323
+
+M	compiler/ncgmem.pas
+M	rtl/inc/astrings.inc
+M	rtl/inc/compproc.inc
+M	rtl/inc/ustrings.inc
+M	rtl/inc/wstrings.inc
+A	tests/webtbs/tw39323.pp
+
+******************************************************************************
 commit 468975aa3046e252c5ebbf4c9a01088dc7d86952
 Author: florian <florian@freepascal.org>
 Date:   Sun Aug 29 20:38:29 2021 +0200
