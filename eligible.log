@@ -1,4 +1,33 @@
 ******************************************************************************
+commit 6a9d2cae93de921b982958cbab49ac5ddf64aa58
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sun Sep 5 15:20:13 2021 +0200
+
+    * Debugger statement
+
+M	packages/fcl-js/src/jsparser.pp
+M	packages/fcl-js/src/jstree.pp
+M	packages/fcl-js/src/jswriter.pp
+M	packages/fcl-js/tests/tcparser.pp
+M	packages/fcl-js/tests/tcwriter.pp
+
+******************************************************************************
+commit 652643499a88e937c4fbaf95169013339b207052
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sun Sep 5 15:08:39 2021 +0200
+
+    * const and let statements
+
+M	packages/fcl-js/src/jsparser.pp
+M	packages/fcl-js/src/jsscanner.pp
+M	packages/fcl-js/src/jstoken.pp
+M	packages/fcl-js/src/jstree.pp
+M	packages/fcl-js/src/jswriter.pp
+M	packages/fcl-js/tests/tcparser.pp
+M	packages/fcl-js/tests/tcscanner.pp
+M	packages/fcl-js/tests/tcwriter.pp
+
+******************************************************************************
 commit a2146824956673e5e356da1b3f1429d73e5ebd36
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Sun Sep 5 14:10:12 2021 +0200
