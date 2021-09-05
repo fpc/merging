@@ -1,4 +1,17 @@
 ******************************************************************************
+commit 54415f8f4e0458ae2ab2fb7d0b4ed97e8461cb7d
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sun Sep 5 23:49:44 2021 +0200
+
+    * Import statement
+
+M	packages/fcl-js/src/jsparser.pp
+M	packages/fcl-js/src/jstree.pp
+M	packages/fcl-js/src/jswriter.pp
+M	packages/fcl-js/tests/tcparser.pp
+M	packages/fcl-js/tests/tcwriter.pp
+
+******************************************************************************
 commit 677f8297324e2c089d0cada4a7a9185594088a8e
 Author: florian <florian@freepascal.org>
 Date:   Sun Sep 5 23:12:34 2021 +0200
