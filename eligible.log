@@ -1,4 +1,16 @@
 ******************************************************************************
+commit b3bf183fd37dcb46c4a89fc48005cb68dbed4a50
+Author: florian <florian@freepascal.org>
+Date:   Sun Sep 5 16:46:44 2021 +0200
+
+      * pass the final name of the compiler executable when compiling the compiler to avoid
+        moving the executable afterwards, this allows proper stack dumps with line numnbers
+        on OSes with external debugging information (darwin)
+
+M	compiler/Makefile
+M	compiler/Makefile.fpc
+
+******************************************************************************
 commit 6a9d2cae93de921b982958cbab49ac5ddf64aa58
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Sun Sep 5 15:20:13 2021 +0200
