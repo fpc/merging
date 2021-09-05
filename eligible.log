@@ -1,4 +1,24 @@
 ******************************************************************************
+commit a2146824956673e5e356da1b3f1429d73e5ebd36
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sun Sep 5 14:10:12 2021 +0200
+
+    * Parse async functions
+
+M	packages/fcl-js/src/jsparser.pp
+M	packages/fcl-js/src/jsscanner.pp
+M	packages/fcl-js/tests/tcparser.pp
+
+******************************************************************************
+commit d1bbc99e4815cc1d70dbd9fa475150b8f0940613
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sun Sep 5 14:09:04 2021 +0200
+
+    * Pass all directives through OnDirective
+
+M	packages/fcl-passrc/src/pscanner.pp
+
+******************************************************************************
 commit 985ebf3b6360c2850b38ccab36aee38828146843
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Sun Sep 5 10:26:51 2021 +0200
