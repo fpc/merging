@@ -1,4 +1,15 @@
 ******************************************************************************
+commit 985ebf3b6360c2850b38ccab36aee38828146843
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sun Sep 5 10:26:51 2021 +0200
+
+    * New keywords for ECMA2021
+
+M	packages/fcl-js/src/jsscanner.pp
+M	packages/fcl-js/src/jstoken.pp
+M	packages/fcl-js/tests/tcscanner.pp
+
+******************************************************************************
 commit 714f0364205c9d439ed762a868648c34dd3c3677
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Sat Sep 4 22:49:37 2021 +0200
