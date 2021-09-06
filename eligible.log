@@ -1,4 +1,36 @@
 ******************************************************************************
+commit 810de9eacacaad3a7b0093e64f61f4c95aa060c8
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Mon Sep 6 23:31:15 2021 +0200
+
+     Try to avoid infinite loop for revision target on svn repo
+
+M	compiler/Makefile
+M	compiler/Makefile.fpc
+
+******************************************************************************
+commit ae8972083f6e97772c480dabdf923d5165aa5faf
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Mon Sep 6 18:10:00 2021 +0200
+
+     Use pascal hunk for diff output for pascal source files
+
+M	.gitattributes
+
+******************************************************************************
+commit dcf64d8fee683749998f54710fbebe4453f47906
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Mon Sep 6 23:27:37 2021 +0200
+
+    * Export statement
+
+M	packages/fcl-js/src/jsparser.pp
+M	packages/fcl-js/src/jstree.pp
+M	packages/fcl-js/src/jswriter.pp
+M	packages/fcl-js/tests/tcparser.pp
+M	packages/fcl-js/tests/tcwriter.pp
+
+******************************************************************************
 commit f8c92914c2f33be7a3f53b4278b50792c9c73b13
 Author: florian <florian@freepascal.org>
 Date:   Mon Sep 6 23:05:35 2021 +0200
