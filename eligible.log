@@ -1,4 +1,44 @@
 ******************************************************************************
+commit 16d17de1ffb1ae6fa1b5218cff38c72f129c4782
+Author: Yuriy Sydorov <jura@cp-lab.com>
+Date:   Mon Sep 6 19:01:34 2021 +0300
+
+    + Added a test for a bug fixed in b96057ad.
+
+A	tests/tbs/tb0684.pp
+
+******************************************************************************
+commit b43ee410906633123e66b8f5fc619277bf9abbef
+Author: Yuriy Sydorov <jura@cp-lab.com>
+Date:   Mon Sep 6 18:57:41 2021 +0300
+
+    * If in a move instruction "MOV reg1,reg2" one of the registers must be
+      spilled, but reg1 and reg2 are coalesced, then this is a no-op
+      instruction and no spilling is needed.
+
+M	compiler/rgobj.pas
+
+******************************************************************************
+commit 213a0a704aed3270afbb0c9ec0070e4cbad85d9a
+Author: Yuriy Sydorov <jura@cp-lab.com>
+Date:   Mon Sep 6 18:49:33 2021 +0300
+
+    * Added trgobj.remove_ai(), call it instead of code duplication.
+      No functional changes.
+
+M	compiler/rgobj.pas
+
+******************************************************************************
+commit b96057adeb1513292dcfea664c8c4fe227abc442
+Author: Yuriy Sydorov <jura@cp-lab.com>
+Date:   Mon Sep 6 18:37:45 2021 +0300
+
+    * Remove register allocations of coalesced registers if the alias
+      register is spilled.
+
+M	compiler/rgobj.pas
+
+******************************************************************************
 commit d20f18634f5d0dd2bd365dbd8f2ff6b69f48e351
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Mon Sep 6 16:51:48 2021 +0200
