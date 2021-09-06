@@ -1,4 +1,24 @@
 ******************************************************************************
+commit 33ad038bbbf5d724394d5c07aeb4bf7aa7ad71d3
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Mon Sep 6 13:45:33 2021 +0200
+
+      * Avoid some wrong error messages after initial error
+    
+      On x86_64-openbsd, cycling with -O3 option fails due to
+    a wrong warning about uninitialized zeros variable in
+    compilation of ogbase unit
+    ogbase.pas(2310,41) Warning: Local variable "zeros" does not seem to be initialized
+    ogbase.pas(2318,39) Error: Can't evaluate constant expression
+    
+    The second message is due to the fact that simplify is not
+    called inside nadd unit if errorcount is non-zero.
+      By replacing errorcount<>0 by not codegenerror,
+    this message disappears.
+
+M	compiler/nadd.pas
+
+******************************************************************************
 commit 16d17de1ffb1ae6fa1b5218cff38c72f129c4782
 Author: Yuriy Sydorov <jura@cp-lab.com>
 Date:   Mon Sep 6 19:01:34 2021 +0300
