@@ -1,4 +1,14 @@
 ******************************************************************************
+commit d20f18634f5d0dd2bd365dbd8f2ff6b69f48e351
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Mon Sep 6 16:51:48 2021 +0200
+
+    pas2js: git ignore linux binaries
+
+A	utils/pas2js/.gitignore
+M	utils/pas2js/compileserver.lpi
+
+******************************************************************************
 commit 54415f8f4e0458ae2ab2fb7d0b4ed97e8461cb7d
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Sun Sep 5 23:49:44 2021 +0200
