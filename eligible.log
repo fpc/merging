@@ -1,4 +1,27 @@
 ******************************************************************************
+commit 6007ceb9083c0b27313377c19f65dd8fea51fcc6
+Author: Yuriy Sydorov <jura@cp-lab.com>
+Date:   Tue Sep 7 20:09:47 2021 +0300
+
+    * Patch by J. Gareth "Kit" Moreton (issue #39343). x86 peephole
+      optimization of conditions which are always true or false.
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
+commit 940ac567a500e6e495379ec5609017a18aa55abc
+Author: Yuriy Sydorov <jura@cp-lab.com>
+Date:   Tue Sep 7 19:50:28 2021 +0300
+
+    * Patch by J. Gareth "Kit" Moreton (issue #39343). Added missing allocation
+      of flags in tx86typeconvnode.second_int_to_bool and in generic
+      tcgtypeconvnode.second_int_to_bool. This fixes random failures of the
+      tcnvint1 test and some other tests when compiled with -O2.
+
+M	compiler/ncgcnv.pas
+M	compiler/x86/nx86cnv.pas
+
+******************************************************************************
 commit 06b659f787c8259881d9ac68e6bfb15e2c78f028
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Tue Sep 7 13:57:53 2021 +0200
