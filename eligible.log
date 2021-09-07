@@ -1,4 +1,40 @@
 ******************************************************************************
+commit 9a1ccd2a16a48e980662be44f228d549871e8b22
+Author: florian <florian@freepascal.org>
+Date:   Tue Sep 7 23:05:08 2021 +0200
+
+      * x86: ShlOp2Op optimization
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
+commit 7c6f3810e3e73c4219e6f6f24bdf702c61843d13
+Author: Sven Barth <pascaldragon@gmail.com>
+Date:   Mon Sep 6 22:39:04 2021 +0200
+
+    * move freeing of the event log to a separate, virtual method so that this can be changed depending on the needs of TCustomWebApplication.CreateEventLog (e.g. when using a TCustomWebApplication descendant together with a TDaemonApplication)
+
+M	packages/fcl-web/src/base/custweb.pp
+
+******************************************************************************
+commit 86d48207605bea3e2c72bf3734666999dfef14d8
+Author: Sven Barth <pascaldragon@gmail.com>
+Date:   Mon Sep 6 22:37:07 2021 +0200
+
+    + implement support for terminating a HTTPSys web service handler that's blocking inside WaitForRequest
+
+M	packages/fcl-web/src/base/custhttpsys.pp
+
+******************************************************************************
+commit 2650049b2cb15178fddf77cacc477d910a5b5df0
+Author: Sven Barth <pascaldragon@gmail.com>
+Date:   Mon Sep 6 22:36:29 2021 +0200
+
+    * initialize Result variable of THTTPSysHandler.WaitForRequest
+
+M	packages/fcl-web/src/base/custhttpsys.pp
+
+******************************************************************************
 commit 4acf8d36b8de9bdeda81fccf8968743e577c7a89
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Tue Sep 7 20:18:53 2021 +0000
