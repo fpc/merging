@@ -1,4 +1,23 @@
 ******************************************************************************
+commit 06b659f787c8259881d9ac68e6bfb15e2c78f028
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Tue Sep 7 13:57:53 2021 +0200
+
+    * Fix issue #39342, after exception in doapplyupdates, res is not valid
+
+M	packages/fcl-db/src/base/bufdataset.pas
+
+******************************************************************************
+commit 239557237fa4351aa0b35a0d2dc246b86d8d6334
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Tue Sep 7 14:32:06 2021 +0300
+
+    * regenerated makefiles with the latest fpcmake from trunk
+
+M	packages/fcl-web/Makefile
+M	packages/gitlab/Makefile
+
+******************************************************************************
 commit 810de9eacacaad3a7b0093e64f61f4c95aa060c8
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Mon Sep 6 23:31:15 2021 +0200
