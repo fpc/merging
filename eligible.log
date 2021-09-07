@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 4acf8d36b8de9bdeda81fccf8968743e577c7a89
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Tue Sep 7 20:18:53 2021 +0000
+
+    Add symbol_order*.fpc files to .gitignore
+
+M	.gitignore
+
+******************************************************************************
 commit 6007ceb9083c0b27313377c19f65dd8fea51fcc6
 Author: Yuriy Sydorov <jura@cp-lab.com>
 Date:   Tue Sep 7 20:09:47 2021 +0300
@@ -7,19 +16,6 @@ Date:   Tue Sep 7 20:09:47 2021 +0300
       optimization of conditions which are always true or false.
 
 M	compiler/x86/aoptx86.pas
-
-******************************************************************************
-commit 940ac567a500e6e495379ec5609017a18aa55abc
-Author: Yuriy Sydorov <jura@cp-lab.com>
-Date:   Tue Sep 7 19:50:28 2021 +0300
-
-    * Patch by J. Gareth "Kit" Moreton (issue #39343). Added missing allocation
-      of flags in tx86typeconvnode.second_int_to_bool and in generic
-      tcgtypeconvnode.second_int_to_bool. This fixes random failures of the
-      tcnvint1 test and some other tests when compiled with -O2.
-
-M	compiler/ncgcnv.pas
-M	compiler/x86/nx86cnv.pas
 
 ******************************************************************************
 commit 06b659f787c8259881d9ac68e6bfb15e2c78f028
@@ -102,15 +98,6 @@ Date:   Mon Sep 6 13:45:33 2021 +0200
 M	compiler/nadd.pas
 
 ******************************************************************************
-commit 16d17de1ffb1ae6fa1b5218cff38c72f129c4782
-Author: Yuriy Sydorov <jura@cp-lab.com>
-Date:   Mon Sep 6 19:01:34 2021 +0300
-
-    + Added a test for a bug fixed in b96057ad.
-
-A	tests/tbs/tb0684.pp
-
-******************************************************************************
 commit b43ee410906633123e66b8f5fc619277bf9abbef
 Author: Yuriy Sydorov <jura@cp-lab.com>
 Date:   Mon Sep 6 18:57:41 2021 +0300
@@ -128,16 +115,6 @@ Date:   Mon Sep 6 18:49:33 2021 +0300
 
     * Added trgobj.remove_ai(), call it instead of code duplication.
       No functional changes.
-
-M	compiler/rgobj.pas
-
-******************************************************************************
-commit b96057adeb1513292dcfea664c8c4fe227abc442
-Author: Yuriy Sydorov <jura@cp-lab.com>
-Date:   Mon Sep 6 18:37:45 2021 +0300
-
-    * Remove register allocations of coalesced registers if the alias
-      register is spilled.
 
 M	compiler/rgobj.pas
 
