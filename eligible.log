@@ -1,4 +1,32 @@
 ******************************************************************************
+commit f4cc2447a2c9b751c0c31b35dcd9b92e3fd07749
+Author: Ondrej Pokorny <lazarus@kluug.net>
+Date:   Wed Sep 8 16:43:04 2021 +0200
+
+    * fix memory leak in TFPCustomSimpleThreadPool.TThreadPoolList
+
+M	packages/fcl-base/src/fpthreadpool.pp
+
+******************************************************************************
+commit ef0aea8ca241aa5d021d74efa830e690ca447bb9
+Author: Ondrej Pokorny <lazarus@kluug.net>
+Date:   Wed Sep 8 15:44:34 2021 +0200
+
+    * fix memory leak in TFPPooledConnectionHandler
+
+M	packages/fcl-web/src/base/fphttpserver.pp
+
+******************************************************************************
+commit 008214ca15812e7f4db97cc9e1ffadce94d68d2d
+Author: Ondrej Pokorny <lazarus@kluug.net>
+Date:   Wed Sep 1 22:01:29 2021 +0200
+
+    fphttpclient: remove OnIdle and add protected methods so that the feature can be added in a descendant
+
+M	packages/fcl-web/src/base/fphttpclient.pp
+M	packages/fcl-web/src/base/fphttpclientasyncpool.pas
+
+******************************************************************************
 commit 67b08734cfe4bbe2aa19c4cf4020817abaf74c5d
 Author: Florian Klämpfl <florian@freepascal.org>
 Date:   Wed Sep 8 21:06:13 2021 +0200
