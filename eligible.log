@@ -1,4 +1,29 @@
 ******************************************************************************
+commit 679cfab709f7c6c9415524d384716b063a7dfb8a
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Wed Sep 8 18:31:12 2021 +0200
+
+    pastojs: added hook GetFileSrcAttr to skip generating srcmap of some files
+
+M	packages/pastojs/src/pas2jscompiler.pp
+M	packages/pastojs/src/pas2jsfilecache.pp
+M	packages/pastojs/src/pas2jsfiler.pp
+M	packages/pastojs/src/pas2jsfileutils.pp
+M	packages/pastojs/src/pas2jsfs.pp
+M	packages/pastojs/src/pas2jsfscompiler.pp
+M	packages/pastojs/src/pas2jslibcompiler.pp
+M	utils/pas2js/compileserver.lpi
+
+******************************************************************************
+commit 7e57e4514a46336b724174503c7a628e812b24db
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Wed Sep 8 18:25:50 2021 +0200
+
+    pastojs: added TPas2jsMapper.SaveJSToStream
+
+M	packages/pastojs/src/fppjssrcmap.pp
+
+******************************************************************************
 commit 9a1ccd2a16a48e980662be44f228d549871e8b22
 Author: florian <florian@freepascal.org>
 Date:   Tue Sep 7 23:05:08 2021 +0200
