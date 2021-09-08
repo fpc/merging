@@ -1,4 +1,24 @@
 ******************************************************************************
+commit 67b08734cfe4bbe2aa19c4cf4020817abaf74c5d
+Author: Florian Klämpfl <florian@freepascal.org>
+Date:   Wed Sep 8 21:06:13 2021 +0200
+
+    * to avoid that -Xg causes a failure during comparing ppc3.exe and ppc386.exe on windows, during the last compiler compilation step, the
+        same executable name is used
+
+M	compiler/Makefile
+M	compiler/Makefile.fpc
+
+******************************************************************************
+commit 25450a99ed7d01fa0df4b6a156fcbeb8e62a8d94
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Wed Sep 8 23:00:51 2021 +0200
+
+    * Fix issue #39350 : strip extension dot in windows loadknowntypes
+
+M	packages/fcl-web/src/base/fpmimetypes.pp
+
+******************************************************************************
 commit 679cfab709f7c6c9415524d384716b063a7dfb8a
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Wed Sep 8 18:31:12 2021 +0200
