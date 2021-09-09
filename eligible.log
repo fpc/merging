@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 37bb10e893d97f44e4f130c06ad825a2b4693945
+Author: florian <florian@freepascal.org>
+Date:   Thu Sep 9 23:10:21 2021 +0200
+
+      * make ShlOp2Op optimization more fool proof
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
 commit bad14c5dbd1f72a2ed532636d390fff37b65b195
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Thu Sep 9 16:09:52 2021 +0200
@@ -233,17 +242,6 @@ Date:   Mon Sep 6 13:45:33 2021 +0200
     this message disappears.
 
 M	compiler/nadd.pas
-
-******************************************************************************
-commit b43ee410906633123e66b8f5fc619277bf9abbef
-Author: Yuriy Sydorov <jura@cp-lab.com>
-Date:   Mon Sep 6 18:57:41 2021 +0300
-
-    * If in a move instruction "MOV reg1,reg2" one of the registers must be
-      spilled, but reg1 and reg2 are coalesced, then this is a no-op
-      instruction and no spilling is needed.
-
-M	compiler/rgobj.pas
 
 ******************************************************************************
 commit 213a0a704aed3270afbb0c9ec0070e4cbad85d9a
