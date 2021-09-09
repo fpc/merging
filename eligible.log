@@ -1,4 +1,13 @@
 ******************************************************************************
+commit ba9a8ab069ad9a490ccaa37568e27593c2e558ac
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Thu Sep 9 14:11:20 2021 +0300
+
+    + added thlcgwasm.a_load_subsetref_stack, not implemented yet
+
+M	compiler/wasm32/hlcgcpu.pas
+
+******************************************************************************
 commit f4cc2447a2c9b751c0c31b35dcd9b92e3fd07749
 Author: Ondrej Pokorny <lazarus@kluug.net>
 Date:   Wed Sep 8 16:43:04 2021 +0200
