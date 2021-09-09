@@ -1,4 +1,23 @@
 ******************************************************************************
+commit bad14c5dbd1f72a2ed532636d390fff37b65b195
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Thu Sep 9 16:09:52 2021 +0200
+
+    pas2js: httpcompiler: fixed reading values fomr config file
+
+M	utils/pas2js/httpcompiler.pp
+
+******************************************************************************
+commit 61cf121533572a72ea65a7ec35bed1a5b3621a5b
+Author: Yuriy Sydorov <jura@cp-lab.com>
+Date:   Thu Sep 9 16:32:55 2021 +0300
+
+    * Use a register alias while handling reg deallocs in trgobj.instr_spill_register()
+      to be in sync with commit b96057ad.
+
+M	compiler/rgobj.pas
+
+******************************************************************************
 commit ba9a8ab069ad9a490ccaa37568e27593c2e558ac
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Thu Sep 9 14:11:20 2021 +0300
