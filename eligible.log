@@ -1,4 +1,15 @@
 ******************************************************************************
+commit b4df9dbe1d10937f7e61265cc58cab832f6b8506
+Author: Yuriy Sydorov <jura@cp-lab.com>
+Date:   Fri Sep 10 18:06:12 2021 +0300
+
+    * Prevent spilling of spill-helper registers which contain the value of a
+      previously spilled register. These helper registers must never be spilled.
+      This fixes failures of the register allocator in rare corner cases.
+
+M	compiler/rgobj.pas
+
+******************************************************************************
 commit 37bb10e893d97f44e4f130c06ad825a2b4693945
 Author: florian <florian@freepascal.org>
 Date:   Thu Sep 9 23:10:21 2021 +0200
