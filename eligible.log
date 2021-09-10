@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 6b7df6d22e246a54b7ce60e08ac4474664efe90d
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Mon Sep 6 12:54:22 2021 +0200
+
+    Add 'treated as Error:' to compiler messages
+
+M	compiler/comphook.pas
+
+******************************************************************************
 commit b4df9dbe1d10937f7e61265cc58cab832f6b8506
 Author: Yuriy Sydorov <jura@cp-lab.com>
 Date:   Fri Sep 10 18:06:12 2021 +0300
