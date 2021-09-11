@@ -1,4 +1,44 @@
 ******************************************************************************
+commit 9653406ac6c2633ac2ee2b12ee857beeed5efeeb
+Author: Yuriy Sydorov <jura@cp-lab.com>
+Date:   Sat Sep 11 16:34:59 2021 +0300
+
+    * Updated json tests to run properly when the default code is non-UTF8.
+
+M	packages/fcl-json/tests/testjson.pp
+M	packages/fcl-json/tests/testjsonreader.pas
+
+******************************************************************************
+commit 7e158b6c9b70248ab9de3a12484a9c82f6c17ef2
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Sep 11 15:29:52 2021 +0200
+
+    * Forgot to commit
+
+M	packages/pastojs/src/pas2jsfiler.pp
+
+******************************************************************************
+commit 2781be118f8cb52757eaa7b369332f72550f6252
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Sep 11 15:23:25 2021 +0200
+
+    * Add linklib, add some formatting
+
+M	utils/pas2js/docs/translation.html
+
+******************************************************************************
+commit a4821b1d0cacf6458dd21544caddbc52d10255ff
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Sep 11 14:33:47 2021 +0200
+
+    * Additional module platform
+    
+    (cherry picked from commit 664de8653dc56b13cddac2cd7024697756ae422d)
+
+M	packages/pastojs/src/fppas2js.pp
+M	packages/pastojs/src/pas2jscompiler.pp
+
+******************************************************************************
 commit 6b7df6d22e246a54b7ce60e08ac4474664efe90d
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Mon Sep 6 12:54:22 2021 +0200
