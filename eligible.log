@@ -1,4 +1,23 @@
 ******************************************************************************
+commit bcaa2c9758c41fcc05971c35e14d02faf1163267
+Author: Yuriy Sydorov <jura@cp-lab.com>
+Date:   Sat Sep 11 17:56:33 2021 +0300
+
+    * Explicitly specify CP1252 for registry tests which depends on this CP.
+
+M	tests/test/packages/fcl-registry/tw35060a.pp
+M	tests/test/packages/fcl-registry/tw35060c.pp
+
+******************************************************************************
+commit c7c8e2e0086f1f257af5f4fb927beae687105f4e
+Author: florian <florian@freepascal.org>
+Date:   Sat Sep 11 16:24:41 2021 +0200
+
+      * nicer spelling
+
+M	compiler/comphook.pas
+
+******************************************************************************
 commit 9653406ac6c2633ac2ee2b12ee857beeed5efeeb
 Author: Yuriy Sydorov <jura@cp-lab.com>
 Date:   Sat Sep 11 16:34:59 2021 +0300
