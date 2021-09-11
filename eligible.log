@@ -1,4 +1,32 @@
 ******************************************************************************
+commit c30ce7108e3c6f5719a2be4b95b5d20e518813d5
+Author: Yuriy Sydorov <jura@cp-lab.com>
+Date:   Sat Sep 11 20:40:36 2021 +0300
+
+    * Do not run the tzlib1 test. It is not intended for this.
+
+M	tests/test/packages/zlib/tzlib1.pp
+
+******************************************************************************
+commit 80c63fae3052241047931f7b0acc9dfacabb5f7f
+Author: Yuriy Sydorov <jura@cp-lab.com>
+Date:   Sat Sep 11 20:35:50 2021 +0300
+
+    * Explicitly specify DefaultRTLFileSystemCodePage for the test in order
+      to be independent from the current system code page.
+
+M	tests/test/units/sysutils/tffirst.pp
+
+******************************************************************************
+commit 64812bdc6013bc09f6e59e0d554c3e8e3542987f
+Author: Yuriy Sydorov <jura@cp-lab.com>
+Date:   Sat Sep 11 20:11:40 2021 +0300
+
+    * Modified the test to run properly on non-UTF8 systems.
+
+M	tests/webtbs/tw29353.pp
+
+******************************************************************************
 commit daa05f19cb49aefb80c3ce974f29f45cd4148fbc
 Author: Yuriy Sydorov <jura@cp-lab.com>
 Date:   Sat Sep 11 19:53:50 2021 +0300
