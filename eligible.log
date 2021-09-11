@@ -1,4 +1,13 @@
 ******************************************************************************
+commit c27823568a0c35eacd38cbd8428f8b30563dc452
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Sep 11 18:01:37 2021 +0200
+
+    * libimports added
+
+M	utils/pas2js/dist/rtl.js
+
+******************************************************************************
 commit bcaa2c9758c41fcc05971c35e14d02faf1163267
 Author: Yuriy Sydorov <jura@cp-lab.com>
 Date:   Sat Sep 11 17:56:33 2021 +0300
