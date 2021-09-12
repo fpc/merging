@@ -1,4 +1,23 @@
 ******************************************************************************
+commit 5e9eb673f8141c2a931e971448cf1264d55e7f04
+Author: florian <florian@freepascal.org>
+Date:   Sun Sep 12 20:28:40 2021 +0200
+
+      * x86: only add mm capable consts to register candidate list, this is better
+        than checking when they are assigned
+
+M	compiler/optcse.pas
+
+******************************************************************************
+commit 5762e687a3ab8fa55d3d7b14177de991b044e9da
+Author: florian <florian@freepascal.org>
+Date:   Sun Sep 12 19:36:27 2021 +0200
+
+      * (modified) patch by J. Gareth Moreton: ARM/AArch64 Some short-range LDR/STR optimisations, last part of #38841
+
+M	compiler/armgen/aoptarm.pas
+
+******************************************************************************
 commit 1e072aef31dbc456da749011f2ede30dddd76546
 Author: florian <florian@freepascal.org>
 Date:   Sun Sep 12 10:54:09 2021 +0200
