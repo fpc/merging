@@ -1,4 +1,15 @@
 ******************************************************************************
+commit 1e072aef31dbc456da749011f2ede30dddd76546
+Author: florian <florian@freepascal.org>
+Date:   Sun Sep 12 10:54:09 2021 +0200
+
+      + for loop optimizations can be controller by a switch (-Oo(no)forloop)
+
+M	compiler/globtype.pas
+M	compiler/psub.pas
+M	compiler/utils/ppuutils/ppudump.pp
+
+******************************************************************************
 commit c30ce7108e3c6f5719a2be4b95b5d20e518813d5
 Author: Yuriy Sydorov <jura@cp-lab.com>
 Date:   Sat Sep 11 20:40:36 2021 +0300
