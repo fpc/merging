@@ -1,4 +1,25 @@
 ******************************************************************************
+commit 5065e4ba50b7bcda40c0c010b404eb228a4d3188
+Author: florian <florian@freepascal.org>
+Date:   Mon Sep 13 22:55:44 2021 +0200
+
+      * fix code for ARM FPA, just in case ...
+
+M	compiler/globals.pas
+M	tests/webtbs/tw39357.pp
+
+******************************************************************************
+commit 9bd785c06bb6f3b7c1dfe2190cb5fbfcfc6f76d2
+Author: florian <florian@freepascal.org>
+Date:   Mon Sep 13 22:47:26 2021 +0200
+
+      * fix handling of -0.0 in sse/avx code, resolves #39357
+
+M	compiler/x86/nx86con.pas
+M	compiler/x86/nx86mat.pas
+A	tests/webtbs/tw39357.pp
+
+******************************************************************************
 commit 5e9eb673f8141c2a931e971448cf1264d55e7f04
 Author: florian <florian@freepascal.org>
 Date:   Sun Sep 12 20:28:40 2021 +0200
