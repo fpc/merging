@@ -1,4 +1,14 @@
 ******************************************************************************
+commit ffc3e1780d7fb636bd11692558012983e45127af
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Tue Sep 14 11:47:10 2021 +0300
+
+    pas2js: added SetPas2JSGetFileSrcAttrCallBack
+
+M	packages/pastojs/src/pas2jslibcompiler.pp
+M	utils/pas2js/pas2jslib.pp
+
+******************************************************************************
 commit 6c4198fdf3b71e24886479cae3fb529d82e4b556
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Tue Sep 14 10:53:12 2021 +0300
