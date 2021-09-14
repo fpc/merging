@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 5d571853acdbf9ca26966ae9ddd0eff94aa565c4
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Tue Sep 14 15:51:00 2021 +0300
+
+    pas2js: compile httpcompiler with fpc 3.2.2
+
+M	utils/pas2js/httpcompiler.pp
+
+******************************************************************************
 commit ffc3e1780d7fb636bd11692558012983e45127af
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Tue Sep 14 11:47:10 2021 +0300
