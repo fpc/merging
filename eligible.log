@@ -1,4 +1,24 @@
 ******************************************************************************
+commit abe3002b5badb867b33dfe4457e92535b089a954
+Author: Yuriy Sydorov <jura@cp-lab.com>
+Date:   Wed Sep 15 00:31:10 2021 +0300
+
+    * Fixed lack of the calculation code for the strength reduction optimization.
+
+M	compiler/optloop.pas
+
+******************************************************************************
+commit a7e234254f19327d7053f390ac93d29f53d40803
+Author: Yuriy Sydorov <jura@cp-lab.com>
+Date:   Wed Sep 15 00:27:13 2021 +0300
+
+    * x86: Do not replace inc/dec with add/sub 1 because this code path is
+      executed only for the C_Z,C_NZ,C_E,C_NE conditions, so inc/dec can be
+      used.
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
 commit e2624fdaaa0a73ba637629db116ed2c6287494d5
 Author: florian <florian@freepascal.org>
 Date:   Tue Sep 14 22:01:26 2021 +0200
