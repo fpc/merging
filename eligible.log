@@ -1,4 +1,24 @@
 ******************************************************************************
+commit 59b49addc0f257a695aedd57f28b73b96382ba3b
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Tue Sep 14 09:16:48 2021 +0200
+
+    Revert "* Export SetPas2JSGetFileSrcAttrCallBack"
+    
+    This reverts commit 0053cec8809421efc739d7f2e5610fa7c966e61a.
+
+M	utils/pas2js/pas2jslib.pp
+
+******************************************************************************
+commit 0053cec8809421efc739d7f2e5610fa7c966e61a
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Tue Sep 14 09:08:31 2021 +0200
+
+    * Export SetPas2JSGetFileSrcAttrCallBack
+
+M	utils/pas2js/pas2jslib.pp
+
+******************************************************************************
 commit 5065e4ba50b7bcda40c0c010b404eb228a4d3188
 Author: florian <florian@freepascal.org>
 Date:   Mon Sep 13 22:55:44 2021 +0200
