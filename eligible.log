@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 6c4198fdf3b71e24886479cae3fb529d82e4b556
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Tue Sep 14 10:53:12 2021 +0300
+
+    pas2js: fixed typeinfo procvar resulttype nil
+
+M	utils/pas2js/dist/rtl.js
+
+******************************************************************************
 commit 59b49addc0f257a695aedd57f28b73b96382ba3b
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Tue Sep 14 09:16:48 2021 +0200
