@@ -1,4 +1,14 @@
 ******************************************************************************
+commit bd4c2064726700790c5c6bdd0a55d3d471dd0c5b
+Author: Yuriy Sydorov <jura@cp-lab.com>
+Date:   Wed Sep 15 18:07:12 2021 +0300
+
+    * Fixed the strength reduction optimization for loops containing 'continue'.
+      The compiler now cycles properly with -O3 -OoSTRENGTH.
+
+M	compiler/optloop.pas
+
+******************************************************************************
 commit b8befe3d1fd54329845387d8c7109827c55a0b3c
 Author: Yuriy Sydorov <jura@cp-lab.com>
 Date:   Wed Sep 15 12:25:48 2021 +0300
