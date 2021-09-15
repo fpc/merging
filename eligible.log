@@ -1,4 +1,22 @@
 ******************************************************************************
+commit b8befe3d1fd54329845387d8c7109827c55a0b3c
+Author: Yuriy Sydorov <jura@cp-lab.com>
+Date:   Wed Sep 15 12:25:48 2021 +0300
+
+    * Fixed a typo in the condition, though it seems this code path is not used now.
+
+M	compiler/x86/nx86add.pas
+
+******************************************************************************
+commit 3e621f201456c6f1cd7c297078f618ffcf953001
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Wed Sep 15 11:22:52 2021 +0200
+
+    * Allow to specify address
+
+M	utils/pas2js/httpcompiler.pp
+
+******************************************************************************
 commit 711e659f5c91098da657ac2f9dcb4cb52f14a937
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Wed Sep 15 11:18:27 2021 +0200
