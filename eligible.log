@@ -1,4 +1,24 @@
 ******************************************************************************
+commit e121a753e116701c5a8c68f44ca90b296b67b6e8
+Author: Florian Klämpfl <florian.klaempfl@fau.de>
+Date:   Wed Sep 15 20:20:00 2021 +0200
+
+      * mark temps as deallocated
+    
+    (cherry picked from commit 50452e5707b1d5f8590042ed55fc5f47bce33962)
+
+M	compiler/x86/nx86add.pas
+
+******************************************************************************
+commit b2165570de567ccd94e192353900000376492fbd
+Author: Yuriy Sydorov <jura@cp-lab.com>
+Date:   Wed Sep 15 21:31:04 2021 +0300
+
+    * Fixed missing assignments with the strength reduction optimization.
+
+M	compiler/optloop.pas
+
+******************************************************************************
 commit bd4c2064726700790c5c6bdd0a55d3d471dd0c5b
 Author: Yuriy Sydorov <jura@cp-lab.com>
 Date:   Wed Sep 15 18:07:12 2021 +0300
