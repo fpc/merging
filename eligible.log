@@ -1,4 +1,22 @@
 ******************************************************************************
+commit 711e659f5c91098da657ac2f9dcb4cb52f14a937
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Wed Sep 15 11:18:27 2021 +0200
+
+    * Allow to specify IP address
+
+M	packages/fcl-web/examples/simpleserver/simpleserver.pas
+
+******************************************************************************
+commit b08c12ff8ab31b63044bb03ef025dc3c175648a0
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Wed Sep 15 11:18:12 2021 +0200
+
+    * Make some properties public
+
+M	packages/fcl-web/src/base/custhttpapp.pp
+
+******************************************************************************
 commit abe3002b5badb867b33dfe4457e92535b089a954
 Author: Yuriy Sydorov <jura@cp-lab.com>
 Date:   Wed Sep 15 00:31:10 2021 +0300
