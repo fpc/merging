@@ -1,4 +1,19 @@
 ******************************************************************************
+commit 4a7a113a30030675eb50c9b1d0e563b6d0b82c73
+Author: Yuriy Sydorov <jura@cp-lab.com>
+Date:   Wed Sep 15 22:29:43 2021 +0300
+
+    * x86: Fixed attributes of the LEAVE instruction - it reads EBP.
+      This fixes crashes with -O3s in some cases due to an incorrect peephole
+      optimization.
+
+M	compiler/i386/i386prop.inc
+M	compiler/i8086/i8086prop.inc
+M	compiler/x86/aoptx86.pas
+M	compiler/x86/x86ins.dat
+M	compiler/x86_64/x8664pro.inc
+
+******************************************************************************
 commit e121a753e116701c5a8c68f44ca90b296b67b6e8
 Author: Florian Klämpfl <florian.klaempfl@fau.de>
 Date:   Wed Sep 15 20:20:00 2021 +0200
