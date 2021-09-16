@@ -1,4 +1,13 @@
 ******************************************************************************
+commit c41516399b667b4de468e3a6efa4e6499382d1c8
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Thu Sep 16 12:10:43 2021 +0300
+
+    + implemented thlcgwasm.a_load_subsetref_stack
+
+M	compiler/wasm32/hlcgcpu.pas
+
+******************************************************************************
 commit 81e83ffa675a60a8244c2a32723bbb00b70f3e46
 Author: florian <florian@freepascal.org>
 Date:   Wed Sep 15 23:16:53 2021 +0200
