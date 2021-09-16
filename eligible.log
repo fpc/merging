@@ -1,4 +1,23 @@
 ******************************************************************************
+commit 4064694a5e438b10d71a24fe5d1d24bad40e4c48
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Fri Sep 17 02:15:56 2021 +0300
+
+    + support writing the new tai_tagtype directive in the asm output
+
+M	compiler/aggas.pas
+
+******************************************************************************
+commit 3022f59ff456f7a8a23198919df5ffcaf175b63a
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Fri Sep 17 02:05:24 2021 +0300
+
+    + introduced ait_tagtype and tai_tagtype
+
+M	compiler/aasmtai.pas
+M	compiler/wasm32/aasmcpu.pas
+
+******************************************************************************
 commit 10d833256343adc6495ff6dc4f240b5d8a463a6f
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Thu Sep 16 23:43:32 2021 +0300
