@@ -1,4 +1,24 @@
 ******************************************************************************
+commit 10d833256343adc6495ff6dc4f240b5d8a463a6f
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Thu Sep 16 23:43:32 2021 +0300
+
+    + added the new WebAssembly instructions, added by the exception handling proposal
+
+M	compiler/wasm32/cpubase.pas
+M	compiler/wasm32/itcpugas.pas
+M	compiler/wasm32/strinst.inc
+
+******************************************************************************
+commit 6b26fa0f9a4c6c7f8d12a10737428c443c7750e2
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Thu Sep 16 18:06:08 2021 +0100
+
+    Added correction to AllocRegBetween
+
+M	compiler/aoptobj.pas
+
+******************************************************************************
 commit bdbdf2616830ee919a86d5181440b8db1b89ca84
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Thu Sep 16 23:09:20 2021 +0300
