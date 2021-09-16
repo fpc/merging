@@ -1,4 +1,33 @@
 ******************************************************************************
+commit cd244cbf7dbd85f2a28b67fabc27455fd23f1e33
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Thu Sep 16 21:48:28 2021 +0300
+
+    * fixed compilation of ppudump
+
+M	compiler/utils/ppuutils/ppudump.pp
+
+******************************************************************************
+commit 3a242a17f4ad59a3bccdbc1b7982ce92b9dcec76
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Thu Sep 16 21:44:05 2021 +0300
+
+    * increased size of ttargetswitchinfo.define to fit the string added in my
+      previous commit
+
+M	compiler/globtype.pas
+
+******************************************************************************
+commit eda6b105b718d810129c752ec7749d6a8e6132a7
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Thu Sep 16 21:41:54 2021 +0300
+
+    + added target flags for the different WebAssembly exception modes that I'm
+      planning to implement
+
+M	compiler/globtype.pas
+
+******************************************************************************
 commit 3bf5b0c395c0cc613b76bc7424ab7cd7386f7ee1
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Thu Sep 16 15:15:39 2021 +0300
