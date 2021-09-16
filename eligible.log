@@ -1,4 +1,30 @@
 ******************************************************************************
+commit bdbdf2616830ee919a86d5181440b8db1b89ca84
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Thu Sep 16 23:09:20 2021 +0300
+
+    + added validation to ensure no more than one WebAssembly exception support
+      mode is enabled
+    + set the NOEXCEPTIONS mode by default for the WebAssembly targets
+
+M	compiler/msg/errore.msg
+M	compiler/msgidx.inc
+M	compiler/msgtxt.inc
+M	compiler/options.pas
+
+******************************************************************************
+commit 08b07122f8c0a270d4f9ccd1bd925e14402323e7
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Thu Sep 16 22:23:18 2021 +0300
+
+    + added usage info to the compiler help screen for the WebAssembly
+      target-specific exception handling modes
+
+M	compiler/msg/errore.msg
+M	compiler/msgidx.inc
+M	compiler/msgtxt.inc
+
+******************************************************************************
 commit cd244cbf7dbd85f2a28b67fabc27455fd23f1e33
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Thu Sep 16 21:48:28 2021 +0300
