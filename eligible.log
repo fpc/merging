@@ -1,4 +1,31 @@
 ******************************************************************************
+commit 3bf5b0c395c0cc613b76bc7424ab7cd7386f7ee1
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Thu Sep 16 15:15:39 2021 +0300
+
+    - avoid useless typecasts for accessing members in self in thlcgwasm.a_load_subsetref_regs_index
+
+M	compiler/wasm32/hlcgcpu.pas
+
+******************************************************************************
+commit 4120825f500fb8e60322db86418882cf78fcede2
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Thu Sep 16 15:14:51 2021 +0300
+
+    + implemented thlcgwasm.a_load_regconst_subsetref_intern
+
+M	compiler/wasm32/hlcgcpu.pas
+
+******************************************************************************
+commit 7af6e628c81ad931089db74b6477553e9528f2bf
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Thu Sep 16 14:30:29 2021 +0300
+
+    + implemented thlcgwasm.a_load_subsetref_regs_index
+
+M	compiler/wasm32/hlcgcpu.pas
+
+******************************************************************************
 commit c41516399b667b4de468e3a6efa4e6499382d1c8
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Thu Sep 16 12:10:43 2021 +0300
