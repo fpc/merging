@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 3f26551c42857ba03739f2e0d89fa1dfc64979bb
+Author: FPK <florian@freepascal.org>
+Date:   Fri Sep 17 20:01:23 2021 +0000
+
+    Compile with -Oodfa to get better warnings
+
+M	.gitlab-ci.yml
+
+******************************************************************************
 commit d36e239f45011d9dea8d15bab4ee3f46f29ff85b
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Fri Sep 17 21:20:14 2021 +0300
