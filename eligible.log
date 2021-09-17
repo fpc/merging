@@ -1,4 +1,36 @@
 ******************************************************************************
+commit d36e239f45011d9dea8d15bab4ee3f46f29ff85b
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Fri Sep 17 21:20:14 2021 +0300
+
+    + enabled the exception handling instructions in the llvm-mc command line
+
+M	compiler/wasm32/agllvmmc.pas
+
+******************************************************************************
+commit 619a27cbfc49c3981ac93ba0aa8831d7f453b21a
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Fri Sep 17 21:09:17 2021 +0300
+
+    + insert try and end_try instructions in the try..finally code in native
+      WebAssembly exceptions mode
+
+M	compiler/wasm32/nwasmflw.pas
+
+******************************************************************************
+commit 45e53ddc16e461e90bb2974375a0227bf8fc0d31
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Fri Sep 17 21:01:00 2021 +0300
+
+    * cloned the WASM no exceptions mode code generation for try..finally blocks
+      for the native WASM exceptions mode. Eventually, it is going to be changed
+      to support exceptions fully, and it's going to evolve separately, so this
+      code is only used as a starting point
+
+M	compiler/wasm32/cpupi.pas
+M	compiler/wasm32/nwasmflw.pas
+
+******************************************************************************
 commit 65a5b299c6adedd7ba427507b0944c0857fc0037
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Fri Sep 17 16:53:35 2021 +0300
