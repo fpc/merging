@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 9526b939a2a20c5f7b0bd8e1419137d19402b76c
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Fri Sep 17 03:41:45 2021 +0300
+
+    + implemented thlcgwasm.g_unreachable, emits the 'unreachable' WebAssembly instruction
+
+M	compiler/wasm32/hlcgcpu.pas
+
+******************************************************************************
 commit 4064694a5e438b10d71a24fe5d1d24bad40e4c48
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Fri Sep 17 02:15:56 2021 +0300
