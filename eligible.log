@@ -1,4 +1,43 @@
 ******************************************************************************
+commit a83f5749debb1409e18f0ef92b2e81bc9d0adba2
+Author: Yuriy Sydorov <jura@cp-lab.com>
+Date:   Fri Sep 17 23:54:41 2021 +0300
+
+    * Reverted the accidentally committed debug code in 4a7a113a.
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
+commit 288f79cb3bc900700c47ed7bdcf3443edfb6b9be
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Fri Sep 17 23:46:09 2021 +0300
+
+    + declare the __FPC_exception tag, when compiling with native WebAssembly
+      exceptions
+
+M	compiler/wasm32/agllvmmc.pas
+
+******************************************************************************
+commit d8665f8a517e90116976cc529a71615fbbdd1bd4
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Fri Sep 17 23:40:55 2021 +0300
+
+    * write the .globaltype directive and the imports in the beginning of the
+      assembly file, because that appears to be required by llvm-mc from git
+
+M	compiler/wasm32/agllvmmc.pas
+
+******************************************************************************
+commit bee87583de8b2e6dc4f062a71a5e97f3808ffc63
+Author: florian <florian@freepascal.org>
+Date:   Fri Sep 17 22:27:34 2021 +0200
+
+      * avoid warnings
+
+M	compiler/aasmtai.pas
+M	compiler/wasm32/nwasmflw.pas
+
+******************************************************************************
 commit 3f26551c42857ba03739f2e0d89fa1dfc64979bb
 Author: FPK <florian@freepascal.org>
 Date:   Fri Sep 17 20:01:23 2021 +0000
