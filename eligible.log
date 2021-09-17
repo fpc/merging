@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 65a5b299c6adedd7ba427507b0944c0857fc0037
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Fri Sep 17 16:53:35 2021 +0300
+
+    + introduced twasmraisenode.pass_1_no_exceptions
+
+M	compiler/wasm32/nwasmflw.pas
+
+******************************************************************************
 commit 6c213137a998537f3cdd0749df432f8d47a04e55
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Fri Sep 17 16:21:43 2021 +0300
