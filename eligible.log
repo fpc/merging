@@ -1,4 +1,23 @@
 ******************************************************************************
+commit 2bcc8d65ff77a8361f8307be819a599f3510800d
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Fri Sep 17 13:12:34 2021 +0300
+
+    + introduced twasmexceptionstatehandler_nativeexceptions and
+      twasmexceptionstatehandler_jsexceptions
+
+M	compiler/wasm32/cpupi.pas
+
+******************************************************************************
+commit 3ca9475bded883a8e24810c494594f2e588ed30f
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Fri Sep 17 12:33:34 2021 +0300
+
+    * twasmexceptionstatehandler renamed twasmexceptionstatehandler_noexceptions
+
+M	compiler/wasm32/cpupi.pas
+
+******************************************************************************
 commit 9526b939a2a20c5f7b0bd8e1419137d19402b76c
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Fri Sep 17 03:41:45 2021 +0300
