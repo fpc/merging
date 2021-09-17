@@ -1,4 +1,35 @@
 ******************************************************************************
+commit 6c213137a998537f3cdd0749df432f8d47a04e55
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Fri Sep 17 16:21:43 2021 +0300
+
+    - cleaned up twasmtryexceptnode.pass_generate_code_no_exceptions
+
+M	compiler/wasm32/nwasmflw.pas
+
+******************************************************************************
+commit c992566201987630e2c4ac0b450f1ed5d5e8fde4
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Fri Sep 17 16:06:39 2021 +0300
+
+    + introduced twasmtryexceptnode.pass_generate_code_no_exceptions,
+      .pass_generate_code_js_exceptions and .pass_generate_code_native_exceptions
+
+M	compiler/wasm32/nwasmflw.pas
+
+******************************************************************************
+commit 848098c63b501e35e78060ea04ddd551d3085c72
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Fri Sep 17 15:54:03 2021 +0300
+
+    * improvements to the handling of try..finally in WebAssembly no exceptions
+      mode - even though exceptions aren't supported in this mode, the finally
+      section is now executed in case of exit, break or continue
+
+M	compiler/wasm32/cpupi.pas
+M	compiler/wasm32/nwasmflw.pas
+
+******************************************************************************
 commit 3601d61b81415f10da5dd903c03c4e36de3f0a50
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Fri Sep 17 13:37:28 2021 +0300
