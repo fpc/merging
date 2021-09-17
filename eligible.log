@@ -1,4 +1,13 @@
 ******************************************************************************
+commit ac2f299d0407cf3f03d227549b0bd6d42cdc2f91
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sat Sep 18 01:46:45 2021 +0300
+
+    + declare __FPC_exception as a label, otherwise wasm-ld crashes
+
+M	compiler/wasm32/agllvmmc.pas
+
+******************************************************************************
 commit 8ad5362b172b2916720e1352116725f67a58505a
 Author: florian <florian@freepascal.org>
 Date:   Fri Sep 17 23:44:45 2021 +0200
