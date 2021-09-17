@@ -1,4 +1,24 @@
 ******************************************************************************
+commit 8ad5362b172b2916720e1352116725f67a58505a
+Author: florian <florian@freepascal.org>
+Date:   Fri Sep 17 23:44:45 2021 +0200
+
+      * more warnings fixed
+
+M	compiler/wasm32/nwasmflw.pas
+
+******************************************************************************
+commit 87702b58c5a7154dbe96f3e01aacd97fb5b477f3
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sat Sep 18 00:24:13 2021 +0300
+
+    + emit a catch instruction in the try/end_try block, generated for
+      try..finally in native wasm exceptions mode
+
+M	compiler/wasm32/itcpugas.pas
+M	compiler/wasm32/nwasmflw.pas
+
+******************************************************************************
 commit a83f5749debb1409e18f0ef92b2e81bc9d0adba2
 Author: Yuriy Sydorov <jura@cp-lab.com>
 Date:   Fri Sep 17 23:54:41 2021 +0300
