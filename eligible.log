@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 3601d61b81415f10da5dd903c03c4e36de3f0a50
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Fri Sep 17 13:37:28 2021 +0300
+
+    + introduced twasmtryfinallynode.pass_generate_code_no_exceptions,
+      .pass_generate_code_js_exceptions and .pass_generate_code_native_exceptions
+
+M	compiler/wasm32/nwasmflw.pas
+
+******************************************************************************
 commit 2bcc8d65ff77a8361f8307be819a599f3510800d
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Fri Sep 17 13:12:34 2021 +0300
