@@ -1,4 +1,28 @@
 ******************************************************************************
+commit d3ec8f0d293df1b3fe2bfc3f2bfd869c8cce7da2
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sat Sep 18 18:10:57 2021 +0300
+
+    * generate an internalerror if there are values remaining on top of stack
+      at the end of a procedure. If the compiler is compiled with
+      DEBUG_WASMSTACK, the previous asm comment message is emitted instead of
+      internal error.
+
+M	compiler/wasm32/hlcgcpu.pas
+
+******************************************************************************
+commit 324382d3a54e63f815d0793bdc810617b4c4981c
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sat Sep 18 17:59:50 2021 +0300
+
+    * use create_functype to determine accurately the number of parameters to
+      discard in twasmcallnode.do_release_unused_return_value. This fixes
+      various stack tracking bugs when a constructor is invoking another
+      constructor, etc.
+
+M	compiler/wasm32/nwasmcal.pas
+
+******************************************************************************
 commit f7cc2d560c322a338aa4d8ac207baddfac24f159
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Sat Sep 18 16:29:19 2021 +0300
