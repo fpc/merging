@@ -1,4 +1,53 @@
 ******************************************************************************
+commit f7cc2d560c322a338aa4d8ac207baddfac24f159
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sat Sep 18 16:29:19 2021 +0300
+
+    + initialize br_blocks in the thlcgwasm constructor
+
+M	compiler/wasm32/hlcgcpu.pas
+
+******************************************************************************
+commit a3610bfea10c23589925d467bfae6c3b1911716e
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sat Sep 18 16:24:30 2021 +0300
+
+    + also added stack underflow check in thlcgwasm.incstack (in case stack
+      height was already negative in the beginning, due to previous underflow)
+
+M	compiler/wasm32/hlcgcpu.pas
+
+******************************************************************************
+commit d4bd1f1e9b60c6b1007a3cfd14c168fbcbeb4482
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sat Sep 18 16:21:41 2021 +0300
+
+    * don't halt with an internal error, but add an asm comment instead, when a
+      stack underflow is detected in thlcgwasm.decstack and when the compiler is
+      compiled with the DEBUG_WASMSTACK define
+
+M	compiler/wasm32/hlcgcpu.pas
+
+******************************************************************************
+commit 58e46927954a9146b7a3ec40b680a0e54fe784c4
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sat Sep 18 16:19:03 2021 +0300
+
+    * fixed thlcgwasm.g_adjust_stack_after_call after the removal of discardresult
+
+M	compiler/wasm32/hlcgcpu.pas
+
+******************************************************************************
+commit fa3614164970f06540f8f959d3d2331888e2d00b
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sat Sep 18 16:08:58 2021 +0300
+
+    * fixed the stack tracking in twasmcallnode.do_release_unused_return_value for
+      ret_in_param function calls
+
+M	compiler/wasm32/nwasmcal.pas
+
+******************************************************************************
 commit d2929586652740f02401d6c9f603cc1b2faa56f9
 Author: florian <florian@freepascal.org>
 Date:   Sat Sep 18 14:25:40 2021 +0200
