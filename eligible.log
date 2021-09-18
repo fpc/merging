@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 962c5bd727fe1930421e1897d0c8aaf6fba6a489
+Author: J. Gareth "Kit" Moreton <gareth@moreton-family.com>
+Date:   Sat Sep 18 08:30:50 2021 +0000
+
+    x86: MOV constant optimisation
+
+M	compiler/x86/aoptx86.pas
+M	compiler/x86/cpubase.pas
+
+******************************************************************************
 commit 33e25a3dfed57b58ba8576e846e63779e8d6c9a0
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Sat Sep 18 03:08:48 2021 +0300
