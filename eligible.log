@@ -1,4 +1,50 @@
 ******************************************************************************
+commit 33e25a3dfed57b58ba8576e846e63779e8d6c9a0
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sat Sep 18 03:08:48 2021 +0300
+
+    + added except_native.inc include file (empty for now, but will provide RTL
+      support for the native wasm exceptions in the future)
+
+A	rtl/wasm32/except_native.inc
+M	rtl/wasm32/makefile.cpu
+M	rtl/wasm32/wasm32.inc
+
+******************************************************************************
+commit f76e91fb8bcbbc82044078d81fe8c965a2f42f79
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sat Sep 18 02:52:24 2021 +0300
+
+    * cloned twasmtryexceptnode.pass_generate_code_no_exceptions into twasmtryexceptnode.pass_generate_code_native_exceptions
+
+M	compiler/wasm32/nwasmflw.pas
+
+******************************************************************************
+commit 334ea46b44eae63a9fdff984a584c4423770477d
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sat Sep 18 02:48:51 2021 +0300
+
+    * cloned twasmraisenode.pass_1_no_exceptions into twasmraisenode.pass_1_native_exceptions
+
+M	compiler/wasm32/nwasmflw.pas
+
+******************************************************************************
+commit c2754eac3f4e2e6351f8354ce571160549fb8b86
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sat Sep 18 02:39:16 2021 +0300
+
+    + introduced the wasm32_throw_fpcexception inline function, that emits a
+      'throw' instruction. This way we'll be able to emit this instruction from
+      RTL code (i.e. from fpc_raiseexception, when that is implemented for
+      WebAssembly)
+
+M	compiler/wasm32/ccpuinnr.inc
+M	compiler/wasm32/itcpugas.pas
+M	compiler/wasm32/nwasminl.pas
+M	rtl/wasm32/cpuh.inc
+M	rtl/wasm32/cpuinnr.inc
+
+******************************************************************************
 commit ac2f299d0407cf3f03d227549b0bd6d42cdc2f91
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Sat Sep 18 01:46:45 2021 +0300
