@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 5bcc530707062fc715a4dab703848388d67efd7c
+Author: florian <florian@freepascal.org>
+Date:   Sat Sep 18 22:11:03 2021 +0200
+
+      * handle -<mm reg.> more cleverly if SSE is used
+
+M	compiler/x86/nx86mat.pas
+
+******************************************************************************
 commit 5a2d884fe3f3f556bec5ae3a74917d31c5ce896c
 Author: florian <florian@freepascal.org>
 Date:   Sat Sep 18 19:24:37 2021 +0200
