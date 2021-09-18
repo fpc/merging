@@ -1,4 +1,26 @@
 ******************************************************************************
+commit 5a2d884fe3f3f556bec5ae3a74917d31c5ce896c
+Author: florian <florian@freepascal.org>
+Date:   Sat Sep 18 19:24:37 2021 +0200
+
+      * is_calljmp really means calls and jmp
+      * is_calljmpuncondret includes ret
+
+M	compiler/x86/aoptx86.pas
+M	compiler/x86/cpubase.pas
+
+******************************************************************************
+commit f78818e38727ccefbd1c3b1415d186ca67f34fd4
+Author: florian <florian@freepascal.org>
+Date:   Sat Sep 18 19:24:05 2021 +0200
+
+      * some warnings fixed
+
+M	compiler/pdecl.pas
+M	compiler/pexpr.pas
+M	compiler/symsym.pas
+
+******************************************************************************
 commit d3ec8f0d293df1b3fe2bfc3f2bfd869c8cce7da2
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Sat Sep 18 18:10:57 2021 +0300
