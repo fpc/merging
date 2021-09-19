@@ -1,4 +1,33 @@
 ******************************************************************************
+commit a46261bc15ad93c953e8d116a2a7bb311a4fac0f
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Sun Sep 19 17:03:20 2021 +0200
+
+    pastojs: fixed tests
+
+M	packages/pastojs/tests/tcprecompile.pas
+
+******************************************************************************
+commit 6c1c4a66e820f3f807edff51be7abbc357b661e8
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Sun Sep 19 16:56:36 2021 +0200
+
+    pastojs: fixed invalidate directory cache
+
+M	packages/pastojs/src/pas2jsfilecache.pp
+M	packages/pastojs/src/pas2jspcucompiler.pp
+M	packages/pastojs/tests/tcunitsearch.pas
+
+******************************************************************************
+commit 0b5c8030e40ec3176d667a3bce0db00222b3a809
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Sun Sep 19 16:55:12 2021 +0200
+
+    pas2js: comment
+
+M	utils/pas2js/httpcompiler.pp
+
+******************************************************************************
 commit cc314e61a20bbe4abf28682bca83c8df070320ca
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Sun Sep 19 16:16:42 2021 +0300
