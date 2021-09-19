@@ -1,4 +1,49 @@
 ******************************************************************************
+commit b7c638a7170bf24eebe666cb6b08bdc902ee7f9b
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Mon Sep 20 02:19:18 2021 +0300
+
+    + implemented binary encoding of the global.get and global.set instructions
+
+M	compiler/wasm32/aasmcpu.pas
+
+******************************************************************************
+commit 4a886e2019c0ebe050d48073eb025483ce0ecdf5
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Mon Sep 20 02:09:42 2021 +0300
+
+    * simplified operand access via the 'with' operator
+
+M	compiler/wasm32/aasmcpu.pas
+
+******************************************************************************
+commit 4dd44427c05ad14e10b6fa2b5c1d9448fdf47613
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Mon Sep 20 02:03:47 2021 +0300
+
+    + implemented instruction encoding for local.get, local.set and local.tee
+
+M	compiler/wasm32/aasmcpu.pas
+
+******************************************************************************
+commit 2954588e4d73e1e7932edbe664f4fdd2fc7c855f
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Mon Sep 20 01:46:07 2021 +0300
+
+    + implemented binary output for the i32.const and i64.const with top_const parameter
+
+M	compiler/wasm32/aasmcpu.pas
+
+******************************************************************************
+commit 5b3efc4b385922d87b0b540c2e9cdb3c9030a62f
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Mon Sep 20 01:24:39 2021 +0300
+
+    + implemented encoding of the most simple wasm instructions
+
+M	compiler/wasm32/aasmcpu.pas
+
+******************************************************************************
 commit 455f603c8c6614f10993047e3c047fb8df3d3f2e
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Mon Sep 20 00:14:02 2021 +0300
