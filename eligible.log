@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 2563cb6daa45b7b4ff2034f3c383a5c080c5f756
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sun Sep 19 22:46:54 2021 +0300
+
+    + start writing the wasm sections. The DataCount section is the first section to be implemented.
+
+M	compiler/ogwasm.pas
+
+******************************************************************************
 commit e45d8578e8d8c5ee425f5efc31439f54ffd02ceb
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Sun Sep 19 21:04:55 2021 +0300
