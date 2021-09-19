@@ -1,4 +1,40 @@
 ******************************************************************************
+commit e45d8578e8d8c5ee425f5efc31439f54ffd02ceb
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sun Sep 19 21:04:55 2021 +0300
+
+    + count the number of segments and assign segment indices to the wasm sections
+
+M	compiler/ogwasm.pas
+
+******************************************************************************
+commit eea8f3277211a2df7cc299dacd03cf600dcd48b5
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sun Sep 19 20:56:06 2021 +0300
+
+    + introduced TWasmObjSection.IsCode and .IsData
+
+M	compiler/ogwasm.pas
+
+******************************************************************************
+commit 698b5de389b0342acb28bc6f753b79aa1b922933
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sun Sep 19 20:51:33 2021 +0300
+
+    + added TWasmObjSection class
+
+M	compiler/ogwasm.pas
+
+******************************************************************************
+commit 429454c8f48b197db4f8d25fb382cbc074f23e38
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sun Sep 19 20:46:45 2021 +0300
+
+    + write some debug info to the console in the wasm obj writer
+
+M	compiler/ogwasm.pas
+
+******************************************************************************
 commit 967b721e4ffa310891361e6947a40181e7288d2d
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Sun Sep 19 20:09:25 2021 +0300
