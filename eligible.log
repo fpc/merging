@@ -1,4 +1,32 @@
 ******************************************************************************
+commit 59ea39ce75fd1f8f5d3f9cb5afa264c3198d8a96
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sun Sep 19 18:49:25 2021 +0300
+
+    + started the wasmbase unit (similar to elfbase and omfbase)
+
+M	compiler/ogwasm.pas
+A	compiler/wasmbase.pas
+
+******************************************************************************
+commit fc41306c4585c17e34d17a5f3618b59806152fdc
+Author: florian <florian@freepascal.org>
+Date:   Sun Sep 19 17:40:11 2021 +0200
+
+      * fix alignment issues with -<single/double> when using SSE
+
+M	compiler/x86/nx86mat.pas
+
+******************************************************************************
+commit a13694988df7925be96e917c3952e82036d2653e
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Sun Sep 19 17:27:34 2021 +0200
+
+    pastojs: fixed assign external const to int
+
+M	packages/pastojs/src/fppas2js.pp
+
+******************************************************************************
 commit a46261bc15ad93c953e8d116a2a7bb311a4fac0f
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Sun Sep 19 17:03:20 2021 +0200
