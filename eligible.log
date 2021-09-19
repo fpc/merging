@@ -1,4 +1,40 @@
 ******************************************************************************
+commit 967b721e4ffa310891361e6947a40181e7288d2d
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sun Sep 19 20:09:25 2021 +0300
+
+    + enabled the WASM32_INTERNALASM define when compiling with the lazarus project file
+
+M	compiler/ppcwasm32.lpi
+
+******************************************************************************
+commit c200bf531176074e75a0d8efab36ad34886a3cd6
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sun Sep 19 19:41:27 2021 +0300
+
+    * fixed TWasmObjData.sectionname_gas
+
+M	compiler/ogwasm.pas
+
+******************************************************************************
+commit fd4d6b8fc3f139bbb41eaa96d82055b25868ea4b
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sun Sep 19 19:33:33 2021 +0300
+
+    + write the wasm binary module header and version
+
+M	compiler/ogwasm.pas
+
+******************************************************************************
+commit ffc5131087cc627c3ce957de0998d92518a3d958
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sun Sep 19 19:24:16 2021 +0300
+
+    + implemented TWasmObjData.sectionname
+
+M	compiler/ogwasm.pas
+
+******************************************************************************
 commit 59ea39ce75fd1f8f5d3f9cb5afa264c3198d8a96
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Sun Sep 19 18:49:25 2021 +0300
