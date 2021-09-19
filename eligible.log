@@ -1,4 +1,51 @@
 ******************************************************************************
+commit 455f603c8c6614f10993047e3c047fb8df3d3f2e
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Mon Sep 20 00:14:02 2021 +0300
+
+    + debug print the obj symbols to the console
+
+M	compiler/ogwasm.pas
+
+******************************************************************************
+commit 8cb92fd49a8f89d830850e3f775550342ccb1a8e
+Author: florian <florian@freepascal.org>
+Date:   Sun Sep 19 23:07:59 2021 +0200
+
+      * simplify real expressions involving unary minus
+      + test
+
+M	compiler/nadd.pas
+A	tests/tbs/tb0685.pp
+
+******************************************************************************
+commit 12796d176d278f11843fde6abbd0935c21eba2da
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Mon Sep 20 00:05:28 2021 +0300
+
+    + added the indirect function table to the imports section
+
+M	compiler/ogwasm.pas
+
+******************************************************************************
+commit 905f0b1f7819d50eaa2a0cc0e4c9da7e491d6847
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sun Sep 19 23:56:32 2021 +0300
+
+    + add the __stack_pointer global import
+
+M	compiler/ogwasm.pas
+
+******************************************************************************
+commit e8c3f5d6b0a19348358d039c2f975c920b39b26e
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sun Sep 19 23:43:45 2021 +0300
+
+    + create the data section and the first entry of the import section
+
+M	compiler/ogwasm.pas
+
+******************************************************************************
 commit 2563cb6daa45b7b4ff2034f3c383a5c080c5f756
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Sun Sep 19 22:46:54 2021 +0300
