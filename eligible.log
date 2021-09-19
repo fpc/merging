@@ -1,4 +1,17 @@
 ******************************************************************************
+commit cc314e61a20bbe4abf28682bca83c8df070320ca
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sun Sep 19 16:16:42 2021 +0300
+
+    + started working on the WebAssembly internal assembler
+
+A	compiler/ogwasm.pas
+M	compiler/systems.inc
+M	compiler/systems/i_embed.pas
+M	compiler/systems/i_wasi.pas
+M	compiler/wasm32/cputarg.pas
+
+******************************************************************************
 commit f10fae66df3eac37f6e2b9808c48e0075921374f
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Sun Sep 19 14:11:51 2021 +0200
