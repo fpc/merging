@@ -1,4 +1,31 @@
 ******************************************************************************
+commit f10fae66df3eac37f6e2b9808c48e0075921374f
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Sun Sep 19 14:11:51 2021 +0200
+
+    pastojs: error on linklib options
+
+M	packages/pastojs/src/pas2jscompiler.pp
+
+******************************************************************************
+commit d14c13fc7213b129d33f5ef83213c245ce85dd3f
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Sun Sep 19 14:04:29 2021 +0200
+
+    pastojs: fixed compile tests
+
+M	packages/pastojs/tests/tcprecompile.pas
+
+******************************************************************************
+commit 8a0fe7bc855ef5b4d17ee674c94bca42fa7719d9
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Sun Sep 19 14:04:07 2021 +0200
+
+    fcl-js: less hints
+
+M	packages/fcl-js/src/jswriter.pp
+
+******************************************************************************
 commit 5bcc530707062fc715a4dab703848388d67efd7c
 Author: florian <florian@freepascal.org>
 Date:   Sat Sep 18 22:11:03 2021 +0200
