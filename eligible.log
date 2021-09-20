@@ -1,4 +1,31 @@
 ******************************************************************************
+commit ab0d7697c3038537c983dbedd52046fe27022d70
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Mon Sep 20 04:47:51 2021 +0300
+
+    + added the TWasmLinkingSubsectionType enum
+
+M	compiler/wasmbase.pas
+
+******************************************************************************
+commit b97570c8b3b0e1c0f3b5d6c337b026686d5d8a68
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Mon Sep 20 04:39:10 2021 +0300
+
+    + added the TWasmRelocationType enum
+
+M	compiler/wasmbase.pas
+
+******************************************************************************
+commit bb0155141ad1afa1869f503b585f9d29fc5bca6f
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Mon Sep 20 04:25:40 2021 +0300
+
+    * fixed warning
+
+M	compiler/ogwasm.pas
+
+******************************************************************************
 commit 92592be8e43db53a29b9f12d49efa317fefe844e
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Mon Sep 20 04:16:25 2021 +0300
