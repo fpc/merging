@@ -1,4 +1,24 @@
 ******************************************************************************
+commit 92592be8e43db53a29b9f12d49efa317fefe844e
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Mon Sep 20 04:16:25 2021 +0300
+
+    + print more symbol properties to the console
+
+M	compiler/ogwasm.pas
+
+******************************************************************************
+commit 628fcb9b1ccf610691b9ae8cfe809707e15e3822
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Mon Sep 20 03:43:23 2021 +0300
+
+    + create the Type wasm section
+
+M	compiler/assemble.pas
+M	compiler/ogwasm.pas
+M	compiler/wasm32/cpubase.pas
+
+******************************************************************************
 commit 3c3120845af13d067111b13bcdae08ce00247333
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Mon Sep 20 03:07:00 2021 +0300
