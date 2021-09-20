@@ -1,4 +1,40 @@
 ******************************************************************************
+commit 3c3120845af13d067111b13bcdae08ce00247333
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Mon Sep 20 03:07:00 2021 +0300
+
+    * fixed crash when writing a binary wasm module with a .bss section
+
+M	compiler/ogwasm.pas
+
+******************************************************************************
+commit fced051f5fccf67c516c43e7e09154cf2a11b1fd
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Mon Sep 20 03:00:37 2021 +0300
+
+    + implemented binary encoding of a_i32_load and a_i32_store without symbol
+
+M	compiler/wasm32/aasmcpu.pas
+
+******************************************************************************
+commit b975317c51fb420d7bedc1200d3e18446f6a4f5e
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Mon Sep 20 02:37:40 2021 +0300
+
+    + implemented the encoding of the block instruction without operands
+
+M	compiler/wasm32/aasmcpu.pas
+
+******************************************************************************
+commit 079e5ae15119401f66a4533034f14b37f083407a
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Mon Sep 20 02:24:28 2021 +0300
+
+    + encode the end_function dummy instruction
+
+M	compiler/wasm32/aasmcpu.pas
+
+******************************************************************************
 commit b7c638a7170bf24eebe666cb6b08bdc902ee7f9b
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Mon Sep 20 02:19:18 2021 +0300
