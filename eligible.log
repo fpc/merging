@@ -1,4 +1,24 @@
 ******************************************************************************
+commit a58368d20ddcf3cab0259ee41d363e5449c4317e
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Mon Sep 20 19:33:48 2021 +0300
+
+    + avoid duplicate functypes in the types section of the wasm module we produce
+
+M	compiler/ogwasm.pas
+M	compiler/wasm32/cpubase.pas
+
+******************************************************************************
+commit 3e2a9b6cebcc0f3f68a633bcbede5bd2f47339cb
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Mon Sep 20 05:03:38 2021 +0300
+
+    + handle the call instruction in the wasm binary writer
+
+M	compiler/ogbase.pas
+M	compiler/wasm32/aasmcpu.pas
+
+******************************************************************************
 commit ab0d7697c3038537c983dbedd52046fe27022d70
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Mon Sep 20 04:47:51 2021 +0300
