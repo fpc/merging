@@ -1,4 +1,15 @@
 ******************************************************************************
+commit 69d5d648a9630a85a0ba9dbe0f79345152294112
+Author: florian <florian@freepascal.org>
+Date:   Tue Sep 21 23:09:33 2021 +0200
+
+      + more unary minus optimizations
+      * test extended
+
+M	compiler/nmat.pas
+M	tests/tbs/tb0685.pp
+
+******************************************************************************
 commit 781da5e60d334d6f59cfe97a511660b353bd5ddc
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Tue Sep 21 12:21:42 2021 +0200
