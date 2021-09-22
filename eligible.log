@@ -1,4 +1,13 @@
 ******************************************************************************
+commit a0c0a8fa8c1b8d9ab6113eaa6ab6705b2b071df1
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Wed Sep 22 13:10:05 2021 +0200
+
+    pas2js: fixed rtl.tTypeMemberProperty
+
+M	utils/pas2js/dist/rtl.js
+
+******************************************************************************
 commit 69d5d648a9630a85a0ba9dbe0f79345152294112
 Author: florian <florian@freepascal.org>
 Date:   Tue Sep 21 23:09:33 2021 +0200
