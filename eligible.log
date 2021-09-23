@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 78af12b58483e701da0097898e26335382e4dcb4
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Thu Sep 23 16:19:15 2021 +0300
+
+    + added function name to functype hashlist in the wasm objdata class
+
+M	compiler/ogwasm.pas
+
+******************************************************************************
 commit 01d6358f93faadd4ec8f61c1146d6a5178792580
 Author: florian <florian@freepascal.org>
 Date:   Wed Sep 22 22:08:56 2021 +0200
