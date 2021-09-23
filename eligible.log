@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 4ca39cf07d95ca95693e5df13f99829da632037a
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Thu Sep 23 17:11:24 2021 +0300
+
+    + write the import functions in the wasm binary writer
+
+M	compiler/ogwasm.pas
+M	compiler/wasm32/cpubase.pas
+
+******************************************************************************
 commit 78af12b58483e701da0097898e26335382e4dcb4
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Thu Sep 23 16:19:15 2021 +0300
