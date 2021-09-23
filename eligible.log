@@ -1,4 +1,24 @@
 ******************************************************************************
+commit 8ae1b6eace7813158e0846dc6edf1c79216aeea1
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Thu Sep 23 17:59:21 2021 +0200
+
+    pastojs: clone multi dim static array
+
+M	packages/pastojs/src/fppas2js.pp
+M	packages/pastojs/tests/tcgenerics.pas
+M	packages/pastojs/tests/tcmodules.pas
+
+******************************************************************************
+commit cc8f8dbde854bd3e6ae8663949660924817bb44b
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Thu Sep 23 17:58:59 2021 +0200
+
+    fcl-js: fixed typo
+
+M	packages/fcl-js/src/jstree.pp
+
+******************************************************************************
 commit 4ca39cf07d95ca95693e5df13f99829da632037a
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Thu Sep 23 17:11:24 2021 +0300
