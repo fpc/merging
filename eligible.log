@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 72a49b68cef4c213f089c79fc1d47b2874ba146a
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sat Sep 25 00:39:03 2021 +0300
+
+    * fixed the writing of the external functions in the import table
+
+M	compiler/ogwasm.pas
+
+******************************************************************************
 commit 54481d72180e06b180f5bde6881b10955c5d51c1
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Sat Sep 25 00:16:53 2021 +0300
