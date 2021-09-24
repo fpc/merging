@@ -1,4 +1,26 @@
 ******************************************************************************
+commit a6e75d52f7ba8758f24b84ac44256dba3fb80919
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Fri Sep 24 22:14:32 2021 +0300
+
+    + introduced tai_import_module and tai_import_name that represent the
+      .import_module and .import_name assembler directives
+
+M	compiler/aasmtai.pas
+M	compiler/aggas.pas
+M	compiler/wasm32/aasmcpu.pas
+M	compiler/wasm32/agllvmmc.pas
+
+******************************************************************************
+commit 459bb0fa1801f1809b74f92fb1d11803c41bc372
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Fri Sep 24 21:52:57 2021 +0300
+
+    * override twasmnodeutils.InsertObjectInfo
+
+M	compiler/wasm32/nwasmutil.pas
+
+******************************************************************************
 commit a3666aa8c96c198b294bd794cb1fbc6eed2c28dd
 Author: florian <florian@freepascal.org>
 Date:   Fri Sep 24 20:10:38 2021 +0200
