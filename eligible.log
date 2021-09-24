@@ -1,4 +1,15 @@
 ******************************************************************************
+commit a3666aa8c96c198b294bd794cb1fbc6eed2c28dd
+Author: florian <florian@freepascal.org>
+Date:   Fri Sep 24 20:10:38 2021 +0200
+
+    o manually applied merge request 46 by J. Gareth "Kit" Moreton:
+        + x86_64: XMM-based block move optimisation
+
+M	compiler/x86/aoptx86.pas
+M	compiler/x86_64/cgcpu.pas
+
+******************************************************************************
 commit 860e4487c313f7c88591422034293702318d0d1c
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Fri Sep 24 16:44:33 2021 +0300
