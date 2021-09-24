@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 860e4487c313f7c88591422034293702318d0d1c
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Fri Sep 24 16:44:33 2021 +0300
+
+    + added WebAssembly node utils
+
+M	compiler/wasm32/cpunode.pas
+A	compiler/wasm32/nwasmutil.pas
+
+******************************************************************************
 commit 5abfe21f39cf60800c77ee5f22198d94e8341054
 Author: florian <florian@freepascal.org>
 Date:   Thu Sep 23 22:43:51 2021 +0200
