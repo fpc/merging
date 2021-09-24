@@ -1,4 +1,34 @@
 ******************************************************************************
+commit 54481d72180e06b180f5bde6881b10955c5d51c1
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sat Sep 25 00:16:53 2021 +0300
+
+    * moved the imports/funcdef writing from the llvm-mc assembler writer to
+      twasmnodeutils.InsertObjectInfo. This way, the info it produces will be
+      shared with the internal wasm object writer as well.
+
+M	compiler/wasm32/agllvmmc.pas
+M	compiler/wasm32/nwasmutil.pas
+
+******************************************************************************
+commit d19919aa13198236de0475494c841f86429e3a31
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sat Sep 25 00:00:51 2021 +0300
+
+    * TLLVMMachineCodePlaygroundAssembler.WriteImports now uses just a single TAsmList
+
+M	compiler/wasm32/agllvmmc.pas
+
+******************************************************************************
+commit f56aa9abe79fff9dd5f36e5f092aa2629dd1c6fc
+Author: florian <florian@freepascal.org>
+Date:   Fri Sep 24 22:27:22 2021 +0200
+
+      * set expectloc properly for x87 on x86
+
+M	compiler/ncal.pas
+
+******************************************************************************
 commit a6e75d52f7ba8758f24b84ac44256dba3fb80919
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Fri Sep 24 22:14:32 2021 +0300
