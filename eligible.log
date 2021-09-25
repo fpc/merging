@@ -1,4 +1,42 @@
 ******************************************************************************
+commit a7ad65f884266b35b8eab9ee1376512b89e01104
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Sat Sep 25 17:15:35 2021 +0200
+
+     Fix use of svnversion if ../.git does not exist
+
+M	tests/Makefile
+M	tests/Makefile.fpc
+
+******************************************************************************
+commit cbf444bbbe699581354288d36b27c43ffcb47c17
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sat Sep 25 18:08:01 2021 +0300
+
+    + write the actual function code in the code section
+
+M	compiler/ogwasm.pas
+
+******************************************************************************
+commit dbb6f95ea74a7d510502818c38e9dabbe8784448
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sat Sep 25 17:49:19 2021 +0300
+
+    * replaced TWasmObjData(Data) with FData in TWasmObjOutput.writeData
+
+M	compiler/ogwasm.pas
+
+******************************************************************************
+commit 6d1df899e61fc69117a2e061b17cfe241d2637f1
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sat Sep 25 17:40:58 2021 +0300
+
+    + write the code section (still, without the actual function code, but with
+      the correct locals)
+
+M	compiler/ogwasm.pas
+
+******************************************************************************
 commit fcb646bc3bae2cd53070cd608bf281b1da534271
 Author: Jonas Maebe <jonas@freepascal.org>
 Date:   Sat Sep 25 16:14:30 2021 +0200
