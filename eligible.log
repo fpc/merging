@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 67cbb7032e1025996309689fc2fb3687c48b64af
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sun Sep 26 00:45:52 2021 +0300
+
+    + fully implemented the RELOC_FUNCTION_INDEX_LEB relocations
+
+M	compiler/ogwasm.pas
+
+******************************************************************************
 commit 4e4910cb8409adc60bcb4e02d907d75203785a15
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Sat Sep 25 23:47:30 2021 +0300
