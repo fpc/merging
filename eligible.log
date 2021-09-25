@@ -1,4 +1,42 @@
 ******************************************************************************
+commit 8c57d20abc119d71c86bf24088623dbced3565b7
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sat Sep 25 19:19:12 2021 +0300
+
+    + write the linking section (empty for now)
+
+M	compiler/ogwasm.pas
+M	compiler/wasmbase.pas
+
+******************************************************************************
+commit 8295173f8665ba60a3b6df56581b280b448cf6f4
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sat Sep 25 19:05:36 2021 +0300
+
+    + added enums for the wasm symbol type and constnats for the bitflags
+
+M	compiler/wasmbase.pas
+
+******************************************************************************
+commit 12496a638b4c5b1ec45b5435c8db03ea34e851f1
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sat Sep 25 18:37:10 2021 +0300
+
+    + add relocation objects for the RELOC_FUNCTION_INDEX_LEB relocation to
+      the relocation list. They are not written to the object file, yet.
+
+M	compiler/ogwasm.pas
+
+******************************************************************************
+commit a5d1ce26a00d1196bea7292c828caa5fb8a93f27
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sat Sep 25 18:24:01 2021 +0300
+
+    + partial implementation of emitting RELOC_FUNCTION_INDEX_LEB relocations
+
+M	compiler/ogwasm.pas
+
+******************************************************************************
 commit a7ad65f884266b35b8eab9ee1376512b89e01104
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Sat Sep 25 17:15:35 2021 +0200
