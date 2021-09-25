@@ -1,4 +1,22 @@
 ******************************************************************************
+commit 4e4910cb8409adc60bcb4e02d907d75203785a15
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sat Sep 25 23:47:30 2021 +0300
+
+    + write the relocation tables for the code and data sections (empty for now)
+
+M	compiler/ogwasm.pas
+
+******************************************************************************
+commit 217b3ea3cc200030e22b40831a479d5073bb299b
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sat Sep 25 23:30:43 2021 +0300
+
+    + write the segment info (names and alignment) to the linking custom section
+
+M	compiler/ogwasm.pas
+
+******************************************************************************
 commit 5066a7eb2464ad8d4a9d10bcbb8c848c66c63e78
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Sat Sep 25 23:20:15 2021 +0300
