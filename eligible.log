@@ -1,4 +1,29 @@
 ******************************************************************************
+commit fcb646bc3bae2cd53070cd608bf281b1da534271
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sat Sep 25 16:14:30 2021 +0200
+
+    obcpas: fix categories implementing protocols
+    
+    Allocate the ImplementedInterfaces array for them and save to/load from ppu
+    
+    Solves #39375
+
+M	compiler/ppu.pas
+M	compiler/symdef.pas
+A	tests/webtbs/tw39375.pp
+
+******************************************************************************
+commit e924dd0d16c13c27bfee35e98376e05bcb887415
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sat Sep 25 16:53:00 2021 +0300
+
+    + generate and write the functions table in the wasm binary module,
+      produced by the internal obj writer
+
+M	compiler/ogwasm.pas
+
+******************************************************************************
 commit 7e53fecd092c55b7675af5e6bf5dfafbe9e74da0
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Sat Sep 25 16:00:09 2021 +0300
