@@ -1,4 +1,40 @@
 ******************************************************************************
+commit 5066a7eb2464ad8d4a9d10bcbb8c848c66c63e78
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sat Sep 25 23:20:15 2021 +0300
+
+    + also write the data symbols to the symbol table
+
+M	compiler/ogwasm.pas
+
+******************************************************************************
+commit ad8ed4b48d60ec8becdf5609d9b1a63cfbd1efdd
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sat Sep 25 23:02:48 2021 +0300
+
+    + write the non-external functions to the symbol table as well
+
+M	compiler/ogwasm.pas
+
+******************************************************************************
+commit 2805e44ccb58b9c8a31864c6ccedccbcd024487c
+Author: florian <florian@freepascal.org>
+Date:   Sat Sep 25 21:59:47 2021 +0200
+
+      * Aarch64: taicpu.spilling_get_operation_type with new instructions extended
+
+M	compiler/aarch64/aasmcpu.pas
+
+******************************************************************************
+commit 2d2906205bbbdcc4769ea5587625deb9fa30c83f
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sat Sep 25 22:45:30 2021 +0300
+
+    + write the externals to the symbol table
+
+M	compiler/ogwasm.pas
+
+******************************************************************************
 commit 3e984294181d96a590a814476616c1d3e365f458
 Author: Jonas Maebe <jonas@freepascal.org>
 Date:   Sat Sep 25 20:59:22 2021 +0200
