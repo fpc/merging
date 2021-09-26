@@ -1,4 +1,22 @@
 ******************************************************************************
+commit 10db5ea5dc0093161900a4fc88d2905735c3d95f
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sun Sep 26 23:58:21 2021 +0300
+
+    + implemented the 'delegate' and the 'rethrow' instructions in the wasm internal assembler
+
+M	compiler/wasm32/aasmcpu.pas
+
+******************************************************************************
+commit 6fb4b9b7dd751e41d7ef808c31a33e7810169c24
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sun Sep 26 23:50:02 2021 +0300
+
+    + support the 'try' instruction in the wasm internal assembler
+
+M	compiler/wasm32/aasmcpu.pas
+
+******************************************************************************
 commit 0bb781c92876ed29bb962e9129a4f9f1c14df412
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Sun Sep 26 23:14:52 2021 +0300
