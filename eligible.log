@@ -1,4 +1,16 @@
 ******************************************************************************
+commit a1c8e92904f3504fe6c3a7140134b910aadc04d9
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Mon Sep 27 00:33:57 2021 +0300
+
+    * emit a tai_tagtype for __FPC_exception instead of hardcoding the asm output
+      directly when wasm native exceptions are enabled
+
+M	compiler/aggas.pas
+M	compiler/wasm32/agllvmmc.pas
+M	compiler/wasm32/nwasmutil.pas
+
+******************************************************************************
 commit 10db5ea5dc0093161900a4fc88d2905735c3d95f
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Sun Sep 26 23:58:21 2021 +0300
