@@ -1,4 +1,23 @@
 ******************************************************************************
+commit 2102fbdc97e9cdcdb56bb5e549018454197351c8
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sun Sep 26 20:13:35 2021 +0300
+
+    - removed debug writelns from the wasm internal object writer
+
+M	compiler/ogwasm.pas
+
+******************************************************************************
+commit 99c84da071bf59d35e0e0ec85f83dc0a2bde7bef
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sun Sep 26 20:02:48 2021 +0300
+
+    + generate the export section in the wasm internal obj writer
+
+M	compiler/assemble.pas
+M	compiler/ogwasm.pas
+
+******************************************************************************
 commit 1c8579da2e401ee0dfb54bcbd170130c0a653659
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Sun Sep 26 18:40:49 2021 +0300
