@@ -1,4 +1,61 @@
 ******************************************************************************
+commit 9e0c0281425c455978b3a16ad1a8cebe676a00b4
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sun Sep 26 08:15:04 2021 +0300
+
+    + support load/store with op_const
+
+M	compiler/wasm32/aasmcpu.pas
+
+******************************************************************************
+commit 7e9607a62c76ab980f9651227889b7118566cbf3
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sun Sep 26 08:07:21 2021 +0300
+
+    * fixed warning
+
+M	compiler/wasm32/aasmcpu.pas
+
+******************************************************************************
+commit 2e491d1ffac963e2a23aab466f53672f2bc8c332
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sun Sep 26 07:58:59 2021 +0300
+
+    + implemented the br and br_if instructions in the wasm internal asm
+
+M	compiler/wasm32/aasmcpu.pas
+
+******************************************************************************
+commit ca70cb05a73c7a8a1dd4d1e5e247cf2efdae25c6
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sun Sep 26 07:54:20 2021 +0300
+
+    * fixed warning
+
+M	compiler/wasm32/cpubase.pas
+
+******************************************************************************
+commit 07b71ac6ce199a2076d7b49f99d1d6f6a14d1d08
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sun Sep 26 07:48:31 2021 +0300
+
+    * generate an internal error instead of warning for unsupported opcodes
+      in the internal asm writer for wasm
+
+M	compiler/wasm32/aasmcpu.pas
+
+******************************************************************************
+commit d7b141d70e8c9bfbde9453ce51b16143ffce0d5f
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sun Sep 26 07:45:14 2021 +0300
+
+    + implemented the if, loop and else instructions
+
+M	compiler/ogwasm.pas
+M	compiler/wasm32/aasmcpu.pas
+M	compiler/wasm32/cpubase.pas
+
+******************************************************************************
 commit 6133affad68b56297afebb8a0425a54e026526d9
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Sun Sep 26 07:19:36 2021 +0300
