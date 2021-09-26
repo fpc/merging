@@ -1,4 +1,55 @@
 ******************************************************************************
+commit 6133affad68b56297afebb8a0425a54e026526d9
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sun Sep 26 07:19:36 2021 +0300
+
+    + implemented the f32.const and f64.const instructions in the wasm
+      internal asm
+
+M	compiler/wasm32/aasmcpu.pas
+
+******************************************************************************
+commit 0486caeb91651d48f08738c1464301f0c6e90ded
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sun Sep 26 06:58:46 2021 +0300
+
+    * generate an internal error, instead of warning for i32.const and
+      i64.const instructions with an unknown parameter
+
+M	compiler/wasm32/aasmcpu.pas
+
+******************************************************************************
+commit 81b8574bfd34db60b9ade7cfef8e1f3a83e09512
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sun Sep 26 06:49:51 2021 +0300
+
+    + implemented all the load/store instructions in the wasm internal asm
+      writer (previously, only i32.load and i32.store were implemented)
+
+M	compiler/wasm32/aasmcpu.pas
+M	compiler/wasm32/cpubase.pas
+
+******************************************************************************
+commit ea401ccc826b13e56965ea4dbc0b79b8a01bb7f2
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sun Sep 26 06:27:02 2021 +0300
+
+    + support writing R_WASM_MEMORY_ADDR_I32 relocations
+
+M	compiler/ogwasm.pas
+
+******************************************************************************
+commit 7f5250bf464351a1a2839321df92119fc1812c78
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sun Sep 26 06:22:41 2021 +0300
+
+    + implemented support for R_WASM_TABLE_INDEX_SLEB relocations
+
+M	compiler/ogbase.pas
+M	compiler/ogwasm.pas
+M	compiler/wasm32/aasmcpu.pas
+
+******************************************************************************
 commit 9fa2e2934bc6abac17a1fa0fdf55fca1dd9896a3
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Sun Sep 26 06:03:18 2021 +0300
