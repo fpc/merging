@@ -1,4 +1,22 @@
 ******************************************************************************
+commit 238d09d875d38d19c2ff77a12a8b463ed4a524a8
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sun Sep 26 05:15:50 2021 +0300
+
+    + support writing RELOC_FUNCTION_INDEX_LEB relocations to non-external functions
+
+M	compiler/ogwasm.pas
+
+******************************************************************************
+commit bf5048cb5e9655558802a7f369fee009d33b57e7
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sun Sep 26 04:46:46 2021 +0300
+
+    + support generating R_WASM_TABLE_INDEX_I32 relocations
+
+M	compiler/ogwasm.pas
+
+******************************************************************************
 commit acdb65c2a33517d623d8468388f323969a49d946
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Sun Sep 26 04:19:16 2021 +0300
