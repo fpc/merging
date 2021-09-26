@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 92fb1d2564de0dd45567e943694c03e2a4b01ae5
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sun Sep 26 08:25:22 2021 +0300
+
+    * fixed warning
+
+M	compiler/wasm32/aasmcpu.pas
+
+******************************************************************************
 commit 9e0c0281425c455978b3a16ad1a8cebe676a00b4
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Sun Sep 26 08:15:04 2021 +0300
