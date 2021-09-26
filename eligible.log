@@ -1,4 +1,24 @@
 ******************************************************************************
+commit bc76487b878e59133ce3c2cc19ebb13f9a9826ea
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sun Sep 26 20:46:47 2021 +0300
+
+    + enable the WebAssembly internal assembler and object writer
+
+M	compiler/ppcwasm32.lpi
+M	compiler/systems/i_embed.pas
+M	compiler/systems/i_wasi.pas
+
+******************************************************************************
+commit db843287a2d21b94049af809161a9dab8884331c
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sun Sep 26 20:37:34 2021 +0300
+
+    + generate funcdef for external procs, that don't have an import dll
+
+M	compiler/wasm32/nwasmutil.pas
+
+******************************************************************************
 commit 2102fbdc97e9cdcdb56bb5e549018454197351c8
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Sun Sep 26 20:13:35 2021 +0300
