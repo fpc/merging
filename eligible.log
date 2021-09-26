@@ -1,4 +1,32 @@
 ******************************************************************************
+commit abf831c430aff63659113e53150debbd0bc8724f
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sun Sep 26 11:11:43 2021 +0300
+
+    + fixed the addend in the relocations that point to data
+
+M	compiler/ogwasm.pas
+
+******************************************************************************
+commit 2d1ebe4cb3087935ef30467d6d71ca74cb8967da
+Author: florian <florian@freepascal.org>
+Date:   Sun Sep 26 09:50:30 2021 +0200
+
+      + re-added accidently removed internal error
+
+M	compiler/aarch64/aasmcpu.pas
+
+******************************************************************************
+commit c881d057937f8146701634e884a44f58e29d24c4
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sun Sep 26 10:29:17 2021 +0300
+
+    * fixed bug in the code, generated for the RELOC_FUNCTION_INDEX_LEB
+      relocation
+
+M	compiler/ogwasm.pas
+
+******************************************************************************
 commit 07461d0fc3a36fd6071aaa9bd13f2d651ae0a74d
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Sun Sep 26 10:17:19 2021 +0300
