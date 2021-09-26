@@ -1,4 +1,25 @@
 ******************************************************************************
+commit 9fa2e2934bc6abac17a1fa0fdf55fca1dd9896a3
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sun Sep 26 06:03:18 2021 +0300
+
+    + support the call_indirect instruction and the R_WASM_TYPE_INDEX_LEB
+      relocation that it requires in the internal wasm object writer
+
+M	compiler/ogbase.pas
+M	compiler/ogwasm.pas
+M	compiler/wasm32/aasmcpu.pas
+
+******************************************************************************
+commit bd6bbb6cf4fd0ba52c1447dff58a26dfd98579b9
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sun Sep 26 05:36:51 2021 +0300
+
+    + support writing imports from a different module in the wasm binary object writer
+
+M	compiler/ogwasm.pas
+
+******************************************************************************
 commit 238d09d875d38d19c2ff77a12a8b463ed4a524a8
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Sun Sep 26 05:15:50 2021 +0300
