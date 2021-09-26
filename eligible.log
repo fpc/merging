@@ -1,4 +1,33 @@
 ******************************************************************************
+commit 6e7e6326822490236e1c46895221212bd1840366
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sun Sep 26 03:16:01 2021 +0300
+
+    * fixed another warning
+
+M	compiler/ogwasm.pas
+
+******************************************************************************
+commit 4ebf857ffcf8997a3d5efca9c4f2ae2954d49b09
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sun Sep 26 03:05:00 2021 +0300
+
+    * fixed warning
+
+M	compiler/ogwasm.pas
+
+******************************************************************************
+commit b913133152b08d8c823dee93425285955d5d34bf
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sun Sep 26 02:23:31 2021 +0300
+
+    + implemented leb and sleb relocations to data symbols
+
+M	compiler/ogbase.pas
+M	compiler/ogwasm.pas
+M	compiler/wasm32/aasmcpu.pas
+
+******************************************************************************
 commit 67cbb7032e1025996309689fc2fb3687c48b64af
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Sun Sep 26 00:45:52 2021 +0300
