@@ -1,4 +1,27 @@
 ******************************************************************************
+commit acdb65c2a33517d623d8468388f323969a49d946
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sun Sep 26 04:19:16 2021 +0300
+
+    + support tai_symbolpair in the wasm internal obj writer, so that the
+      PASCALMAIN alias of main can be created
+
+M	compiler/ogwasm.pas
+
+******************************************************************************
+commit 83f2f7bf375bd50366d8ae859ae88fcdc8ad795d
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sun Sep 26 03:56:56 2021 +0300
+
+    + introduced TObjData.SymbolPairDefine, to allow custom handling of symbol
+      pairs in the internal object writer
+
+M	compiler/aasmbase.pas
+M	compiler/aasmtai.pas
+M	compiler/assemble.pas
+M	compiler/ogbase.pas
+
+******************************************************************************
 commit 6e7e6326822490236e1c46895221212bd1840366
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Sun Sep 26 03:16:01 2021 +0300
