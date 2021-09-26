@@ -1,4 +1,42 @@
 ******************************************************************************
+commit 0bb781c92876ed29bb962e9129a4f9f1c14df412
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sun Sep 26 23:14:52 2021 +0300
+
+    * omit writing the export section if there are no exported functions from
+      the module. This reduces object file size slightly for modules without
+      exports.
+
+M	compiler/ogwasm.pas
+
+******************************************************************************
+commit d37117c460f1cb65e6d750d9085f628a0dcec562
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sun Sep 26 23:10:55 2021 +0300
+
+    * use an incrementing counter variable to determine the numbers for the code
+      and data section, so they can be used in the relocation section, without
+      hardcoding them as constants. This will automatically adjust the numbers
+      when we add more sections, or when we make writing some of the sections
+      optional.
+
+M	compiler/ogwasm.pas
+
+******************************************************************************
+commit 77b898fe45cecf6a52176dcdb86ce0f63b9a8f57
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sun Sep 26 22:21:34 2021 +0300
+
+    * use objsym.size to determine the code size of the function (instead of
+      writing until the end of the section) in the wasm internal object writer.
+      This removes the extra padding of 'unreachable' instructions at the end of
+      each function (which are zeroes, added for alignment - they are harmless,
+      but are unnecessary and cause a slight increase of the size of the
+      resulting binaries), after the final 'return' instruction of the function.
+
+M	compiler/ogwasm.pas
+
+******************************************************************************
 commit bc76487b878e59133ce3c2cc19ebb13f9a9826ea
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Sun Sep 26 20:46:47 2021 +0300
