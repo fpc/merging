@@ -1,4 +1,43 @@
 ******************************************************************************
+commit 07461d0fc3a36fd6071aaa9bd13f2d651ae0a74d
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sun Sep 26 10:17:19 2021 +0300
+
+    * made the constructor of TObjSymbol virtual, so it can be overriden
+
+M	compiler/ogbase.pas
+M	compiler/ogwasm.pas
+
+******************************************************************************
+commit cb3ac37fb3f78b06a9507b30d8861c20b460e201
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sun Sep 26 09:50:35 2021 +0300
+
+    * fixed i32.const with large unsigned 32-bit const parameter (>2GB)
+
+M	compiler/wasm32/aasmcpu.pas
+
+******************************************************************************
+commit efd58317428d3407d7ac5b5986f9674698a4de70
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sun Sep 26 09:42:12 2021 +0300
+
+    * generate an internal error if an attempt is made to emit a
+      R_WASM_MEMORY_ADDR_LEB relocation, that points to code, instead of
+      data
+
+M	compiler/ogwasm.pas
+
+******************************************************************************
+commit 392ca81c20b781db7c33eba2b8609f71ce90ab15
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sun Sep 26 09:40:28 2021 +0300
+
+    + add threadvar symbols to the symbol table
+
+M	compiler/ogwasm.pas
+
+******************************************************************************
 commit 92fb1d2564de0dd45567e943694c03e2a4b01ae5
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Sun Sep 26 08:25:22 2021 +0300
