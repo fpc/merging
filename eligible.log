@@ -1,4 +1,14 @@
 ******************************************************************************
+commit c881d057937f8146701634e884a44f58e29d24c4
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sun Sep 26 10:29:17 2021 +0300
+
+    * fixed bug in the code, generated for the RELOC_FUNCTION_INDEX_LEB
+      relocation
+
+M	compiler/ogwasm.pas
+
+******************************************************************************
 commit 07461d0fc3a36fd6071aaa9bd13f2d651ae0a74d
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Sun Sep 26 10:17:19 2021 +0300
@@ -7,15 +17,6 @@ Date:   Sun Sep 26 10:17:19 2021 +0300
 
 M	compiler/ogbase.pas
 M	compiler/ogwasm.pas
-
-******************************************************************************
-commit cb3ac37fb3f78b06a9507b30d8861c20b460e201
-Author: Nikolay Nikolov <nickysn@gmail.com>
-Date:   Sun Sep 26 09:50:35 2021 +0300
-
-    * fixed i32.const with large unsigned 32-bit const parameter (>2GB)
-
-M	compiler/wasm32/aasmcpu.pas
 
 ******************************************************************************
 commit efd58317428d3407d7ac5b5986f9674698a4de70
@@ -36,15 +37,6 @@ Date:   Sun Sep 26 09:40:28 2021 +0300
     + add threadvar symbols to the symbol table
 
 M	compiler/ogwasm.pas
-
-******************************************************************************
-commit 92fb1d2564de0dd45567e943694c03e2a4b01ae5
-Author: Nikolay Nikolov <nickysn@gmail.com>
-Date:   Sun Sep 26 08:25:22 2021 +0300
-
-    * fixed warning
-
-M	compiler/wasm32/aasmcpu.pas
 
 ******************************************************************************
 commit 9e0c0281425c455978b3a16ad1a8cebe676a00b4

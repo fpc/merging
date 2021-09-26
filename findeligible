@@ -35,7 +35,8 @@ git log $GIT_START_HASH..$MAIN_HASH --pretty=format:"%H" > mainhashes
 # cat $SCRIPTDIR/eligiblerevs > eligiblerevs
 
 # find all hashes not in fixes but in main
-grep -Fxv -f mergedhashes mainhashes > eligiblehashes
+# exclude commits being blocked
+grep -Fxv -f mergedhashes -f $SCRIPTDIR/blockedhashes mainhashes > eligiblehashes
 
 # get eligible revs from svn times
 # as those do not change, we can use a persistent copy from $SCRIPTDIR/eligiblesvnhashes
@@ -44,13 +45,14 @@ grep -Fxv -f mergedhashes mainhashes > eligiblehashes
 
 # find all hashes not in fixes but in eligiblesvnhash, so filter out commits
 # commited to trunk in svn but cherry-picked in git
-grep -Fxv -f mergedhashes $SCRIPTDIR/eligiblesvnhashes > eligiblehashesfromsvn
+# exclude also commits being blocked
+grep -Fxv -f mergedhashes -f $SCRIPTDIR/blockedhashes $SCRIPTDIR/eligiblesvnhashes > eligiblehashesfromsvn
 
 # get eligible hashes from git times
 {
     xargs git show --name-status --no-merges <eligiblehashes
-    echo 
-    xargs git show --name-status <eligiblehashesfromsvn 
+    echo
+    xargs git show --name-status <eligiblehashesfromsvn
 } | sed 's/^commit /******************************************************************************\ncommit /g'
 
 # cleanup
