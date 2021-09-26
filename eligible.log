@@ -1,4 +1,39 @@
 ******************************************************************************
+commit 1c8579da2e401ee0dfb54bcbd170130c0a653659
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sun Sep 26 18:40:49 2021 +0300
+
+    * simplified and integrated the WriteImportExport procedure into the case
+      statement. Use similar statements to write the asm code for the export_name,
+      like we use for the import_name directive.
+
+M	compiler/aggas.pas
+
+******************************************************************************
+commit 346b57e238953710adbf9b576cba46a5f2e33817
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sun Sep 26 18:35:10 2021 +0300
+
+    * tai_impexp renamed tai_export_name
+    * ait_importexport renamed ait_export_name
+
+M	compiler/aasmtai.pas
+M	compiler/aggas.pas
+M	compiler/systems/t_wasi.pas
+M	compiler/wasm32/aasmcpu.pas
+M	compiler/wasm32/agwat.pas
+
+******************************************************************************
+commit 2940d0f45f41fd70107d2660a5059f4682833fb4
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sun Sep 26 18:29:28 2021 +0300
+
+    - removed unused constructor of tai_impexp, as well as unused member variable extmodule
+
+M	compiler/aggas.pas
+M	compiler/wasm32/aasmcpu.pas
+
+******************************************************************************
 commit 79f60923bad6ba4e0dec027eacf66a892375fae8
 Author: J. Gareth "Kit" Moreton <gareth@moreton-family.com>
 Date:   Sun Sep 26 14:09:29 2021 +0000
