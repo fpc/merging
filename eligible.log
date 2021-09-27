@@ -1,4 +1,16 @@
 ******************************************************************************
+commit b46c010f82aae51435dda77ca93d91b1401b0203
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Mon Sep 27 05:40:26 2021 +0300
+
+    + also support immutable wasm globals in the wasm assembler writer (both internal and external)
+
+M	compiler/aggas.pas
+M	compiler/ogwasm.pas
+M	compiler/wasm32/aasmcpu.pas
+M	compiler/wasm32/nwasmutil.pas
+
+******************************************************************************
 commit 7b3154911931d4b92c619c207e37194057c00b68
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Mon Sep 27 05:17:20 2021 +0300
