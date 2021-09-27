@@ -10109,18 +10109,6 @@ Date:   Thu Apr 29 19:48:54 2021 +0000
 M	compiler/aarch64/ncpumat.pas
 
 ******************************************************************************
-commit 6f4617eeb31097ba877e3f0ebf8ef093bd8c5b2e
-Author: pierre <pierre@freepascal.org>
-Date:   Thu Apr 29 14:42:56 2021 +0000
-
-    Use gdate/date -u option to get universal time for TEST_DATETIME variable
-    
-    git-svn-id: trunk@49289 -
-
-M	tests/Makefile
-M	tests/Makefile.fpc
-
-******************************************************************************
 commit 595edf6f9b5bdf4d04ce6580cae49debc72cba89
 Author: pierre <pierre@freepascal.org>
 Date:   Wed Apr 28 23:03:47 2021 +0000
@@ -13271,18 +13259,6 @@ Date:   Sat Mar 20 21:28:58 2021 +0000
     git-svn-id: trunk@49020 -
 
 M	compiler/nflw.pas
-
-******************************************************************************
-commit 8ed2ea3672c855964fc8ff30f43440ddef436885
-Author: florian <florian@freepascal.org>
-Date:   Sat Mar 20 10:16:38 2021 +0000
-
-      * createlst and gparmake need to be used with the source os extension (actually, we should call it host extension)
-    
-    git-svn-id: trunk@49019 -
-
-M	tests/Makefile
-M	tests/Makefile.fpc
 
 ******************************************************************************
 commit 9fa61a6c9f13f6eb968464d21d6bc83761ad3459
@@ -43207,18 +43183,6 @@ M	compiler/msgidx.inc
 M	compiler/msgtxt.inc
 
 ******************************************************************************
-commit b77cd3a3e77c73abea317cd45e4bf3e44ab67b52
-Author: pierre <pierre@freepascal.org>
-Date:   Tue Feb 4 22:15:44 2020 +0000
-
-     Use TEST_USE_LONGLOG by default, but check TEST_DISABLE_LONGLOG before setting it to 1
-    
-    git-svn-id: trunk@44114 -
-
-M	tests/Makefile
-M	tests/Makefile.fpc
-
-******************************************************************************
 commit 9ce1d0e50960f60cb7f395f7a1d546077d182a7f
 Author: Tomas Hajny <hajny@freepascal.org>
 Date:   Tue Feb 4 22:04:34 2020 +0000
@@ -55823,18 +55787,6 @@ Date:   Mon May 6 10:17:10 2019 +0000
 M	utils/h2pas/h2paschk.pas
 
 ******************************************************************************
-commit 3f39fe75f3874a66fa17a4481d87228d9876fee1
-Author: pierre <pierre@freepascal.org>
-Date:   Sat May 4 12:45:02 2019 +0000
-
-     Fix test_c_objects rule (by removal of extra closing braces)
-    
-    git-svn-id: trunk@41983 -
-
-M	tests/Makefile
-M	tests/Makefile.fpc
-
-******************************************************************************
 commit b4baf9b49c9cb02cedb212fa9b444489ec9ba097
 Author: pierre <pierre@freepascal.org>
 Date:   Sat May 4 12:41:46 2019 +0000
@@ -56312,6 +56264,7 @@ Date:   Sat Apr 13 15:12:09 2019 +0000
     git-svn-id: trunk@41866 -
 
 M	compiler/utils/ppumove.pp
+
 ******************************************************************************
 commit 927fbc4387efbde9bf4865e9e304385026e4ba39
 Author: Jonas Maebe <jonas@freepascal.org>
@@ -56361,7 +56314,6 @@ Date:   Wed Apr 10 09:18:01 2019 +0000
     git-svn-id: trunk@41855 -
 
 M	packages/fcl-registry/src/winreg.inc
-
 ******************************************************************************
 commit 1b0b81f714555cc0726f3679ddfbcd55c7279db4
 Author: Jonas Maebe <jonas@freepascal.org>
