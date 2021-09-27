@@ -1,4 +1,38 @@
 ******************************************************************************
+commit 5ad2d47e236b80d0d091667a665c6a4da736c1f6
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Mon Sep 27 03:03:57 2021 +0300
+
+    * track wasm global types in the internal object writer
+
+M	compiler/assemble.pas
+M	compiler/ogwasm.pas
+
+******************************************************************************
+commit 812732cb6ad97a11c9aa8f2b0767f8dda2dd29e5
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Mon Sep 27 02:52:29 2021 +0300
+
+    + introduced the AT_WASM_GLOBAL asm symbol type
+
+M	compiler/aasmbase.pas
+M	compiler/wasm32/hlcgcpu.pas
+
+******************************************************************************
+commit 8226233aa3f6265e9c29b120493fd1fff3e6b5ee
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Mon Sep 27 02:39:43 2021 +0300
+
+    * introduced the tai_globaltype asm directive, use that to declare the stack
+      pointer global symbol
+
+M	compiler/aasmtai.pas
+M	compiler/aggas.pas
+M	compiler/wasm32/aasmcpu.pas
+M	compiler/wasm32/agllvmmc.pas
+M	compiler/wasm32/nwasmutil.pas
+
+******************************************************************************
 commit a1c8e92904f3504fe6c3a7140134b910aadc04d9
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Mon Sep 27 00:33:57 2021 +0300
