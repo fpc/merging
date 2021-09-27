@@ -1,4 +1,29 @@
 ******************************************************************************
+commit 15b2f9a7b1482ab9b1abb457066d494f1e18b57b
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Sun Sep 26 18:08:46 2021 +0100
+
+    Changed get_volatile_registers_mm to not return XMM16 to XMM31 when not under AVX512
+
+M	compiler/x86_64/cpupara.pas
+
+******************************************************************************
+commit b463f2a141166cc739f27e5c93c9274db683ad2d
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Mon Sep 27 21:44:09 2021 +0300
+
+    + added support for exception tags and for the 'throw' and 'catch' instructions
+      in the wasm internal assembler and object writer
+
+M	compiler/aggas.pas
+M	compiler/assemble.pas
+M	compiler/ogbase.pas
+M	compiler/ogwasm.pas
+M	compiler/wasm32/aasmcpu.pas
+M	compiler/wasm32/nwasmutil.pas
+M	compiler/wasmbase.pas
+
+******************************************************************************
 commit 82b6450f198b15bd2823554d47a275eb836c9933
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Mon Sep 27 17:49:30 2021 +0300
@@ -6693,18 +6718,6 @@ Date:   Tue Jul 13 08:15:25 2021 +0000
     git-svn-id: trunk@49604 -
 
 M	packages/rtl-objpas/src/inc/fmtbcd.pp
-
-******************************************************************************
-commit ab86ce7e62db2add637961e3ff98a7703c86cb2c
-Author: lacak <lacak@idefix.freepascal.org>
-Date:   Mon Jul 12 12:17:03 2021 +0000
-
-    fcl-db: base: +TParam.AsByte (for Delphi compatibility)
-    
-    git-svn-id: trunk@49603 -
-
-M	packages/fcl-db/src/base/db.pas
-M	packages/fcl-db/src/base/dsparams.inc
 
 ******************************************************************************
 commit 723371b30a1ab3707e30292e4906cc983f92c0f8
@@ -18415,17 +18428,6 @@ Date:   Tue Dec 1 10:41:16 2020 +0000
 M	compiler/ppu.pas
 
 ******************************************************************************
-commit 738959ce59b85e79f068f8a9493ea11f7e4fa1f3
-Author: lacak <lacak@idefix.freepascal.org>
-Date:   Tue Dec 1 09:31:31 2020 +0000
-
-    fcl-db: sqlite: add support for journal_mode pragma (beside foreign_keys pragma). This pragma must be set after connect before any transaction starts.
-    
-    git-svn-id: trunk@47656 -
-
-M	packages/fcl-db/src/sqldb/sqlite/sqlite3conn.pp
-
-******************************************************************************
 commit 7f07c9f94d9e963f5bd457ea667178ec0b73c1e3
 Author: florian <florian@freepascal.org>
 Date:   Mon Nov 30 22:08:04 2020 +0000
@@ -22131,17 +22133,6 @@ Date:   Fri Oct 30 15:33:27 2020 +0000
 M	compiler/aggas.pas
 
 ******************************************************************************
-commit 5f04bb4a8e9716103a9346d88fd72b631a6c79f9
-Author: lacak <lacak@idefix.freepascal.org>
-Date:   Thu Oct 29 05:58:05 2020 +0000
-
-    fcl-db: base: xmldatapacketreader: fix XML data types
-    
-    git-svn-id: trunk@47247 -
-
-M	packages/fcl-db/src/base/xmldatapacketreader.pp
-
-******************************************************************************
 commit ff31d95a694c2c9bfd4f788ccc280c1d6593e527
 Author: florian <florian@freepascal.org>
 Date:   Wed Oct 28 21:37:27 2020 +0000
@@ -22162,58 +22153,6 @@ Date:   Wed Oct 28 21:37:26 2020 +0000
     git-svn-id: trunk@47245 -
 
 M	compiler/scanner.pas
-
-******************************************************************************
-commit 28d1ad595a784269d56e2e4c34dffdf128e7475d
-Author: lacak <lacak@idefix.freepascal.org>
-Date:   Wed Oct 28 14:37:36 2020 +0000
-
-    fcl-db: tests: fix typo
-    
-    git-svn-id: trunk@47238 -
-
-M	packages/fcl-db/tests/toolsunit.pas
-
-******************************************************************************
-commit 78e7ea6fbf4930c94bf4aa672184baa1ce8bdbab
-Author: lacak <lacak@idefix.freepascal.org>
-Date:   Wed Oct 28 14:32:20 2020 +0000
-
-    fcl-db: mysql: use new ftLongWord for INT UNSIGNED fields. Bug #37979
-    
-    git-svn-id: trunk@47237 -
-
-M	packages/fcl-db/src/base/xmldatapacketreader.pp
-M	packages/fcl-db/src/sqldb/mysql/mysqlconn.inc
-M	packages/fcl-db/tests/bufdatasettoolsunit.pas
-M	packages/fcl-db/tests/sqldbtoolsunit.pas
-M	packages/fcl-db/tests/testfieldtypes.pas
-M	packages/fcl-db/tests/toolsunit.pas
-
-******************************************************************************
-commit 806ddcdbbcb92cefcb19382cb85a729d738f54ec
-Author: lacak <lacak@idefix.freepascal.org>
-Date:   Wed Oct 28 12:49:22 2020 +0000
-
-    fcl-db: base: +TFMTBCDField.AsLongWord
-    
-    git-svn-id: trunk@47235 -
-
-M	packages/fcl-db/src/base/db.pas
-M	packages/fcl-db/src/base/fields.inc
-
-******************************************************************************
-commit 7ee3b01effe057752ed5d92d8718e93f48fc44af
-Author: lacak <lacak@idefix.freepascal.org>
-Date:   Wed Oct 28 12:35:03 2020 +0000
-
-    fcl-db: test: +testShortIntValues
-    
-    git-svn-id: trunk@47233 -
-
-M	packages/fcl-db/src/codegen/fpddcodegen.pp
-M	packages/fcl-db/tests/bufdatasettoolsunit.pas
-M	packages/fcl-db/tests/toolsunit.pas
 
 ******************************************************************************
 commit 075966f142ca9ccc05cb5db2291a565832c141ba
@@ -22288,119 +22227,6 @@ Date:   Tue Oct 27 21:42:51 2020 +0000
     git-svn-id: trunk@47226 -
 
 M	compiler/nadd.pas
-
-******************************************************************************
-commit eb4bc9d153f69392bb5e2b41a121690815c0a3e6
-Author: lacak <lacak@idefix.freepascal.org>
-Date:   Tue Oct 27 15:01:57 2020 +0000
-
-    fcl-db: dbase: add new field types (ftLongWord, ftShortint, ftByte) to fix export test errors
-    
-    git-svn-id: trunk@47225 -
-
-M	packages/fcl-db/src/dbase/dbf_common.inc
-M	packages/fcl-db/src/dbase/dbf_fields.pas
-
-******************************************************************************
-commit 6c2554af69295f35a5ae71cac937623082025422
-Author: lacak <lacak@idefix.freepascal.org>
-Date:   Tue Oct 27 14:42:41 2020 +0000
-
-    fcl-db: tests: add support for ftLongWord, ftShortInt, ftByte field types to TBufDataset + basic test
-    
-    git-svn-id: trunk@47224 -
-
-M	packages/fcl-db/src/base/bufdataset.pas
-M	packages/fcl-db/tests/bufdatasettoolsunit.pas
-M	packages/fcl-db/tests/toolsunit.pas
-
-******************************************************************************
-commit 7f6d0fec96cedb1f3e7f8095a6b106f07b61b288
-Author: michael <michael@freepascal.org>
-Date:   Tue Oct 27 14:27:49 2020 +0000
-
-    * Fix compilation after Lacos changes to TFieldType
-    
-    git-svn-id: trunk@47223 -
-
-M	packages/fcl-sdo/src/das/sdo_das_utils.pas
-M	packages/fcl-web/src/restbridge/sqldbrestschema.pp
-
-******************************************************************************
-commit 63aed04024b993641624f6bf6e7e738a0ae80e05
-Author: lacak <lacak@idefix.freepascal.org>
-Date:   Tue Oct 27 13:58:29 2020 +0000
-
-    fcl-db: base: fix after adding new field types into enumeration TFieldType (in rev. 47217)
-    
-    git-svn-id: trunk@47222 -
-
-M	packages/fcl-db/src/codegen/fpddcodegen.pp
-
-******************************************************************************
-commit 54f85eec5676bd47db3d9d5a605f28611c589c0f
-Author: lacak <lacak@idefix.freepascal.org>
-Date:   Tue Oct 27 13:34:43 2020 +0000
-
-    fcl-db: base: TShortintField + TByteField
-    
-    git-svn-id: trunk@47221 -
-
-M	packages/fcl-db/src/base/db.pas
-M	packages/fcl-db/src/base/fields.inc
-
-******************************************************************************
-commit b5a1c93ec282cedd9aa14c384e913c73ab9c087c
-Author: lacak <lacak@idefix.freepascal.org>
-Date:   Tue Oct 27 13:16:16 2020 +0000
-
-    fcl-db: base: enable TLongWordField in DefaultFieldClasses
-    
-    git-svn-id: trunk@47220 -
-
-M	packages/fcl-db/src/base/db.pas
-
-******************************************************************************
-commit a8cd770b3cdfcad4a383ac1cca651c315269cc35
-Author: lacak <lacak@idefix.freepascal.org>
-Date:   Tue Oct 27 13:11:47 2020 +0000
-
-    fcl-db: base: AsLongWord property + getter/setters for TField and TParam + TLongWordField class
-    
-    git-svn-id: trunk@47219 -
-
-M	packages/fcl-db/src/base/db.pas
-M	packages/fcl-db/src/base/dsparams.inc
-M	packages/fcl-db/src/base/fields.inc
-
-******************************************************************************
-commit 15dfa2e0c9ea5071af78d6ddbaf699ae95805630
-Author: lacak <lacak@idefix.freepascal.org>
-Date:   Tue Oct 27 11:34:22 2020 +0000
-
-    fcl-db: base: fix after adding new field types into enumeration TFieldType (in rev. 47217)
-    
-    git-svn-id: trunk@47218 -
-
-M	packages/fcl-db/src/datadict/fpdatadict.pp
-
-******************************************************************************
-commit d68ce429ab6d94c8ffb251304df6cd7b97e99703
-Author: lacak <lacak@idefix.freepascal.org>
-Date:   Tue Oct 27 10:01:30 2020 +0000
-
-    fcl-db: base: add some of new Delphi field types into enumeration TFieldType
-    (ftOraTimeStamp, ftOraInterval, ftLongWord, ftShortint, ftByte, ftExtended)
-    
-    git-svn-id: trunk@47217 -
-
-M	packages/fcl-db/src/base/db.pas
-M	packages/fcl-db/src/base/xmldatapacketreader.pp
-M	packages/fcl-db/src/export/fpfixedexport.pp
-M	packages/fcl-db/src/export/fprtfexport.pp
-M	packages/fcl-db/src/export/fptexexport.pp
-M	packages/fcl-db/src/sqldb/postgres/pqconnection.pp
-M	packages/fcl-db/tests/sqldbtoolsunit.pas
 
 ******************************************************************************
 commit 6d5816085d94fd8498cd9d34d5e0cf8839d74c9c
@@ -56314,6 +56140,7 @@ Date:   Wed Apr 10 09:18:01 2019 +0000
     git-svn-id: trunk@41855 -
 
 M	packages/fcl-registry/src/winreg.inc
+
 ******************************************************************************
 commit 1b0b81f714555cc0726f3679ddfbcd55c7279db4
 Author: Jonas Maebe <jonas@freepascal.org>
@@ -56993,7 +56820,6 @@ M	compiler/ptype.pas
 M	compiler/symcreat.pas
 M	compiler/symdef.pas
 A	tests/webtbs/tw35233.pp
-
 ******************************************************************************
 commit d65737393352eabc8aff52f9c7b6545d09c578c8
 Author: florian <florian@freepascal.org>
