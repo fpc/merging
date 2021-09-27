@@ -1,4 +1,13 @@
 ******************************************************************************
+commit f701d2f29498bb4766d814265995bad14c68ad13
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Tue Sep 28 01:11:01 2021 +0300
+
+    + support in_wasm32_throw_fpcexception in twasminlinenode.pass_typecheck_cpu
+
+M	compiler/wasm32/nwasminl.pas
+
+******************************************************************************
 commit ec0bdfbdd9235119d210efaf7243b0ce2c9decff
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Tue Sep 28 00:19:13 2021 +0300
