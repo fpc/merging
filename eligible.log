@@ -652,16 +652,6 @@ Date:   Sat Sep 25 18:24:01 2021 +0300
 M	compiler/ogwasm.pas
 
 ******************************************************************************
-commit a7ad65f884266b35b8eab9ee1376512b89e01104
-Author: Pierre Muller <pierre@freepascal.org>
-Date:   Sat Sep 25 17:15:35 2021 +0200
-
-     Fix use of svnversion if ../.git does not exist
-
-M	tests/Makefile
-M	tests/Makefile.fpc
-
-******************************************************************************
 commit cbf444bbbe699581354288d36b27c43ffcb47c17
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Sat Sep 25 18:08:01 2021 +0300
@@ -44685,18 +44675,6 @@ Date:   Thu Jan 9 20:35:37 2020 +0000
 M	rtl/linux/system.pp
 
 ******************************************************************************
-commit 22806e31c3ce59ffeebd6f4d544cf439105ccf29
-Author: pierre <pierre@freepascal.org>
-Date:   Thu Jan 9 14:40:44 2020 +0000
-
-     Add possibility to set explicitly TEST_COMMENT variable, set as Comment field in dbdigest.cfg file (defaulting to TEST_OPT as before)
-    
-    git-svn-id: trunk@43897 -
-
-M	tests/Makefile
-M	tests/Makefile.fpc
-
-******************************************************************************
 commit 3eb14dd72264b06f2ec8f8278e2ac785ae232bc5
 Author: pierre <pierre@freepascal.org>
 Date:   Thu Jan 9 14:38:58 2020 +0000
@@ -56323,6 +56301,7 @@ M	compiler/fpcdefs.inc
 A	compiler/riscv/rarvgas.pas
 M	compiler/riscv64/cgcpu.pas
 M	compiler/riscv64/rarv64gas.pas
+
 ******************************************************************************
 commit 349bb2ff38a56baf6960a0196326aafbb1aff9a5
 Author: Jonas Maebe <jonas@freepascal.org>
@@ -56333,7 +56312,6 @@ Date:   Sat Apr 13 15:12:09 2019 +0000
     git-svn-id: trunk@41866 -
 
 M	compiler/utils/ppumove.pp
-
 ******************************************************************************
 commit 927fbc4387efbde9bf4865e9e304385026e4ba39
 Author: Jonas Maebe <jonas@freepascal.org>
