@@ -1,4 +1,16 @@
 ******************************************************************************
+commit ec0bdfbdd9235119d210efaf7243b0ce2c9decff
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Tue Sep 28 00:19:13 2021 +0300
+
+    * fill exceptstate variables and update flowcontrol in
+      twasmexceptionstatehandler_nativeexceptions.new_exception
+    - removed the TODO comment, generated in the asm output by
+      twasmexceptionstatehandler_nativeexceptions.free_exception
+
+M	compiler/wasm32/cpupi.pas
+
+******************************************************************************
 commit 15b2f9a7b1482ab9b1abb457066d494f1e18b57b
 Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
 Date:   Sun Sep 26 18:08:46 2021 +0100
