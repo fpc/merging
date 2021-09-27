@@ -1,4 +1,39 @@
 ******************************************************************************
+commit 7b3154911931d4b92c619c207e37194057c00b68
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Mon Sep 27 05:17:20 2021 +0300
+
+    * the data section is now only written by the internal wasm object writer, when
+      there are data segments in the module
+
+M	compiler/ogwasm.pas
+
+******************************************************************************
+commit e85aff2b967839b9597ed00d613c268d1a6ccf50
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Mon Sep 27 04:53:35 2021 +0300
+
+    * combined TWasmObjSymbol.ImportIndex and .FuncIndex into just .FuncIndex,
+      because there's no point in having them separate, and the name ImportIndex
+      is misleading, as there are multiple import indices (they are separate for
+      functions, globals, tables, memories, etc.)
+
+M	compiler/ogwasm.pas
+
+******************************************************************************
+commit 2bce4d36db45ada7533f2e6d3d42d84d5b58b711
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Mon Sep 27 04:24:49 2021 +0300
+
+    + proper support for WASM globals in the internal object writer - emit
+      relocations, generate a Global section, if they are declared in the object
+      file, etc.
+
+M	compiler/ogbase.pas
+M	compiler/ogwasm.pas
+M	compiler/wasm32/aasmcpu.pas
+
+******************************************************************************
 commit 5ad2d47e236b80d0d091667a665c6a4da736c1f6
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Mon Sep 27 03:03:57 2021 +0300
