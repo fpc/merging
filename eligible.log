@@ -14790,17 +14790,6 @@ M	compiler/Makefile
 M	compiler/Makefile.fpc
 
 ******************************************************************************
-commit 63a3c254937bd306b0519c201693bf8842d55cb8
-Author: pierre <pierre@freepascal.org>
-Date:   Wed Feb 24 10:36:45 2021 +0000
-
-    Add wposuffix to keep different logs for each pass when passes is > 1
-    
-    git-svn-id: trunk@48800 -
-
-M	tests/utils/dotest.pp
-
-******************************************************************************
 commit 0216f778193aa057395c3632482e751402a21048
 Author: Károly Balogh <karoly@freepascal.org>
 Date:   Wed Feb 24 09:20:04 2021 +0000
@@ -18785,20 +18774,6 @@ M	rtl/win/syswin.inc
 M	rtl/win16/system.pp
 M	rtl/wince/system.pp
 M	rtl/zxspectrum/system.pp
-
-******************************************************************************
-commit 9c77e4a899e8b21bda456e704ff7245838bbd66b
-Author: florian <florian@freepascal.org>
-Date:   Thu Nov 26 21:35:00 2020 +0000
-
-      * support passing options to the emulator when using one for testing
-    
-    git-svn-id: trunk@47604 -
-
-M	tests/Makefile
-M	tests/Makefile.fpc
-M	tests/readme.txt
-M	tests/utils/dotest.pp
 
 ******************************************************************************
 commit 48271b880cba5d4479fc27890f3b4bb4bf69e60c
@@ -24499,17 +24474,6 @@ Date:   Sun Sep 6 20:23:23 2020 +0000
     git-svn-id: trunk@46789 -
 
 M	tests/Makefile
-
-******************************************************************************
-commit 323b3b5d2bced1ca83ef5be27868e53b5ba28cae
-Author: florian <florian@freepascal.org>
-Date:   Sun Sep 6 20:23:22 2020 +0000
-
-      + create directory for C objects if needed
-    
-    git-svn-id: trunk@46788 -
-
-M	tests/Makefile.fpc
 
 ******************************************************************************
 commit 9337b2a3acf2ffdc6a43077a4902e71e7f4f616f
@@ -49251,24 +49215,6 @@ M	compiler/i8086/cpupara.pas
 M	compiler/x86_64/cpupara.pas
 
 ******************************************************************************
-commit 0b2a6e5a7491e04dda4844d03cf138f2898c642c
-Author: pierre <pierre@freepascal.org>
-Date:   Mon Sep 16 07:41:37 2019 +0000
-
-      * tests/Makefile.fpc: Add NATIVE_FPC=$(FPC) to tstunits rule make call.
-      * tests/Makefile: Regenerate.
-      * tests/tstunits/Makefile.fpc: Pass FPCFPMAKE=$(NATIVE_FPC) to rtl and packages
-        recompilation rules, to avoid truobles for cross-compilation.
-      * tests/tstunits/Makefile: Regenerate.
-    
-    git-svn-id: trunk@43019 -
-
-M	tests/Makefile
-M	tests/Makefile.fpc
-M	tests/tstunits/Makefile
-M	tests/tstunits/Makefile.fpc
-
-******************************************************************************
 commit 9678542ba611d2c0a511eeaa844d760879903910
 Author: Jonas Maebe <jonas@freepascal.org>
 Date:   Sun Sep 15 20:43:12 2019 +0000
@@ -56820,6 +56766,7 @@ M	compiler/ptype.pas
 M	compiler/symcreat.pas
 M	compiler/symdef.pas
 A	tests/webtbs/tw35233.pp
+
 ******************************************************************************
 commit d65737393352eabc8aff52f9c7b6545d09c578c8
 Author: florian <florian@freepascal.org>
@@ -56865,7 +56812,6 @@ Date:   Mon Mar 4 21:53:22 2019 +0000
     git-svn-id: trunk@41589 -
 
 M	tests/test/cg/tmoddiv4.pp
-
 ******************************************************************************
 commit 62cef8eb2b66c464df6ae66827e090476bffb657
 Author: Jonas Maebe <jonas@freepascal.org>
@@ -60469,18 +60415,6 @@ Date:   Wed Nov 14 18:05:35 2018 +0000
     git-svn-id: trunk@40316 -
 
 M	compiler/x86/cgx86.pas
-
-******************************************************************************
-commit 122fd555643a17673501a15a4dcb3c68931f22e7
-Author: pierre <pierre@freepascal.org>
-Date:   Tue Nov 13 15:12:22 2018 +0000
-
-     + Add TEST_PARALLEL, adds -L option to DOTESTOPT
-    
-    git-svn-id: trunk@40308 -
-
-M	tests/Makefile
-M	tests/Makefile.fpc
 
 ******************************************************************************
 commit 04debba9dea61e81e1b75f3d2254439cd374bebf
