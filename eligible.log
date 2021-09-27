@@ -1,4 +1,27 @@
 ******************************************************************************
+commit 82b6450f198b15bd2823554d47a275eb836c9933
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Mon Sep 27 17:49:30 2021 +0300
+
+    + introduced the AT_WASM_EXCEPTION_TAG asm symbol type, use that for specifying
+      the parameter to the 'throw' and 'catch' instructions
+
+M	compiler/aasmbase.pas
+M	compiler/wasm32/itcpugas.pas
+M	compiler/wasm32/nwasmflw.pas
+M	compiler/wasm32/nwasminl.pas
+
+******************************************************************************
+commit e0ad427b6c83a334362f42f8d1d3782963f76fa3
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Mon Sep 27 17:38:28 2021 +0300
+
+    + introduced the FPC_EXCEPTION_TAG_SYM string constant
+
+M	compiler/wasm32/cpubase.pas
+M	compiler/wasm32/nwasmutil.pas
+
+******************************************************************************
 commit b46c010f82aae51435dda77ca93d91b1401b0203
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Mon Sep 27 05:40:26 2021 +0300
