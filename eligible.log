@@ -1,4 +1,22 @@
 ******************************************************************************
+commit 93b3315691f3e89843c8c16edb9c0b22226a51d7
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Tue Sep 28 10:15:58 2021 +0200
+
+    * Parse cookies also when setting variable based on name
+
+M	packages/fcl-web/src/base/httpdefs.pp
+
+******************************************************************************
+commit bfe3afbc62ae65e79ffac64f12a2ce2e884388d2
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Tue Sep 28 10:14:18 2021 +0200
+
+     * Add error check
+
+M	packages/libcurl/examples/teststream.pp
+
+******************************************************************************
 commit 99e449eaa1b34d4d45df59600ea65cd8c82b2e7f
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Tue Sep 28 04:11:16 2021 +0300
