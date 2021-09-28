@@ -1,4 +1,23 @@
 ******************************************************************************
+commit ef738f01cf32f00fdd58c7687dca7581fd54126b
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Tue Sep 28 20:39:47 2021 +0300
+
+    * fixed warning
+
+M	compiler/wasm32/nwasmflw.pas
+
+******************************************************************************
+commit f2abce7ea58decf10255bdfea14740578068dd4a
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Tue Sep 28 20:23:27 2021 +0300
+
+    + initial implementation of try..except..end in wasm native exceptions mode.
+      The 'on' statements are not implemented yet.
+
+M	compiler/wasm32/nwasmflw.pas
+
+******************************************************************************
 commit 93b3315691f3e89843c8c16edb9c0b22226a51d7
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Tue Sep 28 10:15:58 2021 +0200
