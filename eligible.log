@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 0e647a073e5978f2e6aefafc0b034b187dbffce7
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Tue Sep 28 21:23:49 2021 +0300
+
+    + override the 'on' node for WebAssembly
+
+M	compiler/wasm32/nwasmflw.pas
+
+******************************************************************************
 commit ef738f01cf32f00fdd58c7687dca7581fd54126b
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Tue Sep 28 20:39:47 2021 +0300
