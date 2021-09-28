@@ -1,4 +1,29 @@
 ******************************************************************************
+commit 21fd8cd5d3f98ecdd2847aa3bb43cce64af8f7b9
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Tue Sep 28 03:01:09 2021 +0300
+
+    * updated ppudump with the new asm symbol types and binding types
+
+M	compiler/utils/ppuutils/ppudump.pp
+
+******************************************************************************
+commit cdf1ceca765df8b62d4888981cc27f023978c39d
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Tue Sep 28 02:52:40 2021 +0300
+
+    * emit a weak symbol for the exception tag, since that's what the LLVM linker
+      wants to treat them as shared between .o files
+
+M	compiler/aasmbase.pas
+M	compiler/aasmtai.pas
+M	compiler/ogbase.pas
+M	compiler/ogwasm.pas
+M	compiler/wasm32/nwasmflw.pas
+M	compiler/wasm32/nwasminl.pas
+M	compiler/wasm32/nwasmutil.pas
+
+******************************************************************************
 commit f701d2f29498bb4766d814265995bad14c68ad13
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Tue Sep 28 01:11:01 2021 +0300
