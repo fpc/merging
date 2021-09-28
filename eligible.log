@@ -1,4 +1,65 @@
 ******************************************************************************
+commit 99e449eaa1b34d4d45df59600ea65cd8c82b2e7f
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Tue Sep 28 04:11:16 2021 +0300
+
+    * decblock moved after end_try, instead of after catch
+
+M	compiler/wasm32/nwasmflw.pas
+
+******************************************************************************
+commit 3836b0be04762387513cd7f6b95246cd5fc5e295
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Tue Sep 28 04:02:52 2021 +0300
+
+    * longjmp in fpc_reraise changed to a throw instruction intrinsic in wasm native exceptions mode
+
+M	rtl/wasm32/except_native.inc
+
+******************************************************************************
+commit 0c3e179652842f9f65b810ff64447aefaa9d76f4
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Tue Sep 28 03:59:38 2021 +0300
+
+    - get rid of fpc_PushExceptAddr and fpc_PopAddrStack entirely, when compiling in
+      wasm native exceptions mode - these helper routines aren't necessary in this
+      mode
+
+M	compiler/wasm32/nwasmflw.pas
+M	rtl/inc/compproc.inc
+M	rtl/wasm32/except_native.inc
+
+******************************************************************************
+commit 91f0f1a86c293dbf972ed684ff196244f5292af4
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Tue Sep 28 03:46:30 2021 +0300
+
+    * don't include except.inc if wasm32 native exception is turned on, instead
+      replace it with except_native.inc
+
+M	rtl/inc/objpas.inc
+M	rtl/wasm32/except_native.inc
+M	rtl/wasm32/wasm32.inc
+
+******************************************************************************
+commit 73bc8edef3ad66e208cfb30fd0df3e13f3b9fbdf
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Tue Sep 28 03:31:04 2021 +0300
+
+    + RTL support for raising exceptions in native wasm exceptions mode
+
+M	rtl/wasm32/except_native.inc
+
+******************************************************************************
+commit c9fd115ec575728f9a8b3966b5de73f1477ea549
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Tue Sep 28 03:29:45 2021 +0300
+
+    * fixes to the try..finally code generation in wasm native exceptions mode
+
+M	compiler/wasm32/nwasmflw.pas
+
+******************************************************************************
 commit 21fd8cd5d3f98ecdd2847aa3bb43cce64af8f7b9
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Tue Sep 28 03:01:09 2021 +0300
