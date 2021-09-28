@@ -1,4 +1,45 @@
 ******************************************************************************
+commit 6e6c946e0fd1765f99110e12c79db27a400c6587
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Wed Sep 29 00:16:23 2021 +0300
+
+    * the fpc_Catches result test code was inverted
+
+M	compiler/wasm32/cpupi.pas
+
+******************************************************************************
+commit 7ce1a7c6a0722dcfb6db9f2c2c3a0a54e4a5fc8d
+Author: florian <florian@freepascal.org>
+Date:   Tue Sep 28 23:13:12 2021 +0200
+
+      * x86_64-linux doesn't need .data.rel.ro either
+
+M	compiler/aggas.pas
+
+******************************************************************************
+commit 99dbbcadcd19d4babe656949c20a5c643dd22a70
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Wed Sep 29 00:04:23 2021 +0300
+
+    + generate functype directives for all functions in all used units, regardless
+      of whether they have paraloc info created. This fixes linking of WebAssembly
+      programs that declare their own classes, because that causes the compiler to
+      generate a VMT, containing references to virtual methods, and these don't
+      necessarily have paraloc info (if they're not called from within the program)
+
+M	compiler/wasm32/nwasmutil.pas
+
+******************************************************************************
+commit 6e7f0744ca11202c2defc6c7dfdd5863245612c8
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Tue Sep 28 23:55:10 2021 +0300
+
+    + implemented the 'on' node for WebAssembly in native exceptions mode
+
+M	compiler/wasm32/cpupi.pas
+M	compiler/wasm32/nwasmflw.pas
+
+******************************************************************************
 commit 0e647a073e5978f2e6aefafc0b034b187dbffce7
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Tue Sep 28 21:23:49 2021 +0300
