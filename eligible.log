@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 91d8009b531b61d41604406e3a6a94e92f1b9c41
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Wed Sep 29 05:27:27 2021 +0300
+
+    + implemented round(real) for WebAssembly via the fXX.nearest and i64.trunc_fXX_s instructions
+
+M	compiler/wasm32/nwasminl.pas
+
+******************************************************************************
 commit 835bc62e2a8aa887170510ecc2ebdadee27bb4e7
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Wed Sep 29 05:07:43 2021 +0300
