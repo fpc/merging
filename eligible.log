@@ -1,4 +1,40 @@
 ******************************************************************************
+commit d84a7d1bdedae4f5bdb31c406c4f052ff728aaab
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Wed Sep 29 04:19:10 2021 +0300
+
+    + implemented int(real) for WebAssembly via the f32.trunc and f64.trunc instructions
+
+M	compiler/wasm32/nwasminl.pas
+
+******************************************************************************
+commit 8822be8a1f1c1b6affca58be1bf337be4c345bb1
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Wed Sep 29 04:04:03 2021 +0300
+
+    + implemented abs(real) for WebAssembly via the f32.abs and f64.abs instructions
+
+M	compiler/wasm32/nwasminl.pas
+
+******************************************************************************
+commit f42817d1a2d3a3efa595c90d58aa82aa57f77cc8
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Wed Sep 29 03:56:13 2021 +0300
+
+    * fixed opcode generation for the f32.const in the WebAssembly internal asm
+
+M	compiler/wasm32/aasmcpu.pas
+
+******************************************************************************
+commit 95243ed6ede742a891297e91d687bf510c9f31e0
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Wed Sep 29 03:48:31 2021 +0300
+
+    + implemented sqrt via the f32.sqrt and f64.sqrt instructions
+
+M	compiler/wasm32/nwasminl.pas
+
+******************************************************************************
 commit 6e6c946e0fd1765f99110e12c79db27a400c6587
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Wed Sep 29 00:16:23 2021 +0300
