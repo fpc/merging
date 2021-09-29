@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 1f19b113983906e1cbffd428eba4488e78b4cdeb
+Author: J. Gareth "Kit" Moreton <gareth@moreton-family.com>
+Date:   Wed Sep 29 18:32:31 2021 +0000
+
+    x86_64: Fix to tw8573 overflow bug under -Cg option
+
+M	compiler/x86/aoptx86.pas
+A	tests/webtbs/tw8573a.pp
+
+******************************************************************************
 commit 5446d53156de14483d6210297a99a934ebc5909c
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Wed Sep 29 17:22:51 2021 +0200
@@ -27917,17 +27927,6 @@ Date:   Mon Aug 3 20:36:02 2020 +0000
 
 M	compiler/llvm/rgllvm.pas
 M	compiler/rgobj.pas
-
-******************************************************************************
-commit b60ac4c2dbf4e56af063426877891da787e3e19b
-Author: florian <florian@freepascal.org>
-Date:   Mon Aug 3 19:42:14 2020 +0000
-
-      * @PLT is needed for calls to link it properly with pic code
-    
-    git-svn-id: trunk@46209 -
-
-M	rtl/linux/x86_64/si_c.inc
 
 ******************************************************************************
 commit 0000682043decf5ac145fb13535c1de0ed570bbf
@@ -57090,6 +57089,7 @@ Date:   Mon Mar 4 21:53:22 2019 +0000
     git-svn-id: trunk@41589 -
 
 M	tests/test/cg/tmoddiv4.pp
+
 ******************************************************************************
 commit 62cef8eb2b66c464df6ae66827e090476bffb657
 Author: Jonas Maebe <jonas@freepascal.org>
@@ -57100,7 +57100,6 @@ Date:   Sat Mar 2 09:37:49 2019 +0000
     git-svn-id: trunk@41544 -
 
 M	compiler/sparcgen/sppara.pas
-
 ******************************************************************************
 commit f78e2072a193a49660ff8cd07273cb6c45b03779
 Author: Jonas Maebe <jonas@freepascal.org>
