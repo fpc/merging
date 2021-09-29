@@ -1,4 +1,22 @@
 ******************************************************************************
+commit 835bc62e2a8aa887170510ecc2ebdadee27bb4e7
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Wed Sep 29 05:07:43 2021 +0300
+
+    + implemented trunc(real) for WebAssembly via the i64.trunc_f32_s and i64.trunc_f64_s instructions
+
+M	compiler/wasm32/nwasminl.pas
+
+******************************************************************************
+commit f6b4a54f7d2de15793e3da1a477d1ef274f31cb4
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Wed Sep 29 04:57:19 2021 +0300
+
+    * fixed output of 32-bit floating point constants in the llvm-mc asm output
+
+M	compiler/wasm32/agllvmmc.pas
+
+******************************************************************************
 commit d84a7d1bdedae4f5bdb31c406c4f052ff728aaab
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Wed Sep 29 04:19:10 2021 +0300
