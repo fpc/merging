@@ -29,18 +29,6 @@ Date:   Wed Sep 29 17:22:51 2021 +0200
 M	tests/utils/testsuite/utests.pp
 
 ******************************************************************************
-commit 6c6cb13a5e3af433f93244336bc8a70a2c5fa017
-Author: flyingsheep <bartjunk64@gmail.com>
-Date:   Wed Sep 29 17:21:57 2021 +0200
-
-    * Fix for issue #39379 by bart broersma
-
-M	compiler/fmodule.pas
-M	packages/rtl-console/src/win/video.pp
-M	packages/winceunits/src/windbase.pp
-M	rtl/os2/systhrd.inc
-
-******************************************************************************
 commit 91d8009b531b61d41604406e3a6a94e92f1b9c41
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Wed Sep 29 05:27:27 2021 +0300
