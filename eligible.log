@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 02745b0b83f9ea4e1fc98a44f753d513dfebfe62
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Fri Oct 1 06:34:52 2021 +0300
+
+    + implemented GetDate, GetTime and WeekDay in the WASI dos unit. They return
+      UTC time (I don't know how to obtain the local time zone from within WASI).
+
+M	rtl/wasi/dos.pp
+
+******************************************************************************
 commit d2726c240648a1db264cab515969672355746c97
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Fri Oct 1 05:17:12 2021 +0300
