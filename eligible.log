@@ -1,4 +1,40 @@
 ******************************************************************************
+commit 188a21bbfdbbd2c5c0a2b6a8232bf5da9f6ffb90
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Fri Oct 1 03:01:55 2021 +0300
+
+    * fixed 'not(boolean64)' for WebAssembly
+
+M	compiler/wasm32/hlcgcpu.pas
+
+******************************************************************************
+commit c6a549eb487f3bb5b0578a56f08db35559764b0d
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Fri Oct 1 02:57:04 2021 +0300
+
+    * int64/boolean64 fix in twasmtypeconvnode.second_int_to_bool
+
+M	compiler/wasm32/nwasmcnv.pas
+
+******************************************************************************
+commit 2e5b895d70f68daaafe52ecee8a66736b055decf
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Fri Oct 1 02:47:08 2021 +0300
+
+    * fixed WebAssembly code generation for 'if boolean64 then ... else ...'
+
+M	compiler/wasm32/nwasmflw.pas
+
+******************************************************************************
+commit 4d571a19282490972e9434ec4059cf6a01fced72
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Fri Oct 1 02:43:55 2021 +0300
+
+    * fixed code generation for 'boolean64 and/or boolean64' for WebAssembly
+
+M	compiler/wasm32/nwasmadd.pas
+
+******************************************************************************
 commit abd494624bf2e722938b14f2eb01ba91f4227799
 Author: florian <florian@freepascal.org>
 Date:   Wed Sep 29 22:29:47 2021 +0200
