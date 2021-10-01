@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 177b38dfe9423dd714a99e9fc34abaa7f032df66
+Author: florian <florian@freepascal.org>
+Date:   Fri Oct 1 23:05:48 2021 +0200
+
+      * modified (cosmetics) patch by Rika: replace DJB2 with MurmurHash3, resolves #39377
+
+M	compiler/cclasses.pas
+
+******************************************************************************
 commit 02745b0b83f9ea4e1fc98a44f753d513dfebfe62
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Fri Oct 1 06:34:52 2021 +0300
