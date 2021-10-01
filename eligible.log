@@ -28772,20 +28772,6 @@ Date:   Fri Jul 17 15:27:27 2020 +0000
 M	compiler/arm/cpubase.pas
 
 ******************************************************************************
-commit a57f3ba396334fa89013345c530ae3beadd05aee
-Author: florian <florian@freepascal.org>
-Date:   Thu Jul 16 20:44:30 2020 +0000
-
-      * patch by Sergey Larin to handle Native(U)Int conversions from/to variants, resolves #37339
-    
-    git-svn-id: trunk@45797 -
-
-M	.gitattributes
-M	rtl/inc/variant.inc
-M	rtl/inc/varianth.inc
-A	tests/webtbs/tw37339.pp
-
-******************************************************************************
 commit dfdfbf896da044c1e175bb194ae79b189032cfe1
 Author: pierre <pierre@freepascal.org>
 Date:   Wed Jul 15 08:59:59 2020 +0000
@@ -57191,6 +57177,7 @@ Date:   Sat Mar 2 09:37:49 2019 +0000
     git-svn-id: trunk@41544 -
 
 M	compiler/sparcgen/sppara.pas
+
 ******************************************************************************
 commit f78e2072a193a49660ff8cd07273cb6c45b03779
 Author: Jonas Maebe <jonas@freepascal.org>
@@ -57202,7 +57189,6 @@ Date:   Thu Feb 28 20:45:34 2019 +0000
     git-svn-id: trunk@41526 -
 
 M	compiler/hlcg2ll.pas
-
 ******************************************************************************
 commit 075e3da334bfc9788c2de0fde5eea479afe9616f
 Author: florian <florian@freepascal.org>
