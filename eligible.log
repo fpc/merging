@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 968e23546c6614cff0607478721e181800ac38b4
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Fri Oct 1 04:20:02 2021 +0300
+
+    * fixed second_int_to_bool for cbool types for WebAssembly
+
+M	compiler/wasm32/nwasmcnv.pas
+
+******************************************************************************
 commit 188a21bbfdbbd2c5c0a2b6a8232bf5da9f6ffb90
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Fri Oct 1 03:01:55 2021 +0300
