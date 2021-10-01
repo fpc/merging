@@ -1,4 +1,41 @@
 ******************************************************************************
+commit d2726c240648a1db264cab515969672355746c97
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Fri Oct 1 05:17:12 2021 +0300
+
+    * fixed WebAssembly code generation for not(cbool64)
+
+M	compiler/wasm32/hlcgcpu.pas
+
+******************************************************************************
+commit 9aefda1e6a34940880f930df300985aa542e49d8
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Fri Oct 1 04:56:36 2021 +0300
+
+    * bug fix in test taddbool.pp - it was testing longbool conversion to boolean
+      twice, and not testing wordbool conversion to boolean at all
+
+M	tests/test/cg/taddbool.pp
+
+******************************************************************************
+commit 4fc763ac5033ae56e908ee263d538950f71e544d
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Fri Oct 1 04:54:17 2021 +0300
+
+    * fixed WebAssembly cbool support for OP_NOT
+
+M	compiler/wasm32/hlcgcpu.pas
+
+******************************************************************************
+commit baf5ff4e05987a027d8912aa231ecd3c79147dd1
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Fri Oct 1 04:40:50 2021 +0300
+
+    * another WebAssembly cbool fix in twasmtypeconvnode.second_int_to_bool
+
+M	compiler/wasm32/nwasmcnv.pas
+
+******************************************************************************
 commit 968e23546c6614cff0607478721e181800ac38b4
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Fri Oct 1 04:20:02 2021 +0300
