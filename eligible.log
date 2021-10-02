@@ -1,4 +1,32 @@
 ******************************************************************************
+commit 39164ad732ea12af79ecf267172146569297aa1a
+Author: florian <florian@freepascal.org>
+Date:   Sat Oct 2 16:15:19 2021 +0200
+
+      * cleanup
+
+M	compiler/aarch64/aoptcpu.pas
+
+******************************************************************************
+commit c1d8e32eaedd102759c3b5132228aaf493026b8d
+Author: florian <florian@freepascal.org>
+Date:   Sat Oct 2 16:07:00 2021 +0200
+
+      + Aarch64: Ldr<Postfix>Mov2Ldr<Postfix> optimization
+
+M	compiler/aarch64/aoptcpu.pas
+
+******************************************************************************
+commit b5c7997c88f39c0803a8a5f48188848843f9cc6d
+Author: florian <florian@freepascal.org>
+Date:   Sat Oct 2 15:37:34 2021 +0200
+
+      + Aarch64: AndCmpB.E/NE2Tbnz/Tbz optimization
+
+M	compiler/aarch64/aasmcpu.pas
+M	compiler/aarch64/aoptcpu.pas
+
+******************************************************************************
 commit 177b38dfe9423dd714a99e9fc34abaa7f032df66
 Author: florian <florian@freepascal.org>
 Date:   Fri Oct 1 23:05:48 2021 +0200
