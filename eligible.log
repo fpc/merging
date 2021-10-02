@@ -1,4 +1,33 @@
 ******************************************************************************
+commit 020a58b0750902e161a29bb1f8218052ddcd2d54
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sat Oct 2 23:14:24 2021 +0300
+
+    + added system_wasm32_embedded to systems_embedded
+
+M	compiler/systems.pas
+
+******************************************************************************
+commit c450b63f1ccd696c8034142a985222d3f01895f4
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sat Oct 2 22:42:20 2021 +0300
+
+    + enabled compilation of the fpintres unit for the WASI target and enabled tf_has_winlike_resources for the target
+
+M	compiler/systems/i_wasi.pas
+M	rtl/wasi/Makefile
+M	rtl/wasi/Makefile.fpc
+
+******************************************************************************
+commit 4b39f7dea0383c96f62f381ab46f866bd8e2270f
+Author: J. Gareth "Kit" Moreton <gareth@moreton-family.com>
+Date:   Sat Oct 2 19:32:44 2021 +0000
+
+    x86: Missed logic with CMP and MOV optimisations
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
 commit cc2fa67dfa475710c57c4b3b73631a0f3a959e3f
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Sat Oct 2 22:10:34 2021 +0300
