@@ -1,4 +1,28 @@
 ******************************************************************************
+commit 85207e94f8e4a1904a67ba2a3be06f7b69ef146c
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sat Oct 2 19:40:36 2021 +0300
+
+    + added inline numbers for a memory.copy and a memory.fill intrinsic
+
+M	compiler/wasm32/ccpuinnr.inc
+M	rtl/wasm32/cpuinnr.inc
+
+******************************************************************************
+commit 026d23632aa3343756ebf454d4d0961048d34fcc
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sat Oct 2 19:35:26 2021 +0300
+
+    + added the memory.copy and memory.fill WebAssembly instructions
+
+M	compiler/systems.pas
+M	compiler/wasm32/aasmcpu.pas
+M	compiler/wasm32/agllvmmc.pas
+M	compiler/wasm32/cpubase.pas
+M	compiler/wasm32/itcpugas.pas
+M	compiler/wasm32/strinst.inc
+
+******************************************************************************
 commit cc5ee6b868935bbc3fe22c349b9c312029d88523
 Author: florian <florian@freepascal.org>
 Date:   Sat Oct 2 16:24:47 2021 +0200
