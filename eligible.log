@@ -1,4 +1,32 @@
 ******************************************************************************
+commit 77ca8ba16d0a5ab9aa1b261b4d1b44c94a1aa2b3
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sun Oct 3 01:08:52 2021 +0300
+
+    * always return error in SysUtils.FindFirst and .FindNext on the WASI platform,
+      in order to prevent infinite loops in tests
+
+M	rtl/wasi/sysutils.pp
+
+******************************************************************************
+commit 6f88919f3775a94c3df98f6b3d2c03f885202e03
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sun Oct 3 00:59:11 2021 +0300
+
+    - don't set casmdata in wasm32/aasmcpu.pas, so that the aasmdef unit can override it
+
+M	compiler/wasm32/aasmcpu.pas
+
+******************************************************************************
+commit c1eeb8beda0df3f74741677df85259e86b0a789f
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sun Oct 3 00:49:32 2021 +0300
+
+    + use the aasmdef unit in wasm32/cpunode.pas
+
+M	compiler/wasm32/cpunode.pas
+
+******************************************************************************
 commit 020a58b0750902e161a29bb1f8218052ddcd2d54
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Sat Oct 2 23:14:24 2021 +0300
