@@ -1,4 +1,24 @@
 ******************************************************************************
+commit cc2fa67dfa475710c57c4b3b73631a0f3a959e3f
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sat Oct 2 22:10:34 2021 +0300
+
+    * fixed OS_S8 to OS_16 conversion for WebAssembly. This fixes test/cg/tcnvint6
+
+M	compiler/wasm32/hlcgcpu.pas
+
+******************************************************************************
+commit 3258937d97b8ca6a4ea6b6556fe46664da9d65fa
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sat Oct 2 21:33:28 2021 +0300
+
+    + implemented move() for WebAssembly via the memory.copy instruction
+
+M	compiler/wasm32/nwasminl.pas
+M	rtl/wasm32/cpuh.inc
+M	rtl/wasm32/wasm32.inc
+
+******************************************************************************
 commit 2e3e3edb5fb5b137c79875e5f018e456fdd8c664
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Sat Oct 2 20:31:37 2021 +0300
