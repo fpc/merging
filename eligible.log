@@ -1,4 +1,15 @@
 ******************************************************************************
+commit 2e3e3edb5fb5b137c79875e5f018e456fdd8c664
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sat Oct 2 20:31:37 2021 +0300
+
+    + implemented FillChar for WebAssembly via the memory.fill instruction
+
+M	compiler/wasm32/nwasminl.pas
+M	rtl/wasm32/cpuh.inc
+M	rtl/wasm32/wasm32.inc
+
+******************************************************************************
 commit 85207e94f8e4a1904a67ba2a3be06f7b69ef146c
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Sat Oct 2 19:40:36 2021 +0300
