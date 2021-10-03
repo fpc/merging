@@ -1,4 +1,21 @@
 ******************************************************************************
+commit 3fb0fab410ac4c791227d74c1bbd8ceb45f653b8
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sun Oct 3 13:59:33 2021 +0200
+
+    Fix bitpacking 62/63 bit fields on 64 bit targets
+    
+    As reported on the lazarus forum:
+    * https://forum.lazarus.freepascal.org/index.php?topic=56341.new
+    * https://forum.lazarus.freepascal.org/index.php/topic,56339.msg418608/topicseen.html
+    
+    Also optimized nextpowerof2 in the compiler
+
+M	compiler/cutils.pas
+M	compiler/symdef.pas
+A	tests/test/tprec25.pp
+
+******************************************************************************
 commit 41db71c21c1c00dc83de8113ad0b35f5250ca2e0
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Sun Oct 3 04:37:13 2021 +0300
