@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 2e8c99947a978f8614d4075b1ee0d9caac4945aa
+Author: florian <florian@freepascal.org>
+Date:   Sun Oct 3 18:40:20 2021 +0200
+
+      * define DEBUG_AOPTCPU if EXTDEBUG is used
+
+M	compiler/aarch64/aoptcpu.pas
+M	compiler/armgen/aoptarm.pas
+
+******************************************************************************
 commit 890b899842b741f54f5191ff369c8a97a89ac845
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Sun Oct 3 18:33:00 2021 +0300
