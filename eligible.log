@@ -1,4 +1,21 @@
 ******************************************************************************
+commit ab01b0ebd72c646b66a6bb3fd55ed717b9852541
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sun Oct 3 21:35:55 2021 +0200
+
+    Typed constants: no internalerror on failure
+    
+    Don't check whether the expression queue is empty in the destructor in case
+    there was an error. Also improved error messages (constant expression instead
+    of variable expression expected).
+    
+    Resolves #39393
+
+M	compiler/aasmcnst.pas
+M	compiler/ngtcon.pas
+A	tests/webtbf/tw39393.pp
+
+******************************************************************************
 commit 190c77e8633d185d983e3e59d62443bd443bb807
 Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
 Date:   Sun Oct 3 19:45:22 2021 +0100
