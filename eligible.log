@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 41db71c21c1c00dc83de8113ad0b35f5250ca2e0
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sun Oct 3 04:37:13 2021 +0300
+
+    + implemented the <= operator for smallsets for WebAssembly
+
+M	compiler/wasm32/nwasmadd.pas
+
+******************************************************************************
 commit 799cd957e625400427836e7309748bbba32e2d72
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Sun Oct 3 04:11:51 2021 +0300
