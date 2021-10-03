@@ -1,4 +1,35 @@
 ******************************************************************************
+commit 494dac5db57f60073f2d538f66b6570b9fd05beb
+Author: florian <florian@freepascal.org>
+Date:   Sun Oct 3 23:16:55 2021 +0200
+
+      + x86: MovOp2Op optimization
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
+commit 1011c31a80e0ea9e67497b335a8293a49cbdecb7
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Mon Oct 4 00:15:27 2021 +0300
+
+    + increase string type to avoid const string truncation
+
+M	compiler/globtype.pas
+
+******************************************************************************
+commit 2577180b935364b1a84ee8d38f8f6a42c0b812b0
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Mon Oct 4 00:10:31 2021 +0300
+
+    + introduced WebAssembly branchful exceptions
+
+M	compiler/globtype.pas
+M	compiler/msg/errore.msg
+A	compiler/msg2inc
+M	compiler/msgidx.inc
+M	compiler/msgtxt.inc
+
+******************************************************************************
 commit ab01b0ebd72c646b66a6bb3fd55ed717b9852541
 Author: Jonas Maebe <jonas@freepascal.org>
 Date:   Sun Oct 3 21:35:55 2021 +0200
