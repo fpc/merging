@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 890b899842b741f54f5191ff369c8a97a89ac845
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sun Oct 3 18:33:00 2021 +0300
+
+    + support the <= and >= operators for smallsets on the Z80
+
+M	compiler/z80/nz80add.pas
+
+******************************************************************************
 commit b00c0e44a596bdf167ded7900b3ba71ea903591f
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Sun Oct 3 18:16:11 2021 +0300
