@@ -1,4 +1,30 @@
 ******************************************************************************
+commit 799cd957e625400427836e7309748bbba32e2d72
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sun Oct 3 04:11:51 2021 +0300
+
+    + added WASI .o files for the tests for linking with C
+
+M	tests/test/cg/obj/readme.txt
+A	tests/test/cg/obj/wasi/wasm32/cpptcl1.o
+A	tests/test/cg/obj/wasi/wasm32/cpptcl2.o
+A	tests/test/cg/obj/wasi/wasm32/ctest.o
+A	tests/test/cg/obj/wasi/wasm32/tcext3.o
+A	tests/test/cg/obj/wasi/wasm32/tcext4.o
+A	tests/test/cg/obj/wasi/wasm32/tcext5.o
+A	tests/test/cg/obj/wasi/wasm32/tcext6.o
+
+******************************************************************************
+commit be90ad1672cec33b15f8faa09715190f6279e75f
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sun Oct 3 03:29:54 2021 +0300
+
+    + enabled compilation of unit heaptrc for the WASI target
+
+M	rtl/wasi/Makefile
+M	rtl/wasi/Makefile.fpc
+
+******************************************************************************
 commit 5adec3ca98120bc2c4110ebe354dfc50d7095ebe
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Sun Oct 3 03:16:34 2021 +0300
