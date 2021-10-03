@@ -1,4 +1,22 @@
 ******************************************************************************
+commit 3989a01968ddee76110556f2cb2390da751b9694
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Mon Oct 4 00:34:18 2021 +0300
+
+    - removed msg2inc. Stupid git added it without my consent.
+
+D	compiler/msg2inc
+
+******************************************************************************
+commit 9a85ac204ce5e0996478c0c4ede0138ab5ecab15
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Mon Oct 4 00:28:31 2021 +0300
+
+    + fixed compilation of ppudump
+
+M	compiler/utils/ppuutils/ppudump.pp
+
+******************************************************************************
 commit 494dac5db57f60073f2d538f66b6570b9fd05beb
 Author: florian <florian@freepascal.org>
 Date:   Sun Oct 3 23:16:55 2021 +0200
