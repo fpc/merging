@@ -1,4 +1,13 @@
 ******************************************************************************
+commit b00c0e44a596bdf167ded7900b3ba71ea903591f
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sun Oct 3 18:16:11 2021 +0300
+
+    + support equality comparison of smallsets on the Z80
+
+M	compiler/z80/nz80add.pas
+
+******************************************************************************
 commit 3fb0fab410ac4c791227d74c1bbd8ceb45f653b8
 Author: Jonas Maebe <jonas@freepascal.org>
 Date:   Sun Oct 3 13:59:33 2021 +0200
