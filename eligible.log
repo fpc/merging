@@ -1,4 +1,65 @@
 ******************************************************************************
+commit 5be1bfeecad2af3cc4acad908fa649849a231bf7
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Tue Oct 5 01:11:31 2021 +0300
+
+    + added comment that states that raiseBr is only used in branchful exceptions mode
+
+M	compiler/wasm32/hlcgcpu.pas
+
+******************************************************************************
+commit d02921d66b14ea499ef783a834388be1322620ff
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Tue Oct 5 01:07:37 2021 +0300
+
+    + introduced raiseBr, similar to exitBr, but will point to the current
+      innermost exception handler, if there is such a handler in the current
+      procedure, otherwise it will be the same as exitBr.
+
+M	compiler/wasm32/hlcgcpu.pas
+
+******************************************************************************
+commit 6599f1d898003773f70c24898419f4bf6bef78ee
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Tue Oct 5 01:01:24 2021 +0300
+
+    - don't generate any WebAssembly native exception handling instructions, nor
+      relocations, when compiling in branchful exceptions mode. This produces a
+      currently not working, but accepted by wasmtime binary (otherwise, it
+      complains it doesn't support exceptions and refuses to try to run it).
+
+M	compiler/wasm32/nwasmflw.pas
+M	compiler/wasm32/nwasmutil.pas
+
+******************************************************************************
+commit 30b503abc4e628dc3c2299595ee76dba48d308fc
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Tue Oct 5 00:49:29 2021 +0300
+
+    * instead of using the 'throw' intrinsic, set a boolean flag, in the branchful
+      exceptions support code
+
+M	rtl/wasm32/except_branchful.inc
+
+******************************************************************************
+commit 5124ab2521defb4623b6866e4d5c36726ab74608
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Tue Oct 5 00:35:54 2021 +0300
+
+    * cloned the WebAssembly native exceptions code generation and rtl support into
+      the branchful exceptions (which will be modified later, but we're using this
+      as their starting point, because we can get a snapshot built, without compiler
+      internal errors)
+
+M	compiler/options.pas
+M	compiler/wasm32/cpupi.pas
+M	compiler/wasm32/nwasmflw.pas
+M	compiler/wasm32/nwasmutil.pas
+M	rtl/inc/compproc.inc
+M	rtl/inc/objpas.inc
+A	rtl/wasm32/except_branchful.inc
+
+******************************************************************************
 commit 7778d20003ab3b62779243cfde33bd0b129bb61f
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Mon Oct 4 21:08:24 2021 +0000
