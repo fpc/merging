@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 7778d20003ab3b62779243cfde33bd0b129bb61f
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Mon Oct 4 21:08:24 2021 +0000
+
+     Avoid range check error in TCpuAsmOptimizer.OptPostAnd method
+
+M	compiler/aarch64/aoptcpu.pas
+
+******************************************************************************
 commit 1e136b0cc7ff37f900adcb91b2783962cf9d7622
 Author: florian <florian@freepascal.org>
 Date:   Mon Oct 4 22:18:53 2021 +0200
