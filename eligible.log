@@ -1,4 +1,22 @@
 ******************************************************************************
+commit 1e136b0cc7ff37f900adcb91b2783962cf9d7622
+Author: florian <florian@freepascal.org>
+Date:   Mon Oct 4 22:18:53 2021 +0200
+
+      * bail out early in MatchInstruction
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
+commit 01a449c807e4ad9a4142977ee86b16d6461ad256
+Author: florian <florian@freepascal.org>
+Date:   Mon Oct 4 22:11:08 2021 +0200
+
+      + debug msg added
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
 commit c745ae4836a0f19a1733347f208d263d1a5829e5
 Author: Jonas Maebe <jonas@freepascal.org>
 Date:   Mon Oct 4 20:55:56 2021 +0200
