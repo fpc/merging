@@ -1,4 +1,19 @@
 ******************************************************************************
+commit c745ae4836a0f19a1733347f208d263d1a5829e5
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Mon Oct 4 20:55:56 2021 +0200
+
+    AArch64 popt: don't replace registers with X/WZR
+    
+    Most arithmetic/logica instructions don't support X/WZR as operand (since
+    you should use movk with the calculated constant in that case)
+    
+    Resolves #39372
+
+M	compiler/armgen/aoptarm.pas
+A	tests/webtbs/tw39372.pp
+
+******************************************************************************
 commit e9d318e7e2f772bf455a92461cd5c229e69858d8
 Author: Yuriy Sydorov <jura@cp-lab.com>
 Date:   Mon Oct 4 17:55:14 2021 +0300
