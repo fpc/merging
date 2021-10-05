@@ -1,4 +1,13 @@
 ******************************************************************************
+commit e19fcd2b8b826c69b9ca97ab19eb9d9b49a4cf16
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Tue Oct 5 20:49:32 2021 +0300
+
+    + implemented GetMsCount in the DOS unit for WASI
+
+M	rtl/wasi/dos.pp
+
+******************************************************************************
 commit 074ce9c50fa5d97afd1ebff5720ece287f767f6e
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Tue Oct 5 18:02:11 2021 +0300
