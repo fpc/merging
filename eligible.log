@@ -1,4 +1,44 @@
 ******************************************************************************
+commit 387c80cc57b691c887303cc224ee01dd46684a0d
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Tue Oct 5 08:02:39 2021 +0300
+
+    + default exception handling in WebAssembly native exceptions mode
+
+M	rtl/wasi/si_prc.pp
+M	rtl/wasm32/except_native.inc
+
+******************************************************************************
+commit fab4ca449bb6ba351500c5443a3e9c0567ba19eb
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Tue Oct 5 07:54:57 2021 +0300
+
+    * twasmexceptionstatehandler_nativeexceptions.handle_nested_exception and
+      twasmexceptionstatehandler_bfexceptions.handle_nested_exception should not be
+      called, so now they cause an internal error
+
+M	compiler/wasm32/cpupi.pas
+
+******************************************************************************
+commit 04a41fa5b08de0a837f11af30cfe9091c36a2830
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Tue Oct 5 07:43:47 2021 +0300
+
+    - removed duplicated assignment
+
+M	compiler/wasm32/nwasmflw.pas
+
+******************************************************************************
+commit 99ab6bd56d4d60aa3cf5ec2680514a143da4dd1b
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Tue Oct 5 07:41:42 2021 +0300
+
+    + proper exception object cleanup when using break, continue or exit in try
+      except blocks in WebAssembly native exceptions mode
+
+M	compiler/wasm32/nwasmflw.pas
+
+******************************************************************************
 commit ddbdc529b1e3d99244e2d0cedcb20195c0fb55e7
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Tue Oct 5 07:19:24 2021 +0300
