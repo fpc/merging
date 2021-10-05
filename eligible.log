@@ -1,4 +1,35 @@
 ******************************************************************************
+commit a5dcd1c44ddeac28ca8fda44f6d60e3b179266e4
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Tue Oct 5 03:14:58 2021 +0300
+
+    + initial implementation of try..except in branchful exceptions mode
+
+M	compiler/wasm32/nwasmflw.pas
+
+******************************************************************************
+commit 7ce19c1ad78a75d84765790f077f228b448129de
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Tue Oct 5 02:47:49 2021 +0300
+
+    + implemented try..finally in branchful exceptions mode
+
+M	compiler/wasm32/nwasmflw.pas
+
+******************************************************************************
+commit 7afb665c92e9e1787c518c1fbd6d205476b36d04
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Tue Oct 5 02:26:13 2021 +0300
+
+    + insert exception flag check and branch after each function call, when
+      compiling in WebAssembly branchful exceptions mode
+
+M	compiler/wasm32/hlcgcpu.pas
+M	compiler/wasm32/nwasmcal.pas
+M	rtl/inc/compproc.inc
+M	rtl/wasm32/except_branchful.inc
+
+******************************************************************************
 commit 5be1bfeecad2af3cc4acad908fa649849a231bf7
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Tue Oct 5 01:11:31 2021 +0300
