@@ -1,4 +1,43 @@
 ******************************************************************************
+commit c0cec218d64e082c373a6f973d4cf2f5798f84fa
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Tue Oct 5 04:06:56 2021 +0300
+
+    + added unhandled exception handling code for the branchful exceptions mode
+
+M	rtl/wasi/si_prc.pp
+M	rtl/wasm32/except_branchful.inc
+
+******************************************************************************
+commit a01a6021409f83d80ec80d95e73a66912d7d1211
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Tue Oct 5 03:48:47 2021 +0300
+
+    - removed commented out code from the WASI startup code
+
+M	rtl/wasi/si_prc.pp
+
+******************************************************************************
+commit f7b1ec24352fc4eb77adb23ec70fa47388734c75
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Tue Oct 5 03:38:33 2021 +0300
+
+    + call g_checkexceptions after calls to fpc_reraise and fpc_raise_nested in
+      branchful exceptions mode
+
+M	compiler/wasm32/nwasmflw.pas
+
+******************************************************************************
+commit 464b3ebbed39dd87480513372caadb5214fb1e3e
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Tue Oct 5 03:25:03 2021 +0300
+
+    + implemented the 'on' node code generation (try except 'on' ...) for the
+      branchful exceptions mode
+
+M	compiler/wasm32/nwasmflw.pas
+
+******************************************************************************
 commit a5dcd1c44ddeac28ca8fda44f6d60e3b179266e4
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Tue Oct 5 03:14:58 2021 +0300
