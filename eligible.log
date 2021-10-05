@@ -1,4 +1,34 @@
 ******************************************************************************
+commit ddbdc529b1e3d99244e2d0cedcb20195c0fb55e7
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Tue Oct 5 07:19:24 2021 +0300
+
+    + proper exception cleanup for try except blocks that use exit, break or
+      continue in WebAssembly branchful exceptions mode
+
+M	compiler/wasm32/nwasmflw.pas
+
+******************************************************************************
+commit 023f08d54bef139841faaf7c954732498e139277
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Tue Oct 5 06:45:31 2021 +0300
+
+    + exception cleanup when break, continue or exit is used inside a
+      try .. except 'on' block, in WebAssembly native exceptions mode
+
+M	compiler/wasm32/nwasmflw.pas
+
+******************************************************************************
+commit cf7ad98dbfcaf699983d813452a0a5dabe68818c
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Tue Oct 5 06:25:32 2021 +0300
+
+    + support exception object cleanup, when 'exit', 'break' or 'continue' is used
+      in the except 'on' statements, in branchful WebAssembly exceptions mode
+
+M	compiler/wasm32/nwasmflw.pas
+
+******************************************************************************
 commit 7110d1e48e8fe40a95738cb993cb06fdf535afaa
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Tue Oct 5 05:29:10 2021 +0300
