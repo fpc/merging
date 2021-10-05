@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 91cf1774dd59376434dde4581f8eaad74696aa0a
+Author: florian <florian@freepascal.org>
+Date:   Tue Oct 5 22:20:22 2021 +0200
+
+      * replace MT random generator by Xoshiro128**, resolves #38237
+
+M	rtl/inc/system.inc
+M	tests/webtbs/tw14315b.pp
+
+******************************************************************************
 commit e19fcd2b8b826c69b9ca97ab19eb9d9b49a4cf16
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Tue Oct 5 20:49:32 2021 +0300
