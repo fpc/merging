@@ -298,19 +298,6 @@ M	compiler/armgen/aoptarm.pas
 A	tests/webtbs/tw39372.pp
 
 ******************************************************************************
-commit e9d318e7e2f772bf455a92461cd5c229e69858d8
-Author: Yuriy Sydorov <jura@cp-lab.com>
-Date:   Mon Oct 4 17:55:14 2021 +0300
-
-    * x86: Fixed update of used registers in the CMOV optimizations.
-      This fixes a bug reported by Martin Frb in fpc-devel which is triggered
-      by the recently provided test code in FPC 3.2.2 x86_64, but is hidden
-      in trunk by other pipeline peephole optimizations.
-
-M	compiler/x86/aoptx86.pas
-A	tests/tbs/tb0686.pp
-
-******************************************************************************
 commit 3989a01968ddee76110556f2cb2390da751b9694
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Mon Oct 4 00:34:18 2021 +0300
