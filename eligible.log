@@ -1,4 +1,31 @@
 ******************************************************************************
+commit 074ce9c50fa5d97afd1ebff5720ece287f767f6e
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Tue Oct 5 18:02:11 2021 +0300
+
+    + added call to g_maybe_checkforexceptions after generating call to fpc_iocheck
+
+M	compiler/ncgcal.pas
+
+******************************************************************************
+commit 3c58f26e83b91e2d79e894b03403d469073c7113
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Tue Oct 5 17:54:35 2021 +0300
+
+    * thlcgwasm.g_checkexceptions renamed .g_maybe_checkforexceptions, added also as
+      an empty virtual method in thlcgobj and modified the WebAssembly
+      implementation, so that it can be called from any exceptions mode (so it
+      emits no code in exception modes that don't require it, instead of generating
+      an internal error). This will allow .g_maybe_checkforexceptions to be called
+      from the generic parts of the code generator, after calls to systemprocs that
+      could raise an exceptions.
+
+M	compiler/hlcgobj.pas
+M	compiler/wasm32/hlcgcpu.pas
+M	compiler/wasm32/nwasmcal.pas
+M	compiler/wasm32/nwasmflw.pas
+
+******************************************************************************
 commit 387c80cc57b691c887303cc224ee01dd46684a0d
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Tue Oct 5 08:02:39 2021 +0300
