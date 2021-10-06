@@ -1,4 +1,24 @@
 ******************************************************************************
+commit ec40db3da7ab1d8143b4276518416aa2816d792e
+Author: florian <florian@freepascal.org>
+Date:   Wed Oct 6 21:57:24 2021 +0200
+
+      + (V)Cvtss2CvtSd(V)Cvtsd2ss2Nop optimization, resolves #39360
+
+M	compiler/i386/aoptcpu.pas
+M	compiler/x86/aoptx86.pas
+M	compiler/x86_64/aoptcpu.pas
+
+******************************************************************************
+commit d5867793f6d16bde39e0e209a11741ba8d8b0388
+Author: florian <florian@freepascal.org>
+Date:   Wed Oct 6 21:23:25 2021 +0200
+
+      * partially applied patch by J. Gareth "Kit" Moreton to inline parts of cclasses, resolves #39344
+
+M	compiler/cclasses.pas
+
+******************************************************************************
 commit e77bf0f3bd38071b6b635750896b1e27e6d09c40
 Author: Bi0T1N <9175580-Bi0T1N@users.noreply.gitlab.com>
 Date:   Sun Sep 26 14:35:30 2021 +0200
