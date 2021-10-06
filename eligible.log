@@ -1,4 +1,27 @@
 ******************************************************************************
+commit e77bf0f3bd38071b6b635750896b1e27e6d09c40
+Author: Bi0T1N <9175580-Bi0T1N@users.noreply.gitlab.com>
+Date:   Sun Sep 26 14:35:30 2021 +0200
+
+    Add two more templates to show the possibilities
+
+A	.gitlab/issue_templates/Feature Request.md
+A	.gitlab/merge_request_templates/Packages.md
+
+******************************************************************************
+commit 25af28de1ea5118b84464baeaaeedf1518ae0218
+Author: Bi0T1N <9175580-Bi0T1N@users.noreply.gitlab.com>
+Date:   Sat Sep 25 23:33:13 2021 +0200
+
+    Add initial Description templates
+    
+    this adds a description template for issues as well as for
+    merge requests that target the compiler
+
+A	.gitlab/issue_templates/Bug.md
+A	.gitlab/merge_request_templates/Compiler.md
+
+******************************************************************************
 commit d45915b6ba0f99a70c51243377471bd834a5f541
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Wed Oct 6 07:44:04 2021 +0300
