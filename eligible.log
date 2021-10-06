@@ -1,4 +1,23 @@
 ******************************************************************************
+commit e078408dcf76a282a7336afeb5476c75779817cd
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Wed Oct 6 06:12:58 2021 +0300
+
+    + implemented SysUtils.GetEnvironmentVariable, GetEnvironmentVariableCount and
+      GetEnvironmentString for WASI
+
+M	rtl/wasi/sysutils.pp
+
+******************************************************************************
+commit 7533496505e52d2df2fa7bb3291c23adb91046c7
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Wed Oct 6 05:39:11 2021 +0300
+
+    + implemented SysUtils.Sleep for WASI
+
+M	rtl/wasi/sysutils.pp
+
+******************************************************************************
 commit d134fc1ddfb6158945bc1751e0d2df1657f89a64
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Wed Oct 6 04:46:44 2021 +0300
