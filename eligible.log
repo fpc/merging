@@ -1,4 +1,14 @@
 ******************************************************************************
+commit d45915b6ba0f99a70c51243377471bd834a5f541
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Wed Oct 6 07:44:04 2021 +0300
+
+    * preopened dirs structure in the system unit modified to be a pointer to an
+      array of records
+
+M	rtl/wasi/system.pp
+
+******************************************************************************
 commit e078408dcf76a282a7336afeb5476c75779817cd
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Wed Oct 6 06:12:58 2021 +0300
