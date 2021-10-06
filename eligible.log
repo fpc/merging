@@ -1,4 +1,13 @@
 ******************************************************************************
+commit d134fc1ddfb6158945bc1751e0d2df1657f89a64
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Wed Oct 6 04:46:44 2021 +0300
+
+    + implemented SysUtils.GetTickCount64 for WASI
+
+M	rtl/wasi/sysutils.pp
+
+******************************************************************************
 commit 91cf1774dd59376434dde4581f8eaad74696aa0a
 Author: florian <florian@freepascal.org>
 Date:   Tue Oct 5 22:20:22 2021 +0200
