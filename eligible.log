@@ -1,4 +1,15 @@
 ******************************************************************************
+commit 4752230c8f5f5f51774b90e52ceec3a142b3f62d
+Author: florian <florian@freepascal.org>
+Date:   Thu Oct 7 23:09:35 2021 +0200
+
+      * use source register as second register in VCVTSD2SS and VCVTSS2SD, this should break
+        dependency chains better and resolves partially #39360
+
+M	compiler/x86/aoptx86.pas
+M	compiler/x86/cgx86.pas
+
+******************************************************************************
 commit ec40db3da7ab1d8143b4276518416aa2816d792e
 Author: florian <florian@freepascal.org>
 Date:   Wed Oct 6 21:57:24 2021 +0200
