@@ -1,4 +1,13 @@
 ******************************************************************************
+commit b93998c17c7b2eb81e13fbb93bc987f0258a645c
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Fri Oct 8 08:41:14 2021 +0000
+
+    Disable utils for wasi target, because paszlib cannot be compiled due to use of goto labels
+
+M	utils/fpmake.pp
+
+******************************************************************************
 commit 4752230c8f5f5f51774b90e52ceec3a142b3f62d
 Author: florian <florian@freepascal.org>
 Date:   Thu Oct 7 23:09:35 2021 +0200
