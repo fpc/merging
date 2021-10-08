@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 7388735b11726d1263de7058d7492d9f87f9bcb4
+Author: Yuriy Sydorov <jura@cp-lab.com>
+Date:   Fri Oct 8 18:04:03 2021 +0300
+
+    * Strength reduction optimization: - Use a temp for complex loop start values to prevent double evaluation.
+      - For slow CPUs perform the optimization for all sizes of array elements.
+
+M	compiler/optloop.pas
+
+******************************************************************************
 commit 6bf4c7a68d2491971350170e80414a07e11ab4f5
 Author: Yuriy Sydorov <jura@cp-lab.com>
 Date:   Fri Oct 8 16:51:42 2021 +0300
