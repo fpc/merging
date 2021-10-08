@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 6bf4c7a68d2491971350170e80414a07e11ab4f5
+Author: Yuriy Sydorov <jura@cp-lab.com>
+Date:   Fri Oct 8 16:51:42 2021 +0300
+
+    * Optimized evaluation of the condition.
+
+M	compiler/optloop.pas
+
+******************************************************************************
 commit b93998c17c7b2eb81e13fbb93bc987f0258a645c
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Fri Oct 8 08:41:14 2021 +0000
