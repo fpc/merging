@@ -1,4 +1,28 @@
 ******************************************************************************
+commit b4bf371b34b19d4505b8a330a1b9250047a4b8ca
+Author: florian <florian@freepascal.org>
+Date:   Fri Oct 8 22:58:41 2021 +0200
+
+      * generate VMOVAPS for (V)Cvtss2CvtSd(V)Cvtsd2ss optimization, resolves #39360
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
+commit 344da9597f1dc072a634820a9431146d0b7c60f7
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Fri Oct 8 23:50:28 2021 +0300
+
+    + added the current WebAssembly exceptions mode to the .ppu module flags and
+      perform a check to ensure all units are compiled in the same exceptions mode
+      as the main program
+
+M	compiler/fppu.pas
+M	compiler/globtype.pas
+M	compiler/msg/errore.msg
+M	compiler/msgidx.inc
+M	compiler/msgtxt.inc
+
+******************************************************************************
 commit 7388735b11726d1263de7058d7492d9f87f9bcb4
 Author: Yuriy Sydorov <jura@cp-lab.com>
 Date:   Fri Oct 8 18:04:03 2021 +0300
