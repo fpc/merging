@@ -1,4 +1,37 @@
 ******************************************************************************
+commit 6c7e6191f64ac8cea36e963028c190263d8a2ea9
+Author: florian <florian@freepascal.org>
+Date:   Sat Oct 9 15:44:46 2021 +0200
+
+      + support of SHA extension in the internal assembler
+
+M	compiler/i386/i386att.inc
+M	compiler/i386/i386atts.inc
+M	compiler/i386/i386int.inc
+M	compiler/i386/i386nop.inc
+M	compiler/i386/i386op.inc
+M	compiler/i386/i386prop.inc
+M	compiler/i386/i386tab.inc
+M	compiler/i8086/i8086att.inc
+M	compiler/i8086/i8086atts.inc
+M	compiler/i8086/i8086int.inc
+M	compiler/i8086/i8086nop.inc
+M	compiler/i8086/i8086op.inc
+M	compiler/i8086/i8086prop.inc
+M	compiler/i8086/i8086tab.inc
+M	compiler/x86/aasmcpu.pas
+M	compiler/x86/x86ins.dat
+M	compiler/x86_64/x8664ats.inc
+M	compiler/x86_64/x8664att.inc
+M	compiler/x86_64/x8664int.inc
+M	compiler/x86_64/x8664nop.inc
+M	compiler/x86_64/x8664op.inc
+M	compiler/x86_64/x8664pro.inc
+M	compiler/x86_64/x8664tab.inc
+M	tests/utils/avx/asmtestgenerator.pas
+M	tests/utils/avx/avxopcodes.pas
+
+******************************************************************************
 commit 8f68988aefeec865263dfecb29140de582470949
 Author: florian <florian@freepascal.org>
 Date:   Sat Oct 9 14:24:14 2021 +0200
