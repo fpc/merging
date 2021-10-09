@@ -1,4 +1,15 @@
 ******************************************************************************
+commit bff09e8e9e2f6e09d351387fd22b1849c5975ce8
+Author: florian <florian@freepascal.org>
+Date:   Sat Oct 9 16:23:11 2021 +0200
+
+      + CPU units: check for SHA support
+
+M	rtl/i386/cpu.pp
+M	rtl/x86_64/cpu.pp
+M	tests/test/units/cpu/tcpu1.pp
+
+******************************************************************************
 commit 6c7e6191f64ac8cea36e963028c190263d8a2ea9
 Author: florian <florian@freepascal.org>
 Date:   Sat Oct 9 15:44:46 2021 +0200
