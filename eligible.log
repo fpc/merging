@@ -22940,21 +22940,6 @@ M	rtl/linux/Makefile
 M	rtl/solaris/Makefile
 
 ******************************************************************************
-commit 24e188f0d23be859fbc833350e942442a22f20ac
-Author: Jonas Maebe <jonas@freepascal.org>
-Date:   Tue Nov 3 21:34:26 2020 +0000
-
-      * add missing unixutils -> baseunix dependency
-    
-    git-svn-id: trunk@47302 -
-
-M	rtl/aix/Makefile.fpc
-M	rtl/darwin/Makefile.fpc
-M	rtl/freebsd/Makefile.fpc
-M	rtl/linux/Makefile.fpc
-M	rtl/solaris/Makefile.fpc
-
-******************************************************************************
 commit 312f1436b1fbf5445bd97935be451272ff4fc80f
 Author: Jonas Maebe <jonas@freepascal.org>
 Date:   Tue Nov 3 21:34:22 2020 +0000
@@ -58030,6 +58015,7 @@ Date:   Thu Feb 28 20:45:34 2019 +0000
     git-svn-id: trunk@41526 -
 
 M	compiler/hlcg2ll.pas
+
 ******************************************************************************
 commit 075e3da334bfc9788c2de0fde5eea479afe9616f
 Author: florian <florian@freepascal.org>
@@ -58040,7 +58026,6 @@ Date:   Wed Feb 27 22:13:54 2019 +0000
     git-svn-id: trunk@41521 -
 
 M	compiler/systems/i_linux.pas
-
 ******************************************************************************
 commit c7834af3545959d7c104078eefb568243cc71876
 Author: Jonas Maebe <jonas@freepascal.org>
