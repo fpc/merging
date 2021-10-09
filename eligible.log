@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 8f68988aefeec865263dfecb29140de582470949
+Author: florian <florian@freepascal.org>
+Date:   Sat Oct 9 14:24:14 2021 +0200
+
+      * another location to use source register as second register in VCVTSD2SS and VCVTSS2SD
+        to break dependency chains, hopefully final fix for #39360
+
+M	compiler/x86/cgx86.pas
+
+******************************************************************************
 commit b4bf371b34b19d4505b8a330a1b9250047a4b8ca
 Author: florian <florian@freepascal.org>
 Date:   Fri Oct 8 22:58:41 2021 +0200
