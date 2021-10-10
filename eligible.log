@@ -1,4 +1,13 @@
 ******************************************************************************
+commit d502bccc1b03094d5260f1494baf49387f674273
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Sun Oct 10 06:31:57 2021 +0100
+
+    A pair of inlines
+
+M	compiler/x86/aasmcpu.pas
+
+******************************************************************************
 commit a41e991a130a43f368a6cd1054fca2d38e417620
 Author: florian <florian@freepascal.org>
 Date:   Sun Oct 10 11:15:36 2021 +0200
