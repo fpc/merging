@@ -1,4 +1,23 @@
 ******************************************************************************
+commit a41e991a130a43f368a6cd1054fca2d38e417620
+Author: florian <florian@freepascal.org>
+Date:   Sun Oct 10 11:15:36 2021 +0200
+
+      * fix also IDE building after fpccrc to fpchash renaming
+
+M	packages/ide/fpini.pas
+
+******************************************************************************
+commit cc3cbbb7b96d75e816f38a83abcbb08b9fd8843d
+Author: florian <florian@freepascal.org>
+Date:   Sun Oct 10 10:21:21 2021 +0200
+
+      * fix x86 compilation after my last commit
+
+M	compiler/ogomf.pas
+M	compiler/x86/agx86nsm.pas
+
+******************************************************************************
 commit a4672fbd1c097752430017fbe84a26d702e43e83
 Author: florian <florian@freepascal.org>
 Date:   Sun Oct 10 10:09:22 2021 +0200
