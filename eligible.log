@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 2c180cf101b6a49c1f8bdf462cd7b4e729600ad8
+Author: florian <florian@freepascal.org>
+Date:   Sun Oct 10 15:34:59 2021 +0200
+
+      * by default, DEBUG_AOPTCPU is only enabled if the compiler is compiled with -dEXTDEBUG
+
+M	compiler/i386/aoptcpu.pas
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
 commit d502bccc1b03094d5260f1494baf49387f674273
 Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
 Date:   Sun Oct 10 06:31:57 2021 +0100
