@@ -1,4 +1,18 @@
 ******************************************************************************
+commit bae50d80d246622a958d57c8dc70c3eff91b1b53
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sun Oct 10 09:11:19 2021 +0300
+
+    * preopen fd names and current dir changed to use ansistring, as well as the
+      parameters and result of ConvertToFdRelativePath. This will allow easier
+      implementation of ChDir.
+
+M	rtl/wasi/dos.pp
+M	rtl/wasi/sysdir.inc
+M	rtl/wasi/sysfile.inc
+M	rtl/wasi/system.pp
+
+******************************************************************************
 commit bff09e8e9e2f6e09d351387fd22b1849c5975ce8
 Author: florian <florian@freepascal.org>
 Date:   Sat Oct 9 16:23:11 2021 +0200
