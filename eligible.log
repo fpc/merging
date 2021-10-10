@@ -1,4 +1,24 @@
 ******************************************************************************
+commit a4672fbd1c097752430017fbe84a26d702e43e83
+Author: florian <florian@freepascal.org>
+Date:   Sun Oct 10 10:09:22 2021 +0200
+
+      o based on a patch by Rika, resolves #39401:
+        * use Base64 (62=_, 63=$) encoded FNV hash (instead of CR-32) to shorted identifiers
+        * renamed fpccrc to fpchash
+        + test
+
+M	compiler/aasmbase.pas
+R055	compiler/fpccrc.pas	compiler/fpchash.pas
+M	compiler/link.pas
+M	compiler/ncgvmt.pas
+M	compiler/pcp.pas
+M	compiler/pgenutil.pas
+M	compiler/ppu.pas
+M	compiler/symdef.pas
+A	tests/webtbs/tw39401.pp
+
+******************************************************************************
 commit bae50d80d246622a958d57c8dc70c3eff91b1b53
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Sun Oct 10 09:11:19 2021 +0300
