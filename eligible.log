@@ -1,4 +1,19 @@
 ******************************************************************************
+commit 07413be8b569f000a158c290fa856365557c3dd3
+Author: florian <florian@freepascal.org>
+Date:   Sun Oct 10 22:54:08 2021 +0200
+
+      + being able to define change information for xmm0
+      * corrected change information for SHA256RNDS2
+
+M	compiler/i386/i386prop.inc
+M	compiler/i8086/i8086prop.inc
+M	compiler/x86/aasmcpu.pas
+M	compiler/x86/aoptx86.pas
+M	compiler/x86/x86ins.dat
+M	compiler/x86_64/x8664pro.inc
+
+******************************************************************************
 commit 64db584eefebcc5e5faeb287a9d10977adb4a886
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Sun Oct 10 12:33:36 2021 +0300
