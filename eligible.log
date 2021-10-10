@@ -1,4 +1,13 @@
 ******************************************************************************
+commit a925522ead1e0ccdbd0c77c57e2ccc147b61dc67
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Sun Oct 10 09:15:43 2021 +0100
+
+    xor optimisation now doesn't check to see if the REX prefix will actually be removed, as it's beneficial for speed reasons to only use the 32-bit register when zeroing the whole thing
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
 commit 2c180cf101b6a49c1f8bdf462cd7b4e729600ad8
 Author: florian <florian@freepascal.org>
 Date:   Sun Oct 10 15:34:59 2021 +0200
