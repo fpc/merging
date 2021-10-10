@@ -1,4 +1,47 @@
 ******************************************************************************
+commit 64db584eefebcc5e5faeb287a9d10977adb4a886
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sun Oct 10 12:33:36 2021 +0300
+
+    * moved the preopened dir and current dir handling types and variables to the
+      implementation part of the system unit, so their implementation is not exposed
+      and can be changed in the future (e.g. for thread safety when WebAssembly
+      gets multithreading support, etc.)
+
+M	rtl/wasi/system.pp
+
+******************************************************************************
+commit a62c7555d78f049c711cfd594455f73fa04b6620
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sun Oct 10 12:28:56 2021 +0300
+
+    - removed the DebugWriteXXX functions from the WASI system unit, since console
+      output is now quite stable and can be used for debugging
+
+M	rtl/wasi/system.pp
+M	rtl/wasm32/setjump.inc
+
+******************************************************************************
+commit 0d6b5338d0541b6a844d1d832b09b7709fe2948b
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sun Oct 10 12:17:35 2021 +0300
+
+    + implemented ChDir() for WASI
+
+M	rtl/wasi/sysdir.inc
+M	rtl/wasi/system.pp
+
+******************************************************************************
+commit 85ebd2c94c5fdad806ea96a1cdc3ff3400692dab
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sun Oct 10 09:48:54 2021 +0300
+
+    * fixed handling of relative paths that are not directly relative to a preopened
+      dir in ConvertToFdRelativePath. This is a preparation for ChDir support.
+
+M	rtl/wasi/system.pp
+
+******************************************************************************
 commit a925522ead1e0ccdbd0c77c57e2ccc147b61dc67
 Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
 Date:   Sun Oct 10 09:15:43 2021 +0100
