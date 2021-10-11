@@ -1,4 +1,52 @@
 ******************************************************************************
+commit 62846f54adbc08323ce660fbba6b33e1e0275d07
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Mon Oct 11 10:11:07 2021 +0300
+
+    + implemented SysUtils.FileOpen for WASI
+
+M	rtl/wasi/sysutils.pp
+
+******************************************************************************
+commit aa4070ca8a2c27b818269b42c7470e5b7b03ddad
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Mon Oct 11 09:52:09 2021 +0300
+
+    + implemented SysUtils.FileClose for WASI
+
+M	rtl/wasi/sysutils.pp
+
+******************************************************************************
+commit 27df4e98d2f1bf8e64b6037edd8d4643bd764809
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Mon Oct 11 09:25:01 2021 +0300
+
+    * use rawbytestring instead of ansistring for the WASI file name handling
+
+M	rtl/wasi/dos.pp
+M	rtl/wasi/sysdir.inc
+M	rtl/wasi/sysfile.inc
+M	rtl/wasi/system.pp
+
+******************************************************************************
+commit a0e7882692432d6487acf60ae54218335f709233
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Mon Oct 11 09:04:32 2021 +0300
+
+    * use AllowDirectorySeparators, instead of checking for '/' and '\'
+
+M	rtl/wasi/system.pp
+
+******************************************************************************
+commit 60d350f06788a6da9c2054f2dc2083066d9b10b7
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Mon Oct 11 08:56:16 2021 +0300
+
+    * another instance of ['/','\'] replaced with AllowDirectorySeparators
+
+M	rtl/wasi/sysdir.inc
+
+******************************************************************************
 commit d7755a56f6fe705c8edfb955e0f071ac55ea5865
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Mon Oct 11 08:51:39 2021 +0300
