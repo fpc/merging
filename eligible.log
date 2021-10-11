@@ -1,4 +1,22 @@
 ******************************************************************************
+commit 94d8c22c6ac229faf084188fe25bc04966a47d7a
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Mon Oct 11 15:51:13 2021 +0300
+
+    + implemented SysUtils.FileSetDate for WASI
+
+M	rtl/wasi/sysutils.pp
+
+******************************************************************************
+commit 38075ac30c61c95b9371b07312eede596bf0bd22
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Mon Oct 11 15:26:55 2021 +0300
+
+    + implemented SysUtils.FileAge for WASI
+
+M	rtl/wasi/sysutils.pp
+
+******************************************************************************
 commit 8f95c14827ec62cfe7435e485825dff98b72a8f4
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Mon Oct 11 15:08:48 2021 +0300
