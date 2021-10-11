@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 068f781c7a21335ae04ed8e63a5c18f1a841280e
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Mon Oct 11 17:51:13 2021 +0300
+
+    + also implemented FileSetDate(FileName) for WASI, via the __wasi_path_filestat_set_times API call
+
+M	rtl/wasi/sysutils.pp
+
+******************************************************************************
 commit 94d8c22c6ac229faf084188fe25bc04966a47d7a
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Mon Oct 11 15:51:13 2021 +0300
