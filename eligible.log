@@ -1,4 +1,37 @@
 ******************************************************************************
+commit d7755a56f6fe705c8edfb955e0f071ac55ea5865
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Mon Oct 11 08:51:39 2021 +0300
+
+    * replaced '/' with DirectorySeparator in the WASI directory parsing code
+
+M	rtl/wasi/sysdir.inc
+M	rtl/wasi/system.pp
+
+******************************************************************************
+commit 13c344a3a078430d212f2f523822c5810157a3d8
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Mon Oct 11 08:45:42 2021 +0300
+
+    * replaced ['/','\'] with AllowDirectorySeparators in the WASI directory
+      parsing code
+
+M	rtl/wasi/dos.pp
+M	rtl/wasi/sysdir.inc
+M	rtl/wasi/system.pp
+
+******************************************************************************
+commit 25ac1380921c96b933673c8ec9f3e10da66f47d5
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Mon Oct 11 08:38:33 2021 +0300
+
+    * keep the drive string separate in the preopen and the current dir records on
+      the WASI platform
+
+M	rtl/wasi/sysdir.inc
+M	rtl/wasi/system.pp
+
+******************************************************************************
 commit 07413be8b569f000a158c290fa856365557c3dd3
 Author: florian <florian@freepascal.org>
 Date:   Sun Oct 10 22:54:08 2021 +0200
