@@ -1,4 +1,23 @@
 ******************************************************************************
+commit 2a93340bcc22c2f6c45c22569b10a6d81ddadc56
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Mon Oct 11 11:27:57 2021 +0300
+
+    + implemented SysUtils.DeleteFile for WASI
+
+M	rtl/wasi/sysutils.pp
+
+******************************************************************************
+commit c8d5bd77a31e088d4f5345a8294a27a75b3bf6c7
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Mon Oct 11 11:21:33 2021 +0300
+
+    - don't call ToSingleByteFileSystemEncodedFileName in SysUtils.FileOpen and
+      .FileCreate, because ConvertToFdRelativePath already calls it
+
+M	rtl/wasi/sysutils.pp
+
+******************************************************************************
 commit 05c6937fd9dd592eb643bc94d1e16c1f95dc6e82
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Mon Oct 11 11:14:05 2021 +0300
