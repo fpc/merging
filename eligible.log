@@ -1,4 +1,67 @@
 ******************************************************************************
+commit 05c6937fd9dd592eb643bc94d1e16c1f95dc6e82
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Mon Oct 11 11:14:05 2021 +0300
+
+    + implemented SysUtils.RenameFile for WASI
+
+M	rtl/wasi/sysutils.pp
+
+******************************************************************************
+commit 4c89eaa6cf12074ffed3b01cdcf30a6aa507aafd
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Mon Oct 11 10:50:44 2021 +0300
+
+    + implemented SysUtils.FileSeek for WASI
+
+M	rtl/wasi/sysutils.pp
+
+******************************************************************************
+commit 14f361e13f82eceabe67317ba5e243d404419233
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Mon Oct 11 10:37:11 2021 +0300
+
+    + implemented SysUtils.FileWrite for WASI
+
+M	rtl/wasi/sysutils.pp
+
+******************************************************************************
+commit 09e61201d221bf098a42d5f994592f7df51a203f
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Mon Oct 11 10:33:54 2021 +0300
+
+    * fixed WASI bug in do_read, where the result of the __wasi_fd_read syscall function was ignored
+
+M	rtl/wasi/sysfile.inc
+
+******************************************************************************
+commit 977b2f2a4bf7bda09554b034f2112d761d680517
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Mon Oct 11 10:32:50 2021 +0300
+
+    + implemented SysUtils.FileRead for WASI
+
+M	rtl/wasi/sysutils.pp
+
+******************************************************************************
+commit 305393a9c11b8768a2aaa89ca8f1ff0e852ed94b
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Mon Oct 11 10:26:06 2021 +0300
+
+    - removed the zero constants from the implementation of SysUtils.FileOpen for WASI
+
+M	rtl/wasi/sysutils.pp
+
+******************************************************************************
+commit 0bbc5a75280fa0ad0ee39e046dedd9d6d97ab90e
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Mon Oct 11 10:24:36 2021 +0300
+
+    + implemented SysUtils.FileCreate for WASI
+
+M	rtl/wasi/sysutils.pp
+
+******************************************************************************
 commit 62846f54adbc08323ce660fbba6b33e1e0275d07
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Mon Oct 11 10:11:07 2021 +0300
