@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 8f95c14827ec62cfe7435e485825dff98b72a8f4
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Mon Oct 11 15:08:48 2021 +0300
+
+    + implemented SysUtils.FileGetDate for WASI
+
+M	rtl/objpas/sysutils/dati.inc
+M	rtl/wasi/sysutils.pp
+
+******************************************************************************
 commit 2a93340bcc22c2f6c45c22569b10a6d81ddadc56
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Mon Oct 11 11:27:57 2021 +0300
