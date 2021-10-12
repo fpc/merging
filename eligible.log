@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 099a92733113b683be425b3400f744394ae2897d
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Tue Oct 12 11:27:27 2021 +0300
+
+    * fix for the WASI datetime to epoch conversion
+
+M	rtl/wasi/dos.pp
+M	rtl/wasi/sysutils.pp
+
+******************************************************************************
 commit a55980bfb85a47c711b31f6ca6ccf3ad74c66d94
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Tue Oct 12 11:06:16 2021 +0300
