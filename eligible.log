@@ -1,4 +1,23 @@
 ******************************************************************************
+commit a55980bfb85a47c711b31f6ca6ccf3ad74c66d94
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Tue Oct 12 11:06:16 2021 +0300
+
+    + implemented dos.SetFTime for WASI
+
+M	rtl/wasi/dos.pp
+
+******************************************************************************
+commit c4d7773c0ed87047041bbf32d8773b70b75709aa
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Tue Oct 12 10:33:28 2021 +0300
+
+    + added platform-specific helper function dos.DTToWasiDate, similar to
+      DTToUnixDate on Unix
+
+M	rtl/wasi/dos.pp
+
+******************************************************************************
 commit ca242e9ad0e3ba047fcca8cc95fb8e41599d2d0b
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Tue Oct 12 09:14:14 2021 +0300
