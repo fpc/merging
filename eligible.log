@@ -1,4 +1,55 @@
 ******************************************************************************
+commit 1e5ecccdc663ca646632cbd46a1fe5905cba99ab
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Tue Oct 12 03:50:23 2021 +0300
+
+    + implemented SysUtils.DirectoryExists for WASI
+
+M	rtl/wasi/sysutils.pp
+
+******************************************************************************
+commit aafb471bc880fc20a9b73cf0d60f109163793794
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Tue Oct 12 03:27:08 2021 +0300
+
+    * don't set InOutRes in ConvertToFdRelativePath, but return it instead. This
+      fixes issues in places where this function is used in a way that should not
+      set IOResult.
+
+M	rtl/wasi/dos.pp
+M	rtl/wasi/sysdir.inc
+M	rtl/wasi/sysfile.inc
+M	rtl/wasi/system.pp
+M	rtl/wasi/sysutils.pp
+
+******************************************************************************
+commit 4dc0c37678ca9102dc0de687cf27963124bf9bdf
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Tue Oct 12 03:08:18 2021 +0300
+
+    + implemented SysUtils.FileExists for WASI
+
+M	rtl/wasi/sysutils.pp
+
+******************************************************************************
+commit fe903f2ae413631591528c2ea9b33fcc05eac4e3
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Tue Oct 12 01:42:20 2021 +0300
+
+    * fixed range check error in HasDriveLetter when path is 1 character long
+
+M	rtl/wasi/system.pp
+
+******************************************************************************
+commit 00d5bb5bbc52baad3f2e268c2d51ceba4b266b04
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Tue Oct 12 01:41:14 2021 +0300
+
+    * fixed off-by-one error when initializing current_drive in the WASI system unit
+
+M	rtl/wasi/system.pp
+
+******************************************************************************
 commit ca9384fd6c265aa76a9ef59229b3746153e6114a
 Author: florian <florian@freepascal.org>
 Date:   Mon Oct 11 18:43:59 2021 +0200
