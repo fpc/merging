@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 00d4a6889dd2f79981ebaef3f839be5354d2933c
+Author: florian <florian@freepascal.org>
+Date:   Tue Oct 12 22:59:17 2021 +0200
+
+      * add no internal flag when folding constants in taddnode.simplify, resolves #39308
+
+M	compiler/nadd.pas
+A	tests/webtbf/tw39308.pp
+
+******************************************************************************
 commit 099a92733113b683be425b3400f744394ae2897d
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Tue Oct 12 11:27:27 2021 +0300
