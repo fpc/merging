@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 4e605fb7643902e82de03ef4b43aaa166c30a42f
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Tue Oct 12 07:08:32 2021 +0300
+
+    + dummy implementation of dos.SetFAttr for WASI, based on the Unix version
+
+M	rtl/wasi/dos.pp
+
+******************************************************************************
 commit 00aa7b8ab3843aa3d5521ffc1f15cd01c4814685
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Tue Oct 12 05:50:24 2021 +0300
