@@ -1,4 +1,31 @@
 ******************************************************************************
+commit 00aa7b8ab3843aa3d5521ffc1f15cd01c4814685
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Tue Oct 12 05:50:24 2021 +0300
+
+    + implemented SysUtils.FileGetAttr for WASI
+
+M	rtl/wasi/sysutils.pp
+
+******************************************************************************
+commit 7f7c5785fc77b0e697c15c69be56ba7c84bf2fc9
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Tue Oct 12 05:38:16 2021 +0300
+
+    * always return an error in SysUtils.FileSetAttr on WASI - this function is not supported by the WASI API
+
+M	rtl/wasi/sysutils.pp
+
+******************************************************************************
+commit 809277d2b15b2c4e713cf7fc81d284429e935c2b
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Tue Oct 12 05:32:53 2021 +0300
+
+    + implemented SysUtils.FileGetSymLinkTarget for WASI
+
+M	rtl/wasi/sysutils.pp
+
+******************************************************************************
 commit 1e5ecccdc663ca646632cbd46a1fe5905cba99ab
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Tue Oct 12 03:50:23 2021 +0300
