@@ -1,4 +1,13 @@
 ******************************************************************************
+commit ca242e9ad0e3ba047fcca8cc95fb8e41599d2d0b
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Tue Oct 12 09:14:14 2021 +0300
+
+    + implemented DOS.GetFAttr for WASI
+
+M	rtl/wasi/dos.pp
+
+******************************************************************************
 commit 4e605fb7643902e82de03ef4b43aaa166c30a42f
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Tue Oct 12 07:08:32 2021 +0300
