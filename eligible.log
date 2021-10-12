@@ -1,4 +1,24 @@
 ******************************************************************************
+commit f20de5d583cb86f6ec3bf856716fc85ab9ce4a95
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Wed Oct 13 02:02:50 2021 +0300
+
+    * fixed padding in the filerec to match textrec even on platforms where
+      sizeof(pointer)<>sizeof(codepointer), like in the medium and compact i8086
+      memory models
+
+M	rtl/inc/filerec.inc
+
+******************************************************************************
+commit 0934df505cdf94d24ff93dcd6c23eefac8799795
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Wed Oct 13 01:28:45 2021 +0300
+
+    + implemented SysUtils.GetLocalTime for WASI
+
+M	rtl/wasi/sysutils.pp
+
+******************************************************************************
 commit 00d4a6889dd2f79981ebaef3f839be5354d2933c
 Author: florian <florian@freepascal.org>
 Date:   Tue Oct 12 22:59:17 2021 +0200
