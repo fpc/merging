@@ -1,4 +1,13 @@
 ******************************************************************************
+commit f21273612a6ab485cf408aaaf6b9c0c5381ae1b6
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Wed Oct 13 02:39:04 2021 +0300
+
+    + also fill DayOfWeek in the Unix implementation of SysUtils.GetLocalTime
+
+M	rtl/unix/sysutils.pp
+
+******************************************************************************
 commit f20de5d583cb86f6ec3bf856716fc85ab9ce4a95
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Wed Oct 13 02:02:50 2021 +0300
