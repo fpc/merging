@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 34587a647f791f29c0ac26fec13059e516507c40
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Wed Oct 13 06:39:42 2021 +0300
+
+    + init the ansistring upper and lower case tables in the WASI SysUtils unit initialization
+
+M	rtl/wasi/sysutils.pp
+
+******************************************************************************
 commit 44f862fb4eac9ff7383bc57dbd18b87ea314defc
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Wed Oct 13 03:49:54 2021 +0300
