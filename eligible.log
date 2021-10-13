@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 44f862fb4eac9ff7383bc57dbd18b87ea314defc
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Wed Oct 13 03:49:54 2021 +0300
+
+    + added test for SysUtils.GetLocalTime
+
+A	tests/test/units/sysutils/tgetlocaltime.pp
+
+******************************************************************************
 commit f21273612a6ab485cf408aaaf6b9c0c5381ae1b6
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Wed Oct 13 02:39:04 2021 +0300
