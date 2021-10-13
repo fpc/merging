@@ -1,4 +1,22 @@
 ******************************************************************************
+commit 321764bdd93a675343fa0045ec22a1c2d62639c3
+Author: florian <florian@freepascal.org>
+Date:   Wed Oct 13 23:07:39 2021 +0200
+
+      * fix warnings with -dDEBUG_NODE_XML, resolves #38222
+
+M	compiler/verbose.pas
+
+******************************************************************************
+commit 6cb24a392959e10186cb0bdc9347ef78ecc53882
+Author: florian <florian@freepascal.org>
+Date:   Wed Oct 13 22:55:22 2021 +0200
+
+      * itcpugas unit for Z80 providing gas_regname to fix compilation with -dDEBUG_NODE_XML
+
+A	compiler/z80/itcpugas.pas
+
+******************************************************************************
 commit 34587a647f791f29c0ac26fec13059e516507c40
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Wed Oct 13 06:39:42 2021 +0300
