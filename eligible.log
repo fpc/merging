@@ -1,4 +1,14 @@
 ******************************************************************************
+commit dcae87bd5267914c8be0b57481f355a3eb700f3a
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Thu Oct 14 12:29:59 2021 +0300
+
+    + support cdecl and stdcall on the WebAssembly target. They are essentially the
+      same, the only difference is that cdecl creates an unmangled alias
+
+M	compiler/wasm32/cpuinfo.pas
+
+******************************************************************************
 commit b91fc3a0d3409b39e20bf0e0120ec8c072bc410a
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Thu Oct 14 10:34:08 2021 +0300
