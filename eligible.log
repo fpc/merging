@@ -1,4 +1,53 @@
 ******************************************************************************
+commit b91fc3a0d3409b39e20bf0e0120ec8c072bc410a
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Thu Oct 14 10:34:08 2021 +0300
+
+    * fixed passing of singleton record parameters, containing a float in WebAssembly
+
+M	compiler/defutil.pas
+M	compiler/wasm32/cpupara.pas
+M	compiler/wasm32/hlcgcpu.pas
+
+******************************************************************************
+commit df92d88f39a81ef2ec20499ea82cfdee6df04df6
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Thu Oct 14 09:34:00 2021 +0300
+
+    + added support for the handling of singleton record and array types in
+      defToWasmBasic
+
+M	compiler/wasm32/cpupara.pas
+M	compiler/wasm32/tgcpu.pas
+
+******************************************************************************
+commit 3511b8097269e7622ef97c9a6da7f0db8a948888
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Thu Oct 14 08:46:54 2021 +0300
+
+    * fixed formatting in defToWasmBasic
+
+M	compiler/wasm32/tgcpu.pas
+
+******************************************************************************
+commit ee387f7c66f418a23f78a0b6ceb162bec71a5d1b
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Thu Oct 14 08:29:16 2021 +0300
+
+    * C ABI fixes for the passing of records in WebAssembly
+
+M	compiler/wasm32/cpupara.pas
+
+******************************************************************************
+commit 236e10d03aab15949f7c2114ddc39b63cf2ea364
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Wed Oct 13 08:13:13 2021 +0300
+
+    + pass 64-bit structures by address in WebAssembly for compatibility with LLVM's C ABI
+
+M	compiler/wasm32/cpupara.pas
+
+******************************************************************************
 commit 321764bdd93a675343fa0045ec22a1c2d62639c3
 Author: florian <florian@freepascal.org>
 Date:   Wed Oct 13 23:07:39 2021 +0200
