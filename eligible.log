@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 0da5d57c1e54cafdfa4f2233a17e4d17dd5ff694
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Thu Oct 14 14:19:13 2021 +0300
+
+    * replaced the 'if br end_if' sequence with the 'br_if' instruction, when
+      generating WebAssembly code for try..finally blocks (in all exception modes)
+
+M	compiler/wasm32/nwasmflw.pas
+
+******************************************************************************
 commit dcae87bd5267914c8be0b57481f355a3eb700f3a
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Thu Oct 14 12:29:59 2021 +0300
