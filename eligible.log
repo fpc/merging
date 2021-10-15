@@ -1,4 +1,18 @@
 ******************************************************************************
+commit 21d843128d02fffcb8126811c16846420d570c32
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Fri Oct 15 14:33:43 2021 +0300
+
+    + added a wrapper function around __wasi_path_readlink that calls it iteratively
+      with doubling buffer sizes, starting with 64 bytes, until it reaches 16384
+      bytes, and reads the link into a rawbytestring. Use that function in all
+      places in the WASI rtl that need to read a symlink.
+
+M	rtl/wasi/sysdir.inc
+M	rtl/wasi/system.pp
+M	rtl/wasi/sysutils.pp
+
+******************************************************************************
 commit 0da5d57c1e54cafdfa4f2233a17e4d17dd5ff694
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Thu Oct 14 14:19:13 2021 +0300
