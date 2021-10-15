@@ -1,4 +1,13 @@
 ******************************************************************************
+commit d55b2c2a35d9a30f4928cab612f02d70e2704fb9
+Author: florian <florian@freepascal.org>
+Date:   Fri Oct 15 23:12:59 2021 +0200
+
+      + extend assembler optimization MovxMov2Mov to MovxOp2Op
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
 commit 21d843128d02fffcb8126811c16846420d570c32
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Fri Oct 15 14:33:43 2021 +0300
