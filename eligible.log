@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 5c75ef30ce78ba8dcf467f65ee6118e7dfe87a09
+Author: florian <florian@freepascal.org>
+Date:   Sat Oct 16 20:44:52 2021 +0200
+
+      * test for #37785 which is resolved meanwhile
+
+A	tests/webtbs/tw37785.pp
+
+******************************************************************************
 commit fd28cc0db04b00612387baba33f30f8e0dc3825c
 Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
 Date:   Sun Oct 10 03:42:03 2021 +0100
