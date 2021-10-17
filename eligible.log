@@ -1,4 +1,23 @@
 ******************************************************************************
+commit bdc826cc18a03a833735853c0c91268c992e8592
+Author: florian <florian@freepascal.org>
+Date:   Sun Oct 17 22:44:52 2021 +0200
+
+      * x86-64: do not jump in inc/declocked to return but return directly
+
+M	rtl/x86_64/x86_64.inc
+
+******************************************************************************
+commit 08050086b950a6bdb5a04f6054d58a497f45d7a4
+Author: florian <florian@freepascal.org>
+Date:   Sun Oct 17 21:57:39 2021 +0200
+
+      * keep type when removing "1*", resolves #38840
+
+M	compiler/nadd.pas
+A	tests/webtbs/tw38840.pp
+
+******************************************************************************
 commit e97e27b8d5524a0408b7789e51e219a1bfed2c06
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Sun Oct 17 17:58:11 2021 +0200
