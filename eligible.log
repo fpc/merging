@@ -1,4 +1,14 @@
 ******************************************************************************
+commit e97e27b8d5524a0408b7789e51e219a1bfed2c06
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sun Oct 17 17:58:11 2021 +0200
+
+    * Raise exception for fileseek positions that do not fit in longing. Issue #39407
+
+M	rtl/objpas/sysconst.pp
+M	rtl/unix/sysutils.pp
+
+******************************************************************************
 commit 1e74c418aed097b4f47c84f68b7e7207d56eaba4
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Sun Oct 17 12:44:44 2021 +0200
