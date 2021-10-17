@@ -1,4 +1,25 @@
 ******************************************************************************
+commit 4012c3dbd47f661805bb7a831c6c687807ede3b4
+Author: florian <florian@freepascal.org>
+Date:   Sun Oct 17 09:50:47 2021 +0200
+
+      * merge request 75 by J. Gareth "Kit" Moreton manually applied:
+    
+        This merge request makes a number of improvements to the DeepMOVOpt method and supporting functions:
+    
+          * ReplaceRegisterInInstruction now replaces registers in references that are written to
+            (since the registers themselves won't change)
+          * RegModifiedByInstruction will no longer return True for a register that appears in a reference
+            that's written to (for the same reason as above) - special operations like MOVSS
+            (the 0-operand version) aren't affected.
+          * DeepMOVOpt returning True will now always set the Result of OptPass1MOV to True even though p
+            wasn't directly modified, since this often caused missed optimisations.
+          * Some of the speed-ups in the patch from #32916 have also been applied in order to make
+            the general DeepMOVOpt run faster, notably it tries to avoid calling UpdateUsedRegs where possible.
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
 commit 5c75ef30ce78ba8dcf467f65ee6118e7dfe87a09
 Author: florian <florian@freepascal.org>
 Date:   Sat Oct 16 20:44:52 2021 +0200
