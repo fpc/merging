@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 1e74c418aed097b4f47c84f68b7e7207d56eaba4
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sun Oct 17 12:44:44 2021 +0200
+
+    * Fix integer overflow not being detected. Issue #39406
+
+M	rtl/objpas/sysutils/sysstr.inc
+
+******************************************************************************
 commit ee10850a5793b69b19dc82b9c28342bdd0018f2e
 Author: florian <florian@freepascal.org>
 Date:   Sun Oct 17 11:13:29 2021 +0200
