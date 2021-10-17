@@ -1,4 +1,39 @@
 ******************************************************************************
+commit ee10850a5793b69b19dc82b9c28342bdd0018f2e
+Author: florian <florian@freepascal.org>
+Date:   Sun Oct 17 11:13:29 2021 +0200
+
+      * patch by Sergey Larin: Reducing and aligning the size of TAnsiRec, TUnicodeRec for CPU64, resolves #38018:
+        For CPU64, the size of record TAnsiRec and TUnicodeRec is 16 bytes instead of 24.
+        Which is very good also because of the alignment. when allocating memory, the address
+        of the first character of the string will be aligned on the 16-byte boundary.
+        At the same time, the useless Dummy field, which is needed in CPU64 for exactly alignment, has been removed.
+        For CPU32 (and CPU16), the record size has not changed, so procedures such as
+        fpc_AnsiStr_Decr_Ref, implemented in assembler (see i386, arm), remained working correctly.
+      * tests adapted
+
+M	compiler/aasmcnst.pas
+M	rtl/inc/astrings.inc
+M	rtl/inc/ustrings.inc
+M	tests/webtbs/tw20962.pp
+M	tests/webtbs/tw7100.pp
+
+******************************************************************************
+commit ea6529ff63225e13baa4e1fd2c193b84d1432048
+Author: florian <florian@freepascal.org>
+Date:   Sun Oct 17 10:22:30 2021 +0200
+
+      * manually merged merge request 69 by J. Gareth "Kit" Moreton:
+        x86: CMP/MOV refactoring and expansion
+          This merge request refactors the SwapMovCmp routine, and calls to it, to be more self-contained,
+          having the preliminary checks built-in to ensure that moving the MOV instruction is
+          actually a sound idea, while also making it more general-purpose so it can handle instructions
+          that are not MOV operations. This feature is primarily for future expansion,
+          but also cleans up the code for the x86 peephole optimizer.
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
 commit 4012c3dbd47f661805bb7a831c6c687807ede3b4
 Author: florian <florian@freepascal.org>
 Date:   Sun Oct 17 09:50:47 2021 +0200
