@@ -1,4 +1,13 @@
 ******************************************************************************
+commit d4e610dbc3a75859ce53654f88ea97e4e3fdb8b9
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Mon Oct 18 22:03:42 2021 +0000
+
+     Disable utils/fpcmkcfg package for wasi OS as it requires packages/fpmkunit package
+
+M	utils/fpcmkcfg/fpmake.pp
+
+******************************************************************************
 commit 7e73e0dd2314527e9b9a79e51fdd5727e6efdad8
 Author: florian <florian@freepascal.org>
 Date:   Mon Oct 18 22:08:06 2021 +0200
