@@ -1,4 +1,22 @@
 ******************************************************************************
+commit c6168327925ff1bc96f06fe9df952b147bf2b8de
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Mon Oct 18 22:41:38 2021 +0000
+
+     Disable utils packages for wasi OS if required package is not supported or if labels are used (which is not supported for wasm32 target CPU)
+
+M	utils/fpcres/fpmake.pp
+M	utils/fpcreslipo/fpmake.pp
+M	utils/fpdoc/fpmake.pp
+M	utils/fppkg/fpmake.pp
+M	utils/h2pas/fpmake.pp
+M	utils/json2pas/fpmake.pp
+M	utils/pas2fpm/fpmake.pp
+M	utils/pas2jni/fpmake.pp
+M	utils/pas2ut/fpmake.pp
+M	utils/tply/fpmake.pp
+
+******************************************************************************
 commit d4e610dbc3a75859ce53654f88ea97e4e3fdb8b9
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Mon Oct 18 22:03:42 2021 +0000
