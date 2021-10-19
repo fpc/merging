@@ -1,4 +1,13 @@
 ******************************************************************************
+commit e1698a59691361696e8ba2db1914f70b9d195762
+Author: florian <florian@freepascal.org>
+Date:   Tue Oct 19 21:32:40 2021 +0200
+
+      * when compiling with the main branch compiler, p2align with 3 parameters can be used now
+
+M	rtl/x86_64/x86_64.inc
+
+******************************************************************************
 commit 6921b968f1cdba59d2403a81c2950336ec2839af
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Tue Oct 19 17:31:02 2021 +0300
