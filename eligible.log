@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 6921b968f1cdba59d2403a81c2950336ec2839af
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Tue Oct 19 17:31:02 2021 +0300
+
+    - removed TWasiSearchRec.Mode, because it was unused
+
+M	rtl/wasi/dos.pp
+M	rtl/wasi/wasiutil.pp
+
+******************************************************************************
 commit 8c39213d39eca0bfe89168734159f86bebbcbb4a
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Tue Oct 19 16:24:43 2021 +0300
