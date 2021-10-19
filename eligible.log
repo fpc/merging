@@ -1,4 +1,16 @@
 ******************************************************************************
+commit de3ab7e46b6c7f50723da61aa992b04145cb2472
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Tue Oct 19 09:39:25 2021 +0300
+
+    * added the fpc_wasi_path_readlink_ansistring helper function to unit wasiutil
+
+M	rtl/wasi/Makefile
+M	rtl/wasi/Makefile.fpc
+M	rtl/wasi/sysutils.pp
+M	rtl/wasi/wasiutil.pp
+
+******************************************************************************
 commit b2a0df0d10aa701c4e21d215c42fb78cfdf96f62
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Tue Oct 19 09:06:56 2021 +0300
