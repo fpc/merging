@@ -1,4 +1,35 @@
 ******************************************************************************
+commit 0ead28c1e05b6eaaf53455be86d8cb3dfc97c669
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Tue Oct 19 12:01:14 2021 +0300
+
+    - removed the RtlInfoType record, because it is only used only once in a local
+      variable. Use an anonymous record instead.
+
+M	rtl/wasi/dos.pp
+
+******************************************************************************
+commit 6cd88575c63e91afaf914f9ff9a1c67e60c4408a
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Tue Oct 19 11:51:25 2021 +0300
+
+    - removed unused, commented out fields from the RtlInfoType record
+
+M	rtl/wasi/dos.pp
+
+******************************************************************************
+commit 78c4585b535666f6c2f99af64dcae76c5bbc1f30
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Tue Oct 19 11:36:01 2021 +0300
+
+    * the FNMatch private helper function moved from unit DOS to unit WasiUtil, and
+      changed to have rawbytestring parameters, so it can be used from SysUtils as
+      well.
+
+M	rtl/wasi/dos.pp
+M	rtl/wasi/wasiutil.pp
+
+******************************************************************************
 commit de3ab7e46b6c7f50723da61aa992b04145cb2472
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Tue Oct 19 09:39:25 2021 +0300
