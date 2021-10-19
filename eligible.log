@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 8c39213d39eca0bfe89168734159f86bebbcbb4a
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Tue Oct 19 16:24:43 2021 +0300
+
+    + implemented DOS.FSearch for WASI
+
+M	rtl/wasi/dos.pp
+
+******************************************************************************
 commit 8e730d20db57219db3aa63bb97301a0a1591d1f1
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Tue Oct 19 15:39:59 2021 +0300
