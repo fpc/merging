@@ -1,4 +1,15 @@
 ******************************************************************************
+commit 090cc8fa8f7e60f2bb0fa6fa6d21d17509f39564
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Tue Oct 19 13:39:20 2021 +0300
+
+    * moved the FindFirst/FindNext/FindClose code from unit DOS to WasiUtil, using
+      RawByteString. This will allow to reuse the same implementation in SysUtils.
+
+M	rtl/wasi/dos.pp
+M	rtl/wasi/wasiutil.pp
+
+******************************************************************************
 commit 0ead28c1e05b6eaaf53455be86d8cb3dfc97c669
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Tue Oct 19 12:01:14 2021 +0300
