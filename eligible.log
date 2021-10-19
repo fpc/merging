@@ -1,4 +1,20 @@
 ******************************************************************************
+commit b2a0df0d10aa701c4e21d215c42fb78cfdf96f62
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Tue Oct 19 09:06:56 2021 +0300
+
+    * ConvertToFdRelativePath removed from the interface part of the WASI system
+      unit (to avoid cluttering the WASI system unit interface with platform
+      dependent routines) and added to a new unit, called wasiutil
+
+M	rtl/wasi/Makefile
+M	rtl/wasi/Makefile.fpc
+M	rtl/wasi/dos.pp
+M	rtl/wasi/system.pp
+M	rtl/wasi/sysutils.pp
+A	rtl/wasi/wasiutil.pp
+
+******************************************************************************
 commit c6168327925ff1bc96f06fe9df952b147bf2b8de
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Mon Oct 18 22:41:38 2021 +0000
