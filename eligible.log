@@ -1,4 +1,29 @@
 ******************************************************************************
+commit 7baf2461f06eb90429c07950459801e93d286b05
+Author: florian <florian@freepascal.org>
+Date:   Wed Oct 20 20:03:02 2021 +0200
+
+      * check paramstr argument for negative values, resolves #39410
+
+M	rtl/aix/system.pp
+M	rtl/beos/system.pp
+M	rtl/bsd/system.pp
+M	rtl/haiku/system.pp
+M	rtl/linux/system.pp
+M	rtl/nds/system.pp
+M	rtl/solaris/system.pp
+M	rtl/wii/system.pp
+
+******************************************************************************
+commit 3eefff75dfcd1b9429b4efaf2902b9cbda3db38b
+Author: florian <florian@freepascal.org>
+Date:   Wed Oct 20 20:02:45 2021 +0200
+
+      * pass a randseed which is known to be problematic
+
+M	tests/webtbs/tw14315.pp
+
+******************************************************************************
 commit 4c544d7858f5e74727a4ff57dae7e5426ac73ce6
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Wed Oct 20 16:59:41 2021 +0200
