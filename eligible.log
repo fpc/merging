@@ -1,4 +1,37 @@
 ******************************************************************************
+commit b3a9c36cbb77bcd8079505ee9f16b68a09307ed5
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Wed Oct 20 10:03:14 2021 +0300
+
+    * fixed some warnings
+
+M	compiler/wasm32/cpupi.pas
+
+******************************************************************************
+commit 0662a0bd44c557d338e577cc29065db54b57f202
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Wed Oct 20 09:59:54 2021 +0300
+
+    + use WebAssembly asm labels for the code generation of 'break' statements as well
+
+M	compiler/wasm32/hlcgcpu.pas
+M	compiler/wasm32/nwasmflw.pas
+
+******************************************************************************
+commit 01dc62b1275ca935ab65e856495faf3300f6dc62
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Wed Oct 20 09:39:44 2021 +0300
+
+    + introduced the use of asm labels for WebAssembly. Resolve them in
+      tcpuprocinfo.postprocess_code. Use them when generating code for the
+      'continue' label jumps.
+
+M	compiler/aasmbase.pas
+M	compiler/wasm32/cpupi.pas
+M	compiler/wasm32/hlcgcpu.pas
+M	compiler/wasm32/nwasmflw.pas
+
+******************************************************************************
 commit e1698a59691361696e8ba2db1914f70b9d195762
 Author: florian <florian@freepascal.org>
 Date:   Tue Oct 19 21:32:40 2021 +0200
