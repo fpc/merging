@@ -1,4 +1,32 @@
 ******************************************************************************
+commit 20ae686e31f47256d657a3bb2b79751a98deb38a
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Wed Oct 20 10:58:56 2021 +0200
+
+    pastojs: test unit linklib
+
+M	packages/pastojs/tests/tcunitsearch.pas
+
+******************************************************************************
+commit 3ceddfb2d682a6440d36ee15fc4d2ebdd599cf46
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Wed Oct 20 10:37:18 2021 +0200
+
+    pastojs: added test linklib
+
+M	packages/pastojs/tests/tcmodules.pas
+M	packages/pastojs/tests/tcunitsearch.pas
+
+******************************************************************************
+commit 1e80ae406d66ba18ff5271d413c72f48f0f698ea
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Wed Oct 20 10:36:53 2021 +0200
+
+    pastojs: comments
+
+M	packages/pastojs/src/pas2jscompiler.pp
+
+******************************************************************************
 commit b876a02daf2e8ea67b4b6a3aad8a3a96a6445e0d
 Author: Sven/Sarah Barth <pascaldragon@gmail.com>
 Date:   Wed Oct 20 09:53:09 2021 +0200
