@@ -1,4 +1,43 @@
 ******************************************************************************
+commit afa1a549acfdfed6768edaa710258230b70e497c
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Wed Oct 20 15:00:38 2021 +0200
+
+    fcl-js: fixed TJSWriter.WriteExportStatement spacing
+
+M	packages/fcl-js/src/jswriter.pp
+
+******************************************************************************
+commit a4a469ae3786be89f66b7ea635fbc6f3d398ced5
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Wed Oct 20 14:56:05 2021 +0200
+
+    pastojs: library: export name
+
+M	packages/fcl-passrc/tests/tcresolver.pas
+M	packages/pastojs/src/fppas2js.pp
+M	packages/pastojs/tests/tcmodules.pas
+
+******************************************************************************
+commit 4546673a33b7f31056a5cde492b080b8dd56435e
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Wed Oct 20 14:55:39 2021 +0200
+
+    fcl-js: comments
+
+M	packages/fcl-js/src/jstree.pp
+M	packages/fcl-js/src/jswriter.pp
+
+******************************************************************************
+commit e018264ad93c77e2855f144d004c26873d2f772f
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Wed Oct 20 14:37:16 2021 +0200
+
+    internalerror if the section we're about to keep has no exesection assigned
+
+M	compiler/ogbase.pas
+
+******************************************************************************
 commit 4e3a6aa5a812fbd1aee6394f98cc4c2425032735
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Wed Oct 20 14:29:08 2021 +0300
