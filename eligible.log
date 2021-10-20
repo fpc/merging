@@ -1,4 +1,23 @@
 ******************************************************************************
+commit 4c544d7858f5e74727a4ff57dae7e5426ac73ce6
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Wed Oct 20 16:59:41 2021 +0200
+
+    pastojs: library: export unitname.name as alias
+
+M	packages/pastojs/src/fppas2js.pp
+M	packages/pastojs/tests/tcmodules.pas
+
+******************************************************************************
+commit 203b5e636fc2da4d2c71d9688add1f07f7835b00
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Wed Oct 20 16:59:27 2021 +0200
+
+    fcl-passrc: test export unitname.name
+
+M	packages/fcl-passrc/tests/tcresolver.pas
+
+******************************************************************************
 commit afa1a549acfdfed6768edaa710258230b70e497c
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Wed Oct 20 15:00:38 2021 +0200
