@@ -1,4 +1,22 @@
 ******************************************************************************
+commit b876a02daf2e8ea67b4b6a3aad8a3a96a6445e0d
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Wed Oct 20 09:53:09 2021 +0200
+
+    * the libc unit might be deprecated, but it's no reason for wrong declarations, in this case values that should be declared as octal but were declared as decimal with the same literal text
+
+M	packages/libc/src/bshmh.inc
+
+******************************************************************************
+commit dc9090e67f48c7e23f7701e46427169be78d03e3
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Wed Oct 20 10:23:02 2021 +0300
+
+    * fixed some more warnings
+
+M	compiler/wasm32/nwasmflw.pas
+
+******************************************************************************
 commit b3a9c36cbb77bcd8079505ee9f16b68a09307ed5
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Wed Oct 20 10:03:14 2021 +0300
