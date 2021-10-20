@@ -1,4 +1,77 @@
 ******************************************************************************
+commit 4e3a6aa5a812fbd1aee6394f98cc4c2425032735
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Wed Oct 20 14:29:08 2021 +0300
+
+    * match the label to the wider block, if it is adjacent to both the brevious
+      and the next instruction
+
+M	compiler/wasm32/cpupi.pas
+
+******************************************************************************
+commit c96e20378024002d340434835ac2cf912c8ebe90
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Wed Oct 20 13:21:19 2021 +0300
+
+    * moved the 'end_block' WebAssembly instruction before the 'exit' label right
+      before the procedure finalization code. This fixes compilation errors in
+      procedures with implicit finalization code (e.g. for ansistring local vars,
+      etc).
+
+M	compiler/psub.pas
+M	compiler/wasm32/cpupi.pas
+M	compiler/wasm32/hlcgcpu.pas
+
+******************************************************************************
+commit 03513720a3bab8b168cbb9707417c915d9654608
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Wed Oct 20 11:58:50 2021 +0300
+
+    * fixed range check error in the DOS unit
+
+M	rtl/wasi/dos.pp
+
+******************************************************************************
+commit bb3095866549b503f6419b773fa2e65c0b88f320
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Wed Oct 20 11:09:08 2021 +0300
+
+    + wrap block nodes with exit in a_block..a_end_block instructions. This fixes
+      'exit' in inlined procedures on the WebAssembly target.
+
+M	compiler/wasm32/cpunode.pas
+A	compiler/wasm32/nwasmbas.pas
+
+******************************************************************************
+commit 703ae75ba6a9d8d1c39e81e319e72a4fd19ef702
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Wed Oct 20 10:51:15 2021 +0300
+
+    * if a label cannot be associated with the previous block instruction, try
+      matching it with the next instruction
+
+M	compiler/wasm32/cpupi.pas
+
+******************************************************************************
+commit 9f077d4ac04479b4bc3e46a3eb8465d1916df5df
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Wed Oct 20 10:40:21 2021 +0300
+
+    * leave unresolved branches in the asm output, when the compiler is compiled with -dEXTDEBUG
+
+M	compiler/wasm32/cpupi.pas
+
+******************************************************************************
+commit 1ce2fb8a4acaeee52446e881f0da0d0540097b2f
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Wed Oct 20 10:30:56 2021 +0300
+
+    * use WebAssembly asm labels for generating code for the 'exit' statement
+
+M	compiler/wasm32/hlcgcpu.pas
+M	compiler/wasm32/nwasmflw.pas
+
+******************************************************************************
 commit 2fa60d1af3e3af9a2c39fd1dc6a0360310967900
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Wed Oct 20 11:53:40 2021 +0200
