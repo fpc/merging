@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 2ee6a81cffbb95c32c08e5b8474bb05d6658d69a
+Author: florian <florian@freepascal.org>
+Date:   Wed Oct 20 22:33:53 2021 +0200
+
+      * extended test to cover last commit
+
+M	tests/test/units/system/tparam.pp
+
+******************************************************************************
 commit 7baf2461f06eb90429c07950459801e93d286b05
 Author: florian <florian@freepascal.org>
 Date:   Wed Oct 20 20:03:02 2021 +0200
