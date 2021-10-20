@@ -1,4 +1,25 @@
 ******************************************************************************
+commit 2fa60d1af3e3af9a2c39fd1dc6a0360310967900
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Wed Oct 20 11:53:40 2021 +0200
+
+    fcl-pasrc: error if exports section inside inside procedure
+
+M	packages/fcl-passrc/src/pparser.pp
+M	packages/fcl-passrc/tests/tcresolver.pas
+
+******************************************************************************
+commit 0aecf4d89f40156e602576f251d2ec7b3a442a73
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Wed Oct 20 11:32:54 2021 +0200
+
+    pastojs: library: create and call main
+
+M	packages/pastojs/src/fppas2js.pp
+M	packages/pastojs/tests/tcmodules.pas
+M	utils/pas2js/dist/rtl.js
+
+******************************************************************************
 commit 20ae686e31f47256d657a3bb2b79751a98deb38a
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Wed Oct 20 10:58:56 2021 +0200
