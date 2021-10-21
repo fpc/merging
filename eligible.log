@@ -1,4 +1,14 @@
 ******************************************************************************
+commit d2a091ef8522bc99a779f3de26e2c6f1e2065061
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Thu Oct 21 22:57:42 2021 +0200
+
+    pastojs: library: export var
+
+M	packages/pastojs/src/fppas2js.pp
+M	packages/pastojs/tests/tcmodules.pas
+
+******************************************************************************
 commit f4580ff612b2e24eccac30c99a709019ef4dd457
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Thu Oct 21 22:09:05 2021 +0200
