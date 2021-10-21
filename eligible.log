@@ -1,4 +1,14 @@
 ******************************************************************************
+commit f4580ff612b2e24eccac30c99a709019ef4dd457
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Thu Oct 21 22:09:05 2021 +0200
+
+     Fix compilation of nds and wii OS rtl
+
+M	rtl/nds/system.pp
+M	rtl/wii/system.pp
+
+******************************************************************************
 commit 429438fbb9ed8127d3129ad0bfdec8081afbd05d
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Thu Oct 21 20:02:22 2021 +0200
