@@ -1,4 +1,17 @@
 ******************************************************************************
+commit 36ff644401dfcfac0e9263e4a2afb2ebef882efd
+Author: marcoonthegit <marcov@pascalprogramming.org>
+Date:   Thu Oct 21 16:53:44 2021 +0200
+
+    * fix for 39413
+    
+     Update DwmApi to support new DWM windows attributes like Windows 8 cloaking, Windows 10 dark mode and new Windows 11 rounded corners
+    
+    patch by Taufik Rahmad Hidayanto
+
+M	packages/winunits-base/src/dwmapi.pp
+
+******************************************************************************
 commit 2ee6a81cffbb95c32c08e5b8474bb05d6658d69a
 Author: florian <florian@freepascal.org>
 Date:   Wed Oct 20 22:33:53 2021 +0200
