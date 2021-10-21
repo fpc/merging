@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 429438fbb9ed8127d3129ad0bfdec8081afbd05d
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Thu Oct 21 20:02:22 2021 +0200
+
+    pastojs: fixed clear com interface reference in class field on destroy
+
+M	packages/pastojs/src/fppas2js.pp
+M	packages/pastojs/tests/tcmodules.pas
+
+******************************************************************************
 commit 36ff644401dfcfac0e9263e4a2afb2ebef882efd
 Author: marcoonthegit <marcov@pascalprogramming.org>
 Date:   Thu Oct 21 16:53:44 2021 +0200
