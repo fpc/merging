@@ -1,4 +1,33 @@
 ******************************************************************************
+commit 12a2c56461dd689b24756292d4f069e8e24690d8
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Fri Oct 22 17:42:29 2021 +0300
+
+    - removed thlcgwasm.incblock, .decblock and br_blocks, as branching is now done
+      entirely with labels
+
+M	compiler/ncgset.pas
+M	compiler/wasm32/cpupi.pas
+M	compiler/wasm32/hlcgcpu.pas
+M	compiler/wasm32/nwasmadd.pas
+M	compiler/wasm32/nwasmbas.pas
+M	compiler/wasm32/nwasmcnv.pas
+M	compiler/wasm32/nwasmflw.pas
+M	compiler/wasm32/nwasminl.pas
+M	compiler/wasm32/nwasmset.pas
+
+******************************************************************************
+commit 3094f756903a6c06ff7786a1fa972ff6a61de457
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Fri Oct 22 17:31:04 2021 +0300
+
+    * WebAssembly code generation for 'case' nodes changed to use labels
+
+M	compiler/nset.pas
+M	compiler/wasm32/hlcgcpu.pas
+M	compiler/wasm32/nwasmset.pas
+
+******************************************************************************
 commit 6fe647ee3dd194e7ccbf230782da0c42134245be
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Fri Oct 22 10:32:47 2021 +0300
