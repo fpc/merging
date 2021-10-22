@@ -1,4 +1,23 @@
 ******************************************************************************
+commit 7997f884b70454fcb9067aec884b947b1d6e7759
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Fri Oct 22 23:04:02 2021 +0200
+
+    pastojs: library: forbid unit exports
+
+M	packages/pastojs/src/fppas2js.pp
+
+******************************************************************************
+commit d0fdda6da718e26af14c17fc9d7d0fd3d5bd9fab
+Author: florian <florian@freepascal.org>
+Date:   Fri Oct 22 22:39:23 2021 +0200
+
+      + TDFABuilder.redodfainfo
+
+M	compiler/optdfa.pas
+M	compiler/psub.pas
+
+******************************************************************************
 commit 12a2c56461dd689b24756292d4f069e8e24690d8
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Fri Oct 22 17:42:29 2021 +0300
