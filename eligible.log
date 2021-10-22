@@ -1,4 +1,22 @@
 ******************************************************************************
+commit 1b6219823b8403beea600fcdcba775312aacef67
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Fri Oct 22 11:01:14 2021 +0200
+
+    * Add test for case of pointer and size
+
+M	packages/vcl-compat/tests/tcnetencoding.pp
+
+******************************************************************************
+commit ac9973490ec043d87d327d931b0feeb7ab0a0ed2
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Fri Oct 22 10:36:53 2021 +0200
+
+    * Fix missing assign of result. Issue ID #39415
+
+M	packages/vcl-compat/src/system.netencoding.pp
+
+******************************************************************************
 commit d2a091ef8522bc99a779f3de26e2c6f1e2065061
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Thu Oct 21 22:57:42 2021 +0200
