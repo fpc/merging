@@ -1,4 +1,39 @@
 ******************************************************************************
+commit 6fe647ee3dd194e7ccbf230782da0c42134245be
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Fri Oct 22 10:32:47 2021 +0300
+
+    * moved the default procedure CurrRaiseLabel to the end of the procedure, not
+      at the exit label. This fixes problems when using units with finalization
+      code that contain classes with class destructors in branchful WebAssembly
+      exceptions mode.
+
+M	compiler/wasm32/cpupi.pas
+M	compiler/wasm32/hlcgcpu.pas
+
+******************************************************************************
+commit 470e77a5725fdb0eeffa9475a14937779dce364c
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Thu Oct 21 22:48:33 2021 +0300
+
+    + added sanity check when resolving labels to ensure we don't get any jumps with
+      negative nesting depth
+
+M	compiler/wasm32/cpupi.pas
+
+******************************************************************************
+commit 5a0956d8050eb4f3f54ba0d8b9fad41fea3a09c3
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Wed Oct 20 16:20:08 2021 +0300
+
+    * use WebAssembly asm labels for the raise branch instruction in branchful
+      exceptions mode
+
+M	compiler/wasm32/cpupi.pas
+M	compiler/wasm32/hlcgcpu.pas
+M	compiler/wasm32/nwasmflw.pas
+
+******************************************************************************
 commit 1b6219823b8403beea600fcdcba775312aacef67
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Fri Oct 22 11:01:14 2021 +0200
