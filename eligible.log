@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 4610980f2e9ac4269074d2d0613290ab78c50bbd
+Author: florian <florian@freepascal.org>
+Date:   Sat Oct 23 23:40:09 2021 +0200
+
+      * TX86AsmOptimizer.OptPass1MOVXX takes care of volatility
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
 commit 7f1050464a60977ad6261a108e4e839bea8fa8a3
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Sat Oct 23 11:56:25 2021 +0300
