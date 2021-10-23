@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 342803532de444c5c0710e625bcc2b884193fc51
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Fri Oct 22 12:33:16 2021 +0100
+
+    Bug fix to MovMov2Mov 6 optimisation exposed by 4012c3dbd47f661805bb7a831c6c687807ede3b4 (and miscellaneous code refactors)
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
 commit 7997f884b70454fcb9067aec884b947b1d6e7759
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Fri Oct 22 23:04:02 2021 +0200
