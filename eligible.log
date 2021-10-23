@@ -1,4 +1,23 @@
 ******************************************************************************
+commit 7f1050464a60977ad6261a108e4e839bea8fa8a3
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sat Oct 23 11:56:25 2021 +0300
+
+    + added 'else' tracking for the if..end_if blocks
+
+M	compiler/wasm32/cpupi.pas
+
+******************************************************************************
+commit 7bef4d827d905fc57ed773c2aa70f157a573e225
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sat Oct 23 11:25:44 2021 +0300
+
+    * keep track of the block stack, when resolving labels and check whether the
+      blocks match (i.e. block..end_block, if..end_if, loop..end_loop, try..end_try)
+
+M	compiler/wasm32/cpupi.pas
+
+******************************************************************************
 commit 342803532de444c5c0710e625bcc2b884193fc51
 Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
 Date:   Fri Oct 22 12:33:16 2021 +0100
