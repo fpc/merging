@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 10fcae34a957e94837fe376fa828815ab99d80a3
+Author: florian <florian@freepascal.org>
+Date:   Sun Oct 24 18:22:05 2021 +0200
+
+      * improved TX86AsmOptimizer.OptPass1MOVXX
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
 commit 4610980f2e9ac4269074d2d0613290ab78c50bbd
 Author: florian <florian@freepascal.org>
 Date:   Sat Oct 23 23:40:09 2021 +0200
