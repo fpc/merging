@@ -9204,17 +9204,6 @@ Date:   Sun Jul 18 21:40:43 2021 +0000
 M	compiler/xtensa/cgcpu.pas
 
 ******************************************************************************
-commit 622554b59fe19bf0ff1dcf18c1106db960305ef6
-Author: marco <marco@freepascal.org>
-Date:   Sun Jul 18 20:03:19 2021 +0000
-
-     * ProjectDir changes broke adding index and toc to latex CHMs
-    
-    git-svn-id: trunk@49617 -
-
-M	packages/chm/src/chmfilewriter.pas
-
-******************************************************************************
 commit db8c723b9d503f0eee1b7058495170b97326752f
 Author: florian <florian@freepascal.org>
 Date:   Sat Jul 17 21:07:02 2021 +0000
@@ -9224,17 +9213,6 @@ Date:   Sat Jul 17 21:07:02 2021 +0000
     git-svn-id: trunk@49616 -
 
 M	compiler/xtensa/aoptcpu.pas
-
-******************************************************************************
-commit 84507b49c217cf6cd37023a79c1cff075bb3cb03
-Author: marco <marco@freepascal.org>
-Date:   Sat Jul 17 14:18:44 2021 +0000
-
-     * fix for mantis #39153 to fix calling release unbalanced wrt initialize.
-    
-    git-svn-id: trunk@49615 -
-
-M	packages/postgres/src/postgres3dyn.pp
 
 ******************************************************************************
 commit c67d35b8ccfe8a4de74ea6f33017fbd9f68979b0
@@ -59438,6 +59416,7 @@ Date:   Sat Feb 2 20:31:16 2019 +0000
 
 M	rtl/objpas/classes/classesh.inc
 M	rtl/objpas/classes/lists.inc
+
 ******************************************************************************
 commit c24d525b9f1f1cd221c2f5e73b5fb6f147b2224c
 Author: nickysn <nickysn@gmail.com>
@@ -59547,7 +59526,6 @@ M	rtl/win64/Makefile
 M	rtl/win64/Makefile.fpc
 M	rtl/wince/Makefile
 M	rtl/wince/Makefile.fpc
-
 ******************************************************************************
 commit 6c87b89e45184fc5deda0c5af0e4ad9bd476776b
 Author: Károly Balogh <karoly@freepascal.org>
