@@ -10971,35 +10971,6 @@ Date:   Fri Jun 4 21:14:34 2021 +0000
 M	compiler/llvm/agllvm.pas
 
 ******************************************************************************
-commit aec49340a3f18aeab4204375fa1d6d18c6a59422
-Author: florian <florian@freepascal.org>
-Date:   Fri Jun 4 20:16:25 2021 +0000
-
-      * patch by Christo Crause, resolves #38961, fixes the following formatting and spelling problems in the AVR compiler files:
-        - Change spelling of AM_PREDRECEMENT to AM_PREDECREMENT
-        - Fix multiline comment style to use {}
-        - Fix indenting of code in method tcgavr.g_concatcopy
-    
-    git-svn-id: trunk@49474 -
-
-M	compiler/avr/agavrgas.pas
-M	compiler/avr/cgcpu.pas
-M	compiler/avr/cpubase.pas
-M	compiler/avr/raavr.pas
-M	compiler/avr/raavrgas.pas
-
-******************************************************************************
-commit 9d6ceda532a226c1dfa7a8c110c84fbdc57f1971
-Author: florian <florian@freepascal.org>
-Date:   Thu Jun 3 18:48:40 2021 +0000
-
-      * patch by Christo Crause: do not generate LDD for avrtiny, resolves #38958
-    
-    git-svn-id: trunk@49473 -
-
-M	compiler/avr/cgcpu.pas
-
-******************************************************************************
 commit 33b29b0df4454ea4fde0782c6542668b324780b5
 Author: Mattias Gaertner <nc-gaertnma@netcologne.de>
 Date:   Thu Jun 3 15:37:44 2021 +0000
@@ -12229,17 +12200,6 @@ M	packages/pastojs/tests/tcmodules.pas
 M	utils/pas2js/docs/translation.html
 
 ******************************************************************************
-commit 9bfc731bb6722eb6d66391515bcb452fee104f40
-Author: florian <florian@freepascal.org>
-Date:   Wed May 12 19:20:10 2021 +0000
-
-      + AVR: MovOp2Op 2 optimization
-    
-    git-svn-id: trunk@49350 -
-
-M	compiler/avr/aoptcpu.pas
-
-******************************************************************************
 commit 929fc500043b93f1e06976d0735c3cfffcb2c446
 Author: florian <florian@freepascal.org>
 Date:   Mon May 10 20:30:31 2021 +0000
@@ -12311,17 +12271,6 @@ M	packages/pastojs/src/fppas2js.pp
 M	packages/pastojs/src/pas2jscompiler.pp
 M	packages/pastojs/src/pas2jslogger.pp
 M	packages/pastojs/src/pas2jspparser.pp
-
-******************************************************************************
-commit 5e1e6c24a48a41549d7293f18fb04805adbc5570
-Author: florian <florian@freepascal.org>
-Date:   Fri May 7 16:19:05 2021 +0000
-
-      * patch by Christo Crause: handle references to absolute address 0 correctly, resolves #38861
-    
-    git-svn-id: trunk@49344 -
-
-M	compiler/avr/cgcpu.pas
 
 ******************************************************************************
 commit 964c04aded9d81191c5030d1bd75be285e36d8b8
@@ -17993,17 +17942,6 @@ Date:   Sat Feb 13 14:37:07 2021 +0000
 M	compiler/options.pas
 
 ******************************************************************************
-commit 98a748bdd6e3220c299e6cfcbdd64d92e1b335a3
-Author: florian <florian@freepascal.org>
-Date:   Fri Feb 12 21:39:31 2021 +0000
-
-      + patch by Dimitrios Chr. Ioannidis: include dwar-3 sections in avr-embedded linker script
-    
-    git-svn-id: trunk@48659 -
-
-M	compiler/systems/t_embed.pas
-
-******************************************************************************
 commit afc80a84cf383fb885ae3366d429a5a0c6ffcd3d
 Author: yury <jura@cp-lab.com>
 Date:   Fri Feb 12 11:26:37 2021 +0000
@@ -19440,17 +19378,6 @@ M	compiler/utils/ppuutils/ppudump.pp
 M	compiler/utils/ppuutils/ppuout.pp
 
 ******************************************************************************
-commit 6d75992674a3f7818195507d9cae1fbc8370c10f
-Author: florian <florian@freepascal.org>
-Date:   Wed Jan 6 12:52:36 2021 +0000
-
-      * fix proposed by Christo Crause: properly handle pointer constant nodes on avr, resolves #38321
-    
-    git-svn-id: trunk@48095 -
-
-M	compiler/ncgcon.pas
-
-******************************************************************************
 commit aec18c2426a503c0c85e057bbc2f029d649fe3bf
 Author: florian <florian@freepascal.org>
 Date:   Tue Jan 5 22:39:16 2021 +0000
@@ -19774,17 +19701,6 @@ Date:   Thu Dec 31 15:52:02 2020 +0000
 
 M	compiler/optdfa.pas
 M	tests/webtbs/tw38259.pp
-
-******************************************************************************
-commit 3482121831a899c3acf0a8f2d0e2d8e401a2eda5
-Author: florian <florian@freepascal.org>
-Date:   Thu Dec 31 15:33:39 2020 +0000
-
-      * patch by Christo Crause: Fix missed optimization opportunities, resolves #38285
-    
-    git-svn-id: trunk@47925 -
-
-M	compiler/avr/aoptcpu.pas
 
 ******************************************************************************
 commit 32999fbaba853286412aed98a5d2a89262a0cd65
@@ -21297,17 +21213,6 @@ Date:   Sat Nov 28 12:06:36 2020 +0000
     git-svn-id: trunk@47615 -
 
 M	compiler/entfile.pas
-
-******************************************************************************
-commit eb098a3d116984e3c2fb2ca35e039f060efe8550
-Author: florian <florian@freepascal.org>
-Date:   Fri Nov 27 21:16:31 2020 +0000
-
-      * do not reuse a loaded reference for avrtiny in a_op_const*, resolves #38142
-    
-    git-svn-id: trunk@47612 -
-
-M	compiler/cgobj.pas
 
 ******************************************************************************
 commit b0cbff646399f64905cf29fdb82857a1856adf56
@@ -25298,17 +25203,6 @@ M	rtl/qnx/signal.inc
 M	rtl/qnx/system.pp
 
 ******************************************************************************
-commit fa543359380db005b6fe48a3cd02df6ba31fa405
-Author: florian <florian@freepascal.org>
-Date:   Fri Oct 16 20:01:40 2020 +0000
-
-      * patch by Christo Crause to fix illegal ldd generation for avrtiny, resolves #37929
-    
-    git-svn-id: trunk@47118 -
-
-M	compiler/avr/cgcpu.pas
-
-******************************************************************************
 commit 9376f5a43ab500b5577ad71bc9b5b2fce4afcbc7
 Author: Jonas Maebe <jonas@freepascal.org>
 Date:   Thu Oct 15 20:29:36 2020 +0000
@@ -25630,17 +25524,6 @@ M	compiler/z80/cpubase.pas
 M	compiler/z80/cpupara.pas
 M	compiler/z80/nz80add.pas
 M	compiler/z80/tgcpu.pas
-
-******************************************************************************
-commit b8c707ed7ec518f89df8d3853615a2b556b2fd78
-Author: florian <florian@freepascal.org>
-Date:   Mon Oct 12 19:43:24 2020 +0000
-
-      * patch by Christo Crause: r0, r1 are no volatile registers for avr tiny
-    
-    git-svn-id: trunk@47102 -
-
-M	compiler/avr/cpupara.pas
 
 ******************************************************************************
 commit 56c58b517d9290198f50e8efa58290a5724ebc0b
@@ -34299,18 +34182,6 @@ Date:   Tue May 26 19:52:27 2020 +0000
 M	compiler/z80/cgcpu.pas
 
 ******************************************************************************
-commit 37a3b542e6d2498d0160f29f4b0e84575aa7ef3e
-Author: florian <florian@freepascal.org>
-Date:   Tue May 26 19:52:19 2020 +0000
-
-      * avr: patch by Christo Crause: replace findreg_by_gasname with gas_regname_table, resolves #37131
-    
-    git-svn-id: trunk@45509 -
-
-M	compiler/avr/cpubase.pas
-M	compiler/avr/itcpugas.pas
-
-******************************************************************************
 commit c49213c561171e398d76eb7957f8e965cbf2295e
 Author: nickysn <nickysn@gmail.com>
 Date:   Mon May 25 22:40:41 2020 +0000
@@ -36126,28 +35997,6 @@ Date:   Thu May 7 02:57:57 2020 +0000
     git-svn-id: trunk@45303 -
 
 M	compiler/i8086/cgcpu.pas
-
-******************************************************************************
-commit 0f6ab0de1707bf3b79303675ece2e4418820ced6
-Author: nickysn <nickysn@gmail.com>
-Date:   Thu May 7 02:43:02 2020 +0000
-
-    * handle LOC_(C)SUBSETREG/REF in second_NegNot_assign
-    * changed the way OP_NEG and OP_NOT are handled in op_reg_ref, in order to be
-      consistent with op_reg_reg
-    * introduced op_reg,op_ref,op_subsetreg,op_subsetref and op_loc for the unary
-      operations only (OP_NEG,OP_NOT)
-    
-    git-svn-id: trunk@45302 -
-
-M	compiler/cg64f32.pas
-M	compiler/cgobj.pas
-M	compiler/hlcg2ll.pas
-M	compiler/hlcgobj.pas
-M	compiler/i386/cgcpu.pas
-M	compiler/i8086/cgcpu.pas
-M	compiler/ncginl.pas
-M	compiler/x86/cgx86.pas
 
 ******************************************************************************
 commit 5aaf863d560f9d6dc88fc511a27bbab06ed96a23
@@ -41158,17 +41007,6 @@ Date:   Fri Apr 17 21:02:35 2020 +0000
 M	compiler/aarch64/aoptcpu.pas
 
 ******************************************************************************
-commit 599b7e80c022ede41935ddee2680ccc63de88ef9
-Author: nickysn <nickysn@gmail.com>
-Date:   Fri Apr 17 17:19:22 2020 +0000
-
-    * fix for OP_ROR in tcgavr.a_op_reg_reg_internal
-    
-    git-svn-id: trunk@44749 -
-
-M	compiler/avr/cgcpu.pas
-
-******************************************************************************
 commit 09b6bed27cdd337014ae0f8dc85957647236a8eb
 Author: Károly Balogh <karoly@freepascal.org>
 Date:   Fri Apr 17 17:12:23 2020 +0000
@@ -45065,17 +44903,6 @@ M	compiler/ninl.pas
 M	compiler/optdeadstore.pas
 
 ******************************************************************************
-commit fc50edfe31d0c1a6df9461a7ca183253be142199
-Author: florian <florian@freepascal.org>
-Date:   Fri Feb 14 21:27:43 2020 +0000
-
-      * AVR: couple of fixes for CPUs with only 16 registers
-    
-    git-svn-id: trunk@44177 -
-
-M	compiler/avr/cpupara.pas
-
-******************************************************************************
 commit 013491c69f6068b74240153c95bcb50be5da21fa
 Author: florian <florian@freepascal.org>
 Date:   Fri Feb 14 21:27:16 2020 +0000
@@ -45085,17 +44912,6 @@ Date:   Fri Feb 14 21:27:16 2020 +0000
     git-svn-id: trunk@44176 -
 
 M	compiler/procinfo.pas
-
-******************************************************************************
-commit 0424c2a658c5bdad38adf30445ad86b8406e42cb
-Author: florian <florian@freepascal.org>
-Date:   Fri Feb 14 20:59:32 2020 +0000
-
-      * remove accidently committed debug code
-    
-    git-svn-id: trunk@44175 -
-
-M	compiler/avr/aasmcpu.pas
 
 ******************************************************************************
 commit b7afb2431c1fc7bb7e29a965503dffd9e95aec00
@@ -45187,17 +45003,6 @@ Date:   Thu Feb 13 20:20:10 2020 +0000
     git-svn-id: trunk@44164 -
 
 M	compiler/x86/aoptx86.pas
-
-******************************************************************************
-commit fd4fb5fa192b149d7f5c33d1820eca00af8430e1
-Author: florian <florian@freepascal.org>
-Date:   Wed Feb 12 20:43:13 2020 +0000
-
-      * patch by Christo Crause: combine code paths for avr1 and avrtiny when converting lds/sts to in/out, resolves #36697
-    
-    git-svn-id: trunk@44163 -
-
-M	compiler/avr/aasmcpu.pas
 
 ******************************************************************************
 commit f632e2e7be71448f812fe80f5dfadc8aed22dc8a
@@ -45314,153 +45119,6 @@ Date:   Sun Feb 9 17:39:50 2020 +0000
 M	compiler/x86/aoptx86.pas
 
 ******************************************************************************
-commit 2135b9b724549e4c6b8fc8b5472b098539e1a9bf
-Author: florian <florian@freepascal.org>
-Date:   Sun Feb 9 14:35:56 2020 +0000
-
-      * for avr1, do not save registers during an interrupt procedure, as it has no memory to store them
-    
-    git-svn-id: trunk@44139 -
-
-M	compiler/avr/aasmcpu.pas
-M	compiler/avr/cgcpu.pas
-M	compiler/msg/errore.msg
-M	compiler/msgidx.inc
-M	compiler/msgtxt.inc
-
-******************************************************************************
-commit 84cfa8d9b0140def94a4caeb8c35fbd6ec395c20
-Author: florian <florian@freepascal.org>
-Date:   Sun Feb 9 13:55:25 2020 +0000
-
-      * AVR: for avr1 lds/sts must be converted to in/out as well if possible
-    
-    git-svn-id: trunk@44138 -
-
-M	compiler/avr/aasmcpu.pas
-
-******************************************************************************
-commit 297d6e2c60d44a2ded0affad4593f3bff3d5b384
-Author: florian <florian@freepascal.org>
-Date:   Sun Feb 9 10:51:14 2020 +0000
-
-      * patch by Christo Crause: more avr1 controllers and remove attiny28 from avr25 makefile list, resolves #36686
-    
-    git-svn-id: trunk@44136 -
-
-M	.gitattributes
-M	compiler/avr/cpuinfo.pas
-M	rtl/embedded/Makefile
-M	rtl/embedded/Makefile.fpc
-A	rtl/embedded/avr/attiny11.pp
-A	rtl/embedded/avr/attiny12.pp
-A	rtl/embedded/avr/attiny15.pp
-
-******************************************************************************
-commit a905a074b0c475a8202436547bd02963764cdbcc
-Author: florian <florian@freepascal.org>
-Date:   Sat Feb 8 22:05:21 2020 +0000
-
-      * AVR: decide after compiler if a certain subroutine is suitable for avr1, if not, replace it by sleep and warn
-    
-    git-svn-id: trunk@44133 -
-
-M	compiler/avr/aasmcpu.pas
-M	compiler/avr/cpupi.pas
-M	compiler/msg/errore.msg
-M	compiler/msgidx.inc
-M	compiler/msgtxt.inc
-
-******************************************************************************
-commit dea63e3d613507fb4e9eb6849a5882c4d62bfa48
-Author: florian <florian@freepascal.org>
-Date:   Sat Feb 8 22:05:21 2020 +0000
-
-      * AVR: attiny28 is an avr1 CPU
-    
-    git-svn-id: trunk@44132 -
-
-M	compiler/avr/cpuinfo.pas
-M	rtl/embedded/Makefile
-M	rtl/embedded/Makefile.fpc
-
-******************************************************************************
-commit 925979c6e47a9e665d804cb75b5a9b73a534b048
-Author: florian <florian@freepascal.org>
-Date:   Sat Feb 8 22:05:20 2020 +0000
-
-      * AVR: take care of CPUAVR_HAS_MOVW in assembler routines
-    
-    git-svn-id: trunk@44131 -
-
-M	rtl/avr/avr.inc
-M	rtl/avr/divide.inc
-M	rtl/avr/math.inc
-
-******************************************************************************
-commit 04ad607bb43c0508d51c60f88b702b25a339abaa
-Author: florian <florian@freepascal.org>
-Date:   Sat Feb 8 20:43:22 2020 +0000
-
-      * patch by Christo Crause: more AVR controllers, resolves #36683
-    
-    git-svn-id: trunk@44130 -
-
-M	.gitattributes
-M	compiler/avr/cpuinfo.pas
-M	rtl/embedded/Makefile
-M	rtl/embedded/Makefile.fpc
-A	rtl/embedded/avr/atmega1284rfr2.pp
-A	rtl/embedded/avr/atmega128rfr2.pp
-A	rtl/embedded/avr/atmega16hva.pp
-A	rtl/embedded/avr/atmega16hvbrevb.pp
-A	rtl/embedded/avr/atmega2564rfr2.pp
-A	rtl/embedded/avr/atmega256rfr2.pp
-A	rtl/embedded/avr/atmega32hvbrevb.pp
-A	rtl/embedded/avr/atmega406.pp
-A	rtl/embedded/avr/atmega644rfr2.pp
-A	rtl/embedded/avr/atmega64hve2.pp
-A	rtl/embedded/avr/atmega64rfr2.pp
-A	rtl/embedded/avr/atmega8hva.pp
-A	rtl/embedded/avr/attiny1624.pp
-A	rtl/embedded/avr/attiny1626.pp
-A	rtl/embedded/avr/attiny1627.pp
-A	rtl/embedded/avr/attiny441.pp
-A	rtl/embedded/avr/attiny841.pp
-
-******************************************************************************
-commit 5040e31f1164afb3ed60b1cbf98d5f34467ebaf2
-Author: florian <florian@freepascal.org>
-Date:   Fri Feb 7 19:48:46 2020 +0000
-
-      * patch by Christo Crause: add missing atmega-PB controllers, resolves #36667
-    
-    git-svn-id: trunk@44128 -
-
-M	.gitattributes
-M	compiler/avr/cpuinfo.pas
-M	rtl/embedded/Makefile
-M	rtl/embedded/Makefile.fpc
-A	rtl/embedded/avr/atmega168pb.pp
-A	rtl/embedded/avr/atmega324pb.pp
-A	rtl/embedded/avr/atmega328pb.pp
-A	rtl/embedded/avr/atmega48pb.pp
-A	rtl/embedded/avr/atmega88pb.pp
-
-******************************************************************************
-commit e033269deb80e1bf923d26fbee2bd2170bc660cf
-Author: florian <florian@freepascal.org>
-Date:   Thu Feb 6 21:10:09 2020 +0000
-
-      * patch by Christo Craus to reorder the avr controllers for better overview, resolves #36662
-    
-    git-svn-id: trunk@44124 -
-
-M	compiler/avr/cpuinfo.pas
-M	rtl/embedded/Makefile
-M	rtl/embedded/Makefile.fpc
-
-******************************************************************************
 commit 3de193467d7d304aa1c0f3072af2a54f690eb821
 Author: florian <florian@freepascal.org>
 Date:   Thu Feb 6 20:24:59 2020 +0000
@@ -45546,17 +45204,6 @@ M	rtl/emx/sysutils.pp
 M	rtl/os2/sysutils.pp
 
 ******************************************************************************
-commit 4fe21a8e1a1d5e12ae795ac1f17558d5d55cdf77
-Author: florian <florian@freepascal.org>
-Date:   Tue Feb 4 21:14:14 2020 +0000
-
-      * patch by Christo Crause: board aliases to onboard controllers, resolves #36659
-    
-    git-svn-id: trunk@44111 -
-
-M	compiler/avr/cpuinfo.pas
-
-******************************************************************************
 commit de213ba258297b7c28e2745da2f18bc2e0b5d6aa
 Author: florian <florian@freepascal.org>
 Date:   Mon Feb 3 20:16:33 2020 +0000
@@ -45569,32 +45216,6 @@ M	.gitattributes
 D	tests/webtbs/tw36179.pp
 
 ******************************************************************************
-commit 640fe9c29095d8f2e7f928bf3f775e151173309c
-Author: florian <florian@freepascal.org>
-Date:   Sun Feb 2 20:41:28 2020 +0000
-
-      * actually, with lds/sts avrtiny can load addresses up to 191
-    
-    git-svn-id: trunk@44104 -
-
-M	compiler/avr/cgcpu.pas
-
-******************************************************************************
-commit 36058ca4d441c88b4ddac39de72976cca6560ecd
-Author: florian <florian@freepascal.org>
-Date:   Sun Feb 2 20:35:29 2020 +0000
-
-      * based on a patch by Christo Crause: more compiler fixes for avrtiny, resolves #36646
-    
-    git-svn-id: trunk@44103 -
-
-M	compiler/avr/aasmcpu.pas
-M	compiler/avr/aoptcpu.pas
-M	compiler/avr/cgcpu.pas
-M	compiler/avr/cpuinfo.pas
-M	compiler/systems/t_embed.pas
-
-******************************************************************************
 commit bbcbd4eae1c0e63afe7bee64469decb6d789118f
 Author: florian <florian@freepascal.org>
 Date:   Sun Feb 2 19:49:47 2020 +0000
@@ -45604,17 +45225,6 @@ Date:   Sun Feb 2 19:49:47 2020 +0000
     git-svn-id: trunk@44101 -
 
 M	compiler/x86/aoptx86.pas
-
-******************************************************************************
-commit 7d283f530ecd1ddb80e8b89649f30be7dd56a0ba
-Author: florian <florian@freepascal.org>
-Date:   Sun Feb 2 19:18:39 2020 +0000
-
-      * patch by Christo Crause: fix startup code for avrtiny subarch, resolves #36650
-    
-    git-svn-id: trunk@44100 -
-
-M	rtl/embedded/avr/start.inc
 
 ******************************************************************************
 commit b777dc21d70691a94c36cf921b428ddbcd36db2b
@@ -45717,22 +45327,6 @@ M	.gitattributes
 M	compiler/nutils.pas
 A	tests/test/tabsvr6.pp
 A	tests/test/tabsvr7.pp
-
-******************************************************************************
-commit 00214406bc108fd4b9f08b28a412cfb2d3442924
-Author: florian <florian@freepascal.org>
-Date:   Sat Feb 1 15:54:57 2020 +0000
-
-      + patch by Christo Crause: Support for attiny10x controllers, resolves #36645
-    
-    git-svn-id: trunk@44081 -
-
-M	.gitattributes
-M	compiler/avr/cpuinfo.pas
-M	rtl/embedded/Makefile
-M	rtl/embedded/Makefile.fpc
-A	rtl/embedded/avr/attiny102.pp
-A	rtl/embedded/avr/attiny104.pp
 
 ******************************************************************************
 commit 6b47d9d9ed74d375c3c17b38ec215ac0cfedb90c
@@ -46039,79 +45633,6 @@ Date:   Sun Jan 26 15:35:03 2020 +0000
 M	compiler/nflw.pas
 
 ******************************************************************************
-commit 9d91d680fbe877215de88cd898003c7c134d730a
-Author: florian <florian@freepascal.org>
-Date:   Sun Jan 26 14:35:32 2020 +0000
-
-      * patch by Christo Crause: support for megaAVR 0 and tinyAVR 0/1, #36616, part 3/3
-    
-    git-svn-id: trunk@44038 -
-
-M	.gitattributes
-A	rtl/embedded/avr/attiny214.pp
-A	rtl/embedded/avr/attiny3214.pp
-A	rtl/embedded/avr/attiny3216.pp
-A	rtl/embedded/avr/attiny3217.pp
-A	rtl/embedded/avr/attiny402.pp
-A	rtl/embedded/avr/attiny404.pp
-A	rtl/embedded/avr/attiny406.pp
-A	rtl/embedded/avr/attiny412.pp
-A	rtl/embedded/avr/attiny414.pp
-A	rtl/embedded/avr/attiny416.pp
-A	rtl/embedded/avr/attiny416auto.pp
-A	rtl/embedded/avr/attiny417.pp
-A	rtl/embedded/avr/attiny804.pp
-A	rtl/embedded/avr/attiny806.pp
-A	rtl/embedded/avr/attiny807.pp
-A	rtl/embedded/avr/attiny814.pp
-A	rtl/embedded/avr/attiny816.pp
-A	rtl/embedded/avr/attiny817.pp
-
-******************************************************************************
-commit 7892e3f7b788c2456a2c8f1e0aef35647d17777f
-Author: florian <florian@freepascal.org>
-Date:   Sun Jan 26 14:35:29 2020 +0000
-
-      * patch by Christo Crause: support for megaAVR 0 and tinyAVR 0/1, #36616, part 2/3
-    
-    git-svn-id: trunk@44037 -
-
-M	.gitattributes
-M	rtl/embedded/Makefile
-M	rtl/embedded/Makefile.fpc
-A	rtl/embedded/avr/atmega1608.pp
-A	rtl/embedded/avr/atmega1609.pp
-A	rtl/embedded/avr/atmega3208.pp
-A	rtl/embedded/avr/atmega3209.pp
-A	rtl/embedded/avr/atmega4808.pp
-A	rtl/embedded/avr/atmega4809.pp
-A	rtl/embedded/avr/atmega808.pp
-A	rtl/embedded/avr/atmega809.pp
-A	rtl/embedded/avr/attiny1604.pp
-A	rtl/embedded/avr/attiny1606.pp
-A	rtl/embedded/avr/attiny1607.pp
-A	rtl/embedded/avr/attiny1614.pp
-A	rtl/embedded/avr/attiny1616.pp
-A	rtl/embedded/avr/attiny1617.pp
-A	rtl/embedded/avr/attiny202.pp
-A	rtl/embedded/avr/attiny204.pp
-A	rtl/embedded/avr/attiny212.pp
-
-******************************************************************************
-commit 670c61e7609d02e978a6b0b7f26effdc132a1840
-Author: florian <florian@freepascal.org>
-Date:   Sun Jan 26 14:35:26 2020 +0000
-
-      * patch by Christo Crause: support for megaAVR 0 and tinyAVR 0/1, #36616, part 1/3
-    
-    git-svn-id: trunk@44036 -
-
-M	compiler/avr/aoptcpu.pas
-M	compiler/avr/cgcpu.pas
-M	compiler/avr/cpuinfo.pas
-M	compiler/systems/t_embed.pas
-
-******************************************************************************
 commit 5aaf68b088871755f67b94959d5a2c52adbf7d7a
 Author: florian <florian@freepascal.org>
 Date:   Sat Jan 25 14:59:28 2020 +0000
@@ -46157,21 +45678,6 @@ M	rtl/watcom/sysosh.inc
 M	rtl/wii/sysosh.inc
 M	rtl/win/sysosh.inc
 M	rtl/win16/sysosh.inc
-
-******************************************************************************
-commit 17c4834a4af3993728c8950b4e41bb77b5a34a93
-Author: florian <florian@freepascal.org>
-Date:   Fri Jan 24 22:04:14 2020 +0000
-
-      * system unit can be build for subarch avrtiny
-    
-    git-svn-id: trunk@44032 -
-
-M	rtl/avr/avr.inc
-M	rtl/avr/divide.inc
-M	rtl/avr/int64p.inc
-M	rtl/avr/math.inc
-M	rtl/avr/setjump.inc
 
 ******************************************************************************
 commit 6c71fd461daf8161fce6e1d4242a1e8b33f21271
@@ -46272,32 +45778,6 @@ Date:   Thu Jan 23 15:03:20 2020 +0000
 
 M	Makefile
 M	Makefile.fpc
-
-******************************************************************************
-commit d2a059bd02887993320d4177bc5502b22f83fd56
-Author: florian <florian@freepascal.org>
-Date:   Wed Jan 22 20:41:24 2020 +0000
-
-      * patch by Christo Crause: avrtiny26 controller is not subarch avr25 but avr2, resolves #36620
-    
-    git-svn-id: trunk@44021 -
-
-M	compiler/avr/cpuinfo.pas
-M	rtl/embedded/Makefile
-M	rtl/embedded/Makefile.fpc
-
-******************************************************************************
-commit 3ab8830b83b461b590340ad8592050a6a587d74f
-Author: florian <florian@freepascal.org>
-Date:   Wed Jan 22 20:34:43 2020 +0000
-
-      * patch by Christo Crause: Correct subarch for avrtiny series in compiler, resolves #36619
-    
-    git-svn-id: trunk@44020 -
-
-M	compiler/avr/cpuinfo.pas
-M	rtl/embedded/Makefile
-M	rtl/embedded/Makefile.fpc
 
 ******************************************************************************
 commit f2618cb6a4565f0a0817b2458777181aec3a5579
@@ -46451,28 +45931,6 @@ Date:   Mon Jan 20 21:56:39 2020 +0000
 M	compiler/ncgflw.pas
 
 ******************************************************************************
-commit 08c2afb0a42ba236098d73f72e522085cd07bba2
-Author: florian <florian@freepascal.org>
-Date:   Mon Jan 20 21:14:28 2020 +0000
-
-      * AVR: use CP ...,r1 instead of CPI ...,0 to enable all registers being used as first operand
-    
-    git-svn-id: trunk@44006 -
-
-M	compiler/avr/navrmat.pas
-
-******************************************************************************
-commit ae8d2dc69a518eac8950ae09f45061802cda99ee
-Author: florian <florian@freepascal.org>
-Date:   Mon Jan 20 21:13:34 2020 +0000
-
-      * omit first not, helps the reg. allocator to find a workable colouring, resolves #36611
-    
-    git-svn-id: trunk@44005 -
-
-M	rtl/inc/int64.inc
-
-******************************************************************************
 commit 16152cf948f30f16e1e185626dad97e298c843bd
 Author: florian <florian@freepascal.org>
 Date:   Sun Jan 19 20:11:05 2020 +0000
@@ -46510,118 +45968,6 @@ Date:   Sun Jan 19 18:04:59 2020 +0000
     git-svn-id: trunk@43997 -
 
 M	rtl/embedded/system.pp
-
-******************************************************************************
-commit 429130fa344907371a085ae623791535cb4b101a
-Author: florian <florian@freepascal.org>
-Date:   Sun Jan 19 18:04:59 2020 +0000
-
-      * AVR: attiny can do post increment operations, so remove code working around this
-    
-    git-svn-id: trunk@43996 -
-
-M	compiler/avr/cgcpu.pas
-
-******************************************************************************
-commit bd96765632bc483c84ed58debfecedcf393ad3b6
-Author: florian <florian@freepascal.org>
-Date:   Sun Jan 19 18:04:58 2020 +0000
-
-      * AVR: do not insert jmp if not supported
-    
-    git-svn-id: trunk@43995 -
-
-M	compiler/avr/aasmcpu.pas
-
-******************************************************************************
-commit 28391e04bcf54a5acfddb0f2efe5bcc5614ac4c5
-Author: florian <florian@freepascal.org>
-Date:   Sun Jan 19 15:55:25 2020 +0000
-
-      + AVR: initial support of the avrtiny architecture in the rtl
-    
-    git-svn-id: trunk@43988 -
-
-M	rtl/avr/setjump.inc
-M	rtl/avr/setjumph.inc
-M	rtl/embedded/Makefile
-M	rtl/embedded/Makefile.fpc
-M	rtl/embedded/avr/start.inc
-
-******************************************************************************
-commit 2d9cdab264fc77bc72298006df1621c28a5cb426
-Author: florian <florian@freepascal.org>
-Date:   Sun Jan 19 15:55:24 2020 +0000
-
-      + AVR: initial support for the avrtiny architecture
-    
-    git-svn-id: trunk@43987 -
-
-M	compiler/avr/cgcpu.pas
-M	compiler/avr/cpupara.pas
-M	compiler/avr/rgcpu.pas
-
-******************************************************************************
-commit f629fa1bb9760e2dc2b0ee9761b0c52bf76b4fa7
-Author: florian <florian@freepascal.org>
-Date:   Sun Jan 19 15:55:23 2020 +0000
-
-      * AVR: tcgavr.normalize_ref must always load the reference into tmpreg
-    
-    git-svn-id: trunk@43986 -
-
-M	compiler/avr/cgcpu.pas
-
-******************************************************************************
-commit 26eae3672ba6b5981d7a473094d7d22815b359b0
-Author: florian <florian@freepascal.org>
-Date:   Sun Jan 19 15:55:23 2020 +0000
-
-      + AVR: GetDefaultZeroReg and GetDefaultTmpReg
-    
-    git-svn-id: trunk@43985 -
-
-M	compiler/avr/aoptcpu.pas
-M	compiler/avr/cgcpu.pas
-M	compiler/avr/cpubase.pas
-M	compiler/avr/navradd.pas
-M	compiler/avr/navrmat.pas
-
-******************************************************************************
-commit aaa6ae5770d07ee28be4e17ba331f45d940bb6bd
-Author: florian <florian@freepascal.org>
-Date:   Sun Jan 19 15:55:22 2020 +0000
-
-      + AVR: cputype cpu_avrtiny
-    
-    git-svn-id: trunk@43984 -
-
-M	compiler/avr/cpuinfo.pas
-
-******************************************************************************
-commit 96a4cda03b66fc568b5e6bc1421e9465b772b594
-Author: florian <florian@freepascal.org>
-Date:   Sun Jan 19 15:55:21 2020 +0000
-
-      * AVR: fixes pushing and handling of stack passed parameters
-    
-    git-svn-id: trunk@43983 -
-
-M	compiler/avr/cgcpu.pas
-M	compiler/avr/cpubase.pas
-M	compiler/avr/cpupara.pas
-M	compiler/rgobj.pas
-
-******************************************************************************
-commit 6f434b6751b2fb4f459e5f004086c6ede5436309
-Author: florian <florian@freepascal.org>
-Date:   Sun Jan 19 15:55:21 2020 +0000
-
-      * AVR: fixed TDwarfAsmCFILowLevel.generate_initial_instructions
-    
-    git-svn-id: trunk@43982 -
-
-M	compiler/cfidwarf.pas
 
 ******************************************************************************
 commit 4b4e316af02a968f27147123b189b04a9931ba79
@@ -46802,18 +46148,6 @@ Date:   Mon Jan 13 12:36:35 2020 +0000
 M	rtl/inc/fexpand.inc
 M	rtl/objpas/sysutils/fina.inc
 M	rtl/objpas/sysutils/finah.inc
-
-******************************************************************************
-commit 9926eb8dc617931f174afa2106b10bc7467fedf2
-Author: florian <florian@freepascal.org>
-Date:   Sun Jan 12 20:57:52 2020 +0000
-
-    * patch by Christo Crause: Passing a file name with extension to cross compiler
-        with -o causes error, fixed, resolves #36562
-    
-    git-svn-id: trunk@43921 -
-
-M	compiler/systems/t_embed.pas
 
 ******************************************************************************
 commit 5a1e6c2e914f5fefc3e5dcb848b5c3a5182b63bd
@@ -47229,17 +46563,6 @@ Date:   Sun Jan 5 17:47:23 2020 +0000
     git-svn-id: trunk@43867 -
 
 M	compiler/x86/nx86add.pas
-
-******************************************************************************
-commit 89a961f960e8cf2cafc013c31f3a02564bdcd13e
-Author: Jeppe Johansen <jeppe@j-software.dk>
-Date:   Sun Jan 5 17:00:50 2020 +0000
-
-    * Add support for generating map files for embedded target.
-    
-    git-svn-id: trunk@43866 -
-
-M	compiler/systems/t_embed.pas
 
 ******************************************************************************
 commit 76e7833a201b8de2b67028606dd45fd0ad972e79
@@ -50438,20 +49761,6 @@ M	compiler/options.pas
 M	compiler/systems/t_atari.pas
 
 ******************************************************************************
-commit fabe4cc0676679fde2b8d888dd81b902eed4b3be
-Author: florian <florian@freepascal.org>
-Date:   Mon Nov 4 20:14:46 2019 +0000
-
-      * patch by Christo Crause: reg. allocation information if non-volatile registers
-        are used for parameter passing as it is might happen on avr, resolves #36079
-    
-    git-svn-id: trunk@43390 -
-
-M	.gitattributes
-M	compiler/ncgcal.pas
-A	tests/webtbs/tw36079.pp
-
-******************************************************************************
 commit d3c5bd2a3e513df586faa6b0c0e2555399d556b7
 Author: florian <florian@freepascal.org>
 Date:   Sun Nov 3 17:33:26 2019 +0000
@@ -50620,41 +49929,6 @@ Date:   Fri Nov 1 18:39:17 2019 +0000
 M	rtl/inc/generic.inc
 
 ******************************************************************************
-commit 701848889e58254c7925415dee7212ff655b6264
-Author: florian <florian@freepascal.org>
-Date:   Fri Nov 1 18:39:16 2019 +0000
-
-      * avr: help the compiler with constant loading to avoid ie 200309041
-    
-    git-svn-id: trunk@43350 -
-
-M	compiler/avr/cgcpu.pas
-M	compiler/avr/navradd.pas
-
-******************************************************************************
-commit e8a48be3bcc50859231ef4550e43f9f677164155
-Author: florian <florian@freepascal.org>
-Date:   Fri Nov 1 18:39:15 2019 +0000
-
-      * avr: more precise execution weigth for shift loops
-    
-    git-svn-id: trunk@43349 -
-
-M	compiler/avr/cgcpu.pas
-
-******************************************************************************
-commit f61207f1cc24fd547353895c8b83154527b0be64
-Author: florian <florian@freepascal.org>
-Date:   Fri Nov 1 18:39:15 2019 +0000
-
-      * avr directly encodes constant shifts of 64 bit values
-    
-    git-svn-id: trunk@43348 -
-
-M	compiler/avr/cgcpu.pas
-M	compiler/avr/navrmat.pas
-
-******************************************************************************
 commit fdeaacac21cfa72ea0148158fa8da9aa67035881
 Author: svenbarth <pascaldragon@googlemail.com>
 Date:   Fri Nov 1 15:02:31 2019 +0000
@@ -50702,17 +49976,6 @@ Date:   Thu Oct 31 21:29:41 2019 +0000
 M	.gitattributes
 M	compiler/nadd.pas
 A	tests/webtbs/tw36215.pp
-
-******************************************************************************
-commit 3b1903b43056f112b340c878699dbf7f80b16ded
-Author: florian <florian@freepascal.org>
-Date:   Thu Oct 31 21:02:23 2019 +0000
-
-      * simplified fpc_mul_qword so it compiles again on avr, fixes #36236 but does not solve the root of the problem
-    
-    git-svn-id: trunk@43342 -
-
-M	rtl/inc/int64.inc
 
 ******************************************************************************
 commit 172a4a999bfa8f9d0429bc2e41fe363a778d8821
@@ -51139,17 +50402,6 @@ Date:   Sat Oct 12 12:25:07 2019 +0000
 M	compiler/dbgdwarf.pas
 
 ******************************************************************************
-commit 5fc12500f277327255e011decd672285b71892c7
-Author: florian <florian@freepascal.org>
-Date:   Sat Oct 12 11:52:06 2019 +0000
-
-      * patch by Christo Crause: fix for r43136
-    
-    git-svn-id: trunk@43169 -
-
-M	compiler/avr/cgcpu.pas
-
-******************************************************************************
 commit c189af0e3d8e1c5293e9b3f0aa11092cd262d976
 Author: florian <florian@freepascal.org>
 Date:   Thu Oct 10 20:31:31 2019 +0000
@@ -51227,17 +50479,6 @@ Date:   Wed Oct 9 07:13:37 2019 +0000
 
 M	rtl/objpas/classes/classesh.inc
 M	rtl/objpas/classes/lists.inc
-
-******************************************************************************
-commit dd2d1bf68b5c85c66a1d59b2f1d2319cb3b726af
-Author: florian <florian@freepascal.org>
-Date:   Sat Oct 5 20:48:33 2019 +0000
-
-    * (modified/re-formatted) patch by Christo Crause: AVR: Optimizing code generation for shift with compile time constant
-    
-    git-svn-id: trunk@43136 -
-
-M	compiler/avr/cgcpu.pas
 
 ******************************************************************************
 commit 35e11cd6d4df412a4a193e63b09fda3c9ba910f3
@@ -51902,17 +51143,6 @@ Date:   Fri Sep 13 19:06:34 2019 +0000
 M	compiler/nflw.pas
 
 ******************************************************************************
-commit 4e93a9a6c7ad4eac2ec416f724013dd4a0860cf2
-Author: florian <florian@freepascal.org>
-Date:   Thu Sep 12 20:29:12 2019 +0000
-
-    * AVR: patch by Christo Crause: fixes tcgavr.g_concatcopy for data with size>255, resolves #36066
-    
-    git-svn-id: trunk@42977 -
-
-M	compiler/avr/cgcpu.pas
-
-******************************************************************************
 commit fa2e751f9f0787cc827c7cead21f3b36f12d9b3f
 Author: florian <florian@freepascal.org>
 Date:   Tue Sep 10 18:46:56 2019 +0000
@@ -52073,28 +51303,6 @@ Date:   Sat Sep 7 21:14:12 2019 +0000
     git-svn-id: trunk@42942 -
 
 M	compiler/symdef.pas
-
-******************************************************************************
-commit 05c4f45596c7605a5c1801ae86efd86a1a006d18
-Author: Jeppe Johansen <jeppe@j-software.dk>
-Date:   Sat Sep 7 20:21:16 2019 +0000
-
-    * Fix exitcode handling for avrsim target. Patch by Christo Crause
-    
-    git-svn-id: trunk@42940 -
-
-M	rtl/embedded/avr/avrsim.pp
-
-******************************************************************************
-commit 9e5cbce6be0c5658610ab93e1f193ef7cc289f7f
-Author: florian <florian@freepascal.org>
-Date:   Sat Sep 7 20:19:12 2019 +0000
-
-    * fix tcgavr.g_flags2reg for sizes > 1 byte
-    
-    git-svn-id: trunk@42938 -
-
-M	compiler/avr/cgcpu.pas
 
 ******************************************************************************
 commit fd1d2271750c608100173ad89aa88cb9517cc211
@@ -54721,19 +53929,6 @@ Date:   Tue Jul 30 15:27:44 2019 +0000
 M	compiler/systems/i_win16.pas
 
 ******************************************************************************
-commit 1b698d319fd2f30ea9314b18063f9f64c1cf23c5
-Author: Jeppe Johansen <jeppe@j-software.dk>
-Date:   Tue Jul 30 13:42:26 2019 +0000
-
-    - Fix bug in software overflow checking for longint's.
-    - AVR: Fix overflow checking for HW multiplications
-    
-    git-svn-id: trunk@42531 -
-
-M	compiler/avr/cgcpu.pas
-M	rtl/inc/generic.inc
-
-******************************************************************************
 commit 3ef319c0b059d8f085fe4f0df8501a49712d2f08
 Author: florian <florian@freepascal.org>
 Date:   Sun Jul 28 21:06:37 2019 +0000
@@ -54780,17 +53975,6 @@ M	tests/webtbs/tw35878.pp
 M	tests/webtbs/tw35878a.pp
 
 ******************************************************************************
-commit f72342ed0e7e2c4e268de982a64222dcdc3d75af
-Author: Jeppe Johansen <jeppe@j-software.dk>
-Date:   Sun Jul 28 16:46:13 2019 +0000
-
-    AVR: Add support for using nostackframe in interrupt routines.
-    
-    git-svn-id: trunk@42519 -
-
-M	compiler/avr/cgcpu.pas
-
-******************************************************************************
 commit 1a67ffdd22de1d5e5ebe07a328db8806d9831ebb
 Author: florian <florian@freepascal.org>
 Date:   Sun Jul 28 12:43:15 2019 +0000
@@ -54826,19 +54010,6 @@ Date:   Sun Jul 28 12:03:40 2019 +0000
 M	.gitattributes
 D	tests/webtbf/tw4778a.pp
 D	tests/webtbs/tw4778.pp
-
-******************************************************************************
-commit 91016c97a43192836780f6bd5b1c0da01f1d4b6b
-Author: Jeppe Johansen <jeppe@j-software.dk>
-Date:   Sun Jul 28 11:16:37 2019 +0000
-
-    AVR: Add optimizations for sign testing, and a better Abs() implementation.
-    
-    git-svn-id: trunk@42510 -
-
-M	compiler/avr/cgcpu.pas
-M	compiler/avr/navradd.pas
-M	compiler/avr/navrinl.pas
 
 ******************************************************************************
 commit 789f28877190ef79df431a76d5ec95fffc0a9e43
@@ -54882,55 +54053,6 @@ Date:   Fri Jul 26 14:19:33 2019 +0000
     git-svn-id: trunk@42498 -
 
 M	compiler/systems/i_win16.pas
-
-******************************************************************************
-commit 893507a5d6b0fbd28568154fbf63d6053fefbc1a
-Author: Jeppe Johansen <jeppe@j-software.dk>
-Date:   Thu Jul 25 15:36:24 2019 +0000
-
-    - Adds a number of optimizations for 64bit integer operations on AVR. Patch from Christo Crause in issue #35691.
-    
-    git-svn-id: trunk@42495 -
-
-M	rtl/avr/int64p.inc
-
-******************************************************************************
-commit 4b93eb64b314ef1c127156b17da59bbba14bc13d
-Author: Jeppe Johansen <jeppe@j-software.dk>
-Date:   Thu Jul 25 14:56:18 2019 +0000
-
-    - Split division routines out into an include file.
-    - Reuse division routines for calculating both division and modulus.
-    - Add implementations of BsfByte and BsrByte that don't use a lookup table.
-    
-    git-svn-id: trunk@42494 -
-
-M	.gitattributes
-A	rtl/avr/divide.inc
-M	rtl/avr/math.inc
-
-******************************************************************************
-commit ff3372567f16be75ed1762f3fd5b302faa5e12d6
-Author: Jeppe Johansen <jeppe@j-software.dk>
-Date:   Thu Jul 25 13:24:10 2019 +0000
-
-    - Applied patch by Christo Crause from #33914
-    
-    git-svn-id: trunk@42493 -
-
-M	compiler/aasmtai.pas
-M	compiler/dbgdwarf.pas
-
-******************************************************************************
-commit 030cf78ac58eadfe491877676d8a5a51844514c5
-Author: Jeppe Johansen <jeppe@j-software.dk>
-Date:   Thu Jul 25 13:16:12 2019 +0000
-
-    - Fix overflow checking for multiplication operations on AVR.
-    
-    git-svn-id: trunk@42492 -
-
-M	compiler/avr/cgcpu.pas
 
 ******************************************************************************
 commit 67bf76c50e40f7a039429835e97bec38f37515d1
@@ -56242,17 +55364,6 @@ Date:   Sun Jul 7 21:33:36 2019 +0000
 M	compiler/nbas.pas
 
 ******************************************************************************
-commit 48a7c0989a8858737ecc18fc62f237753d1d05c9
-Author: Jeppe Johansen <jeppe@j-software.dk>
-Date:   Sun Jul 7 11:48:00 2019 +0000
-
-    - Change syntax of sbiw operands to work around syntax in older binutils.
-    
-    git-svn-id: trunk@42336 -
-
-M	rtl/avr/avr.inc
-
-******************************************************************************
 commit a1a17447ff3d95d0145d4113ad563f7360480a88
 Author: Jeppe Johansen <jeppe@j-software.dk>
 Date:   Sun Jul 7 11:32:27 2019 +0000
@@ -56907,19 +56018,6 @@ M	compiler/msgtxt.inc
 M	compiler/x86/rax86.pas
 
 ******************************************************************************
-commit 0d97dc7965dd95f7b44692d57851aca0db2894dd
-Author: Jeppe Johansen <jeppe@j-software.dk>
-Date:   Mon Jun 10 13:35:38 2019 +0000
-
-    avr: Fixed some inconsistencies.
-    
-    git-svn-id: trunk@42204 -
-
-M	compiler/avr/cpuinfo.pas
-M	compiler/avr/cpupara.pas
-M	compiler/avr/rgcpu.pas
-
-******************************************************************************
 commit 2487fa76056397bdca5711c3360bfb27f0620b4c
 Author: nickysn <nickysn@gmail.com>
 Date:   Mon Jun 10 13:06:58 2019 +0000
@@ -57052,19 +56150,6 @@ M	packages/libgbafpc/Makefile.fpc.fpcmake
 M	packages/libgbafpc/src/gba/gba_sound.inc
 M	rtl/gba/cprt0.as
 M	rtl/gba/prt0.as
-
-******************************************************************************
-commit f92b8d1681c0d1ca2228b3114373085524cd93ff
-Author: florian <florian@freepascal.org>
-Date:   Sun Jun 9 21:44:18 2019 +0000
-
-    * changes shift parameter of shift helpers into ALUUInt, as there is an "and" used anyways, this does not change semantics but reduces register pressure on 8 bit targets
-    
-    git-svn-id: trunk@42200 -
-
-M	rtl/inc/compproc.inc
-M	rtl/inc/int64.inc
-M	rtl/java/jcompproc.inc
 
 ******************************************************************************
 commit fe99252a9b71bac16570c95e54f4165312d12fce
@@ -57203,54 +56288,6 @@ Date:   Sun Jun 2 18:32:58 2019 +0000
 M	compiler/hlcgobj.pas
 
 ******************************************************************************
-commit ee7bc1d5165d96fce1437d625b29649b0c95b322
-Author: Jeppe Johansen <jeppe@j-software.dk>
-Date:   Sun Jun 2 15:50:41 2019 +0000
-
-    - Fix compilation on architectures without absolute call/jump instructions.
-    
-    git-svn-id: trunk@42164 -
-
-M	rtl/avr/math.inc
-
-******************************************************************************
-commit aa4961d06e12c43a802ee25305d8805cf1ff1414
-Author: Jeppe Johansen <jeppe@j-software.dk>
-Date:   Sun Jun 2 14:55:30 2019 +0000
-
-    - Add mov optimization for STS instruction.
-    
-    git-svn-id: trunk@42163 -
-
-M	compiler/avr/aoptcpu.pas
-
-******************************************************************************
-commit dee01978907bf4ae544fe53c95a81cea34f1ce4d
-Author: Jeppe Johansen <jeppe@j-software.dk>
-Date:   Sun Jun 2 13:14:19 2019 +0000
-
-    - Add assembler implementation of integer division, patch by Christo Crause. For now there's a division by zero check added.
-    - Fix setjmp/longjmp handling on 3 byte PC AVRs.
-    
-    git-svn-id: trunk@42162 -
-
-M	rtl/avr/avr.inc
-M	rtl/avr/math.inc
-M	rtl/avr/setjump.inc
-M	rtl/avr/setjumph.inc
-
-******************************************************************************
-commit 5bdc635f50c284217c336a407da774c6850a7f9e
-Author: Jeppe Johansen <jeppe@j-software.dk>
-Date:   Sun Jun 2 09:13:19 2019 +0000
-
-    Check if the current register was the last in the cgpara, to avoid running over the last register allocated.
-    
-    git-svn-id: trunk@42159 -
-
-M	compiler/avr/cgcpu.pas
-
-******************************************************************************
 commit cba4aeaca5dcbed78c85b804ed7a5bded119446f
 Author: Jeppe Johansen <jeppe@j-software.dk>
 Date:   Sat Jun 1 20:30:09 2019 +0000
@@ -57260,41 +56297,6 @@ Date:   Sat Jun 1 20:30:09 2019 +0000
     git-svn-id: trunk@42158 -
 
 M	compiler/arm/narmmat.pas
-
-******************************************************************************
-commit 2f501be2a0a17091460c8307862671cb9dbff45b
-Author: Jeppe Johansen <jeppe@j-software.dk>
-Date:   Sat Jun 1 19:18:31 2019 +0000
-
-    Fixed stack checking for embedded target. Based on work by Christo Crause
-    
-    git-svn-id: trunk@42157 -
-
-M	rtl/avr/avr.inc
-M	rtl/embedded/system.pp
-M	rtl/inc/system.inc
-
-******************************************************************************
-commit 009c87156a1ca1f2eb6b08f7bc01e0e7816eb13c
-Author: Jeppe Johansen <jeppe@j-software.dk>
-Date:   Sat Jun 1 15:39:09 2019 +0000
-
-    Add assembler implementation of Move.
-    
-    git-svn-id: trunk@42155 -
-
-M	rtl/avr/avr.inc
-
-******************************************************************************
-commit c867d2b7f64b4fe56c923924c40199447512dc48
-Author: Jeppe Johansen <jeppe@j-software.dk>
-Date:   Sat Jun 1 15:20:34 2019 +0000
-
-    Generalize skip instruction optimization for both sbix and sbrx.
-    
-    git-svn-id: trunk@42154 -
-
-M	compiler/avr/aoptcpu.pas
 
 ******************************************************************************
 commit 9313ddea78051cc7ec69710462dc2e880080a1ed
@@ -58270,17 +57272,6 @@ Date:   Tue Apr 30 19:36:46 2019 +0000
 M	compiler/aasmcnst.pas
 
 ******************************************************************************
-commit 3ad450c6364e471810e008a2bf13b1e48b4d849b
-Author: Jeppe Johansen <jeppe@j-software.dk>
-Date:   Tue Apr 30 17:00:30 2019 +0000
-
-    avr: Add peephole optimization for in+sbr* bit test sequence.
-    
-    git-svn-id: trunk@41962 -
-
-M	compiler/avr/aoptcpu.pas
-
-******************************************************************************
 commit 819752c334f6784a55b1ce151a8a0e11ccf87c7e
 Author: pierre <pierre@freepascal.org>
 Date:   Mon Apr 29 14:19:16 2019 +0000
@@ -58405,23 +57396,6 @@ Date:   Sat Apr 20 18:18:07 2019 +0000
     git-svn-id: trunk@41906 -
 
 M	compiler/cclasses.pas
-
-******************************************************************************
-commit 12879adc2f370c6bbdaa8dd2e0b80a0174ddb82b
-Author: Jeppe Johansen <jeppe@j-software.dk>
-Date:   Thu Apr 18 18:26:51 2019 +0000
-
-    - Adds intrinsics to save/restore SREG when disabling interrupts.
-    - Adds nostackframe to stack frame investigation stubs.
-    
-    git-svn-id: trunk@41898 -
-
-M	compiler/avr/ccpuinnr.inc
-M	compiler/avr/navrinl.pas
-M	compiler/pdecsub.pas
-M	rtl/avr/avr.inc
-M	rtl/avr/cpuinnr.inc
-M	rtl/avr/intrinsics.pp
 
 ******************************************************************************
 commit 6f411d6355156913f10c37aa700e1559a1a498c2
@@ -59407,6 +58381,7 @@ Date:   Wed Feb 27 22:13:54 2019 +0000
     git-svn-id: trunk@41521 -
 
 M	compiler/systems/i_linux.pas
+
 ******************************************************************************
 commit c7834af3545959d7c104078eefb568243cc71876
 Author: Jonas Maebe <jonas@freepascal.org>
@@ -60463,7 +59438,6 @@ Date:   Sat Feb 2 20:31:16 2019 +0000
 
 M	rtl/objpas/classes/classesh.inc
 M	rtl/objpas/classes/lists.inc
-
 ******************************************************************************
 commit c24d525b9f1f1cd221c2f5e73b5fb6f147b2224c
 Author: nickysn <nickysn@gmail.com>
@@ -61138,17 +60112,6 @@ Date:   Sat Jan 12 14:44:54 2019 +0000
     git-svn-id: trunk@40849 -
 
 M	compiler/x86/cpubase.pas
-
-******************************************************************************
-commit 8fceba449334735be058a1db4dbf1d8c5f999046
-Author: florian <florian@freepascal.org>
-Date:   Sat Jan 12 13:28:09 2019 +0000
-
-    * properly allocate parameter registers for constants on avr, resolves #33932
-    
-    git-svn-id: trunk@40848 -
-
-M	compiler/avr/cgcpu.pas
 
 ******************************************************************************
 commit 1b16ff3629c51a305b9808e751456f7eff1a5df8
@@ -61931,17 +60894,6 @@ Date:   Thu Dec 27 22:07:30 2018 +0000
 
 M	compiler/systems/i_linux.pas
 M	compiler/systems/i_win.pas
-
-******************************************************************************
-commit 917de001d6af01c4d3f11a6ddfe59935ee859a8f
-Author: florian <florian@freepascal.org>
-Date:   Thu Dec 27 21:41:36 2018 +0000
-
-    * patch (slighly modified) by Christo Crause to write 16 bit registers on avr in hi/lo order, resolves #34721
-    
-    git-svn-id: trunk@40678 -
-
-M	compiler/avr/cgcpu.pas
 
 ******************************************************************************
 commit a7c347fe567eead26455fa6be3c579a227673362
@@ -63317,18 +62269,6 @@ Date:   Sun Nov 4 19:50:09 2018 +0000
     git-svn-id: trunk@40219 -
 
 M	compiler/ncgrtti.pas
-
-******************************************************************************
-commit 42e54c1ad5262f0954375c9e40fa4cc8cc32ab7c
-Author: florian <florian@freepascal.org>
-Date:   Sat Nov 3 10:39:58 2018 +0000
-
-    * max_operands needs only to be 2 on avr
-    
-    git-svn-id: trunk@40197 -
-
-M	compiler/avr/cpubase.pas
-M	compiler/avr/raavr.pas
 
 ******************************************************************************
 commit 0e546d47ca72794e9d3edfd3f15435fc09d9cfa4
