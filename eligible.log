@@ -1,4 +1,25 @@
 ******************************************************************************
+commit 5c7974fceb768f96853b4abc05cb122ac8ccfd0c
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Mon Oct 25 21:41:27 2021 +0200
+
+    pastojs: fixed class property getter static
+
+M	packages/fcl-passrc/tests/tcresolver.pas
+M	packages/pastojs/src/fppas2js.pp
+M	packages/pastojs/tests/tcmodules.pas
+
+******************************************************************************
+commit baa28faa19315d698eb174a95acb41d688fd0d79
+Author: florian <florian@freepascal.org>
+Date:   Mon Oct 25 21:39:24 2021 +0200
+
+      * pic'fied startup code
+
+M	rtl/linux/x86_64/si_c.inc
+M	rtl/linux/x86_64/si_g.inc
+
+******************************************************************************
 commit 10fcae34a957e94837fe376fa828815ab99d80a3
 Author: florian <florian@freepascal.org>
 Date:   Sun Oct 24 18:22:05 2021 +0200
