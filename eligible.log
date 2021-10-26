@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 4b157a14988b5f0637e61b5555ca6e420e896b99
+Author: florian <florian@freepascal.org>
+Date:   Tue Oct 26 21:34:22 2021 +0200
+
+      + print full file path if -vb is passed even if no line number is known, resolves #39419
+
+M	compiler/comphook.pas
+
+******************************************************************************
 commit 5c7974fceb768f96853b4abc05cb122ac8ccfd0c
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Mon Oct 25 21:41:27 2021 +0200
