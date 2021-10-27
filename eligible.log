@@ -1,4 +1,28 @@
 ******************************************************************************
+commit 3263e12a3e10979b45b7f3ee5e5b38bedd844b03
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Wed Oct 27 20:47:39 2021 +0200
+
+    iphonesim: use ios_simulator_version_min
+    
+    The linker expects ios_simulator_version_min rather than -iphoneos_version_min
+    when targeting the iOS simulator platform. Fixes compilation with Xcode 11
+    toolchains, which is more strict about this.
+
+M	compiler/systems/t_darwin.pas
+
+******************************************************************************
+commit 334cf9c19de59791448fc5ac70a8c19d33bbd94e
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Wed Oct 27 20:44:22 2021 +0200
+
+    iphonesim target: requires proper alignment
+    
+    Just like the native iOS targets
+
+M	compiler/systems/i_darwin.pas
+
+******************************************************************************
 commit 4b157a14988b5f0637e61b5555ca6e420e896b99
 Author: florian <florian@freepascal.org>
 Date:   Tue Oct 26 21:34:22 2021 +0200
