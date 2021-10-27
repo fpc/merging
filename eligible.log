@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 8ca19a3b65283b34bb77fafe0f4ccf4614ba6c48
+Author: florian <florian@freepascal.org>
+Date:   Wed Oct 27 21:19:34 2021 +0200
+
+      * patch by Frank Rademakers: Initialize new FoxPro Float fields correctly, resolves #39418
+
+M	packages/fcl-db/src/dbase/dbf_dbffile.pas
+
+******************************************************************************
 commit 3263e12a3e10979b45b7f3ee5e5b38bedd844b03
 Author: Jonas Maebe <jonas@freepascal.org>
 Date:   Wed Oct 27 20:47:39 2021 +0200
