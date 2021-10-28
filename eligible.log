@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 95ad8f1694dd0efd0774767b0a08b79dd53130d4
+Author: florian <florian@freepascal.org>
+Date:   Thu Oct 28 21:13:01 2021 +0200
+
+      * correctly read the region label in $region directives, resolves #39395
+
+M	compiler/scandir.pas
+A	tests/webtbs/tw39395.pp
+
+******************************************************************************
 commit 8ca19a3b65283b34bb77fafe0f4ccf4614ba6c48
 Author: florian <florian@freepascal.org>
 Date:   Wed Oct 27 21:19:34 2021 +0200
