@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 76e6beb9298e48f7dd218101f3538f8fd539c420
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Fri Oct 29 17:16:47 2021 +0200
+
+    * Restore previous default behaviour for OnDirective, put under option
+
+M	packages/fcl-passrc/src/pscanner.pp
+
+******************************************************************************
 commit 95ad8f1694dd0efd0774767b0a08b79dd53130d4
 Author: florian <florian@freepascal.org>
 Date:   Thu Oct 28 21:13:01 2021 +0200
