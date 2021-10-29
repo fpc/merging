@@ -1,4 +1,27 @@
 ******************************************************************************
+commit 0f14bd45b15390e9f8687b97dbf953c102fc797d
+Author: florian <florian@freepascal.org>
+Date:   Fri Oct 29 23:06:26 2021 +0200
+
+      * run fcl-image tests with regression tests
+
+R100	packages/fcl-image/tests/tcbarcodes.pp	packages/fcl-image/tests/tcbarcodes.pas
+M	packages/fcl-image/tests/testfpimage.lpi
+M	tests/Makefile
+M	tests/Makefile.fpc
+
+******************************************************************************
+commit ef923ba1426d988fcc042b378dc1f36681efb123
+Author: florian <florian@freepascal.org>
+Date:   Fri Oct 29 22:58:23 2021 +0200
+
+      * consistent naming of directories
+
+R100	packages/fcl-image/test/tcbarcodes.pp	packages/fcl-image/tests/tcbarcodes.pp
+R100	packages/fcl-image/test/testfpimage.lpi	packages/fcl-image/tests/testfpimage.lpi
+R100	packages/fcl-image/test/testfpimage.lpr	packages/fcl-image/tests/testfpimage.lpr
+
+******************************************************************************
 commit 76e6beb9298e48f7dd218101f3538f8fd539c420
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Fri Oct 29 17:16:47 2021 +0200
@@ -8021,15 +8044,6 @@ Date:   Fri Aug 6 17:41:51 2021 +0100
 M	tests/utils/fpts2junit.pp
 
 ******************************************************************************
-commit 9e1606f221458e434f406658f641c9b790ceef38
-Author: marcoonthegit <marco@freepascal.org>
-Date:   Fri Aug 6 12:05:34 2021 +0200
-
-     * add BI_ALPHABITFIELDS
-
-M	packages/fcl-image/src/bmpcomn.pp
-
-******************************************************************************
 commit b3744bf11fc50891c3769b1268f72dc93824d5bb
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Fri Aug 6 04:30:09 2021 +0300
@@ -9154,41 +9168,6 @@ Date:   Thu Jul 22 05:50:22 2021 +0000
 M	packages/fcl-db/src/base/datasource.inc
 
 ******************************************************************************
-commit b9db32ca05f034eb2e9bf15acc7b94d458c0d075
-Author: ondrej <ondrej@idefix.freepascal.org>
-Date:   Thu Jul 22 05:12:18 2021 +0000
-
-    freetype: include bearings and invisible characters into text bounds
-    
-    git-svn-id: trunk@49629 -
-
-M	packages/fcl-image/examples/textout.pp
-M	packages/fcl-image/src/freetype.pp
-M	packages/fcl-image/src/ftfont.pp
-
-******************************************************************************
-commit 41d6374bb6e86cffe806d9ddeaa19d9e3126804f
-Author: ondrej <ondrej@idefix.freepascal.org>
-Date:   Thu Jul 22 04:03:43 2021 +0000
-
-    freetype: fix font output, isuue 17156
-    
-    git-svn-id: trunk@49628 -
-
-M	packages/fcl-image/src/freetype.pp
-
-******************************************************************************
-commit 83bb854f1ec3018fc52bd2fe72bb5f77ee2831aa
-Author: ondrej <ondrej@idefix.freepascal.org>
-Date:   Wed Jul 21 20:59:57 2021 +0000
-
-    * glyph advances are stored in 16.16 fixed-point format and not 26.6 format (https://www.freetype.org/freetype2/docs/reference/ft2-glyph_management.html#ft_glyph)
-    
-    git-svn-id: trunk@49627 -
-
-M	packages/fcl-image/src/freetype.pp
-
-******************************************************************************
 commit fafee8b85b91942bd60adba63c1348a6d89d5177
 Author: florian <florian@freepascal.org>
 Date:   Wed Jul 21 20:41:31 2021 +0000
@@ -9198,17 +9177,6 @@ Date:   Wed Jul 21 20:41:31 2021 +0000
     git-svn-id: trunk@49626 -
 
 M	rtl/x86_64/math.inc
-
-******************************************************************************
-commit ade1bad057d01ba1c25b35aff57b8a6020fca170
-Author: ondrej <ondrej@idefix.freepascal.org>
-Date:   Wed Jul 21 20:16:00 2021 +0000
-
-    TBAseStringBitmaps.CalculateGlobals: the first <non-empty> bitmap should be used, not the first one
-    
-    git-svn-id: trunk@49625 -
-
-M	packages/fcl-image/src/freetype.pp
 
 ******************************************************************************
 commit 4fac31d1c76c39926ab0b0f3108a32f0028c8293
@@ -12387,17 +12355,6 @@ Date:   Tue May 4 19:56:22 2021 +0000
     git-svn-id: trunk@49337 -
 
 M	rtl/aarch64/math.inc
-
-******************************************************************************
-commit 18a78020fa37158f5e8c6d020363f2a913291d3c
-Author: michael <michael@freepascal.org>
-Date:   Tue May 4 14:20:27 2021 +0000
-
-    * Fix (by Han) for issue ID #35080
-    
-    git-svn-id: trunk@49336 -
-
-M	packages/fcl-image/src/fpwritepnm.pp
 
 ******************************************************************************
 commit a6525062547065325350639064508a3abbb6a57e
@@ -59617,6 +59574,7 @@ M	rtl/win64/Makefile
 M	rtl/win64/Makefile.fpc
 M	rtl/wince/Makefile
 M	rtl/wince/Makefile.fpc
+
 ******************************************************************************
 commit 6c87b89e45184fc5deda0c5af0e4ad9bd476776b
 Author: Károly Balogh <karoly@freepascal.org>
@@ -59673,7 +59631,6 @@ Date:   Tue Jan 29 21:39:16 2019 +0000
     git-svn-id: trunk@41135 -
 
 M	compiler/ncgld.pas
-
 ******************************************************************************
 commit 4869d0ace9883ec2e0a4aa9bcf0cb63070df81e9
 Author: Jonas Maebe <jonas@freepascal.org>
