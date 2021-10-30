@@ -1,4 +1,28 @@
 ******************************************************************************
+commit 6d4d2f2fb272fcb119f506a5c04ba6de998f0323
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Oct 30 18:23:59 2021 +0200
+
+    * OneTimePass & test for sha256
+
+M	packages/hash/fpmake.pp
+A	packages/hash/src/onetimepass.pp
+A	packages/hash/tests/testonetimepass.pp
+A	packages/hash/tests/testsha256.pp
+
+******************************************************************************
+commit 3229cb712e33374b85258aed43726058be633bed
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Oct 30 18:21:55 2021 +0200
+
+    * sha256 algorithm
+
+A	packages/hash/examples/demosha256.pp
+M	packages/hash/fpmake.pp
+A	packages/hash/src/hashutils.pp
+A	packages/hash/src/sha256.pp
+
+******************************************************************************
 commit b63979a5ba4c72c6d0f990aa7c5800d45f66ee28
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Sat Oct 30 18:16:11 2021 +0200
