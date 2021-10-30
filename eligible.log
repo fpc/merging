@@ -1,4 +1,15 @@
 ******************************************************************************
+commit 446cc62b60fd1238377a385ca8e4d84326ff5651
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Oct 30 12:59:10 2021 +0200
+
+    * Base16/32/64/64URL encoders/decoders, not stream based
+
+A	packages/fcl-base/examples/demobasenenc.lpr
+A	packages/fcl-base/src/basenenc.pp
+A	packages/fcl-base/tests/testbasenenc.lpr
+
+******************************************************************************
 commit 0f14bd45b15390e9f8687b97dbf953c102fc797d
 Author: florian <florian@freepascal.org>
 Date:   Fri Oct 29 23:06:26 2021 +0200
