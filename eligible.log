@@ -1,4 +1,42 @@
 ******************************************************************************
+commit 1bc8aea2b3baa25b03528ed83e38a75fa8f9d909
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Oct 30 20:15:44 2021 +0200
+
+    * fcl-base dependency
+
+M	packages/hash/fpmake.pp
+
+******************************************************************************
+commit 64fbc1847ff03034bedec336a106ea2fba349742
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Oct 30 20:09:29 2021 +0200
+
+    * Fix license
+
+M	packages/hash/src/ecc.pp
+M	packages/hash/src/hashutils.pp
+
+******************************************************************************
+commit 6644d6c4c2baeb1cb5e9f557f434c4c84add4706
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Oct 30 20:06:40 2021 +0200
+
+    * Fix compilation
+
+M	packages/hash/src/ecc.pp
+
+******************************************************************************
+commit 380e861cc8cd4ecfae5b41f7cd25c6dfd88c20cd
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Oct 30 20:02:59 2021 +0200
+
+    * Needed for hashutils
+
+M	packages/hash/fpmake.pp
+A	packages/hash/src/ecc.pp
+
+******************************************************************************
 commit 6d4d2f2fb272fcb119f506a5c04ba6de998f0323
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Sat Oct 30 18:23:59 2021 +0200
