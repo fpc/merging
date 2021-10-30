@@ -1,4 +1,16 @@
 ******************************************************************************
+commit fb7cdbefb3f14cd66a4960bbeded3e6a739a95f5
+Author: florian <florian@freepascal.org>
+Date:   Sat Oct 30 20:21:47 2021 +0200
+
+      + some opcodes added
+
+M	compiler/aarch64/a64att.inc
+M	compiler/aarch64/a64atts.inc
+M	compiler/aarch64/a64ins.dat
+M	compiler/aarch64/a64op.inc
+
+******************************************************************************
 commit 1bc8aea2b3baa25b03528ed83e38a75fa8f9d909
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Sat Oct 30 20:15:44 2021 +0200
