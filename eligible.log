@@ -1,4 +1,35 @@
 ******************************************************************************
+commit ff3acfb8cda7f6a077dfc585cbe9acb0d8e34418
+Author: florian <florian@freepascal.org>
+Date:   Sun Oct 31 13:20:28 2021 +0100
+
+      * cleanup of 2.7.0 defines
+
+M	compiler/aarch64/cpuinfo.pas
+M	compiler/arm/cpuinfo.pas
+M	compiler/avr/cpuinfo.pas
+M	compiler/compiler.pas
+M	compiler/cresstr.pas
+M	compiler/generic/cpuinfo.pas
+M	compiler/i386/cpuinfo.pas
+M	compiler/i8086/cpuinfo.pas
+M	compiler/jvm/cpuinfo.pas
+M	compiler/m68k/cpuinfo.pas
+M	compiler/mips/cpuinfo.pas
+M	compiler/nadd.pas
+M	compiler/options.pas
+M	compiler/powerpc/cpuinfo.pas
+M	compiler/powerpc64/cpuinfo.pas
+M	compiler/riscv32/cpuinfo.pas
+M	compiler/riscv64/cpuinfo.pas
+M	compiler/scanner.pas
+M	compiler/sparc/cpuinfo.pas
+M	compiler/sparc64/cpuinfo.pas
+M	compiler/wasm32/cpuinfo.pas
+M	compiler/x86_64/cpuinfo.pas
+M	compiler/z80/cpuinfo.pas
+
+******************************************************************************
 commit e657aa64317a385a5c6fb52bf6c752e883220eb9
 Author: florian <florian@freepascal.org>
 Date:   Sun Oct 31 11:57:32 2021 +0100
