@@ -1,4 +1,25 @@
 ******************************************************************************
+commit 15865e760244be485772a53a6eaa09f80e5ca8ee
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sun Oct 31 17:49:04 2021 +0100
+
+    Record variant discriminators: check types
+
+M	compiler/pdecvar.pas
+A	tests/tbf/tb0276.pp
+
+******************************************************************************
+commit 4426d0da7abffba27f125112a1484e3c9449761a
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sun Oct 31 17:43:59 2021 +0100
+
+    Fixed variant discriminator types
+
+M	packages/fcl-res/src/machotypes.pp
+M	rtl/inc/sstrings.inc
+M	tests/tbs/tb0516.pp
+
+******************************************************************************
 commit 4f77cbbac4accf137ac2683b95f5ee9f7c628ce8
 Author: florian <florian@freepascal.org>
 Date:   Sun Sep 12 19:40:51 2021 +0200
