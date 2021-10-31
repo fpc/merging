@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 5a617cd1082e80008559a012673db2eecb6304bf
+Author: florian <florian@freepascal.org>
+Date:   Sun Oct 31 17:22:15 2021 +0100
+
+      + fold real constants c1,c2 for v+c1+c2 or c1+(c2+v) (+ being either + or *) as well if fastmath is enabled
+
+M	compiler/nadd.pas
+
+******************************************************************************
 commit 284317d877bb10d11ffe8f6f8d3cd34bd51ee837
 Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
 Date:   Sat Oct 30 01:16:04 2021 +0100
