@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 4f77cbbac4accf137ac2683b95f5ee9f7c628ce8
+Author: florian <florian@freepascal.org>
+Date:   Sun Sep 12 19:40:51 2021 +0200
+
+      + keep addresses of thread vars in registers if possible and likely an advantage
+
+M	compiler/optcse.pas
+
+******************************************************************************
 commit 5a617cd1082e80008559a012673db2eecb6304bf
 Author: florian <florian@freepascal.org>
 Date:   Sun Oct 31 17:22:15 2021 +0100
