@@ -1,4 +1,52 @@
 ******************************************************************************
+commit 284317d877bb10d11ffe8f6f8d3cd34bd51ee837
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Sat Oct 30 01:16:04 2021 +0100
+
+    Fixed OptPass2Lea not honouring symbols
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
+commit 42eb06f5c660df09a392d99fb41166ffc614e0bc
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Thu Oct 28 01:15:39 2021 +0100
+
+    Fixed some range check problems
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
+commit b58fdc3e584854a4c4fc02bd7fc23f378263d25a
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Tue Oct 26 23:11:21 2021 +0100
+
+    Improved ADD and SUB optimisations for LEA instructions
+
+M	compiler/i386/aoptcpu.pas
+M	compiler/x86/aoptx86.pas
+M	compiler/x86_64/aoptcpu.pas
+
+******************************************************************************
+commit fa4e52857646bf1d45bef26d42e9efe75e84cdfe
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sun Oct 31 16:21:09 2021 +0100
+
+    fcl-res: Mach-O fat binary support
+    
+    Only for TMachOResourceReader. We always compile/generate a single architecture
+    binary, and then the programmer can combine those with lipo. So the writer does
+    not need fat binary support for common usage.
+    
+    Resolves #39124
+
+M	packages/fcl-res/src/machoconsts.pp
+M	packages/fcl-res/src/machodefaulttarget.inc
+M	packages/fcl-res/src/machoreader.pp
+M	packages/fcl-res/src/machotypes.pp
+M	packages/fcl-res/src/machowriter.pp
+
+******************************************************************************
 commit ff3acfb8cda7f6a077dfc585cbe9acb0d8e34418
 Author: florian <florian@freepascal.org>
 Date:   Sun Oct 31 13:20:28 2021 +0100
