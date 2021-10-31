@@ -1,4 +1,14 @@
 ******************************************************************************
+commit e657aa64317a385a5c6fb52bf6c752e883220eb9
+Author: florian <florian@freepascal.org>
+Date:   Sun Oct 31 11:57:32 2021 +0100
+
+      + write code and data size for Mach-O files if possible
+
+M	compiler/link.pas
+M	compiler/systems/t_darwin.pas
+
+******************************************************************************
 commit fb7cdbefb3f14cd66a4960bbeded3e6a739a95f5
 Author: florian <florian@freepascal.org>
 Date:   Sat Oct 30 20:21:47 2021 +0200
