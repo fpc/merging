@@ -1,4 +1,23 @@
 ******************************************************************************
+commit dcb1fcd9b81d364660b9ca5906e7b2f5e0fe688f
+Author: florian <florian@freepascal.org>
+Date:   Mon Nov 1 23:24:13 2021 +0100
+
+      + support $lgeacyifend directive, resolves #37676
+
+M	compiler/globtype.pas
+M	compiler/msg/errore.msg
+M	compiler/msgidx.inc
+M	compiler/msgtxt.inc
+M	compiler/scandir.pas
+M	compiler/scanner.pas
+M	compiler/utils/ppuutils/ppudump.pp
+A	tests/tbf/tb0277.pp
+A	tests/tbf/tb0278.pp
+A	tests/tbf/tb0279.pp
+A	tests/tbf/tb0280.pp
+
+******************************************************************************
 commit 4b196ece470115f1c04a5628eaf68e55a5700512
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Mon Nov 1 16:09:18 2021 +0000
