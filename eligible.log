@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 40df9554239c1aec7ba8e8ad26e2db8daa3ab864
+Author: florian <florian@freepascal.org>
+Date:   Mon Nov 1 14:55:41 2021 +0100
+
+      * StrTo* functions are now using the TryStrTo* functions
+
+M	rtl/objpas/sysutils/sysstr.inc
+
+******************************************************************************
 commit 89d27751911d6904fbbb10660a0194c43522fc8d
 Author: Jonas Maebe <jonas@freepascal.org>
 Date:   Mon Nov 1 13:56:33 2021 +0100
