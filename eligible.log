@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 89d27751911d6904fbbb10660a0194c43522fc8d
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Mon Nov 1 13:56:33 2021 +0100
+
+    optcse: fix wrong typecast
+
+M	compiler/optcse.pas
+
+******************************************************************************
 commit 1b8170d18dde78045d7269bfd58fb537b59dcabf
 Author: Michael Van Canneyt <michael@freepascal.org>
 Date:   Mon Nov 1 11:52:05 2021 +0100
