@@ -1,4 +1,22 @@
 ******************************************************************************
+commit 1b8170d18dde78045d7269bfd58fb537b59dcabf
+Author: Michael Van Canneyt <michael@freepascal.org>
+Date:   Mon Nov 1 11:52:05 2021 +0100
+
+    * More clear comment
+
+M	packages/fcl-passrc/src/pastree.pp
+
+******************************************************************************
+commit fcdbb31ec4f057f1eb169a1214f6c50a0ad5a90c
+Author: florian <florian@freepascal.org>
+Date:   Mon Nov 1 11:46:19 2021 +0100
+
+      * AArch64: TCpuAsmOptimizer.RegLoadedWithNewValue: check if p.ops=0
+
+M	compiler/aarch64/aoptcpu.pas
+
+******************************************************************************
 commit 15865e760244be485772a53a6eaa09f80e5ca8ee
 Author: Jonas Maebe <jonas@freepascal.org>
 Date:   Sun Oct 31 17:49:04 2021 +0100
