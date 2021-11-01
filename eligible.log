@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 4b196ece470115f1c04a5628eaf68e55a5700512
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Mon Nov 1 16:09:18 2021 +0000
+
+     Fix freebsd rtl compilation failure after better type check of variant element inside record case clause
+
+M	rtl/freebsd/ptypes.inc
+
+******************************************************************************
 commit 40df9554239c1aec7ba8e8ad26e2db8daa3ab864
 Author: florian <florian@freepascal.org>
 Date:   Mon Nov 1 14:55:41 2021 +0100
