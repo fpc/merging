@@ -1,4 +1,14 @@
 ******************************************************************************
+commit e0a78c2485bbcce7fb5972b2c7ab7fb6263674c0
+Author: florian <florian@freepascal.org>
+Date:   Tue Nov 2 22:01:52 2021 +0100
+
+      * tcgaarch64.g_concatcopy calls tcgaarch64.g_concatcopy_move only if the current subroutine has pi_do_call set
+      * fixed copy loop in tcgaarch64.g_concatcopy if ldp/stp is used: fixed increment calculation and fixed tail length calculation
+
+M	compiler/aarch64/cgcpu.pas
+
+******************************************************************************
 commit 7e4753bebd600951a76838f3e7c08f17d0e65505
 Author: Yuriy Sydorov <jura@cp-lab.com>
 Date:   Tue Nov 2 20:36:30 2021 +0200
