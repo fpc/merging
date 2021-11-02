@@ -1,4 +1,22 @@
 ******************************************************************************
+commit 7e4753bebd600951a76838f3e7c08f17d0e65505
+Author: Yuriy Sydorov <jura@cp-lab.com>
+Date:   Tue Nov 2 20:36:30 2021 +0200
+
+    * Typo fixed.
+
+M	compiler/rgobj.pas
+
+******************************************************************************
+commit 5b32c81befccea3ba64fc012e3e4216bb875dc17
+Author: Yuriy Sydorov <jura@cp-lab.com>
+Date:   Tue Nov 2 20:33:34 2021 +0200
+
+    * Corrected setting of the flag.
+
+M	compiler/nflw.pas
+
+******************************************************************************
 commit b78761efd30a814d055d78078c3f9d0422ef6291
 Author: Yuriy Sydorov <jura@cp-lab.com>
 Date:   Tue Nov 2 17:08:08 2021 +0200
