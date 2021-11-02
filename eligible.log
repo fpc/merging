@@ -1,4 +1,17 @@
 ******************************************************************************
+commit a47f153daed4b95925d299168baf916a65573f73
+Author: Florian Klämpfl <florian@freepascal.org>
+Date:   Tue Oct 23 22:35:34 2018 +0200
+
+      * avoid to create a stack frame on aarch64 if possible
+
+M	compiler/aarch64/cgcpu.pas
+M	compiler/armgen/aoptarm.pas
+M	compiler/globtype.pas
+M	compiler/psub.pas
+M	compiler/utils/ppuutils/ppudump.pp
+
+******************************************************************************
 commit e0a78c2485bbcce7fb5972b2c7ab7fb6263674c0
 Author: florian <florian@freepascal.org>
 Date:   Tue Nov 2 22:01:52 2021 +0100
