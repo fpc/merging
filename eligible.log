@@ -1,4 +1,22 @@
 ******************************************************************************
+commit 44051b4af33b097a1069a0702108fc4799864c84
+Author: florian <florian@freepascal.org>
+Date:   Wed Nov 3 22:41:07 2021 +0100
+
+      * corrected accidently made changs in 01a449c8, resolves #39424
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
+commit 2240c690784bc6117f8d602c9eedfb23d0d8846c
+Author: florian <florian@freepascal.org>
+Date:   Wed Nov 3 22:28:12 2021 +0100
+
+      * improved heurisics when thread var addresses or float constants are put in registers
+
+M	compiler/optcse.pas
+
+******************************************************************************
 commit 10d9918596dfbac73b84c4cf567ee14caa6ef546
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Wed Nov 3 22:13:39 2021 +0100
