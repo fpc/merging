@@ -1,4 +1,14 @@
 ******************************************************************************
+commit d70bb6a8c2c7465949bc8e6ce328789572b93987
+Author: Tomas Hajny <XHajT03@hajny.biz>
+Date:   Thu Nov 4 02:25:06 2021 +0100
+
+      * include installer building in zipinstall make target when building for relevant OS targets
+
+M	Makefile
+M	Makefile.fpc
+
+******************************************************************************
 commit 44051b4af33b097a1069a0702108fc4799864c84
 Author: florian <florian@freepascal.org>
 Date:   Wed Nov 3 22:41:07 2021 +0100
