@@ -1,4 +1,15 @@
 ******************************************************************************
+commit 3271d1aac712184001956ddb2c0f1b157b7c1107
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Thu Nov 4 18:15:04 2021 +0100
+
+    * Empty record constants
+
+M	packages/fcl-passrc/src/pparser.pp
+M	packages/fcl-passrc/tests/tconstparser.pas
+M	packages/fcl-passrc/tests/testpassrc.lpi
+
+******************************************************************************
 commit 4dd01de381d056c627f71124c5b6dac6297d7837
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Thu Nov 4 08:54:05 2021 +0100
