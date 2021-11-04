@@ -1,4 +1,39 @@
 ******************************************************************************
+commit 4dd01de381d056c627f71124c5b6dac6297d7837
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Thu Nov 4 08:54:05 2021 +0100
+
+    * Fix cvar;export; parsing
+
+M	packages/fcl-passrc/src/pparser.pp
+M	packages/fcl-passrc/tests/tcvarparser.pas
+M	packages/fcl-passrc/tests/testpassrc.lpi
+
+******************************************************************************
+commit 47610d5c651a232a2061a44e2358b147ba65ff1c
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Wed Nov 3 12:22:32 2021 +0100
+
+    * SHA512/SHA384 + JWT signers, refactor SHA256 to use class methods
+
+M	packages/fcl-web/fpmake.pp
+A	packages/fcl-web/src/jwt/fpjwasha256.pp
+A	packages/fcl-web/src/jwt/fpjwasha384.pp
+A	packages/fcl-web/src/jwt/fpjwasha512.pp
+R058	packages/fcl-web/src/base/fpjwt.pp	packages/fcl-web/src/jwt/fpjwt.pp
+R100	packages/fcl-web/src/base/fpoauth2.pp	packages/fcl-web/src/jwt/fpoauth2.pp
+R100	packages/fcl-web/src/base/fpoauth2ini.pp	packages/fcl-web/src/jwt/fpoauth2ini.pp
+A	packages/fcl-web/tests/tcjwt.pp
+M	packages/fcl-web/tests/testfpweb.lpi
+M	packages/fcl-web/tests/testfpweb.lpr
+M	packages/hash/fpmake.pp
+M	packages/hash/src/sha256.pp
+A	packages/hash/src/sha512.pp
+M	packages/hash/tests/tests.pp
+M	packages/hash/tests/testsha256.pp
+A	packages/hash/tests/testsha512.pp
+
+******************************************************************************
 commit d70bb6a8c2c7465949bc8e6ce328789572b93987
 Author: Tomas Hajny <XHajT03@hajny.biz>
 Date:   Thu Nov 4 02:25:06 2021 +0100
