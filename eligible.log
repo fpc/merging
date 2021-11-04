@@ -1,4 +1,26 @@
 ******************************************************************************
+commit 1023a6ff6b975a44dd4b8b4ad536160e16646032
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Thu Nov 4 19:05:59 2021 +0100
+
+    * Correct label parsing
+
+M	packages/fcl-passrc/src/pastree.pp
+M	packages/fcl-passrc/src/pparser.pp
+M	packages/fcl-passrc/tests/tconstparser.pas
+M	packages/fcl-passrc/tests/testpassrc.lpi
+
+******************************************************************************
+commit b760863046f7d2f921c8a9144c94374863a806da
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Thu Nov 4 19:45:44 2021 +0200
+
+    * fixed the ptccrt key codes for the ctrl+numpad keys
+
+M	packages/graph/src/ptcgraph/ptccrt.pp
+M	packages/ptc/tests/crtkeys/ptccrtkeys.pas
+
+******************************************************************************
 commit 3271d1aac712184001956ddb2c0f1b157b7c1107
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Thu Nov 4 18:15:04 2021 +0100
