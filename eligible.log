@@ -1,4 +1,16 @@
 ******************************************************************************
+commit 9feafc7bd73705fea94842a34ef704192350fe01
+Author: florian <florian@freepascal.org>
+Date:   Fri Nov 5 23:05:17 2021 +0100
+
+      + ARM: started on vfpv5 support
+
+M	compiler/arm/aasmcpu.pas
+M	compiler/arm/agarmgas.pas
+M	compiler/arm/cpuinfo.pas
+M	compiler/arm/narmutil.pas
+
+******************************************************************************
 commit d4034afda78c0eb2b3cb81f70d05490de79e1e35
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Fri Nov 5 11:11:10 2021 +0100
