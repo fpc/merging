@@ -1,4 +1,13 @@
 ******************************************************************************
+commit d4034afda78c0eb2b3cb81f70d05490de79e1e35
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Fri Nov 5 11:11:10 2021 +0100
+
+    * SetRecNo must call DoAfterScroll. Fix for issue #39429
+
+M	packages/fcl-db/src/memds/memds.pp
+
+******************************************************************************
 commit 1023a6ff6b975a44dd4b8b4ad536160e16646032
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Thu Nov 4 19:05:59 2021 +0100
