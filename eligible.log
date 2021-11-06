@@ -1,4 +1,22 @@
 ******************************************************************************
+commit 716e8c8e8975337c2f40122becd0b596b3461586
+Author: florian <florian@freepascal.org>
+Date:   Sat Nov 6 21:14:57 2021 +0100
+
+      * tcgsizep2size now supports all tcgsize values
+
+M	compiler/aarch64/cpubase.pas
+
+******************************************************************************
+commit 8e5c2467e29e86222877085a43575f04ac1204df
+Author: Yuriy Sydorov <jura@cp-lab.com>
+Date:   Sat Nov 6 21:47:12 2021 +0200
+
+    * Fixed node coalescing with real registers.
+
+M	compiler/rgobj.pas
+
+******************************************************************************
 commit 9423d5e390b94f34046ee030b5712e466950640e
 Author: florian <florian@freepascal.org>
 Date:   Sat Nov 6 11:00:53 2021 +0100
