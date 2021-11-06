@@ -1,4 +1,15 @@
 ******************************************************************************
+commit 9423d5e390b94f34046ee030b5712e466950640e
+Author: florian <florian@freepascal.org>
+Date:   Sat Nov 6 11:00:53 2021 +0100
+
+      + fp-armv8 fpu type added
+
+M	compiler/arm/aasmcpu.pas
+M	compiler/arm/cpuinfo.pas
+M	compiler/arm/narmutil.pas
+
+******************************************************************************
 commit 9feafc7bd73705fea94842a34ef704192350fe01
 Author: florian <florian@freepascal.org>
 Date:   Fri Nov 5 23:05:17 2021 +0100
