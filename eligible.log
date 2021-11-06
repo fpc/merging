@@ -1,4 +1,16 @@
 ******************************************************************************
+commit c1d43df4a1e58702a57452499fc00898a1e421d6
+Author: florian <florian@freepascal.org>
+Date:   Sat Nov 6 23:32:56 2021 +0100
+
+      + be able to add single cpu capabilites by the command line
+      + AArch64: SHA2 capability
+
+M	compiler/aarch64/agcpugas.pas
+M	compiler/aarch64/cpuinfo.pas
+M	compiler/options.pas
+
+******************************************************************************
 commit 716e8c8e8975337c2f40122becd0b596b3461586
 Author: florian <florian@freepascal.org>
 Date:   Sat Nov 6 21:14:57 2021 +0100
