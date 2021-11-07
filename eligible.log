@@ -1,4 +1,14 @@
 ******************************************************************************
+commit f570b6cb7bb10b90a7eba22de9d4d10a09e83703
+Author: florian <florian@freepascal.org>
+Date:   Sun Nov 7 11:06:01 2021 +0100
+
+      + more Aarch64 cpu capability flags added
+
+M	compiler/aarch64/agcpugas.pas
+M	compiler/aarch64/cpuinfo.pas
+
+******************************************************************************
 commit c1d43df4a1e58702a57452499fc00898a1e421d6
 Author: florian <florian@freepascal.org>
 Date:   Sat Nov 6 23:32:56 2021 +0100
