@@ -1,4 +1,31 @@
 ******************************************************************************
+commit 7fcbd1d7e0a24bbe476d5ec4e67c458b742190b1
+Author: florian <florian@freepascal.org>
+Date:   Sun Nov 7 14:58:17 2021 +0100
+
+      * my last commit hopefully fixed
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
+commit 492d75483d05af525822561fc8232c52748a24b0
+Author: florian <florian@freepascal.org>
+Date:   Sun Nov 7 14:46:13 2021 +0100
+
+      * fix (V)Cvtss2CvtSd(V)Cvtsd2ss2* optmizations for non-avx code, resolves #39416
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
+commit c917639b91bd8d0d784a0f84e6dc3c3789ff8520
+Author: florian <florian@freepascal.org>
+Date:   Sun Nov 7 14:46:03 2021 +0100
+
+      * cosmetics
+
+M	compiler/options.pas
+
+******************************************************************************
 commit f570b6cb7bb10b90a7eba22de9d4d10a09e83703
 Author: florian <florian@freepascal.org>
 Date:   Sun Nov 7 11:06:01 2021 +0100
