@@ -1,4 +1,16 @@
 ******************************************************************************
+commit 292be9029e729b03f4f6f2ac415d43ac90fdc03a
+Author: florian <florian@freepascal.org>
+Date:   Sun Nov 7 21:54:25 2021 +0100
+
+      * when converting a*a into sqr(a), set the result type correctly
+      * removefloatupcasts takes care of cs_excessprecision, resolves #39012
+
+M	compiler/nadd.pas
+M	compiler/ninl.pas
+A	tests/webtbs/tw39012.pp
+
+******************************************************************************
 commit 67e7dc019453212065181dc5d80c92c11e14d603
 Author: florian <florian@freepascal.org>
 Date:   Sun Nov 7 20:03:09 2021 +0100
