@@ -1,4 +1,31 @@
 ******************************************************************************
+commit 67e7dc019453212065181dc5d80c92c11e14d603
+Author: florian <florian@freepascal.org>
+Date:   Sun Nov 7 20:03:09 2021 +0100
+
+      * consecutive naming
+
+R100	tests/tbf/tb0588.pp	tests/tbf/tb0285.pp
+
+******************************************************************************
+commit d708bef92f5353e010bb13857469c55e671a6e05
+Author: florian <florian@freepascal.org>
+Date:   Sun Nov 7 20:02:29 2021 +0100
+
+      + Aarch64: read register sets with ranges properly
+      + tests
+
+M	compiler/aarch64/racpugas.pas
+M	compiler/msg/errore.msg
+M	compiler/msgidx.inc
+M	compiler/msgtxt.inc
+A	tests/tbf/tb0281.pp
+A	tests/tbf/tb0282.pp
+A	tests/tbf/tb0283.pp
+A	tests/tbf/tb0284.pp
+A	tests/tbs/tb0687.pp
+
+******************************************************************************
 commit 7fcbd1d7e0a24bbe476d5ec4e67c458b742190b1
 Author: florian <florian@freepascal.org>
 Date:   Sun Nov 7 14:58:17 2021 +0100
