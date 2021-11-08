@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 8e7791ac232d88f298bd3a5ed3c6cd511c48ce5e
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Mon Nov 8 22:55:38 2021 +0000
+
+    Explicitly disable overflow for offset propagation optimization
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
 commit 99d04fb5b4df12fab061bb445dcac84ca2b1538f
 Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
 Date:   Sun Oct 17 01:48:08 2021 +0100
