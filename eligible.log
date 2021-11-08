@@ -1,4 +1,34 @@
 ******************************************************************************
+commit 99d04fb5b4df12fab061bb445dcac84ca2b1538f
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Sun Oct 17 01:48:08 2021 +0100
+
+    Added missing inc file
+
+A	tests/bench/bdiv_u16.inc
+
+******************************************************************************
+commit 671c674d6513502c0bb5bc477d83d4ee5615738b
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Wed Sep 22 03:23:20 2021 +0100
+
+    Expanding division to 64-bit and tests
+
+M	compiler/x86/nx86mat.pas
+M	tests/bench/bdiv.pp
+M	tests/bench/bdiv_u32.inc
+M	tests/bench/bdiv_u64.inc
+
+******************************************************************************
+commit c950bcba9f6c21b44bc71140737aa6dd452837cc
+Author: Sven Barth <pascaldragon@gmail.com>
+Date:   Mon Nov 8 22:35:45 2021 +0100
+
+    * FPC side fix for #39432: declare TColor the same way as Lazarus does (this way it's also a distinct type from LongInt)
+
+M	packages/rtl-objpas/src/inc/system.uitypes.pp
+
+******************************************************************************
 commit 292be9029e729b03f4f6f2ac415d43ac90fdc03a
 Author: florian <florian@freepascal.org>
 Date:   Sun Nov 7 21:54:25 2021 +0100
