@@ -1,4 +1,52 @@
 ******************************************************************************
+commit ab1a997b12563bfff773ec34491ad0b26245d5bd
+Author: florian <florian@freepascal.org>
+Date:   Tue Nov 9 22:32:01 2021 +0100
+
+      * renamed units so they are not picked up multiple times by the regression tests
+
+M	packages/hash/tests/tests.pp
+R098	packages/hash/tests/testonetimepass.pp	packages/hash/tests/utestonetimepass.pp
+R099	packages/hash/tests/testpem.pp	packages/hash/tests/utestpem.pp
+R099	packages/hash/tests/testsha256.pp	packages/hash/tests/utestsha256.pp
+R099	packages/hash/tests/testsha512.pp	packages/hash/tests/utestsha512.pp
+R099	packages/hash/tests/testshmac.pas	packages/hash/tests/utestshmac.pas
+
+******************************************************************************
+commit e4ee8fa6a2b6fbebf8723712c63d9e0504d1396e
+Author: florian <florian@freepascal.org>
+Date:   Tue Nov 9 22:17:46 2021 +0100
+
+      * patch by Rika to pass some strings by reference, resolves #39338
+
+M	compiler/assemble.pas
+M	compiler/cstreams.pas
+M	compiler/globals.pas
+M	compiler/pexpr.pas
+M	compiler/pgenutil.pas
+M	compiler/pinline.pas
+M	compiler/scanner.pas
+M	compiler/symtable.pas
+
+******************************************************************************
+commit c6723ed2c4acf1d0dd7f4593a65e6d2ae0e5a103
+Author: Frank Freeman <freerider1@gmx.net>
+Date:   Sat Oct 30 18:39:53 2021 +0000
+
+    bug fix for #39380 in typelib.pas
+
+M	packages/winunits-base/src/typelib.pas
+
+******************************************************************************
+commit 6dcb2dffab14d9f212fc23994480ccd858cd1476
+Author: Frank Freeman <freerider1@gmx.net>
+Date:   Sat Oct 2 18:14:19 2021 +0000
+
+    bug fix for #39388 in typelib.pas
+
+M	packages/winunits-base/src/typelib.pas
+
+******************************************************************************
 commit e9b9f69fbab9087b30e4804a7e91d8fb8ac03f2d
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Tue Nov 9 11:01:30 2021 +0100
