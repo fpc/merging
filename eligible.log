@@ -1,4 +1,24 @@
 ******************************************************************************
+commit e9b9f69fbab9087b30e4804a7e91d8fb8ac03f2d
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Tue Nov 9 11:01:30 2021 +0100
+
+    * Correct dependency
+
+M	packages/hash/fpmake.pp
+
+******************************************************************************
+commit 7bdf6672b5cf9c3f0b3d766e7665493f9d7fa882
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Tue Nov 9 10:54:51 2021 +0100
+
+    * Hopefully fix compilation of hash package for msdos
+
+M	packages/fcl-base/fpmake.pp
+M	packages/rtl-extra/fpmake.pp
+R100	packages/fcl-base/src/basenenc.pp	packages/rtl-extra/src/inc/basenenc.pp
+
+******************************************************************************
 commit 5afaeaa3ac813e5682d0da9de7d17454a4771d2c
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Mon Nov 8 20:52:14 2021 +0100
