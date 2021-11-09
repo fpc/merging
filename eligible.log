@@ -1,4 +1,70 @@
 ******************************************************************************
+commit 5afaeaa3ac813e5682d0da9de7d17454a4771d2c
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Mon Nov 8 20:52:14 2021 +0100
+
+    ES256 signing algorithm
+
+M	packages/fcl-web/fpmake.pp
+A	packages/fcl-web/src/jwt/fpjwaes256.pp
+M	packages/fcl-web/src/jwt/fpjwt.pp
+M	packages/fcl-web/tests/tcjwt.pp
+M	packages/fcl-web/tests/testfpweb.lpi
+M	packages/fcl-web/tests/testfpweb.lpr
+
+******************************************************************************
+commit 6ae8840ece13c43ab4e648f36c9df44a1ee51c8b
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Mon Nov 8 19:13:01 2021 +0100
+
+    * Start of ECDSA
+
+M	packages/hash/fpmake.pp
+A	packages/hash/src/asn.pp
+A	packages/hash/src/ecdsa.pp
+A	packages/hash/src/pem.pp
+A	packages/hash/tests/private-key.pem
+A	packages/hash/tests/public-key.pem
+A	packages/hash/tests/testpem.pp
+M	packages/hash/tests/tests.pp
+
+******************************************************************************
+commit b8506def7a2fcacefb633b170d0a19c16f1d687a
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Mon Nov 8 19:09:15 2021 +0100
+
+    *Rename types
+
+M	packages/hash/tests/testsha256.pp
+
+******************************************************************************
+commit 34f06129324845674f4cca60d24b832453a9cf15
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Mon Nov 8 19:07:49 2021 +0100
+
+    * Rename types with ECC prefix
+
+M	packages/hash/src/ecc.pp
+
+******************************************************************************
+commit 93f579ecd82dad7b6b827cfdcac127b1a907fd8e
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Mon Nov 8 19:06:55 2021 +0100
+
+    * Additional functions needed in PEM/ASN
+
+M	packages/hash/src/hashutils.pp
+
+******************************************************************************
+commit 168cb8f2ca3cb53cf77e66ef76ca5b8e479c57a7
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Mon Nov 8 19:06:05 2021 +0100
+
+    * Allow to skip whitespace
+
+M	packages/fcl-base/src/basenenc.pp
+
+******************************************************************************
 commit 8e7791ac232d88f298bd3a5ed3c6cd511c48ce5e
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Mon Nov 8 22:55:38 2021 +0000
