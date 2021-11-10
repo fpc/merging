@@ -1,4 +1,44 @@
 ******************************************************************************
+commit 03ce23246f11b42ac3739f91e2f2433c66ef25f0
+Author: florian <florian@freepascal.org>
+Date:   Wed Nov 10 19:16:14 2021 +0100
+
+      * patch by Don Siders: Fixes spelling, grammar errors in source and compiler messages, resolves #39434
+
+M	compiler/msg/errorct.msg
+M	compiler/msg/errorda.msg
+M	compiler/msg/errores.msg
+M	compiler/msg/errorf.msg
+M	compiler/msg/errorfi.msg
+M	compiler/msg/errorhe.msg
+M	compiler/msg/errorheu.msg
+M	compiler/msg/erroriu.msg
+M	compiler/msg/errorn.msg
+M	compiler/msg/errorpl.msg
+M	compiler/msg/errorpli.msg
+M	compiler/msg/errorpt.msg
+M	compiler/msg/errorptu.msg
+M	compiler/msg/errorues.msg
+M	packages/fcl-web/src/base/fphttpserver.pp
+M	packages/ptc/src/win32/directx/p_dinput.pp
+M	packages/tcl/tests/tcl_demo.pp
+M	packages/univint/src/ATSUnicodeDrawing.pas
+M	packages/univint/src/CFNetDiagnostics.pas
+M	packages/univint/src/CFNetServices.pas
+M	packages/univint/src/CFURL.pas
+M	packages/univint/src/CFURLEnumerator.pas
+M	packages/univint/src/Menus.pas
+M	packages/univint/src/OpenTransport.pas
+M	packages/univint/src/SCSI.pas
+M	packages/univint/src/SKSummary.pas
+M	packages/univint/src/WSProtocolHandler.pas
+M	packages/univint/src/WSTypes.pas
+M	tests/test/tstack.pp
+M	tests/test/units/math/tmask.inc
+M	tests/webtbs/tw16884.pp
+M	tests/webtbs/tw7100.pp
+
+******************************************************************************
 commit ab1a997b12563bfff773ec34491ad0b26245d5bd
 Author: florian <florian@freepascal.org>
 Date:   Tue Nov 9 22:32:01 2021 +0100
