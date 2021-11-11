@@ -1,4 +1,16 @@
 ******************************************************************************
+commit 550d0481b343effe45626780f047ed090a88bb11
+Author: florian <florian@freepascal.org>
+Date:   Thu Nov 11 22:52:10 2021 +0100
+
+      * better error message
+
+M	compiler/msg/errore.msg
+M	compiler/msgidx.inc
+M	compiler/msgtxt.inc
+M	compiler/systems/t_freertos.pas
+
+******************************************************************************
 commit 1c7709e45478a49df04b12338765e2b97cff3519
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Thu Nov 11 19:44:52 2021 +0100
