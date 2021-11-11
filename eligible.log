@@ -1,4 +1,22 @@
 ******************************************************************************
+commit 2052049e74dae083b495df08bfa1b56e390b1df9
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Thu Nov 11 19:18:37 2021 +0100
+
+    * Fix by Werner Pamler for issue #39436
+
+M	packages/fcl-db/src/base/bufdataset.pas
+
+******************************************************************************
+commit 687ab895c7e21ac4997fda7ba96f33d587f2b621
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Thu Nov 11 19:07:29 2021 +0100
+
+    * Disable debug define
+
+M	packages/fcl-base/src/fpthreadpool.pp
+
+******************************************************************************
 commit 03ce23246f11b42ac3739f91e2f2433c66ef25f0
 Author: florian <florian@freepascal.org>
 Date:   Wed Nov 10 19:16:14 2021 +0100
