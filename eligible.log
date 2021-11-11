@@ -1,4 +1,22 @@
 ******************************************************************************
+commit 1c7709e45478a49df04b12338765e2b97cff3519
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Thu Nov 11 19:44:52 2021 +0100
+
+    * Fix issue 39437
+
+M	packages/rtl-objpas/src/inc/strutils.pp
+
+******************************************************************************
+commit 5df6671ff248341019b585ba88e075ed28d95687
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Thu Nov 11 19:36:05 2021 +0100
+
+    * Fix issue 39431
+
+M	rtl/objpas/fgl.pp
+
+******************************************************************************
 commit 2052049e74dae083b495df08bfa1b56e390b1df9
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Thu Nov 11 19:18:37 2021 +0100
