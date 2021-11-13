@@ -1,4 +1,24 @@
 ******************************************************************************
+commit feb5bde09cf9cc79e26b01080ec9400eef03f600
+Author: florian <florian@freepascal.org>
+Date:   Sat Nov 13 19:04:38 2021 +0100
+
+      * better code and data size info for FreeRTOS
+
+M	compiler/systems/t_freertos.pas
+
+******************************************************************************
+commit 56ab4107059e7220b437bb205174d5626f4b82d8
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Nov 13 18:42:49 2021 +0100
+
+    * Parse codepage strings
+
+M	packages/fcl-passrc/src/pastree.pp
+M	packages/fcl-passrc/src/pparser.pp
+M	packages/fcl-passrc/tests/tctypeparser.pas
+
+******************************************************************************
 commit 4820ec07468d58a7809e5f591a9c39bb8381c514
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Sat Nov 13 18:14:46 2021 +0100
