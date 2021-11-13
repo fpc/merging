@@ -1,4 +1,77 @@
 ******************************************************************************
+commit 16fa6fa1059745410315a7c19a7e31170a637e9b
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Nov 13 15:20:35 2021 +0100
+
+    * Base hash units moved & renamed
+
+M	packages/fcl-web/fpmake.pp
+M	packages/fcl-web/src/jwt/fpjwaes256.pp
+M	packages/fcl-web/src/jwt/fpjwasha256.pp
+M	packages/fcl-web/src/jwt/fpjwasha384.pp
+M	packages/fcl-web/src/jwt/fpjwasha512.pp
+
+******************************************************************************
+commit 009c19a4009c68817e73f46f4035a0a651f3f91f
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Nov 13 15:17:57 2021 +0100
+
+    * Rename units using fp prefix
+
+M	packages/fcl-hash/examples/demosha256.pp
+M	packages/fcl-hash/fpmake.pp
+R099	packages/fcl-hash/src/asn.pp	packages/fcl-hash/src/fpasn.pp
+R099	packages/fcl-hash/src/ecc.pp	packages/fcl-hash/src/fpecc.pp
+R098	packages/fcl-hash/src/ecdsa.pp	packages/fcl-hash/src/fpecdsa.pp
+R099	packages/fcl-hash/src/hashutils.pp	packages/fcl-hash/src/fphashutils.pp
+R098	packages/fcl-hash/src/pem.pp	packages/fcl-hash/src/fppem.pp
+R099	packages/fcl-hash/src/sha256.pp	packages/fcl-hash/src/fpsha256.pp
+R099	packages/fcl-hash/src/sha512.pp	packages/fcl-hash/src/fpsha512.pp
+M	packages/fcl-hash/tests/utestpem.pp
+M	packages/fcl-hash/tests/utestsha256.pp
+M	packages/fcl-hash/tests/utestsha512.pp
+
+******************************************************************************
+commit 82fdbbbbdc5ebb26cd66292ad96aa65930137643
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Nov 13 15:08:46 2021 +0100
+
+     Move hash algorithms that rely on fcl-base
+
+A	packages/fcl-hash/Makefile
+A	packages/fcl-hash/Makefile.fpc
+R100	packages/hash/examples/demosha256.pp	packages/fcl-hash/examples/demosha256.pp
+A	packages/fcl-hash/fpmake.pp
+R100	packages/hash/src/asn.pp	packages/fcl-hash/src/asn.pp
+R100	packages/hash/src/ecc.pp	packages/fcl-hash/src/ecc.pp
+R100	packages/hash/src/ecdsa.pp	packages/fcl-hash/src/ecdsa.pp
+R100	packages/hash/src/hashutils.pp	packages/fcl-hash/src/hashutils.pp
+R100	packages/hash/src/onetimepass.pp	packages/fcl-hash/src/onetimepass.pp
+R100	packages/hash/src/pem.pp	packages/fcl-hash/src/pem.pp
+R100	packages/hash/src/sha256.pp	packages/fcl-hash/src/sha256.pp
+R100	packages/hash/src/sha512.pp	packages/fcl-hash/src/sha512.pp
+R100	packages/hash/tests/private-key.pem	packages/fcl-hash/tests/private-key.pem
+R100	packages/hash/tests/public-key.pem	packages/fcl-hash/tests/public-key.pem
+R068	packages/hash/tests/tests.pp	packages/fcl-hash/tests/testhash.pp
+R100	packages/hash/tests/utestonetimepass.pp	packages/fcl-hash/tests/utestonetimepass.pp
+R100	packages/hash/tests/utestpem.pp	packages/fcl-hash/tests/utestpem.pp
+R099	packages/hash/tests/utestsha256.pp	packages/fcl-hash/tests/utestsha256.pp
+R100	packages/hash/tests/utestsha512.pp	packages/fcl-hash/tests/utestsha512.pp
+M	packages/fpmake_add.inc
+M	packages/fpmake_proc.inc
+
+******************************************************************************
+commit 7626af634cda98ad94382694867e105e70ee5ff9
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Nov 13 14:43:51 2021 +0100
+
+    * Move basenenc back to fcl-base, sysutils is needed
+
+M	packages/fcl-base/fpmake.pp
+R098	packages/rtl-extra/src/inc/basenenc.pp	packages/fcl-base/src/basenenc.pp
+M	packages/rtl-extra/fpmake.pp
+
+******************************************************************************
 commit 52cc8df0797f3411e29b6480e5d9f29185c5c826
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Fri Nov 12 12:08:20 2021 +0100
