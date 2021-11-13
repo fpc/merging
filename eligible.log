@@ -260,15 +260,6 @@ M	tests/bench/bdiv_u32.inc
 M	tests/bench/bdiv_u64.inc
 
 ******************************************************************************
-commit c950bcba9f6c21b44bc71140737aa6dd452837cc
-Author: Sven Barth <pascaldragon@gmail.com>
-Date:   Mon Nov 8 22:35:45 2021 +0100
-
-    * FPC side fix for #39432: declare TColor the same way as Lazarus does (this way it's also a distinct type from LongInt)
-
-M	packages/rtl-objpas/src/inc/system.uitypes.pp
-
-******************************************************************************
 commit 292be9029e729b03f4f6f2ac415d43ac90fdc03a
 Author: florian <florian@freepascal.org>
 Date:   Sun Nov 7 21:54:25 2021 +0100
