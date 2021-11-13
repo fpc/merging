@@ -1,4 +1,67 @@
 ******************************************************************************
+commit 9f1f055d29109ec8829bda27e1995eabbdbcf11b
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Nov 13 15:50:22 2021 +0100
+
+    * Fix dependency on hash (sha1)
+
+M	packages/fcl-hash/fpmake.pp
+
+******************************************************************************
+commit 1c9c9bd8bd1ce4fe97592872981c05cf08ca6be6
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Nov 13 15:49:44 2021 +0100
+
+    * Reorder units
+
+M	packages/fcl-hash/src/fpasn.pp
+
+******************************************************************************
+commit 70c286d7d5192d0d4997545b21831c7ce1d806ba
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Nov 13 15:49:10 2021 +0100
+
+    * Do not redefine TBytes
+
+M	packages/fcl-base/src/basenenc.pp
+
+******************************************************************************
+commit 4b956674dd90e4999f5f47c2f200629a11ff4900
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Nov 13 15:45:52 2021 +0100
+
+    * Dependency on fcl-base
+
+M	packages/fcl-hash/fpmake.pp
+
+******************************************************************************
+commit 509d8cd407226f1418541d7f2c75ecf55735e0ad
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Nov 13 15:40:04 2021 +0100
+
+    * Correct uses clause (renamed units)
+
+M	packages/fcl-hash/src/fpasn.pp
+
+******************************************************************************
+commit b445cadeb93f59625a840b50e1fcd55340201ba3
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Nov 13 15:34:03 2021 +0100
+
+    * Renamed ecc->fpecc
+
+M	packages/fcl-hash/src/fphashutils.pp
+
+******************************************************************************
+commit 1be9fecf4b6b35ff829946ec21edee6b2936ef7a
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Nov 13 15:32:26 2021 +0100
+
+    * Fix compilation, remove moved units
+
+M	packages/hash/fpmake.pp
+
+******************************************************************************
 commit 16fa6fa1059745410315a7c19a7e31170a637e9b
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Sat Nov 13 15:20:35 2021 +0100
