@@ -1,4 +1,13 @@
 ******************************************************************************
+commit e994bacbba097fa4cf38f59e9772c7b9b5ccbaed
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sun Nov 14 21:28:01 2021 +0100
+
+    * Add crypto.h functions
+
+M	packages/gnutls/src/gnutls.pp
+
+******************************************************************************
 commit cd6bc9aeb7642f5430b0a3aaf49143a6e1c41041
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Sun Nov 14 18:07:35 2021 +0100
