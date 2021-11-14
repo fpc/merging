@@ -1,4 +1,22 @@
 ******************************************************************************
+commit 64c21bb88be2d7b5a7dec56aafe2a896fa1011db
+Author: florian <florian@freepascal.org>
+Date:   Sun Nov 14 23:13:51 2021 +0100
+
+      * fix bootstrapping wtih 3.2.2 and -Cpcoreavx2
+
+M	rtl/objpas/sysutils/syshelpo.inc
+
+******************************************************************************
+commit 9f60628e5b8283cdfce7e9f6feb7055eb4b52a22
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Sat Nov 13 00:19:15 2021 +0000
+
+    x86: new optimisation to change add/sub 128,(dest) to sub/add -128,(dest) to reduce binary size
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
 commit e994bacbba097fa4cf38f59e9772c7b9b5ccbaed
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Sun Nov 14 21:28:01 2021 +0100
