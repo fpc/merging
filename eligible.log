@@ -1,4 +1,22 @@
 ******************************************************************************
+commit 65a570b77278f47ffe788a1ab1c5aeb86a4e9797
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sun Nov 14 12:15:08 2021 +0100
+
+    * Test for po_arrayrangeexpr
+
+M	packages/fcl-passrc/tests/tctypeparser.pas
+
+******************************************************************************
+commit 565168093009a3403e9dd2d42edbbe6ca15a125e
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sun Nov 14 12:05:44 2021 +0100
+
+    * Add test for threadvar
+
+M	packages/fcl-passrc/tests/tcvarparser.pas
+
+******************************************************************************
 commit feb5bde09cf9cc79e26b01080ec9400eef03f600
 Author: florian <florian@freepascal.org>
 Date:   Sat Nov 13 19:04:38 2021 +0100
