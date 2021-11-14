@@ -1,4 +1,13 @@
 ******************************************************************************
+commit cd6bc9aeb7642f5430b0a3aaf49143a6e1c41041
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sun Nov 14 18:07:35 2021 +0100
+
+    * Add missing definitions
+
+M	packages/gnutls/src/gnutls.pp
+
+******************************************************************************
 commit 65a570b77278f47ffe788a1ab1c5aeb86a4e9797
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Sun Nov 14 12:15:08 2021 +0100
