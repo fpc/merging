@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 3ce6c478ccdbd58c04daa6a07a721ae1faebce2c
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Tue Nov 16 20:39:57 2021 +0000
+
+    Bug fixes to magic division and vectorcall code that trigger -CriotR checks
+
+M	compiler/x86/nx86mat.pas
+M	compiler/x86_64/cpupara.pas
+
+******************************************************************************
 commit 64c21bb88be2d7b5a7dec56aafe2a896fa1011db
 Author: florian <florian@freepascal.org>
 Date:   Sun Nov 14 23:13:51 2021 +0100
