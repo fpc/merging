@@ -1,4 +1,59 @@
 ******************************************************************************
+commit 6404478ea444cda85cdf7f8784efba0ed6669ebe
+Author: florian <florian@freepascal.org>
+Date:   Wed Nov 17 22:19:43 2021 +0100
+
+      * cleanup of VER3_0 defines
+
+M	compiler/aarch64/cpupara.pas
+M	compiler/arm/cpupara.pas
+M	compiler/fpcdefs.inc
+M	compiler/i386/cpupara.pas
+M	compiler/i8086/cpupara.pas
+M	compiler/jvm/cpupara.pas
+M	compiler/m68k/cpupara.pas
+M	compiler/mips/cpupara.pas
+M	compiler/nadd.pas
+M	compiler/objcasm.pas
+M	compiler/paramgr.pas
+M	compiler/powerpc/cpupara.pas
+M	compiler/powerpc64/cpupara.pas
+M	compiler/wasm32/cpupara.pas
+M	compiler/x86_64/cpupara.pas
+
+******************************************************************************
+commit 29ea731b2f7b4140806b37a7b0ef7f1bf2cfaa0b
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Wed Nov 17 08:18:51 2021 +0000
+
+    Added two new overflow tests
+
+A	tests/test/cg/toverflow.inc
+A	tests/test/cg/toverflow1a.pp
+A	tests/test/cg/toverflow1b.pp
+
+******************************************************************************
+commit 2dc0995067a410daecf4b6cd8744823c1f876d19
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Mon Nov 15 16:27:21 2021 +0000
+
+    - Bug fix to new ADD/SUB optimisation where conditions are concerned
+    - Register allocation fixes for overflow checks
+
+M	compiler/cg64f32.pas
+M	compiler/hlcgobj.pas
+M	compiler/i386/n386add.pas
+M	compiler/i8086/n8086add.pas
+M	compiler/jvm/cpubase.pas
+M	compiler/ncgmat.pas
+M	compiler/wasm32/cpubase.pas
+M	compiler/wasm32/hlcgcpu.pas
+M	compiler/x86/aoptx86.pas
+M	compiler/x86/cgx86.pas
+M	compiler/x86/nx86add.pas
+M	compiler/x86_64/nx64add.pas
+
+******************************************************************************
 commit 3ce6c478ccdbd58c04daa6a07a721ae1faebce2c
 Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
 Date:   Tue Nov 16 20:39:57 2021 +0000
