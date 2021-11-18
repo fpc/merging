@@ -1,4 +1,22 @@
 ******************************************************************************
+commit ab809fa93cdf48281c334969058abd9001412fce
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Thu Nov 18 20:13:32 2021 +0100
+
+    fcl-passrc: clean up
+
+M	packages/fcl-passrc/src/paswrite.pp
+
+******************************************************************************
+commit 75b911ce68c27c90d91b7a8796e936ec7ba0a947
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Thu Nov 18 20:11:54 2021 +0100
+
+    fcl-passrc: clean up
+
+M	packages/fcl-passrc/tests/tconstparser.pas
+
+******************************************************************************
 commit 6404478ea444cda85cdf7f8784efba0ed6669ebe
 Author: florian <florian@freepascal.org>
 Date:   Wed Nov 17 22:19:43 2021 +0100
