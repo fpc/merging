@@ -1,4 +1,51 @@
 ******************************************************************************
+commit f1cb5e678cb86be0ffa57a4336cf9d3f58a7d408
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Fri Nov 19 09:17:04 2021 +0100
+
+    * Test for po_keepclassforward
+
+M	packages/fcl-passrc/tests/tcclasstype.pas
+
+******************************************************************************
+commit 14f62b06d2d4633db5927eeb69bc2c7d74cf6864
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Fri Nov 19 08:36:21 2021 +0100
+
+    * Export statement allows index and name
+
+M	packages/fcl-passrc/src/pparser.pp
+M	packages/fcl-passrc/tests/tcmoduleparser.pas
+
+******************************************************************************
+commit 6390ccde9bd26ca253df7f12702bc60f7650e080
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Tue Nov 16 09:13:50 2021 +0100
+
+    * No dependency on classes unit
+
+M	packages/fcl-hash/src/fphashutils.pp
+
+******************************************************************************
+commit 0327a4a04ec16d2d8bafb50d6ddb3c5ce93ce0d3
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Tue Nov 16 09:11:24 2021 +0100
+
+    * Fix uses list
+
+M	packages/fcl-web/tests/tcjwt.pp
+
+******************************************************************************
+commit b06f2c4a74848b5465f45b4e35bca6b33448ae16
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Tue Nov 16 09:11:04 2021 +0100
+
+    * Restore test project
+
+A	packages/hash/tests/testhash.pp
+A	packages/hash/tests/tests.lpi
+
+******************************************************************************
 commit 55d5b11deb804401988e60e1e9163de36a5f8fc1
 Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
 Date:   Thu Nov 18 13:28:12 2021 +0000
