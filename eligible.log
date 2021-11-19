@@ -1,4 +1,15 @@
 ******************************************************************************
+commit 67f3a7502d0f1100046abd87c5df2565b8d945b8
+Author: florian <florian@freepascal.org>
+Date:   Fri Nov 19 22:36:48 2021 +0100
+
+      + Aaarch64: support adr instructions with local labels in the assembler reader
+      + throw an error if an illegal instruction extension is passed as command line option
+
+M	compiler/aarch64/aasmcpu.pas
+M	compiler/options.pas
+
+******************************************************************************
 commit d3000c617448042b67ed6984a81e77946a8ece1f
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Fri Nov 19 09:48:19 2021 +0100
