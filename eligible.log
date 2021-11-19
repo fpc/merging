@@ -1,4 +1,35 @@
 ******************************************************************************
+commit d3000c617448042b67ed6984a81e77946a8ece1f
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Fri Nov 19 09:48:19 2021 +0100
+
+    * Moved comment to top of file for better visibility
+
+M	packages/fcl-hash/src/fpecc.pp
+
+******************************************************************************
+commit 92978caa2f0b1bf84a1c49b20398f721aeabc76c
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Fri Nov 19 09:46:39 2021 +0100
+
+    * Add notice that work by Wolfgang Erhardt was used
+
+M	packages/fcl-hash/src/fpecc.pp
+M	packages/fcl-hash/src/fphashutils.pp
+
+******************************************************************************
+commit ff7febc06cb6146a7f1aa7a94feb1f2056456f8c
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Fri Nov 19 09:43:21 2021 +0100
+
+    * Remove circular use, add lazarus test project file
+
+M	packages/fcl-hash/src/fpecc.pp
+M	packages/fcl-hash/src/fphashutils.pp
+A	packages/fcl-hash/tests/testhash.lpi
+M	packages/fcl-hash/tests/testhash.pp
+
+******************************************************************************
 commit f1cb5e678cb86be0ffa57a4336cf9d3f58a7d408
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Fri Nov 19 09:17:04 2021 +0100
