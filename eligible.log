@@ -1,4 +1,14 @@
 ******************************************************************************
+commit b733e21fd1055e821b9d9fee644e54c917be440f
+Author: florian <florian@freepascal.org>
+Date:   Sat Nov 20 20:47:32 2021 +0100
+
+      + more AArch64 extensions
+
+M	compiler/aarch64/agcpugas.pas
+M	compiler/aarch64/cpuinfo.pas
+
+******************************************************************************
 commit 78336d2cbacb12bcf3518cb0ea7968e5d697f26c
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Sat Nov 20 10:48:52 2021 +0100
