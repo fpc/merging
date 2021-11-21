@@ -1,4 +1,15 @@
 ******************************************************************************
+commit b0459a19f48ea41596fd1f0ca61afa1f7598d5d7
+Author: florian <florian@freepascal.org>
+Date:   Sun Nov 21 21:11:23 2021 +0100
+
+      + initial files for intrinsics support on AArch64
+
+A	rtl/aarch64/cpuinnr.inc
+A	rtl/aarch64/cpuprocs.inc
+A	rtl/aarch64/intrinsics.pp
+
+******************************************************************************
 commit b733e21fd1055e821b9d9fee644e54c917be440f
 Author: florian <florian@freepascal.org>
 Date:   Sat Nov 20 20:47:32 2021 +0100
