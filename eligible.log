@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 18e0979379b2976328a714a7d0e517a5f45aefc0
+Author: florian <florian@freepascal.org>
+Date:   Tue Nov 23 23:01:06 2021 +0100
+
+      + Exception.GetBaseException
+
+M	rtl/objpas/sysutils/sysutilh.inc
+M	rtl/objpas/sysutils/sysutils.inc
+
+******************************************************************************
 commit b0459a19f48ea41596fd1f0ca61afa1f7598d5d7
 Author: florian <florian@freepascal.org>
 Date:   Sun Nov 21 21:11:23 2021 +0100
