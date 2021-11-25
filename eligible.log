@@ -1,4 +1,13 @@
 ******************************************************************************
+commit dabc59977d06fb86974e0cef52cf88109858b5e9
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Thu Nov 25 23:34:28 2021 +0100
+
+     Avoid having uninitialized UseBinutilsPrefix local variable in GetDefaultLibGCCDir function
+
+M	packages/fpmkunit/src/fpmkunit.pp
+
+******************************************************************************
 commit 271ba59cf1c1780d8c0b120dff107c42bcfe1e02
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Thu Nov 25 22:13:32 2021 +0000
