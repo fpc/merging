@@ -1,4 +1,13 @@
 ******************************************************************************
+commit bf5f37b14a4b92e9c441cc5bc2cd9924d3cbfb7b
+Author: florian <florian@freepascal.org>
+Date:   Fri Nov 26 22:27:19 2021 +0100
+
+      * fix conditional statement as pointed out by Sergey Larin
+
+M	compiler/nadd.pas
+
+******************************************************************************
 commit b3fb6a0ec0569c655d9c31759b955dc16d7a9f68
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Fri Nov 26 07:52:15 2021 +0000
