@@ -1,4 +1,13 @@
 ******************************************************************************
+commit b3fb6a0ec0569c655d9c31759b955dc16d7a9f68
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Fri Nov 26 07:52:15 2021 +0000
+
+     Commit revision.inc change after 7d1b7eda0e
+
+M	utils/fpcm/revision.inc
+
+******************************************************************************
 commit dabc59977d06fb86974e0cef52cf88109858b5e9
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Thu Nov 25 23:34:28 2021 +0100
