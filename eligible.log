@@ -1,4 +1,27 @@
 ******************************************************************************
+commit 5c55f1a16ee0c41f8f657f5a706bcb3bfc8a8f2c
+Author: Yuriy Sydorov <jura@cp-lab.com>
+Date:   Sat Nov 27 19:44:50 2021 +0200
+
+    * Added Tmoveins.id to be used for sorting and searching in Tmovelist, to
+      produce the consistent order of elements.
+      This fixes occasional differences in the register allocation caused by
+      the address space randomization. When ASLR is in effect, the previous
+      approach to sort elements by their memory addresses can't guarantee the
+      consistent elements order for each compilation of the same source code.
+
+M	compiler/rgobj.pas
+
+******************************************************************************
+commit fad6b0e4896cc1bcb805051237a9ca6557322b60
+Author: Yuriy Sydorov <jura@cp-lab.com>
+Date:   Mon Nov 22 17:38:45 2021 +0200
+
+    * Fixed build with NO_THREADING on Windows.
+
+M	packages/fpmkunit/src/fpmkunit.pp
+
+******************************************************************************
 commit e132ae2feed6ac06daf9e22f48b735841691188e
 Author: florian <florian@freepascal.org>
 Date:   Sat Nov 27 00:28:57 2021 +0100
