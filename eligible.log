@@ -1,4 +1,34 @@
 ******************************************************************************
+commit 9314bbbf080418827eef94a8bc392ce0497bf72b
+Author: florian <florian@freepascal.org>
+Date:   Sun Nov 28 00:03:08 2021 +0100
+
+      * compilation hopefully fixed
+
+M	compiler/ncgvmt.pas
+
+******************************************************************************
+commit 4f711a8b2c534fa786922acd8453c49b40bc1768
+Author: Yuriy Sydorov <jura@cp-lab.com>
+Date:   Sun Nov 28 01:02:09 2021 +0200
+
+    * Use longint for Tmoveins.id instead of word to prevent overflow in extreme cases.
+
+M	compiler/rgobj.pas
+
+******************************************************************************
+commit 12f48c230bccd49f368be1e5a2855cb6c3a60c0f
+Author: florian <florian@freepascal.org>
+Date:   Sat Nov 27 23:33:22 2021 +0100
+
+      * use high level interface wrappers for powerpc64 if pic is generated as
+        the abi does not support branches between functions located in different
+        tocs which might happen for inter-module branches
+
+M	compiler/ncgvmt.pas
+M	compiler/ppcgen/hlcgppc.pas
+
+******************************************************************************
 commit 5c55f1a16ee0c41f8f657f5a706bcb3bfc8a8f2c
 Author: Yuriy Sydorov <jura@cp-lab.com>
 Date:   Sat Nov 27 19:44:50 2021 +0200
