@@ -1,4 +1,13 @@
 ******************************************************************************
+commit e132ae2feed6ac06daf9e22f48b735841691188e
+Author: florian <florian@freepascal.org>
+Date:   Sat Nov 27 00:28:57 2021 +0100
+
+      * last commit was not correct, fixed
+
+M	compiler/nadd.pas
+
+******************************************************************************
 commit bf5f37b14a4b92e9c441cc5bc2cd9924d3cbfb7b
 Author: florian <florian@freepascal.org>
 Date:   Fri Nov 26 22:27:19 2021 +0100
