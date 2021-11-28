@@ -52231,20 +52231,6 @@ M	.gitattributes
 A	tests/webtbs/tw36212.pp
 
 ******************************************************************************
-commit c6659d62f8e3abde41849bf6d6a550542c7ad3bb
-Author: florian <florian@freepascal.org>
-Date:   Sun Nov 3 17:13:59 2019 +0000
-
-      * do not join register deallocations/allocations as it makes no use and causes later on trouble in
-        the assembler optimizer as register allocations are not correct, resolves #33565
-    
-    git-svn-id: trunk@43384 -
-
-M	.gitattributes
-M	compiler/rgobj.pas
-A	tests/webtbs/tw33565.pp
-
-******************************************************************************
 commit b8f186dab2e09afc589407a2f1a0dd2db2cb2d89
 Author: florian <florian@freepascal.org>
 Date:   Sun Nov 3 14:42:02 2019 +0000
@@ -62075,6 +62061,7 @@ Date:   Tue Jan 29 21:39:12 2019 +0000
     git-svn-id: trunk@41134 -
 
 M	compiler/i386/cpupara.pas
+
 ******************************************************************************
 commit 04d295f1865d6c011d131ea4ccfb7dd1928ca758
 Author: Jonas Maebe <jonas@freepascal.org>
@@ -62103,7 +62090,6 @@ M	compiler/ncgutil.pas
 M	compiler/ninl.pas
 M	compiler/nmat.pas
 M	compiler/parabase.pas
-
 ******************************************************************************
 commit 2f40f818907756d1dc844bf3a5c9899986a3aeaf
 Author: florian <florian@freepascal.org>
