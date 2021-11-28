@@ -1,4 +1,30 @@
 ******************************************************************************
+commit 2de72c854115908271912cd9b260a607c826eadb
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sun Nov 28 18:30:52 2021 +0100
+
+    Linux/PPC64: fix missing TOC loads
+    
+    Routines loading a global symbol need the TOC register
+
+M	compiler/ppcgen/cgppc.pas
+
+******************************************************************************
+commit e1a739d15d6e344727b196890e8afb0b0bd235ea
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sat Nov 27 12:01:47 2021 +0100
+
+    FreeBSD CSU fixes
+    
+    * Assembler blocks in non-pure assembler functions must always declare all
+    changed registers
+    * argc is read as *(long*) in C -> changed plongint to pptrint
+    * fixed ident section
+
+M	rtl/freebsd/x86_64/reloc.inc
+M	rtl/freebsd/x86_64/si_c.inc
+
+******************************************************************************
 commit 9314bbbf080418827eef94a8bc392ce0497bf72b
 Author: florian <florian@freepascal.org>
 Date:   Sun Nov 28 00:03:08 2021 +0100
