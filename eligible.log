@@ -1,4 +1,119 @@
 ******************************************************************************
+commit 793c157a9c69201caf0dca17b64b55ec06e34ed2
+Author: ccrause <christo.crause@gmail.com>
+Date:   Sun Nov 28 21:47:32 2021 +0200
+
+    Always call DoExec to generate linker scripts. Even if cs_link_nolink is set, the ldgen scipt needs to be called in the generated ppas script.
+
+M	compiler/systems/t_freertos.pas
+
+******************************************************************************
+commit b0c0309cc1c1dccfd11acd3284b2168d6720892a
+Author: ccrause <christo.crause@gmail.com>
+Date:   Sun Nov 28 21:44:37 2021 +0200
+
+    Add output path to kconfig source file location parameters.
+
+M	compiler/systems/t_freertos.pas
+
+******************************************************************************
+commit f66dd54bc277618feb9cf38d81b2651a4f10db61
+Author: ccrause <christo.crause@gmail.com>
+Date:   Sat Nov 27 18:31:45 2021 +0200
+
+    Extract linker script generation as separate method.  Check if esp linker scripts can be found in library paths, if not then generate scritps.
+
+M	compiler/systems/t_freertos.pas
+
+******************************************************************************
+commit ab0079434302d85260bf18c420611bd1227aab1a
+Author: ccrause <christo.crause@gmail.com>
+Date:   Sat Nov 27 15:18:24 2021 +0200
+
+    Keep esp32 and esp8266 version specific tweaks separate.
+
+M	compiler/options.pas
+M	compiler/pmodules.pas
+
+******************************************************************************
+commit a58567004b907ab6841dfc7d47d9dfea7e824df1
+Author: ccrause <christo.crause@gmail.com>
+Date:   Sun Nov 14 12:28:19 2021 +0200
+
+    Remove unused $OUTPUT substtution and empty check of outputexedir.
+
+M	compiler/systems/t_freertos.pas
+
+******************************************************************************
+commit 655a5f526cd9697d5874e85727adae18e89040a8
+Author: ccrause <christo.crause@gmail.com>
+Date:   Sun Nov 14 11:01:15 2021 +0200
+
+    Place IDF related files in executable output folder.
+
+M	compiler/systems/t_freertos.pas
+
+******************************************************************************
+commit e86d3af7e0036346c5f189dfc8c49138181f6d6a
+Author: ccrause <christo.crause@gmail.com>
+Date:   Sun Nov 14 10:13:32 2021 +0200
+
+    The linklib list for esp-idf v4.2 is also needed for v4.3
+
+M	compiler/pmodules.pas
+
+******************************************************************************
+commit 5db20610dd8dabee146efd6703a62c2d15bc641b
+Author: florian <florian@freepascal.org>
+Date:   Sat Nov 13 17:58:17 2021 +0100
+
+      * correct idf version check
+
+M	compiler/systems/t_freertos.pas
+
+******************************************************************************
+commit 802f24dfbdcba129c833416f1ac273277637674c
+Author: florian <florian@freepascal.org>
+Date:   Sat Nov 13 16:47:40 2021 +0100
+
+      * force result to be set
+
+M	compiler/options.pas
+
+******************************************************************************
+commit 54f2308d2aeca1b90a4ae98a94ab044149c167d0
+Author: florian <florian@freepascal.org>
+Date:   Sat Nov 13 16:36:37 2021 +0100
+
+      + draft for esp-idf version specific rtl unit which contains the necessery linklib statements
+
+M	compiler/pmodules.pas
+M	rtl/freertos/Makefile
+M	rtl/freertos/Makefile.fpc
+M	rtl/freertos/xtensa/esp32.pp
+A	rtl/freertos/xtensa/espidf_40200.pp
+
+******************************************************************************
+commit dc161e519f1641a8c44f289387ab2880d18e6c7b
+Author: florian <florian@freepascal.org>
+Date:   Sat Nov 13 16:36:18 2021 +0100
+
+      * inputfilepath might not be empty
+
+M	compiler/systems/t_freertos.pas
+
+******************************************************************************
+commit 5289aab4f2bff99cbc0cfac2d3993a7fce68252d
+Author: ccrause <christo.crause@gmail.com>
+Date:   Sat Nov 13 15:28:12 2021 +0200
+
+    Add -WP option so that IDF version can be passed in - stored in globals.idf_version.  The version is checked in t_freertos.pas and for esp-idf version 4.3.x an extra link file is added, also running ldgen.py is skipped as that seems unused.
+
+M	compiler/globals.pas
+M	compiler/options.pas
+M	compiler/systems/t_freertos.pas
+
+******************************************************************************
 commit 222a41be7b5d3eba617c8f0530064911fff84cd8
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Sun Nov 28 23:57:09 2021 +0000
