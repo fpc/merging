@@ -1,4 +1,21 @@
 ******************************************************************************
+commit 222a41be7b5d3eba617c8f0530064911fff84cd8
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Sun Nov 28 23:57:09 2021 +0000
+
+     Change declaration of DynLinkStr local variable of MakeExecutable method to ansitring to avoid short string overflows
+
+M	compiler/systems/t_amiga.pas
+M	compiler/systems/t_atari.pas
+M	compiler/systems/t_beos.pas
+M	compiler/systems/t_bsd.pas
+M	compiler/systems/t_haiku.pas
+M	compiler/systems/t_linux.pas
+M	compiler/systems/t_macos.pas
+M	compiler/systems/t_sinclairql.pas
+M	compiler/systems/t_sunos.pas
+
+******************************************************************************
 commit 2de72c854115908271912cd9b260a607c826eadb
 Author: Jonas Maebe <jonas@freepascal.org>
 Date:   Sun Nov 28 18:30:52 2021 +0100
