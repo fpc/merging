@@ -1,4 +1,47 @@
 ******************************************************************************
+commit e4227438416529968d84d44036f879d166ee99fd
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Tue Nov 30 09:22:06 2021 +0100
+
+    * Patch from Zeljko Avramovic to add additional typehelpers for basic types. Fix issue #39268
+
+M	packages/rtl-objpas/fpmake.pp
+A	packages/rtl-objpas/src/inc/syshelpers.pp
+A	packages/rtl-objpas/src/inc/syshelpersb.inc
+A	packages/rtl-objpas/src/inc/syshelpersbh.inc
+A	packages/rtl-objpas/src/inc/syshelperso.inc
+A	packages/rtl-objpas/src/inc/syshelpersoh.inc
+
+******************************************************************************
+commit b1412ec5c036fcd2a1119ae17952f87caa792375
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Tue Nov 30 09:06:41 2021 +0100
+
+    * Make hexdigits a global constant
+
+M	rtl/objpas/sysconst.pp
+M	rtl/objpas/sysutils/sysstr.inc
+
+******************************************************************************
+commit 65101b36dca4a4b8019f2c47944ec81e3988daae
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Tue Nov 30 08:58:05 2021 +0100
+
+    * typescript parsing & conversion, initial commit
+
+M	packages/fcl-js/src/jsparser.pp
+M	packages/fcl-js/src/jsscanner.pp
+M	packages/fcl-js/src/jstoken.pp
+M	packages/fcl-js/src/jstree.pp
+A	packages/fcl-js/src/tstopas.pp
+M	packages/fcl-js/tests/tcparser.pp
+M	packages/fcl-js/tests/tcscanner.pp
+A	packages/fcl-js/tests/tctsparser.pp
+A	packages/fcl-js/tests/tctstopas.pp
+M	packages/fcl-js/tests/testjs.lpi
+M	packages/fcl-js/tests/testjs.lpr
+
+******************************************************************************
 commit 793c157a9c69201caf0dca17b64b55ec06e34ed2
 Author: ccrause <christo.crause@gmail.com>
 Date:   Sun Nov 28 21:47:32 2021 +0200
