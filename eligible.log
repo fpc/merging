@@ -1,4 +1,22 @@
 ******************************************************************************
+commit a9b4fa5ed4aa232221932f6570e52337d744ed9c
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Tue Nov 30 23:02:26 2021 +0100
+
+    * Attempt to fix failing cross-compilation, remove unused dll
+
+M	packages/oracle/src/oraoci.pp
+
+******************************************************************************
+commit 60623f39a1917afa3a03a44c7a8b66d6fcfa4f7f
+Author: florian <florian@freepascal.org>
+Date:   Tue Nov 30 22:27:50 2021 +0100
+
+    + - can be used to remove options from a cpu capability switch
+
+M	compiler/options.pas
+
+******************************************************************************
 commit e4227438416529968d84d44036f879d166ee99fd
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Tue Nov 30 09:22:06 2021 +0100
