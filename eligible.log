@@ -1,4 +1,22 @@
 ******************************************************************************
+commit b7034cb960d5f5497eac2bd5725886f065add4d1
+Author: Sven Barth <pascaldragon@gmail.com>
+Date:   Wed Dec 1 23:38:29 2021 +0100
+
+    * move Boolean helpers before the ordinal ones so that ToOneZeroString can be inlined correctly
+
+M	packages/rtl-objpas/src/inc/syshelpers.pp
+
+******************************************************************************
+commit 5412e463ff4cd18ab53b99f71510467485d64be2
+Author: Sven Barth <pascaldragon@gmail.com>
+Date:   Wed Dec 1 23:36:27 2021 +0100
+
+    * use the already existing TNative(U)IntNibbleIndex types for the TORDINALNIBBLEINDEX macro as this way memory models with far pointers (where Native(U)Int has a size of 4) is handled correctly as well
+
+M	packages/rtl-objpas/src/inc/syshelpers.pp
+
+******************************************************************************
 commit 89aeedac1ec47570922fe219664c3374e93aeb8a
 Author: florian <florian@freepascal.org>
 Date:   Wed Dec 1 22:48:19 2021 +0100
