@@ -1,4 +1,13 @@
 ******************************************************************************
+commit a868a45ba9e0bd3860ec6bc43090add813d60ee4
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Wed Dec 1 12:53:56 2021 +0100
+
+    * Patch from Werner Pamler to fix some errors in JSON export
+
+M	packages/fcl-db/src/export/fpsimplejsonexport.pp
+
+******************************************************************************
 commit a9b4fa5ed4aa232221932f6570e52337d744ed9c
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Tue Nov 30 23:02:26 2021 +0100
