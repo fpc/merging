@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 89aeedac1ec47570922fe219664c3374e93aeb8a
+Author: florian <florian@freepascal.org>
+Date:   Wed Dec 1 22:48:19 2021 +0100
+
+      * fixes excluding of cpu capabilities
+
+M	compiler/cutils.pas
+M	compiler/options.pas
+
+******************************************************************************
 commit a868a45ba9e0bd3860ec6bc43090add813d60ee4
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Wed Dec 1 12:53:56 2021 +0100
