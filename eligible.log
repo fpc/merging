@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 0f1c4b4db8bae6fe397c14d06ac2d2e0795265c2
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Tue Nov 30 22:54:33 2021 +0000
+
+    Fixed Unreachable code warning when building on a 32-bit platform with DEBUG_NODE_XML
+
+M	compiler/verbose.pas
+
+******************************************************************************
 commit 0508f643c0e86479f2e4d49464c0e0a97699bb84
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Thu Dec 2 10:31:36 2021 +0000
