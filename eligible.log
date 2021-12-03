@@ -1,4 +1,15 @@
 ******************************************************************************
+commit e65b822a0c2a0d0dbe11ae3766dc9876accdbf28
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Fri Dec 3 14:52:19 2021 +0100
+
+    + add type helpers for the remaining Boolean types (QWordBool and Boolean{8,16,32,64})
+
+M	packages/rtl-objpas/src/inc/syshelpers.pp
+M	rtl/objpas/sysutils/syshelp.inc
+M	rtl/objpas/sysutils/syshelph.inc
+
+******************************************************************************
 commit 0f1c4b4db8bae6fe397c14d06ac2d2e0795265c2
 Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
 Date:   Tue Nov 30 22:54:33 2021 +0000
