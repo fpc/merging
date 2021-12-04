@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 49af134ba7e2b99153d51eadc8a190bea19f8530
+Author: Florian Klämpfl <florian@freepascal.org>
+Date:   Sat Dec 4 16:21:29 2021 +0100
+
+      * compilation of  x86_64-win64 fixed
+
+M	compiler/x86_64/cgcpu.pas
+
+******************************************************************************
 commit cbc2d0351c5506a615d0f6506d9d7e45162131f2
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Fri Dec 3 23:49:13 2021 +0100
