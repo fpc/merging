@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 2636966e2aaf9c8ee23b4c7b7c65dba0bcefc2a2
+Author: Sven Barth <pascaldragon@gmail.com>
+Date:   Sat Dec 4 23:52:54 2021 +0100
+
+    * adjust ToInteger of the Boolean helpers so that it returns the value of either True or False, but not any other value (e.g. in the *Bool types). This is not only Delphi compatible, but also fixes the compilation problem of the one or other 32-bit platform (like PowerPC) after e65b822a.
+
+M	rtl/objpas/sysutils/syshelpb.inc
+
+******************************************************************************
 commit 49af134ba7e2b99153d51eadc8a190bea19f8530
 Author: Florian Klämpfl <florian@freepascal.org>
 Date:   Sat Dec 4 16:21:29 2021 +0100
