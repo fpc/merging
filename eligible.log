@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 69bfff046ac882c75b94b0c03c233f5d81fcbba8
+Author: Sven Barth <pascaldragon@gmail.com>
+Date:   Sun Dec 5 15:11:24 2021 +0100
+
+    + add a test for converting a 64-bit Boolean (either QWordBool or Boolean64) to a 32-bit signed integer (this problematic case was discovered after e65b822a on PowerPC
+
+A	tests/tbs/tb0688.pp
+
+******************************************************************************
 commit 2636966e2aaf9c8ee23b4c7b7c65dba0bcefc2a2
 Author: Sven Barth <pascaldragon@gmail.com>
 Date:   Sat Dec 4 23:52:54 2021 +0100
