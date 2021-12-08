@@ -1,4 +1,13 @@
 ******************************************************************************
+commit d9eae2c2c593f27253aeaea98b12199929d9db3e
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Sun Dec 5 22:59:42 2021 +0000
+
+     Also add short format version of build unit BUnit.pp to ignore list
+
+M	.gitignore
+
+******************************************************************************
 commit 56c1e1a5f2e59a7fe53ca8d02a8f4ac34856b0af
 Author: Florian Klämpfl <florian@freepascal.org>
 Date:   Tue Dec 7 22:23:43 2021 +0100
