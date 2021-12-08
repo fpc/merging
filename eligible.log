@@ -1,4 +1,14 @@
 ******************************************************************************
+commit d71346aa37828cd36ebfbee342e9fdc04f7bc11e
+Author: florian <florian@freepascal.org>
+Date:   Wed Dec 8 20:47:42 2021 +0100
+
+      * comment corrected
+      - option -date=iso is not needed when retrieving the hash
+
+M	utils/fpcm/fpmake.pp
+
+******************************************************************************
 commit d9eae2c2c593f27253aeaea98b12199929d9db3e
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Sun Dec 5 22:59:42 2021 +0000
