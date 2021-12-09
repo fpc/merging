@@ -1,4 +1,15 @@
 ******************************************************************************
+commit 60c26a11ef481c924f2d52868e51a7a4c05878b7
+Author: Florian Klämpfl <florian@freepascal.org>
+Date:   Thu Dec 9 22:51:13 2021 +0100
+
+      * patch by Bart B. to improve DelSpace1, resolves #39465
+      + test
+
+M	packages/rtl-objpas/src/inc/strutils.pp
+A	tests/test/packages/rtl-objpas/tdelspace1.pp
+
+******************************************************************************
 commit 72661fd5c106a5bc1e689eef63ba7636a01d7d24
 Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
 Date:   Thu Dec 9 02:15:55 2021 +0000
