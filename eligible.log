@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 72661fd5c106a5bc1e689eef63ba7636a01d7d24
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Thu Dec 9 02:15:55 2021 +0000
+
+    Added missing MOVSXD check to PostPeepHoleOptsCpu
+
+M	compiler/x86_64/aoptcpu.pas
+
+******************************************************************************
 commit d71346aa37828cd36ebfbee342e9fdc04f7bc11e
 Author: florian <florian@freepascal.org>
 Date:   Wed Dec 8 20:47:42 2021 +0100
