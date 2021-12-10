@@ -1,4 +1,29 @@
 ******************************************************************************
+commit 2cf68f6dbfa1bdffa4bb40e9c34f67389d12b492
+Author: florian <florian@freepascal.org>
+Date:   Fri Dec 10 22:05:57 2021 +0100
+
+      * files moved as strutils is now in rtl-objpas
+
+R100	tests/test/units/strutils/taddchar.pp	tests/test/packages/rtl-objpas/taddchar.pp
+R100	tests/test/units/strutils/taddcharr.pp	tests/test/packages/rtl-objpas/taddcharr.pp
+R100	tests/test/units/strutils/tbin2hex.pp	tests/test/packages/rtl-objpas/tbin2hex.pp
+R100	tests/test/units/strutils/tbintohex.pp	tests/test/packages/rtl-objpas/tbintohex.pp
+R100	tests/test/units/strutils/tboyer.pp	tests/test/packages/rtl-objpas/tboyer.pp
+R100	tests/test/units/strutils/tdec2numb.pp	tests/test/packages/rtl-objpas/tdec2numb.pp
+R100	tests/test/units/strutils/thex2dec.pp	tests/test/packages/rtl-objpas/thex2dec.pp
+R100	tests/test/units/strutils/thextobin.pp	tests/test/packages/rtl-objpas/thextobin.pp
+R100	tests/test/units/strutils/tinttobin.pp	tests/test/packages/rtl-objpas/tinttobin.pp
+R100	tests/test/units/strutils/tinttoroman.pp	tests/test/packages/rtl-objpas/tinttoroman.pp
+R100	tests/test/units/strutils/tiswild.pp	tests/test/packages/rtl-objpas/tiswild.pp
+R100	tests/test/units/strutils/tnumb2usa.pp	tests/test/packages/rtl-objpas/tnumb2usa.pp
+R100	tests/test/units/strutils/tpadcenter.pp	tests/test/packages/rtl-objpas/tpadcenter.pp
+R100	tests/test/units/strutils/tpadleft.pp	tests/test/packages/rtl-objpas/tpadleft.pp
+R100	tests/test/units/strutils/tpadright.pp	tests/test/packages/rtl-objpas/tpadright.pp
+R100	tests/test/units/strutils/tposextest.pp	tests/test/packages/rtl-objpas/tposextest.pp
+R100	tests/test/units/strutils/tromantoint.pp	tests/test/packages/rtl-objpas/tromantoint.pp
+
+******************************************************************************
 commit 60c26a11ef481c924f2d52868e51a7a4c05878b7
 Author: Florian Klämpfl <florian@freepascal.org>
 Date:   Thu Dec 9 22:51:13 2021 +0100
