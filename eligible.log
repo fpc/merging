@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 5921fa9a6285f501df028a8fb4e1d10bda5653b8
+Author: florian <florian@freepascal.org>
+Date:   Sat Dec 11 22:46:27 2021 +0100
+
+      + store references to global variables in registers if benefical (currrently used for aarch64 only)
+
+M	compiler/optcse.pas
+
+******************************************************************************
 commit 2cf68f6dbfa1bdffa4bb40e9c34f67389d12b492
 Author: florian <florian@freepascal.org>
 Date:   Fri Dec 10 22:05:57 2021 +0100
