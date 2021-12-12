@@ -1,4 +1,23 @@
 ******************************************************************************
+commit e9acd759a4aa88a8ad1ff97a574f108eb7deef33
+Author: Yuriy Sydorov <jura@cp-lab.com>
+Date:   Sun Dec 12 18:19:35 2021 +0200
+
+    * Fixed random AVs when targeting the AVX FPU.
+
+M	compiler/rgobj.pas
+M	compiler/x86/rgx86.pas
+
+******************************************************************************
+commit 7b2cd0bcdc450b6c117ace262f4cd9d82e471a5e
+Author: Yuriy Sydorov <jura@cp-lab.com>
+Date:   Sun Dec 12 17:55:46 2021 +0200
+
+    * Prevent a range check error in case of big unsigned values.
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
 commit 59fca3a01de11a06d304d72b74df611a4e046495
 Author: Yuriy Sydorov <jura@cp-lab.com>
 Date:   Sun Dec 12 15:50:12 2021 +0200
