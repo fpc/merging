@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 487721dea8c100d7481012dcc01f6cbeb4ea5bb8
+Author: Yuriy Sydorov <jura@cp-lab.com>
+Date:   Fri Dec 3 13:38:05 2021 +0200
+
+    * cwstring: Added ICU versions for new versions of Android.
+
+M	rtl/android/cwstring.pp
+
+******************************************************************************
 commit 5921fa9a6285f501df028a8fb4e1d10bda5653b8
 Author: florian <florian@freepascal.org>
 Date:   Sat Dec 11 22:46:27 2021 +0100
