@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 59fca3a01de11a06d304d72b74df611a4e046495
+Author: Yuriy Sydorov <jura@cp-lab.com>
+Date:   Sun Dec 12 15:50:12 2021 +0200
+
+    * Increased the bounds of TBooleanArray to prevent a range check error while linking Lazarus.
+
+M	compiler/link.pas
+
+******************************************************************************
 commit 487721dea8c100d7481012dcc01f6cbeb4ea5bb8
 Author: Yuriy Sydorov <jura@cp-lab.com>
 Date:   Fri Dec 3 13:38:05 2021 +0200
