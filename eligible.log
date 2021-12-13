@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 06da0b3db6563ae317dfc108fe2425ca8b3736be
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Mon Dec 13 16:14:59 2021 +0100
+
+    * fix m68k IE after e9acd759, patch by Yuriy Sydorov
+
+M	compiler/m68k/rgcpu.pas
+
+******************************************************************************
 commit 453f45fa1f7e9396b416f9deca2904383a49292e
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Mon Dec 13 05:28:42 2021 +0200
