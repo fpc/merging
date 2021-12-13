@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 453f45fa1f7e9396b416f9deca2904383a49292e
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Mon Dec 13 05:28:42 2021 +0200
+
+    + enabled compilation of unit ptcgraph for macOS
+
+M	packages/graph/fpmake.pp
+
+******************************************************************************
 commit c123739af0ed517c9c99e6c8e72df83842595f58
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Mon Dec 13 05:12:45 2021 +0200
