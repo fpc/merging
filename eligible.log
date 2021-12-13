@@ -1,4 +1,35 @@
 ******************************************************************************
+commit c123739af0ed517c9c99e6c8e72df83842595f58
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Mon Dec 13 05:12:45 2021 +0200
+
+    + enabled compilation of the package ptc for macOS
+
+M	packages/ptc/fpmake.pp
+
+******************************************************************************
+commit 567409379f3af31904f0a0ba408d8d178bcd34f3
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Mon Dec 13 04:59:16 2021 +0200
+
+    * updated ptcpas and ptcgraph to the latest 0.99.16 release candidate
+
+M	packages/graph/src/ptcgraph/ptcgraph.pp
+M	packages/ptc/docs/CHANGES.txt
+M	packages/ptc/docs/README.txt
+M	packages/ptc/docs/TODO.txt
+M	packages/ptc/examples/keyboard3.pp
+M	packages/ptc/fpmake.pp
+M	packages/ptc/src/cocoa/cocoaconsoled.inc
+M	packages/ptc/src/cocoa/cocoaconsolei.inc
+M	packages/ptc/src/core/keyeventd.inc
+M	packages/ptc/src/ptc.pp
+M	packages/ptc/src/ptcwrapper/ptcwrapper.pp
+A	packages/ptc/src/ptcwrapper/ptcwrapper_mt.inc
+A	packages/ptc/src/ptcwrapper/ptcwrapper_st.inc
+M	packages/ptc/src/x11/x11windowdisplayi.inc
+
+******************************************************************************
 commit f60523a3b92a98ab693a37d3acf2a84dd0d321e2
 Author: J. Gareth "Kit" Moreton <gareth@moreton-family.com>
 Date:   Sun Dec 12 21:40:42 2021 +0000
