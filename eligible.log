@@ -1,4 +1,13 @@
 ******************************************************************************
+commit a89a3f157704f249d0e7f44f0b2901d85e6978e4
+Author: marcoonthegit <marcov@freepascal.org>
+Date:   Tue Dec 14 15:40:41 2021 +0100
+
+    * set version of delchars, requested by Bart B issue #39473
+
+M	packages/rtl-objpas/src/inc/strutils.pp
+
+******************************************************************************
 commit 4568c77f576dd5d75418a3c807885c325c196434
 Author: marcoonthegit <marcov@freepascal.org>
 Date:   Tue Dec 14 15:06:55 2021 +0100
