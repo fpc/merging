@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 4568c77f576dd5d75418a3c807885c325c196434
+Author: marcoonthegit <marcov@freepascal.org>
+Date:   Tue Dec 14 15:06:55 2021 +0100
+
+    * implemented stringofchar unicodestring, bug #39483
+
+M	rtl/inc/ustringh.inc
+M	rtl/inc/ustrings.inc
+
+******************************************************************************
 commit 7a15312b54869784baf92d15a459691fd6c8c419
 Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
 Date:   Mon Dec 13 11:06:05 2021 +0000
