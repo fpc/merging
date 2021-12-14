@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 2208b55f767117cfc5a32df3f81c44e8001e7624
+Author: FPK <florian@freepascal.org>
+Date:   Tue Dec 14 21:14:56 2021 +0000
+
+      * cleanup of garbage, resolves #39487
+
+M	packages/fv/src/resource.pas
+
+******************************************************************************
 commit 6c466d2a387ac892ab3abc2f241cab8cfd7e5a91
 Author: marcoonthegit <marcov@freepascal.org>
 Date:   Tue Dec 14 18:50:51 2021 +0100
