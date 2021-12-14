@@ -1,4 +1,16 @@
 ******************************************************************************
+commit fc1ed782322d8e21a8624d5ce57ea5a42ebe84cd
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Tue Dec 14 21:58:24 2021 +0000
+
+     Graph package fixes
+     Fix aarch64-freebsd compilation failure
+     by restricting graph unit to i8086/i386/x86_64 CPUs.
+     Remove unneeded i386-linux special case.
+
+M	packages/graph/fpmake.pp
+
+******************************************************************************
 commit 2208b55f767117cfc5a32df3f81c44e8001e7624
 Author: FPK <florian@freepascal.org>
 Date:   Tue Dec 14 21:14:56 2021 +0000
