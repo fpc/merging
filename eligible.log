@@ -1,4 +1,18 @@
 ******************************************************************************
+commit 5dcdfeb1260176b94ee89e1e1d0d1e77bc7b811b
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Wed Dec 15 08:25:37 2021 +0200
+
+    * ptcpas update: support the F13..F35 function keys on platforms that recognize them
+
+M	packages/ptc/docs/CHANGES.txt
+M	packages/ptc/examples/keyboard3.pp
+M	packages/ptc/src/cocoa/cocoaconsolei.inc
+M	packages/ptc/src/core/keyeventd.inc
+M	packages/ptc/src/win32/base/win32kbd.inc
+M	packages/ptc/src/x11/x11displayi.inc
+
+******************************************************************************
 commit fc1ed782322d8e21a8624d5ce57ea5a42ebe84cd
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Tue Dec 14 21:58:24 2021 +0000
