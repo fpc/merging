@@ -1,4 +1,14 @@
 ******************************************************************************
+commit f7239e03e7c4e21aea30ef17393a5303dd5d5ac8
+Author: florian <florian@freepascal.org>
+Date:   Wed Dec 15 23:05:18 2021 +0100
+
+      * make tgobj.pas less verbose in extdebug mode, use separate define DEBUG_FREETEMP for the really
+        verbose stuff
+
+M	compiler/tgobj.pas
+
+******************************************************************************
 commit be448e29f63fd5d5d2b4320f24bde4ec197ca895
 Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
 Date:   Wed Dec 15 16:37:31 2021 +0000
