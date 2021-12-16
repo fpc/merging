@@ -1,4 +1,14 @@
 ******************************************************************************
+commit c6874df5c8ffcb6ad97096e63b63afe12e86b08d
+Author: florian <florian@freepascal.org>
+Date:   Thu Dec 16 22:27:18 2021 +0100
+
+      * better error recovery, resolves #39485
+
+M	compiler/pdecobj.pas
+A	tests/tbf/tw39485.pp
+
+******************************************************************************
 commit d5b368988f34e631d2e065971713690fb691ebf3
 Author: Jonas Maebe <jonas@freepascal.org>
 Date:   Thu Dec 16 21:10:19 2021 +0100
