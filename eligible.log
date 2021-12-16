@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 492210fdc73d4681d05fb59619f77efb53bf6086
+Author: Marcus Sackrow <alb42@web.de>
+Date:   Thu Dec 16 19:56:10 2021 +0100
+
+    AmigaOS4, MorphOS: added missing RemBob macro
+
+M	packages/morphunits/src/agraphics.pas
+M	packages/os4units/src/agraphics.pas
+
+******************************************************************************
 commit f7239e03e7c4e21aea30ef17393a5303dd5d5ac8
 Author: florian <florian@freepascal.org>
 Date:   Wed Dec 15 23:05:18 2021 +0100
