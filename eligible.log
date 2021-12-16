@@ -1,4 +1,15 @@
 ******************************************************************************
+commit d5b368988f34e631d2e065971713690fb691ebf3
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Thu Dec 16 21:10:19 2021 +0100
+
+    LLVM: add Read/WritePort* implementations
+    
+    Fixes Unix graph compilation on x86 with LLVM
+
+M	rtl/unix/x86.pp
+
+******************************************************************************
 commit 492210fdc73d4681d05fb59619f77efb53bf6086
 Author: Marcus Sackrow <alb42@web.de>
 Date:   Thu Dec 16 19:56:10 2021 +0100
