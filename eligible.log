@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 2b9ec05963d7f0834cc64df4a2cf3eb724790fca
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Fri Dec 17 12:55:32 2021 +0000
+
+    Re-enable compilation of graph unit for aarch64-win64
+
+M	packages/graph/fpmake.pp
+
+******************************************************************************
 commit 03f468545597e3edbde86b903a88a1dc9da9b1e9
 Author: florian <florian@freepascal.org>
 Date:   Fri Dec 17 21:24:41 2021 +0100
