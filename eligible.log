@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 03f468545597e3edbde86b903a88a1dc9da9b1e9
+Author: florian <florian@freepascal.org>
+Date:   Fri Dec 17 21:24:41 2021 +0100
+
+      + sanity checks in mips and sparc register allocator
+
+M	compiler/mips/rgcpu.pas
+M	compiler/sparcgen/rgcpu.pas
+
+******************************************************************************
 commit c6874df5c8ffcb6ad97096e63b63afe12e86b08d
 Author: florian <florian@freepascal.org>
 Date:   Thu Dec 16 22:27:18 2021 +0100
