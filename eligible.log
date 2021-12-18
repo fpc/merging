@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 77b9d62520dbc4cce3751fbdabfff0ca73aa90e9
+Author: florian <florian@freepascal.org>
+Date:   Sat Dec 18 21:22:36 2021 +0100
+
+      + in_min/max_single/double support for aarch64
+
+M	compiler/aarch64/ncpuinl.pas
+M	compiler/nflw.pas
+
+******************************************************************************
 commit b4bd15a5c07ae81b0a7f7906bf61c3c6e6180751
 Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
 Date:   Fri Dec 17 22:09:17 2021 +0000
