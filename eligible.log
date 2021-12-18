@@ -1,4 +1,13 @@
 ******************************************************************************
+commit b4bd15a5c07ae81b0a7f7906bf61c3c6e6180751
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Fri Dec 17 22:09:17 2021 +0000
+
+    Removed incorrect logic in TEST optimisation
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
 commit 2b9ec05963d7f0834cc64df4a2cf3eb724790fca
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Fri Dec 17 12:55:32 2021 +0000
