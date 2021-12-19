@@ -1,4 +1,71 @@
 ******************************************************************************
+commit 4c6cbfe03edaced0be3e1477f48f6d7b927ba858
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sun Dec 19 22:19:15 2021 +0100
+
+    * RPC Client code generator (also in pas2js)
+
+M	packages/fcl-web/fpmake.pp
+A	packages/fcl-web/src/jsonrpc/fprpccodegen.pp
+
+******************************************************************************
+commit 36eea0c819c51d0424648fcb50b4f6ee52702016
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sun Dec 19 22:16:13 2021 +0100
+
+    * Slightly better identifier position
+
+M	packages/fcl-passrc/src/pparser.pp
+
+******************************************************************************
+commit 03b3f00a0b62488697aab90a5fe362b3053ffc59
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sun Dec 19 22:15:29 2021 +0100
+
+    * Publish handler resulttype, add OnContextExecute
+
+M	packages/fcl-web/src/jsonrpc/fpjsonrpc.pp
+
+******************************************************************************
+commit 9af13b273178cee02d56d05ac24d16e707b7193a
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Tue Dec 7 16:33:07 2021 +0100
+
+    * Force ampersand in EscaleKeyword
+
+M	packages/fcl-base/src/pascodegen.pp
+
+******************************************************************************
+commit fa9d77e67ee7235fb02b3a6c7576eee573fbc332
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Tue Dec 7 16:32:26 2021 +0100
+
+    * TypeScript Improvements, 97% of DefinitelyTyped declarations now parsed
+
+A	packages/fcl-js/examples/parsefiles.pas
+M	packages/fcl-js/src/jsparser.pp
+M	packages/fcl-js/src/jsscanner.pp
+M	packages/fcl-js/src/jstoken.pp
+M	packages/fcl-js/src/jstree.pp
+M	packages/fcl-js/src/jswriter.pp
+M	packages/fcl-js/src/tstopas.pp
+M	packages/fcl-js/tests/tcparser.pp
+M	packages/fcl-js/tests/tcscanner.pp
+M	packages/fcl-js/tests/tctsparser.pp
+M	packages/fcl-js/tests/tctstopas.pp
+M	packages/fcl-js/tests/tcwriter.pp
+M	packages/fcl-js/tests/testjs.lpi
+
+******************************************************************************
+commit 40196f4a437626044a4a40baf9bedacb3fc984e4
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Tue Nov 30 03:11:19 2021 +0000
+
+    Fixes to ADD/SUB 128 optimisation that didn't check flags properly, and also handling ADC/SBB properly
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
 commit e443936e12822b1466e9f0ead1e464742412202e
 Author: florian <florian@freepascal.org>
 Date:   Sun Dec 19 16:16:44 2021 +0100
