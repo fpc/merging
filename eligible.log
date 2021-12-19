@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 159201d054f5564d7843a9943712c8669a59b7c7
+Author: florian <florian@freepascal.org>
+Date:   Sun Dec 19 22:55:03 2021 +0100
+
+      * activate missing test
+
+M	tests/test/tminmax.pp
+
+******************************************************************************
 commit 4c6cbfe03edaced0be3e1477f48f6d7b927ba858
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Sun Dec 19 22:19:15 2021 +0100
