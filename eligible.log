@@ -1,4 +1,67 @@
 ******************************************************************************
+commit d083cc7247bbc6895eded5624933114d1e90c50c
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Tue Dec 7 18:37:21 2021 +0000
+
+    New MovxAndTest2Test optimisation to mirror the regular MovAndTest2Test optimisation
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
+commit 5b4c104aafdacafe36495a89c4d0e3a8be62fa9d
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Tue Dec 7 17:26:42 2021 +0000
+
+    Massive overhaul to OptPass2Movx to favour operand shrinkage
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
+commit d255ffba8ba16c21a006d7ed9710ff095c3d30a5
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Mon Dec 6 12:45:48 2021 +0000
+
+    Improved handling of signed sequences in OptPass2Movx
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
+commit 01e5f4855a596496921e45f3b098f86285097d4c
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Mon Dec 6 06:19:25 2021 +0000
+
+    MovZX->MovSX optimisation
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
+commit 4825d2d16c2af3d3658e12637fb9fbed32f86491
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Sat Dec 4 08:06:25 2021 +0000
+
+    New Movz ###,%ecx, shift/rotate %cl,... optimisation
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
+commit f02b7508de42be8a2768036727447cb16106af0c
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Sat Dec 4 06:49:00 2021 +0000
+
+    Bolder OptPass2Movx optimisations, including a simplification fix
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
+commit da899df6b2bbb980a2d047b542eee3bff03f4fa9
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Fri Dec 3 13:15:14 2021 +0000
+
+    New MovxMovxOp2OpMovx optimisation
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
 commit 87a785daa07a0375d3271102dadf105aec8e7d43
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Mon Dec 20 13:26:08 2021 +0100
