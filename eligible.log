@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 8ee49ef93094fe52b7ab3d496d0d91e4cc01b805
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Mon Dec 20 23:55:14 2021 +0100
+
+    * Patch from Werner Pamler to fix issue #39493
+
+M	packages/fcl-db/src/datadict/fpdddbf.pp
+
+******************************************************************************
 commit d083cc7247bbc6895eded5624933114d1e90c50c
 Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
 Date:   Tue Dec 7 18:37:21 2021 +0000
