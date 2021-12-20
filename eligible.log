@@ -1,4 +1,13 @@
 ******************************************************************************
+commit fd29f25bf1678ba50adb3c8af2717b6782d03b8b
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Mon Dec 20 13:18:53 2021 +0100
+
+    * Add RPCMethodName property
+
+M	packages/fcl-web/src/jsonrpc/fpjsonrpc.pp
+
+******************************************************************************
 commit 159201d054f5564d7843a9943712c8669a59b7c7
 Author: florian <florian@freepascal.org>
 Date:   Sun Dec 19 22:55:03 2021 +0100
