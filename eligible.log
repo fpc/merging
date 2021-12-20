@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 87a785daa07a0375d3271102dadf105aec8e7d43
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Mon Dec 20 13:26:08 2021 +0100
+
+    * Fix registry search for method name
+
+M	packages/fcl-web/src/jsonrpc/fpjsonrpc.pp
+
+******************************************************************************
 commit fd29f25bf1678ba50adb3c8af2717b6782d03b8b
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Mon Dec 20 13:18:53 2021 +0100
