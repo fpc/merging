@@ -1,4 +1,16 @@
 ******************************************************************************
+commit b00fdb72059306064217faf72a99cd3e315515ab
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Tue Dec 21 12:34:50 2021 +0200
+
+    * ptcpas keyboard handling improvements for macOS and X11
+
+M	packages/ptc/examples/keyboard3.pp
+M	packages/ptc/src/cocoa/cocoaconsolei.inc
+M	packages/ptc/src/core/keyeventd.inc
+M	packages/ptc/src/x11/x11displayi.inc
+
+******************************************************************************
 commit 8ee49ef93094fe52b7ab3d496d0d91e4cc01b805
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Mon Dec 20 23:55:14 2021 +0100
