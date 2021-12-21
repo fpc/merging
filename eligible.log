@@ -1,4 +1,22 @@
 ******************************************************************************
+commit e6fe075a425b2463204fb4593e2b90b00fe392c2
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Tue Dec 21 15:11:17 2021 +0100
+
+    * Patch from Henrique Werlan, correctly fetch RTTI info for external classes (pas2js issue 38943)
+
+M	utils/pas2js/dist/rtl.js
+
+******************************************************************************
+commit a16449c54e344c4cbcb7a87cfa3653e417aa0b3a
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Tue Dec 21 15:01:14 2021 +0100
+
+    * Fix from Henrique Werlang, use safename when writing pascal code (pas2js issue 39196)
+
+M	packages/fcl-passrc/src/paswrite.pp
+
+******************************************************************************
 commit b00fdb72059306064217faf72a99cd3e315515ab
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Tue Dec 21 12:34:50 2021 +0200
