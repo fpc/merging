@@ -1,4 +1,14 @@
 ******************************************************************************
+commit ebd7bb7cb9179937428809e2337f79153ab5bcdb
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Tue Dec 21 19:17:21 2021 +0100
+
+    * Create API description as Pascal
+
+M	packages/fcl-web/src/jsonrpc/fpjsonrpc.pp
+M	packages/fcl-web/src/jsonrpc/webjsonrpc.pp
+
+******************************************************************************
 commit bd777877124f84665d133944b585e1708b7c7c29
 Author: Michael Van Canneyt <michael@freepascal.org>
 Date:   Tue Dec 21 16:07:00 2021 +0100
