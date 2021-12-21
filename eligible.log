@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 6147d6d8a02903b1a11d36424dd53b229aacee6d
+Author: florian <florian@freepascal.org>
+Date:   Tue Dec 21 22:45:32 2021 +0100
+
+      * compilation with i386 fixed
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
 commit ebd7bb7cb9179937428809e2337f79153ab5bcdb
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Tue Dec 21 19:17:21 2021 +0100
