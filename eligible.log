@@ -1,4 +1,13 @@
 ******************************************************************************
+commit bd777877124f84665d133944b585e1708b7c7c29
+Author: Michael Van Canneyt <michael@freepascal.org>
+Date:   Tue Dec 21 16:07:00 2021 +0100
+
+    * Fix from Дмитрий Ворошин, fix issue #39495
+
+M	packages/fcl-web/src/base/httpdefs.pp
+
+******************************************************************************
 commit e6fe075a425b2463204fb4593e2b90b00fe392c2
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Tue Dec 21 15:11:17 2021 +0100
