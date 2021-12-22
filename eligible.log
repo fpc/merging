@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 6dbe71cd3000e8d396fe2a05e8e2f74d0c012f81
+Author: florian <florian@freepascal.org>
+Date:   Wed Dec 22 22:54:11 2021 +0100
+
+      * TX86AsmOptimizer.OptPass1MOVXX should search only over other instructions if it works with registers only
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
 commit 6147d6d8a02903b1a11d36424dd53b229aacee6d
 Author: florian <florian@freepascal.org>
 Date:   Tue Dec 21 22:45:32 2021 +0100
