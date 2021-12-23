@@ -1,4 +1,22 @@
 ******************************************************************************
+commit ab969e0a9b19820e57fedc21d18e0e1335e74949
+Author: florian <florian@freepascal.org>
+Date:   Thu Dec 23 22:00:26 2021 +0100
+
+      * patch by Rika: improve ctuils.newalign/align, part of #39496
+
+M	compiler/cutils.pas
+
+******************************************************************************
+commit b4c8c1da12f2aa006862bb1212ae540521604ca1
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Wed Dec 22 03:34:49 2021 +0000
+
+    Overflow bug fixes to MovZX/SX optimisations when CMP instructions are encountered.
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
 commit 6dbe71cd3000e8d396fe2a05e8e2f74d0c012f81
 Author: florian <florian@freepascal.org>
 Date:   Wed Dec 22 22:54:11 2021 +0100
