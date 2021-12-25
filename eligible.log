@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 22cd8d5d62ca165e36c6fe39c9054d18322e51f5
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Sat Dec 25 03:15:44 2021 +0000
+
+    Fixed bug in MovxMovx2Movx optimisation that would specify a 64-bit destination instead of 32-bit one
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
 commit 4fe5e53fcc6236fa44441dcba69cc2d274febd3c
 Author: Karoly Balogh <karoly@freepascal.org>
 Date:   Sat Dec 25 13:21:40 2021 +0100
