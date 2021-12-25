@@ -1,4 +1,23 @@
 ******************************************************************************
+commit c0979bbc0cbc6497c29b608fba5565f81a7228c2
+Author: florian <florian@freepascal.org>
+Date:   Sat Dec 25 19:06:37 2021 +0100
+
+      * TObject.InitInstance got very big so inlining has no advantage anymore, resolves #39494
+
+M	rtl/inc/objpas.inc
+M	rtl/inc/objpash.inc
+
+******************************************************************************
+commit cafd708b6d862776b7454e1b229f3134ccde5009
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Sat Dec 25 01:37:54 2021 +0000
+
+    Refactoring of OptPass2Movx to remove goto
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
 commit 9894fe8082531f80de22c5dab342104b800d789a
 Author: Karoly Balogh <karoly@freepascal.org>
 Date:   Sat Dec 25 16:42:00 2021 +0100
