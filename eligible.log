@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 9894fe8082531f80de22c5dab342104b800d789a
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Sat Dec 25 16:42:00 2021 +0100
+
+    * rtl-console: on Amiga added a custom screen update call, to do partial screen updates. doing a full update can be very slow on low-end systems (checking the entire screen buffer every time), so software tuned for these can now request partial updates, when the updated already is already known
+
+M	packages/rtl-console/src/amicommon/video.pp
+
+******************************************************************************
 commit 22cd8d5d62ca165e36c6fe39c9054d18322e51f5
 Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
 Date:   Sat Dec 25 03:15:44 2021 +0000
