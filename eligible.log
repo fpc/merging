@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 5a8434234869887dae77479507af8bdc94c11cf0
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Sat Dec 25 23:31:20 2021 +0100
+
+    * rtl-console: fix ; in the previous commit
+
+M	packages/rtl-console/src/inc/video.inc
+
+******************************************************************************
 commit d3de4b59512915d19f7f06dcdb3a836ad6816feb
 Author: Karoly Balogh <karoly@freepascal.org>
 Date:   Sat Dec 25 23:16:36 2021 +0100
