@@ -1,4 +1,51 @@
 ******************************************************************************
+commit f289f2694ab837b414aa131a0514c56fee4950bc
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Fri Dec 24 04:12:20 2021 +0000
+
+    x86: Additions to OptPass2Movx to better synergise with new CMP optimisation under -O2
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
+commit 683a92bcc8d791f4f23fde8205229b382dd8fec8
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Fri Dec 24 01:41:09 2021 +0000
+
+    i386: Correction to GetIntRegisterBetween to ensure we only get 8-bit registers that we can actually encode
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
+commit 1da7ce46de3829225c6c50d831656e46109ec7d7
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Fri Dec 24 01:31:48 2021 +0000
+
+    x86: New double CMP optimisation to remove a branch
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
+commit 781b2d0a80db394bfcb6ad42d75549a32b360cb4
+Author: florian <florian@freepascal.org>
+Date:   Sat Dec 25 20:01:32 2021 +0100
+
+      * patch by Rika: second part of #39496, resolves #30496
+      + extended test
+
+M	rtl/inc/generic.inc
+M	tests/test/units/system/talign.pp
+
+******************************************************************************
+commit abc4a0a4e6ef0c0622bf155edba8c8394fdec95c
+Author: florian <florian@freepascal.org>
+Date:   Sat Dec 25 19:37:27 2021 +0100
+
+      * patch by Rika: another improvement of cutils.newalignment, part of #39496
+
+M	compiler/cutils.pas
+
+******************************************************************************
 commit c0979bbc0cbc6497c29b608fba5565f81a7228c2
 Author: florian <florian@freepascal.org>
 Date:   Sat Dec 25 19:06:37 2021 +0100
