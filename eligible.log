@@ -1,4 +1,23 @@
 ******************************************************************************
+commit d3de4b59512915d19f7f06dcdb3a836ad6816feb
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Sat Dec 25 23:16:36 2021 +0100
+
+    * rtl-console: generalized the partial screen update feature which was added to Amiga. the function was renamed to UpdateScreenArea(). it's still an empty call on other platforms, that falls back to UpdateScreen() but the infrastructure is now there to support it.
+
+M	packages/rtl-console/src/amicommon/video.pp
+M	packages/rtl-console/src/go32v2/video.pp
+M	packages/rtl-console/src/inc/video.inc
+M	packages/rtl-console/src/inc/videoh.inc
+M	packages/rtl-console/src/msdos/video.pp
+M	packages/rtl-console/src/netware/video.pp
+M	packages/rtl-console/src/netwlibc/video.pp
+M	packages/rtl-console/src/os2commn/video.pp
+M	packages/rtl-console/src/unix/video.pp
+M	packages/rtl-console/src/win/video.pp
+M	packages/rtl-console/src/win16/video.pp
+
+******************************************************************************
 commit f289f2694ab837b414aa131a0514c56fee4950bc
 Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
 Date:   Fri Dec 24 04:12:20 2021 +0000
