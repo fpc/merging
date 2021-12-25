@@ -1,4 +1,33 @@
 ******************************************************************************
+commit 4fe5e53fcc6236fa44441dcba69cc2d274febd3c
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Sat Dec 25 13:21:40 2021 +0100
+
+    * rtl-console: on Amiga, remove the initial testing of the buffer for changes. it just slowed things down with frequent partial updates, especially on low-end processors with limited or no data cache
+
+M	packages/rtl-console/src/amicommon/video.pp
+
+******************************************************************************
+commit cc7c328a7cf5b236e53c26b6b517fee0006f45a1
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Sat Dec 25 13:17:34 2021 +0100
+
+    * rtl-console: slight refactor of how Amiga SysUpdateScreen() addresses the videobuf. this results in slightly more optimal code with less complex addressing, which helps low-end processors
+
+M	packages/rtl-console/src/amicommon/video.pp
+
+******************************************************************************
+commit 5264e48d90a97e2dcfc5410410d60c1ecc14a824
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Sat Dec 25 13:13:26 2021 +0100
+
+    * rtl-console: always compile Amiga KVM units in OBJFPC mode. This makes it easier to compile these units outside of this package
+
+M	packages/rtl-console/src/amicommon/keyboard.pp
+M	packages/rtl-console/src/amicommon/mouse.pp
+M	packages/rtl-console/src/amicommon/video.pp
+
+******************************************************************************
 commit ab969e0a9b19820e57fedc21d18e0e1335e74949
 Author: florian <florian@freepascal.org>
 Date:   Thu Dec 23 22:00:26 2021 +0100
