@@ -1,4 +1,98 @@
 ******************************************************************************
+commit b54068d1a457de5db08ca831f0edd5470c23fa71
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Sun Dec 26 11:35:22 2021 +0100
+
+    * libffi: fix abi declarations for x86_64
+
+M	packages/libffi/src/ffi.pp
+
+******************************************************************************
+commit 00f4aeb39b84e5a291310697064904d10e6d0313
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Fri Dec 24 23:30:33 2021 +0100
+
+    * i386 invoke implementation: check the correct argument in the second pass
+
+M	packages/rtl-objpas/src/i386/invoke.inc
+
+******************************************************************************
+commit e95572921a85a84f64ce4864544d549ad0ef5b50
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Fri Dec 24 23:29:34 2021 +0100
+
+    * i386 callback implementation: only skip the result argument if it was detected as one from the parameters
+
+M	packages/rtl-objpas/src/i386/invoke.inc
+
+******************************************************************************
+commit bf37616514079e814312ee72de65262d2b869194
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Fri Dec 24 14:47:01 2021 +0100
+
+    + add TValue.FromArray to create a TValue type for a static or dynamic array from an array of TValues
+    + added test
+
+M	packages/rtl-objpas/src/inc/rtti.pp
+M	packages/rtl-objpas/tests/tests.rtti.pas
+
+******************************************************************************
+commit caaed25f182e46f839ce4af7756f82bace100942
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Fri Dec 24 13:59:58 2021 +0100
+
+    + add Rtti types for static and dynamic arrays
+    + added tests
+
+M	packages/rtl-objpas/src/inc/rtti.pp
+M	packages/rtl-objpas/tests/tests.rtti.pas
+
+******************************************************************************
+commit f1059679a17d87904455790fe16110cd51c1692f
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Fri Dec 24 13:56:34 2021 +0100
+
+    * move initialization of TValue to a separate method to avoid duplicate implementations
+
+M	packages/rtl-objpas/src/inc/rtti.pp
+
+******************************************************************************
+commit 322d91758cf08e72cb41949a60a383e7dab69620
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Fri Dec 24 13:53:04 2021 +0100
+
+    + add Handle property to access the TypeInfo pointer of the TRttiType
+
+M	packages/rtl-objpas/src/inc/rtti.pp
+
+******************************************************************************
+commit f74a6abccfb416d7235a46258d28001320ff306e
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Fri Dec 24 23:31:12 2021 +0100
+
+    * fixup
+
+M	packages/rtl-objpas/src/inc/rtti.pp
+
+******************************************************************************
+commit f9567ff50e62cc7487455323ca5331745f270dd9
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Fri Dec 24 13:52:03 2021 +0100
+
+    * TMethodImplementation.HandleCallback: fix building the argument array if the result is passed in a parameter
+
+M	packages/rtl-objpas/src/inc/rtti.pp
+
+******************************************************************************
+commit bc46d8f33a4caacf63a81a8b4bba8afa0ed4ab5c
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Fri Dec 24 13:49:48 2021 +0100
+
+    * x86_64 Win64 callback implementation: fix building the argument array if the result is passed as a parameter
+
+M	packages/rtl-objpas/src/x86_64/invoke.inc
+
+******************************************************************************
 commit 5a8434234869887dae77479507af8bdc94c11cf0
 Author: Karoly Balogh <karoly@freepascal.org>
 Date:   Sat Dec 25 23:31:20 2021 +0100
