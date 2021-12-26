@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 8609c0803e592a3e9cf2ab9c2fbf567fdbc750ab
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Wed Dec 22 17:48:05 2021 +0000
+
+    Fixed MovxOp2Op failing on i386 due to lack of register check
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
 commit 1e37eef3d240ff422ad2f92ea9cab6ebdc8391c4
 Author: Sven/Sarah Barth <pascaldragon@gmail.com>
 Date:   Sun Dec 26 16:36:16 2021 +0100
