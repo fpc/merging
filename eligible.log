@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 1f41cd195fd8f3a73c3a3a5c17f62d51c720b3f6
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Sun Dec 26 21:28:15 2021 +0100
+
+    amunits: added missing WA_Activate handling to the OpenWindow taglist handling legacy support code
+
+M	packages/amunits/src/coreunits/intuition.pas
+
+******************************************************************************
 commit 6146aa6eb6d9ce9906aa14fc80cfb9446d74479d
 Author: Karoly Balogh <karoly@freepascal.org>
 Date:   Sun Dec 26 20:37:29 2021 +0100
@@ -11628,18 +11637,6 @@ Date:   Mon Aug 9 18:38:31 2021 +0300
     * optimize tests for a single bit "(a and one_bit_mask_const) = <> one_bit_mask_const" into "(a and one_bit_mask_const) <> = 0" to enable further CPU specific optimizations.
 
 M	compiler/nadd.pas
-
-******************************************************************************
-commit 45c683325867989800e574edc8e013030c56d33d
-Author: Michaël Van Canneyt <michael.vancanneyt@cquel.be>
-Date:   Mon Aug 9 16:46:30 2021 +0200
-
-    * --example-dir support
-
-M	utils/fpdoc/dglobals.pp
-M	utils/fpdoc/fpdoc.pp
-M	utils/fpdoc/fpdocstrs.pp
-M	utils/fpdoc/mkfpdoc.pp
 
 ******************************************************************************
 commit 3cfec8f905a3edc27473e9ddf12f888e74d19bb5
