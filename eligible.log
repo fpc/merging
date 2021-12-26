@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 1e37eef3d240ff422ad2f92ea9cab6ebdc8391c4
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Sun Dec 26 16:36:16 2021 +0100
+
+    * use an anonymous symbol for the record operator table as its typing is different for each incarnation anyway
+
+M	compiler/ncgrtti.pas
+M	compiler/symconst.pas
+
+******************************************************************************
 commit b54068d1a457de5db08ca831f0edd5470c23fa71
 Author: Sven/Sarah Barth <pascaldragon@gmail.com>
 Date:   Sun Dec 26 11:35:22 2021 +0100
