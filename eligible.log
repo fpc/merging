@@ -1,4 +1,22 @@
 ******************************************************************************
+commit db39d1a4e4af8d543db22dbf85abc1c0e4dc522e
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Sun Dec 26 22:25:28 2021 +0100
+
+    rtl-console: use videoDefaultFlags variable on Amiga for WA_Flags. disable smartrefresh in full screen, also respect the FPC_VIDEO_SIMPLEREFRESH env var
+
+M	packages/rtl-console/src/amicommon/video.pp
+
+******************************************************************************
+commit c01c13c29aacf5e1475d1e3438bc4c699c1ab9a9
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Sun Dec 26 22:22:38 2021 +0100
+
+    amunits: added missing WA_Borderless handling to the OpenWindow taglist handling legacy support code
+
+M	packages/amunits/src/coreunits/intuition.pas
+
+******************************************************************************
 commit 1f41cd195fd8f3a73c3a3a5c17f62d51c720b3f6
 Author: Karoly Balogh <karoly@freepascal.org>
 Date:   Sun Dec 26 21:28:15 2021 +0100
