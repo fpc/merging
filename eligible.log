@@ -1,4 +1,40 @@
 ******************************************************************************
+commit 6146aa6eb6d9ce9906aa14fc80cfb9446d74479d
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Sun Dec 26 20:37:29 2021 +0100
+
+    rtl-console/amicommon: set the window's UserPort to nil before closing, as recommended
+
+M	packages/rtl-console/src/amicommon/video.pp
+
+******************************************************************************
+commit 539f2cd7f095b616b6452f1fcc4aa3635d99fb57
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Sun Dec 26 20:35:11 2021 +0100
+
+    amunits: in agraphics legacy support, use ExecFreeMem (OS call) instead of FreeMem (RTL call) to free the Bitmap which was created using ExecAllocMem
+
+M	packages/amunits/src/coreunits/agraphics.pas
+
+******************************************************************************
+commit 53a67b34b53bec3ca526da2ddd70c69488d69556
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Sun Dec 26 17:31:39 2021 +0100
+
+    rtl/amiga: add support for OSHeap, now default in legacy mode, optional define otherwise
+
+M	rtl/amiga/system.pp
+
+******************************************************************************
+commit 273a598be86b5bc65f23c36eae35e88356389a28
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Sun Dec 26 17:22:11 2021 +0100
+
+    * Amiga-likes: set some sensible heapsize defaults, for OSHeap support
+
+M	compiler/options.pas
+
+******************************************************************************
 commit 8609c0803e592a3e9cf2ab9c2fbf567fdbc750ab
 Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
 Date:   Wed Dec 22 17:48:05 2021 +0000
@@ -16,6 +52,15 @@ Date:   Sun Dec 26 16:36:16 2021 +0100
 
 M	compiler/ncgrtti.pas
 M	compiler/symconst.pas
+
+******************************************************************************
+commit c298c0e0dadb96a99040b766091784831dd9d6f1
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Sun Dec 26 15:56:34 2021 +0100
+
+    rtl/osheap: fixed a dumb reversed condition in osheap/SysAllocMem()
+
+M	rtl/inc/osheap.inc
 
 ******************************************************************************
 commit b54068d1a457de5db08ca831f0edd5470c23fa71
