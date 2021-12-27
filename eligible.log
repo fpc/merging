@@ -1,4 +1,35 @@
 ******************************************************************************
+commit 8a63e7ee5a34f8dfe2f412fd218dbea3d3df9e73
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Mon Dec 27 11:42:48 2021 +0100
+
+    * Fix compiler hints
+
+M	packages/fcl-web/src/restbridge/sqldbrestcds.pp
+M	packages/fcl-web/src/restbridge/sqldbrestdata.pp
+M	packages/fcl-web/src/restbridge/sqldbrestio.pp
+M	packages/fcl-web/src/restbridge/sqldbrestjson.pp
+M	packages/fcl-web/src/restbridge/sqldbrestxml.pp
+
+******************************************************************************
+commit d362d47e88aa2dddbcd35c371a92e5014cca5a02
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Mon Dec 27 11:41:54 2021 +0100
+
+    * Fix memleak and compiler hints
+
+M	packages/fcl-web/src/restbridge/sqldbrestbridge.pp
+
+******************************************************************************
+commit 11d2960db868d02757ae8810018dc661db034fe6
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Mon Dec 27 11:41:29 2021 +0100
+
+    * Fix memleak
+
+M	packages/fcl-web/src/base/httproute.pp
+
+******************************************************************************
 commit 91337a367574fd8fecf514d2d91e7e7517f08d67
 Author: FPK <florian@freepascal.org>
 Date:   Mon Dec 27 09:47:22 2021 +0000
