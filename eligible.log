@@ -1,4 +1,22 @@
 ******************************************************************************
+commit cbc8aa63c83df4e16635b26e479c508229428e07
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Mon Dec 27 15:13:37 2021 +0100
+
+    rtl/amiga: added minimalistic #?.<ext> and *.<ext> pattern matching to legacy MatchFirst
+
+M	rtl/amiga/m68k/legacydos.inc
+
+******************************************************************************
+commit 50572fda8cdbe8ac3199ffbc22588dd7c7d0e372
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Mon Dec 27 15:10:02 2021 +0100
+
+    rtl/amiga: fixed the FileInfoBlock copy to the Anchor chain which broke recently with the alignment fixes
+
+M	rtl/amiga/m68k/legacydos.inc
+
+******************************************************************************
 commit 3608be8f13b3d90bd8bfbc2707ac485c9cfd4d99
 Author: Karoly Balogh <karoly@freepascal.org>
 Date:   Mon Dec 27 13:07:09 2021 +0100
