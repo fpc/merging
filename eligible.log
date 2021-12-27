@@ -1,4 +1,40 @@
 ******************************************************************************
+commit 3608be8f13b3d90bd8bfbc2707ac485c9cfd4d99
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Mon Dec 27 13:07:09 2021 +0100
+
+    rtl/amiga: added some basic infrastructure to MatchFirst to improve pattern matching in the future
+
+M	rtl/amiga/m68k/legacydos.inc
+
+******************************************************************************
+commit 98dd448ce849325373057ad5713f96edf7492bee
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Mon Dec 27 12:09:57 2021 +0100
+
+    rtl/amiga: make sure FileInfoBlock used by legacy MatchFirst is longword aligned
+
+M	rtl/amiga/m68k/legacydos.inc
+
+******************************************************************************
+commit 08f3a3c8ef460fd5bb326c0b74f3fe16ab4dd7bc
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Mon Dec 27 12:00:32 2021 +0100
+
+    rtl/amiga: do not UnLock the initial lock returned by CurrentDir in legacy MatchFirst
+
+M	rtl/amiga/m68k/legacydos.inc
+
+******************************************************************************
+commit 27e9377a3a7b3b90457d79f4d7a9e65785fee186
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Mon Dec 27 11:52:01 2021 +0100
+
+    rtl/amiga: in legacy MatchFirst, revert back to the original directory if we used CurrentDir(0), otherwise MatchFirst() will change the directory to SYS: (0 lock is a shortcut to the boot volume)
+
+M	rtl/amiga/m68k/legacydos.inc
+
+******************************************************************************
 commit 8a63e7ee5a34f8dfe2f412fd218dbea3d3df9e73
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Mon Dec 27 11:42:48 2021 +0100
