@@ -1,4 +1,13 @@
 ******************************************************************************
+commit c9b988e146512169f283172b60cd97b278fcfcfb
+Author: Yuri <yus.serebrennikov@gmail.com>
+Date:   Tue Dec 28 22:16:37 2021 +0000
+
+    Checking the protocol version for websocket is not required on the client side.
+
+M	packages/fcl-web/src/websocket/fpwebsocketclient.pp
+
+******************************************************************************
 commit 742ec5680f8edfdae744382f565a3fda804b0e5c
 Author: marcoonthegit <marcov@freepascal.org>
 Date:   Tue Dec 28 18:18:08 2021 +0100
