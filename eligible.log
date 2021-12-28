@@ -1,4 +1,16 @@
 ******************************************************************************
+commit dde8f54ee70849c6a179f126f085c6dcc5eff9eb
+Author: Florian Klämpfl <florian@freepascal.org>
+Date:   Tue Dec 28 17:05:26 2021 +0100
+
+      + LZCNTSupport
+      + test extended
+
+M	rtl/i386/cpu.pp
+M	rtl/x86_64/cpu.pp
+M	tests/test/units/cpu/tcpu1.pp
+
+******************************************************************************
 commit a18e75eaffb2bea2784a87bb957205510715fe81
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Tue Dec 28 16:12:30 2021 +0100
