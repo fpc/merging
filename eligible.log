@@ -1,4 +1,133 @@
 ******************************************************************************
+commit a18e75eaffb2bea2784a87bb957205510715fe81
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Tue Dec 28 16:12:30 2021 +0100
+
+    * Some cleanup, add file headers
+
+M	packages/fcl-web/examples/jsonrpc/rtti/demorpcrtti.lpr
+M	packages/fcl-web/examples/jsonrpc/rtti/dmrpc.pp
+M	packages/fcl-web/examples/jsonrpc/rtti/myapi.pp
+M	packages/fcl-web/examples/jsonrpc/rtti/rpcapi.pp
+M	packages/fcl-web/examples/jsonrpc/rtti/rttirpc.lpg
+
+******************************************************************************
+commit c944484e66a3c67e92ae1a87b2329f98ea73e65a
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Tue Dec 28 16:08:58 2021 +0100
+
+    * Some clarifying comments
+
+M	packages/fcl-web/examples/jsonrpc/rtti/jsonrpcclient.pp
+
+******************************************************************************
+commit fa7d3d845b8bc4fa7335ed3f5ef73b697c35a3ec
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Tue Dec 28 16:08:11 2021 +0100
+
+    * Some clarifying comments
+
+M	packages/fcl-web/examples/jsonrpc/rtti/rpcclient.lpr
+
+******************************************************************************
+commit 2f23239ebd4719b743e8b7549e30639c9479faaf
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Tue Dec 28 16:07:40 2021 +0100
+
+    * Move resourcestrings to single unit
+
+M	packages/fcl-web/fpmake.pp
+M	packages/fcl-web/src/jsonrpc/fpextdirect.pp
+M	packages/fcl-web/src/jsonrpc/fpjsonrpc.pp
+M	packages/fcl-web/src/jsonrpc/fprpcclient.pp
+M	packages/fcl-web/src/jsonrpc/fprpcrtti.pp
+A	packages/fcl-web/src/jsonrpc/fprpcstrings.pp
+M	packages/fcl-web/src/jsonrpc/webjsonrpc.pp
+
+******************************************************************************
+commit 036aea025d8f7852098fd49e4eef17de00fc6cf0
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Tue Dec 28 15:46:30 2021 +0100
+
+    * build json-rpc using invoke
+
+M	packages/fcl-web/fpmake.pp
+
+******************************************************************************
+commit 12616f657973a62154454c10ddf1b1396b808ca1
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Tue Dec 28 15:42:01 2021 +0100
+
+    * JSON-RPC using Invoke
+
+A	packages/fcl-web/examples/jsonrpc/rtti/README.md
+A	packages/fcl-web/examples/jsonrpc/rtti/demorpcrtti.lpr
+A	packages/fcl-web/examples/jsonrpc/rtti/dmrpc.lfm
+A	packages/fcl-web/examples/jsonrpc/rtti/dmrpc.pp
+A	packages/fcl-web/examples/jsonrpc/rtti/jsonrpcclient.pp
+A	packages/fcl-web/examples/jsonrpc/rtti/myapi.pp
+A	packages/fcl-web/examples/jsonrpc/rtti/rpcapi.pp
+A	packages/fcl-web/examples/jsonrpc/rtti/rpcclient.lpr
+A	packages/fcl-web/examples/jsonrpc/rtti/rttirpc.lpg
+A	packages/fcl-web/src/jsonrpc/fprpcclient.pp
+A	packages/fcl-web/src/jsonrpc/fprpcrtti.pp
+
+******************************************************************************
+commit baec255bbc8fc6eb7378c142148fa375398e35bc
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Tue Dec 28 15:30:19 2021 +0100
+
+    * fpjsonvalue unit to convert between TValue (RTTI unit) and JSON
+
+M	packages/fcl-json/fpmake.pp
+A	packages/fcl-json/src/fpjsonvalue.pp
+
+******************************************************************************
+commit 7d4844919bdb8776c21da2822effe27873885eaa
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Tue Dec 28 15:26:37 2021 +0100
+
+    * Initialize APIRequestName
+
+M	packages/fcl-web/src/jsonrpc/webjsonrpc.pp
+
+******************************************************************************
+commit 2be3978bb446ced6857ab18fe0cd186f6fafe217
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Tue Dec 28 15:26:11 2021 +0100
+
+    * Some fixes & improvements
+
+M	packages/fcl-web/src/jsonrpc/fpjsonrpc.pp
+
+******************************************************************************
+commit b46f361d91683b19af2ba8ef60826e47b2643126
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Tue Dec 28 15:25:20 2021 +0100
+
+    * Fix compiler warnings
+
+M	packages/fcl-web/src/jsonrpc/fpextdirect.pp
+
+******************************************************************************
+commit 8360b180972a70af23e57128fe54bc0e451b481e
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Tue Dec 28 15:24:48 2021 +0100
+
+    * Position stream on start
+
+M	packages/fcl-web/src/base/fpwebclient.pp
+
+******************************************************************************
+commit 2f82a084e838f90ed5329f707ea98d7e9908ff82
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Tue Dec 28 15:50:34 2021 +0100
+
+    rtl-console: quickfix for Amiga UpdateScreenArea() so it properly updates multiple lines
+
+M	packages/rtl-console/src/amicommon/video.pp
+
+******************************************************************************
 commit cbc8aa63c83df4e16635b26e479c508229428e07
 Author: Karoly Balogh <karoly@freepascal.org>
 Date:   Mon Dec 27 15:13:37 2021 +0100
