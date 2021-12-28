@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 742ec5680f8edfdae744382f565a3fda804b0e5c
+Author: marcoonthegit <marcov@freepascal.org>
+Date:   Tue Dec 28 18:18:08 2021 +0100
+
+    * 24-bit byteswap color constants. Due to Opengl vs GDI conventions confusion?
+
+M	packages/rtl-objpas/src/inc/system.uitypes.pp
+
+******************************************************************************
 commit dde8f54ee70849c6a179f126f085c6dcc5eff9eb
 Author: Florian Klämpfl <florian@freepascal.org>
 Date:   Tue Dec 28 17:05:26 2021 +0100
