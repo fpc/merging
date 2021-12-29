@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 25eab57a582a022f3336e052971fd56d9d3cbfd9
+Author: Florian Klämpfl <florian@freepascal.org>
+Date:   Wed Dec 29 15:37:20 2021 +0100
+
+      * allow %... for binary constants in delphi mode, resolves #39503
+
+M	compiler/scanner.pas
+R089	tests/tbf/tb0067.pp	tests/tbs/tb0689.pp
+
+******************************************************************************
 commit c9b988e146512169f283172b60cd97b278fcfcfb
 Author: Yuri <yus.serebrennikov@gmail.com>
 Date:   Tue Dec 28 22:16:37 2021 +0000
