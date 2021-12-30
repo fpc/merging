@@ -1,4 +1,30 @@
 ******************************************************************************
+commit e091d263c84890f64ca8353fa837c4fd7eb94c37
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Thu Dec 30 16:33:14 2021 +0100
+
+    * Wasmtime support
+
+M	packages/fpmake_add.inc
+M	packages/fpmake_proc.inc
+A	packages/wasmtime/Makefile
+A	packages/wasmtime/Makefile.fpc
+A	packages/wasmtime/examples/gcd.lpi
+A	packages/wasmtime/examples/gcd.pp
+A	packages/wasmtime/examples/gcd.wat
+A	packages/wasmtime/examples/hello.wat
+A	packages/wasmtime/examples/helloworld.lpi
+A	packages/wasmtime/examples/helloworld.pp
+A	packages/wasmtime/examples/helloworld.wasm
+A	packages/wasmtime/examples/memory.lpi
+A	packages/wasmtime/examples/memory.pp
+A	packages/wasmtime/examples/memory.wat
+A	packages/wasmtime/examples/wasi.lpi
+A	packages/wasmtime/examples/wasi.pp
+A	packages/wasmtime/fpmake.pp
+A	packages/wasmtime/src/wasmtime.pp
+
+******************************************************************************
 commit b6ba87bed489e5eedaf9cc7e84b938a5c700293d
 Author: Joost van der Sluis <joost@cnoc.nl>
 Date:   Thu Dec 30 01:34:41 2021 +0100
