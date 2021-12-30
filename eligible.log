@@ -1,4 +1,15 @@
 ******************************************************************************
+commit b6ba87bed489e5eedaf9cc7e84b938a5c700293d
+Author: Joost van der Sluis <joost@cnoc.nl>
+Date:   Thu Dec 30 01:34:41 2021 +0100
+
+     * Add Ant/JUnit alike XML test-output format
+
+M	packages/fcl-fpcunit/fpmake.pp
+M	packages/fcl-fpcunit/src/consoletestrunner.pas
+A	packages/fcl-fpcunit/src/junittestreport.pp
+
+******************************************************************************
 commit 25eab57a582a022f3336e052971fd56d9d3cbfd9
 Author: Florian Klämpfl <florian@freepascal.org>
 Date:   Wed Dec 29 15:37:20 2021 +0100
