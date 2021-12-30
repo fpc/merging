@@ -1,4 +1,24 @@
 ******************************************************************************
+commit bb182470a563483803883b01f1a9b4ea3cd7d0fc
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Thu Dec 30 18:46:25 2021 +0100
+
+    * Prepend T when writing pointer types and PrependTypes is set
+
+M	utils/h2pas/h2pas.pas
+M	utils/h2pas/h2pas.y
+
+******************************************************************************
+commit f590e65c7b45c8b5c559574decca3eec95b39c13
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Thu Dec 30 18:40:08 2021 +0100
+
+    * out and var are reserved words
+
+M	utils/h2pas/h2pas.pas
+M	utils/h2pas/h2pas.y
+
+******************************************************************************
 commit e091d263c84890f64ca8353fa837c4fd7eb94c37
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Thu Dec 30 16:33:14 2021 +0100
