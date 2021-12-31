@@ -1,4 +1,22 @@
 ******************************************************************************
+commit 769aeaae03f9eae322270f5800bf409e73fbbd2e
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Fri Dec 31 12:45:56 2021 +0100
+
+    * Add linking examples, change pcchar to pchar
+
+M	packages/wasmtime/examples/gcd.lpi
+M	packages/wasmtime/examples/gcd.pp
+M	packages/wasmtime/examples/helloworld.pp
+A	packages/wasmtime/examples/linking.lpi
+A	packages/wasmtime/examples/linking.pp
+A	packages/wasmtime/examples/linking1.wat
+A	packages/wasmtime/examples/linking2.wat
+M	packages/wasmtime/examples/memory.lpi
+M	packages/wasmtime/examples/memory.pp
+M	packages/wasmtime/src/wasmtime.pp
+
+******************************************************************************
 commit bb182470a563483803883b01f1a9b4ea3cd7d0fc
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Thu Dec 30 18:46:25 2021 +0100
