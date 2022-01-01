@@ -1,4 +1,25 @@
 ******************************************************************************
+commit d2447026de4165b06c574c99f54f6f646b897d88
+Author: florian <florian@freepascal.org>
+Date:   Sat Jan 1 23:26:48 2022 +0100
+
+      + modeswitch UNDERSCOREISSEPERATOR, active by default in delphi modes:
+        support _ as seperator in numbers, it is ignored while reading them, resolves #39504
+
+M	compiler/globals.pas
+M	compiler/globtype.pas
+M	compiler/scanner.pas
+M	compiler/utils/ppuutils/ppudump.pp
+A	tests/tbf/tb0286.pp
+A	tests/tbf/tb0287.pp
+A	tests/tbf/tb0288.pp
+A	tests/tbf/tb0289.pp
+A	tests/tbf/tb0290.pp
+A	tests/tbs/ib0690.inc
+A	tests/tbs/tb0690.pp
+A	tests/tbs/tb0691.pp
+
+******************************************************************************
 commit 116c861af6c13f6d3d0d0d91b6dc4e0c1eb88550
 Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
 Date:   Mon Dec 27 16:18:13 2021 +0000
