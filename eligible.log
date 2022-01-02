@@ -1,4 +1,27 @@
 ******************************************************************************
+commit 2a93e65511cc09cd0723e63fd74e88f693a1c140
+Author: florian <florian@freepascal.org>
+Date:   Sun Jan 2 13:12:33 2022 +0100
+
+      * seperator => separator
+
+M	compiler/arm/armreg.dat
+M	compiler/arm/cgcpu.pas
+M	compiler/globals.pas
+M	compiler/globtype.pas
+M	compiler/hlcgobj.pas
+M	compiler/ngenutil.pas
+M	compiler/scanner.pas
+M	compiler/utils/ppuutils/ppudump.pp
+M	rtl/inc/text.inc
+M	rtl/objpas/sysutils/datih.inc
+M	tests/tbf/tb0287.pp
+M	tests/tbf/tb0288.pp
+M	tests/tbf/tb0289.pp
+M	tests/tbf/tb0290.pp
+M	tests/tbs/tb0690.pp
+
+******************************************************************************
 commit d2447026de4165b06c574c99f54f6f646b897d88
 Author: florian <florian@freepascal.org>
 Date:   Sat Jan 1 23:26:48 2022 +0100
