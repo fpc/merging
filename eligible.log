@@ -1,4 +1,25 @@
 ******************************************************************************
+commit 983fbff8711a8c625e494a981891a90d47847e14
+Author: florian <florian@freepascal.org>
+Date:   Sun Jan 2 21:46:14 2022 +0100
+
+      * proper range checking for TryStrToDWord, should resolve all issues in #39406
+
+M	rtl/objpas/sysutils/sysstr.inc
+A	tests/webtbs/tw39406.pp
+
+******************************************************************************
+commit 435f3a9fe2ff52fb4f3c49dce72d34798fa40121
+Author: florian <florian@freepascal.org>
+Date:   Sun Jan 2 21:33:01 2022 +0100
+
+      * allow a range of Low(Longint) to High(DWord) in TryStrToInt, see also issue #39406
+      * moved test
+
+M	rtl/objpas/sysutils/sysstr.inc
+R100	tests/webtbs/tw8177.pp	tests/test/units/sysutils/tstrtoint.pp
+
+******************************************************************************
 commit 2a93e65511cc09cd0723e63fd74e88f693a1c140
 Author: florian <florian@freepascal.org>
 Date:   Sun Jan 2 13:12:33 2022 +0100
