@@ -7164,15 +7164,6 @@ M	compiler/ogbase.pas
 M	compiler/ogwasm.pas
 
 ******************************************************************************
-commit cb3ac37fb3f78b06a9507b30d8861c20b460e201
-Author: Nikolay Nikolov <nickysn@gmail.com>
-Date:   Sun Sep 26 09:50:35 2021 +0300
-
-    * fixed i32.const with large unsigned 32-bit const parameter (>2GB)
-
-M	compiler/wasm32/aasmcpu.pas
-
-******************************************************************************
 commit efd58317428d3407d7ac5b5986f9674698a4de70
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Sun Sep 26 09:42:12 2021 +0300
@@ -7193,103 +7184,6 @@ Date:   Sun Sep 26 09:40:28 2021 +0300
 M	compiler/ogwasm.pas
 
 ******************************************************************************
-commit 92fb1d2564de0dd45567e943694c03e2a4b01ae5
-Author: Nikolay Nikolov <nickysn@gmail.com>
-Date:   Sun Sep 26 08:25:22 2021 +0300
-
-    * fixed warning
-
-M	compiler/wasm32/aasmcpu.pas
-
-******************************************************************************
-commit 9e0c0281425c455978b3a16ad1a8cebe676a00b4
-Author: Nikolay Nikolov <nickysn@gmail.com>
-Date:   Sun Sep 26 08:15:04 2021 +0300
-
-    + support load/store with op_const
-
-M	compiler/wasm32/aasmcpu.pas
-
-******************************************************************************
-commit 7e9607a62c76ab980f9651227889b7118566cbf3
-Author: Nikolay Nikolov <nickysn@gmail.com>
-Date:   Sun Sep 26 08:07:21 2021 +0300
-
-    * fixed warning
-
-M	compiler/wasm32/aasmcpu.pas
-
-******************************************************************************
-commit 2e491d1ffac963e2a23aab466f53672f2bc8c332
-Author: Nikolay Nikolov <nickysn@gmail.com>
-Date:   Sun Sep 26 07:58:59 2021 +0300
-
-    + implemented the br and br_if instructions in the wasm internal asm
-
-M	compiler/wasm32/aasmcpu.pas
-
-******************************************************************************
-commit ca70cb05a73c7a8a1dd4d1e5e247cf2efdae25c6
-Author: Nikolay Nikolov <nickysn@gmail.com>
-Date:   Sun Sep 26 07:54:20 2021 +0300
-
-    * fixed warning
-
-M	compiler/wasm32/cpubase.pas
-
-******************************************************************************
-commit 07b71ac6ce199a2076d7b49f99d1d6f6a14d1d08
-Author: Nikolay Nikolov <nickysn@gmail.com>
-Date:   Sun Sep 26 07:48:31 2021 +0300
-
-    * generate an internal error instead of warning for unsupported opcodes
-      in the internal asm writer for wasm
-
-M	compiler/wasm32/aasmcpu.pas
-
-******************************************************************************
-commit d7b141d70e8c9bfbde9453ce51b16143ffce0d5f
-Author: Nikolay Nikolov <nickysn@gmail.com>
-Date:   Sun Sep 26 07:45:14 2021 +0300
-
-    + implemented the if, loop and else instructions
-
-M	compiler/ogwasm.pas
-M	compiler/wasm32/aasmcpu.pas
-M	compiler/wasm32/cpubase.pas
-
-******************************************************************************
-commit 6133affad68b56297afebb8a0425a54e026526d9
-Author: Nikolay Nikolov <nickysn@gmail.com>
-Date:   Sun Sep 26 07:19:36 2021 +0300
-
-    + implemented the f32.const and f64.const instructions in the wasm
-      internal asm
-
-M	compiler/wasm32/aasmcpu.pas
-
-******************************************************************************
-commit 0486caeb91651d48f08738c1464301f0c6e90ded
-Author: Nikolay Nikolov <nickysn@gmail.com>
-Date:   Sun Sep 26 06:58:46 2021 +0300
-
-    * generate an internal error, instead of warning for i32.const and
-      i64.const instructions with an unknown parameter
-
-M	compiler/wasm32/aasmcpu.pas
-
-******************************************************************************
-commit 81b8574bfd34db60b9ade7cfef8e1f3a83e09512
-Author: Nikolay Nikolov <nickysn@gmail.com>
-Date:   Sun Sep 26 06:49:51 2021 +0300
-
-    + implemented all the load/store instructions in the wasm internal asm
-      writer (previously, only i32.load and i32.store were implemented)
-
-M	compiler/wasm32/aasmcpu.pas
-M	compiler/wasm32/cpubase.pas
-
-******************************************************************************
 commit ea401ccc826b13e56965ea4dbc0b79b8a01bb7f2
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Sun Sep 26 06:27:02 2021 +0300
@@ -7297,29 +7191,6 @@ Date:   Sun Sep 26 06:27:02 2021 +0300
     + support writing R_WASM_MEMORY_ADDR_I32 relocations
 
 M	compiler/ogwasm.pas
-
-******************************************************************************
-commit 7f5250bf464351a1a2839321df92119fc1812c78
-Author: Nikolay Nikolov <nickysn@gmail.com>
-Date:   Sun Sep 26 06:22:41 2021 +0300
-
-    + implemented support for R_WASM_TABLE_INDEX_SLEB relocations
-
-M	compiler/ogbase.pas
-M	compiler/ogwasm.pas
-M	compiler/wasm32/aasmcpu.pas
-
-******************************************************************************
-commit 9fa2e2934bc6abac17a1fa0fdf55fca1dd9896a3
-Author: Nikolay Nikolov <nickysn@gmail.com>
-Date:   Sun Sep 26 06:03:18 2021 +0300
-
-    + support the call_indirect instruction and the R_WASM_TYPE_INDEX_LEB
-      relocation that it requires in the internal wasm object writer
-
-M	compiler/ogbase.pas
-M	compiler/ogwasm.pas
-M	compiler/wasm32/aasmcpu.pas
 
 ******************************************************************************
 commit bd6bbb6cf4fd0ba52c1447dff58a26dfd98579b9
@@ -7388,17 +7259,6 @@ Date:   Sun Sep 26 03:05:00 2021 +0300
     * fixed warning
 
 M	compiler/ogwasm.pas
-
-******************************************************************************
-commit b913133152b08d8c823dee93425285955d5d34bf
-Author: Nikolay Nikolov <nickysn@gmail.com>
-Date:   Sun Sep 26 02:23:31 2021 +0300
-
-    + implemented leb and sleb relocations to data symbols
-
-M	compiler/ogbase.pas
-M	compiler/ogwasm.pas
-M	compiler/wasm32/aasmcpu.pas
 
 ******************************************************************************
 commit 67cbb7032e1025996309689fc2fb3687c48b64af
@@ -7628,27 +7488,6 @@ Date:   Sat Sep 25 00:39:03 2021 +0300
 M	compiler/ogwasm.pas
 
 ******************************************************************************
-commit 54481d72180e06b180f5bde6881b10955c5d51c1
-Author: Nikolay Nikolov <nickysn@gmail.com>
-Date:   Sat Sep 25 00:16:53 2021 +0300
-
-    * moved the imports/funcdef writing from the llvm-mc assembler writer to
-      twasmnodeutils.InsertObjectInfo. This way, the info it produces will be
-      shared with the internal wasm object writer as well.
-
-M	compiler/wasm32/agllvmmc.pas
-M	compiler/wasm32/nwasmutil.pas
-
-******************************************************************************
-commit d19919aa13198236de0475494c841f86429e3a31
-Author: Nikolay Nikolov <nickysn@gmail.com>
-Date:   Sat Sep 25 00:00:51 2021 +0300
-
-    * TLLVMMachineCodePlaygroundAssembler.WriteImports now uses just a single TAsmList
-
-M	compiler/wasm32/agllvmmc.pas
-
-******************************************************************************
 commit f56aa9abe79fff9dd5f36e5f092aa2629dd1c6fc
 Author: florian <florian@freepascal.org>
 Date:   Fri Sep 24 22:27:22 2021 +0200
@@ -7656,28 +7495,6 @@ Date:   Fri Sep 24 22:27:22 2021 +0200
       * set expectloc properly for x87 on x86
 
 M	compiler/ncal.pas
-
-******************************************************************************
-commit a6e75d52f7ba8758f24b84ac44256dba3fb80919
-Author: Nikolay Nikolov <nickysn@gmail.com>
-Date:   Fri Sep 24 22:14:32 2021 +0300
-
-    + introduced tai_import_module and tai_import_name that represent the
-      .import_module and .import_name assembler directives
-
-M	compiler/aasmtai.pas
-M	compiler/aggas.pas
-M	compiler/wasm32/aasmcpu.pas
-M	compiler/wasm32/agllvmmc.pas
-
-******************************************************************************
-commit 459bb0fa1801f1809b74f92fb1d11803c41bc372
-Author: Nikolay Nikolov <nickysn@gmail.com>
-Date:   Fri Sep 24 21:52:57 2021 +0300
-
-    * override twasmnodeutils.InsertObjectInfo
-
-M	compiler/wasm32/nwasmutil.pas
 
 ******************************************************************************
 commit a3666aa8c96c198b294bd794cb1fbc6eed2c28dd
@@ -7689,16 +7506,6 @@ Date:   Fri Sep 24 20:10:38 2021 +0200
 
 M	compiler/x86/aoptx86.pas
 M	compiler/x86_64/cgcpu.pas
-
-******************************************************************************
-commit 860e4487c313f7c88591422034293702318d0d1c
-Author: Nikolay Nikolov <nickysn@gmail.com>
-Date:   Fri Sep 24 16:44:33 2021 +0300
-
-    + added WebAssembly node utils
-
-M	compiler/wasm32/cpunode.pas
-A	compiler/wasm32/nwasmutil.pas
 
 ******************************************************************************
 commit 5abfe21f39cf60800c77ee5f22198d94e8341054
@@ -7730,16 +7537,6 @@ Date:   Thu Sep 23 17:58:59 2021 +0200
     fcl-js: fixed typo
 
 M	packages/fcl-js/src/jstree.pp
-
-******************************************************************************
-commit 4ca39cf07d95ca95693e5df13f99829da632037a
-Author: Nikolay Nikolov <nickysn@gmail.com>
-Date:   Thu Sep 23 17:11:24 2021 +0300
-
-    + write the import functions in the wasm binary writer
-
-M	compiler/ogwasm.pas
-M	compiler/wasm32/cpubase.pas
 
 ******************************************************************************
 commit 78af12b58483e701da0097898e26335382e4dcb4
@@ -7801,26 +7598,6 @@ M	compiler/nmat.pas
 M	tests/tbs/tb0685.pp
 
 ******************************************************************************
-commit a58368d20ddcf3cab0259ee41d363e5449c4317e
-Author: Nikolay Nikolov <nickysn@gmail.com>
-Date:   Mon Sep 20 19:33:48 2021 +0300
-
-    + avoid duplicate functypes in the types section of the wasm module we produce
-
-M	compiler/ogwasm.pas
-M	compiler/wasm32/cpubase.pas
-
-******************************************************************************
-commit 3e2a9b6cebcc0f3f68a633bcbede5bd2f47339cb
-Author: Nikolay Nikolov <nickysn@gmail.com>
-Date:   Mon Sep 20 05:03:38 2021 +0300
-
-    + handle the call instruction in the wasm binary writer
-
-M	compiler/ogbase.pas
-M	compiler/wasm32/aasmcpu.pas
-
-******************************************************************************
 commit ab0d7697c3038537c983dbedd52046fe27022d70
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Mon Sep 20 04:47:51 2021 +0300
@@ -7857,17 +7634,6 @@ Date:   Mon Sep 20 04:16:25 2021 +0300
 M	compiler/ogwasm.pas
 
 ******************************************************************************
-commit 628fcb9b1ccf610691b9ae8cfe809707e15e3822
-Author: Nikolay Nikolov <nickysn@gmail.com>
-Date:   Mon Sep 20 03:43:23 2021 +0300
-
-    + create the Type wasm section
-
-M	compiler/assemble.pas
-M	compiler/ogwasm.pas
-M	compiler/wasm32/cpubase.pas
-
-******************************************************************************
 commit 3c3120845af13d067111b13bcdae08ce00247333
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Mon Sep 20 03:07:00 2021 +0300
@@ -7875,78 +7641,6 @@ Date:   Mon Sep 20 03:07:00 2021 +0300
     * fixed crash when writing a binary wasm module with a .bss section
 
 M	compiler/ogwasm.pas
-
-******************************************************************************
-commit fced051f5fccf67c516c43e7e09154cf2a11b1fd
-Author: Nikolay Nikolov <nickysn@gmail.com>
-Date:   Mon Sep 20 03:00:37 2021 +0300
-
-    + implemented binary encoding of a_i32_load and a_i32_store without symbol
-
-M	compiler/wasm32/aasmcpu.pas
-
-******************************************************************************
-commit b975317c51fb420d7bedc1200d3e18446f6a4f5e
-Author: Nikolay Nikolov <nickysn@gmail.com>
-Date:   Mon Sep 20 02:37:40 2021 +0300
-
-    + implemented the encoding of the block instruction without operands
-
-M	compiler/wasm32/aasmcpu.pas
-
-******************************************************************************
-commit 079e5ae15119401f66a4533034f14b37f083407a
-Author: Nikolay Nikolov <nickysn@gmail.com>
-Date:   Mon Sep 20 02:24:28 2021 +0300
-
-    + encode the end_function dummy instruction
-
-M	compiler/wasm32/aasmcpu.pas
-
-******************************************************************************
-commit b7c638a7170bf24eebe666cb6b08bdc902ee7f9b
-Author: Nikolay Nikolov <nickysn@gmail.com>
-Date:   Mon Sep 20 02:19:18 2021 +0300
-
-    + implemented binary encoding of the global.get and global.set instructions
-
-M	compiler/wasm32/aasmcpu.pas
-
-******************************************************************************
-commit 4a886e2019c0ebe050d48073eb025483ce0ecdf5
-Author: Nikolay Nikolov <nickysn@gmail.com>
-Date:   Mon Sep 20 02:09:42 2021 +0300
-
-    * simplified operand access via the 'with' operator
-
-M	compiler/wasm32/aasmcpu.pas
-
-******************************************************************************
-commit 4dd44427c05ad14e10b6fa2b5c1d9448fdf47613
-Author: Nikolay Nikolov <nickysn@gmail.com>
-Date:   Mon Sep 20 02:03:47 2021 +0300
-
-    + implemented instruction encoding for local.get, local.set and local.tee
-
-M	compiler/wasm32/aasmcpu.pas
-
-******************************************************************************
-commit 2954588e4d73e1e7932edbe664f4fdd2fc7c855f
-Author: Nikolay Nikolov <nickysn@gmail.com>
-Date:   Mon Sep 20 01:46:07 2021 +0300
-
-    + implemented binary output for the i32.const and i64.const with top_const parameter
-
-M	compiler/wasm32/aasmcpu.pas
-
-******************************************************************************
-commit 5b3efc4b385922d87b0b540c2e9cdb3c9030a62f
-Author: Nikolay Nikolov <nickysn@gmail.com>
-Date:   Mon Sep 20 01:24:39 2021 +0300
-
-    + implemented encoding of the most simple wasm instructions
-
-M	compiler/wasm32/aasmcpu.pas
 
 ******************************************************************************
 commit 455f603c8c6614f10993047e3c047fb8df3d3f2e
@@ -8134,19 +7828,6 @@ Date:   Sun Sep 19 16:55:12 2021 +0200
 M	utils/pas2js/httpcompiler.pp
 
 ******************************************************************************
-commit cc314e61a20bbe4abf28682bca83c8df070320ca
-Author: Nikolay Nikolov <nickysn@gmail.com>
-Date:   Sun Sep 19 16:16:42 2021 +0300
-
-    + started working on the WebAssembly internal assembler
-
-A	compiler/ogwasm.pas
-M	compiler/systems.inc
-M	compiler/systems/i_embed.pas
-M	compiler/systems/i_wasi.pas
-M	compiler/wasm32/cputarg.pas
-
-******************************************************************************
 commit f10fae66df3eac37f6e2b9808c48e0075921374f
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Sun Sep 19 14:11:51 2021 +0200
@@ -8205,79 +7886,6 @@ M	compiler/pexpr.pas
 M	compiler/symsym.pas
 
 ******************************************************************************
-commit d3ec8f0d293df1b3fe2bfc3f2bfd869c8cce7da2
-Author: Nikolay Nikolov <nickysn@gmail.com>
-Date:   Sat Sep 18 18:10:57 2021 +0300
-
-    * generate an internalerror if there are values remaining on top of stack
-      at the end of a procedure. If the compiler is compiled with
-      DEBUG_WASMSTACK, the previous asm comment message is emitted instead of
-      internal error.
-
-M	compiler/wasm32/hlcgcpu.pas
-
-******************************************************************************
-commit 324382d3a54e63f815d0793bdc810617b4c4981c
-Author: Nikolay Nikolov <nickysn@gmail.com>
-Date:   Sat Sep 18 17:59:50 2021 +0300
-
-    * use create_functype to determine accurately the number of parameters to
-      discard in twasmcallnode.do_release_unused_return_value. This fixes
-      various stack tracking bugs when a constructor is invoking another
-      constructor, etc.
-
-M	compiler/wasm32/nwasmcal.pas
-
-******************************************************************************
-commit f7cc2d560c322a338aa4d8ac207baddfac24f159
-Author: Nikolay Nikolov <nickysn@gmail.com>
-Date:   Sat Sep 18 16:29:19 2021 +0300
-
-    + initialize br_blocks in the thlcgwasm constructor
-
-M	compiler/wasm32/hlcgcpu.pas
-
-******************************************************************************
-commit a3610bfea10c23589925d467bfae6c3b1911716e
-Author: Nikolay Nikolov <nickysn@gmail.com>
-Date:   Sat Sep 18 16:24:30 2021 +0300
-
-    + also added stack underflow check in thlcgwasm.incstack (in case stack
-      height was already negative in the beginning, due to previous underflow)
-
-M	compiler/wasm32/hlcgcpu.pas
-
-******************************************************************************
-commit d4bd1f1e9b60c6b1007a3cfd14c168fbcbeb4482
-Author: Nikolay Nikolov <nickysn@gmail.com>
-Date:   Sat Sep 18 16:21:41 2021 +0300
-
-    * don't halt with an internal error, but add an asm comment instead, when a
-      stack underflow is detected in thlcgwasm.decstack and when the compiler is
-      compiled with the DEBUG_WASMSTACK define
-
-M	compiler/wasm32/hlcgcpu.pas
-
-******************************************************************************
-commit 58e46927954a9146b7a3ec40b680a0e54fe784c4
-Author: Nikolay Nikolov <nickysn@gmail.com>
-Date:   Sat Sep 18 16:19:03 2021 +0300
-
-    * fixed thlcgwasm.g_adjust_stack_after_call after the removal of discardresult
-
-M	compiler/wasm32/hlcgcpu.pas
-
-******************************************************************************
-commit fa3614164970f06540f8f959d3d2331888e2d00b
-Author: Nikolay Nikolov <nickysn@gmail.com>
-Date:   Sat Sep 18 16:08:58 2021 +0300
-
-    * fixed the stack tracking in twasmcallnode.do_release_unused_return_value for
-      ret_in_param function calls
-
-M	compiler/wasm32/nwasmcal.pas
-
-******************************************************************************
 commit d2929586652740f02401d6c9f603cc1b2faa56f9
 Author: florian <florian@freepascal.org>
 Date:   Sat Sep 18 14:25:40 2021 +0200
@@ -8311,69 +7919,6 @@ M	rtl/wasm32/makefile.cpu
 M	rtl/wasm32/wasm32.inc
 
 ******************************************************************************
-commit f76e91fb8bcbbc82044078d81fe8c965a2f42f79
-Author: Nikolay Nikolov <nickysn@gmail.com>
-Date:   Sat Sep 18 02:52:24 2021 +0300
-
-    * cloned twasmtryexceptnode.pass_generate_code_no_exceptions into twasmtryexceptnode.pass_generate_code_native_exceptions
-
-M	compiler/wasm32/nwasmflw.pas
-
-******************************************************************************
-commit 334ea46b44eae63a9fdff984a584c4423770477d
-Author: Nikolay Nikolov <nickysn@gmail.com>
-Date:   Sat Sep 18 02:48:51 2021 +0300
-
-    * cloned twasmraisenode.pass_1_no_exceptions into twasmraisenode.pass_1_native_exceptions
-
-M	compiler/wasm32/nwasmflw.pas
-
-******************************************************************************
-commit c2754eac3f4e2e6351f8354ce571160549fb8b86
-Author: Nikolay Nikolov <nickysn@gmail.com>
-Date:   Sat Sep 18 02:39:16 2021 +0300
-
-    + introduced the wasm32_throw_fpcexception inline function, that emits a
-      'throw' instruction. This way we'll be able to emit this instruction from
-      RTL code (i.e. from fpc_raiseexception, when that is implemented for
-      WebAssembly)
-
-M	compiler/wasm32/ccpuinnr.inc
-M	compiler/wasm32/itcpugas.pas
-M	compiler/wasm32/nwasminl.pas
-M	rtl/wasm32/cpuh.inc
-M	rtl/wasm32/cpuinnr.inc
-
-******************************************************************************
-commit ac2f299d0407cf3f03d227549b0bd6d42cdc2f91
-Author: Nikolay Nikolov <nickysn@gmail.com>
-Date:   Sat Sep 18 01:46:45 2021 +0300
-
-    + declare __FPC_exception as a label, otherwise wasm-ld crashes
-
-M	compiler/wasm32/agllvmmc.pas
-
-******************************************************************************
-commit 8ad5362b172b2916720e1352116725f67a58505a
-Author: florian <florian@freepascal.org>
-Date:   Fri Sep 17 23:44:45 2021 +0200
-
-      * more warnings fixed
-
-M	compiler/wasm32/nwasmflw.pas
-
-******************************************************************************
-commit 87702b58c5a7154dbe96f3e01aacd97fb5b477f3
-Author: Nikolay Nikolov <nickysn@gmail.com>
-Date:   Sat Sep 18 00:24:13 2021 +0300
-
-    + emit a catch instruction in the try/end_try block, generated for
-      try..finally in native wasm exceptions mode
-
-M	compiler/wasm32/itcpugas.pas
-M	compiler/wasm32/nwasmflw.pas
-
-******************************************************************************
 commit a83f5749debb1409e18f0ef92b2e81bc9d0adba2
 Author: Yuriy Sydorov <jura@cp-lab.com>
 Date:   Fri Sep 17 23:54:41 2021 +0300
@@ -8381,36 +7926,6 @@ Date:   Fri Sep 17 23:54:41 2021 +0300
     * Reverted the accidentally committed debug code in 4a7a113a.
 
 M	compiler/x86/aoptx86.pas
-
-******************************************************************************
-commit 288f79cb3bc900700c47ed7bdcf3443edfb6b9be
-Author: Nikolay Nikolov <nickysn@gmail.com>
-Date:   Fri Sep 17 23:46:09 2021 +0300
-
-    + declare the __FPC_exception tag, when compiling with native WebAssembly
-      exceptions
-
-M	compiler/wasm32/agllvmmc.pas
-
-******************************************************************************
-commit d8665f8a517e90116976cc529a71615fbbdd1bd4
-Author: Nikolay Nikolov <nickysn@gmail.com>
-Date:   Fri Sep 17 23:40:55 2021 +0300
-
-    * write the .globaltype directive and the imports in the beginning of the
-      assembly file, because that appears to be required by llvm-mc from git
-
-M	compiler/wasm32/agllvmmc.pas
-
-******************************************************************************
-commit bee87583de8b2e6dc4f062a71a5e97f3808ffc63
-Author: florian <florian@freepascal.org>
-Date:   Fri Sep 17 22:27:34 2021 +0200
-
-      * avoid warnings
-
-M	compiler/aasmtai.pas
-M	compiler/wasm32/nwasmflw.pas
 
 ******************************************************************************
 commit 3f26551c42857ba03739f2e0d89fa1dfc64979bb
@@ -8422,116 +7937,6 @@ Date:   Fri Sep 17 20:01:23 2021 +0000
 M	.gitlab-ci.yml
 
 ******************************************************************************
-commit d36e239f45011d9dea8d15bab4ee3f46f29ff85b
-Author: Nikolay Nikolov <nickysn@gmail.com>
-Date:   Fri Sep 17 21:20:14 2021 +0300
-
-    + enabled the exception handling instructions in the llvm-mc command line
-
-M	compiler/wasm32/agllvmmc.pas
-
-******************************************************************************
-commit 619a27cbfc49c3981ac93ba0aa8831d7f453b21a
-Author: Nikolay Nikolov <nickysn@gmail.com>
-Date:   Fri Sep 17 21:09:17 2021 +0300
-
-    + insert try and end_try instructions in the try..finally code in native
-      WebAssembly exceptions mode
-
-M	compiler/wasm32/nwasmflw.pas
-
-******************************************************************************
-commit 45e53ddc16e461e90bb2974375a0227bf8fc0d31
-Author: Nikolay Nikolov <nickysn@gmail.com>
-Date:   Fri Sep 17 21:01:00 2021 +0300
-
-    * cloned the WASM no exceptions mode code generation for try..finally blocks
-      for the native WASM exceptions mode. Eventually, it is going to be changed
-      to support exceptions fully, and it's going to evolve separately, so this
-      code is only used as a starting point
-
-M	compiler/wasm32/cpupi.pas
-M	compiler/wasm32/nwasmflw.pas
-
-******************************************************************************
-commit 65a5b299c6adedd7ba427507b0944c0857fc0037
-Author: Nikolay Nikolov <nickysn@gmail.com>
-Date:   Fri Sep 17 16:53:35 2021 +0300
-
-    + introduced twasmraisenode.pass_1_no_exceptions
-
-M	compiler/wasm32/nwasmflw.pas
-
-******************************************************************************
-commit 6c213137a998537f3cdd0749df432f8d47a04e55
-Author: Nikolay Nikolov <nickysn@gmail.com>
-Date:   Fri Sep 17 16:21:43 2021 +0300
-
-    - cleaned up twasmtryexceptnode.pass_generate_code_no_exceptions
-
-M	compiler/wasm32/nwasmflw.pas
-
-******************************************************************************
-commit c992566201987630e2c4ac0b450f1ed5d5e8fde4
-Author: Nikolay Nikolov <nickysn@gmail.com>
-Date:   Fri Sep 17 16:06:39 2021 +0300
-
-    + introduced twasmtryexceptnode.pass_generate_code_no_exceptions,
-      .pass_generate_code_js_exceptions and .pass_generate_code_native_exceptions
-
-M	compiler/wasm32/nwasmflw.pas
-
-******************************************************************************
-commit 848098c63b501e35e78060ea04ddd551d3085c72
-Author: Nikolay Nikolov <nickysn@gmail.com>
-Date:   Fri Sep 17 15:54:03 2021 +0300
-
-    * improvements to the handling of try..finally in WebAssembly no exceptions
-      mode - even though exceptions aren't supported in this mode, the finally
-      section is now executed in case of exit, break or continue
-
-M	compiler/wasm32/cpupi.pas
-M	compiler/wasm32/nwasmflw.pas
-
-******************************************************************************
-commit 3601d61b81415f10da5dd903c03c4e36de3f0a50
-Author: Nikolay Nikolov <nickysn@gmail.com>
-Date:   Fri Sep 17 13:37:28 2021 +0300
-
-    + introduced twasmtryfinallynode.pass_generate_code_no_exceptions,
-      .pass_generate_code_js_exceptions and .pass_generate_code_native_exceptions
-
-M	compiler/wasm32/nwasmflw.pas
-
-******************************************************************************
-commit 2bcc8d65ff77a8361f8307be819a599f3510800d
-Author: Nikolay Nikolov <nickysn@gmail.com>
-Date:   Fri Sep 17 13:12:34 2021 +0300
-
-    + introduced twasmexceptionstatehandler_nativeexceptions and
-      twasmexceptionstatehandler_jsexceptions
-
-M	compiler/wasm32/cpupi.pas
-
-******************************************************************************
-commit 3ca9475bded883a8e24810c494594f2e588ed30f
-Author: Nikolay Nikolov <nickysn@gmail.com>
-Date:   Fri Sep 17 12:33:34 2021 +0300
-
-    * twasmexceptionstatehandler renamed twasmexceptionstatehandler_noexceptions
-
-M	compiler/wasm32/cpupi.pas
-
-******************************************************************************
-commit 9526b939a2a20c5f7b0bd8e1419137d19402b76c
-Author: Nikolay Nikolov <nickysn@gmail.com>
-Date:   Fri Sep 17 03:41:45 2021 +0300
-
-    + implemented thlcgwasm.g_unreachable, emits the 'unreachable' WebAssembly instruction
-
-M	compiler/wasm32/hlcgcpu.pas
-
-******************************************************************************
 commit 4064694a5e438b10d71a24fe5d1d24bad40e4c48
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Fri Sep 17 02:15:56 2021 +0300
@@ -8539,27 +7944,6 @@ Date:   Fri Sep 17 02:15:56 2021 +0300
     + support writing the new tai_tagtype directive in the asm output
 
 M	compiler/aggas.pas
-
-******************************************************************************
-commit 3022f59ff456f7a8a23198919df5ffcaf175b63a
-Author: Nikolay Nikolov <nickysn@gmail.com>
-Date:   Fri Sep 17 02:05:24 2021 +0300
-
-    + introduced ait_tagtype and tai_tagtype
-
-M	compiler/aasmtai.pas
-M	compiler/wasm32/aasmcpu.pas
-
-******************************************************************************
-commit 10d833256343adc6495ff6dc4f240b5d8a463a6f
-Author: Nikolay Nikolov <nickysn@gmail.com>
-Date:   Thu Sep 16 23:43:32 2021 +0300
-
-    + added the new WebAssembly instructions, added by the exception handling proposal
-
-M	compiler/wasm32/cpubase.pas
-M	compiler/wasm32/itcpugas.pas
-M	compiler/wasm32/strinst.inc
 
 ******************************************************************************
 commit 6b26fa0f9a4c6c7f8d12a10737428c443c7750e2
@@ -8624,42 +8008,6 @@ Date:   Thu Sep 16 21:41:54 2021 +0300
       planning to implement
 
 M	compiler/globtype.pas
-
-******************************************************************************
-commit 3bf5b0c395c0cc613b76bc7424ab7cd7386f7ee1
-Author: Nikolay Nikolov <nickysn@gmail.com>
-Date:   Thu Sep 16 15:15:39 2021 +0300
-
-    - avoid useless typecasts for accessing members in self in thlcgwasm.a_load_subsetref_regs_index
-
-M	compiler/wasm32/hlcgcpu.pas
-
-******************************************************************************
-commit 4120825f500fb8e60322db86418882cf78fcede2
-Author: Nikolay Nikolov <nickysn@gmail.com>
-Date:   Thu Sep 16 15:14:51 2021 +0300
-
-    + implemented thlcgwasm.a_load_regconst_subsetref_intern
-
-M	compiler/wasm32/hlcgcpu.pas
-
-******************************************************************************
-commit 7af6e628c81ad931089db74b6477553e9528f2bf
-Author: Nikolay Nikolov <nickysn@gmail.com>
-Date:   Thu Sep 16 14:30:29 2021 +0300
-
-    + implemented thlcgwasm.a_load_subsetref_regs_index
-
-M	compiler/wasm32/hlcgcpu.pas
-
-******************************************************************************
-commit c41516399b667b4de468e3a6efa4e6499382d1c8
-Author: Nikolay Nikolov <nickysn@gmail.com>
-Date:   Thu Sep 16 12:10:43 2021 +0300
-
-    + implemented thlcgwasm.a_load_subsetref_stack
-
-M	compiler/wasm32/hlcgcpu.pas
 
 ******************************************************************************
 commit 81e83ffa675a60a8244c2a32723bbb00b70f3e46
@@ -9049,15 +8397,6 @@ Date:   Thu Sep 9 16:32:55 2021 +0300
       to be in sync with commit b96057ad.
 
 M	compiler/rgobj.pas
-
-******************************************************************************
-commit ba9a8ab069ad9a490ccaa37568e27593c2e558ac
-Author: Nikolay Nikolov <nickysn@gmail.com>
-Date:   Thu Sep 9 14:11:20 2021 +0300
-
-    + added thlcgwasm.a_load_subsetref_stack, not implemented yet
-
-M	compiler/wasm32/hlcgcpu.pas
 
 ******************************************************************************
 commit f4cc2447a2c9b751c0c31b35dcd9b92e3fd07749
@@ -14520,17 +13859,6 @@ Date:   Wed Jun 23 20:57:50 2021 +0000
 M	rtl/wasi/dos.pp
 
 ******************************************************************************
-commit 715de4547abf9e9a84a1ec721b2bddb33b16aa80
-Author: nickysn <nickysn@gmail.com>
-Date:   Wed Jun 23 20:36:52 2021 +0000
-
-    * fixed WASI dll imports that are declared in a different unit
-    
-    git-svn-id: trunk@49537 -
-
-M	compiler/wasm32/agllvmmc.pas
-
-******************************************************************************
 commit 953893267bb45dc8179f55da4c4c203468b2777c
 Author: nickysn <nickysn@gmail.com>
 Date:   Wed Jun 23 20:04:03 2021 +0000
@@ -15347,17 +14675,6 @@ M	rtl/wasi/Makefile
 M	rtl/wasi/Makefile.fpc
 
 ******************************************************************************
-commit b527ab694ca471f184b249ca47d417931497cc1a
-Author: nickysn <nickysn@gmail.com>
-Date:   Tue Jun 1 22:15:57 2021 +0000
-
-    + implemented twasmtypeconvnode.second_class_to_intf
-    
-    git-svn-id: trunk@49451 -
-
-M	compiler/wasm32/nwasmcnv.pas
-
-******************************************************************************
 commit c69649782a27d9234c3c9d4f6f066fdb67a1e0e4
 Author: nickysn <nickysn@gmail.com>
 Date:   Tue Jun 1 21:58:02 2021 +0000
@@ -15368,18 +14685,6 @@ Date:   Tue Jun 1 21:58:02 2021 +0000
 
 M	.gitattributes
 A	rtl/wasi/tthread.inc
-
-******************************************************************************
-commit 74bac86711b57d5cfb4283023dc0656f8d467994
-Author: nickysn <nickysn@gmail.com>
-Date:   Tue Jun 1 21:52:51 2021 +0000
-
-    + support loading a function result (on the evaluation stack) to a register in
-      thlcgwasm.gen_load_cgpara_loc
-    
-    git-svn-id: trunk@49449 -
-
-M	compiler/wasm32/hlcgcpu.pas
 
 ******************************************************************************
 commit c02b43fb93381fec8823752d0ac24e76e143868b
@@ -15530,28 +14835,6 @@ M	rtl/wasi/Makefile
 M	rtl/wasi/Makefile.fpc
 
 ******************************************************************************
-commit 08f9a68798ccea64f958a3df527c85adfc497e3e
-Author: nickysn <nickysn@gmail.com>
-Date:   Tue Jun 1 19:11:21 2021 +0000
-
-    - removed unused local variables from twasmaddnode.second_generic_compare
-    
-    git-svn-id: trunk@49435 -
-
-M	compiler/wasm32/nwasmadd.pas
-
-******************************************************************************
-commit 8dd591e838db6ce959dac802af2c713fa1c14dda
-Author: nickysn <nickysn@gmail.com>
-Date:   Tue Jun 1 19:10:20 2021 +0000
-
-    + implemented twasmaddnode.second_cmpsmallset for equaln and unequaln
-    
-    git-svn-id: trunk@49434 -
-
-M	compiler/wasm32/nwasmadd.pas
-
-******************************************************************************
 commit 27ff471ff4f9c54bed5df5e04fbdf654a8bdb5dd
 Author: nickysn <nickysn@gmail.com>
 Date:   Tue Jun 1 17:14:24 2021 +0000
@@ -15588,17 +14871,6 @@ M	.gitattributes
 M	rtl/wasi/Makefile
 M	rtl/wasi/Makefile.fpc
 A	rtl/wasm32/mathu.inc
-
-******************************************************************************
-commit c42e297bc66f19afd7c102386ed3bd8372356c3c
-Author: nickysn <nickysn@gmail.com>
-Date:   Tue Jun 1 16:41:39 2021 +0000
-
-    + implemented sqr(real) for the WebAssembly target
-    
-    git-svn-id: trunk@49430 -
-
-M	compiler/wasm32/nwasminl.pas
 
 ******************************************************************************
 commit 87111246ca24629d15385f9ec00fc9ee57421ea5
@@ -16944,17 +16216,6 @@ M	compiler/arm/raarmgas.pas
 M	compiler/assemble.pas
 
 ******************************************************************************
-commit 570af33fa96bd56f0d9e819bb21d03f83a218641
-Author: pierre <pierre@freepascal.org>
-Date:   Mon Apr 26 21:12:02 2021 +0000
-
-     Add a second handling of NIL entries in deflist
-    
-    git-svn-id: trunk@49270 -
-
-M	compiler/wasm32/agllvmmc.pas
-
-******************************************************************************
 commit db02c7c85aea5f66f4e083bba8a8ba649e06c313
 Author: pierre <pierre@freepascal.org>
 Date:   Mon Apr 26 21:10:25 2021 +0000
@@ -17060,34 +16321,6 @@ Date:   Sun Apr 25 08:53:12 2021 +0000
 
 M	compiler/aarch64/ncpuinl.pas
 M	rtl/aarch64/math.inc
-
-******************************************************************************
-commit bc42d64348f9dd332e033f2282aa6e6e81554573
-Author: nickysn <nickysn@gmail.com>
-Date:   Sat Apr 24 14:40:07 2021 +0000
-
-    * workaround for the raise node generating invalid WebAssembly code for
-      obtaining the current address. Note that exception handling in WebAssembly
-      doesn't work. This only fixes the raise node enough to generate valid (but not
-      correct) WebAssembly code. This is a temporary fix to allow the SysUtils unit
-      to be compiled. Eventually, exception handling for WebAssembly will need to be
-      rewritten entirely, in order to make exceptions work properly.
-    
-    git-svn-id: trunk@49259 -
-
-M	compiler/wasm32/nwasmflw.pas
-
-******************************************************************************
-commit f81dd894aaaa02499f3a22890a1059b7bd8d88d5
-Author: nickysn <nickysn@gmail.com>
-Date:   Sat Apr 24 14:31:56 2021 +0000
-
-    * override the raise node for WebAssembly and copy the generic pass_1
-      implementation. No functional changes.
-    
-    git-svn-id: trunk@49258 -
-
-M	compiler/wasm32/nwasmflw.pas
 
 ******************************************************************************
 commit 17e3c31b7ef802363f2b721f076427735d7802e7
@@ -17319,20 +16552,6 @@ Date:   Sun Apr 18 19:19:35 2021 +0000
 M	compiler/ncnv.pas
 
 ******************************************************************************
-commit e6045673eeb823ff2f35d38deeff04c4d5dcefb4
-Author: pierre <pierre@freepascal.org>
-Date:   Sun Apr 18 15:44:07 2021 +0000
-
-     Handle NIL entries in deflist after commit 48986
-    
-    git-svn-id: trunk@49230 -
-
-M	compiler/pgenutil.pas
-M	compiler/pmodules.pas
-M	compiler/wasm32/agllvmmc.pas
-M	compiler/wasm32/agwat.pas
-
-******************************************************************************
 commit 70760208bbc0574bd170e3acd7e8baad3cd90cf2
 Author: pierre <pierre@freepascal.org>
 Date:   Sun Apr 18 15:41:11 2021 +0000
@@ -17400,29 +16619,6 @@ M	.gitattributes
 A	rtl/wasi/sysutils.pp
 
 ******************************************************************************
-commit dbecb67d45ba6dcf0fd763f4dfcef15eb12c7432
-Author: nickysn <nickysn@gmail.com>
-Date:   Sat Apr 17 14:25:54 2021 +0000
-
-    * fixed the value passing of record parameters with non-scalar value size on the
-      WebAssembly target
-    
-    git-svn-id: trunk@49218 -
-
-M	compiler/wasm32/cpupara.pas
-
-******************************************************************************
-commit 947f9af0e5e3f89fe7e66ff3efd4b7956eeead0b
-Author: nickysn <nickysn@gmail.com>
-Date:   Sat Apr 17 13:58:55 2021 +0000
-
-    + fixed code generation for high(dynarray) for the WebAssembly target
-    
-    git-svn-id: trunk@49217 -
-
-M	compiler/wasm32/nwasminl.pas
-
-******************************************************************************
 commit a0e88efa6a73f044718f233cff76cee983a96dc2
 Author: nickysn <nickysn@gmail.com>
 Date:   Sat Apr 17 11:26:21 2021 +0000
@@ -17453,18 +16649,6 @@ Date:   Sat Apr 17 07:53:09 2021 +0000
       * improved .gitignore
     
     git-svn-id: trunk@49214 -
-
-******************************************************************************
-commit 4f828929a390a77b306e64bab185a8f59069dae3
-Author: nickysn <nickysn@gmail.com>
-Date:   Fri Apr 16 23:40:11 2021 +0000
-
-    * fixed the support for infinity and nan float literal values in the webassembly
-      llvm-mc asm writer
-    
-    git-svn-id: trunk@49213 -
-
-M	compiler/wasm32/agllvmmc.pas
 
 ******************************************************************************
 commit d53b17cadcad90200962c5942a47cec174047612
@@ -17786,17 +16970,6 @@ M	.gitattributes
 M	compiler/powerpc/aoptcpu.pas
 M	compiler/powerpc64/aoptcpu.pas
 A	compiler/ppcgen/aoptppc.pas
-
-******************************************************************************
-commit 340a71d2bc44413f1deef2d198ce88844604ff01
-Author: nickysn <nickysn@gmail.com>
-Date:   Sun Apr 11 14:02:40 2021 +0000
-
-    * always keep the WebAssembly stack frame aligned on 16 bytes
-    
-    git-svn-id: trunk@49179 -
-
-M	compiler/wasm32/cpupi.pas
 
 ******************************************************************************
 commit c7f3469a3f6135de5990605db59ff5286c6ecbe9
@@ -19958,22 +19131,6 @@ Date:   Sat Mar 20 21:28:58 2021 +0000
 M	compiler/nflw.pas
 
 ******************************************************************************
-commit 9fa61a6c9f13f6eb968464d21d6bc83761ad3459
-Author: nickysn <nickysn@gmail.com>
-Date:   Sat Mar 20 01:22:43 2021 +0000
-
-    - removed the discardresult proc directive
-    
-    git-svn-id: trunk@49017 -
-
-M	compiler/pdecsub.pas
-M	compiler/symconst.pas
-M	compiler/tokens.pas
-M	compiler/utils/ppuutils/ppudump.pp
-M	compiler/wasm32/hlcgcpu.pas
-M	compiler/wasm32/nwasmcal.pas
-
-******************************************************************************
 commit 800bb3adc2362456af74494503cca82bd12c0598
 Author: nickysn <nickysn@gmail.com>
 Date:   Fri Mar 19 21:13:20 2021 +0000
@@ -20091,19 +19248,6 @@ Date:   Thu Mar 18 19:21:51 2021 +0000
 M	rtl/unix/timezone.inc
 
 ******************************************************************************
-commit ecad5e9a6c361c0cd67ac11c8d2feae7ac911cfc
-Author: nickysn <nickysn@gmail.com>
-Date:   Thu Mar 18 16:45:40 2021 +0000
-
-    + WebAssembly implementation of g_rangecheck that uses if/endif instead of
-      jumps to labels (which causes internal compiler error, because they're not
-      supported in WebAssembly)
-    
-    git-svn-id: trunk@49000 -
-
-M	compiler/wasm32/hlcgcpu.pas
-
-******************************************************************************
 commit 3072df59ff4a6ae0cd4665180d68078ed8da4bff
 Author: florian <florian@freepascal.org>
 Date:   Wed Mar 17 21:30:41 2021 +0000
@@ -20217,17 +19361,6 @@ Date:   Mon Mar 15 18:13:45 2021 +0000
 M	compiler/pdecvar.pas
 
 ******************************************************************************
-commit d090af4abea731eb85e6cc24f829e53dcb06d33d
-Author: nickysn <nickysn@gmail.com>
-Date:   Mon Mar 15 18:12:36 2021 +0000
-
-    * skip nil values in current_module.deflist in TLLVMMachineCodePlaygroundAssembler.WriteImports
-    
-    git-svn-id: trunk@48985 -
-
-M	compiler/wasm32/agllvmmc.pas
-
-******************************************************************************
 commit f7dd8755ccd15cd31e30863a62b0214249eb2907
 Author: nickysn <nickysn@gmail.com>
 Date:   Mon Mar 15 18:06:44 2021 +0000
@@ -20305,17 +19438,6 @@ A	tests/test/cg/obj/linux/riscv32/tcext5.o
 A	tests/test/cg/obj/linux/riscv32/tcext6.o
 
 ******************************************************************************
-commit 76c61c3aac50074a8c380304cebbff6fb1f75803
-Author: nickysn <nickysn@gmail.com>
-Date:   Sun Mar 14 16:56:16 2021 +0000
-
-    * call inherited inside twasminnode.checkgenjumps in order to initialize use_small
-    
-    git-svn-id: trunk@48971 -
-
-M	compiler/wasm32/nwasmset.pas
-
-******************************************************************************
 commit 03d353c1f5203640f225f84930fafc8787372b66
 Author: florian <florian@freepascal.org>
 Date:   Sun Mar 14 16:41:34 2021 +0000
@@ -20348,29 +19470,6 @@ Date:   Sun Mar 14 15:31:52 2021 +0000
 
 M	.gitattributes
 A	tests/test/units/strutils/tbin2hex.pp
-
-******************************************************************************
-commit f0aed5d3550243ac70ed646934ee209d9686391a
-Author: nickysn <nickysn@gmail.com>
-Date:   Sun Mar 14 15:06:13 2021 +0000
-
-    * fixed another WebAssembly compilation error with -CR
-    
-    git-svn-id: trunk@48966 -
-
-M	compiler/wasm32/hlcgcpu.pas
-
-******************************************************************************
-commit 74854eee5848c1ab60da7b6da92a800382552553
-Author: nickysn <nickysn@gmail.com>
-Date:   Sun Mar 14 15:03:58 2021 +0000
-
-    * fixed WebAssembly compilation error with -CR
-    
-    git-svn-id: trunk@48964 -
-
-M	compiler/wasm32/hlcgcpu.pas
-M	compiler/wasm32/symcpu.pas
 
 ******************************************************************************
 commit d399df83ba9478ed63150abb045fb2db9fb2a186
@@ -63766,6 +62865,7 @@ M	compiler/ncgutil.pas
 M	compiler/ninl.pas
 M	compiler/nmat.pas
 M	compiler/parabase.pas
+
 ******************************************************************************
 commit 2f40f818907756d1dc844bf3a5c9899986a3aeaf
 Author: florian <florian@freepascal.org>
@@ -64008,7 +63108,6 @@ Date:   Thu Jan 24 19:38:32 2019 +0000
 M	compiler/i386/aoptcpu.pas
 M	compiler/x86/aoptx86.pas
 M	compiler/x86_64/aoptcpu.pas
-
 ******************************************************************************
 commit cfd0790f89641b4c7b98a24314448ea5ce6543df
 Author: florian <florian@freepascal.org>
