@@ -1,4 +1,16 @@
 ******************************************************************************
+commit 4aebfe97a95cd9b3dfb331f1329854e37691ae0e
+Author: Florian Klämpfl <florian@freepascal.org>
+Date:   Mon Jan 3 22:50:10 2022 +0100
+
+      + x86: ADXSupport
+      + x86: RDSEEDSupport
+
+M	rtl/i386/cpu.pp
+M	rtl/x86_64/cpu.pp
+M	tests/test/units/cpu/tcpu1.pp
+
+******************************************************************************
 commit 983fbff8711a8c625e494a981891a90d47847e14
 Author: florian <florian@freepascal.org>
 Date:   Sun Jan 2 21:46:14 2022 +0100
