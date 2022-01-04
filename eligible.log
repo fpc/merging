@@ -1,4 +1,22 @@
 ******************************************************************************
+commit 3cf00af48df50812ef32e8bbb82eb57f5edfa61d
+Author: florian <florian@freepascal.org>
+Date:   Tue Jan 4 16:12:17 2022 +0100
+
+      * compilation with -Oodfa fixed
+
+M	compiler/optutils.pas
+
+******************************************************************************
+commit 2b7c28e41a496cb86ca5b59bdb64596c0bcb3fa0
+Author: florian <florian@freepascal.org>
+Date:   Tue Jan 4 16:03:39 2022 +0100
+
+      * (modified) patch by Rika: optutils.SetNodeSucessors improvement, resolves #39509
+
+M	compiler/optutils.pas
+
+******************************************************************************
 commit 50a37d00e78c9b51b6eda868fd28baac87361d1f
 Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
 Date:   Tue Jan 4 00:55:59 2022 +0000
