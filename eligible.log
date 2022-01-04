@@ -1,4 +1,24 @@
 ******************************************************************************
+commit 1c9280de560b65d02f03a4f1ee22df37a45084f9
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Tue Jan 4 11:14:58 2022 +0000
+
+    Add wasm32 CPU handling in embedded target
+
+M	rtl/embedded/Makefile
+M	rtl/embedded/Makefile.fpc
+M	rtl/embedded/system.cfg
+
+******************************************************************************
+commit b02b3b79b4312768194b5f7fbb7dc8b58e67765e
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Tue Jan 4 11:13:49 2022 +0000
+
+     Remove sortalgs unit for wasm32 CPU instead of only wasi target, as it is the wasm32 cpu that does not support gotos
+
+M	packages/rtl-extra/fpmake.pp
+
+******************************************************************************
 commit 4aebfe97a95cd9b3dfb331f1329854e37691ae0e
 Author: Florian Klämpfl <florian@freepascal.org>
 Date:   Mon Jan 3 22:50:10 2022 +0100
