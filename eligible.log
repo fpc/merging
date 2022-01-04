@@ -1,4 +1,15 @@
 ******************************************************************************
+commit 52ed79c7f3e943129171327dda6d651d83649a35
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Tue Jan 4 23:41:38 2022 +0100
+
+    * fix #39506: add assignment operator overloads for all string types so that assignments of constant strings can be handled correctly
+    + added adjusted/extended test (the test isn't enabled by default however as it requires libffi on most platforms)
+
+M	packages/rtl-objpas/src/inc/rtti.pp
+A	tests/webtbs/tw39506.pp
+
+******************************************************************************
 commit 3cf00af48df50812ef32e8bbb82eb57f5edfa61d
 Author: florian <florian@freepascal.org>
 Date:   Tue Jan 4 16:12:17 2022 +0100
