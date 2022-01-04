@@ -1,4 +1,22 @@
 ******************************************************************************
+commit 50a37d00e78c9b51b6eda868fd28baac87361d1f
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Tue Jan 4 00:55:59 2022 +0000
+
+    Debugging code in AllocRegBetween is now safer and more accurate, and p2 can no longer be nil
+
+M	compiler/aoptobj.pas
+
+******************************************************************************
+commit 3a1efb7c07537638c87911829871697b9a9b1e7a
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Tue Jan 4 12:31:59 2022 +0100
+
+     Enable rtti unit compilation for symbian OS, to fix failure in fcl-json
+
+M	packages/rtl-objpas/fpmake.pp
+
+******************************************************************************
 commit 1c9280de560b65d02f03a4f1ee22df37a45084f9
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Tue Jan 4 11:14:58 2022 +0000
