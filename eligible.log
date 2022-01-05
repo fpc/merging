@@ -1,4 +1,15 @@
 ******************************************************************************
+commit 5944631246cabaebdaab78e5ac36426b7e2ea51e
+Author: ccrause <christo.crause@gmail.com>
+Date:   Wed Jan 5 23:07:09 2022 +0200
+
+    Add help message for xtensa-freertos -WP option
+
+M	compiler/msg/errore.msg
+M	compiler/msgidx.inc
+M	compiler/msgtxt.inc
+
+******************************************************************************
 commit b00fe0e4e42526afb7a11e9964f8cae49b10da44
 Author: florian <florian@freepascal.org>
 Date:   Wed Jan 5 21:42:17 2022 +0100
