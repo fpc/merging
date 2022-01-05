@@ -1,4 +1,41 @@
 ******************************************************************************
+commit 0b2a58027c3171a3ba2962d472653e2f8839e1f2
+Author: florian <florian@freepascal.org>
+Date:   Wed Jan 5 21:01:39 2022 +0100
+
+      * powerpc64-linux: unused assembler loader files removed
+
+M	rtl/linux/Makefile
+M	rtl/linux/Makefile.fpc
+D	rtl/linux/powerpc64/cprt0.as
+D	rtl/linux/powerpc64/dllprt0.as
+D	rtl/linux/powerpc64/gprt0.as
+D	rtl/linux/powerpc64/prt0.as
+
+******************************************************************************
+commit 4ef8ae2a63551ec34ca2fc8a60be645e3cdd9810
+Author: florian <florian@freepascal.org>
+Date:   Wed Jan 5 21:00:58 2022 +0100
+
+      * updated revision after 53e5a4a0
+
+M	utils/fpcm/revision.inc
+
+******************************************************************************
+commit 644263277fe49d9be901527f02d8aa0170c840a2
+Author: florian <florian@freepascal.org>
+Date:   Wed Jan 5 20:52:35 2022 +0100
+
+      * clean up of assembler files not used anymore
+
+M	rtl/linux/Makefile
+M	rtl/linux/Makefile.fpc
+D	rtl/linux/x86_64/cprt0.as
+D	rtl/linux/x86_64/dllprt0.as
+D	rtl/linux/x86_64/gprt0.as
+D	rtl/linux/x86_64/prt0.as
+
+******************************************************************************
 commit e26b29888565c291d9d1bb80a99d02ff28aea1b3
 Author: florian <florian@freepascal.org>
 Date:   Wed Jan 5 19:50:01 2022 +0100
