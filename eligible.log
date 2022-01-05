@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 73529f5266940b416f6c943e1c372e1a1454f034
+Author: Yuri <yus.serebrennikov@gmail.com>
+Date:   Wed Jan 5 11:21:57 2022 +0300
+
+    Added a connection event when clients connect to the server.
+
+M	packages/fcl-web/src/websocket/fpwebsocketserver.pp
+
+******************************************************************************
 commit 52549439fa4a7cdef77c214ddd7fbb107dfddf04
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Wed Jan 5 01:37:19 2022 +0100
