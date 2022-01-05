@@ -1,4 +1,24 @@
 ******************************************************************************
+commit b00fe0e4e42526afb7a11e9964f8cae49b10da44
+Author: florian <florian@freepascal.org>
+Date:   Wed Jan 5 21:42:17 2022 +0100
+
+      * all references to libc_csu_ cleaned, should resolve #39295
+
+M	rtl/linux/powerpc64/si_c.inc
+M	rtl/linux/powerpc64/si_g.inc
+
+******************************************************************************
+commit abee68df9237f05da64d0608570c3c1de768a120
+Author: florian <florian@freepascal.org>
+Date:   Wed Jan 5 21:33:32 2022 +0100
+
+      * powerpc64-linux: libc_csu_* are not available anymore in newer glibc,
+        make them dummy calls, x86_64-linux does the same for years
+
+M	rtl/linux/powerpc64/si_c.inc
+
+******************************************************************************
 commit 0b2a58027c3171a3ba2962d472653e2f8839e1f2
 Author: florian <florian@freepascal.org>
 Date:   Wed Jan 5 21:01:39 2022 +0100
