@@ -1,4 +1,22 @@
 ******************************************************************************
+commit abee4d46b668e5985ca49f3bcf5dc2b53e244f7f
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Wed Jan 5 16:41:22 2022 +0000
+
+     Ignore NR_DEFAULTFLAGS for ait_regalloc, because there is no default flags for JVM
+
+M	compiler/jvm/rgcpu.pas
+
+******************************************************************************
+commit c06a3f2ca3254b39718b1ea69653d231a0e8accb
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Wed Jan 5 16:38:54 2022 +0000
+
+     Avoid range check error inside tcgcasenode.pass_generate_code method
+
+M	compiler/ncgset.pas
+
+******************************************************************************
 commit 86c097086a23476a6a7cf73d28bddee86039cb5c
 Author: Robert Roland <rob.roland@outlook.com>
 Date:   Sun Jan 2 13:32:39 2022 -0800
