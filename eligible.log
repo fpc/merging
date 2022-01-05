@@ -1,4 +1,35 @@
 ******************************************************************************
+commit 52549439fa4a7cdef77c214ddd7fbb107dfddf04
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Wed Jan 5 01:37:19 2022 +0100
+
+    * Cosmetic change
+
+M	packages/fcl-base/src/pascodegen.pp
+
+******************************************************************************
+commit 60a09b65f4d23ebc2a5315cc530cf271c2b3cc58
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Wed Jan 5 01:36:04 2022 +0100
+
+    * DefinitelyTyped now converts
+
+A	packages/fcl-js/examples/cgutils.pp
+A	packages/fcl-js/examples/convcgi.lpr
+A	packages/fcl-js/examples/dts2pas.pp
+M	packages/fcl-js/examples/parsefiles.pas
+A	packages/fcl-js/examples/web.inc
+M	packages/fcl-js/src/jsparser.pp
+M	packages/fcl-js/src/jsscanner.pp
+M	packages/fcl-js/src/jstree.pp
+M	packages/fcl-js/src/tstopas.pp
+M	packages/fcl-js/tests/tcparser.pp
+M	packages/fcl-js/tests/tcscanner.pp
+M	packages/fcl-js/tests/tctsparser.pp
+M	packages/fcl-js/tests/tctstopas.pp
+M	packages/fcl-js/tests/testjs.lpi
+
+******************************************************************************
 commit 52ed79c7f3e943129171327dda6d651d83649a35
 Author: Sven/Sarah Barth <pascaldragon@gmail.com>
 Date:   Tue Jan 4 23:41:38 2022 +0100
