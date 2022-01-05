@@ -1,4 +1,46 @@
 ******************************************************************************
+commit b2f46586bc891aeb335b4b8ddac048fa0d204cbd
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Wed Jan 5 13:19:09 2022 +0100
+
+    * Fix warnings & hints, use resourcestrings, add const where appropriate
+
+M	packages/fcl-js/src/jsparser.pp
+M	packages/fcl-js/src/jsscanner.pp
+M	packages/fcl-js/src/jstoken.pp
+M	packages/fcl-js/src/jstree.pp
+M	packages/fcl-js/tests/tcparser.pp
+M	packages/fcl-js/tests/tctsparser.pp
+
+******************************************************************************
+commit 8362ee0e5f818a1b5ddb2d0b090676d412ceb360
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Wed Jan 5 12:58:08 2022 +0100
+
+    * Add aliases
+
+M	packages/fcl-js/examples/cgutils.pp
+
+******************************************************************************
+commit ebdb90b1a5788b56d4a0396cef9a0f83c40b04ab
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Wed Jan 5 12:57:42 2022 +0100
+
+    * Remove debugging statements
+
+M	packages/fcl-js/examples/convcgi.lpr
+
+******************************************************************************
+commit 9e710e298c5952cee4fae64d2408038cda4a1298
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Wed Jan 5 12:57:08 2022 +0100
+
+    * Use resource strings, add const to string params where appropriate
+
+M	packages/fcl-js/src/jsscanner.pp
+M	packages/fcl-js/src/tstopas.pp
+
+******************************************************************************
 commit ea345f34aac81046f9865da1186024615e10a85d
 Author: ccrause <christo.crause@gmail.com>
 Date:   Wed Jan 5 08:52:37 2022 +0200
