@@ -1,4 +1,18 @@
 ******************************************************************************
+commit ea345f34aac81046f9865da1186024615e10a85d
+Author: ccrause <christo.crause@gmail.com>
+Date:   Wed Jan 5 08:52:37 2022 +0200
+
+    Use different library link lists for esp8266-rtos-sdk v3.3 and v3.4.
+
+M	compiler/pmodules.pas
+M	rtl/freertos/Makefile
+M	rtl/freertos/Makefile.fpc
+M	rtl/freertos/xtensa/esp8266.pp
+A	rtl/freertos/xtensa/esp8266rtos_30300.pp
+A	rtl/freertos/xtensa/esp8266rtos_30400.pp
+
+******************************************************************************
 commit 73529f5266940b416f6c943e1c372e1a1454f034
 Author: Yuri <yus.serebrennikov@gmail.com>
 Date:   Wed Jan 5 11:21:57 2022 +0300
