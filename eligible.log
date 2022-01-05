@@ -1,4 +1,13 @@
 ******************************************************************************
+commit e26b29888565c291d9d1bb80a99d02ff28aea1b3
+Author: florian <florian@freepascal.org>
+Date:   Wed Jan 5 19:50:01 2022 +0100
+
+      * patch by Rika: Better Align()'s #2, resolves #39512
+
+M	compiler/ogbase.pas
+
+******************************************************************************
 commit abee4d46b668e5985ca49f3bcf5dc2b53e244f7f
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Wed Jan 5 16:41:22 2022 +0000
