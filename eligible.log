@@ -1,4 +1,32 @@
 ******************************************************************************
+commit fd54c958c945827151fcc66cf98f4ecf3cd70888
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Wed Jan 5 20:01:05 2022 +0000
+
+    New POPCNT tests to evaluate new optimisations
+
+A	tests/test/opt/tpopcnt1.pp
+A	tests/test/opt/tpopcnt2.pp
+
+******************************************************************************
+commit 15a5a62eb4a0cd3de7d8eabf394fd1fe93e4633e
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Wed Jan 5 17:41:32 2022 +0000
+
+    New backward MOV optimisation
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
+commit 33cf86ff9f11e17c1e3dc78cd4fb503e2059193a
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Wed Jan 5 06:08:01 2022 +0000
+
+    PostPeepholeOptTestOr now removes TEST when dealing with POPCNT and LZCNT
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
 commit 89f9ebc7b7fed1af0347c9290bc8d657fab8ccb3
 Author: florian <florian@freepascal.org>
 Date:   Thu Jan 6 21:00:41 2022 +0100
