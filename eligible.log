@@ -1,4 +1,28 @@
 ******************************************************************************
+commit 89f9ebc7b7fed1af0347c9290bc8d657fab8ccb3
+Author: florian <florian@freepascal.org>
+Date:   Thu Jan 6 21:00:41 2022 +0100
+
+      * throw an error if raise is called in a noreturn subroutine outside of any exception frame, resolves #39514
+
+M	compiler/cclasses.pas
+M	compiler/msg/errore.msg
+M	compiler/msgidx.inc
+M	compiler/msgtxt.inc
+M	compiler/pstatmnt.pas
+M	compiler/verbose.pas
+A	tests/tbf/tw39514.pp
+
+******************************************************************************
+commit de97010011d3658208c86c26a044af971add34f6
+Author: ccrause <christo.crause@gmail.com>
+Date:   Thu Jan 6 17:41:57 2022 +0200
+
+    Add libraries required to link simple example with esp8266-rtos-sdk v3.3
+
+M	rtl/freertos/xtensa/esp8266rtos_30300.pp
+
+******************************************************************************
 commit 07d298d23b8216d64dedb129267a667272e49d22
 Author: Yuri <yus.serebrennikov@gmail.com>
 Date:   Thu Jan 6 16:47:56 2022 +0300
