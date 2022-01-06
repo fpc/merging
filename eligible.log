@@ -1,4 +1,13 @@
 ******************************************************************************
+commit aa82a2e446bfe225d41400d5784a1092ca905754
+Author: Yuri <yus.serebrennikov@gmail.com>
+Date:   Thu Jan 6 01:12:50 2022 +0300
+
+    Typecasting to int64 type fixes the exception.
+
+M	packages/fcl-web/src/websocket/fpwebsocket.pp
+
+******************************************************************************
 commit 5944631246cabaebdaab78e5ac36426b7e2ea51e
 Author: ccrause <christo.crause@gmail.com>
 Date:   Wed Jan 5 23:07:09 2022 +0200
@@ -616,6 +625,24 @@ Date:   Wed Jan 5 12:57:08 2022 +0100
 
 M	packages/fcl-js/src/jsscanner.pp
 M	packages/fcl-js/src/tstopas.pp
+
+******************************************************************************
+commit 749c8110b6a41765f5548efa76e4565a9b7e29e7
+Author: Yuri <yus.serebrennikov@gmail.com>
+Date:   Wed Jan 5 12:42:30 2022 +0300
+
+    Fixed error if payload = 0
+
+M	packages/fcl-web/src/websocket/fpwebsocket.pp
+
+******************************************************************************
+commit 045472a5e7e2535a449abf8f38e3888789db48dc
+Author: Yuri <yus.serebrennikov@gmail.com>
+Date:   Wed Jan 5 12:18:46 2022 +0300
+
+    The disconnect event is now called once instead of three.
+
+M	packages/fcl-web/src/websocket/fpwebsocket.pp
 
 ******************************************************************************
 commit ea345f34aac81046f9865da1186024615e10a85d
