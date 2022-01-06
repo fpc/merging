@@ -1,4 +1,13 @@
 ******************************************************************************
+commit a5811a35a91f955918edf249650b67fd7d8e3dad
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Thu Jan 6 10:05:24 2022 +0100
+
+    * Add options to request
+
+M	packages/fcl-js/examples/convcgi.lpr
+
+******************************************************************************
 commit aa82a2e446bfe225d41400d5784a1092ca905754
 Author: Yuri <yus.serebrennikov@gmail.com>
 Date:   Thu Jan 6 01:12:50 2022 +0300
