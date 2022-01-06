@@ -1,4 +1,13 @@
 ******************************************************************************
+commit e8bf3817021d50f76f41f4f1ce4aef34b422144b
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Thu Jan 6 13:16:23 2022 +0100
+
+    pas2js: compileserver: set default port 3000
+
+M	utils/pas2js/httpcompiler.pp
+
+******************************************************************************
 commit a5811a35a91f955918edf249650b67fd7d8e3dad
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Thu Jan 6 10:05:24 2022 +0100
