@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 2460ecb9d9918929c7b3b0e41367811072ab04fb
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Thu Jan 6 23:42:11 2022 +0100
+
+    * Patch from Yuri Silver to read data correctly. fix issue 39517
+
+M	packages/fcl-web/src/websocket/fpwebsocket.pp
+
+******************************************************************************
 commit fd54c958c945827151fcc66cf98f4ecf3cd70888
 Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
 Date:   Wed Jan 5 20:01:05 2022 +0000
