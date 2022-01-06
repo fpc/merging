@@ -1,4 +1,42 @@
 ******************************************************************************
+commit 07d298d23b8216d64dedb129267a667272e49d22
+Author: Yuri <yus.serebrennikov@gmail.com>
+Date:   Thu Jan 6 16:47:56 2022 +0300
+
+    Cosmetic changes
+
+M	packages/fcl-web/src/websocket/fpwebsocket.pp
+
+******************************************************************************
+commit 58e9d7c6477268f6e55629cbe45264631243644b
+Author: Yuri <yus.serebrennikov@gmail.com>
+Date:   Thu Jan 6 16:43:21 2022 +0300
+
+    Added reason for closing the connection.
+
+M	packages/fcl-web/src/websocket/fpcustwsserver.pp
+M	packages/fcl-web/src/websocket/fpwebsocket.pp
+
+******************************************************************************
+commit c83c89128a4d97154b2d23a01f82d354df5d435c
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Thu Jan 6 14:26:15 2022 +0100
+
+     Update fpcmake.inc after addition of aarch64-embedded target
+
+M	utils/fpcm/fpcmake.inc
+
+******************************************************************************
+commit 3cfd40a4d38ed6e23b452abfa6ce982601a177e7
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Thu Jan 6 13:22:57 2022 +0000
+
+     Add unit dependencies for arm and aarch64 specific units
+
+M	rtl/embedded/Makefile
+M	rtl/embedded/Makefile.fpc
+
+******************************************************************************
 commit e8bf3817021d50f76f41f4f1ce4aef34b422144b
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Thu Jan 6 13:16:23 2022 +0100
