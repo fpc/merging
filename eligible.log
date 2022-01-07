@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 5a9021c14c39c376b2cf1967989482f0f6bdb4b0
+Author: Yuri Silver <yus.serebrennikov@gmail.com>
+Date:   Fri Jan 7 20:33:54 2022 +0300
+
+    Control message must not be fragmented.
+
+M	packages/fcl-web/src/websocket/fpwebsocket.pp
+
+******************************************************************************
 commit f3a0bdd23222cf281539ec545e4185b971e357a2
 Author: Yuri Silver <yus.serebrennikov@gmail.com>
 Date:   Fri Jan 7 16:37:29 2022 +0300
