@@ -1,4 +1,13 @@
 ******************************************************************************
+commit d5a104f493227253eed8daa13f8b631366bfdccf
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Fri Jan 7 10:25:00 2022 +0000
+
+    Fixed Internal Error 2020120501 number clash
+
+M	compiler/ncginl.pas
+
+******************************************************************************
 commit 4966e9376477defcdf6f292a8ef84d2079c7ce41
 Author: florian <florian@freepascal.org>
 Date:   Fri Jan 7 11:03:30 2022 +0100
