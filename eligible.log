@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 09b763c698a783efadecf81dbfffe6730d9fd2d0
+Author: Yuri Silver <yus.serebrennikov@gmail.com>
+Date:   Fri Jan 7 05:11:24 2022 +0300
+
+    Websocket server correct work with Ping Pong
+
+M	packages/fcl-web/src/websocket/fpcustwsserver.pp
+M	packages/fcl-web/src/websocket/fpwebsocket.pp
+
+******************************************************************************
 commit 2460ecb9d9918929c7b3b0e41367811072ab04fb
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Thu Jan 6 23:42:11 2022 +0100
