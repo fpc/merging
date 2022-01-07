@@ -1,4 +1,13 @@
 ******************************************************************************
+commit f3a0bdd23222cf281539ec545e4185b971e357a2
+Author: Yuri Silver <yus.serebrennikov@gmail.com>
+Date:   Fri Jan 7 16:37:29 2022 +0300
+
+    Added processing of reserved opcodes.
+
+M	packages/fcl-web/src/websocket/fpwebsocket.pp
+
+******************************************************************************
 commit 11ac750e873d31738c2bb344e5e216192c8045e3
 Author: Yuri Silver <yus.serebrennikov@gmail.com>
 Date:   Fri Jan 7 15:31:58 2022 +0300
