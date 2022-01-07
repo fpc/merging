@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 11ac750e873d31738c2bb344e5e216192c8045e3
+Author: Yuri Silver <yus.serebrennikov@gmail.com>
+Date:   Fri Jan 7 15:31:58 2022 +0300
+
+    Added reaction for incorrect reserved bits.
+
+M	packages/fcl-web/src/websocket/fpwebsocket.pp
+
+******************************************************************************
 commit d5a104f493227253eed8daa13f8b631366bfdccf
 Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
 Date:   Fri Jan 7 10:25:00 2022 +0000
