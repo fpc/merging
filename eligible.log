@@ -1,4 +1,34 @@
 ******************************************************************************
+commit c3e94051a18038745302b04dd6e1a75fa5153574
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Sat Jan 8 00:18:47 2022 +0100
+
+     Use '.rodata' for read-only data section for aarch64 CPU
+
+M	compiler/aggas.pas
+
+******************************************************************************
+commit 74c97e892871a62613866140350b47ade321f1e6
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Fri Jan 7 22:58:36 2022 +0000
+
+    Add FillWord procedures and implement unicode StringOfChar for JVM cpu
+
+M	rtl/java/jsystemh.inc
+M	rtl/java/justrings.inc
+M	rtl/jvm/jvm.inc
+
+******************************************************************************
+commit 3b8b549eaa71dad42d2955dca6dbb787cd55cf7a
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Fri Jan 7 22:56:13 2022 +0000
+
+     Fix compilation of the two tests for jvm-android target
+
+M	tests/test/jvm/tprop5.pp
+M	tests/test/jvm/tprop6.pp
+
+******************************************************************************
 commit 1aed740440643b0fe4a0dfb28d26e2a6cf4aa88d
 Author: Jonas Maebe <jonas@freepascal.org>
 Date:   Fri Jan 7 22:06:28 2022 +0100
