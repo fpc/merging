@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 4966e9376477defcdf6f292a8ef84d2079c7ce41
+Author: florian <florian@freepascal.org>
+Date:   Fri Jan 7 11:03:30 2022 +0100
+
+      * small fix for ie
+
+M	compiler/x86/cgx86.pas
+
+******************************************************************************
 commit 09b763c698a783efadecf81dbfffe6730d9fd2d0
 Author: Yuri Silver <yus.serebrennikov@gmail.com>
 Date:   Fri Jan 7 05:11:24 2022 +0300
