@@ -26679,17 +26679,6 @@ Date:   Fri Nov 20 13:18:53 2020 +0000
 M	packages/fcl-db/src/sqldb/postgres/pqconnection.pp
 
 ******************************************************************************
-commit bcdfd07bdd1cf31d609bc0fed933ad5d83d4114b
-Author: florian <florian@freepascal.org>
-Date:   Thu Nov 19 20:53:47 2020 +0000
-
-      * if a variant is read/written, include the variants unit
-    
-    git-svn-id: trunk@47459 -
-
-M	compiler/ninl.pas
-
-******************************************************************************
 commit 84e1be805c5888ff85e8c564d8e4e89759da0ac8
 Author: Károly Balogh <karoly@freepascal.org>
 Date:   Thu Nov 19 05:08:12 2020 +0000
@@ -64110,6 +64099,7 @@ Date:   Thu Jan 24 19:38:32 2019 +0000
 M	compiler/i386/aoptcpu.pas
 M	compiler/x86/aoptx86.pas
 M	compiler/x86_64/aoptcpu.pas
+
 ******************************************************************************
 commit cfd0790f89641b4c7b98a24314448ea5ce6543df
 Author: florian <florian@freepascal.org>
@@ -64121,7 +64111,6 @@ Date:   Wed Jan 23 21:02:14 2019 +0000
     git-svn-id: trunk@41021 -
 
 M	compiler/x86/aoptx86.pas
-
 ******************************************************************************
 commit 8d3d5276d74979c670c7571d10d698ba09e5c9e4
 Author: florian <florian@freepascal.org>
