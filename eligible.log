@@ -1,4 +1,25 @@
 ******************************************************************************
+commit 67a1d52806449c5fa249d2c2b6e84bec4c9f1c6f
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Sat Dec 25 21:44:22 2021 +0000
+
+    JccAdd2SetccAdd modified to make use of GetIntRegisterBetween
+
+M	compiler/cgobj.pas
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
+commit 30166f8eb79bd6a0609cdea2fd91559bd0a7eec6
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Sat Dec 25 21:12:35 2021 +0000
+
+    Procedure-saved registers are now recorded for peephole optimizers to use
+
+M	compiler/cgobj.pas
+M	compiler/procinfo.pas
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
 commit 307c284f6a4f6da41c302fa2ed54128de1a10176
 Author: Sven/Sarah Barth <pascaldragon@gmail.com>
 Date:   Sat Jan 8 12:30:27 2022 +0100
@@ -1403,15 +1424,6 @@ Date:   Mon Dec 27 11:41:29 2021 +0100
     * Fix memleak
 
 M	packages/fcl-web/src/base/httproute.pp
-
-******************************************************************************
-commit 91337a367574fd8fecf514d2d91e7e7517f08d67
-Author: FPK <florian@freepascal.org>
-Date:   Mon Dec 27 09:47:22 2021 +0000
-
-      * new image
-
-M	.gitlab-ci.yml
 
 ******************************************************************************
 commit db39d1a4e4af8d543db22dbf85abc1c0e4dc522e
