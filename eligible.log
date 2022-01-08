@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 307c284f6a4f6da41c302fa2ed54128de1a10176
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Sat Jan 8 12:30:27 2022 +0100
+
+    * fix #39519: apply patch by Julian Puhl to enable OpenAL for Win64
+
+M	packages/Makefile.fpc.fpcmake
+M	packages/openal/fpmake.pp
+
+******************************************************************************
 commit c3e94051a18038745302b04dd6e1a75fa5153574
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Sat Jan 8 00:18:47 2022 +0100
