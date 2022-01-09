@@ -1,4 +1,13 @@
 ******************************************************************************
+commit b5e57a63f5caff23f6a6a6d6dc6d24c3b05d9a3b
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Sun Jan 9 12:29:08 2022 +0100
+
+    + add test for already fixed #22252
+
+A	tests/webtbf/tw22252.pp
+
+******************************************************************************
 commit 67a1d52806449c5fa249d2c2b6e84bec4c9f1c6f
 Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
 Date:   Sat Dec 25 21:44:22 2021 +0000
