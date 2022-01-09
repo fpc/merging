@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 9d95e6159ef7e9a88b50c751341e789db2e1033b
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Sun Jan 9 13:30:46 2022 +0100
+
+    * fix typo in comment
+
+M	compiler/pass_1.pas
+
+******************************************************************************
 commit b5e57a63f5caff23f6a6a6d6dc6d24c3b05d9a3b
 Author: Sven/Sarah Barth <pascaldragon@gmail.com>
 Date:   Sun Jan 9 12:29:08 2022 +0100
