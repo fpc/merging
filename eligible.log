@@ -67050,17 +67050,6 @@ M	compiler/Makefile
 M	compiler/Makefile.fpc
 
 ******************************************************************************
-commit 2cbb9895be91b688cd062e8982bab0ce1990c5ce
-Author: florian <florian@freepascal.org>
-Date:   Sat Oct 20 16:48:31 2018 +0000
-
-    * pass float abi always to the arm assembler
-    
-    git-svn-id: trunk@39996 -
-
-M	compiler/arm/agarmgas.pas
-
-******************************************************************************
 commit 116f36fe56bb53c4ead4752335f07411e678aeb8
 Author: florian <florian@freepascal.org>
 Date:   Sat Oct 20 10:17:34 2018 +0000
