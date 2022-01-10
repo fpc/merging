@@ -1,4 +1,32 @@
 ******************************************************************************
+commit bb49c190afdd16da94cae4c6fdbc1e5ae4f8aa7f
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Sun Jan 9 08:38:21 2022 +0000
+
+    New MOV optimisation that helps reduce instruction count and memory accesses
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
+commit 985e8d3d13ae35a53b3353ffe79df261cb8e5680
+Author: ccrause <christo.crause@gmail.com>
+Date:   Mon Jan 10 21:53:01 2022 +0200
+
+    Remove fall-through logic and separate idf_version checks of esp32 and esp8266. Also warn if idf_version is below the supported range.
+
+M	compiler/pmodules.pas
+
+******************************************************************************
+commit 0764158fd11f3ba1a72143f0430e4ccdcb2c0116
+Author: florian <florian@freepascal.org>
+Date:   Sun Jan 9 18:35:31 2022 +0100
+
+      * reverted TryStrToInt to the old implementation since after the val fixed the changes are not
+        needed anymore as pointed out by Bart B
+
+M	rtl/objpas/sysutils/sysstr.inc
+
+******************************************************************************
 commit 9d95e6159ef7e9a88b50c751341e789db2e1033b
 Author: Sven/Sarah Barth <pascaldragon@gmail.com>
 Date:   Sun Jan 9 13:30:46 2022 +0100
@@ -36,6 +64,24 @@ Date:   Sat Dec 25 21:12:35 2021 +0000
 M	compiler/cgobj.pas
 M	compiler/procinfo.pas
 M	compiler/x86/aoptx86.pas
+
+******************************************************************************
+commit 62f17711218c65e94e8814fde5ec8efcbc92009a
+Author: florian <florian@freepascal.org>
+Date:   Sat Jan 8 14:54:18 2022 +0100
+
+      * fix test for improved fpc_Val_SInt_ShortStr
+
+M	tests/tbs/tb0336.pp
+
+******************************************************************************
+commit f39a6a775587692103ec6ba1012007224d57c01e
+Author: florian <florian@freepascal.org>
+Date:   Sat Jan 8 14:45:12 2022 +0100
+
+      * fpc_Val_SInt_ShortStr: bug fixes and improvements by Bart B
+
+M	rtl/inc/sstrings.inc
 
 ******************************************************************************
 commit 307c284f6a4f6da41c302fa2ed54128de1a10176
@@ -78,6 +124,25 @@ M	tests/test/jvm/tprop5.pp
 M	tests/test/jvm/tprop6.pp
 
 ******************************************************************************
+commit 38c06e64c742e269d7b9c01bba5344f12845c4e2
+Author: florian <florian@freepascal.org>
+Date:   Fri Jan 7 23:43:59 2022 +0100
+
+      * optimze case
+      * few formatting changes
+
+M	rtl/inc/sstrings.inc
+
+******************************************************************************
+commit 05072d0d82a707444a2847926525a0834d64cefd
+Author: florian <florian@freepascal.org>
+Date:   Fri Jan 7 23:21:12 2022 +0100
+
+      * updated version by Bart B
+
+M	rtl/inc/sstrings.inc
+
+******************************************************************************
 commit 1aed740440643b0fe4a0dfb28d26e2a6cf4aa88d
 Author: Jonas Maebe <jonas@freepascal.org>
 Date:   Fri Jan 7 22:06:28 2022 +0100
@@ -87,6 +152,28 @@ Date:   Fri Jan 7 22:06:28 2022 +0100
     Conform to change made in 800bb3adc23
 
 M	rtl/java/jastrings.inc
+
+******************************************************************************
+commit 4c296af05eccba74d3bd854b6248d56a8efeffdf
+Author: florian <florian@freepascal.org>
+Date:   Fri Jan 7 19:36:34 2022 +0100
+
+      * reordered condition so they can be evaluated quicker
+
+M	rtl/inc/sstrings.inc
+
+******************************************************************************
+commit d29a482cd12ef50734121e4dc7e4c5938c1df5ae
+Author: florian <florian@freepascal.org>
+Date:   Fri Jan 7 19:19:55 2022 +0100
+
+      * fixes for fpc_Val_SInt_ShortStr by Bart B
+      + new test for fpc_Val_SInt_ShortStr
+      + benchmark
+
+M	rtl/inc/sstrings.inc
+A	tests/bench/bval.pp
+A	tests/test/units/system/tval6.pp
 
 ******************************************************************************
 commit 5a9021c14c39c376b2cf1967989482f0f6bdb4b0
