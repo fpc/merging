@@ -1,4 +1,40 @@
 ******************************************************************************
+commit 091e86082dd1043d26fc1be9d1607ed544bb3da0
+Author: Yuri Silver <yus.serebrennikov@gmail.com>
+Date:   Tue Jan 11 21:01:16 2022 +0300
+
+    Cosmetics changes
+
+M	packages/fcl-web/src/websocket/fpwebsocket.pp
+
+******************************************************************************
+commit 6347c9d03cc141ac939d09df8d90a35b70e171ce
+Author: Yuri <yus.serebrennikov@gmail.com>
+Date:   Tue Jan 11 18:44:31 2022 +0300
+
+    All Autobahn testsuite tests passed
+
+M	packages/fcl-web/src/websocket/fpwebsocket.pp
+
+******************************************************************************
+commit 8386906668afeebf9a06bfd723981b23bd049a28
+Author: Yuri <yus.serebrennikov@gmail.com>
+Date:   Tue Jan 11 17:38:15 2022 +0300
+
+    UTF-8 support for message.
+
+M	packages/fcl-web/src/websocket/fpwebsocket.pp
+
+******************************************************************************
+commit 544b58680e3afb95bcf6344daa775a431c1195cd
+Author: Yuri Silver <yus.serebrennikov@gmail.com>
+Date:   Sat Jan 8 14:50:56 2022 +0300
+
+    Fixed fragmentation of incoming messages.
+
+M	packages/fcl-web/src/websocket/fpwebsocket.pp
+
+******************************************************************************
 commit bb49c190afdd16da94cae4c6fdbc1e5ae4f8aa7f
 Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
 Date:   Sun Jan 9 08:38:21 2022 +0000
