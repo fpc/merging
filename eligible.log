@@ -1,4 +1,14 @@
 ******************************************************************************
+commit fc3b635013d0fd8552b9ae59b092d3697f6a82c5
+Author: florian <florian@freepascal.org>
+Date:   Tue Jan 11 21:29:00 2022 +0100
+
+      * patch by Bart B to fix the value of Code for unsigned types if the input is negative, resolves #39523
+
+M	rtl/inc/sstrings.inc
+A	tests/webtbs/tw39523.pp
+
+******************************************************************************
 commit 091e86082dd1043d26fc1be9d1607ed544bb3da0
 Author: Yuri Silver <yus.serebrennikov@gmail.com>
 Date:   Tue Jan 11 21:01:16 2022 +0300
