@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 894c49ca93d96aa0ca197bc6a2dde4d1c971a016
+Author: florian <florian@freepascal.org>
+Date:   Wed Jan 12 20:33:59 2022 +0100
+
+      * enable brenchmark to be compiled with -Sh
+
+M	tests/bench/bval.pp
+
+******************************************************************************
 commit fc3b635013d0fd8552b9ae59b092d3697f6a82c5
 Author: florian <florian@freepascal.org>
 Date:   Tue Jan 11 21:29:00 2022 +0100
