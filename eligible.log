@@ -1,4 +1,16 @@
 ******************************************************************************
+commit 42361be2395e47a72edb5b692177203892bbdec2
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Thu Jan 13 22:14:46 2022 +0100
+
+    * Add additional parameters to Unzip calls. Fix issue 39530
+
+M	packages/paszlib/src/zipper.pp
+A	packages/paszlib/tests/test.zip
+A	packages/paszlib/tests/testsingle.lpi
+A	packages/paszlib/tests/testsingle.pas
+
+******************************************************************************
 commit bb91dadb009f9d8032f1b1ee4c065a0d144911c8
 Author: Yuri Silver <yus.serebrennikov@gmail.com>
 Date:   Thu Jan 13 15:49:31 2022 +0300
