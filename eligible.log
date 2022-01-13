@@ -1,4 +1,33 @@
 ******************************************************************************
+commit bde7b73a3ee41d95bf52dd2b0fd2bb90bd0625b6
+Author: Lacak <lacak@zoznam.sk>
+Date:   Thu Jan 13 22:55:25 2022 +0100
+
+    * Patch from Laco, implementing several new properties and extendedfield. to fix issue #39521
+
+M	packages/fcl-db/src/base/db.pas
+M	packages/fcl-db/src/base/dsparams.inc
+M	packages/fcl-db/src/base/fields.inc
+
+******************************************************************************
+commit 9a90db79c30e3531034544d757d4f292617ea175
+Author: florian <florian@freepascal.org>
+Date:   Thu Jan 13 22:51:10 2022 +0100
+
+      * patch by Bart B to fix fpc_val_smallint_shortstr similiar to #39406, resolves #39528
+
+M	rtl/inc/sstrings.inc
+
+******************************************************************************
+commit d6a26f2c28a494b068bd21664b84430c6375636b
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Thu Jan 13 22:41:01 2022 +0100
+
+    * Remove component from previous owner. Fix issue #39529
+
+M	rtl/objpas/classes/compon.inc
+
+******************************************************************************
 commit 42361be2395e47a72edb5b692177203892bbdec2
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Thu Jan 13 22:14:46 2022 +0100
