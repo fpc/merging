@@ -1,4 +1,39 @@
 ******************************************************************************
+commit ec1766ac3f629c3c9fe09bc6895ffa36cc102915
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Fri Jan 14 15:47:08 2022 +0100
+
+    pas2js: compileserver: added cmd line option interface
+
+M	utils/pas2js/httpcompiler.pp
+
+******************************************************************************
+commit 52e30aa332592c8a3b7afca3c98c9f6c63f4b581
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Mon Jan 10 16:35:46 2022 +0100
+
+    pas2js: compileserver exitcode 1 on ESocketError
+
+M	utils/pas2js/compileserver.lpi
+M	utils/pas2js/httpcompiler.pp
+
+******************************************************************************
+commit 6cc82086a99b5bfc0be3e59f74b68ac98e4e9cde
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Fri Jan 14 15:41:48 2022 +0100
+
+    * Patch from Laco to add tests
+
+M	packages/fcl-db/src/base/bufdataset.pas
+M	packages/fcl-db/src/dbase/dbf_fields.pas
+M	packages/fcl-db/src/memds/memds.pp
+M	packages/fcl-db/tests/bufdatasettoolsunit.pas
+M	packages/fcl-db/tests/memdstoolsunit.pas
+M	packages/fcl-db/tests/sqldbtoolsunit.pas
+M	packages/fcl-db/tests/testdbbasics.pas
+M	packages/fcl-db/tests/toolsunit.pas
+
+******************************************************************************
 commit fecc6db4c2b65fe4deb9845dcb278e2c2f050539
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Fri Jan 14 10:05:28 2022 +0100
