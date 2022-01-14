@@ -1,4 +1,24 @@
 ******************************************************************************
+commit fecc6db4c2b65fe4deb9845dcb278e2c2f050539
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Fri Jan 14 10:05:28 2022 +0100
+
+    * AsString takes into account empty true or false. Fix issue #39371
+
+M	packages/fcl-db/src/base/fields.inc
+M	packages/fcl-db/tests/testdbbasics.pas
+
+******************************************************************************
+commit d9996607b83d3306aea61fb11db3307a87973afc
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Fri Jan 14 10:01:23 2022 +0100
+
+    * Displayvalues can omit false part. Fix issue #39371
+
+M	packages/fcl-db/src/base/fields.inc
+M	packages/fcl-db/tests/testdbbasics.pas
+
+******************************************************************************
 commit bde7b73a3ee41d95bf52dd2b0fd2bb90bd0625b6
 Author: Lacak <lacak@zoznam.sk>
 Date:   Thu Jan 13 22:55:25 2022 +0100
