@@ -1,4 +1,33 @@
 ******************************************************************************
+commit 6dd0a1c0784f1fded1ff03cd1f967cd08d1c31d4
+Author: florian <florian@freepascal.org>
+Date:   Fri Jan 14 22:55:49 2022 +0100
+
+      * year of copyright updated to 2022
+
+M	compiler/msg/errorct.msg
+M	compiler/msg/errord.msg
+M	compiler/msg/errorda.msg
+M	compiler/msg/errordu.msg
+M	compiler/msg/errore.msg
+M	compiler/msg/errores.msg
+M	compiler/msg/errorf.msg
+M	compiler/msg/errorfi.msg
+M	compiler/msg/errorhe.msg
+M	compiler/msg/errorheu.msg
+M	compiler/msg/errorid.msg
+M	compiler/msg/erroriu.msg
+M	compiler/msg/errorn.msg
+M	compiler/msg/errorpl.msg
+M	compiler/msg/errorpli.msg
+M	compiler/msg/errorpt.msg
+M	compiler/msg/errorptu.msg
+M	compiler/msg/errorr.msg
+M	compiler/msg/errorru.msg
+M	compiler/msg/errorues.msg
+M	compiler/msgtxt.inc
+
+******************************************************************************
 commit ec1766ac3f629c3c9fe09bc6895ffa36cc102915
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Fri Jan 14 15:47:08 2022 +0100
