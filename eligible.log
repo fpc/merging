@@ -1,4 +1,23 @@
 ******************************************************************************
+commit 0634d5349d549e3af38d845d92b727504c752857
+Author: Rika Ichinose <rrunewalsh@gmail.com>
+Date:   Thu Jan 13 09:28:42 2022 +0300
+
+      * add const
+
+M	compiler/optdfa.pas
+
+******************************************************************************
+commit 92771760b79fe0f30e67400b6e1f131287c621b7
+Author: Rika Ichinose <rrunewalsh@gmail.com>
+Date:   Thu Jan 13 10:26:02 2022 +0300
+
+    Get rid of some global variables.
+
+M	compiler/optdfa.pas
+M	compiler/optutils.pas
+
+******************************************************************************
 commit 6dd0a1c0784f1fded1ff03cd1f967cd08d1c31d4
 Author: florian <florian@freepascal.org>
 Date:   Fri Jan 14 22:55:49 2022 +0100
@@ -22268,39 +22287,6 @@ Date:   Wed Feb 17 20:43:37 2021 +0000
 
 M	compiler/aarch64/cpubase.pas
 M	compiler/cfidwarf.pas
-
-******************************************************************************
-commit acf2567bda4a6fccfe7df3eabf9a2d78e51c508d
-Author: pierre <pierre@freepascal.org>
-Date:   Wed Feb 17 09:46:37 2021 +0000
-
-    Second trial to fix commit 48688
-    
-    git-svn-id: trunk@48691 -
-
-M	compiler/dbgstabs.pas
-
-******************************************************************************
-commit 34fd36f817dcbd2bd6d3d2d3100a29d62c5f573e
-Author: pierre <pierre@freepascal.org>
-Date:   Wed Feb 17 07:09:55 2021 +0000
-
-     Fix previous commit 48688 to avoid accessing 'invalid' positions in sym.value.valueptr
-    
-    git-svn-id: trunk@48689 -
-
-M	compiler/dbgstabs.pas
-
-******************************************************************************
-commit 6a408fe97e037c63350314dbebba5b356334a730
-Author: pierre <pierre@freepascal.org>
-Date:   Tue Feb 16 23:15:08 2021 +0000
-
-     Avoid writing characters after sym.value.len for conststring constant symbols
-    
-    git-svn-id: trunk@48688 -
-
-M	compiler/dbgstabs.pas
 
 ******************************************************************************
 commit 5b29e7a3ecfdc47203c64ee8b26e5db5cba35b60
@@ -64417,6 +64403,7 @@ Date:   Wed Jan 23 21:02:14 2019 +0000
     git-svn-id: trunk@41021 -
 
 M	compiler/x86/aoptx86.pas
+
 ******************************************************************************
 commit 8d3d5276d74979c670c7571d10d698ba09e5c9e4
 Author: florian <florian@freepascal.org>
@@ -64473,7 +64460,6 @@ M	compiler/x86_64/x8664op.inc
 M	compiler/x86_64/x8664pro.inc
 M	compiler/x86_64/x8664tab.inc
 M	tests/utils/avx/avxopcodes.pas
-
 ******************************************************************************
 commit 8c66e9a2eb763a9dfa37e35c7e31dac32e7fd7c2
 Author: florian <florian@freepascal.org>
