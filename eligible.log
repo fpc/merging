@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 32d6cf7093c086fc3e963880860e62509f69d0bb
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Sun Jan 16 19:19:58 2022 +0000
+
+    Fixed and refactored MOVX optimisation that occasionally caused crashes on i386 platforms
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
 commit 0634d5349d549e3af38d845d92b727504c752857
 Author: Rika Ichinose <rrunewalsh@gmail.com>
 Date:   Thu Jan 13 09:28:42 2022 +0300
