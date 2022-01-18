@@ -1,4 +1,13 @@
 ******************************************************************************
+commit f8aaab3cd732f7b4b3c8d80308c91c81abb81f41
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Tue Jan 18 07:38:54 2022 +0100
+
+    * regenerate packages\wasmtime with an up to date fpcmake
+
+M	packages/wasmtime/Makefile
+
+******************************************************************************
 commit 32d6cf7093c086fc3e963880860e62509f69d0bb
 Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
 Date:   Sun Jan 16 19:19:58 2022 +0000
