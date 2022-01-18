@@ -1,4 +1,13 @@
 ******************************************************************************
+commit d76cfdd9138b731ec27601bf7589c8fd490ea968
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Tue Jan 18 16:54:45 2022 +0100
+
+    pas2js: compileserver: added commandline param --version
+
+M	utils/pas2js/httpcompiler.pp
+
+******************************************************************************
 commit f8aaab3cd732f7b4b3c8d80308c91c81abb81f41
 Author: Sven/Sarah Barth <pascaldragon@gmail.com>
 Date:   Tue Jan 18 07:38:54 2022 +0100
