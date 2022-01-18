@@ -1,4 +1,14 @@
 ******************************************************************************
+commit c59b6a5d8dfa4a20eec23345839d116905de03f5
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Tue Jan 18 21:54:05 2022 +0100
+
+    * High() and Length() for dynamic arrays deal with sizesinttype instead of ossinttype (on AVR the former is 16-bit while the later is 8-bit thus this is an important distinction)
+
+M	compiler/ncginl.pas
+M	compiler/ninl.pas
+
+******************************************************************************
 commit c062061d6d16782c0e0f53e3fc9f2ad4bda0b905
 Author: florian <florian@freepascal.org>
 Date:   Tue Jan 18 23:04:32 2022 +0100
