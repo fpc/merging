@@ -1,4 +1,43 @@
 ******************************************************************************
+commit c062061d6d16782c0e0f53e3fc9f2ad4bda0b905
+Author: florian <florian@freepascal.org>
+Date:   Tue Jan 18 23:04:32 2022 +0100
+
+      + MovapXComisX2ComisX2 optimization
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
+commit 4640120dbd167ac8c800311e52f6694dd3c4307a
+Author: ccrause <christo.crause@gmail.com>
+Date:   Tue Jan 18 08:19:43 2022 +0200
+
+    esp32.rom.api.ld was only introduced in esp-idf v4.3. Remove invalid linker search path.
+
+M	compiler/systems/t_freertos.pas
+
+******************************************************************************
+commit 73287c35d20d3583840fa115519ca96baa659d5f
+Author: ccrause <christo.crause@gmail.com>
+Date:   Tue Jan 18 08:18:21 2022 +0200
+
+    GenerateDefaultLinkerScripts should set out_ld_filename.
+
+M	compiler/systems/t_freertos.pas
+
+******************************************************************************
+commit a9d883ada1de38e0c6cabf8832952111ad56fca1
+Author: ccrause <christo.crause@gmail.com>
+Date:   Tue Jan 18 08:17:22 2022 +0200
+
+    Add link unit for esp-idf v4.1. Version checks to allow for different patch levels in idf_version.
+
+M	compiler/pmodules.pas
+M	rtl/freertos/Makefile
+M	rtl/freertos/Makefile.fpc
+A	rtl/freertos/xtensa/espidf_40100.pp
+
+******************************************************************************
 commit d76cfdd9138b731ec27601bf7589c8fd490ea968
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Tue Jan 18 16:54:45 2022 +0100
