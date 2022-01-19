@@ -1,4 +1,40 @@
 ******************************************************************************
+commit 63d8282f8ffb56e35ec780e5b2d9a3e43ae1c82c
+Author: florian <florian@freepascal.org>
+Date:   Wed Jan 19 22:03:24 2022 +0100
+
+      * do not use sysutils anymore
+
+M	tests/test/units/system/tval6.pp
+
+******************************************************************************
+commit 02abad58d8836e80928e078ebccde151e1ea4b44
+Author: florian <florian@freepascal.org>
+Date:   Wed Jan 19 22:03:09 2022 +0100
+
+      * some fixes for 8 Bit CPUs
+
+M	rtl/inc/sstrings.inc
+
+******************************************************************************
+commit bd104270ae7683eaaa48c65a9d7833f4712dc9a0
+Author: florian <florian@freepascal.org>
+Date:   Wed Jan 19 22:02:58 2022 +0100
+
+      * clean up
+
+M	tests/test/units/system/tval5.pp
+
+******************************************************************************
+commit 713074ded521ff2c1b781ebd6ff2aca83fda55d8
+Author: florian <florian@freepascal.org>
+Date:   Wed Jan 19 21:25:00 2022 +0100
+
+      * test does not need to use sysutils anymore
+
+M	tests/test/units/system/tval5.pp
+
+******************************************************************************
 commit b407b67ca1afef62a10c9bcd06539b480250d580
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Wed Jan 19 07:08:32 2022 +0200
@@ -529,6 +565,24 @@ Date:   Tue Jan 18 07:38:54 2022 +0100
 M	packages/wasmtime/Makefile
 
 ******************************************************************************
+commit 718709c87dfdd442dcd5326e374270abe6fd864b
+Author: florian <florian@freepascal.org>
+Date:   Mon Jan 17 22:46:19 2022 +0100
+
+      * all val helpers now use the ValValueArray
+
+M	rtl/inc/sstrings.inc
+
+******************************************************************************
+commit 2f8750924f6da75b9842c1b2a4b97b522453d084
+Author: florian <florian@freepascal.org>
+Date:   Sun Jan 16 23:07:36 2022 +0100
+
+      * patch by Bart B: fixes fpc_val_word_shortstr() and refactors fpc_val_longword_shortstr() so that it uses the same algorithm and naming conventions as the other unsigned val-helpers.
+
+M	rtl/inc/sstrings.inc
+
+******************************************************************************
 commit 32d6cf7093c086fc3e963880860e62509f69d0bb
 Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
 Date:   Sun Jan 16 19:19:58 2022 +0000
@@ -555,6 +609,37 @@ Date:   Thu Jan 13 10:26:02 2022 +0300
 
 M	compiler/optdfa.pas
 M	compiler/optutils.pas
+
+******************************************************************************
+commit 5f089afdfb3820d055e06e727859f38b0ed1f9b0
+Author: florian <florian@freepascal.org>
+Date:   Sat Jan 15 22:36:57 2022 +0100
+
+      * unified ValueArray
+
+M	rtl/inc/sstrings.inc
+
+******************************************************************************
+commit e19b45a71baaac76980f3240e3384d9d73925b96
+Author: florian <florian@freepascal.org>
+Date:   Sat Jan 15 22:30:25 2022 +0100
+
+      * tests fixed after last commit
+
+M	tests/tbs/tb0336.pp
+M	tests/test/units/system/tval5.pp
+M	tests/webtbs/tw15633.pp
+
+******************************************************************************
+commit 55f010324835946394d88b02b5aa87755444b66e
+Author: florian <florian@freepascal.org>
+Date:   Sat Jan 15 22:18:38 2022 +0100
+
+      o patch by Bart B:
+        * fixes fpc_Val_UInt_Shortstr, part of #15633
+        * fpc_val_qword_shortstr uses the ValueArray constant
+
+M	rtl/inc/sstrings.inc
 
 ******************************************************************************
 commit 6dd0a1c0784f1fded1ff03cd1f967cd08d1c31d4
@@ -698,6 +783,29 @@ Date:   Wed Jan 12 20:33:59 2022 +0100
       * enable brenchmark to be compiled with -Sh
 
 M	tests/bench/bval.pp
+
+******************************************************************************
+commit 8e4e229a5fe9e8086d39bf36d23496794e29fe6f
+Author: florian <florian@freepascal.org>
+Date:   Tue Jan 11 22:10:26 2022 +0100
+
+      + DestSize parameter for fpc_Val_UInt functions
+
+M	compiler/ninl.pas
+M	rtl/inc/astrings.inc
+M	rtl/inc/compproc.inc
+M	rtl/inc/sstrings.inc
+M	rtl/inc/ustrings.inc
+M	rtl/inc/wstrings.inc
+
+******************************************************************************
+commit 11b069fa615668224bcdd5824eb723faa11f4d9b
+Author: florian <florian@freepascal.org>
+Date:   Tue Jan 11 22:10:21 2022 +0100
+
+      + test
+
+A	tests/webtbs/tw15633.pp
 
 ******************************************************************************
 commit fc3b635013d0fd8552b9ae59b092d3697f6a82c5
