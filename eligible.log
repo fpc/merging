@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 9b7f24841c7302b0bd35fba42f00e9409097e622
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Thu Jan 20 18:02:00 2022 +0000
+
+     Fix compilation of jvm-java and jvm-android rtl
+
+M	rtl/java/jcompproc.inc
+
+******************************************************************************
 commit 63d8282f8ffb56e35ec780e5b2d9a3e43ae1c82c
 Author: florian <florian@freepascal.org>
 Date:   Wed Jan 19 22:03:24 2022 +0100
