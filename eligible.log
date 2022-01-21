@@ -1,4 +1,15 @@
 ******************************************************************************
+commit 2e8321e0fa8ade82c71aebe4ec31a1f52f742584
+Author: florian <florian@freepascal.org>
+Date:   Fri Jan 21 18:22:28 2022 +0100
+
+      + routines to test for AVX512VNNI and AVX512BITALG support
+
+M	rtl/i386/cpu.pp
+M	rtl/x86_64/cpu.pp
+M	tests/test/units/cpu/tcpu1.pp
+
+******************************************************************************
 commit 7238985091d1424121605d1198c6332ebd0e0a7a
 Author: marcoonthegit <marcov@freepascal.org>
 Date:   Fri Jan 21 12:51:24 2022 +0100
@@ -2206,15 +2217,6 @@ Date:   Tue Dec 28 22:16:37 2021 +0000
 M	packages/fcl-web/src/websocket/fpwebsocketclient.pp
 
 ******************************************************************************
-commit 742ec5680f8edfdae744382f565a3fda804b0e5c
-Author: marcoonthegit <marcov@freepascal.org>
-Date:   Tue Dec 28 18:18:08 2021 +0100
-
-    * 24-bit byteswap color constants. Due to Opengl vs GDI conventions confusion?
-
-M	packages/rtl-objpas/src/inc/system.uitypes.pp
-
-******************************************************************************
 commit dde8f54ee70849c6a179f126f085c6dcc5eff9eb
 Author: Florian Klämpfl <florian@freepascal.org>
 Date:   Tue Dec 28 17:05:26 2021 +0100
@@ -3170,34 +3172,6 @@ M	packages/fcl-image/src/extinterpolation.pp
 M	packages/fcl-image/src/fpinterpolation.inc
 M	packages/fcl-image/src/libfreetype.inc
 M	packages/fcl-image/src/pcxcomn.pas
-
-******************************************************************************
-commit 97730213153ba2df41ff7b4c7e1947479cff6b63
-Author: marcoonthegit <marcov@freepascal.org>
-Date:   Tue Dec 14 17:31:05 2021 +0100
-
-    * copyright added based on Michael's original commit message
-
-M	packages/fcl-base/src/pascodegen.pp
-
-******************************************************************************
-commit a89a3f157704f249d0e7f44f0b2901d85e6978e4
-Author: marcoonthegit <marcov@freepascal.org>
-Date:   Tue Dec 14 15:40:41 2021 +0100
-
-    * set version of delchars, requested by Bart B issue #39473
-
-M	packages/rtl-objpas/src/inc/strutils.pp
-
-******************************************************************************
-commit 4568c77f576dd5d75418a3c807885c325c196434
-Author: marcoonthegit <marcov@freepascal.org>
-Date:   Tue Dec 14 15:06:55 2021 +0100
-
-    * implemented stringofchar unicodestring, bug #39483
-
-M	rtl/inc/ustringh.inc
-M	rtl/inc/ustrings.inc
 
 ******************************************************************************
 commit 7a15312b54869784baf92d15a459691fd6c8c419
@@ -6439,19 +6413,6 @@ Date:   Thu Oct 21 20:02:22 2021 +0200
 
 M	packages/pastojs/src/fppas2js.pp
 M	packages/pastojs/tests/tcmodules.pas
-
-******************************************************************************
-commit 36ff644401dfcfac0e9263e4a2afb2ebef882efd
-Author: marcoonthegit <marcov@pascalprogramming.org>
-Date:   Thu Oct 21 16:53:44 2021 +0200
-
-    * fix for 39413
-    
-     Update DwmApi to support new DWM windows attributes like Windows 8 cloaking, Windows 10 dark mode and new Windows 11 rounded corners
-    
-    patch by Taufik Rahmad Hidayanto
-
-M	packages/winunits-base/src/dwmapi.pp
 
 ******************************************************************************
 commit 2ee6a81cffbb95c32c08e5b8474bb05d6658d69a
