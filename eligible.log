@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 2e70bd7dcb7ede8d97c18582ce725597bb0507b4
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Fri Jan 21 07:38:48 2022 +0100
+
+    * change cgsize2subreg and reg_cgsize on Z80 to behave more like they do on AVR; this fixes compilation of Z80 now that the array and string length fields are indeed of type SizeSInt instead of OSSInt
+
+M	compiler/z80/cpubase.pas
+
+******************************************************************************
 commit a6921fff7bd15a4635d0bffc5f17df08bdeaa6d7
 Author: florian <florian@freepascal.org>
 Date:   Thu Jan 20 19:02:27 2022 +0100
