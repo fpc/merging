@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 7238985091d1424121605d1198c6332ebd0e0a7a
+Author: marcoonthegit <marcov@freepascal.org>
+Date:   Fri Jan 21 12:51:24 2022 +0100
+
+    * spelling fix to make Debian Lintian happy.
+
+M	packages/pasjpeg/src/jdct.pas
+
+******************************************************************************
 commit 2e70bd7dcb7ede8d97c18582ce725597bb0507b4
 Author: Sven/Sarah Barth <pascaldragon@gmail.com>
 Date:   Fri Jan 21 07:38:48 2022 +0100
