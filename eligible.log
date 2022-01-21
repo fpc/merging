@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 986a6feb95287ae33f0acbb8854327f43c6227b7
+Author: Rika Ichinose <rrunewalsh@gmail.com>
+Date:   Wed Jan 12 11:10:45 2022 +0300
+
+    Allocate THashSet item and its key together when FOwnKeys=true.
+
+M	compiler/cclasses.pas
+
+******************************************************************************
 commit 2e8321e0fa8ade82c71aebe4ec31a1f52f742584
 Author: florian <florian@freepascal.org>
 Date:   Fri Jan 21 18:22:28 2022 +0100
