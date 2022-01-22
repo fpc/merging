@@ -1,13 +1,11 @@
 ******************************************************************************
-commit 45840da4dd470e868e1033f9261e50dddf6d5971
-Author: marcoonthegit <marcov@freepascal.org>
-Date:   Sat Jan 22 16:59:57 2022 +0100
+commit 366aedc6d829bddee3b6063c56bf5244ecee74ab
+Author: florian <florian@freepascal.org>
+Date:   Sat Jan 22 17:35:51 2022 +0100
 
-    * fixed spelling error implicitEly in errore.msg, regenned msg.
+      * more false positives of unintialized varibles worked around
 
-M	compiler/msg/errore.msg
-M	compiler/msgidx.inc
-M	compiler/msgtxt.inc
+M	rtl/inc/sstrings.inc
 
 ******************************************************************************
 commit 115f83794b8005274bdf149448f46bc4f42c531c
@@ -47,15 +45,6 @@ Date:   Fri Jan 21 18:22:28 2022 +0100
 M	rtl/i386/cpu.pp
 M	rtl/x86_64/cpu.pp
 M	tests/test/units/cpu/tcpu1.pp
-
-******************************************************************************
-commit 7238985091d1424121605d1198c6332ebd0e0a7a
-Author: marcoonthegit <marcov@freepascal.org>
-Date:   Fri Jan 21 12:51:24 2022 +0100
-
-    * spelling fix to make Debian Lintian happy.
-
-M	packages/pasjpeg/src/jdct.pas
 
 ******************************************************************************
 commit 2e70bd7dcb7ede8d97c18582ce725597bb0507b4
