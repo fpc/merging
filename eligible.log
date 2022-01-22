@@ -1,4 +1,15 @@
 ******************************************************************************
+commit 45840da4dd470e868e1033f9261e50dddf6d5971
+Author: marcoonthegit <marcov@freepascal.org>
+Date:   Sat Jan 22 16:59:57 2022 +0100
+
+    * fixed spelling error implicitEly in errore.msg, regenned msg.
+
+M	compiler/msg/errore.msg
+M	compiler/msgidx.inc
+M	compiler/msgtxt.inc
+
+******************************************************************************
 commit 115f83794b8005274bdf149448f46bc4f42c531c
 Author: florian <florian@freepascal.org>
 Date:   Sat Jan 22 14:13:32 2022 +0100
