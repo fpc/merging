@@ -1,4 +1,24 @@
 ******************************************************************************
+commit fbc65314b97740a39dac494cdd1fe238554a43a9
+Author: Robert Roland <rob.roland@outlook.com>
+Date:   Mon Jan 17 15:36:51 2022 -0800
+
+    Correct linker script for aarch64-embedded
+    
+    Start address was wrong, should be 0x80000, not 0x8000
+
+M	compiler/aarch64/cpuinfo.pas
+
+******************************************************************************
+commit 1a8444087a70a0984f6e2f84efb16db0c235f1b7
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Sat Jan 22 22:28:01 2022 +0100
+
+    * ensure that result of factor_handle_sym is initialized
+
+M	compiler/pexpr.pas
+
+******************************************************************************
 commit 5ce96de0f2aa890496721b3462629ae99f3c2e64
 Author: Sven/Sarah Barth <pascaldragon@gmail.com>
 Date:   Sat Jan 22 18:12:02 2022 +0100
