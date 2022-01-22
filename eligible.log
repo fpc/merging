@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 115f83794b8005274bdf149448f46bc4f42c531c
+Author: florian <florian@freepascal.org>
+Date:   Sat Jan 22 14:13:32 2022 +0100
+
+      * avoid warning/error on uninitialized variable
+
+M	rtl/inc/sstrings.inc
+
+******************************************************************************
 commit 30b0d98636836e9d16557aa6879c81fa38ad7ed3
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Sat Jan 22 11:17:44 2022 +0100
