@@ -1,4 +1,28 @@
 ******************************************************************************
+commit 5ce96de0f2aa890496721b3462629ae99f3c2e64
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Sat Jan 22 18:12:02 2022 +0100
+
+    * ensure that an expression that involves an overloaded generic in mode Delphi isn't handled as a specialization if it shouldn't be
+    + added tests
+
+M	compiler/pexpr.pas
+A	tests/test/tgenconst31.pp
+A	tests/test/tgenconst32.pp
+A	tests/test/tgenconst33.pp
+A	tests/test/ugenconst31a.pp
+A	tests/test/ugenconst31b.pp
+
+******************************************************************************
+commit d4e0a79d9e43686ec0584a87d57acff189f01d01
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Sat Jan 22 18:10:56 2022 +0100
+
+    * move the handling of the symbol found in factor_read_id to a separate function
+
+M	compiler/pexpr.pas
+
+******************************************************************************
 commit 366aedc6d829bddee3b6063c56bf5244ecee74ab
 Author: florian <florian@freepascal.org>
 Date:   Sat Jan 22 17:35:51 2022 +0100
