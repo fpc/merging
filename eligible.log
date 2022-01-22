@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 30b0d98636836e9d16557aa6879c81fa38ad7ed3
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Jan 22 11:17:44 2022 +0100
+
+    * Change return type of some functions, so -1 can actually be returned, patch by Zeljko Avramovic (issue 39268).
+
+M	rtl/objpas/sysutils/syshelph.inc
+M	rtl/objpas/sysutils/syshelpo.inc
+
+******************************************************************************
 commit 986a6feb95287ae33f0acbb8854327f43c6227b7
 Author: Rika Ichinose <rrunewalsh@gmail.com>
 Date:   Wed Jan 12 11:10:45 2022 +0300
