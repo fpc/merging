@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 2a7744df803e34ae64172be65946322b09748b6a
+Author: florian <florian@freepascal.org>
+Date:   Sun Jan 23 12:30:16 2022 +0100
+
+      * check also for 64 bit registers in TX86AsmOptimizer.RegModifiedByInstruction
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
 commit 7097a1030f0df9196a2b9d9142f5c1b6827522e4
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Sun Jan 23 12:18:43 2022 +0100
