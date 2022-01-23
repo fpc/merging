@@ -1,4 +1,37 @@
 ******************************************************************************
+commit 7097a1030f0df9196a2b9d9142f5c1b6827522e4
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sun Jan 23 12:18:43 2022 +0100
+
+    * Added Read64/Write64
+
+M	rtl/objpas/classes/classesh.inc
+M	rtl/objpas/classes/streams.inc
+
+******************************************************************************
+commit 042eb7e8c196b6a0c8f6016af9985b8b3062703b
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sun Jan 23 12:03:24 2022 +0100
+
+    * Small safety precaution
+
+M	rtl/objpas/classes/streams.inc
+
+******************************************************************************
+commit e27ea76b8887c6d4c597054edf5beddc40100867
+Author: Sergey Larin <sergy.larin@gmail.com>
+Date:   Fri Aug 6 10:54:26 2021 +0300
+
+    The TStream.ReadBuffer and TStream.WriteBuffer methods have changed the Count parameter type to NativeInt.
+    Changed the implementation of ReadBuffer, WriteBuffer so that the size of the blocks when calling Read and Write does not exceed High(Longint).
+    Notes:
+    - Thanks to this change, for example, a file larger than 2GB can be loaded into TMemoryStream.
+    - The fact that the Count parameter has the NativeInt type is compatible with the latest versions of Delphi.
+
+M	rtl/objpas/classes/classesh.inc
+M	rtl/objpas/classes/streams.inc
+
+******************************************************************************
 commit fbc65314b97740a39dac494cdd1fe238554a43a9
 Author: Robert Roland <rob.roland@outlook.com>
 Date:   Mon Jan 17 15:36:51 2022 -0800
