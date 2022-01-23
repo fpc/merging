@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 773babd45df4b829f8d4958afd8118a5ed1b9879
+Author: Florian Klämpfl <florian@freepascal.org>
+Date:   Sun Jan 23 20:11:12 2022 +0100
+
+      + test for already fixed bug so this avoids that is is reintroduced
+
+A	tests/test/texception12.pp
+
+******************************************************************************
 commit 2a7744df803e34ae64172be65946322b09748b6a
 Author: florian <florian@freepascal.org>
 Date:   Sun Jan 23 12:30:16 2022 +0100
