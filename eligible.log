@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 40cf71c9a5a6d2e2c4ee5134fc347fda711201aa
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Mon Jan 24 18:25:51 2022 +0000
+
+     Disable h2pas utils package for wasm32 as this CPU does not support goto
+
+M	utils/h2pas/fpmake.pp
+
+******************************************************************************
 commit 140fe74efb997300d4471495b05ad5c6e043ca35
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Mon Jan 24 16:35:33 2022 +0000
