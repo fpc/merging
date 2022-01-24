@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 140fe74efb997300d4471495b05ad5c6e043ca35
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Mon Jan 24 16:35:33 2022 +0000
+
+     Add possibility to pass  jvm target compilation parameters and clean up if no problem is detected
+
+M	tests/test/jvm/testall.sh
+
+******************************************************************************
 commit 9c20a033e0ba0c0cde2594a92d8f512252f50cc3
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Mon Jan 24 15:16:26 2022 +0000
