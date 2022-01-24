@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 9c20a033e0ba0c0cde2594a92d8f512252f50cc3
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Mon Jan 24 15:16:26 2022 +0000
+
+     Fix fullinstall make target
+
+M	compiler/Makefile
+M	compiler/Makefile.fpc
+
+******************************************************************************
 commit 773babd45df4b829f8d4958afd8118a5ed1b9879
 Author: Florian Klämpfl <florian@freepascal.org>
 Date:   Sun Jan 23 20:11:12 2022 +0100
