@@ -1,4 +1,22 @@
 ******************************************************************************
+commit ca8a94e693ea963c2dfb4ad6efa9232068af508b
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Tue Jan 25 22:02:56 2022 +0000
+
+     Disable utils tply package for all wasm32 targets as it uses goto's
+
+M	utils/tply/fpmake.pp
+
+******************************************************************************
+commit 91f29419a5fcaffbb09ad8a98957a91ef806aa8a
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Tue Jan 25 21:50:03 2022 +0000
+
+    Avoid use of fastmath optimization inside compiler
+
+M	compiler/fpcdefs.inc
+
+******************************************************************************
 commit 54efcc4bbb79d54d69395782ca00019b36e3cb4c
 Author: Ionut Stoica <stoica.ionut@gmail.com>
 Date:   Tue Jan 25 17:38:35 2022 +0100
@@ -1201,17 +1219,6 @@ Date:   Sat Jan 8 00:18:47 2022 +0100
      Use '.rodata' for read-only data section for aarch64 CPU
 
 M	compiler/aggas.pas
-
-******************************************************************************
-commit 74c97e892871a62613866140350b47ade321f1e6
-Author: Pierre Muller <pierre@freepascal.org>
-Date:   Fri Jan 7 22:58:36 2022 +0000
-
-    Add FillWord procedures and implement unicode StringOfChar for JVM cpu
-
-M	rtl/java/jsystemh.inc
-M	rtl/java/justrings.inc
-M	rtl/jvm/jvm.inc
 
 ******************************************************************************
 commit 3b8b549eaa71dad42d2955dca6dbb787cd55cf7a
