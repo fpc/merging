@@ -1,4 +1,23 @@
 ******************************************************************************
+commit 88959bdda78e45058714616f15d3d625b3e5b570
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Tue Jan 25 11:57:08 2022 +0100
+
+    * m68k-sinclairql: fix the inclusion of the target proper
+
+M	compiler/compiler.pas
+M	compiler/systems/i_sinclairql.pas
+
+******************************************************************************
+commit c4f9ec91c92b9d018b24be606b1c7cf74460cd66
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Tue Jan 25 12:56:02 2022 +0200
+
+    + fix support for 8-byte records, held in a register pair on the WebAssembly target. This fixes #39524
+
+M	compiler/wasm32/hlcgcpu.pas
+
+******************************************************************************
 commit 40cf71c9a5a6d2e2c4ee5134fc347fda711201aa
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Mon Jan 24 18:25:51 2022 +0000
