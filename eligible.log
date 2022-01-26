@@ -1,4 +1,73 @@
 ******************************************************************************
+commit f12fcc9e065a6550617261dea1d9073cd4cea94b
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Wed Jan 26 01:06:01 2022 +0100
+
+    * rtl/atari: do not default to tinyheap for now. the compiler itself doesn't work with tinyheap for some reason
+
+M	rtl/atari/system.pp
+
+******************************************************************************
+commit 1e90a4db3e9908fe0f06bafb801c967aa9c1c0c5
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Wed Jan 26 00:01:17 2022 +0100
+
+    * rtl/atari: get rid of the old prt0.as startup code, which is not in use any more. this way, we do not require GAS any more for a build
+
+M	rtl/atari/Makefile
+M	rtl/atari/Makefile.fpc
+D	rtl/atari/prt0.as
+
+******************************************************************************
+commit 6010ece53248848dff792ee6af912ebadccb1efd
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Tue Jan 25 23:49:46 2022 +0100
+
+    * m68k-atari: make vasm the default assembler. also don't claim we have an internal linker
+
+M	compiler/systems/i_atari.pas
+
+******************************************************************************
+commit a87b38f7530f472401ec5e77aec73d37ab1dd47e
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Tue Jan 25 23:22:29 2022 +0100
+
+    * m68k-atari: make the Atari target always default to VLink, even for crosscompilers
+
+M	compiler/options.pas
+
+******************************************************************************
+commit ed2dca9a9b6aa989265b355d597a23302144a818
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Tue Jan 25 23:21:23 2022 +0100
+
+    * m68k-atari: make the Atari target use 68000 CPU as default
+
+M	compiler/options.pas
+
+******************************************************************************
+commit 9739a88e119f4639eaf51b0eb07a04b3a28fb457
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Tue Jan 25 23:15:29 2022 +0100
+
+    * regenerated message includes
+
+M	compiler/msgidx.inc
+M	compiler/msgtxt.inc
+
+******************************************************************************
+commit b3cbf07f27bd59c1988ff5055f82dd1f092d6f19
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Tue Jan 25 23:14:34 2022 +0100
+
+    + m68k-atari: fixed bogus TOS program flags passed to VLink. added -WF argument to allow the user to specify their own flags if needed
+
+M	compiler/globals.pas
+M	compiler/msg/errore.msg
+M	compiler/options.pas
+M	compiler/systems/t_atari.pas
+
+******************************************************************************
 commit ca8a94e693ea963c2dfb4ad6efa9232068af508b
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Tue Jan 25 22:02:56 2022 +0000
