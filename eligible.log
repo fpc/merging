@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 9579759f01783e8596e647731970dc55bb436783
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Wed Jan 26 15:39:24 2022 +0200
+
+    + added wasi to the list of targets without thread support
+
+M	tests/utils/dotest.pp
+
+******************************************************************************
 commit bef4da339abfd785ccded8821539ac0f8d946bfe
 Author: Ionut Stoica <stoica.ionut@gmail.com>
 Date:   Wed Jan 26 08:33:08 2022 +0100
