@@ -1,4 +1,13 @@
 ******************************************************************************
+commit bef4da339abfd785ccded8821539ac0f8d946bfe
+Author: Ionut Stoica <stoica.ionut@gmail.com>
+Date:   Wed Jan 26 08:33:08 2022 +0100
+
+    fphttpclient - only handle Unix in conditional compilation for UnixSocketPath feature
+
+M	packages/fcl-web/src/base/fphttpclient.pp
+
+******************************************************************************
 commit f12fcc9e065a6550617261dea1d9073cd4cea94b
 Author: Karoly Balogh <karoly@freepascal.org>
 Date:   Wed Jan 26 01:06:01 2022 +0100
