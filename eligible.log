@@ -1,4 +1,25 @@
 ******************************************************************************
+commit ee2d313aa0785735289f0a8630e2818971782c96
+Author: Sergey Larin <sergy.larin@gmail.com>
+Date:   Wed Jan 26 15:11:08 2022 +0300
+
+    Added TranslatePlaceholderCP in fpc_Read_Text_AnsiStr procedure.
+    This is a small optimization.
+
+M	rtl/inc/text.inc
+
+******************************************************************************
+commit a8b0e0ed65cf9b0be0e7a177dc23c1e816fb9004
+Author: Sergey Larin <sergy.larin@gmail.com>
+Date:   Wed Jan 26 14:13:07 2022 +0300
+
+    Added TranslatePlaceholderCP before Wide2AnsiMoveProc call.
+    In the fpc_setstring_ansistr_pwidechar procedure, before calling Wide2AnsiMoveProc, the translation cp = 0 to the DefaultSystemCodePage has been added.
+    Note: In all other places such translation is present.
+
+M	rtl/inc/astrings.inc
+
+******************************************************************************
 commit 68cd1c39732449efc0e83adfc3d66dce80f1f9eb
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Wed Jan 26 16:39:29 2022 +0200
