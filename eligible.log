@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 68cd1c39732449efc0e83adfc3d66dce80f1f9eb
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Wed Jan 26 16:39:29 2022 +0200
+
+    + define USE_NOTHREADMANAGER in the WASI system unit
+
+M	rtl/wasi/system.pp
+
+******************************************************************************
 commit 9579759f01783e8596e647731970dc55bb436783
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Wed Jan 26 15:39:24 2022 +0200
