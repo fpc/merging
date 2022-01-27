@@ -1,4 +1,13 @@
 ******************************************************************************
+commit d5d97169163c83545fbb298b812a7f34d5b7ffe2
+Author: florian <florian@freepascal.org>
+Date:   Thu Jan 27 22:36:34 2022 +0100
+
+      * fix thlcgxtensa.g_intf_wrapper as proposed by Anton in #39326, resolves #39326
+
+M	compiler/xtensa/hlcgcpu.pas
+
+******************************************************************************
 commit ee2d313aa0785735289f0a8630e2818971782c96
 Author: Sergey Larin <sergy.larin@gmail.com>
 Date:   Wed Jan 26 15:11:08 2022 +0300
