@@ -125,15 +125,6 @@ Date:   Tue Jan 25 22:02:56 2022 +0000
 M	utils/tply/fpmake.pp
 
 ******************************************************************************
-commit 91f29419a5fcaffbb09ad8a98957a91ef806aa8a
-Author: Pierre Muller <pierre@freepascal.org>
-Date:   Tue Jan 25 21:50:03 2022 +0000
-
-    Avoid use of fastmath optimization inside compiler
-
-M	compiler/fpcdefs.inc
-
-******************************************************************************
 commit 54efcc4bbb79d54d69395782ca00019b36e3cb4c
 Author: Ionut Stoica <stoica.ionut@gmail.com>
 Date:   Tue Jan 25 17:38:35 2022 +0100
