@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 4d5d1c8e10b295b6b428909d5fb37f9900d3cc9e
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Fri Jan 28 12:24:05 2022 +0100
+
+    * Demo authenticator app
+
+A	packages/fcl-hash/examples/authenticator.lpi
+A	packages/fcl-hash/examples/authenticator.pp
+
+******************************************************************************
 commit 2391d317bce0425c6e553e551572e05246d46f81
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Fri Jan 28 11:37:19 2022 +0100
