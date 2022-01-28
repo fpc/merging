@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 2391d317bce0425c6e553e551572e05246d46f81
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Fri Jan 28 11:37:19 2022 +0100
+
+    * Sample to demonstrate generating/showing/checking a TOTP
+
+A	packages/fcl-hash/examples/gentotp.pp
+
+******************************************************************************
 commit d5d97169163c83545fbb298b812a7f34d5b7ffe2
 Author: florian <florian@freepascal.org>
 Date:   Thu Jan 27 22:36:34 2022 +0100
