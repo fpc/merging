@@ -1,4 +1,15 @@
 ******************************************************************************
+commit f21f7f0f506a66a8384c2300330e3235bbb68e20
+Author: florian <florian@freepascal.org>
+Date:   Fri Jan 28 22:48:50 2022 +0100
+
+    * handle result type of unsigned ordinal operations in ISO/Extpas mode similiar to TP, solves
+        #37875
+
+M	compiler/nadd.pas
+A	tests/webtbs/tw37875.pp
+
+******************************************************************************
 commit 29625c71126cf418d6f25f7e868b40e6e5a24c08
 Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
 Date:   Wed Jan 26 03:27:54 2022 +0000
