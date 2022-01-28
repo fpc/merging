@@ -1,4 +1,34 @@
 ******************************************************************************
+commit 29625c71126cf418d6f25f7e868b40e6e5a24c08
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Wed Jan 26 03:27:54 2022 +0000
+
+    Fixed registers in references not being tracked properly in MovMovXX2MovXX 1 optimisation
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
+commit f8e04aad038cbdd8719cc7e72b850850c8983713
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Mon Jan 24 14:15:04 2022 +0000
+
+    CMOV now modifies rather than writes to the destination register so RegUsedAfterInstruction behaves properly
+
+M	compiler/i386/i386prop.inc
+M	compiler/i8086/i8086prop.inc
+M	compiler/x86/x86ins.dat
+M	compiler/x86_64/x8664pro.inc
+
+******************************************************************************
+commit 69fff102af0e272918219f7e168dbc9f3df8c3a9
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Fri Jan 21 00:46:39 2022 +0000
+
+    Added correct flag tracking for JccMov2CMov optimisations
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
 commit 4d5d1c8e10b295b6b428909d5fb37f9900d3cc9e
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Fri Jan 28 12:24:05 2022 +0100
