@@ -1,4 +1,13 @@
 ******************************************************************************
+commit b26463ed993e184d2e2dc2cd9059ca7a024552a4
+Author: Joost van der Sluis <joost@cnoc.nl>
+Date:   Sat Jan 29 22:57:17 2022 +0100
+
+     * Removed unused parameter
+
+M	compiler/dbgdwarf.pas
+
+******************************************************************************
 commit 52334737489c37e2e4a01ab62c982d838d64736c
 Author: Ionut Stoica <stoica.ionut@gmail.com>
 Date:   Sat Jan 29 14:47:07 2022 +0100
