@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 52334737489c37e2e4a01ab62c982d838d64736c
+Author: Ionut Stoica <stoica.ionut@gmail.com>
+Date:   Sat Jan 29 14:47:07 2022 +0100
+
+    Fix memory leak - avoid handler allocation when not needed
+
+M	packages/fcl-web/src/base/fphttpclient.pp
+
+******************************************************************************
 commit f21f7f0f506a66a8384c2300330e3235bbb68e20
 Author: florian <florian@freepascal.org>
 Date:   Fri Jan 28 22:48:50 2022 +0100
