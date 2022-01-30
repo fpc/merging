@@ -1,4 +1,31 @@
 ******************************************************************************
+commit 859ae5fc7c8d7fd43be1e1dc11284c455a176f90
+Author: Thorsten Otto <admin@tho-otto.de>
+Date:   Mon Jan 24 14:47:13 2022 +0100
+
+    Fix linker script for atari/gnu ld
+
+M	compiler/systems/t_atari.pas
+
+******************************************************************************
+commit d93c7579deabaf1dc14abe1b90b91dd57621b16a
+Author: Thorsten Otto <admin@tho-otto.de>
+Date:   Mon Jan 24 09:16:04 2022 +0100
+
+    Fix linker commandline for m68k-atari
+
+M	compiler/systems/t_atari.pas
+
+******************************************************************************
+commit bc6d8fbaf2551cbf752ecf2183c1368f359bbd39
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sun Jan 30 13:32:41 2022 +0100
+
+    * Use correct define for tests 51/52
+
+M	packages/regexpr/tests/tests.pp
+
+******************************************************************************
 commit 7b3ef85d2f153ee2946c24f0abf7e9615485a89f
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Sun Jan 30 12:42:17 2022 +0100
