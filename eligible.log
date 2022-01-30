@@ -1,4 +1,26 @@
 ******************************************************************************
+commit 5f27474465ebd72dcea3e8fb740fc07f3bcf53b3
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sun Jan 30 12:17:13 2022 +0100
+
+    * Update to upstream implementation by Alexey Torgashin. Fix issue #39423
+
+M	packages/regexpr/src/regexpr.pas
+M	packages/regexpr/tests/tcregexp.pp
+M	packages/regexpr/tests/testregexpr.lpi
+M	packages/regexpr/tests/testregexpr.pp
+A	packages/regexpr/tests/tests.pp
+
+******************************************************************************
+commit e39f7ec8a057684d5f9f3a63d947cbc514fff559
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Sun Jan 30 12:11:08 2022 +0100
+
+    * fix #39548: correctly declare the function result of SysAllocStringLen()
+
+M	packages/winunits-base/src/activex.pp
+
+******************************************************************************
 commit 9b4033fa80bff4b50cd2faa83a49aea8ed71c17f
 Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
 Date:   Tue Sep 14 13:34:55 2021 +0100
