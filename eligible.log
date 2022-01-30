@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 7b3ef85d2f153ee2946c24f0abf7e9615485a89f
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sun Jan 30 12:42:17 2022 +0100
+
+    * Patch from Werner Pamler to fix issue #39544
+
+M	packages/fcl-db/src/sqldb/sqldb.pp
+
+******************************************************************************
 commit 5f27474465ebd72dcea3e8fb740fc07f3bcf53b3
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Sun Jan 30 12:17:13 2022 +0100
