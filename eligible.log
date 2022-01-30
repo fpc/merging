@@ -1,4 +1,19 @@
 ******************************************************************************
+commit 9b4033fa80bff4b50cd2faa83a49aea8ed71c17f
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Tue Sep 14 13:34:55 2021 +0100
+
+    Fast mod
+
+M	compiler/cgutils.pas
+M	compiler/x86/nx86add.pas
+M	tests/bench/bdiv.pp
+M	tests/bench/bdiv_s32.inc
+M	tests/bench/bdiv_s64.inc
+M	tests/bench/bdiv_u32.inc
+M	tests/bench/bdiv_u64.inc
+
+******************************************************************************
 commit 181ee30174afabdb00c3d631ac4bda26c0c31135
 Author: ccrause <christo.crause@gmail.com>
 Date:   Sun Jan 30 09:11:28 2022 +0200
