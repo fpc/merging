@@ -1,4 +1,17 @@
 ******************************************************************************
+commit 181ee30174afabdb00c3d631ac4bda26c0c31135
+Author: ccrause <christo.crause@gmail.com>
+Date:   Sun Jan 30 09:11:28 2022 +0200
+
+    Update build and link requirements for esp-idf v4.4. Refactor the version dependent linker fragments list into an array of version specific array of strings for easier updating in future.
+
+M	compiler/pmodules.pas
+M	compiler/systems/t_freertos.pas
+M	rtl/freertos/Makefile
+M	rtl/freertos/Makefile.fpc
+A	rtl/freertos/xtensa/espidf_40400.pp
+
+******************************************************************************
 commit e5472845882a4747c80ba6e0d7ceaff936c71484
 Author: Joost van der Sluis <joost@cnoc.nl>
 Date:   Sat Jan 29 23:13:41 2022 +0100
