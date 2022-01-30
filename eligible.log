@@ -13006,20 +13006,6 @@ Date:   Sun Aug 29 12:50:41 2021 +0200
 M	packages/fcl-web/src/base/fphttpserver.pp
 
 ******************************************************************************
-commit efd0c250dfeaa0bbffb4d61e90e6d99dd2b94b0f
-Author: Sven Barth <pascaldragon@gmail.com>
-Date:   Sat Aug 28 17:58:34 2021 +0200
-
-    * fix for #39310 by fixing various small issues in tabstractrecordsymtable.has_single_field:
-      - initialize the returned def to a safe default
-      - correctly reset the found symbol for each loop
-      - reset the result when descending into a record
-    + added test
-
-M	compiler/symtable.pas
-A	tests/webtbs/tw39310.pp
-
-******************************************************************************
 commit 9b8a6438c786637768ad435c10f5cf179b0c4760
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Sat Aug 28 10:36:50 2021 +0200
