@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 7a444281e8271f4850162974ed6a86c92f029717
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Mon Jan 31 22:40:09 2022 +0100
+
+    Retry incase of thread initialization failure
+
+M	tests/test/tinterlocked64mt.pp
+M	tests/test/tinterlockedmt.pp
+
+******************************************************************************
 commit f9a6e082ba047618fceee613f4ef3a26a4275342
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Mon Jan 31 10:05:18 2022 +0100
