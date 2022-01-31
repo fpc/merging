@@ -1,4 +1,14 @@
 ******************************************************************************
+commit f9a6e082ba047618fceee613f4ef3a26a4275342
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Mon Jan 31 10:05:18 2022 +0100
+
+    * Remove duplicate HexDigits constants. Fix issue #39462
+
+M	packages/rtl-objpas/src/inc/strutils.pp
+M	rtl/objpas/sysconst.pp
+
+******************************************************************************
 commit 859ae5fc7c8d7fd43be1e1dc11284c455a176f90
 Author: Thorsten Otto <admin@tho-otto.de>
 Date:   Mon Jan 24 14:47:13 2022 +0100
