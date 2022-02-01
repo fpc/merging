@@ -1,4 +1,62 @@
 ******************************************************************************
+commit 6faa3872fcaf94826e07499c11b635bb41453faa
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Tue Feb 1 15:12:01 2022 +0100
+
+    * Restored test unit
+
+M	packages/fcl-json/tests/testjson2code.lpi
+M	packages/fcl-json/tests/testjson2code.lpr
+
+******************************************************************************
+commit a0a23a8968c319733a9edd1b80031ce6b334cbc2
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Tue Feb 1 14:47:54 2022 +0100
+
+    pastojs: less string warnings
+
+M	packages/pastojs/src/fppas2js.pp
+
+******************************************************************************
+commit 85928a738d71326fa3eb41c2361d0cb012bd1cca
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Tue Feb 1 14:43:30 2022 +0100
+
+    pastojs: using TJSVariableStatement.VarDecl
+
+M	packages/pastojs/src/fppas2js.pp
+
+******************************************************************************
+commit c6ce763336442f8b59239c3ef96be8709f2a4110
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Tue Feb 1 14:31:19 2022 +0100
+
+    fcl-passrc: fixed sourcepos of member const
+
+M	packages/fcl-passrc/src/pparser.pp
+
+******************************************************************************
+commit edeb5909da627e4132c280b99d0ea50ffb07fbb4
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Tue Feb 1 14:25:39 2022 +0100
+
+    pastojs: switched to TypedParams
+
+M	packages/pastojs/src/fppas2js.pp
+
+******************************************************************************
+commit ced452e2ef37628854b945de15791f796a52d0e9
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Tue Feb 1 14:22:22 2022 +0100
+
+    fcl-js: switched to TypedParams
+
+M	packages/fcl-js/src/jstree.pp
+M	packages/fcl-js/src/jswriter.pp
+M	packages/fcl-js/tests/tcparser.pp
+M	packages/fcl-js/tests/tcwriter.pp
+
+******************************************************************************
 commit a7951612da74ed7b709dc4b3ebb759eec1da3b2f
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Tue Feb 1 13:32:18 2022 +0100
