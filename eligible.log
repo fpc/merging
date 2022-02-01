@@ -1,4 +1,51 @@
 ******************************************************************************
+commit a8449ad9598cebb21c4a892935e41fcb28f05060
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Tue Feb 1 13:18:00 2022 +0100
+
+    pas2js: less hints
+
+M	utils/pas2js/httpcompiler.pp
+
+******************************************************************************
+commit 5bedf92bfba41350e1854b43fa9acee704f871e4
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Tue Feb 1 13:16:46 2022 +0100
+
+    fcl-js: fixed mem leak
+
+M	packages/fcl-js/src/tstopas.pp
+
+******************************************************************************
+commit ad971df05a418d04027323d423e9527e6374955b
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Tue Feb 1 13:11:11 2022 +0100
+
+    fcl-js: fixed mem leak
+
+M	packages/fcl-js/src/jstree.pp
+
+******************************************************************************
+commit 32d06f2e87710cf749cab40d520a711ba044d65d
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Tue Feb 1 13:08:11 2022 +0100
+
+    fcl-js: fixed mem leak
+
+M	packages/fcl-js/src/jsparser.pp
+M	packages/fcl-js/src/jstree.pp
+M	packages/fcl-js/tests/tctstopas.pp
+
+******************************************************************************
+commit e298e6eccd378a23540f95d22a0a66be14ecbc4c
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Tue Feb 1 13:07:46 2022 +0100
+
+    fcl-js: clean up
+
+M	packages/fcl-js/src/tstopas.pp
+
+******************************************************************************
 commit a70d33ff00fe331f8e2528ad4f0411597eb4a0c9
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Tue Feb 1 10:20:35 2022 +0100
