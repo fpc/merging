@@ -1,4 +1,22 @@
 ******************************************************************************
+commit a70d33ff00fe331f8e2528ad4f0411597eb4a0c9
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Tue Feb 1 10:20:35 2022 +0100
+
+    pas2js: fixed init external class RTTI
+
+M	utils/pas2js/dist/rtl.js
+
+******************************************************************************
+commit 030c3b66520a8eb125e222b527150381464a3358
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Tue Feb 1 10:18:04 2022 +0100
+
+    fcl-passrc: clean up
+
+D	packages/fcl-passrc/tests/testpassrc.pp
+
+******************************************************************************
 commit 7a444281e8271f4850162974ed6a86c92f029717
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Mon Jan 31 22:40:09 2022 +0100
