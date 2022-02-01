@@ -30751,42 +30751,6 @@ M	rtl/win64/Makefile
 M	rtl/wince/Makefile
 
 ******************************************************************************
-commit 707034b271a40637747d448ab77e33adf2c33178
-Author: svenbarth <pascaldragon@googlemail.com>
-Date:   Sat Oct 24 20:58:08 2020 +0000
-
-    + add all softfpu units for various targets
-    
-    git-svn-id: trunk@47187 -
-
-M	rtl/aix/Makefile.fpc
-M	rtl/amiga/Makefile.fpc
-M	rtl/android/Makefile.fpc
-M	rtl/aros/Makefile.fpc
-M	rtl/beos/Makefile.fpc
-M	rtl/darwin/Makefile.fpc
-M	rtl/dragonfly/Makefile.fpc
-M	rtl/emx/Makefile.fpc
-M	rtl/freebsd/Makefile.fpc
-M	rtl/go32v2/Makefile.fpc
-M	rtl/haiku/Makefile.fpc
-M	rtl/macos/Makefile.fpc
-M	rtl/morphos/Makefile.fpc
-M	rtl/nativent/Makefile.fpc
-M	rtl/nativent/buildrtl.pp
-M	rtl/netbsd/Makefile.fpc
-M	rtl/netware/Makefile.fpc
-M	rtl/netwlibc/Makefile.fpc
-M	rtl/openbsd/Makefile.fpc
-M	rtl/os2/Makefile.fpc
-M	rtl/solaris/Makefile.fpc
-M	rtl/win32/Makefile.fpc
-M	rtl/win32/buildrtl.pp
-M	rtl/win64/Makefile.fpc
-M	rtl/win64/buildrtl.pp
-M	rtl/wince/Makefile.fpc
-
-******************************************************************************
 commit 0df460f56e6b48b294ee3b0a476587c066535e0e
 Author: svenbarth <pascaldragon@googlemail.com>
 Date:   Sat Oct 24 20:57:56 2020 +0000
@@ -65753,6 +65717,7 @@ M	compiler/x86_64/x8664op.inc
 M	compiler/x86_64/x8664pro.inc
 M	compiler/x86_64/x8664tab.inc
 M	tests/utils/avx/avxopcodes.pas
+
 ******************************************************************************
 commit 8c66e9a2eb763a9dfa37e35c7e31dac32e7fd7c2
 Author: florian <florian@freepascal.org>
@@ -65763,7 +65728,6 @@ Date:   Sun Jan 20 18:50:10 2019 +0000
     git-svn-id: trunk@40950 -
 
 M	tests/utils/avx/asmtestgenerator.pas
-
 ******************************************************************************
 commit fc7ecf32065f1671421518f111f51c9eabe008c9
 Author: florian <florian@freepascal.org>
