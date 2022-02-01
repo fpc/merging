@@ -1,4 +1,18 @@
 ******************************************************************************
+commit a7951612da74ed7b709dc4b3ebb759eec1da3b2f
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Tue Feb 1 13:32:18 2022 +0100
+
+    fcl-json: clean up, updated TestStrings
+
+M	packages/fcl-json/src/fpjsontopas.pp
+M	packages/fcl-json/tests/jsonconftest.pas
+M	packages/fcl-json/tests/tcjsontocode.pas
+M	packages/fcl-json/tests/testjson2code.lpi
+M	packages/fcl-json/tests/testjson2code.lpr
+M	packages/fcl-json/tests/testjsonconf.lpi
+
+******************************************************************************
 commit a8449ad9598cebb21c4a892935e41fcb28f05060
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Tue Feb 1 13:18:00 2022 +0100
