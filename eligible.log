@@ -30651,18 +30651,6 @@ Date:   Sun Oct 25 17:04:33 2020 +0000
 M	compiler/comphook.pas
 
 ******************************************************************************
-commit 16eb670e67cc8243cf2122e992f1cebf00cf4904
-Author: svenbarth <pascaldragon@googlemail.com>
-Date:   Sun Oct 25 15:36:31 2020 +0000
-
-    * use the sizes of the floatx80 and float128 structs for arrays having their size to avoid problems with padding on different platforms
-    
-    git-svn-id: trunk@47198 -
-
-M	rtl/inc/ufloat128.pp
-M	rtl/inc/ufloatx80.pp
-
-******************************************************************************
 commit 52cf07d96831bf8def50a45521582e75256f2dda
 Author: svenbarth <pascaldragon@googlemail.com>
 Date:   Sun Oct 25 15:20:39 2020 +0000
@@ -65737,6 +65725,7 @@ Date:   Sun Jan 20 18:50:10 2019 +0000
     git-svn-id: trunk@40950 -
 
 M	tests/utils/avx/asmtestgenerator.pas
+
 ******************************************************************************
 commit fc7ecf32065f1671421518f111f51c9eabe008c9
 Author: florian <florian@freepascal.org>
@@ -65747,7 +65736,6 @@ Date:   Sun Jan 20 18:50:09 2019 +0000
     git-svn-id: trunk@40949 -
 
 M	tests/utils/avx/readme.txt
-
 ******************************************************************************
 commit 75a89d21159b3c4106596993f938b77e43ee048d
 Author: florian <florian@freepascal.org>
