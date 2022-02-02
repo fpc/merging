@@ -1,4 +1,67 @@
 ******************************************************************************
+commit f10fe0985a4b0b60dd03e70d6b150fe193785e05
+Author: Thorsten Otto <admin@tho-otto.de>
+Date:   Wed Feb 2 11:39:25 2022 +0100
+
+    atari: add missing bios/xbios/gemdos functions
+    
+    todo: Some newer MiNT functions
+
+M	packages/tosunits/fpmake.pp
+A	packages/tosunits/src/bios.pas
+M	packages/tosunits/src/gemdos.pas
+A	packages/tosunits/src/metados.pas
+A	packages/tosunits/src/tos.pas
+M	packages/tosunits/src/xbios.pas
+
+******************************************************************************
+commit 073b48de826c232bba310d8b05490daead429411
+Author: Thorsten Otto <admin@tho-otto.de>
+Date:   Mon Jan 31 18:53:08 2022 +0100
+
+    atari: add -Wt<x> option to allow specifying the executable format
+    
+    This is useful to create aoutmint format binaries using vlink,
+    which have a symbol table that has no limit for the name length.
+
+M	compiler/globals.pas
+M	compiler/msg/errore.msg
+M	compiler/msgidx.inc
+M	compiler/msgtxt.inc
+M	compiler/options.pas
+M	compiler/systems/t_atari.pas
+
+******************************************************************************
+commit a2b66ea061fb9bbd311d26203525a11394840955
+Author: Thorsten Otto <admin@tho-otto.de>
+Date:   Mon Jan 31 18:20:50 2022 +0100
+
+    atari: implement environment functions
+
+A	packages/tosunits/examples/printenv.pas
+M	rtl/atari/sysutils.pp
+
+******************************************************************************
+commit fecb72fea3fe979c2875c8a94cfcc7da6f1249f9
+Author: Thorsten Otto <admin@tho-otto.de>
+Date:   Mon Jan 31 16:19:24 2022 +0100
+
+    atari: implement ARGV protocol for runtime startup
+
+M	rtl/atari/syspara.inc
+M	rtl/atari/system.pp
+
+******************************************************************************
+commit 41d4e181ea3674581bf32633bdc90376513a145c
+Author: Thorsten Otto <admin@tho-otto.de>
+Date:   Mon Jan 31 15:11:32 2022 +0100
+
+    atari: pass tos exe flags also to ld
+
+M	compiler/systems/t_atari.pas
+M	rtl/atari/system.pp
+
+******************************************************************************
 commit b2eaa4e701b6f3959a9ae94f116bdee092a56cb9
 Author: florian <florian@freepascal.org>
 Date:   Wed Feb 2 22:14:14 2022 +0100
