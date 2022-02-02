@@ -1,4 +1,25 @@
 ******************************************************************************
+commit b2eaa4e701b6f3959a9ae94f116bdee092a56cb9
+Author: florian <florian@freepascal.org>
+Date:   Wed Feb 2 22:14:14 2022 +0100
+
+      + some MIPS64 stuff added to the Makefiles
+
+M	compiler/Makefile
+M	compiler/Makefile.fpc
+M	utils/fpcm/fpcmake.inc
+M	utils/fpcm/fpcmake.ini
+
+******************************************************************************
+commit abac7a02bde9cd0bd582e7db028474708b194709
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Wed Feb 2 21:58:35 2022 +0100
+
+    * Fix pas2js issue 39212
+
+M	packages/fcl-js/src/jstree.pp
+
+******************************************************************************
 commit 4e51973dbaa26581b29ae72d0f345382443205aa
 Author: Yuri Silver <yus.serebrennikov@gmail.com>
 Date:   Tue Feb 1 22:36:16 2022 +0300
