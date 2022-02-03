@@ -1,4 +1,23 @@
 ******************************************************************************
+commit b2e553d3c403c2fc8994714ed998cc542c6eaaa1
+Author: florian <florian@freepascal.org>
+Date:   Thu Feb 3 23:15:11 2022 +0100
+
+      * mips64el compiler can be compiled
+
+M	compiler/mips/ncpuadd.pas
+M	compiler/mips/ncpumat.pas
+
+******************************************************************************
+commit c4ea01cf3d328f81311b2ae0118cf2c3944efe56
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Sun Jan 30 14:27:17 2022 +0000
+
+    Improved JccMov1JmpMov0Jmp -> SETcc optimisation
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
 commit 89e028285624ca1193c6502f15d971e48f650e3b
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Thu Feb 3 15:20:54 2022 +0100
