@@ -1,4 +1,32 @@
 ******************************************************************************
+commit 672c9b14669fd1432679d1012d3d841e01926984
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Thu Feb 3 11:11:06 2022 +0100
+
+    pastojs: debug log for pas2jslib
+
+M	packages/pastojs/src/pas2jslibcompiler.pp
+
+******************************************************************************
+commit 859755ac851477d31e6461242470e516b7b3129f
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Thu Feb 3 11:10:33 2022 +0100
+
+    pastojs: less hints
+
+M	packages/pastojs/src/pas2jsfileutilswin.inc
+M	packages/pastojs/src/pas2jslogger.pp
+
+******************************************************************************
+commit 5e082c9d9048aaa691b833c9ddbbd32413eb01a5
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Thu Feb 3 11:10:13 2022 +0100
+
+    pastojs: less hints
+
+M	packages/pastojs/src/pas2jscompiler.pp
+
+******************************************************************************
 commit f10fe0985a4b0b60dd03e70d6b150fe193785e05
 Author: Thorsten Otto <admin@tho-otto.de>
 Date:   Wed Feb 2 11:39:25 2022 +0100
