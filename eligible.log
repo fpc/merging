@@ -1,4 +1,63 @@
 ******************************************************************************
+commit b56e1b0cd8df80ec246d5939088b8cbcae7b5ec1
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Fri Feb 4 02:11:54 2022 +0100
+
+    * tosunits: add {$PACKRECORDS 2} everywhere, just in case
+
+M	packages/tosunits/src/aes.pas
+M	packages/tosunits/src/bios.pas
+M	packages/tosunits/src/gemdos.pas
+M	packages/tosunits/src/metados.pas
+M	packages/tosunits/src/vdi.pas
+M	packages/tosunits/src/xbios.pas
+
+******************************************************************************
+commit 5ff82c14cfe2e2b5110d9bdea4c202a20621b80b
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Fri Feb 4 02:11:09 2022 +0100
+
+    * tosunits: tabs 2 spaces fix in MetaDOS
+
+M	packages/tosunits/src/metados.pas
+
+******************************************************************************
+commit e8e1a6e874641ce7e8b637810efa9b7ed2c0c370
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Fri Feb 4 02:04:05 2022 +0100
+
+    * tosunits: remove the sysutils dependency from TOS unit, it's no longer needed
+
+M	packages/tosunits/src/tos.pas
+
+******************************************************************************
+commit 98f767efbfe742a749d61d7a598388be12ac3558
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Fri Feb 4 02:00:09 2022 +0100
+
+    * tosunits: do not use functions which convert between shortstring and a char array via an AnsiString in TOS unit
+
+M	packages/tosunits/src/tos.pas
+
+******************************************************************************
+commit ee5e89733f4fcc26b9389d4dc62b0c707ec8ddb1
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Fri Feb 4 01:57:52 2022 +0100
+
+    * tosunits: add some required defines about compiler mode, strings, alignment in the TOS unit
+
+M	packages/tosunits/src/tos.pas
+
+******************************************************************************
+commit 4a85ab9cb9785d31ab8d6f8808432010b1de8a34
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Fri Feb 4 01:52:21 2022 +0100
+
+    * tosunits: tabs 2 spaces fix in the TOS unit
+
+M	packages/tosunits/src/tos.pas
+
+******************************************************************************
 commit b2e553d3c403c2fc8994714ed998cc542c6eaaa1
 Author: florian <florian@freepascal.org>
 Date:   Thu Feb 3 23:15:11 2022 +0100
