@@ -1,4 +1,13 @@
 ******************************************************************************
+commit a9c67f22fd3c74fcdf352f11ebe861d0f526710a
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Fri Feb 4 22:51:55 2022 +0000
+
+    Add use of SD instruction in tcgmips.a_load_reg_ref method
+
+M	compiler/mips/cgcpu.pas
+
+******************************************************************************
 commit ed2b73eee6ce40f37f52ad0d09d4f30421b6646e
 Author: florian <florian@freepascal.org>
 Date:   Fri Feb 4 23:07:25 2022 +0100
