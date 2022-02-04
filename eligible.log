@@ -1,4 +1,14 @@
 ******************************************************************************
+commit ed2b73eee6ce40f37f52ad0d09d4f30421b6646e
+Author: florian <florian@freepascal.org>
+Date:   Fri Feb 4 23:07:25 2022 +0100
+
+      * sorted MIPS defines
+
+M	compiler/fpcdefs.inc
+M	compiler/options.pas
+
+******************************************************************************
 commit d54d787df2ad3bf28ab07220daa82e8f177d85a8
 Author: FPK <florian@freepascal.org>
 Date:   Fri Feb 4 20:02:21 2022 +0000
