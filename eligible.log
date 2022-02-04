@@ -1,4 +1,49 @@
 ******************************************************************************
+commit fbed0680487193cda590fde37f6fb35374a67d76
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Fri Feb 4 20:00:40 2022 +0000
+
+    Set float type information in system interface part for mips64 and mips64el CPUs
+
+M	rtl/inc/systemh.inc
+
+******************************************************************************
+commit 4db332fecf8a81392120f58d42e84142161ab7fd
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Fri Feb 4 19:59:26 2022 +0000
+
+    Add default macros inoptions unit for mips64 and mips64el CPUs
+
+M	compiler/options.pas
+
+******************************************************************************
+commit 65880e66313c1329c4079e2be1a4121baa83ff21
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Fri Feb 4 19:57:42 2022 +0000
+
+     Also set mipseb or mipsel macro for 64-bit mips CPU
+
+M	compiler/fpcdefs.inc
+
+******************************************************************************
+commit c2ffd51c63da98e9a38634a9440804b3a55083ed
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Fri Feb 4 18:32:49 2022 +0000
+
+    Fix compilation from 32-bit CPU by avoiding use of aint variable in for loop
+
+M	compiler/mips/cgcpu.pas
+
+******************************************************************************
+commit ea812d1c2ea7994f610b30cd459c0e235f46fdd3
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Fri Feb 4 18:31:53 2022 +0000
+
+     mips64 define must also set mips
+
+M	compiler/fpcdefs.inc
+
+******************************************************************************
 commit e8f9ffdb5e4a3155da37aa101185fee096093eea
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Fri Feb 4 15:59:38 2022 +0100
