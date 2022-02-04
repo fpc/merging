@@ -1,4 +1,13 @@
 ******************************************************************************
+commit d54d787df2ad3bf28ab07220daa82e8f177d85a8
+Author: FPK <florian@freepascal.org>
+Date:   Fri Feb 4 20:02:21 2022 +0000
+
+      + use linux tag in gitlab-ci.yml
+
+M	.gitlab-ci.yml
+
+******************************************************************************
 commit fbed0680487193cda590fde37f6fb35374a67d76
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Fri Feb 4 20:00:40 2022 +0000
