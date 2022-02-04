@@ -1,4 +1,24 @@
 ******************************************************************************
+commit 953d15a9390bba467699c0fcecd8f86bbc1128ef
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Fri Feb 4 15:14:34 2022 +0100
+
+    pastojs: consistent error message on custom js file not found, issue 38978
+
+M	packages/pastojs/src/pas2jscompiler.pp
+
+******************************************************************************
+commit 664a96c58489cbd7fc636a05f21ab7edd5d1ab84
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Fri Feb 4 14:48:05 2022 +0100
+
+    pastojs: fixed await() as aclass, issue 39028
+
+M	packages/fcl-passrc/src/pasresolver.pp
+M	packages/pastojs/src/fppas2js.pp
+M	packages/pastojs/tests/tcmodules.pas
+
+******************************************************************************
 commit 9bf4f9e2ce4c04a0227f722416f510a0706de4ce
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Fri Feb 4 13:09:56 2022 +0100
