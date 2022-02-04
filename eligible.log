@@ -1,4 +1,32 @@
 ******************************************************************************
+commit 9bf4f9e2ce4c04a0227f722416f510a0706de4ce
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Fri Feb 4 13:09:56 2022 +0100
+
+    fcl-passrc: fixed attributes of interface types issue 39198
+
+M	packages/fcl-passrc/src/pasresolver.pp
+M	packages/pastojs/tests/tcmodules.pas
+
+******************************************************************************
+commit 3713784e40f99bf14d41875267f6943541b994c5
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Fri Feb 4 12:48:50 2022 +0100
+
+    fcl-passrc: comment
+
+M	packages/fcl-passrc/src/pasresolver.pp
+
+******************************************************************************
+commit a4e2d7462665ffdcb27d9d25ec1b2acd58063887
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Fri Feb 4 12:22:40 2022 +0100
+
+    * rtl/atari: fix haltproc external name. apparently the atari target uses a different Cprefix in the compiler, so copy-pasting this stuff from the Amiga port don't work 1:1
+
+M	rtl/atari/system.pp
+
+******************************************************************************
 commit 93494bf8bf41ca0dc37b698bc2852cb82687b609
 Author: Karoly Balogh <karoly@freepascal.org>
 Date:   Fri Feb 4 11:58:16 2022 +0100
