@@ -1,4 +1,14 @@
 ******************************************************************************
+commit e8f9ffdb5e4a3155da37aa101185fee096093eea
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Fri Feb 4 15:59:38 2022 +0100
+
+    pastojs: calling constructor of nested external class, issue 38858
+
+M	packages/pastojs/src/fppas2js.pp
+M	packages/pastojs/tests/tcmodules.pas
+
+******************************************************************************
 commit 953d15a9390bba467699c0fcecd8f86bbc1128ef
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Fri Feb 4 15:14:34 2022 +0100
