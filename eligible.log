@@ -1,4 +1,23 @@
 ******************************************************************************
+commit 93494bf8bf41ca0dc37b698bc2852cb82687b609
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Fri Feb 4 11:58:16 2022 +0100
+
+    * rtl/atari: use the haltproc declared in the startup code instead of calling pterm in the system unit directly.
+
+M	rtl/atari/system.pp
+
+******************************************************************************
+commit b30a1bf447b75c7260eaafb1acaa7d008bdf48ea
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Fri Feb 4 11:43:49 2022 +0100
+
+    * rtl/atari: naming: gemdos_free is actually gemdos_mfree. no functional change.
+
+M	rtl/atari/gemdos.inc
+M	rtl/atari/sysheap.inc
+
+******************************************************************************
 commit b56e1b0cd8df80ec246d5939088b8cbcae7b5ec1
 Author: Karoly Balogh <karoly@freepascal.org>
 Date:   Fri Feb 4 02:11:54 2022 +0100
