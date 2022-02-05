@@ -1,4 +1,16 @@
 ******************************************************************************
+commit 83c18df69a79fe1035a0cf0bc0897c60d1af0293
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sat Feb 5 17:35:35 2022 +0100
+
+    ppc64: fix rtoc handling
+    
+    Save on procedure entry if it performs a call, rather than (only) before every
+    indirect call
+
+M	compiler/powerpc64/cgcpu.pas
+
+******************************************************************************
 commit 6dd5b63e2df7eca4f53868d2bf15cb3cd119c68f
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Sat Feb 5 16:58:08 2022 +0100
