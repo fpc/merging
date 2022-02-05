@@ -1,4 +1,13 @@
 ******************************************************************************
+commit bf86e57cfe0726d8b9fccc3eeba815b326a5fa3a
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Feb 5 16:17:39 2022 +0100
+
+    * Need pas.$libimports
+
+M	utils/pas2js/dist/rtl.js
+
+******************************************************************************
 commit a9c67f22fd3c74fcdf352f11ebe861d0f526710a
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Fri Feb 4 22:51:55 2022 +0000
