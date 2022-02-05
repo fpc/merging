@@ -1,4 +1,25 @@
 ******************************************************************************
+commit 6dd5b63e2df7eca4f53868d2bf15cb3cd119c68f
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Feb 5 16:58:08 2022 +0100
+
+    * Shorter version of libimports
+
+M	utils/pas2js/dist/rtl.js
+
+******************************************************************************
+commit 396b516a85a692b7b8d17c7c8e08c8a3167f40b8
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Feb 5 16:35:04 2022 +0100
+
+    * dts2pas added for next pas2js release
+
+M	packages/fcl-js/fpmake.pp
+A	utils/pas2js/dts2pas.pp
+M	utils/pas2js/fpmake.pp
+A	utils/pas2js/web.inc
+
+******************************************************************************
 commit bf86e57cfe0726d8b9fccc3eeba815b326a5fa3a
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Sat Feb 5 16:17:39 2022 +0100
