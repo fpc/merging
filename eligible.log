@@ -1,4 +1,31 @@
 ******************************************************************************
+commit c9ec57bd737aa00cc132ea3418d2f4ef07dd3fdf
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Sun Feb 6 00:05:37 2022 +0100
+
+    * rtl/atari: add the standalone softfpu units to the Atari build. this fixes the Atari native compiler build after recent changes
+
+M	rtl/atari/Makefile
+M	rtl/atari/Makefile.fpc
+M	rtl/atari/buildrtl.pp
+
+******************************************************************************
+commit e9e8013316ed280b268485762206dc9c3357359e
+Author: florian <florian@freepascal.org>
+Date:   Sat Feb 5 23:25:08 2022 +0100
+
+      + some basic stuff for MIPS64
+
+M	compiler/constexp.pas
+M	compiler/entfile.pas
+M	compiler/fpcdefs.inc
+M	compiler/globals.pas
+M	compiler/systems.inc
+M	compiler/systems.pas
+M	compiler/systems/i_linux.pas
+M	compiler/utils/ppuutils/ppudump.pp
+
+******************************************************************************
 commit 68b5ca633ca71a83c29b78cd3669bf15477cd94f
 Author: Jonas Maebe <jonas@freepascal.org>
 Date:   Sat Feb 5 21:34:00 2022 +0100
