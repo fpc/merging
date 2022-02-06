@@ -1,4 +1,16 @@
 ******************************************************************************
+commit 568d4de77ec6088683375ea8ad376972e03d3c95
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Sun Feb 6 16:30:04 2022 +0100
+
+    * aros64: recent developments hanged the library call ABI, lets try to follow it (aros64 is experimental)
+
+M	compiler/pdecsub.pas
+M	compiler/syscinfo.pas
+M	compiler/x86_64/cpupara.pas
+M	compiler/x86_64/nx64cal.pas
+
+******************************************************************************
 commit 4f3093657e11970b3b28f0d0bdcb7f39644e40ee
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Sun Feb 6 14:37:13 2022 +0100
