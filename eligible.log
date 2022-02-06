@@ -1,4 +1,16 @@
 ******************************************************************************
+commit 621dcbeaf2118a9cb7622db19bb5d859e0e22f9d
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Sun Feb 6 19:16:48 2022 +0100
+
+    pastojs: library added rtl.run, moved exports behind rtl.run, fixed export unit symbols
+
+M	packages/fcl-js/src/jstree.pp
+M	packages/fcl-passrc/src/pasuseanalyzer.pas
+M	packages/pastojs/src/fppas2js.pp
+M	packages/pastojs/tests/tcmodules.pas
+
+******************************************************************************
 commit 568d4de77ec6088683375ea8ad376972e03d3c95
 Author: Karoly Balogh <karoly@freepascal.org>
 Date:   Sun Feb 6 16:30:04 2022 +0100
