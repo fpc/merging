@@ -1,4 +1,22 @@
 ******************************************************************************
+commit a6d6f938878d5723e8dff5f81def5d2392b0a3b6
+Author: Florian Klämpfl <florian@freepascal.org>
+Date:   Sun Feb 6 20:15:00 2022 +0100
+
+    * revert accidently committed code
+
+M	compiler/constexp.pas
+
+******************************************************************************
+commit 9348f58e70085123db1c1051b6d481d2490e3ed3
+Author: Florian Klämpfl <florian@freepascal.org>
+Date:   Sun Feb 6 20:13:51 2022 +0100
+
+    * cosmetics
+
+M	compiler/mips/cgcpu.pas
+
+******************************************************************************
 commit 621dcbeaf2118a9cb7622db19bb5d859e0e22f9d
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Sun Feb 6 19:16:48 2022 +0100
