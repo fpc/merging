@@ -1,4 +1,18 @@
 ******************************************************************************
+commit 4f3093657e11970b3b28f0d0bdcb7f39644e40ee
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Sun Feb 6 14:37:13 2022 +0100
+
+    pastojs: export from units
+
+M	packages/fcl-passrc/src/pasresolveeval.pas
+M	packages/fcl-passrc/src/pasresolver.pp
+M	packages/fcl-passrc/src/pasuseanalyzer.pas
+M	packages/pastojs/src/fppas2js.pp
+M	packages/pastojs/tests/tcmodules.pas
+M	packages/pastojs/tests/tcprecompile.pas
+
+******************************************************************************
 commit a1f865ae45c1b007252224179ad591f2449b4e90
 Author: florian <florian@freepascal.org>
 Date:   Sun Feb 6 13:51:05 2022 +0100
