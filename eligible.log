@@ -1,4 +1,52 @@
 ******************************************************************************
+commit 629c1de460917ce2b278443e1befafaed8f5c1be
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sun Feb 6 20:50:00 2022 +0100
+
+    TOC handling: clean up
+    
+    Also fix on 32 bits PowerPC
+
+M	compiler/ncgvmt.pas
+M	compiler/powerpc/cgcpu.pas
+M	compiler/powerpc64/cgcpu.pas
+M	compiler/ppcgen/cgppc.pas
+M	compiler/systems.pas
+
+******************************************************************************
+commit d42f577a3ff2bd02b6ce709b6c89bf6fc08b32ae
+Author: florian <florian@freepascal.org>
+Date:   Sun Feb 6 21:55:46 2022 +0100
+
+      + additional skeleton files for mips64
+
+A	rtl/linux/mips64/sighndh.inc
+A	rtl/linux/mips64/stat.inc
+A	rtl/linux/mips64/syscall.inc
+A	rtl/linux/mips64/syscallh.inc
+A	rtl/linux/mips64/sysnr.inc
+A	rtl/linux/mips64el/sighndh.inc
+A	rtl/linux/mips64el/stat.inc
+A	rtl/linux/mips64el/syscall.inc
+A	rtl/linux/mips64el/syscallh.inc
+A	rtl/linux/mips64el/sysnr.inc
+A	rtl/mips64/math.inc
+A	rtl/mips64/setjumph.inc
+A	rtl/mips64el/setjumph.inc
+
+******************************************************************************
+commit 28964711d7941d466e54261a7581241a97e66a1e
+Author: florian <florian@freepascal.org>
+Date:   Sun Feb 6 21:52:51 2022 +0100
+
+      * sorted defines in the compiler: mips64 is defined on all 64 Bit mips platforms, mips64el for little endian, misp64eb for big endian
+
+M	compiler/fpcdefs.inc
+M	compiler/options.pas
+M	compiler/systems.pas
+M	compiler/systems/t_linux.pas
+
+******************************************************************************
 commit f56b6728a522fec1494b28f36aa18d89db1e97b2
 Author: florian <florian@freepascal.org>
 Date:   Sun Feb 6 20:32:15 2022 +0100
