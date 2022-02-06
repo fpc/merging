@@ -1,4 +1,13 @@
 ******************************************************************************
+commit bd82ad0d4166303b6ff2b0f43ba66d5fc7edebe1
+Author: florian <florian@freepascal.org>
+Date:   Sun Feb 6 10:50:35 2022 +0100
+
+      * register MIPS64 targets properly
+
+M	compiler/systems/t_linux.pas
+
+******************************************************************************
 commit c9ec57bd737aa00cc132ea3418d2f4ef07dd3fdf
 Author: Karoly Balogh <karoly@freepascal.org>
 Date:   Sun Feb 6 00:05:37 2022 +0100
