@@ -1,4 +1,34 @@
 ******************************************************************************
+commit a1f865ae45c1b007252224179ad591f2449b4e90
+Author: florian <florian@freepascal.org>
+Date:   Sun Feb 6 13:51:05 2022 +0100
+
+      * updated
+
+M	utils/fpcm/revision.inc
+
+******************************************************************************
+commit c1ef0944572b0a38dcc30f9555cc8b78913896c7
+Author: florian <florian@freepascal.org>
+Date:   Sun Feb 6 13:50:32 2022 +0100
+
+      + startup code skeleton for MIPS64
+
+M	compiler/systems.pas
+M	rtl/linux/Makefile
+M	rtl/linux/Makefile.fpc
+A	rtl/linux/mips64/si_c.inc
+A	rtl/linux/mips64/si_dll.inc
+A	rtl/linux/mips64/si_g.inc
+A	rtl/linux/mips64/si_prc.inc
+A	rtl/linux/mips64el/si_c.inc
+A	rtl/linux/mips64el/si_dll.inc
+A	rtl/linux/mips64el/si_g.inc
+A	rtl/linux/mips64el/si_prc.inc
+A	rtl/mips64el/makefile.cpu
+A	rtl/mips64el/mips64el.inc
+
+******************************************************************************
 commit bd82ad0d4166303b6ff2b0f43ba66d5fc7edebe1
 Author: florian <florian@freepascal.org>
 Date:   Sun Feb 6 10:50:35 2022 +0100
