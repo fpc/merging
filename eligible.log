@@ -1,4 +1,22 @@
 ******************************************************************************
+commit c8403ad49ed815e53ab700f783b9c7e371dc4831
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Mon Feb 7 16:30:28 2022 +0100
+
+    * Test for const list
+
+M	packages/fcl-js/tests/tcwriter.pp
+
+******************************************************************************
+commit cb03124cc5366b25f539bdbc2f76e1ca25806234
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Mon Feb 7 16:30:06 2022 +0100
+
+    * Added DetectBOM to TCSVDocument
+
+M	packages/fcl-base/src/csvdocument.pp
+
+******************************************************************************
 commit e5ac07db13024df5941957bedf2dbc62578925a8
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Mon Feb 7 14:37:44 2022 +0100
