@@ -1,4 +1,26 @@
 ******************************************************************************
+commit e5ac07db13024df5941957bedf2dbc62578925a8
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Mon Feb 7 14:37:44 2022 +0100
+
+    pastojs: started test TPas2JSUseAnalyzer
+
+M	packages/fcl-passrc/tests/tcbaseparser.pas
+M	packages/fcl-passrc/tests/tcexprparser.pas
+M	packages/fcl-passrc/tests/tcresolver.pas
+M	packages/fcl-passrc/tests/tcstatements.pas
+M	packages/fcl-passrc/tests/tcuseanalyzer.pas
+M	packages/fcl-passrc/tests/testpassrc.lpr
+A	packages/fcl-passrc/tests/testpasutils.pas
+M	packages/pastojs/tests/tcfiler.pas
+M	packages/pastojs/tests/tcmodules.pas
+M	packages/pastojs/tests/tcoptimizations.pas
+A	packages/pastojs/tests/tcpas2jsanalyzer.pas
+M	packages/pastojs/tests/tcsrcmap.pas
+M	packages/pastojs/tests/testpas2js.lpi
+M	packages/pastojs/tests/testpas2js.pp
+
+******************************************************************************
 commit dc7a8fa9e5cd4851a95e896be337f88c7dfcddfd
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Mon Feb 7 12:46:13 2022 +0100
