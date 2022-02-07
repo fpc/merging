@@ -1,4 +1,26 @@
 ******************************************************************************
+commit 540fd5e58d00e1a70ae02ff74ca199b4f6473599
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Mon Feb 7 21:44:46 2022 +0100
+
+    pastojs: export variable
+
+M	packages/pastojs/src/fppas2js.pp
+M	packages/pastojs/tests/tcmodules.pas
+
+******************************************************************************
+commit 79cf1dd9cfe47b43d7c057709006b0206e8a0079
+Author: florian <florian@freepascal.org>
+Date:   Mon Feb 7 21:21:08 2022 +0100
+
+    + store also ecx and edx after cpuid call with eax=7
+      + test VNNI and BIGALG instructions
+
+M	rtl/i386/cpu.pp
+M	rtl/x86_64/cpu.pp
+M	tests/test/units/cpu/tcpu1.pp
+
+******************************************************************************
 commit 1e779014523bf774664e738d2395223b5caa85ba
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Mon Feb 7 21:00:20 2022 +0100
