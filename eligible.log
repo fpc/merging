@@ -1,4 +1,26 @@
 ******************************************************************************
+commit 1e779014523bf774664e738d2395223b5caa85ba
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Mon Feb 7 21:00:20 2022 +0100
+
+    pastojs: changed library exports to export const statements
+
+M	packages/pastojs/src/fppas2js.pp
+M	packages/pastojs/tests/tcmodules.pas
+
+******************************************************************************
+commit 2ee45c7ed8506abe59a2031152a052baf819ce5c
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Mon Feb 7 20:30:35 2022 +0100
+
+    PowerPC32 SysV: fix abis_ppc_toc declaration
+    
+    No TOC on those platforms (as mentioned in tcgppcgen.get_rtoc_offset), so also
+    exclude from this constant
+
+M	compiler/systems.pas
+
+******************************************************************************
 commit c8403ad49ed815e53ab700f783b9c7e371dc4831
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Mon Feb 7 16:30:28 2022 +0100
