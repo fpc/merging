@@ -1,4 +1,37 @@
 ******************************************************************************
+commit c0c6ce5422bb7ba906f78aeb2b3119fbd6498f67
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Tue Feb 8 22:13:28 2022 +0100
+
+    pastojs: add rtl.run() on platform module
+
+M	packages/pastojs/src/fppas2js.pp
+M	packages/pastojs/src/pas2jscompiler.pp
+M	packages/pastojs/tests/tcunitsearch.pas
+
+******************************************************************************
+commit fe39f9ca216b22ca75bf1f065b3a6bdd5fcfd491
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Mon Feb 7 23:10:53 2022 +0000
+
+    Fixed bug on x86 platforms where the stack pointer was not allocated if it was different to the frame pointer
+
+M	compiler/i386/cgcpu.pas
+M	compiler/x86/cgx86.pas
+M	compiler/x86_64/cgcpu.pas
+
+******************************************************************************
+commit d31e219510b80dca9f0c676e5298ccdc2a935255
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Tue Feb 8 21:39:15 2022 +0100
+
+    pastojs: fixed find generic proc overload without params, issue 38796
+
+M	packages/fcl-passrc/src/pasresolver.pp
+M	packages/fcl-passrc/tests/tcgenerics.pas
+M	packages/pastojs/tests/tcgenerics.pas
+
+******************************************************************************
 commit 473db46e083a34106ca4bcd26b3681407576dd5f
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Tue Feb 8 18:01:31 2022 +0100
