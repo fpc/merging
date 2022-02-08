@@ -1,4 +1,38 @@
 ******************************************************************************
+commit e3e8cb5b583e4e1aa9c24c0bb942dde9490dd341
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Tue Feb 8 13:36:49 2022 +0100
+
+    pastojs: mark record fields as used when passing record to a jsvalue parameter
+
+M	packages/fcl-passrc/src/pasuseanalyzer.pas
+
+******************************************************************************
+commit 9387f87db917ae23a26d56050887ce3793e11eaa
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Tue Feb 8 13:33:52 2022 +0100
+
+    pastojs: mark record fields as used when passing record to a jsvalue parameter
+
+M	packages/fcl-passrc/src/pasresolver.pp
+M	packages/fcl-passrc/src/pasuseanalyzer.pas
+M	packages/pastojs/src/fppas2js.pp
+M	packages/pastojs/src/pas2jsfiler.pp
+M	packages/pastojs/tests/tcconverter.pas
+M	packages/pastojs/tests/tcmodules.pas
+M	packages/pastojs/tests/tcpas2jsanalyzer.pas
+
+******************************************************************************
+commit 952eee5ed0e4d65fd7a7ea52b9f3025976763503
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Tue Feb 8 13:33:33 2022 +0100
+
+    pas2js: less hints
+
+M	utils/pas2js/dts2pas.pp
+M	utils/pas2js/makestub.pp
+
+******************************************************************************
 commit 3c5d6e72240dbb968f42f50c8fe7eb0783a0c16a
 Author: Karoly Balogh <karoly@freepascal.org>
 Date:   Tue Feb 8 04:42:30 2022 +0100
