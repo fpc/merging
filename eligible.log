@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 3c5d6e72240dbb968f42f50c8fe7eb0783a0c16a
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Tue Feb 8 04:42:30 2022 +0100
+
+    * m68k: implement basic support for interlocked functions using a TAS based global spinlock on CPUs which don't have the CAS instruction
+
+M	rtl/m68k/m68k.inc
+
+******************************************************************************
 commit 077a3f1892da9a3f493c321f905825a02b82968b
 Author: Karoly Balogh <karoly@freepascal.org>
 Date:   Tue Feb 8 03:04:28 2022 +0100
