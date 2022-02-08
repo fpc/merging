@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 077a3f1892da9a3f493c321f905825a02b82968b
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Tue Feb 8 03:04:28 2022 +0100
+
+    * m68k: don't attempt to copy less than 1 byte in g_concatcopy, this fixes tdfa7.pp on 68000 and removes some superfluous address processing on 68020+ in the same test
+
+M	compiler/m68k/cgcpu.pas
+
+******************************************************************************
 commit 8f083f6342ab8d193d5dc0ae2205bad4b1d7bab9
 Author: Karoly Balogh <karoly@freepascal.org>
 Date:   Tue Feb 8 01:26:13 2022 +0100
