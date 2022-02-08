@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 8f083f6342ab8d193d5dc0ae2205bad4b1d7bab9
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Tue Feb 8 01:26:13 2022 +0100
+
+    * m68k: do not generate unnecessary unaligned load sequences for byte loads into registers, this fixes tcnvint1 test on plain 68000
+
+M	compiler/m68k/cgcpu.pas
+
+******************************************************************************
 commit c42b8c43bd8725ca5f479ba02124f9bdb2e9670b
 Author: florian <florian@freepascal.org>
 Date:   Mon Feb 7 23:04:07 2022 +0100
