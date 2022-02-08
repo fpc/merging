@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 473db46e083a34106ca4bcd26b3681407576dd5f
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Tue Feb 8 18:01:31 2022 +0100
+
+    pastojs: do not write rtl.run for platform module
+
+M	packages/pastojs/src/pas2jscompiler.pp
+
+******************************************************************************
 commit e3e8cb5b583e4e1aa9c24c0bb942dde9490dd341
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Tue Feb 8 13:36:49 2022 +0100
