@@ -1,4 +1,33 @@
 ******************************************************************************
+commit bbece3e6680dd7a7a9454b1f55db125619f8e639
+Author: florian <florian@freepascal.org>
+Date:   Tue Feb 8 23:08:32 2022 +0100
+
+      * MIPS64 can
+      * MIPS64 does not need separate 64 bit code path for ordinals
+
+M	compiler/mips/cpupara.pas
+M	compiler/ncgadd.pas
+
+******************************************************************************
+commit 308bc294654f955b357c5e71ad9a7fa9e45d39ad
+Author: florian <florian@freepascal.org>
+Date:   Tue Feb 8 23:08:13 2022 +0100
+
+      * setting of MIPS64(EL) in system.inc fixed
+
+M	rtl/inc/system.inc
+
+******************************************************************************
+commit af49e3dc9f1e35a1d036e119934985b5e5fe1e3a
+Author: florian <florian@freepascal.org>
+Date:   Tue Feb 8 23:04:43 2022 +0100
+
+      + skeleton
+
+A	rtl/mips64/mips64.inc
+
+******************************************************************************
 commit c0c6ce5422bb7ba906f78aeb2b3119fbd6498f67
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Tue Feb 8 22:13:28 2022 +0100
