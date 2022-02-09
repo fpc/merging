@@ -1,4 +1,14 @@
 ******************************************************************************
+commit ba51494bd7d9f5552c91918ea01f3c9e02152149
+Author: florian <florian@freepascal.org>
+Date:   Wed Feb 9 22:59:36 2022 +0100
+
+      * more MIPS64 fixes
+
+M	compiler/mips/cgcpu.pas
+A	rtl/mips64/cpuh.inc
+
+******************************************************************************
 commit 8d1989fc9a261715c0188be4902a3255cfda361d
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Wed Feb 9 22:05:41 2022 +0100
