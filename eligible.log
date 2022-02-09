@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 8d1989fc9a261715c0188be4902a3255cfda361d
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Wed Feb 9 22:05:41 2022 +0100
+
+    fcl-passrc: fixed generic method with Self do
+
+M	packages/fcl-passrc/src/pasresolver.pp
+M	packages/pastojs/tests/tcgenerics.pas
+
+******************************************************************************
 commit 3827889e61939ab1fa387cf5679bf239fd0715fe
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Wed Feb 9 13:02:04 2022 +0100
