@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 3827889e61939ab1fa387cf5679bf239fd0715fe
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Wed Feb 9 13:02:04 2022 +0100
+
+    * Add gzStream routines, patch by Dokkie8844. Fix issue #39654
+
+A	packages/paszlib/examples/testgzstream.pp
+M	packages/paszlib/src/zstream.pp
+
+******************************************************************************
 commit bbece3e6680dd7a7a9454b1f55db125619f8e639
 Author: florian <florian@freepascal.org>
 Date:   Tue Feb 8 23:08:32 2022 +0100
