@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 30e24e48c28dc947f2721e9e524fe72894a07776
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Thu Feb 10 22:10:58 2022 +0100
+
+    fcl-passrc: UseTypeInfo of record and class: skip generic elements
+
+M	packages/fcl-passrc/src/pasuseanalyzer.pas
+
+******************************************************************************
 commit 7b62186b9c9efddcb0114df889d5830d8634b0bd
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Thu Feb 10 14:13:30 2022 +0100
