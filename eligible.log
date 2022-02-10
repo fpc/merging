@@ -1,4 +1,23 @@
 ******************************************************************************
+commit 67d80d414b5d1e9b8cad34ce56f984c6c51de00d
+Author: florian <florian@freepascal.org>
+Date:   Thu Feb 10 22:42:10 2022 +0100
+
+      * do not copy parameters onto the stack using FPU registers if the type is
+        actually handled by the MM unit, resolves #39567
+
+M	compiler/hlcg2ll.pas
+
+******************************************************************************
+commit a8d19553b9151b5e13e7f07dbe71bcee9037eef5
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Thu Feb 10 22:27:01 2022 +0100
+
+    fcl-passrc: useanalyzer: skip not used record methods for typeinfo
+
+M	packages/fcl-passrc/src/pasuseanalyzer.pas
+
+******************************************************************************
 commit 30e24e48c28dc947f2721e9e524fe72894a07776
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Thu Feb 10 22:10:58 2022 +0100
