@@ -1,4 +1,23 @@
 ******************************************************************************
+commit 7b62186b9c9efddcb0114df889d5830d8634b0bd
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Thu Feb 10 14:13:30 2022 +0100
+
+    * Normalize route when checking for duplicate routes. Fix issue #39570
+
+M	packages/fcl-web/src/base/httproute.pp
+
+******************************************************************************
+commit 72f852f653b73edfc14807bf971aefbd2782ed55
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Thu Feb 10 14:02:46 2022 +0100
+
+    fcl-passrc: fixed method combining overload and override
+
+M	packages/fcl-passrc/src/pasresolver.pp
+M	packages/fcl-passrc/tests/tcresolver.pas
+
+******************************************************************************
 commit 2ec382e68cce7f7fe90c3b4c88b15af79c947d99
 Author: Ionut Stoica <stoica.ionut@gmail.com>
 Date:   Thu Feb 10 09:19:50 2022 +0100
