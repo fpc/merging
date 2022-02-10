@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 2ec382e68cce7f7fe90c3b4c88b15af79c947d99
+Author: Ionut Stoica <stoica.ionut@gmail.com>
+Date:   Thu Feb 10 09:19:50 2022 +0100
+
+    Fix leak due to bad merge or rebase
+
+M	packages/fcl-web/src/base/fphttpclient.pp
+
+******************************************************************************
 commit ba51494bd7d9f5552c91918ea01f3c9e02152149
 Author: florian <florian@freepascal.org>
 Date:   Wed Feb 9 22:59:36 2022 +0100
