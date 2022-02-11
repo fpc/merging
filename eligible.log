@@ -1,4 +1,51 @@
 ******************************************************************************
+commit 85ce54f83f9c0c4ae3cec62fd16238bf3acacea5
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Fri Feb 11 22:19:32 2022 +0000
+
+     Add newer Compiler targets: riscv32/riscv64/xtena/wasm32 and z80
+
+M	packages/ide/Makefile
+M	packages/ide/Makefile.fpc
+
+******************************************************************************
+commit 2d1e420e54226cd68ab647d416db84f5fceee2af
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Fri Feb 11 22:18:27 2022 +0000
+
+     Adding common directory for riscv32/64 and -dNOOPT for wasm32
+
+M	packages/ide/compiler/Makefile
+M	packages/ide/compiler/Makefile.fpc
+
+******************************************************************************
+commit 751417b6852836b6dd067a4661b5a7fe92612a9c
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Fri Feb 11 22:17:10 2022 +0000
+
+    wasm32 compiler target required -dNOOPT option
+
+M	packages/ide/fpmake.pp
+
+******************************************************************************
+commit c9e8bfd118dd79985f4ee8f42cae590c5268ca12
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Wed Jan 26 12:23:18 2022 +0000
+
+    Add internalerror if ogwasm tries to write unset Func/Global or TagIndex of TWasmObjSymbol
+
+M	compiler/ogwasm.pas
+
+******************************************************************************
+commit 38706a17134fb8307724dee4fa8fbb1dfbc523a8
+Author: florian <florian@freepascal.org>
+Date:   Fri Feb 11 23:07:18 2022 +0100
+
+    * fix declocked(longint) for aarch64 without LSE, resolves #39569
+
+M	rtl/aarch64/aarch64.inc
+
+******************************************************************************
 commit 12ef9a4a223ec54c16cbe96a8107c7aa26380cbe
 Author: Karoly Balogh <karoly@freepascal.org>
 Date:   Wed Feb 9 09:20:02 2022 +0100
