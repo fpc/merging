@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 12ef9a4a223ec54c16cbe96a8107c7aa26380cbe
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Wed Feb 9 09:20:02 2022 +0100
+
+    * m68k: some CPUs don't have TAS either (for example some CF)
+
+M	rtl/m68k/m68k.inc
+
+******************************************************************************
 commit 67d80d414b5d1e9b8cad34ce56f984c6c51de00d
 Author: florian <florian@freepascal.org>
 Date:   Thu Feb 10 22:42:10 2022 +0100
