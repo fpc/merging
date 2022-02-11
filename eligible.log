@@ -1,4 +1,265 @@
 ******************************************************************************
+commit 784d2146c54471cb666248d5554b59d7a17a6cf7
+Author: Thorsten Otto <admin@tho-otto.de>
+Date:   Fri Feb 11 23:33:33 2022 +0100
+
+    tosunits: add a missing copyright header
+
+M	packages/tosunits/src/aestypes.inc
+M	packages/tosunits/src/vditypes.inc
+
+******************************************************************************
+commit ac8e64c93abbf349227e186ef02d31056b279e01
+Author: Thorsten Otto <admin@tho-otto.de>
+Date:   Fri Feb 11 08:04:45 2022 +0100
+
+    tosunits: add a missing copyright header
+
+M	packages/tosunits/src/nf_ops.pas
+
+******************************************************************************
+commit ef8ad5446026ca623a4daa9e5e7af5f5783aa724
+Author: Thorsten Otto <admin@tho-otto.de>
+Date:   Wed Feb 9 09:36:17 2022 +0100
+
+    Add *.ttp to .gitignore
+
+M	.gitignore
+
+******************************************************************************
+commit 454365325ecdaac85fab704f6cf2d459af79fcce
+Author: Thorsten Otto <admin@tho-otto.de>
+Date:   Wed Feb 9 04:49:07 2022 +0100
+
+    rtl-extra: fix printer device
+
+M	packages/rtl-extra/src/atari/printer.pp
+
+******************************************************************************
+commit a57a2b6cbefa2e60c69256f3a45796525d0501c3
+Author: Thorsten Otto <admin@tho-otto.de>
+Date:   Tue Feb 8 15:10:38 2022 +0100
+
+    tosunits: fix a bug in menu_tnormal
+
+M	packages/tosunits/src/gem.pas
+
+******************************************************************************
+commit 704a5a50816d2fca65740f774e5c0bbaa7af9a38
+Author: Thorsten Otto <admin@tho-otto.de>
+Date:   Tue Feb 8 14:54:36 2022 +0100
+
+    tosunits: fix a bug in vsl_width
+
+M	packages/tosunits/src/vdi.pas
+
+******************************************************************************
+commit d06ab24389054cd342b82275168d5e9d8ee200ee
+Author: Thorsten Otto <admin@tho-otto.de>
+Date:   Tue Feb 8 14:49:50 2022 +0100
+
+    tosunits: fix a bug in objc_find
+
+M	packages/tosunits/src/gem.pas
+
+******************************************************************************
+commit 0ad2150457a100fbef2476378f3ac56a33858fd2
+Author: Thorsten Otto <admin@tho-otto.de>
+Date:   Tue Feb 8 09:58:07 2022 +0100
+
+    tosunits: simplify some pointer assignments
+
+M	packages/tosunits/src/aes.pas
+
+******************************************************************************
+commit 13ed9a2277918d2da5c9a008cdf4b7f4c78ba309
+Author: Thorsten Otto <admin@tho-otto.de>
+Date:   Mon Feb 7 14:12:02 2022 +0100
+
+    tosunits: fix a bug in vq_extnd
+
+M	packages/tosunits/src/vdi.pas
+
+******************************************************************************
+commit 0e4e4b89ab7acf1bed1b2ee7637de9580042a8bf
+Author: Thorsten Otto <admin@tho-otto.de>
+Date:   Mon Feb 7 14:11:40 2022 +0100
+
+    tosunits: remove some unused locals
+
+M	packages/tosunits/src/gem.pas
+
+******************************************************************************
+commit 6200af404d8d8baa1935ba8780dc9893075d9307
+Author: Thorsten Otto <admin@tho-otto.de>
+Date:   Mon Feb 7 13:33:44 2022 +0100
+
+    tosunits: declare some var parameters as out, to avoid warnings
+
+M	packages/tosunits/src/gemdos.pas
+M	packages/tosunits/src/metados.pas
+M	packages/tosunits/src/tos.pas
+
+******************************************************************************
+commit 2b829480e14abf2a8dacf1013ff796acee90b752
+Author: Thorsten Otto <admin@tho-otto.de>
+Date:   Mon Feb 7 13:32:14 2022 +0100
+
+    tosunits: provide alternative names for members of GRECT
+
+M	packages/tosunits/src/aestypes.inc
+
+******************************************************************************
+commit b4cc4f851becc27ccb86229a5924d38b80e1253c
+Author: Thorsten Otto <admin@tho-otto.de>
+Date:   Sun Feb 6 18:15:34 2022 +0100
+
+    rtl-extra: add printer unit for atari
+
+M	packages/rtl-extra/fpmake.pp
+A	packages/rtl-extra/src/atari/printer.pp
+
+******************************************************************************
+commit a79aa8727276de8db173d67839e78a3df195a357
+Author: Thorsten Otto <admin@tho-otto.de>
+Date:   Sun Feb 6 18:14:05 2022 +0100
+
+    atari: add nf_ops unit to access NatFeats from emulators
+
+M	packages/tosunits/fpmake.pp
+A	packages/tosunits/src/nf_ops.pas
+
+******************************************************************************
+commit 46ab8d79a28979dd94e0a36eece2420e57c67ceb
+Author: Thorsten Otto <admin@tho-otto.de>
+Date:   Sun Feb 6 17:29:28 2022 +0100
+
+    rtl/atari: fix readln from console
+
+M	rtl/atari/sysfile.inc
+M	rtl/atari/system.pp
+
+******************************************************************************
+commit 685f72ca2f5682d153800a11dc5d25acbe97e455
+Author: Thorsten Otto <admin@tho-otto.de>
+Date:   Sun Feb 6 16:43:00 2022 +0100
+
+    atari/sysos: use the symbolic names for error numbers
+
+M	rtl/atari/gemdos.inc
+M	rtl/atari/sysos.inc
+
+******************************************************************************
+commit b31d5386ee2cf470763357b25b6d7f6d5f0d1710
+Author: Thorsten Otto <admin@tho-otto.de>
+Date:   Sun Feb 6 13:15:43 2022 +0100
+
+    atari: new unit gemcommon was missing from fpmake
+
+M	packages/tosunits/fpmake.pp
+
+******************************************************************************
+commit 22b3268ac75ebf44e095572f57af6fd97576bae1
+Author: Thorsten Otto <admin@tho-otto.de>
+Date:   Sat Feb 5 17:33:54 2022 +0100
+
+    rtl/atari: implement environment functions also in dos unit
+
+M	rtl/atari/dos.pp
+
+******************************************************************************
+commit 17a90f9521420593069df50ca2c0eaebcfd44b0d
+Author: Thorsten Otto <admin@tho-otto.de>
+Date:   Sat Feb 5 16:43:56 2022 +0100
+
+    atari: fix external linkage of graf_movebox/graf_rubberbox
+
+M	packages/tosunits/src/aes.pas
+
+******************************************************************************
+commit 40adddea3477b3c7960ea0c25779f3b8312ad9ad
+Author: Thorsten Otto <admin@tho-otto.de>
+Date:   Sat Feb 5 14:26:11 2022 +0100
+
+    atari: make control array of gem_pbb PurePascal compatible
+    
+    Applications expect it to be an array, not a record.
+
+M	packages/tosunits/src/gem.pas
+
+******************************************************************************
+commit 43e92ef2b78195384c25202582141f91813f473a
+Author: Thorsten Otto <admin@tho-otto.de>
+Date:   Sat Feb 5 14:23:38 2022 +0100
+
+    atari: add metados functions to tos interface
+
+M	packages/tosunits/src/tos.pas
+
+******************************************************************************
+commit 904c59fbfffb65cddd60d892d0e49489773490da
+Author: Thorsten Otto <admin@tho-otto.de>
+Date:   Sat Feb 5 13:13:48 2022 +0100
+
+    tosunits: variable basepage needs to be visible by applications
+
+M	packages/tosunits/src/tos.pas
+
+******************************************************************************
+commit d3c87f9c584a23591643e3a2dbe234a73ef3c3a3
+Author: Thorsten Otto <admin@tho-otto.de>
+Date:   Thu Feb 3 19:52:28 2022 +0100
+
+    atari: add some more AES/VDI functions
+
+M	packages/tosunits/src/aes.pas
+A	packages/tosunits/src/aestypes.inc
+M	packages/tosunits/src/gem.pas
+A	packages/tosunits/src/gemcommon.pas
+M	packages/tosunits/src/vdi.pas
+A	packages/tosunits/src/vditypes.inc
+
+******************************************************************************
+commit a237aaa1f5c4938272e7424dcc806d16d78ea78f
+Author: Thorsten Otto <admin@tho-otto.de>
+Date:   Thu Feb 3 07:11:22 2022 +0100
+
+    rtl/atari: check for application/acc at startup
+
+M	rtl/atari/si_prc.pp
+M	rtl/atari/system.pp
+
+******************************************************************************
+commit b4d8f2d1b6164755fd3e7777bc02d9a8cbbecc0a
+Author: Thorsten Otto <admin@tho-otto.de>
+Date:   Thu Feb 3 07:09:35 2022 +0100
+
+    atari: add missing type LongIntFunc to tos unit
+
+M	packages/tosunits/src/tos.pas
+
+******************************************************************************
+commit b66802a14e9851e542d4483b250555fdd0946f77
+Author: Thorsten Otto <admin@tho-otto.de>
+Date:   Wed Feb 2 12:06:25 2022 +0100
+
+    atari: add missing AES/VDI definitions and functions
+
+M	packages/tosunits/fpmake.pp
+M	packages/tosunits/src/aes.pas
+A	packages/tosunits/src/gem.pas
+M	packages/tosunits/src/vdi.pas
+
+******************************************************************************
+commit 9abd81efa5e384ec0a11901a1fb67b79a0f78378
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Fri Feb 11 22:34:32 2022 +0000
+
+    Set correct exetension for cross-IDE
+
+M	packages/ide/fpmake.pp
+
+******************************************************************************
 commit 85ce54f83f9c0c4ae3cec62fd16238bf3acacea5
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Fri Feb 11 22:19:32 2022 +0000
