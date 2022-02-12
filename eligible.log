@@ -1,4 +1,23 @@
 ******************************************************************************
+commit 9f22623459866915d8769bd2e6cd9c8a75357c6e
+Author: Marcus Sackrow <alb42@web.de>
+Date:   Sun Feb 13 00:02:25 2022 +0100
+
+    Amiga: Fix for unable to type in FV applications for Amiga-systems
+
+M	packages/fv/src/drivers.inc
+M	packages/rtl-console/src/amicommon/keyboard.pp
+
+******************************************************************************
+commit b27335e8a5fee1d8de272ae83a0405928b187e7a
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Sat Feb 12 23:54:51 2022 +0100
+
+    tosunits: fix the package build for Coldfire
+
+M	packages/tosunits/src/vdi.pas
+
+******************************************************************************
 commit 39836e2d37ae11f4052cfa527394994d61495a44
 Author: florian <florian@freepascal.org>
 Date:   Sat Feb 12 23:18:25 2022 +0100
