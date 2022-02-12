@@ -1,4 +1,17 @@
 ******************************************************************************
+commit 2c0f10d9887b676545b05e06e2c29a07d74d8fae
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Wed Jan 26 19:45:22 2022 +0200
+
+    * when adding WebAssembly object info, traverse through current_module.used_units,
+      as well as the usedunits global. This resolves #39543
+
+M	compiler/wasm32/nwasmutil.pas
+A	tests/webtbs/tw39543.pp
+A	tests/webtbs/uw39543a.pp
+A	tests/webtbs/uw39543b.pp
+
+******************************************************************************
 commit 1fce64fa0a780d4b0753eae79c2ae172ca8fb58e
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Fri Feb 11 23:26:57 2022 +0000
