@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 6df6e4f7ff16ea4ed9db2a1215cd2b2f262a0331
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sat Feb 12 13:13:12 2022 +0200
+
+    * Amiga compilation fix after merge of unicodekvm branch
+
+M	packages/rtl-console/src/amicommon/video.pp
+
+******************************************************************************
 commit 0b8a0fb495ded3cc71e4a44c6174216922ebcd36
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Sat Feb 12 10:09:17 2022 +0200
