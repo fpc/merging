@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 1fce64fa0a780d4b0753eae79c2ae172ca8fb58e
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Fri Feb 11 23:26:57 2022 +0000
+
+     Disable range and overflow checks inside detect_linuxvcs procedure
+
+M	rtl/linux/linuxvcs.pp
+
+******************************************************************************
 commit 784d2146c54471cb666248d5554b59d7a17a6cf7
 Author: Thorsten Otto <admin@tho-otto.de>
 Date:   Fri Feb 11 23:33:33 2022 +0100
