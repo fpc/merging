@@ -1,4 +1,42 @@
 ******************************************************************************
+commit dfcbdd9aa64824a51376482bce581ce36049401e
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Sat Feb 12 21:21:54 2022 +0100
+
+    pastojs: less hints
+
+M	packages/pastojs/tests/tcconverter.pas
+
+******************************************************************************
+commit 151c7ba163b2fac5b44e05a07b79ef3d1e4382d4
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Sat Feb 12 21:14:53 2022 +0100
+
+    fcl-passrc: fixed resourcestring
+
+M	packages/fcl-passrc/src/pasresolveeval.pas
+M	packages/fcl-passrc/tests/tcresolver.pas
+M	packages/pastojs/tests/tcmodules.pas
+
+******************************************************************************
+commit 7be86f4635f6953a65462ffa7bfa602cceff8d71
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Sat Feb 12 21:14:30 2022 +0100
+
+    fcl-passrc: fixed publish all members for typeinfo
+
+M	packages/fcl-passrc/src/pasuseanalyzer.pas
+
+******************************************************************************
+commit 925dc4bc7562394c8ea56c3b597c33b0051c551e
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Sat Feb 12 21:13:41 2022 +0100
+
+    fcl-js: fixed compile with pas2js
+
+M	packages/fcl-js/src/jstree.pp
+
+******************************************************************************
 commit 51ce1e883f4112067b5d3d3910eab0a1cf5ce657
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Sat Feb 12 19:40:57 2022 +0100
