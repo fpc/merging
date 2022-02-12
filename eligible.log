@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 51ce1e883f4112067b5d3d3910eab0a1cf5ce657
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Feb 12 19:40:57 2022 +0100
+
+    * Avoid AV
+
+M	packages/fcl-passrc/src/pastree.pp
+
+******************************************************************************
 commit ecef61e9c5413d254616d4bae10e0c993177d3ab
 Author: Karoly Balogh <karoly@freepascal.org>
 Date:   Sat Feb 12 17:32:48 2022 +0100
