@@ -1,4 +1,84 @@
 ******************************************************************************
+commit c44f82d11a4b3400e0648508e9d6fda8d132d15f
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Feb 12 14:54:52 2022 +0100
+
+    * Copy & AddRef operators
+
+M	packages/fcl-passrc/src/pastree.pp
+M	packages/fcl-passrc/src/pparser.pp
+M	packages/fcl-passrc/tests/tcprocfunc.pas
+M	packages/pastojs/src/pas2jsfiler.pp
+
+******************************************************************************
+commit 41e32d0fbad6ad541959802590c4cdb12d857cbb
+Author: Marcus Sackrow <alb42@web.de>
+Date:   Sat Feb 12 14:52:45 2022 +0100
+
+    AmigaOS4: fix compilation for double UTF8Encode in library unit and system
+
+M	packages/rtl-console/src/inc/video.inc
+
+******************************************************************************
+commit 10c60c45d5f9704e376c34c5168a20cbb17f6b43
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Feb 12 14:41:02 2022 +0100
+
+    * Finalize does not need result
+
+M	packages/fcl-passrc/src/pastree.pp
+M	packages/fcl-passrc/src/pparser.pp
+M	packages/fcl-passrc/tests/tcprocfunc.pas
+
+******************************************************************************
+commit 08742e1a91d05570ced72fd869301f3f583f5ae3
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Feb 12 14:30:23 2022 +0100
+
+    * Add missing argument
+
+M	packages/pastojs/src/pas2jsfiler.pp
+
+******************************************************************************
+commit 15b7a8763f6b16dece5336603049024158cb3b49
+Author: florian <florian@freepascal.org>
+Date:   Sat Feb 12 14:26:31 2022 +0100
+
+      * avoid range check error and overflow in objpas.hash, should resolve #39561
+
+M	rtl/objpas/objpas.pp
+
+******************************************************************************
+commit ee2d2a4bd4672135b746c925e8af12febf7149ae
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Feb 12 14:26:50 2022 +0100
+
+    * Remove debug statement
+
+M	packages/fcl-passrc/src/pscanner.pp
+
+******************************************************************************
+commit f19402e81b15a4eeb63314b892d53b97cfa0e719
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Feb 12 14:25:30 2022 +0100
+
+    * Operator name can now also be finalize
+
+M	packages/fcl-passrc/src/pastree.pp
+M	packages/fcl-passrc/src/pscanner.pp
+
+******************************************************************************
+commit 09b5e7c6b228604155f9dcade788950c26f337f3
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sat Feb 12 15:23:17 2022 +0200
+
+    Revert "+ added dependency to rtl-unicode for the ide package"
+    
+    This reverts commit 153baf41ce46448440b170f8d0d175953bd17f24.
+
+M	packages/ide/fpmake.pp
+
+******************************************************************************
 commit 412de8a17dbf5b23e6f85e26216b5cb645e41346
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Sat Feb 12 14:11:02 2022 +0100
