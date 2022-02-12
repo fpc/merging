@@ -1,4 +1,13 @@
 ******************************************************************************
+commit ecef61e9c5413d254616d4bae10e0c993177d3ab
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Sat Feb 12 17:32:48 2022 +0100
+
+    * m68k: fix an instruction which doesn't exist on ColdFire
+
+M	rtl/m68k/m68k.inc
+
+******************************************************************************
 commit 14289173bbaf1c7bb4c91808f065122198c9f047
 Author: Jonas Maebe <jonas@freepascal.org>
 Date:   Sat Feb 12 15:26:49 2022 +0100
