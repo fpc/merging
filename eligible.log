@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 412de8a17dbf5b23e6f85e26216b5cb645e41346
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Feb 12 14:11:02 2022 +0100
+
+    * Fix case sensitivity of macro value
+
+M	packages/fcl-passrc/src/pscanner.pp
+M	packages/fcl-passrc/tests/tcscanner.pas
+
+******************************************************************************
 commit 153baf41ce46448440b170f8d0d175953bd17f24
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Sat Feb 12 13:39:14 2022 +0200
