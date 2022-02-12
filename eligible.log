@@ -1,4 +1,22 @@
 ******************************************************************************
+commit 153baf41ce46448440b170f8d0d175953bd17f24
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sat Feb 12 13:39:14 2022 +0200
+
+    + added dependency to rtl-unicode for the ide package
+
+M	packages/ide/fpmake.pp
+
+******************************************************************************
+commit af5f75fd5adc53383a654e8f9849117c2219fe52
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sat Feb 12 13:24:37 2022 +0200
+
+    * win16 compilation fix after merge of unicodekvm branch
+
+M	packages/rtl-console/src/win16/video.pp
+
+******************************************************************************
 commit 6df6e4f7ff16ea4ed9db2a1215cd2b2f262a0331
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Sat Feb 12 13:13:12 2022 +0200
