@@ -1,4 +1,38 @@
 ******************************************************************************
+commit 14289173bbaf1c7bb4c91808f065122198c9f047
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sat Feb 12 15:26:49 2022 +0100
+
+    PPC64: fix wrong ifdef for SYSV ABI
+    
+    The TOC is used by PPC64, not by PPC32. Resolves #39571
+
+M	compiler/systems.pas
+
+******************************************************************************
+commit 0fcc57fb4b7ca536b4177d19ef32da54e8ca352d
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sat Feb 12 15:26:27 2022 +0100
+
+    PPC64: don't save TOC in pure assembler routines
+    
+    Fix by Pierre
+
+M	compiler/powerpc64/cgcpu.pas
+
+******************************************************************************
+commit b97c8bdf5594ac273f9f3851030b694b97789035
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sat Feb 12 15:25:19 2022 +0100
+
+    testobj3: fix test
+    
+    Use RTL StringRefCount instead of local GetRefCount that only supports some
+    platforms and depends on the internal layout of ansistring headers
+
+M	tests/test/units/objects/testobj3.pp
+
+******************************************************************************
 commit c44f82d11a4b3400e0648508e9d6fda8d132d15f
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Sat Feb 12 14:54:52 2022 +0100
