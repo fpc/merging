@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 0b8a0fb495ded3cc71e4a44c6174216922ebcd36
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sat Feb 12 10:09:17 2022 +0200
+
+    + support conversion between legancy and enhanced console in UpdateScreenArea
+
+M	packages/rtl-console/src/inc/video.inc
+
+******************************************************************************
 commit 2c0f10d9887b676545b05e06e2c29a07d74d8fae
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Wed Jan 26 19:45:22 2022 +0200
@@ -15578,6 +15587,17 @@ Date:   Fri Jun 18 14:06:55 2021 +0000
 M	compiler/x86/x86ins.dat
 
 ******************************************************************************
+commit 314e55204655aaa8f2db239bcf34399e52a04718
+Author: nickysn <nickysn@gmail.com>
+Date:   Sun Mar 14 21:49:17 2021 +0000
+
+    * update revision.inc
+    
+    git-svn-id: branches/unicodekvm@48975 -
+
+M	utils/fpcm/revision.inc
+
+******************************************************************************
 commit b4a002e3e777f7a26040bf42a2372a8f1908e9ba
 Author: tg74 <tg74@idefix.freepascal.org>
 Date:   Tue Mar 9 16:31:02 2021 +0000
@@ -15588,6 +15608,186 @@ Date:   Tue Mar 9 16:31:02 2021 +0000
 
 M	tests/utils/avx/asmtestgenerator.pas
 M	tests/utils/avx/avxopcodes.pas
+
+******************************************************************************
+commit 15ff16d85218ad77941878493af4b120cb11da47
+Author: nickysn <nickysn@gmail.com>
+Date:   Mon Mar 8 19:47:13 2021 +0000
+
+    * use FPC's integrated codepage conversion for non-Unicode unix consoles
+    
+    git-svn-id: branches/unicodekvm@48923 -
+
+M	.gitattributes
+D	packages/rtl-console/src/unix/convert.inc
+M	packages/rtl-console/src/unix/video.pp
+
+******************************************************************************
+commit da569e952e0123da0e54570dfe32b5377e671939
+Author: nickysn <nickysn@gmail.com>
+Date:   Mon Mar 8 18:55:18 2021 +0000
+
+    * return RawByteString in the transform function result
+    
+    git-svn-id: branches/unicodekvm@48922 -
+
+M	packages/rtl-console/src/unix/video.pp
+
+******************************************************************************
+commit 1c961a498677e41dd210869e4877a27a21cbddfd
+Author: nickysn <nickysn@gmail.com>
+Date:   Mon Mar 8 18:50:45 2021 +0000
+
+    * converted comments to utf-8, so the file is readable in modern text editors
+    
+    git-svn-id: branches/unicodekvm@48921 -
+
+M	packages/rtl-console/src/unix/video.pp
+
+******************************************************************************
+commit 40eede3a7a778d383ce2156a595069b320fd8aa0
+Author: nickysn <nickysn@gmail.com>
+Date:   Mon Mar 8 18:44:20 2021 +0000
+
+    * converted tabs to spaces
+    
+    git-svn-id: branches/unicodekvm@48920 -
+
+M	packages/rtl-console/src/unix/video.pp
+
+******************************************************************************
+commit ce9e1e84669018bcd10c9cf3b163af37b66e0c54
+Author: nickysn <nickysn@gmail.com>
+Date:   Mon Mar 8 18:21:31 2021 +0000
+
+    - get rid of internal_codepage. Set CurrentLegacy2EnhancedTranslationCodePage instead.
+    
+    git-svn-id: branches/unicodekvm@48919 -
+
+M	packages/rtl-console/src/unix/video.pp
+
+******************************************************************************
+commit ed0ec9468095a870767b3cf0e54a9603548bcd98
+Author: nickysn <nickysn@gmail.com>
+Date:   Mon Mar 8 18:18:14 2021 +0000
+
+    * fixed bug in decide_codepages, which was checking the wrong variable for is_vga_code_page
+    
+    git-svn-id: branches/unicodekvm@48918 -
+
+M	packages/rtl-console/src/unix/video.pp
+
+******************************************************************************
+commit ed670d2ce7ea9d99f1dbd915d5adbd41f5467137
+Author: nickysn <nickysn@gmail.com>
+Date:   Mon Mar 8 18:13:41 2021 +0000
+
+    * converted internal_codepage and external_codepage to the TSystemCodePage type.
+      Removed the unused codepage enum constants and sets.
+    
+    git-svn-id: branches/unicodekvm@48917 -
+
+M	packages/rtl-console/src/unix/video.pp
+
+******************************************************************************
+commit 62f8899c1b13c58ab3d318c55c607ccefab9b811
+Author: nickysn <nickysn@gmail.com>
+Date:   Mon Mar 8 17:56:06 2021 +0000
+
+    * hide the (currently broken, to be fixed) unix internal/external code page
+      stuff to the implementation part of the unit
+    
+    git-svn-id: branches/unicodekvm@48916 -
+
+M	packages/fv/src/views.inc
+M	packages/rtl-console/src/unix/video.pp
+
+******************************************************************************
+commit 77279fb5ef2f4712d38ccd1fcab59f9f9e9802e1
+Author: nickysn <nickysn@gmail.com>
+Date:   Mon Mar 8 17:34:36 2021 +0000
+
+    * use the current legacy console code page in Enhanced2Legacy
+    
+    git-svn-id: branches/unicodekvm@48915 -
+
+M	packages/rtl-console/src/inc/video.inc
+
+******************************************************************************
+commit c6bce8915ff4b0a53ce295d6d14da5ebce9dd200
+Author: nickysn <nickysn@gmail.com>
+Date:   Mon Mar 8 16:40:11 2021 +0000
+
+    + implemented GetSupportedCodePageCount/GetSupportedCodePage for unicode consoles
+    
+    git-svn-id: branches/unicodekvm@48913 -
+
+M	packages/rtl-console/src/amicommon/video.pp
+M	packages/rtl-console/src/go32v2/video.pp
+M	packages/rtl-console/src/inc/video.inc
+M	packages/rtl-console/src/msdos/video.pp
+M	packages/rtl-console/src/netware/video.pp
+M	packages/rtl-console/src/netwlibc/video.pp
+M	packages/rtl-console/src/os2commn/video.pp
+M	packages/rtl-console/src/unix/video.pp
+M	packages/rtl-console/src/win/video.pp
+M	packages/rtl-console/src/win16/video.pp
+
+******************************************************************************
+commit df95478d19bceedd41a86dbc3c8c006e91b2a0a3
+Author: nickysn <nickysn@gmail.com>
+Date:   Mon Mar 8 15:22:11 2021 +0000
+
+    * wire up the code page functions to call the driver functions in case of a legacy driver
+    
+    git-svn-id: branches/unicodekvm@48912 -
+
+M	packages/rtl-console/src/inc/video.inc
+
+******************************************************************************
+commit a4db719eb4ff6d62a733c0042c0b10716b0f141f
+Author: nickysn <nickysn@gmail.com>
+Date:   Mon Mar 8 15:12:20 2021 +0000
+
+    + introduced legacy code page functions to the video driver itself (they can
+      optionally be implemented for operating systems with non-unicode consoles)
+    
+    git-svn-id: branches/unicodekvm@48911 -
+
+M	packages/rtl-console/src/amicommon/video.pp
+M	packages/rtl-console/src/go32v2/video.pp
+M	packages/rtl-console/src/inc/videoh.inc
+M	packages/rtl-console/src/msdos/video.pp
+M	packages/rtl-console/src/netware/video.pp
+M	packages/rtl-console/src/netwlibc/video.pp
+M	packages/rtl-console/src/os2commn/video.pp
+M	packages/rtl-console/src/unix/video.pp
+M	packages/rtl-console/src/win/video.pp
+M	packages/rtl-console/src/win16/video.pp
+
+******************************************************************************
+commit 14af3cb5cb48b39589a28dfd34618cdcd6000ca0
+Author: nickysn <nickysn@gmail.com>
+Date:   Mon Mar 8 15:00:37 2021 +0000
+
+    + added checks for certain code pages that should not be allowed to be set in Video.ActivateCodePage
+    
+    git-svn-id: branches/unicodekvm@48910 -
+
+M	packages/rtl-console/src/inc/video.inc
+
+******************************************************************************
+commit 2abcf62a958476ba80b78b3c7875d9272d9f7e90
+Author: nickysn <nickysn@gmail.com>
+Date:   Mon Mar 8 14:30:06 2021 +0000
+
+    + added functions for getting/setting the current code page, when using the
+      legacy (non-Unicode) video buffer
+    
+    git-svn-id: branches/unicodekvm@48908 -
+
+M	packages/rtl-console/src/inc/video.inc
+M	packages/rtl-console/src/inc/videoh.inc
 
 ******************************************************************************
 commit ad753c0bbd52d42685ef5cdb0406c2c7e369c605
@@ -15667,6 +15867,65 @@ Date:   Tue Mar 2 16:30:31 2021 +0000
 M	tests/utils/avx/asmtestgenerator.pas
 
 ******************************************************************************
+commit 063133f2f5726e0f71d74149c2f522ecd37a882e
+Author: nickysn <nickysn@gmail.com>
+Date:   Tue Mar 2 14:59:24 2021 +0000
+
+    * replaced high ascii characters with #XXX equivalents and provided unicode equivalents
+    
+    git-svn-id: branches/unicodekvm@48869 -
+
+M	packages/fv/src/tabs.inc
+
+******************************************************************************
+commit 12fb58325a6a24663582762f7296fc903cef3420
+Author: nickysn <nickysn@gmail.com>
+Date:   Tue Mar 2 13:59:29 2021 +0000
+
+    * converted some non-ascii characters to unicode
+    * converted non-ascii characters to #XXX equivalents
+    
+    git-svn-id: branches/unicodekvm@48868 -
+
+M	packages/fv/src/views.inc
+
+******************************************************************************
+commit 088a52a1cec23092d2c918cb121b44bd9391ee74
+Author: nickysn <nickysn@gmail.com>
+Date:   Tue Mar 2 12:42:21 2021 +0000
+
+    * converted non-ascii characters in stddlg.pas to unicode and #XXX equivalents in the non-unicode version
+    
+    git-svn-id: branches/unicodekvm@48867 -
+
+M	packages/fv/src/stddlg.pas
+
+******************************************************************************
+commit 6aacb9696184f25755a7a0c51041eb953c60808c
+Author: nickysn <nickysn@gmail.com>
+Date:   Tue Mar 2 12:29:57 2021 +0000
+
+    * replaced non-ascii characters to #XXX equivalents
+    
+    git-svn-id: branches/unicodekvm@48866 -
+
+M	packages/fv/src/dialogs.inc
+M	packages/fv/src/inplong.inc
+M	packages/fv/src/menus.inc
+M	packages/fv/src/outline.inc
+
+******************************************************************************
+commit a57bda94defdebc54a9ea26cbda85d7fe6ab377e
+Author: nickysn <nickysn@gmail.com>
+Date:   Tue Mar 2 12:28:55 2021 +0000
+
+    * unicode conversion of the non-ASCII characters in statuses.pas
+    
+    git-svn-id: branches/unicodekvm@48865 -
+
+M	packages/fv/src/statuses.pas
+
+******************************************************************************
 commit 3b408e6a6a986e8c1f0493e00e1645db3ee502ef
 Author: tg74 <tg74@idefix.freepascal.org>
 Date:   Mon Mar 1 16:28:11 2021 +0000
@@ -15678,6 +15937,72 @@ Date:   Mon Mar 1 16:28:11 2021 +0000
 M	tests/utils/avx/asmtestgenerator.pas
 
 ******************************************************************************
+commit c1dca28cc5759a9190089849e83d6dd3c72a77e2
+Author: nickysn <nickysn@gmail.com>
+Date:   Mon Mar 1 15:43:43 2021 +0000
+
+    + added utabs - unicode version of the tabs unit
+    
+    git-svn-id: branches/unicodekvm@48852 -
+
+M	.gitattributes
+M	packages/fv/examples/testuapp.pas
+M	packages/fv/fpmake.pp
+M	packages/fv/src/tabs.inc
+A	packages/fv/src/utabs.pas
+
+******************************************************************************
+commit 3149506d7f82ed315a809a0c76c10daf9c4ce3f1
+Author: nickysn <nickysn@gmail.com>
+Date:   Mon Mar 1 15:32:45 2021 +0000
+
+    + added tabs.pas that includes tabs.inc
+    
+    git-svn-id: branches/unicodekvm@48851 -
+
+M	.gitattributes
+M	packages/fv/fpmake.pp
+A	packages/fv/src/tabs.pas
+
+******************************************************************************
+commit 0b7d4801b077856035a56c7a67806210306df21d
+Author: nickysn <nickysn@gmail.com>
+Date:   Mon Mar 1 15:31:37 2021 +0000
+
+    * tabs.pas renamed tabs.inc
+    
+    git-svn-id: branches/unicodekvm@48850 -
+
+M	.gitattributes
+R100	packages/fv/src/tabs.pas	packages/fv/src/tabs.inc
+
+******************************************************************************
+commit 52a29e0ba7e6dbf5cdc6dc0ba9b60c88e2307856
+Author: nickysn <nickysn@gmail.com>
+Date:   Mon Mar 1 14:16:22 2021 +0000
+
+    + added unit uinplong - unicode version of inplong
+    
+    git-svn-id: branches/unicodekvm@48849 -
+
+M	.gitattributes
+M	packages/fv/examples/testuapp.pas
+M	packages/fv/fpmake.pp
+M	packages/fv/src/inplong.inc
+A	packages/fv/src/uinplong.pas
+
+******************************************************************************
+commit af19d2a98285e96995898cfee325f97cd706a9b2
+Author: nickysn <nickysn@gmail.com>
+Date:   Mon Mar 1 13:30:12 2021 +0000
+
+    * fixed compilation under Linux
+    
+    git-svn-id: branches/unicodekvm@48848 -
+
+M	packages/rtl-console/src/inc/video.inc
+
+******************************************************************************
 commit 493879d28cc1c2f76193c44458344f838ac17160
 Author: tg74 <tg74@idefix.freepascal.org>
 Date:   Mon Mar 1 05:54:29 2021 +0000
@@ -15687,6 +16012,225 @@ Date:   Mon Mar 1 05:54:29 2021 +0000
     git-svn-id: branches/tg74/avx512-0037785@48845 -
 
 M	tests/utils/avx/asmtestgenerator.pas
+
+******************************************************************************
+commit 41a51e8e4a6220935ff65f6e313c80380c71c1e9
+Author: nickysn <nickysn@gmail.com>
+Date:   Sat Feb 27 17:22:59 2021 +0000
+
+    + added inplong.pas that includes inplong.inc
+    
+    git-svn-id: branches/unicodekvm@48831 -
+
+M	.gitattributes
+M	packages/fv/fpmake.pp
+A	packages/fv/src/inplong.pas
+
+******************************************************************************
+commit 6ca821950d7dcd8579bd1e87ca22049aaf9e8b8d
+Author: nickysn <nickysn@gmail.com>
+Date:   Sat Feb 27 17:21:16 2021 +0000
+
+    * inplong.pas renamed inplong.inc
+    
+    git-svn-id: branches/unicodekvm@48830 -
+
+M	.gitattributes
+R100	packages/fv/src/inplong.pas	packages/fv/src/inplong.inc
+
+******************************************************************************
+commit 40870af6a7dc39322622f7c4646b974c0d0800be
+Author: nickysn <nickysn@gmail.com>
+Date:   Sat Feb 27 17:15:29 2021 +0000
+
+    + added unicode version of the timeddlg unit
+    
+    git-svn-id: branches/unicodekvm@48829 -
+
+M	.gitattributes
+M	packages/fv/fpmake.pp
+M	packages/fv/src/timeddlg.inc
+A	packages/fv/src/utimeddlg.pas
+
+******************************************************************************
+commit 4b6eea19189dce34125eb0e3de74b07de5cf8e43
+Author: nickysn <nickysn@gmail.com>
+Date:   Sat Feb 27 13:39:41 2021 +0000
+
+    + added timeddlg.pas that includes timeddlg.inc
+    
+    git-svn-id: branches/unicodekvm@48827 -
+
+M	.gitattributes
+M	packages/fv/fpmake.pp
+A	packages/fv/src/timeddlg.pas
+
+******************************************************************************
+commit 78c3b698b183c690592e3f63fa8b2e6c12618607
+Author: nickysn <nickysn@gmail.com>
+Date:   Sat Feb 27 13:37:43 2021 +0000
+
+    * timeddlg.pas renamed timeddlg.inc
+    
+    git-svn-id: branches/unicodekvm@48826 -
+
+M	.gitattributes
+R100	packages/fv/src/timeddlg.pas	packages/fv/src/timeddlg.inc
+
+******************************************************************************
+commit 0c2a1ffba8bb86294b226db30e4f744eb2b1da9c
+Author: nickysn <nickysn@gmail.com>
+Date:   Sat Feb 27 13:15:37 2021 +0000
+
+    + added lpi file for compiling testuapp for windows
+    
+    git-svn-id: branches/unicodekvm@48825 -
+
+M	.gitattributes
+A	packages/fv/examples/testuapp_windows.lpi
+
+******************************************************************************
+commit 87777ea10b5285a27ac3cc4e387ee65392bbb6b1
+Author: nickysn <nickysn@gmail.com>
+Date:   Sat Feb 27 10:44:17 2021 +0000
+
+    + added graphemebreakproperty and eastasianwidth to the video unit uses clauses of all the remaining operating systems
+    
+    git-svn-id: branches/unicodekvm@48824 -
+
+M	packages/rtl-console/src/amicommon/video.pp
+M	packages/rtl-console/src/go32v2/video.pp
+M	packages/rtl-console/src/msdos/video.pp
+M	packages/rtl-console/src/netware/video.pp
+M	packages/rtl-console/src/netwlibc/video.pp
+M	packages/rtl-console/src/os2commn/video.pp
+M	packages/rtl-console/src/win16/video.pp
+
+******************************************************************************
+commit 2181e7c61d14e894cabe6bae050720561164b685
+Author: nickysn <nickysn@gmail.com>
+Date:   Sat Feb 27 10:39:26 2021 +0000
+
+    + handle enhanced video buffer resizing
+    
+    git-svn-id: branches/unicodekvm@48823 -
+
+M	packages/rtl-console/src/inc/video.inc
+
+******************************************************************************
+commit b681e2cd7fb8c12eb55d374b2adc7e247706205f
+Author: nickysn <nickysn@gmail.com>
+Date:   Sat Feb 27 10:27:20 2021 +0000
+
+    - removed commented out code
+    
+    git-svn-id: branches/unicodekvm@48822 -
+
+M	packages/rtl-console/src/inc/video.inc
+
+******************************************************************************
+commit 306cfa83e4f044665e23369d2ddd1bb513c8b839
+Author: nickysn <nickysn@gmail.com>
+Date:   Sat Feb 27 10:20:09 2021 +0000
+
+    + also convert characters in the range #128..#255 in ExtendedGraphemeCluster2LegacyChar
+    
+    git-svn-id: branches/unicodekvm@48821 -
+
+M	packages/rtl-console/src/inc/video.inc
+
+******************************************************************************
+commit 2f442ab6d09cee0c7675eee9578288609f6fc510
+Author: nickysn <nickysn@gmail.com>
+Date:   Sat Feb 27 09:55:24 2021 +0000
+
+    + use a table convert_lowascii_to_Unicode to convert unicode to cp437 lowascii and vice versa
+    
+    git-svn-id: branches/unicodekvm@48820 -
+
+M	packages/rtl-console/src/inc/video.inc
+
+******************************************************************************
+commit 3c3f43ac665385b2c259c5930da9452682ba3cb8
+Author: nickysn <nickysn@gmail.com>
+Date:   Sat Feb 27 09:43:02 2021 +0000
+
+    * convert unicode to the cp437 dingbats range (#0..#31,#127) in ExtendedGraphemeCluster2LegacyChar
+    
+    git-svn-id: branches/unicodekvm@48819 -
+
+M	packages/rtl-console/src/inc/video.inc
+
+******************************************************************************
+commit a203313bbf29d192763141b828b0077fec440f08
+Author: nickysn <nickysn@gmail.com>
+Date:   Sat Feb 27 09:08:31 2021 +0000
+
+    + added extra unit paths to rtl-unicode
+    
+    git-svn-id: branches/unicodekvm@48818 -
+
+M	packages/rtl-console/tests/video1_windows.lpi
+M	packages/rtl-console/tests/video2_windows.lpi
+
+******************************************************************************
+commit 38ef18b4f4af21230d751a546f71065ecd3512af
+Author: nickysn <nickysn@gmail.com>
+Date:   Sat Feb 27 08:19:58 2021 +0000
+
+    * fixed compilation of the video unit on Windows
+    
+    git-svn-id: branches/unicodekvm@48817 -
+
+M	packages/rtl-console/src/win/video.pp
+
+******************************************************************************
+commit 1b1facf87991774ff536acd4bddbd00faac243bc
+Author: nickysn <nickysn@gmail.com>
+Date:   Fri Feb 26 15:24:52 2021 +0000
+
+    + optimization: use EgcWidth instead of StrWidth wherever possible
+    
+    git-svn-id: branches/unicodekvm@48813 -
+
+M	packages/fv/src/dialogs.inc
+M	packages/fv/src/views.inc
+
+******************************************************************************
+commit 00beafae5be8d267469128964c6e901a6817e0c3
+Author: nickysn <nickysn@gmail.com>
+Date:   Fri Feb 26 15:19:13 2021 +0000
+
+    + introduced UDrivers.EgcWidth
+    
+    git-svn-id: branches/unicodekvm@48812 -
+
+M	packages/fv/src/drivers.inc
+
+******************************************************************************
+commit ddd87e09ff91b16d0926a857787e753eda4baff0
+Author: nickysn <nickysn@gmail.com>
+Date:   Fri Feb 26 13:32:11 2021 +0000
+
+    * fixed double width character at the end of TInputLine covering the right
+      scroll arrow
+    
+    git-svn-id: branches/unicodekvm@48811 -
+
+M	packages/fv/src/dialogs.inc
+
+******************************************************************************
+commit fe312ab99ff41531686afed3ce0f7446d928a765
+Author: nickysn <nickysn@gmail.com>
+Date:   Fri Feb 26 12:15:01 2021 +0000
+
+    + wide and combining character support in TInputLine.HandleEvent.MousePos. This
+      means cursor positioning and text selection with the mouse now works properly
+      with these special unicode characters
+    
+    git-svn-id: branches/unicodekvm@48810 -
+
+M	packages/fv/src/dialogs.inc
 
 ******************************************************************************
 commit 41399354ce3fdfa9683f310e168427480c01f9d1
@@ -15711,6 +16255,28 @@ Date:   Wed Feb 24 16:29:26 2021 +0000
 M	tests/utils/avx/asmtestgenerator.pas
 
 ******************************************************************************
+commit 3dfefc25efa6ebced10e2e2dbde187130bbab2cc
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 24 06:54:54 2021 +0000
+
+    + unicode combining and wide character support in TInputLine.Draw
+    
+    git-svn-id: branches/unicodekvm@48797 -
+
+M	packages/fv/src/dialogs.inc
+
+******************************************************************************
+commit 1c9fb8ec7dc83230dd264147ddc167eb5f323804
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 24 06:38:29 2021 +0000
+
+    + wide and combining character support when determining the cursor position in TInputLine
+    
+    git-svn-id: branches/unicodekvm@48796 -
+
+M	packages/fv/src/dialogs.inc
+
+******************************************************************************
 commit e430c92fcbb5b00680ac84579d6f969a4aa1c1c4
 Author: tg74 <tg74@idefix.freepascal.org>
 Date:   Mon Feb 22 15:59:58 2021 +0000
@@ -15721,6 +16287,483 @@ Date:   Mon Feb 22 15:59:58 2021 +0000
 
 M	compiler/ppcx64.lpi
 M	compiler/x86/itcpugas.pas
+
+******************************************************************************
+commit c63534af487eb2972f258fcf5d84a91f9c902095
+Author: nickysn <nickysn@gmail.com>
+Date:   Mon Feb 22 06:30:39 2021 +0000
+
+    * fixed handling of non-BMP characters in Video.ExtendedGraphemeClusterDisplayWidth
+    
+    git-svn-id: branches/unicodekvm@48789 -
+
+M	packages/rtl-console/src/inc/video.inc
+
+******************************************************************************
+commit fe7324a04ca69b5d3f76fded91041f21111c671c
+Author: nickysn <nickysn@gmail.com>
+Date:   Mon Feb 22 04:31:03 2021 +0000
+
+    + TInputLine unicode keyboard text input fixed
+    
+    git-svn-id: branches/unicodekvm@48788 -
+
+M	packages/fv/src/dialogs.inc
+
+******************************************************************************
+commit de770cf1bea6238680853db72816a29f55098760
+Author: nickysn <nickysn@gmail.com>
+Date:   Mon Feb 22 04:23:56 2021 +0000
+
+    + enable PInputLine in the unicode demo
+    
+    git-svn-id: branches/unicodekvm@48787 -
+
+M	packages/fv/examples/testuapp.pas
+
+******************************************************************************
+commit 028c06219290b7f1aa35c581e27b7a7dcfdc2ed8
+Author: nickysn <nickysn@gmail.com>
+Date:   Mon Feb 22 04:22:48 2021 +0000
+
+    + added horizontal scrollbar to the demo
+    
+    git-svn-id: branches/unicodekvm@48786 -
+
+M	packages/fv/examples/testuapp.pas
+
+******************************************************************************
+commit 6bef792f3303eba2da048ad8a9950cac2c2a787b
+Author: nickysn <nickysn@gmail.com>
+Date:   Mon Feb 22 04:21:34 2021 +0000
+
+    + unicode fixes in TCluster.DrawMultiBox
+    
+    git-svn-id: branches/unicodekvm@48785 -
+
+M	packages/fv/examples/testuapp.pas
+M	packages/fv/src/dialogs.inc
+
+******************************************************************************
+commit ea0213810b5f08a5c8df9ec16c160547101b0151
+Author: nickysn <nickysn@gmail.com>
+Date:   Mon Feb 22 04:18:05 2021 +0000
+
+    + use different languages in the list box
+    
+    git-svn-id: branches/unicodekvm@48784 -
+
+M	packages/fv/examples/testuapp.pas
+
+******************************************************************************
+commit 46586902f4c11be78d26048061e7203da14ae9e9
+Author: nickysn <nickysn@gmail.com>
+Date:   Mon Feb 22 04:14:14 2021 +0000
+
+    + added scrollbar and listbox to the unicode example
+    
+    git-svn-id: branches/unicodekvm@48783 -
+
+M	packages/fv/examples/testuapp.pas
+
+******************************************************************************
+commit c669b8ac83adfd33d415f1e52cfca03a36cb74bb
+Author: nickysn <nickysn@gmail.com>
+Date:   Mon Feb 22 04:09:13 2021 +0000
+
+    + another double width rendering bugfix
+    
+    git-svn-id: branches/unicodekvm@48782 -
+
+M	packages/rtl-console/src/unix/video.pp
+
+******************************************************************************
+commit 7b71eefbdfeab44a93695f93dfefac81fa8d09fb
+Author: nickysn <nickysn@gmail.com>
+Date:   Mon Feb 22 03:58:10 2021 +0000
+
+    + bug fix in the rendering of double width characters
+    
+    git-svn-id: branches/unicodekvm@48781 -
+
+M	packages/rtl-console/src/unix/video.pp
+
+******************************************************************************
+commit ca1b315e2799cc3c94e9485312d1b7d2b36a60fb
+Author: nickysn <nickysn@gmail.com>
+Date:   Mon Feb 22 03:48:38 2021 +0000
+
+    * reset LastCharWasDoubleWidth in the beginning of every line
+    
+    git-svn-id: branches/unicodekvm@48780 -
+
+M	packages/rtl-console/src/unix/video.pp
+
+******************************************************************************
+commit f9cfc0aeb4de2e6ecb347b011ad2ab2ff2cac007
+Author: nickysn <nickysn@gmail.com>
+Date:   Mon Feb 22 03:33:48 2021 +0000
+
+    + button test
+    
+    git-svn-id: branches/unicodekvm@48779 -
+
+M	packages/fv/examples/testuapp.pas
+
+******************************************************************************
+commit d4be82e87988cfe921c8843cbe6856176a1209d1
+Author: nickysn <nickysn@gmail.com>
+Date:   Mon Feb 22 03:23:10 2021 +0000
+
+    + unicode fixes for the window title
+    
+    git-svn-id: branches/unicodekvm@48778 -
+
+M	packages/fv/examples/testuapp.pas
+M	packages/fv/src/drivers.inc
+M	packages/fv/src/views.inc
+
+******************************************************************************
+commit 2ecca003dd15e8f7c082eeb3c2ff6ea141487017
+Author: nickysn <nickysn@gmail.com>
+Date:   Mon Feb 22 03:03:34 2021 +0000
+
+    + test dialog box
+    
+    git-svn-id: branches/unicodekvm@48777 -
+
+M	packages/fv/examples/testuapp.pas
+
+******************************************************************************
+commit 646ddb82173c7a55d7b4fa34c7b2cc75e9fa7c87
+Author: nickysn <nickysn@gmail.com>
+Date:   Mon Feb 22 02:08:08 2021 +0000
+
+    + Unicode aware implementation of TStaticText.Draw
+    
+    git-svn-id: branches/unicodekvm@48776 -
+
+M	packages/fv/examples/testuapp.pas
+M	packages/fv/src/dialogs.inc
+
+******************************************************************************
+commit b6d2c6ccb721bc8707fc992c407cb695a5c5eef7
+Author: nickysn <nickysn@gmail.com>
+Date:   Sun Feb 21 23:31:28 2021 +0000
+
+    + unicode fixes in TMenuBox.Draw
+    
+    git-svn-id: branches/unicodekvm@48775 -
+
+M	packages/fv/src/menus.inc
+
+******************************************************************************
+commit 75e42870ae10ee5d446ab6d4d8335aa7eb02269e
+Author: nickysn <nickysn@gmail.com>
+Date:   Sun Feb 21 23:21:18 2021 +0000
+
+    + implement TView.TextWidth and TView.CTextWidth via StrWidth and CStrLen
+    
+    git-svn-id: branches/unicodekvm@48774 -
+
+M	packages/fv/src/views.inc
+
+******************************************************************************
+commit 4944e9296fc9c3b55367babf31928e8fa7169369
+Author: nickysn <nickysn@gmail.com>
+Date:   Sun Feb 21 22:04:09 2021 +0000
+
+    + double width character support in the unix video unit
+    
+    git-svn-id: branches/unicodekvm@48771 -
+
+M	packages/fv/examples/testuapp.pas
+M	packages/rtl-console/src/unix/video.pp
+
+******************************************************************************
+commit e539696f29a48912a4e2cd92b9f8b0210a5e0535
+Author: nickysn <nickysn@gmail.com>
+Date:   Sun Feb 21 21:54:08 2021 +0000
+
+    + use Video.ExtendedGraphemeClusterDisplayWidth to support double width characters in MoveStr and MoveCStr
+    
+    git-svn-id: branches/unicodekvm@48770 -
+
+M	packages/fv/src/drivers.inc
+
+******************************************************************************
+commit 17f7cb0e45ac10f19dcb7e883365c2c365d1c16d
+Author: nickysn <nickysn@gmail.com>
+Date:   Sun Feb 21 21:48:32 2021 +0000
+
+    - removed no longer used local variable
+    
+    git-svn-id: branches/unicodekvm@48769 -
+
+M	packages/fv/src/drivers.inc
+
+******************************************************************************
+commit 59a60856dc0dff4041ff1f4cb33629a6aa04fbd6
+Author: nickysn <nickysn@gmail.com>
+Date:   Sun Feb 21 21:48:10 2021 +0000
+
+    + use Video.ExtendedGraphemeClusterDisplayWidth in UDriver.CStrLen in order to support wide characters
+    
+    git-svn-id: branches/unicodekvm@48768 -
+
+M	packages/fv/src/drivers.inc
+
+******************************************************************************
+commit cc643608a22e9410c9d6391f40a7ffd9480aa9eb
+Author: nickysn <nickysn@gmail.com>
+Date:   Sun Feb 21 21:46:50 2021 +0000
+
+    + introduced Video.ExtendedGraphemeClusterDisplayWidth
+    
+    git-svn-id: branches/unicodekvm@48767 -
+
+M	packages/rtl-console/src/inc/video.inc
+M	packages/rtl-console/src/inc/videoh.inc
+
+******************************************************************************
+commit 8751e983397d0712e92c7d19bd2c8f7a8d02a41c
+Author: nickysn <nickysn@gmail.com>
+Date:   Sun Feb 21 21:42:47 2021 +0000
+
+    + use Video.StringDisplayWidth in UDrivers.StrWidth
+    
+    git-svn-id: branches/unicodekvm@48766 -
+
+M	packages/fv/src/drivers.inc
+
+******************************************************************************
+commit fdfc40e86bcfaa5f45bdc87eb8fa74a01b3be8f6
+Author: nickysn <nickysn@gmail.com>
+Date:   Sun Feb 21 19:31:23 2021 +0000
+
+    + introduced video.StringDisplayWidth
+    
+    git-svn-id: branches/unicodekvm@48761 -
+
+M	packages/rtl-console/fpmake.pp
+M	packages/rtl-console/src/inc/video.inc
+M	packages/rtl-console/src/inc/videoh.inc
+M	packages/rtl-console/src/unix/video.pp
+
+******************************************************************************
+commit 1bedcef063aa9e1753f6905afa4d1a65cc378a04
+Author: nickysn <nickysn@gmail.com>
+Date:   Sun Feb 21 06:57:54 2021 +0000
+
+    - more ifdefs removed by the use of Sw_NewStr
+    
+    git-svn-id: branches/unicodekvm@48749 -
+
+M	packages/fv/src/menus.inc
+
+******************************************************************************
+commit 700b30851e8b1294a78c9a50d4619e26f011c3ca
+Author: nickysn <nickysn@gmail.com>
+Date:   Sun Feb 21 06:53:50 2021 +0000
+
+    - cleaned more ifdefs
+    
+    git-svn-id: branches/unicodekvm@48748 -
+
+M	packages/fv/src/menus.inc
+
+******************************************************************************
+commit 91167f41a6f53a6db27085ab0ed9e930ede13ea9
+Author: nickysn <nickysn@gmail.com>
+Date:   Sun Feb 21 06:50:04 2021 +0000
+
+    - cleaned up more ifdefs
+    
+    git-svn-id: branches/unicodekvm@48747 -
+
+M	packages/fv/src/menus.inc
+
+******************************************************************************
+commit febcfc8d20d5a57544fe394a8b4754731e68943c
+Author: nickysn <nickysn@gmail.com>
+Date:   Sun Feb 21 06:46:20 2021 +0000
+
+    - removed ifdefs from TMenuView.GetHelpCtx
+    
+    git-svn-id: branches/unicodekvm@48746 -
+
+M	packages/fv/src/menus.inc
+
+******************************************************************************
+commit 60a7eac72b9292decc314749d9f5a12f4d48ac20
+Author: nickysn <nickysn@gmail.com>
+Date:   Sun Feb 21 06:45:48 2021 +0000
+
+    - cleanup ifdefs from TMenuView.Execute
+    
+    git-svn-id: branches/unicodekvm@48745 -
+
+M	packages/fv/src/menus.inc
+
+******************************************************************************
+commit 9b419b800a2ab0a588615efd4b98f6190201c007
+Author: nickysn <nickysn@gmail.com>
+Date:   Sun Feb 21 06:44:16 2021 +0000
+
+    - removed one ifdef from TMenuView.Load
+    
+    git-svn-id: branches/unicodekvm@48744 -
+
+M	packages/fv/src/menus.inc
+
+******************************************************************************
+commit 83e492235e99c1ae079c87995be30b5d624370c9
+Author: nickysn <nickysn@gmail.com>
+Date:   Sun Feb 21 06:42:55 2021 +0000
+
+    * use Sw_PString in TStatusItem to avoid an ifdef
+    
+    git-svn-id: branches/unicodekvm@48743 -
+
+M	packages/fv/src/menus.inc
+
+******************************************************************************
+commit 1bc06ec2767faca0764880bf70605a1fcacdd2af
+Author: nickysn <nickysn@gmail.com>
+Date:   Sun Feb 21 06:42:12 2021 +0000
+
+    * use SW_PString in TMenuItem to avoid an ifdef
+    
+    git-svn-id: branches/unicodekvm@48742 -
+
+M	packages/fv/src/menus.inc
+
+******************************************************************************
+commit fb7fdfaae438b1497c6041755bfb15dada8cffc0
+Author: nickysn <nickysn@gmail.com>
+Date:   Sun Feb 21 06:40:37 2021 +0000
+
+    - removed an ifdef from DisposeMenu
+    
+    git-svn-id: branches/unicodekvm@48741 -
+
+M	packages/fv/src/menus.inc
+
+******************************************************************************
+commit c271a7106018c7acc056a2ef6bc01b0836923f1a
+Author: nickysn <nickysn@gmail.com>
+Date:   Sun Feb 21 06:38:06 2021 +0000
+
+    - removed ifdefs from TStatusLine.HandleEvent
+    
+    git-svn-id: branches/unicodekvm@48740 -
+
+M	packages/fv/src/menus.inc
+
+******************************************************************************
+commit 0d171d91ae78ee7513370574128c5ca22789f613
+Author: nickysn <nickysn@gmail.com>
+Date:   Sun Feb 21 06:36:42 2021 +0000
+
+    - reduced the number of ifdefs in TStatusLine.DrawSelect
+    
+    git-svn-id: branches/unicodekvm@48739 -
+
+M	packages/fv/src/menus.inc
+
+******************************************************************************
+commit 1b27a955fa60036ea77d34629d963f104a3bdc10
+Author: nickysn <nickysn@gmail.com>
+Date:   Sun Feb 21 06:31:00 2021 +0000
+
+    * updated unicode example string
+    
+    git-svn-id: branches/unicodekvm@48738 -
+
+M	packages/fv/examples/testuapp.pas
+
+******************************************************************************
+commit f04d87bc3da1959e635b1645c4f8bfb36ef7f5f6
+Author: nickysn <nickysn@gmail.com>
+Date:   Sun Feb 21 06:26:22 2021 +0000
+
+    * fixed reference count bug in the unicode version of TView.do_writeViewRec1
+    
+    git-svn-id: branches/unicodekvm@48736 -
+
+M	packages/fv/src/views.inc
+
+******************************************************************************
+commit 8ed768d48613b3f49621fe839f1be290def49abf
+Author: nickysn <nickysn@gmail.com>
+Date:   Sun Feb 21 01:10:46 2021 +0000
+
+    - disable optimizations to ease debugging
+    
+    git-svn-id: branches/unicodekvm@48735 -
+
+M	packages/fv/examples/testuapp.lpi
+
+******************************************************************************
+commit 89c7ae42afc2511a8cb40000db251f8fbfec4c9a
+Author: nickysn <nickysn@gmail.com>
+Date:   Sat Feb 20 04:03:15 2021 +0000
+
+    + some fv unicode fixes for supporting complex (multi-char) enhanced grapheme clusters
+    
+    git-svn-id: branches/unicodekvm@48731 -
+
+M	packages/fv/examples/testuapp.lpi
+M	packages/fv/examples/testuapp.pas
+M	packages/fv/src/menus.inc
+M	packages/fv/src/views.inc
+M	packages/rtl-console/src/inc/video.inc
+M	packages/rtl-console/src/unix/video.pp
+
+******************************************************************************
+commit 545dd0353bfc15751c6d317370fb790d304647c8
+Author: nickysn <nickysn@gmail.com>
+Date:   Sat Feb 20 01:56:11 2021 +0000
+
+    + use the enhanced grapheme cluster enumerator in UDrivers.MoveCStr and MoveStr
+    
+    git-svn-id: branches/unicodekvm@48730 -
+
+M	packages/fv/src/drivers.inc
+
+******************************************************************************
+commit e583ba6cfaff78c2b890a32fbf00fd96bbc71237
+Author: nickysn <nickysn@gmail.com>
+Date:   Sat Feb 20 01:46:42 2021 +0000
+
+    + implemented StrWidth and CStrLen, using the new extended grapheme cluster string enumerator
+    
+    git-svn-id: branches/unicodekvm@48729 -
+
+M	packages/fv/examples/testuapp.lpi
+M	packages/fv/src/drivers.inc
+
+******************************************************************************
+commit a202b86f37a18c6bdd6b9d346ed20a481caf3c94
+Author: nickysn <nickysn@gmail.com>
+Date:   Sat Feb 20 01:38:49 2021 +0000
+
+    + added rtl-unicode as dependency for the fv unit
+    
+    git-svn-id: branches/unicodekvm@48728 -
+
+M	packages/fv/fpmake.pp
+
+******************************************************************************
+commit a7e63b66ae0197943a89d4be7431acf61d302407
+Author: nickysn <nickysn@gmail.com>
+Date:   Thu Feb 18 21:10:39 2021 +0000
+
+    + introduced StrWidth
+    
+    git-svn-id: branches/unicodekvm@48713 -
+
+M	packages/fv/src/drivers.inc
 
 ******************************************************************************
 commit 1f12cdefb98091c855b0e61d2f899204f943f0ca
@@ -15770,6 +16813,468 @@ M	tests/utils/avx/asmtestgenerator.pas
 M	tests/utils/avx/avxopcodes.pas
 
 ******************************************************************************
+commit 818d3f2f6c112fd8c2fb70e7128e198eb7a0d1aa
+Author: nickysn <nickysn@gmail.com>
+Date:   Thu Feb 11 10:22:07 2021 +0000
+
+    + initial attempt to switch the unix video unit to enhanced (unicode) mode. Only
+      UTF-8 is supported for now, and it's not yet implemented for Linux VCSA.
+    
+    git-svn-id: branches/unicodekvm@48649 -
+
+M	packages/rtl-console/src/unix/video.pp
+
+******************************************************************************
+commit 8dc55d82942d36a5723b2b97f4ec5699563edb14
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 10 23:53:02 2021 +0000
+
+    + unicode fix in TDesktop.InitBackground
+    
+    git-svn-id: branches/unicodekvm@48648 -
+
+M	packages/fv/src/app.inc
+
+******************************************************************************
+commit 6c0491f7c2faf4f9c6ef7ad68e9ce5315fed1291
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 10 23:11:09 2021 +0000
+
+    + test unicode app added
+    
+    git-svn-id: branches/unicodekvm@48647 -
+
+M	.gitattributes
+A	packages/fv/examples/testuapp.lpi
+A	packages/fv/examples/testuapp.pas
+
+******************************************************************************
+commit c0482743af23100033e1af8490abc856ed70a580
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 10 22:48:50 2021 +0000
+
+    + more unicode fixes; the unicode units uapp, udialogs, umsgbox and uvalidate now compile
+    
+    git-svn-id: branches/unicodekvm@48646 -
+
+M	packages/fv/src/validate.inc
+
+******************************************************************************
+commit b8a2c613e31d808436a13ba2f747801f27632e42
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 10 22:41:16 2021 +0000
+
+    * unicode fix
+    
+    git-svn-id: branches/unicodekvm@48645 -
+
+M	packages/fv/src/validate.inc
+
+******************************************************************************
+commit b240b78c9fcb5daef7388e60f6287e7f93ec308a
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 10 22:39:36 2021 +0000
+
+    + more unicode fixes
+    
+    git-svn-id: branches/unicodekvm@48644 -
+
+M	packages/fv/src/validate.inc
+
+******************************************************************************
+commit 9c4d842a6f6c80a1972d5ad8aaf47e66a3b7890a
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 10 22:32:51 2021 +0000
+
+    + more unicode fixes
+    
+    git-svn-id: branches/unicodekvm@48643 -
+
+M	packages/fv/src/dialogs.inc
+
+******************************************************************************
+commit d96b84cf1f81413e6ff8f8978b7712e34cbe2e88
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 10 22:22:26 2021 +0000
+
+    + unicode fixes
+    
+    git-svn-id: branches/unicodekvm@48642 -
+
+M	packages/fv/src/dialogs.inc
+
+******************************************************************************
+commit 5843d66a38276a1752766f5dfb853f44bdb08d16
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 10 22:17:27 2021 +0000
+
+    + unicode fix
+    
+    git-svn-id: branches/unicodekvm@48641 -
+
+M	packages/fv/src/dialogs.inc
+
+******************************************************************************
+commit 2ac661f63e21363d0715a4d213f8a1710ac8f660
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 10 22:14:20 2021 +0000
+
+    + unicode fixes
+    
+    git-svn-id: branches/unicodekvm@48640 -
+
+M	packages/fv/src/dialogs.inc
+
+******************************************************************************
+commit 98f42567130bbd6e47b357b93137f516b7ee8d1a
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 10 22:13:00 2021 +0000
+
+    + more unicode fixes
+    
+    git-svn-id: branches/unicodekvm@48639 -
+
+M	packages/fv/src/dialogs.inc
+
+******************************************************************************
+commit 0470ca8fe3958822745063a37481389e56127484
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 10 21:59:30 2021 +0000
+
+    + added simple test for the TRawByteStringCollection object type
+    
+    git-svn-id: branches/unicodekvm@48638 -
+
+M	.gitattributes
+A	tests/test/units/objects/testobj3.pp
+
+******************************************************************************
+commit c466caa0c8b439e563c41259d98a872abb77b0d2
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 10 21:54:37 2021 +0000
+
+    + unicode fixes
+    
+    git-svn-id: branches/unicodekvm@48637 -
+
+M	packages/fv/src/dialogs.inc
+
+******************************************************************************
+commit 5d3d64b3409efd9a109aa87f6bf2008a8da4b85c
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 10 21:49:31 2021 +0000
+
+    + unicode fix
+    
+    git-svn-id: branches/unicodekvm@48636 -
+
+M	packages/fv/src/dialogs.inc
+
+******************************************************************************
+commit 6cbf84eca626981e19a379371614a77b1838a6fb
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 10 21:48:54 2021 +0000
+
+    * more unicode fixes
+    
+    git-svn-id: branches/unicodekvm@48635 -
+
+M	packages/fv/src/dialogs.inc
+
+******************************************************************************
+commit af4d301af9beb51331fdd864bceda75e1710f2f6
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 10 21:44:19 2021 +0000
+
+    + unicode fixes in TCluster.DrawMultiBox
+    
+    git-svn-id: branches/unicodekvm@48634 -
+
+M	packages/fv/src/dialogs.inc
+
+******************************************************************************
+commit 1c9c84d01eb06bc3550d67836db2926f54eebde2
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 10 21:36:56 2021 +0000
+
+    * use a TUnicodeStringCollection in TCluster
+    
+    git-svn-id: branches/unicodekvm@48633 -
+
+M	packages/fv/src/dialogs.inc
+
+******************************************************************************
+commit edad510ad413c909eac9b1c102e72887c3c14d9d
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 10 21:34:22 2021 +0000
+
+    + added TUnicodeStringCollection
+    
+    git-svn-id: branches/unicodekvm@48632 -
+
+M	packages/rtl-extra/src/inc/objects.pp
+
+******************************************************************************
+commit 7fc456c04f947f10d2de7615c4c3187a948b190a
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 10 21:20:29 2021 +0000
+
+    + added AtInsert method to TRawByteStringCollection
+    
+    git-svn-id: branches/unicodekvm@48631 -
+
+M	packages/rtl-extra/src/inc/objects.pp
+
+******************************************************************************
+commit 0aaa75ba62b1d6f48f2ac9dc0e77634f0912fc79
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 10 20:44:38 2021 +0000
+
+    + initial attempt at writing a TRawByteStringCollection
+    
+    git-svn-id: branches/unicodekvm@48629 -
+
+M	packages/rtl-extra/src/inc/objects.pp
+
+******************************************************************************
+commit 7da5856dbd930ff246d76ec588438b7cceb87b49
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 10 17:55:36 2021 +0000
+
+    * unicode fixes
+    
+    git-svn-id: branches/unicodekvm@48627 -
+
+M	packages/fv/src/dialogs.inc
+
+******************************************************************************
+commit b8baf3bb85be26c3e10dfcb44ab61d3d98bd7738
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 10 17:51:56 2021 +0000
+
+    + unicode fixes
+    
+    git-svn-id: branches/unicodekvm@48626 -
+
+M	packages/fv/src/dialogs.inc
+
+******************************************************************************
+commit 8a0a97576a5e762d6e6be33b82ea40acc06e8009
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 10 17:41:25 2021 +0000
+
+    * unicode fixes
+    
+    git-svn-id: branches/unicodekvm@48625 -
+
+M	packages/fv/src/dialogs.inc
+M	packages/fv/src/platform.inc
+
+******************************************************************************
+commit 057b786fbde4ec4963a9d67dc57fe6daa0791642
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 10 17:37:21 2021 +0000
+
+    * unicode bugfixes
+    
+    git-svn-id: branches/unicodekvm@48624 -
+
+M	packages/fv/src/dialogs.inc
+
+******************************************************************************
+commit 55337def9ab243847853ef9b1dd58c0b564fcabc
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 10 17:35:43 2021 +0000
+
+    * more unicode fixes
+    
+    git-svn-id: branches/unicodekvm@48623 -
+
+M	packages/fv/src/dialogs.inc
+
+******************************************************************************
+commit be726fdd09e05de3695f7eb75e8b95c17d02e8f0
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 10 17:30:17 2021 +0000
+
+    * more unicode fixes
+    
+    git-svn-id: branches/unicodekvm@48622 -
+
+M	packages/fv/src/dialogs.inc
+
+******************************************************************************
+commit 829404a9570e15839ef15b845b43c009afe2055b
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 10 17:25:53 2021 +0000
+
+    * more unicode fixes
+    
+    git-svn-id: branches/unicodekvm@48621 -
+
+M	packages/fv/src/dialogs.inc
+
+******************************************************************************
+commit d41d6de6ec40a38ef495924e4cb77fb2cd5f3d15
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 10 17:11:02 2021 +0000
+
+    + more unicode fixes in the dialogs unit
+    
+    git-svn-id: branches/unicodekvm@48620 -
+
+M	packages/fv/src/dialogs.inc
+M	packages/fv/src/fvcommon.inc
+
+******************************************************************************
+commit f64bd5c07974559809148d0872f786122b881b1f
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 10 16:43:47 2021 +0000
+
+    * unicode fixes in TInputLine.Valid
+    
+    git-svn-id: branches/unicodekvm@48619 -
+
+M	packages/fv/src/dialogs.inc
+M	packages/fv/src/fvcommon.inc
+M	packages/fv/src/platform.inc
+
+******************************************************************************
+commit 1a643e250a070d873a2c7b4253767bf457a85643
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 10 16:28:54 2021 +0000
+
+    * unicode fixes in TInputLine.DataSize
+    
+    git-svn-id: branches/unicodekvm@48618 -
+
+M	packages/fv/src/dialogs.inc
+
+******************************************************************************
+commit 5013e7039a3dc30df510941eac1cd365a50fe10a
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 10 16:27:23 2021 +0000
+
+    * more unicode fixes in the udialogs unit
+    
+    git-svn-id: branches/unicodekvm@48617 -
+
+M	packages/fv/src/dialogs.inc
+
+******************************************************************************
+commit 1d0ec1b96671437913c86e35deffd2f28a1ac153
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 10 16:17:56 2021 +0000
+
+    * unicode fix in TInputLine.Init
+    
+    git-svn-id: branches/unicodekvm@48616 -
+
+M	packages/fv/src/dialogs.inc
+
+******************************************************************************
+commit 6e845e397fd1d96c6be0ad0caac80bde3c34b27e
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 10 16:15:33 2021 +0000
+
+    * unicode fix in TDialog.NewLabel
+    
+    git-svn-id: branches/unicodekvm@48615 -
+
+M	packages/fv/src/dialogs.inc
+
+******************************************************************************
+commit d5ef64fb91cddc665f25bf57c93d1d442604843a
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 10 16:11:55 2021 +0000
+
+    * unicode fix in TDialog.ChangeTitle
+    
+    git-svn-id: branches/unicodekvm@48614 -
+
+M	packages/fv/src/dialogs.inc
+
+******************************************************************************
+commit 25cf57b085ad8043e1a7a82ac4ea5f1335a8b537
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 10 16:10:14 2021 +0000
+
+    * unicode conversion of the msgbox unit implementation, as well as the FormatStr function
+    
+    git-svn-id: branches/unicodekvm@48613 -
+
+M	packages/fv/src/drivers.inc
+M	packages/fv/src/msgbox.inc
+
+******************************************************************************
+commit f0adf5d6120953274e901e055edbb29b42b7f616
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 10 15:28:44 2021 +0000
+
+    * unicode fixes in the implementation part of the uapp unit
+    
+    git-svn-id: branches/unicodekvm@48612 -
+
+M	packages/fv/src/app.inc
+
+******************************************************************************
+commit 7cf1d227fb2435978788ec6f283a7410d5e544e8
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 10 14:57:38 2021 +0000
+
+    * unicode fixes in the implementation of the TBackGround object
+    
+    git-svn-id: branches/unicodekvm@48611 -
+
+M	packages/fv/src/app.inc
+
+******************************************************************************
+commit 0d844aaa4150d4884ebd1ad411c791fe779e41db
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 10 14:41:11 2021 +0000
+
+    + introduced Sw_ExtendedGraphemeCluster
+    
+    git-svn-id: branches/unicodekvm@48610 -
+
+M	packages/fv/src/app.inc
+M	packages/fv/src/fvcommon.inc
+
+******************************************************************************
+commit 5b5f6b71581e282d9e7b68f953eb682269f9c79e
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 10 14:33:20 2021 +0000
+
+    + use unit (u)fvcommon in (u)msgbox
+    
+    git-svn-id: branches/unicodekvm@48609 -
+
+M	packages/fv/fpmake.pp
+M	packages/fv/src/msgbox.inc
+
+******************************************************************************
+commit 4d7538a0da03e8c177c4367d1e7080bc73fd04f2
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 10 14:29:34 2021 +0000
+
+    * umsgbox unit interface unicode conversion
+    
+    git-svn-id: branches/unicodekvm@48608 -
+
+M	packages/fv/src/msgbox.inc
+
+******************************************************************************
+commit ddd262168846fbf2ba5372114ada135af71225cd
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 10 14:23:48 2021 +0000
+
+    * more dialogs unit unicode conversion
+    
+    git-svn-id: branches/unicodekvm@48607 -
+
+M	packages/fv/src/dialogs.inc
+
+******************************************************************************
 commit dfc65acfa8a117265260964da616d70a7f4d80bf
 Author: tg74 <tg74@idefix.freepascal.org>
 Date:   Wed Feb 10 14:13:30 2021 +0000
@@ -15779,6 +17284,876 @@ Date:   Wed Feb 10 14:13:30 2021 +0000
     git-svn-id: branches/tg74/avx512-0037785@48606 -
 
 M	tests/utils/avx/avxopcodes.pas
+
+******************************************************************************
+commit 5e9ba29d89a34e1cc14f95f6ce47b7b87e6e683e
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 10 14:13:27 2021 +0000
+
+    + introduced type Sw_PString
+    
+    git-svn-id: branches/unicodekvm@48605 -
+
+M	packages/fv/src/fvcommon.inc
+
+******************************************************************************
+commit 297e9881c6f6fda8865e50267e033cc68224724d
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 10 14:10:28 2021 +0000
+
+    * some interface unit compilation fixes in the udialogs unit
+    
+    git-svn-id: branches/unicodekvm@48604 -
+
+M	packages/fv/src/dialogs.inc
+
+******************************************************************************
+commit 2cfab10cb1f9f6f6e44d438576db61d56f5aac99
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 10 14:05:40 2021 +0000
+
+    + use Sw_String in unit histlist/uhistlist to reduce the number of ifdefs
+    
+    git-svn-id: branches/unicodekvm@48603 -
+
+M	packages/fv/src/histlist.inc
+
+******************************************************************************
+commit 5dae243ffd4b2820b7e0bb54eeeefdb4e3bb2a30
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 10 14:03:08 2021 +0000
+
+    + use Sw_String in unit menus/umenus to reduce the number of ifdefs
+    
+    git-svn-id: branches/unicodekvm@48602 -
+
+M	packages/fv/fpmake.pp
+M	packages/fv/src/menus.inc
+
+******************************************************************************
+commit ddde3628ba2c1da90fd28622221996cb341ba59f
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 10 13:55:04 2021 +0000
+
+    - reduced number of ifdefs by using sw_string in unit views/uviews
+    
+    git-svn-id: branches/unicodekvm@48601 -
+
+M	packages/fv/src/views.inc
+
+******************************************************************************
+commit 79aac426fd35f18a52a986656abd7de8cdf84c95
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 10 13:46:42 2021 +0000
+
+    * use ufvcommon in udialogs
+    
+    git-svn-id: branches/unicodekvm@48600 -
+
+M	packages/fv/fpmake.pp
+M	packages/fv/src/dialogs.inc
+
+******************************************************************************
+commit a9a0dfeae387f49a9108263f5498f78cbe024ca2
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 10 13:45:35 2021 +0000
+
+    * use ufvcommon in unit uapp
+    
+    git-svn-id: branches/unicodekvm@48599 -
+
+M	packages/fv/fpmake.pp
+M	packages/fv/src/app.inc
+
+******************************************************************************
+commit f5005e46469f038ac3debcba16407bdb9f5c4e84
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 10 13:44:05 2021 +0000
+
+    * use ufvcommon in uhistlist
+    
+    git-svn-id: branches/unicodekvm@48598 -
+
+M	packages/fv/fpmake.pp
+M	packages/fv/src/histlist.inc
+
+******************************************************************************
+commit 88e960cd00ee0f4efc259fce11e6c0eec287c0a9
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 10 13:42:02 2021 +0000
+
+    * use ufvcommon in uviews
+    
+    git-svn-id: branches/unicodekvm@48597 -
+
+M	packages/fv/fpmake.pp
+M	packages/fv/src/views.inc
+
+******************************************************************************
+commit 047b435131103d0c4018745899b2cf2bb6a9e2ad
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 10 13:40:15 2021 +0000
+
+    * replaced fvstring with sw_string in validate.inc
+    
+    git-svn-id: branches/unicodekvm@48596 -
+
+M	packages/fv/src/validate.inc
+
+******************************************************************************
+commit 1ffb6c6fdf22c24e7740462c04d025df8b2d84ec
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 10 13:38:44 2021 +0000
+
+    * use ufvcommon in unit uvalidate
+    
+    git-svn-id: branches/unicodekvm@48595 -
+
+M	packages/fv/fpmake.pp
+M	packages/fv/src/validate.inc
+
+******************************************************************************
+commit cb6a66fed0ddde682706434bf638b8158b616396
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 10 13:37:21 2021 +0000
+
+    * fvstring replaced with sw_string in the drivers/udrivers unit
+    
+    git-svn-id: branches/unicodekvm@48594 -
+
+M	packages/fv/examples/testapp.lpi
+M	packages/fv/fpmake.pp
+M	packages/fv/src/drivers.inc
+
+******************************************************************************
+commit 90b422b2d44eb1b54cd9c98d9bed8e6f97686296
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 10 13:35:11 2021 +0000
+
+    + introduced Sw_String
+    
+    git-svn-id: branches/unicodekvm@48593 -
+
+M	packages/fv/src/fvcommon.inc
+
+******************************************************************************
+commit 29dfb6131e6e1819591bf69a009387c6c8dfd07d
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 10 13:32:24 2021 +0000
+
+    + ufvcommon unit
+    
+    git-svn-id: branches/unicodekvm@48592 -
+
+M	.gitattributes
+M	packages/fv/fpmake.pp
+M	packages/fv/src/fvcommon.inc
+A	packages/fv/src/ufvcommon.pas
+
+******************************************************************************
+commit e60b41f2ab405edaa1cb4020e6ca4503ac50b4fb
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 10 13:30:38 2021 +0000
+
+    + fvcommon.inc include dependency
+    
+    git-svn-id: branches/unicodekvm@48591 -
+
+M	packages/fv/fpmake.pp
+
+******************************************************************************
+commit 78862011b2dc79757a001c92b0e7bfa975ce5723
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 10 13:29:56 2021 +0000
+
+    + fvcommon.pas that includes fvcommon.inc
+    
+    git-svn-id: branches/unicodekvm@48590 -
+
+M	.gitattributes
+A	packages/fv/src/fvcommon.pas
+
+******************************************************************************
+commit e1da44c21913bcfb21cd404276d37dd726ee11ff
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 10 13:29:12 2021 +0000
+
+    * fvcommon.pas renamed fvcommon.inc
+    
+    git-svn-id: branches/unicodekvm@48589 -
+
+M	.gitattributes
+R100	packages/fv/src/fvcommon.pas	packages/fv/src/fvcommon.inc
+
+******************************************************************************
+commit 92334d86dfafcacc31c0c2b5c184c029e8ad2cdb
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 10 13:28:33 2021 +0000
+
+    * use FVString in the interface part of the validate unit
+    
+    git-svn-id: branches/unicodekvm@48588 -
+
+M	packages/fv/src/validate.inc
+
+******************************************************************************
+commit d659c731d8277b7beca49e25df704dc51259eaa4
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 10 13:20:21 2021 +0000
+
+    + introduced the FVString type
+    
+    git-svn-id: branches/unicodekvm@48587 -
+
+M	packages/fv/src/drivers.inc
+
+******************************************************************************
+commit 0fe68e7c9edc24226fdfe9fe93d6ceef9fce4824
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 10 12:47:48 2021 +0000
+
+    * updated the uses clauses of the unicode versions of the app, dialogs, msgbox
+      and validate units to use only unicode units in their uses clause
+    
+    git-svn-id: branches/unicodekvm@48586 -
+
+M	packages/fv/src/app.inc
+M	packages/fv/src/dialogs.inc
+M	packages/fv/src/msgbox.inc
+M	packages/fv/src/validate.inc
+
+******************************************************************************
+commit d373397f30324be8f0e7f1085ed5322e17bd22a3
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 10 12:41:59 2021 +0000
+
+    + added unicode versions of the app, dialogs, msgbox and validate units (unicode conversion not completed yet)
+    
+    git-svn-id: branches/unicodekvm@48585 -
+
+M	.gitattributes
+M	packages/fv/fpmake.pp
+M	packages/fv/src/app.inc
+M	packages/fv/src/dialogs.inc
+M	packages/fv/src/msgbox.inc
+A	packages/fv/src/uapp.pas
+A	packages/fv/src/udialogs.pas
+A	packages/fv/src/umsgbox.pas
+A	packages/fv/src/uvalidate.pas
+M	packages/fv/src/validate.inc
+
+******************************************************************************
+commit 3fd5f452cdc50dc2cec13ac9b03b750aa2c252c9
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 10 12:28:31 2021 +0000
+
+    + added .inc dependencies in fpmake.pp for units app, dialogs, msgbox and validate
+    
+    git-svn-id: branches/unicodekvm@48584 -
+
+M	packages/fv/fpmake.pp
+
+******************************************************************************
+commit 0172420df7dd4f317c050084d39ee271a6eba17a
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 10 12:27:14 2021 +0000
+
+    + added .pas files that include their respective .inc files for the units app, dialogs, msgbox and validate
+    
+    git-svn-id: branches/unicodekvm@48583 -
+
+M	.gitattributes
+A	packages/fv/src/app.pas
+A	packages/fv/src/dialogs.pas
+A	packages/fv/src/msgbox.pas
+A	packages/fv/src/validate.pas
+
+******************************************************************************
+commit 3f0d1aca089fbc674fbd8a1e82674e4726d03c0d
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 10 12:25:39 2021 +0000
+
+    * app, dialogs, msgbox and validate unites renamed .inc
+    
+    git-svn-id: branches/unicodekvm@48582 -
+
+M	.gitattributes
+R100	packages/fv/src/app.pas	packages/fv/src/app.inc
+R100	packages/fv/src/dialogs.pas	packages/fv/src/dialogs.inc
+R100	packages/fv/src/msgbox.pas	packages/fv/src/msgbox.inc
+R100	packages/fv/src/validate.pas	packages/fv/src/validate.inc
+
+******************************************************************************
+commit c92235f4fd4c9430e3468e3b17868a68ccbd459a
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 10 12:19:34 2021 +0000
+
+    + unicode version of the histlist unit
+    
+    git-svn-id: branches/unicodekvm@48581 -
+
+M	.gitattributes
+M	packages/fv/fpmake.pp
+M	packages/fv/src/histlist.inc
+A	packages/fv/src/uhistlist.pas
+
+******************************************************************************
+commit 668d859cc2b0c341f6a12b0cb92e7dd4caca23f0
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 10 09:59:06 2021 +0000
+
+    + added histlist.inc as dependency for histlist.pas in fpmake.pp
+    
+    git-svn-id: branches/unicodekvm@48579 -
+
+M	packages/fv/fpmake.pp
+
+******************************************************************************
+commit ad35f14017ab89059ee8c608c77a34d93f902cd9
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 10 09:58:19 2021 +0000
+
+    + added histlist.pas that include histlist.inc
+    
+    git-svn-id: branches/unicodekvm@48578 -
+
+M	.gitattributes
+A	packages/fv/src/histlist.pas
+
+******************************************************************************
+commit 4ff66758ee71ffdc5a99b86c3b824a0ab5f81b66
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 10 09:57:26 2021 +0000
+
+    * histlist.pas renamed histlist.inc
+    
+    git-svn-id: branches/unicodekvm@48577 -
+
+M	.gitattributes
+R100	packages/fv/src/histlist.pas	packages/fv/src/histlist.inc
+
+******************************************************************************
+commit eb6d1dc73f9b2694fe6baf692936a65939c026b3
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 10 00:41:08 2021 +0000
+
+    + unicode version of the menus unit
+    
+    git-svn-id: branches/unicodekvm@48576 -
+
+M	.gitattributes
+M	packages/fv/fpmake.pp
+M	packages/fv/src/menus.inc
+A	packages/fv/src/umenus.pas
+
+******************************************************************************
+commit e9024877110a89323c818a9d49979c6c627f62c4
+Author: nickysn <nickysn@gmail.com>
+Date:   Tue Feb 9 23:38:59 2021 +0000
+
+    + added include file menus.inc to the menus unit dependencies in fpmake.pp
+    
+    git-svn-id: branches/unicodekvm@48575 -
+
+M	packages/fv/fpmake.pp
+
+******************************************************************************
+commit 08c5d9b00773c9f1bbf7d703109ba9cab2b89654
+Author: nickysn <nickysn@gmail.com>
+Date:   Tue Feb 9 23:38:24 2021 +0000
+
+    + added menus.pas that includes menus.inc
+    
+    git-svn-id: branches/unicodekvm@48574 -
+
+M	.gitattributes
+A	packages/fv/src/menus.pas
+
+******************************************************************************
+commit 17b748ef9ae87cdff765ff1aedfdf23f643f7367
+Author: nickysn <nickysn@gmail.com>
+Date:   Tue Feb 9 23:37:31 2021 +0000
+
+    * menus.pas renamed menus.inc
+    
+    git-svn-id: branches/unicodekvm@48573 -
+
+M	.gitattributes
+R100	packages/fv/src/menus.pas	packages/fv/src/menus.inc
+
+******************************************************************************
+commit 346cf6a32ff9d360f363715b940d081d713a475c
+Author: nickysn <nickysn@gmail.com>
+Date:   Tue Feb 9 23:33:37 2021 +0000
+
+    + unicode version of unit outline
+    
+    git-svn-id: branches/unicodekvm@48571 -
+
+M	.gitattributes
+M	packages/fv/fpmake.pp
+M	packages/fv/src/outline.inc
+A	packages/fv/src/uoutline.pas
+
+******************************************************************************
+commit 074f72b64b551ac877d216da62b17fa1dfb10aec
+Author: nickysn <nickysn@gmail.com>
+Date:   Tue Feb 9 22:02:09 2021 +0000
+
+    + added outline.inc include file to fpmake.pp
+    
+    git-svn-id: branches/unicodekvm@48570 -
+
+M	packages/fv/fpmake.pp
+
+******************************************************************************
+commit 8b0747f5529cafaf0823adcb7d9c1184f09a2f04
+Author: nickysn <nickysn@gmail.com>
+Date:   Tue Feb 9 22:01:23 2021 +0000
+
+    + added outline.pas that includes outline.inc
+    
+    git-svn-id: branches/unicodekvm@48569 -
+
+M	.gitattributes
+A	packages/fv/src/outline.pas
+
+******************************************************************************
+commit 86f36c66c048f4ed692d829fcbd4a28e2f9b7a7b
+Author: nickysn <nickysn@gmail.com>
+Date:   Tue Feb 9 22:00:25 2021 +0000
+
+    * outline.pas renamed outline.inc
+    
+    git-svn-id: branches/unicodekvm@48568 -
+
+M	.gitattributes
+R100	packages/fv/src/outline.pas	packages/fv/src/outline.inc
+
+******************************************************************************
+commit c540ef3bf85d0bb8298d57025400e8fa1af4323a
+Author: nickysn <nickysn@gmail.com>
+Date:   Tue Feb 9 21:55:33 2021 +0000
+
+    * TWindow.Title changed to UnicodeString
+    
+    git-svn-id: branches/unicodekvm@48567 -
+
+M	packages/fv/src/views.inc
+
+******************************************************************************
+commit 3d74e5a5243c4302102d62592ac4c7ceb3e49c4d
+Author: nickysn <nickysn@gmail.com>
+Date:   Tue Feb 9 21:49:54 2021 +0000
+
+    + introduced TStream.ReadUnicodeString and WriteUnicodeString
+    
+    git-svn-id: branches/unicodekvm@48566 -
+
+M	packages/rtl-extra/src/inc/objects.pp
+
+******************************************************************************
+commit 2b0cdc0c15d6012f580a1e2e578ab1de291c5bd4
+Author: nickysn <nickysn@gmail.com>
+Date:   Tue Feb 9 20:54:26 2021 +0000
+
+    - removed the posidx, because it seems to be unused
+    
+    git-svn-id: branches/unicodekvm@48565 -
+
+M	packages/fv/src/views.inc
+
+******************************************************************************
+commit 763124567d20c79d6bdd9ca550899588367bad2a
+Author: nickysn <nickysn@gmail.com>
+Date:   Tue Feb 9 20:49:23 2021 +0000
+
+    * unicode versions of TView.TextWidth and CTextWidth
+    
+    git-svn-id: branches/unicodekvm@48564 -
+
+M	packages/fv/src/views.inc
+
+******************************************************************************
+commit e8a0abf075a6ac777b3928f5623f6f3e67a0050a
+Author: nickysn <nickysn@gmail.com>
+Date:   Tue Feb 9 20:43:47 2021 +0000
+
+    * unicode version of SpecialChars
+    
+    git-svn-id: branches/unicodekvm@48562 -
+
+M	packages/fv/src/views.inc
+
+******************************************************************************
+commit 766162a3481880e0c0533c0309aeb9fd19a0e545
+Author: nickysn <nickysn@gmail.com>
+Date:   Tue Feb 9 20:42:05 2021 +0000
+
+    * unicode fixes in TListViewer.Draw
+    
+    git-svn-id: branches/unicodekvm@48561 -
+
+M	packages/fv/src/views.inc
+
+******************************************************************************
+commit bb06c623c3100372c1cf7a769da0d7bf1eb94ce0
+Author: nickysn <nickysn@gmail.com>
+Date:   Tue Feb 9 20:36:17 2021 +0000
+
+    * unicode version of TListViewer.GetText
+    
+    git-svn-id: branches/unicodekvm@48560 -
+
+M	packages/fv/src/views.inc
+
+******************************************************************************
+commit 6198d4a0a1eabe00f5ba947f24747f5c1bab9f94
+Author: nickysn <nickysn@gmail.com>
+Date:   Tue Feb 9 20:30:02 2021 +0000
+
+    * unicode conversion of TScrollBar.Init
+    
+    git-svn-id: branches/unicodekvm@48559 -
+
+M	packages/fv/src/views.inc
+
+******************************************************************************
+commit c9cc530d948d4270e528b63ba2bb13493366d907
+Author: nickysn <nickysn@gmail.com>
+Date:   Tue Feb 9 20:19:39 2021 +0000
+
+    * TTitleStr redefined as UnicodeString in the unicode version of the views unit
+    
+    git-svn-id: branches/unicodekvm@48558 -
+
+M	packages/fv/src/views.inc
+
+******************************************************************************
+commit 98132ce24e7eab0793065dea5d91d14ae8a4e075
+Author: nickysn <nickysn@gmail.com>
+Date:   Tue Feb 9 20:17:41 2021 +0000
+
+    * unicode fixes in TFrame.Draw
+    
+    git-svn-id: branches/unicodekvm@48557 -
+
+M	packages/fv/src/views.inc
+
+******************************************************************************
+commit 6fa787674f53b7e01dfb9f2de12e92367c44ba0c
+Author: nickysn <nickysn@gmail.com>
+Date:   Tue Feb 9 16:58:20 2021 +0000
+
+    + unicode version of MoveBuf
+    
+    git-svn-id: branches/unicodekvm@48555 -
+
+M	packages/fv/src/drivers.inc
+
+******************************************************************************
+commit 7fd8562d4a19c3d271ca9d8ea912d006d1b8012c
+Author: nickysn <nickysn@gmail.com>
+Date:   Tue Feb 9 15:38:03 2021 +0000
+
+    + unicode version of MoveChar
+    
+    git-svn-id: branches/unicodekvm@48554 -
+
+M	packages/fv/src/drivers.inc
+
+******************************************************************************
+commit ae339ed8fb7d5678db9d5f9db3df4002a21074c7
+Author: nickysn <nickysn@gmail.com>
+Date:   Tue Feb 9 14:36:14 2021 +0000
+
+    + unicode version of CStrLen
+    
+    git-svn-id: branches/unicodekvm@48553 -
+
+M	packages/fv/src/drivers.inc
+
+******************************************************************************
+commit 3297a453ea0717b1c4858015adc494c4dd467239
+Author: nickysn <nickysn@gmail.com>
+Date:   Tue Feb 9 14:32:27 2021 +0000
+
+    + unicode version of MoveStr
+    
+    git-svn-id: branches/unicodekvm@48552 -
+
+M	packages/fv/src/drivers.inc
+
+******************************************************************************
+commit 8a7ba17e12daa3e03c89e4794daa07e852105f57
+Author: nickysn <nickysn@gmail.com>
+Date:   Tue Feb 9 14:26:59 2021 +0000
+
+    + unicode version of MoveCStr
+    
+    git-svn-id: branches/unicodekvm@48551 -
+
+M	packages/fv/src/drivers.inc
+
+******************************************************************************
+commit 0d76565e50239b58176c9d8a298677c2093ac3a1
+Author: nickysn <nickysn@gmail.com>
+Date:   Tue Feb 9 14:08:25 2021 +0000
+
+    * partial unicode conversion of the views unit
+    
+    git-svn-id: branches/unicodekvm@48550 -
+
+M	packages/fv/src/views.inc
+
+******************************************************************************
+commit 4b0edb61153aa71dea42c1f6e270daf72753384e
+Author: nickysn <nickysn@gmail.com>
+Date:   Tue Feb 9 10:56:27 2021 +0000
+
+    * switched the fv units to objfpc mode
+    
+    git-svn-id: branches/unicodekvm@48549 -
+
+M	packages/fv/src/platform.inc
+M	packages/fv/src/stddlg.pas
+
+******************************************************************************
+commit b564e400fc76fa5f429922849a96580d6494bfac
+Author: nickysn <nickysn@gmail.com>
+Date:   Mon Feb 8 20:42:14 2021 +0000
+
+    + introduced unit uviews, which is going to be the unicode enabled version of the views unit
+    
+    git-svn-id: branches/unicodekvm@48546 -
+
+M	.gitattributes
+M	packages/fv/fpmake.pp
+A	packages/fv/src/uviews.pas
+M	packages/fv/src/views.inc
+
+******************************************************************************
+commit be64fd707a6ed1aa52ce366872b302dd18270a44
+Author: nickysn <nickysn@gmail.com>
+Date:   Mon Feb 8 20:36:06 2021 +0000
+
+    + add include file views.inc to fpmake
+    
+    git-svn-id: branches/unicodekvm@48545 -
+
+M	packages/fv/fpmake.pp
+
+******************************************************************************
+commit 1f3e903c107ef366b8c1ed2d57e4e1efdad13d02
+Author: nickysn <nickysn@gmail.com>
+Date:   Mon Feb 8 20:35:35 2021 +0000
+
+    + added views.pas that includes views.inc
+    
+    git-svn-id: branches/unicodekvm@48544 -
+
+M	.gitattributes
+A	packages/fv/src/views.pas
+
+******************************************************************************
+commit c5541e9376af14246897f7013d1a72a62da7032f
+Author: nickysn <nickysn@gmail.com>
+Date:   Mon Feb 8 20:34:42 2021 +0000
+
+    * views.pas renamed views.inc
+    
+    git-svn-id: branches/unicodekvm@48543 -
+
+M	.gitattributes
+R100	packages/fv/src/views.pas	packages/fv/src/views.inc
+
+******************************************************************************
+commit 3d4a242974f5290302e7afc1f18cb462ce6942a7
+Author: nickysn <nickysn@gmail.com>
+Date:   Mon Feb 8 20:29:23 2021 +0000
+
+    + introduced unit udrivers, which calls InitEnhancedVideo instead of InitVideo (i.e. enables unicode mode in the video unit)
+    
+    git-svn-id: branches/unicodekvm@48542 -
+
+M	.gitattributes
+M	packages/fv/fpmake.pp
+M	packages/fv/src/drivers.inc
+A	packages/fv/src/udrivers.pas
+
+******************************************************************************
+commit e341e247e99e1adfb84f522ea6a9468415d722d5
+Author: nickysn <nickysn@gmail.com>
+Date:   Mon Feb 8 20:19:34 2021 +0000
+
+    + add drivers.inc to the include file dependencies of the drivers unit
+    
+    git-svn-id: branches/unicodekvm@48541 -
+
+M	packages/fv/fpmake.pp
+
+******************************************************************************
+commit 28cc421b13ded883a6c2e6c39a7d2e3ee63271f6
+Author: nickysn <nickysn@gmail.com>
+Date:   Mon Feb 8 20:18:42 2021 +0000
+
+    + added drivers.pas that includes drivers.inc
+    
+    git-svn-id: branches/unicodekvm@48540 -
+
+M	.gitattributes
+A	packages/fv/src/drivers.pas
+
+******************************************************************************
+commit 44213e33895210b0b1ece2353414355ea364dbd8
+Author: nickysn <nickysn@gmail.com>
+Date:   Mon Feb 8 20:17:50 2021 +0000
+
+    * drivers.pas moved to drivers.inc
+    
+    git-svn-id: branches/unicodekvm@48539 -
+
+M	.gitattributes
+R100	packages/fv/src/drivers.pas	packages/fv/src/drivers.inc
+
+******************************************************************************
+commit 75db39f06434280c32980480d52def9c188a2c66
+Author: nickysn <nickysn@gmail.com>
+Date:   Mon Feb 8 20:15:40 2021 +0000
+
+    * all integers replaced with smallint, in order to be able to introduce objfpc mode
+    
+    git-svn-id: branches/unicodekvm@48538 -
+
+M	packages/fv/src/app.pas
+M	packages/fv/src/asciitab.pas
+M	packages/fv/src/dialogs.pas
+M	packages/fv/src/drivers.pas
+M	packages/fv/src/editors.pas
+M	packages/fv/src/fvcommon.pas
+M	packages/fv/src/inplong.pas
+M	packages/fv/src/memory.pas
+M	packages/fv/src/menus.pas
+M	packages/fv/src/msgbox.pas
+M	packages/fv/src/outline.pas
+M	packages/fv/src/resource.pas
+M	packages/fv/src/statuses.pas
+M	packages/fv/src/stddlg.pas
+M	packages/fv/src/tabs.pas
+M	packages/fv/src/validate.pas
+M	packages/fv/src/views.pas
+
+******************************************************************************
+commit 834a6579d7ea7caab3b8e40d2a94ab6bda4dc198
+Author: nickysn <nickysn@gmail.com>
+Date:   Mon Feb 8 15:27:39 2021 +0000
+
+    * LineBuf converted to dynarray (to avoid buffer overflow for too big consoles) and made global to avoid reallocating it on the heap on each screen update
+    
+    git-svn-id: branches/unicodekvm@48537 -
+
+M	packages/rtl-console/src/win/video.pp
+
+******************************************************************************
+commit ec0fa8f46f25ec4f307486dc6fc9b7fe2d8c3bc0
+Author: nickysn <nickysn@gmail.com>
+Date:   Mon Feb 8 14:26:52 2021 +0000
+
+    - removed unused variables and types from Video.SysUpdateScreen
+    
+    git-svn-id: branches/unicodekvm@48536 -
+
+M	packages/rtl-console/src/win/video.pp
+
+******************************************************************************
+commit 6109c5606624c41923a1b3bb5ba2107e586ef2a9
+Author: nickysn <nickysn@gmail.com>
+Date:   Mon Feb 8 14:20:29 2021 +0000
+
+    - removed the cp850 code page mapping from the windows video unit (it is no longer used)
+    
+    git-svn-id: branches/unicodekvm@48535 -
+
+M	packages/rtl-console/src/win/video.pp
+
+******************************************************************************
+commit 4864aba47a325c28674bc9581ed2cde92b94b016
+Author: nickysn <nickysn@gmail.com>
+Date:   Mon Feb 8 14:13:40 2021 +0000
+
+    - removed useunicodefunctions from the windows video unit
+    
+    git-svn-id: branches/unicodekvm@48534 -
+
+M	packages/rtl-console/src/win/video.pp
+
+******************************************************************************
+commit 11db30ab3d347f358f6ca5e86bc1640f8930c11c
+Author: nickysn <nickysn@gmail.com>
+Date:   Mon Feb 8 14:06:44 2021 +0000
+
+    * use CP_OEMCP to convert characters in LegacyChar2ExtendedGraphemeCluster
+    
+    git-svn-id: branches/unicodekvm@48533 -
+
+M	packages/rtl-console/src/inc/video.inc
+
+******************************************************************************
+commit 453bdaaafc71dcc467528063395aa3188886df6d
+Author: nickysn <nickysn@gmail.com>
+Date:   Mon Feb 8 13:53:19 2021 +0000
+
+    * switched the windows video driver to use the enhanced (unicode) video buffer
+    
+    git-svn-id: branches/unicodekvm@48532 -
+
+M	packages/rtl-console/src/win/video.pp
+
+******************************************************************************
+commit 2746b0e035f558d7b67366a5633f929e73ed452e
+Author: nickysn <nickysn@gmail.com>
+Date:   Mon Feb 8 13:52:39 2021 +0000
+
+    + added operator = for comparison of TEnhancedVideoCell records
+    
+    git-svn-id: branches/unicodekvm@48531 -
+
+M	packages/rtl-console/src/inc/video.inc
+M	packages/rtl-console/src/inc/videoh.inc
+
+******************************************************************************
+commit 1b2e13bf77c36b810e92609b199c687a6a0a3871
+Author: nickysn <nickysn@gmail.com>
+Date:   Mon Feb 8 11:18:22 2021 +0000
+
+    + enabled all debug code generation options in the video unit test .lpi files
+    
+    git-svn-id: branches/unicodekvm@48530 -
+
+M	packages/rtl-console/tests/video1_windows.lpi
+M	packages/rtl-console/tests/video2_windows.lpi
+
+******************************************************************************
+commit 3634e7823f3b50deecc14b4c9734501cb2567c7e
+Author: nickysn <nickysn@gmail.com>
+Date:   Mon Feb 8 11:10:55 2021 +0000
+
+    * .lpi updated
+    
+    git-svn-id: branches/unicodekvm@48528 -
+
+M	packages/rtl-console/tests/video2_windows.lpi
+
+******************************************************************************
+commit d4913f490f30a2f4521573fadd6229f0a7e6402a
+Author: nickysn <nickysn@gmail.com>
+Date:   Mon Feb 8 11:10:37 2021 +0000
+
+    * fixed off by one errors in the new video unit routines
+    
+    git-svn-id: branches/unicodekvm@48527 -
+
+M	packages/rtl-console/src/inc/video.inc
 
 ******************************************************************************
 commit 4e151d5a6d8b1b11617cc17f3fa3e08f612efe4a
@@ -15864,6 +18239,156 @@ Date:   Mon Feb 1 14:54:18 2021 +0000
     git-svn-id: branches/tg74/avx512-0037785@48491 -
 
 M	tests/utils/avx/avxopcodes.pas
+
+******************************************************************************
+commit c907f4cb28fdd9f561086372f7f7f1404f99e916
+Author: nickysn <nickysn@gmail.com>
+Date:   Mon Feb 1 11:29:09 2021 +0000
+
+    + added lazarus projects for the video unit tests for Windows
+    
+    git-svn-id: branches/unicodekvm@48488 -
+
+M	.gitattributes
+A	packages/rtl-console/tests/video1_windows.lpi
+A	packages/rtl-console/tests/video2_windows.lpi
+
+******************************************************************************
+commit d5283cae7fa84ede4b82743a762bebd51ede8a55
+Author: nickysn <nickysn@gmail.com>
+Date:   Mon Feb 1 06:19:12 2021 +0000
+
+    + support both legacy and enhanced video buffers in Video.ClearScreen
+    
+    git-svn-id: branches/unicodekvm@48487 -
+
+M	packages/rtl-console/src/inc/video.inc
+
+******************************************************************************
+commit cb6ba25e1b1a23ac2dfb3c17afb6ada075b54b9b
+Author: nickysn <nickysn@gmail.com>
+Date:   Mon Feb 1 06:11:32 2021 +0000
+
+    * formatting
+    
+    git-svn-id: branches/unicodekvm@48486 -
+
+M	packages/rtl-console/src/inc/video.inc
+
+******************************************************************************
+commit ce6260c8971c9928f99b79b34a8e734a06288865
+Author: nickysn <nickysn@gmail.com>
+Date:   Mon Feb 1 06:09:32 2021 +0000
+
+    + added unicode video unit test
+    
+    git-svn-id: branches/unicodekvm@48485 -
+
+M	.gitattributes
+A	packages/rtl-console/tests/video2.pp
+A	packages/rtl-console/tests/video2_unix.lpi
+
+******************************************************************************
+commit ea3124ed4af17414c0526ffac7a80b6ac6178842
+Author: nickysn <nickysn@gmail.com>
+Date:   Mon Feb 1 06:08:13 2021 +0000
+
+    + introduced initialization of the video unit in enhanced (Unicode) mode
+    
+    git-svn-id: branches/unicodekvm@48484 -
+
+M	packages/rtl-console/src/inc/video.inc
+M	packages/rtl-console/src/inc/videoh.inc
+
+******************************************************************************
+commit 90113ef819430c8dc471551e5c953fec06cce03c
+Author: nickysn <nickysn@gmail.com>
+Date:   Mon Feb 1 05:10:39 2021 +0000
+
+    + added simple test for the video unit
+    
+    git-svn-id: branches/unicodekvm@48483 -
+
+M	.gitattributes
+A	packages/rtl-console/tests/video1.pp
+A	packages/rtl-console/tests/video1_unix.lpi
+
+******************************************************************************
+commit b13c8e3ef68607a7a37694fc1605dbb743e8650b
+Author: nickysn <nickysn@gmail.com>
+Date:   Mon Feb 1 03:26:56 2021 +0000
+
+    * use UnicodeString instead of WideString in TEnhancedVideoCell
+    
+    git-svn-id: branches/unicodekvm@48482 -
+
+M	packages/rtl-console/src/inc/video.inc
+M	packages/rtl-console/src/inc/videoh.inc
+
+******************************************************************************
+commit 0d1fef96a1d0b4c7c70f9eed24b6a8997e3e109b
+Author: nickysn <nickysn@gmail.com>
+Date:   Sun Jan 31 14:28:41 2021 +0000
+
+    + introduced OldEnhancedVideoBuf
+    
+    git-svn-id: branches/unicodekvm@48468 -
+
+M	packages/rtl-console/src/inc/videoh.inc
+
+******************************************************************************
+commit 3f852e1444278f8d146f93cd39cdf239f0fc93e2
+Author: nickysn <nickysn@gmail.com>
+Date:   Sun Jan 31 14:26:33 2021 +0000
+
+    + introduced TVideoDriver.InitEnhancedDriver
+    
+    git-svn-id: branches/unicodekvm@48467 -
+
+M	packages/rtl-console/src/amicommon/video.pp
+M	packages/rtl-console/src/go32v2/video.pp
+M	packages/rtl-console/src/inc/videoh.inc
+M	packages/rtl-console/src/msdos/video.pp
+M	packages/rtl-console/src/netware/video.pp
+M	packages/rtl-console/src/netwlibc/video.pp
+M	packages/rtl-console/src/os2commn/video.pp
+M	packages/rtl-console/src/unix/video.pp
+M	packages/rtl-console/src/win/video.pp
+M	packages/rtl-console/src/win16/video.pp
+
+******************************************************************************
+commit f8320dff082272a41e6a2d6d0f8a5ba50b4ea80b
+Author: nickysn <nickysn@gmail.com>
+Date:   Sun Jan 31 14:11:29 2021 +0000
+
+    + added the EnhancedVideoBuf global variable to the video unit
+    
+    git-svn-id: branches/unicodekvm@48466 -
+
+M	packages/rtl-console/src/inc/videoh.inc
+
+******************************************************************************
+commit b8dfa1b8e68946db2ce52deb37c681eccba73418
+Author: nickysn <nickysn@gmail.com>
+Date:   Sun Jan 31 13:57:46 2021 +0000
+
+    + initial attempt at defining an enhanced video cell record for the Unicode support in the video unit
+    
+    git-svn-id: branches/unicodekvm@48465 -
+
+M	packages/rtl-console/src/inc/video.inc
+M	packages/rtl-console/src/inc/videoh.inc
+
+******************************************************************************
+commit ee3c4629aa1157fcb97db79e962b522649c7abd3
+Author: nickysn <nickysn@gmail.com>
+Date:   Sat Jan 30 00:26:50 2021 +0000
+
+    * update revision.inc
+    
+    git-svn-id: branches/unicodekvm@48454 -
+
+M	utils/fpcm/revision.inc
 
 ******************************************************************************
 commit 1bcf50ce701c200fb6962226b2f48274d8a68985
@@ -16466,6 +18991,1228 @@ M	compiler/x86_64/x8664ats.inc
 M	compiler/x86_64/x8664nop.inc
 M	compiler/x86_64/x8664tab.inc
 M	tests/utils/avx/avxopcodes.pas
+
+******************************************************************************
+commit 6aa8b718f46b6926836aff4e40cda9e868701eb8
+Author: nickysn <nickysn@gmail.com>
+Date:   Tue Jul 2 15:37:02 2019 +0000
+
+    * check the LC_CTYPE env var instead of LANG on OpenBSD to check whether UTF-8
+      is enabled
+    
+    git-svn-id: branches/unicodekvm@42321 -
+
+M	packages/rtl-console/src/unix/unixkvmbase.pp
+
+******************************************************************************
+commit c964eab85d726ede55c745c4a0b9187fada7c858
+Author: nickysn <nickysn@gmail.com>
+Date:   Tue Jul 2 15:32:11 2019 +0000
+
+    * refactored slightly the BEOS ifdef in unixkvmbase.utf8enabled
+    
+    git-svn-id: branches/unicodekvm@42320 -
+
+M	packages/rtl-console/src/unix/unixkvmbase.pp
+
+******************************************************************************
+commit 837659f4201aab4fee9c8678fe51ac8a3218ca16
+Author: nickysn <nickysn@gmail.com>
+Date:   Tue Mar 5 18:51:25 2019 +0000
+
+    + added comment about a Windows bug, which causes the keyboard layout change
+      detection code to not work
+    
+    git-svn-id: branches/unicodekvm@41609 -
+
+M	packages/rtl-console/src/win/keyboard.pp
+
+******************************************************************************
+commit e583341877ff53bff386d038c2e387a224751121
+Author: nickysn <nickysn@gmail.com>
+Date:   Tue Mar 5 18:30:27 2019 +0000
+
+    + added comments, explaining the enhanced shift states in detail
+    
+    git-svn-id: branches/unicodekvm@41608 -
+
+M	packages/rtl-console/src/inc/keybrdh.inc
+
+******************************************************************************
+commit b5575c0829373904a10e532dac7ef26764705ad6
+Author: nickysn <nickysn@gmail.com>
+Date:   Tue Mar 5 17:46:15 2019 +0000
+
+    * optimized UpdateKeyboardLayoutInfo, so it only calls GetKeyboardLayout once
+      and only performs the HasAltGr check in case the keyboard layout has actually
+      changed
+    
+    git-svn-id: branches/unicodekvm@41607 -
+
+M	packages/rtl-console/src/win/keyboard.pp
+
+******************************************************************************
+commit ead1eab3d7342ac6476ee87e871f6214872e5b1f
+Author: nickysn <nickysn@gmail.com>
+Date:   Tue Mar 5 17:38:30 2019 +0000
+
+    * update the keyboard layout info before every keystroke, since Windows can
+      change between multiple layouts, while the program is running
+    
+    git-svn-id: branches/unicodekvm@41606 -
+
+M	packages/rtl-console/src/win/keyboard.pp
+
+******************************************************************************
+commit 4034dcc2c68797c8159978fe6d5a68b550a589c6
+Author: nickysn <nickysn@gmail.com>
+Date:   Tue Mar 5 17:14:42 2019 +0000
+
+    * CheckAltGr moved above HandleKeyboard, because it will be invoked from there also
+    
+    git-svn-id: branches/unicodekvm@41605 -
+
+M	packages/rtl-console/src/win/keyboard.pp
+
+******************************************************************************
+commit eaa60e45465f1ab252030ee8fb79d201a6872a3c
+Author: nickysn <nickysn@gmail.com>
+Date:   Tue Mar 5 17:09:49 2019 +0000
+
+    * fix typo in comment
+    
+    git-svn-id: branches/unicodekvm@41604 -
+
+M	packages/rtl-console/src/win/keyboard.pp
+
+******************************************************************************
+commit 1c86c0de48b20fdb2dd80fe4c867f4243eb1aa9e
+Author: nickysn <nickysn@gmail.com>
+Date:   Tue Mar 5 17:08:11 2019 +0000
+
+    - removed the no-longer-used code for dealing with the legacy key events
+    
+    git-svn-id: branches/unicodekvm@41602 -
+
+M	packages/rtl-console/src/win/keyboard.pp
+
+******************************************************************************
+commit 36899f65cf83f3f6f23428c313c561b02bca139e
+Author: nickysn <nickysn@gmail.com>
+Date:   Tue Mar 5 17:01:11 2019 +0000
+
+    + enable the enhanced key events permanently on windows
+    
+    git-svn-id: branches/unicodekvm@41601 -
+
+M	packages/rtl-console/src/win/keyboard.pp
+
+******************************************************************************
+commit 504bd61c7f56caebec1cf8fd75bbe11d8fe7d1eb
+Author: nickysn <nickysn@gmail.com>
+Date:   Tue Mar 5 15:40:54 2019 +0000
+
+    + added proper Windows AltGr support for the enhanced shift state
+    
+    git-svn-id: branches/unicodekvm@41599 -
+
+M	packages/rtl-console/src/win/keyboard.pp
+
+******************************************************************************
+commit bac79df17e156e6b2cdc457ee586b4cc1957d01d
+Author: nickysn <nickysn@gmail.com>
+Date:   Tue Mar 5 14:33:23 2019 +0000
+
+    + added essAltGr to TEnhancedShiftState and added proper AltGr handling for the Linux console
+    
+    git-svn-id: branches/unicodekvm@41597 -
+
+M	packages/rtl-console/src/inc/keyboard.inc
+M	packages/rtl-console/src/inc/keybrdh.inc
+M	packages/rtl-console/src/unix/keyboard.pp
+
+******************************************************************************
+commit dba71de45bd7b7750383aec27608e092783b50f1
+Author: nickysn <nickysn@gmail.com>
+Date:   Tue Mar 5 13:37:20 2019 +0000
+
+    * fix typo in comment
+    
+    git-svn-id: branches/unicodekvm@41596 -
+
+M	packages/rtl-console/src/unix/keyboard.pp
+
+******************************************************************************
+commit 0e7f562d19387dfd8e60a6f67dd1754496927888
+Author: nickysn <nickysn@gmail.com>
+Date:   Fri Mar 1 17:35:57 2019 +0000
+
+    * fix typo in comment
+    
+    git-svn-id: branches/unicodekvm@41541 -
+
+M	packages/rtl-console/src/unix/keyboard.pp
+
+******************************************************************************
+commit bf3865a15a9429658c230b017d641e05cc38348b
+Author: nickysn <nickysn@gmail.com>
+Date:   Fri Mar 1 17:35:09 2019 +0000
+
+    + also patch Ctrl+F1..Ctrl+F12 when running as root on the linux console, so they can also be read properly
+    
+    git-svn-id: branches/unicodekvm@41540 -
+
+M	packages/rtl-console/src/unix/keyboard.pp
+
+******************************************************************************
+commit fe60708baca8ae1d15e81ae8f6c1aee2d2b09e85
+Author: nickysn <nickysn@gmail.com>
+Date:   Fri Mar 1 17:24:17 2019 +0000
+
+    * fixed the linux keyboard patching table for handling F11 and F12 properly
+    
+    git-svn-id: branches/unicodekvm@41539 -
+
+M	packages/rtl-console/src/unix/keyboard.pp
+
+******************************************************************************
+commit 0b850d9883e8d956a749585a212f6c0473126159
+Author: nickysn <nickysn@gmail.com>
+Date:   Fri Mar 1 15:04:07 2019 +0000
+
+    + add TEvent.UnicodeChar to the drivers unit
+    
+    git-svn-id: branches/unicodekvm@41534 -
+
+M	packages/fv/src/drivers.pas
+
+******************************************************************************
+commit 5c6d6b030d0ef310f3b83470474c25c2f9332d3c
+Author: nickysn <nickysn@gmail.com>
+Date:   Fri Mar 1 14:28:33 2019 +0000
+
+    * switch to using enhanced key events in the drivers unit
+    
+    git-svn-id: branches/unicodekvm@41533 -
+
+M	packages/fv/src/drivers.pas
+
+******************************************************************************
+commit 41b93832c0ffe6c05cd2b14796642a9979414a6e
+Author: nickysn <nickysn@gmail.com>
+Date:   Fri Mar 1 14:26:38 2019 +0000
+
+    + add ConvertEnhancedToLegacyShiftState to the interface of unit keyboard
+    
+    git-svn-id: branches/unicodekvm@41532 -
+
+M	packages/rtl-console/src/inc/keybrdh.inc
+
+******************************************************************************
+commit 1e94304bf04a36497098ff282bdb0d64de6bb3db
+Author: nickysn <nickysn@gmail.com>
+Date:   Thu Feb 28 17:38:31 2019 +0000
+
+    * preserve the unicode keycode returned from ReadKey in the result of SysGetEnhancedKeyEvent
+    
+    git-svn-id: branches/unicodekvm@41525 -
+
+M	packages/rtl-console/src/unix/keyboard.pp
+
+******************************************************************************
+commit 982a4f4c63a4fcf424b9ff998f8aab846bced537
+Author: nickysn <nickysn@gmail.com>
+Date:   Thu Feb 28 14:56:16 2019 +0000
+
+    * reject surrogate characters when decoding UTF-8 keyboard input
+    
+    git-svn-id: branches/unicodekvm@41524 -
+
+M	packages/rtl-console/src/unix/keyboard.pp
+
+******************************************************************************
+commit da978acfd97eaf08a66038b151f7f83cca83d769
+Author: nickysn <nickysn@gmail.com>
+Date:   Thu Feb 28 14:51:04 2019 +0000
+
+    + added UTF-8 keyboard input support
+    
+    git-svn-id: branches/unicodekvm@41523 -
+
+M	packages/rtl-console/src/unix/keyboard.pp
+
+******************************************************************************
+commit 774317788f1b2c3442ef78a759d9a60a8c7aff89
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 27 13:28:28 2019 +0000
+
+    * moved the 'if not again' part after the repeat..until loop; it behaves the same, but improves code readability
+    
+    git-svn-id: branches/unicodekvm@41517 -
+
+M	packages/rtl-console/src/unix/keyboard.pp
+
+******************************************************************************
+commit 889e50ed58004611c225ceb82e6559f573072679
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 27 13:12:28 2019 +0000
+
+    * initialize SState from the shift state, returned by ReadKey
+    
+    git-svn-id: branches/unicodekvm@41516 -
+
+M	packages/rtl-console/src/unix/keyboard.pp
+
+******************************************************************************
+commit d8d6c857e59bdedba1657b56aef66c3818b84726
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 27 13:09:08 2019 +0000
+
+    * simplified the initialization of MyScan, since ReadKey now returns a record, that contains both AsciiChar and ScanCode
+    
+    git-svn-id: branches/unicodekvm@41515 -
+
+M	packages/rtl-console/src/unix/keyboard.pp
+
+******************************************************************************
+commit 7e16f651ea41f4657d327d97f266ec196dcb40db
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 27 13:07:04 2019 +0000
+
+    - removed commented out code
+    
+    git-svn-id: branches/unicodekvm@41514 -
+
+M	packages/rtl-console/src/unix/keyboard.pp
+
+******************************************************************************
+commit 9a82b32cde500d92b029746ad3c0847612f64187
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 27 13:05:45 2019 +0000
+
+    - removed commented out code
+    
+    git-svn-id: branches/unicodekvm@41513 -
+
+M	packages/rtl-console/src/unix/keyboard.pp
+
+******************************************************************************
+commit af12abc939bf12fbb48bd2ff4759f5021c057311
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 27 12:58:06 2019 +0000
+
+    - removed check for the kbEsc scan code, since this is now made redundant,
+      thanks to the fact that the sequence can return both non-zero AsciiChar
+      and ScanCode at the same time.
+    
+    git-svn-id: branches/unicodekvm@41512 -
+
+M	packages/rtl-console/src/unix/keyboard.pp
+
+******************************************************************************
+commit 2d68b7c7a9e175fed0ea5607fa78e8a766041859
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 27 12:54:31 2019 +0000
+
+    * the type of key_sequence.char changed from byte to 0..127 to enforce ASCII only use
+    
+    git-svn-id: branches/unicodekvm@41511 -
+
+M	packages/rtl-console/src/unix/keyboard.pp
+
+******************************************************************************
+commit 0f1a20b8a48722ff00214869c30a7e99883bdb4c
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 27 12:53:28 2019 +0000
+
+    * handle sequences that return both char and scan code
+    
+    git-svn-id: branches/unicodekvm@41510 -
+
+M	packages/rtl-console/src/unix/keyboard.pp
+
+******************************************************************************
+commit 3c89ec6f83f2581ca0a8d42705424464a48d27c8
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 27 12:49:38 2019 +0000
+
+    * set char to 27 for the Esc key (for the linux patched console) in the sequence table
+    
+    git-svn-id: branches/unicodekvm@41509 -
+
+M	packages/rtl-console/src/unix/keyboard.pp
+
+******************************************************************************
+commit 97995773a0fd567f3528d0729285420715460a87
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 27 12:42:29 2019 +0000
+
+    - removed FAltKey, because it is not used
+    
+    git-svn-id: branches/unicodekvm@41508 -
+
+M	packages/rtl-console/src/unix/keyboard.pp
+
+******************************************************************************
+commit d68e48d1ead5f2ad7d5fab090f094679ff632db9
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 27 12:40:56 2019 +0000
+
+    - removed some no longer used commented out code
+    
+    git-svn-id: branches/unicodekvm@41507 -
+
+M	packages/rtl-console/src/unix/keyboard.pp
+
+******************************************************************************
+commit 1961c8f27c62a67561d9844f433ef6db5175a548
+Author: nickysn <nickysn@gmail.com>
+Date:   Tue Feb 26 18:28:36 2019 +0000
+
+    - removed the IsAlt local variable, because it is not used
+    
+    git-svn-id: branches/unicodekvm@41493 -
+
+M	packages/rtl-console/src/unix/keyboard.pp
+
+******************************************************************************
+commit 5f9f97e75d35f70a93bf8f95f8f3416093ea48fb
+Author: nickysn <nickysn@gmail.com>
+Date:   Tue Feb 26 18:27:57 2019 +0000
+
+    - removed the IsAlt parameter from ReadKey, because it is not used
+    
+    git-svn-id: branches/unicodekvm@41492 -
+
+M	packages/rtl-console/src/unix/keyboard.pp
+
+******************************************************************************
+commit 23957bddaaaadc8f174367f135c82ad2f4809677
+Author: nickysn <nickysn@gmail.com>
+Date:   Tue Feb 26 18:10:35 2019 +0000
+
+    + introduced PutBackIntoInBuf - procedure that returns a key back into InBuf
+    
+    git-svn-id: branches/unicodekvm@41491 -
+
+M	packages/rtl-console/src/unix/keyboard.pp
+
+******************************************************************************
+commit d3310cc731fea0ed1e3cb2bb473d93f53f6fc24e
+Author: nickysn <nickysn@gmail.com>
+Date:   Tue Feb 26 18:03:04 2019 +0000
+
+    * fixed off-by-one error when putting a character back into the input buffer
+    
+    git-svn-id: branches/unicodekvm@41490 -
+
+M	packages/rtl-console/src/unix/keyboard.pp
+
+******************************************************************************
+commit 529c76504137cb99b98d11f153999410a38f6bf4
+Author: nickysn <nickysn@gmail.com>
+Date:   Tue Feb 26 18:01:21 2019 +0000
+
+    * simplify an 'if A' followed by an 'if not A' sequence to 'if A then...else...'
+    
+    git-svn-id: branches/unicodekvm@41489 -
+
+M	packages/rtl-console/src/unix/keyboard.pp
+
+******************************************************************************
+commit c23df60ae5c3f16bda2ce2e7530368a65324caa5
+Author: nickysn <nickysn@gmail.com>
+Date:   Tue Feb 26 17:54:54 2019 +0000
+
+    * the variables only used by ReadKey made local, and not visible in its nested routines
+    
+    git-svn-id: branches/unicodekvm@41488 -
+
+M	packages/rtl-console/src/unix/keyboard.pp
+
+******************************************************************************
+commit ba1450f7e9488e1ae05c6bf46f3c13065180f642
+Author: nickysn <nickysn@gmail.com>
+Date:   Tue Feb 26 17:53:59 2019 +0000
+
+    * return the shiftstate in ReadKey
+    
+    git-svn-id: branches/unicodekvm@41487 -
+
+M	packages/rtl-console/src/unix/keyboard.pp
+
+******************************************************************************
+commit 258ed213e43932ba3a44dd47264269517887c669
+Author: nickysn <nickysn@gmail.com>
+Date:   Tue Feb 26 17:50:55 2019 +0000
+
+    * moved ReadKey after GetEnhShiftState, so it can be used to return the shift state
+    
+    git-svn-id: branches/unicodekvm@41486 -
+
+M	packages/rtl-console/src/unix/keyboard.pp
+
+******************************************************************************
+commit ac4f00af1eaf877d9d6288b9df0b3e5be5e2eb6e
+Author: nickysn <nickysn@gmail.com>
+Date:   Tue Feb 26 17:47:29 2019 +0000
+
+    * modified ReadKey to return TEnhancedKeyEvent (partially constructed - contains only asciichar and virtualscancode)
+    
+    git-svn-id: branches/unicodekvm@41484 -
+
+M	packages/rtl-console/src/unix/keyboard.pp
+
+******************************************************************************
+commit 9c63675368559a4b41e15624190c09a0c0cf9164
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 20 16:22:46 2019 +0000
+
+    + add shift state to TTreeElement and DoAddSequence
+    
+    git-svn-id: branches/unicodekvm@41402 -
+
+M	packages/rtl-console/src/unix/keyboard.pp
+
+******************************************************************************
+commit 9dd394a5f74d358db135dc4ad948879096080080
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 20 16:00:45 2019 +0000
+
+    + added shift state to the escape sequence structure
+    
+    git-svn-id: branches/unicodekvm@41401 -
+
+M	packages/rtl-console/src/unix/keyboard.pp
+
+******************************************************************************
+commit 0f8db5f590342c65f72e2d26faa4691a1929a1a9
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 20 13:55:11 2019 +0000
+
+    * fixed Shift-F1..F8 on the Linux console
+    
+    git-svn-id: branches/unicodekvm@41399 -
+
+M	packages/rtl-console/src/unix/keyboard.pp
+
+******************************************************************************
+commit 2b1297c3970f9815a35c3694920c634e0a30c3e3
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 20 13:35:16 2019 +0000
+
+    * gnome3 (clarifies gnome version tested)
+    
+    git-svn-id: branches/unicodekvm@41398 -
+
+M	packages/rtl-console/src/unix/keyboard.pp
+
+******************************************************************************
+commit 97807af58d437998181982b77bb62cdee0e24a30
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Feb 20 13:23:51 2019 +0000
+
+    + handled the 'center' (numpad 5) key properly in linux, xterm and gnome
+    
+    git-svn-id: branches/unicodekvm@41397 -
+
+M	packages/rtl-console/src/unix/keyboard.pp
+
+******************************************************************************
+commit ab67fe179567312d0c8124086e22ea60b23f1aa1
+Author: nickysn <nickysn@gmail.com>
+Date:   Tue Feb 19 13:58:53 2019 +0000
+
+    + return enhanced key events in the unix keyboard driver; unicode not supported yet
+    
+    git-svn-id: branches/unicodekvm@41379 -
+
+M	packages/rtl-console/src/unix/keyboard.pp
+
+******************************************************************************
+commit 0f61895194672675bfcce07389a8099c71ce2fca
+Author: nickysn <nickysn@gmail.com>
+Date:   Sun Feb 17 23:32:29 2019 +0000
+
+    + added a global variable Utf8KeyboardInputEnabled in the implementation of the
+      unix keyboard unit. Initialize it in SysInitKeyboard with the value, returned
+      by UnixKvmBase.UTF8Enabled (the same function that checks whether UTF-8 output
+      should be enabled in the video unit).
+    
+    git-svn-id: branches/unicodekvm@41369 -
+
+M	packages/rtl-console/fpmake.pp
+M	packages/rtl-console/src/unix/keyboard.pp
+
+******************************************************************************
+commit 4ea55963ef78a168686761578fc8a3e840279ee6
+Author: nickysn <nickysn@gmail.com>
+Date:   Sun Feb 17 20:33:56 2019 +0000
+
+    + introduced unit UnixKvmBase, which is going to contain miscellaneous routines,
+      commonly used by the unix keyboard, video and mouse units. Currently, it only
+      contains the UTF8Enabled function, which was moved away from the video unit
+      and which will also be used by the keyboard unit in the future, as soon as
+      that unit also gets UTF-8 input support.
+    
+    git-svn-id: branches/unicodekvm@41357 -
+
+M	.gitattributes
+M	packages/rtl-console/fpmake.pp
+A	packages/rtl-console/src/unix/unixkvmbase.pp
+M	packages/rtl-console/src/unix/video.pp
+
+******************************************************************************
+commit 43db73cb54e82f5d40448969c090cda730e5ecd1
+Author: nickysn <nickysn@gmail.com>
+Date:   Fri Feb 15 15:45:45 2019 +0000
+
+    * updated fpcm revision.inc
+    
+    git-svn-id: branches/unicodekvm@41322 -
+
+M	utils/fpcm/revision.inc
+
+******************************************************************************
+commit ac81dc399611d348fe81df7a4a96288b2f6d1e13
+Author: nickysn <nickysn@gmail.com>
+Date:   Fri Nov 16 17:52:27 2018 +0000
+
+    - get rid of the ss:TEnhancedShiftState local variable in TranslateEnhancedKeyEvent
+    
+    git-svn-id: branches/unicodekvm@40332 -
+
+M	packages/rtl-console/src/win/keyboard.pp
+
+******************************************************************************
+commit 55c9af86f44712251fccf54d518205b5c39bad5d
+Author: nickysn <nickysn@gmail.com>
+Date:   Fri Nov 16 17:19:24 2018 +0000
+
+    + distinguish between left and right shift and detect num/caps/lock key down using GetKeyState
+    
+    git-svn-id: branches/unicodekvm@40330 -
+
+M	packages/rtl-console/src/win/keyboard.pp
+
+******************************************************************************
+commit 7b880b2eee41a61f1ddf5e9c21f428a67e2a5012
+Author: nickysn <nickysn@gmail.com>
+Date:   Fri Nov 16 17:00:17 2018 +0000
+
+    + added test, that reads enhanced keyboard events
+    
+    git-svn-id: branches/unicodekvm@40329 -
+
+M	.gitattributes
+A	packages/rtl-console/tests/kbd2.pp
+
+******************************************************************************
+commit 5648bd9bdc283697604608f4c9b43f18f85ad047
+Author: nickysn <nickysn@gmail.com>
+Date:   Fri Nov 16 16:51:20 2018 +0000
+
+    + introduced TEnhancedShiftStateElement - an enum type, containing the elements of TEnhancedShiftState set
+    
+    git-svn-id: branches/unicodekvm@40328 -
+
+M	packages/rtl-console/src/inc/keybrdh.inc
+
+******************************************************************************
+commit baa6525a9e73f885381e94a7a8acf03c2d4f406f
+Author: nickysn <nickysn@gmail.com>
+Date:   Fri Nov 16 14:26:32 2018 +0000
+
+    + add enhanced shift state to the TFPKeyEventRecord object and call
+      transEnhShiftState only in HandleKeyboard, when the new key event is added to
+      the queue. This way we can use GetKeyState to determine the parts of the shift
+      state that are not in dwControlKeyState.
+    * transEnhShiftState moved to be a local function inside HandleKeyboard to
+      ensure it's not called outside this procedure.
+    
+    git-svn-id: branches/unicodekvm@40327 -
+
+M	packages/rtl-console/src/win/keyboard.pp
+
+******************************************************************************
+commit a8da1b51309069b1c274793ddf47472af131df2f
+Author: nickysn <nickysn@gmail.com>
+Date:   Thu Nov 15 17:00:59 2018 +0000
+
+    + introduce TFPKeyEventRecord - a wrapper record around TKeyEventRecord, so it
+      can store additional data (not added yet) to our keyboard events; this way we
+      can later add extended shift state (e.g. distinguishing between left and right
+      shift), etc.
+    
+    git-svn-id: branches/unicodekvm@40320 -
+
+M	packages/rtl-console/src/win/keyboard.pp
+
+******************************************************************************
+commit aac266e82de41fb899e2e2be34b8ca3ebcc02389
+Author: nickysn <nickysn@gmail.com>
+Date:   Thu Nov 15 15:18:40 2018 +0000
+
+    + detect and return the state of num lock, caps lock and scroll lock in the enhanced shift state on win32/win64
+    
+    git-svn-id: branches/unicodekvm@40317 -
+
+M	packages/rtl-console/src/win/keyboard.pp
+
+******************************************************************************
+commit 4f482516ddfff69c94bdcc0872ca6e6e8d04ed4e
+Author: nickysn <nickysn@gmail.com>
+Date:   Tue Nov 13 17:20:30 2018 +0000
+
+    * TEnhancedKeyEvent.ShiftState changed to TEnhancedShiftState
+    
+    git-svn-id: branches/unicodekvm@40311 -
+
+M	packages/rtl-console/src/inc/keyboard.inc
+M	packages/rtl-console/src/inc/keybrdh.inc
+M	packages/rtl-console/src/win/keyboard.pp
+
+******************************************************************************
+commit 3e135c02e79abff3fc26da2319c811b007074d7b
+Author: nickysn <nickysn@gmail.com>
+Date:   Tue Nov 13 16:20:45 2018 +0000
+
+    + added generic Shift, Ctrl and Alt values to TEnhancedShiftState
+    
+    git-svn-id: branches/unicodekvm@40310 -
+
+M	packages/rtl-console/src/inc/keybrdh.inc
+
+******************************************************************************
+commit 658730ee85e39e97635a2822653e452c7f8d32ca
+Author: nickysn <nickysn@gmail.com>
+Date:   Mon Nov 12 23:10:28 2018 +0000
+
+    + added the 102-th key on international keyboards (outputs "<" or ">" with the US layout)
+    
+    git-svn-id: branches/unicodekvm@40299 -
+
+M	packages/rtl-console/tests/bios/kbd_us.ods
+
+******************************************************************************
+commit d681d51e38659918dcef5a7322d286ee94dcd698
+Author: nickysn <nickysn@gmail.com>
+Date:   Mon Nov 12 17:50:42 2018 +0000
+
+    + introduced TEnhancedShiftState. Not used yet, but will eventually be used inside TEnhancedKeyEvent.
+    
+    git-svn-id: branches/unicodekvm@40298 -
+
+M	packages/rtl-console/src/inc/keybrdh.inc
+
+******************************************************************************
+commit f05c6666fe97f365f376fb3b7d8d8c0f6b91fb3b
+Author: nickysn <nickysn@gmail.com>
+Date:   Mon Nov 12 16:31:06 2018 +0000
+
+    + switch the win32/win64 keyboard unit to use enhanced key events (they are
+      converted to legacy key events by the generic converter in keyboard.inc)
+    
+    git-svn-id: branches/unicodekvm@40296 -
+
+M	packages/rtl-console/src/win/keyboard.pp
+
+******************************************************************************
+commit 7d638a1e390970658014f762bcd8c8d743bc2e9c
+Author: nickysn <nickysn@gmail.com>
+Date:   Mon Nov 12 16:29:37 2018 +0000
+
+    * handle nil key events properly in ConvertToLegacyKeyEvent
+    
+    git-svn-id: branches/unicodekvm@40295 -
+
+M	packages/rtl-console/src/inc/keyboard.inc
+
+******************************************************************************
+commit 0a511ddb30bb1af327136091a99123f8876b105b
+Author: nickysn <nickysn@gmail.com>
+Date:   Mon Nov 12 15:49:25 2018 +0000
+
+    + implemented generic conversion from enhanced to legacy key events as well
+    
+    git-svn-id: branches/unicodekvm@40294 -
+
+M	packages/rtl-console/src/inc/keyboard.inc
+
+******************************************************************************
+commit 18a752d20ab3e0b1fd835d01a62d0843f6141af7
+Author: nickysn <nickysn@gmail.com>
+Date:   Mon Nov 12 14:32:26 2018 +0000
+
+    * use :=NilEnhancedKeyEvent instead of FillChar to clear the result of ConvertToEnhancedKeyEvent
+    
+    git-svn-id: branches/unicodekvm@40293 -
+
+M	packages/rtl-console/src/inc/keyboard.inc
+
+******************************************************************************
+commit 2593a69eaf0a96b39821dab37f402efc0fbbf4ab
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Nov 7 18:10:29 2018 +0000
+
+    + implemented SysGetEnhancedKeyEvent and SysPollEnhancedKeyEvent for win32/win64
+    
+    git-svn-id: branches/unicodekvm@40266 -
+
+M	packages/rtl-console/src/win/keyboard.pp
+
+******************************************************************************
+commit 9a2e1b99cb890ef06a238b37b7873fd6efd6b31a
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Nov 7 18:09:54 2018 +0000
+
+    + overloaded the = operator for pairs of TEnhancedKeyEvent
+    
+    git-svn-id: branches/unicodekvm@40265 -
+
+M	packages/rtl-console/src/inc/keyboard.inc
+M	packages/rtl-console/src/inc/keybrdh.inc
+
+******************************************************************************
+commit db8f3eb0a7d55df62b6345be3e140c9cd19ba76c
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Nov 7 17:55:54 2018 +0000
+
+    * use x:=NilEnhancedKeyEvent instead of FillChar for setting an enhanced key
+      event variable to 0
+    
+    git-svn-id: branches/unicodekvm@40262 -
+
+M	packages/rtl-console/src/win/keyboard.pp
+
+******************************************************************************
+commit 1d2414a2b880b7c4320a6a6105472b298dc72177
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Nov 7 17:47:21 2018 +0000
+
+    + added the NilEnhancedKeyEvent const (equivalent to the value 0 of TKeyEvent)
+    
+    git-svn-id: branches/unicodekvm@40260 -
+
+M	packages/rtl-console/src/inc/keybrdh.inc
+
+******************************************************************************
+commit 4212b6a92f513812e59fe0072a1f66b79326da90
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Nov 7 17:25:45 2018 +0000
+
+    + add svn:needs-lock to kbd_us.ods, because it's a binary file (and therefore,
+      unmerge-able)
+    
+    git-svn-id: branches/unicodekvm@40257 -
+
+******************************************************************************
+commit e1e52e334d4f71438c10b1d12ed08e4cc5686d5f
+Author: nickysn <nickysn@gmail.com>
+Date:   Wed Nov 7 15:32:47 2018 +0000
+
+    + added color codes for the keys
+    
+    git-svn-id: branches/unicodekvm@40256 -
+
+M	packages/rtl-console/tests/bios/kbd_us.ods
+
+******************************************************************************
+commit d65d96d49fd7331e0139be0ff87f9e7ced0c2965
+Author: nickysn <nickysn@gmail.com>
+Date:   Tue Nov 6 23:47:49 2018 +0000
+
+    * right justify text columns in spreadsheet
+    
+    git-svn-id: branches/unicodekvm@40253 -
+
+M	packages/rtl-console/tests/bios/kbd_us.ods
+
+******************************************************************************
+commit 33c7d4c67d179e92088aed30184ce635ab8a1979
+Author: nickysn <nickysn@gmail.com>
+Date:   Tue Nov 6 23:39:55 2018 +0000
+
+    + added the lalt+lshift bios keycode dump to the spreadsheet
+    
+    git-svn-id: branches/unicodekvm@40252 -
+
+M	packages/rtl-console/tests/bios/kbd_us.ods
+
+******************************************************************************
+commit 98e77922bf2d5667315633180e563e6b9406463b
+Author: nickysn <nickysn@gmail.com>
+Date:   Tue Nov 6 23:35:08 2018 +0000
+
+    * .bdf files renamed .bios.txt
+    
+    git-svn-id: branches/unicodekvm@40251 -
+
+M	.gitattributes
+R100	packages/rtl-console/tests/bios/us101.bdf	packages/rtl-console/tests/bios/us101.bios.txt
+R100	packages/rtl-console/tests/bios/us101_capslock.bdf	packages/rtl-console/tests/bios/us101_capslock.bios.txt
+R100	packages/rtl-console/tests/bios/us101_capslock_lshift.bdf	packages/rtl-console/tests/bios/us101_capslock_lshift.bios.txt
+R100	packages/rtl-console/tests/bios/us101_lalt.bdf	packages/rtl-console/tests/bios/us101_lalt.bios.txt
+R100	packages/rtl-console/tests/bios/us101_lalt_lctrl.bdf	packages/rtl-console/tests/bios/us101_lalt_lctrl.bios.txt
+R100	packages/rtl-console/tests/bios/us101_lalt_lctrl_lshift.bdf	packages/rtl-console/tests/bios/us101_lalt_lctrl_lshift.bios.txt
+R100	packages/rtl-console/tests/bios/us101_lalt_lshift.bdf	packages/rtl-console/tests/bios/us101_lalt_lshift.bios.txt
+R100	packages/rtl-console/tests/bios/us101_lctrl.bdf	packages/rtl-console/tests/bios/us101_lctrl.bios.txt
+R100	packages/rtl-console/tests/bios/us101_lctrl_lshift.bdf	packages/rtl-console/tests/bios/us101_lctrl_lshift.bios.txt
+R100	packages/rtl-console/tests/bios/us101_lshift.bdf	packages/rtl-console/tests/bios/us101_lshift.bios.txt
+R100	packages/rtl-console/tests/bios/us101_numlock.bdf	packages/rtl-console/tests/bios/us101_numlock.bios.txt
+R100	packages/rtl-console/tests/bios/us101_numlock_lshift.bdf	packages/rtl-console/tests/bios/us101_numlock_lshift.bios.txt
+R100	packages/rtl-console/tests/bios/us101_ralt.bdf	packages/rtl-console/tests/bios/us101_ralt.bios.txt
+R100	packages/rtl-console/tests/bios/us101_rctrl.bdf	packages/rtl-console/tests/bios/us101_rctrl.bios.txt
+R100	packages/rtl-console/tests/bios/us101_rshift.bdf	packages/rtl-console/tests/bios/us101_rshift.bios.txt
+
+******************************************************************************
+commit c632b232342b544d62c4849b2932b6ae6269729a
+Author: nickysn <nickysn@gmail.com>
+Date:   Tue Nov 6 23:29:07 2018 +0000
+
+    * the 'left ctrl + left shift' column moved to the right of 'right ctrl'
+    
+    git-svn-id: branches/unicodekvm@40250 -
+
+M	packages/rtl-console/tests/bios/kbd_us.ods
+
+******************************************************************************
+commit 71c55b4e533c0db4236261e9d2a31516547af02e
+Author: nickysn <nickysn@gmail.com>
+Date:   Tue Nov 6 23:22:32 2018 +0000
+
+    + added bios key dump with the left alt and left shift combination pressed
+    
+    git-svn-id: branches/unicodekvm@40249 -
+
+M	.gitattributes
+A	packages/rtl-console/tests/bios/us101_lalt_lshift.bdf
+
+******************************************************************************
+commit d6d4c68c86e0f93648e8ed0f41a87537ac2d3e62
+Author: nickysn <nickysn@gmail.com>
+Date:   Tue Nov 6 23:20:01 2018 +0000
+
+    - removed the executable flag from the *.bdf files
+    
+    git-svn-id: branches/unicodekvm@40248 -
+
+M	packages/rtl-console/tests/bios/us101.bdf
+M	packages/rtl-console/tests/bios/us101_capslock.bdf
+M	packages/rtl-console/tests/bios/us101_capslock_lshift.bdf
+M	packages/rtl-console/tests/bios/us101_lalt.bdf
+M	packages/rtl-console/tests/bios/us101_lalt_lctrl.bdf
+M	packages/rtl-console/tests/bios/us101_lalt_lctrl_lshift.bdf
+M	packages/rtl-console/tests/bios/us101_lctrl.bdf
+M	packages/rtl-console/tests/bios/us101_lctrl_lshift.bdf
+M	packages/rtl-console/tests/bios/us101_lshift.bdf
+M	packages/rtl-console/tests/bios/us101_numlock.bdf
+M	packages/rtl-console/tests/bios/us101_numlock_lshift.bdf
+M	packages/rtl-console/tests/bios/us101_ralt.bdf
+M	packages/rtl-console/tests/bios/us101_rctrl.bdf
+M	packages/rtl-console/tests/bios/us101_rshift.bdf
+
+******************************************************************************
+commit bbe65d06b9a9aca06cd646a978c82da3597d7f20
+Author: nickysn <nickysn@gmail.com>
+Date:   Tue Nov 6 17:06:36 2018 +0000
+
+    + added a LibreOffice spreadsheet with the BIOS key codes, as dumped in the .bdf files
+    
+    git-svn-id: branches/unicodekvm@40247 -
+
+M	.gitattributes
+A	packages/rtl-console/tests/bios/kbd_us.ods
+
+******************************************************************************
+commit 72919d64ef2caacaea28851fa8288bfb444fe092
+Author: nickysn <nickysn@gmail.com>
+Date:   Tue Nov 6 12:52:30 2018 +0000
+
+    + added BIOS int 16h keycode dumps
+    
+    git-svn-id: branches/unicodekvm@40239 -
+
+M	.gitattributes
+A	packages/rtl-console/tests/bios/us101.bdf
+A	packages/rtl-console/tests/bios/us101_capslock.bdf
+A	packages/rtl-console/tests/bios/us101_capslock_lshift.bdf
+A	packages/rtl-console/tests/bios/us101_lalt.bdf
+A	packages/rtl-console/tests/bios/us101_lalt_lctrl.bdf
+A	packages/rtl-console/tests/bios/us101_lalt_lctrl_lshift.bdf
+A	packages/rtl-console/tests/bios/us101_lctrl.bdf
+A	packages/rtl-console/tests/bios/us101_lctrl_lshift.bdf
+A	packages/rtl-console/tests/bios/us101_lshift.bdf
+A	packages/rtl-console/tests/bios/us101_numlock.bdf
+A	packages/rtl-console/tests/bios/us101_numlock_lshift.bdf
+A	packages/rtl-console/tests/bios/us101_ralt.bdf
+A	packages/rtl-console/tests/bios/us101_rctrl.bdf
+A	packages/rtl-console/tests/bios/us101_rshift.bdf
+
+******************************************************************************
+commit 3101c29dba54326550bdbc87f30921ff961b5ad6
+Author: nickysn <nickysn@gmail.com>
+Date:   Tue Nov 6 02:15:03 2018 +0000
+
+    + added a keyboard BIOS dump tool
+    
+    git-svn-id: branches/unicodekvm@40235 -
+
+M	.gitattributes
+A	packages/rtl-console/tests/kbdbdump.pp
+
+******************************************************************************
+commit ba4d10ade0776de1c8bb10a6a41d3afe33c9ee5d
+Author: nickysn <nickysn@gmail.com>
+Date:   Mon Nov 5 18:23:31 2018 +0000
+
+    + initial implementation of a windows key event to TEnhancedKeyEvent conversion function
+    
+    git-svn-id: branches/unicodekvm@40234 -
+
+M	packages/rtl-console/src/win/keyboard.pp
+
+******************************************************************************
+commit 58d899bf75308e6b69159dd531e1daef7b4b06e8
+Author: nickysn <nickysn@gmail.com>
+Date:   Mon Nov 5 17:54:08 2018 +0000
+
+    - removed redundant setting of result in TranslateKey
+    
+    git-svn-id: branches/unicodekvm@40233 -
+
+M	packages/rtl-console/src/win/keyboard.pp
+
+******************************************************************************
+commit 28235033d742b7fb75e08fd661724b754e2d9d45
+Author: nickysn <nickysn@gmail.com>
+Date:   Mon Nov 5 16:35:56 2018 +0000
+
+    * switch to using ReadConsoleInputW instead of ReadConsoleInputA in the windows
+      keyboard unit. This way the console input is read using Unicode and is later
+      translated to the OEM character set via WideCharToMultiByte. This is will
+      allow returning Unicode character codes once enhanced key events are
+      implemented.
+    
+    git-svn-id: branches/unicodekvm@40232 -
+
+M	packages/rtl-console/src/win/keyboard.pp
+M	packages/rtl-console/src/win/winevent.pp
+
+******************************************************************************
+commit d38e97c6616ada8556c94de84668ae26f69fa4f1
+Author: nickysn <nickysn@gmail.com>
+Date:   Mon Nov 5 15:45:00 2018 +0000
+
+    + added a keyboard dump using the Bulgarian Phonetic Traditional keyboard layout and code page 866
+    
+    git-svn-id: branches/unicodekvm@40231 -
+
+M	.gitattributes
+A	packages/rtl-console/tests/fpc-3.0.4-win64/us101-bgph1-cp866.dmp
+
+******************************************************************************
+commit aefe3d8c552287fc0a79d1b3a626531108b98fa6
+Author: nickysn <nickysn@gmail.com>
+Date:   Mon Nov 5 15:21:02 2018 +0000
+
+    + added kbd dump file with num lock on
+    
+    git-svn-id: branches/unicodekvm@40230 -
+
+M	.gitattributes
+A	packages/rtl-console/tests/fpc-3.0.4-win64/us101-us-numlock.dmp
+
+******************************************************************************
+commit 91766375c73f7c7e77b5c9eb0865549efe3b7097
+Author: nickysn <nickysn@gmail.com>
+Date:   Mon Nov 5 15:07:55 2018 +0000
+
+    + added keyboard dumps, obtained with FPC 3.0.4 under Windows, using the US keyboard locale
+    
+    git-svn-id: branches/unicodekvm@40229 -
+
+M	.gitattributes
+A	packages/rtl-console/tests/fpc-3.0.4-win64/us101-us-lalt.dmp
+A	packages/rtl-console/tests/fpc-3.0.4-win64/us101-us-lctrl.dmp
+A	packages/rtl-console/tests/fpc-3.0.4-win64/us101-us-lshift.dmp
+A	packages/rtl-console/tests/fpc-3.0.4-win64/us101-us-ralt.dmp
+A	packages/rtl-console/tests/fpc-3.0.4-win64/us101-us-rctrl.dmp
+A	packages/rtl-console/tests/fpc-3.0.4-win64/us101-us-rshift.dmp
+A	packages/rtl-console/tests/fpc-3.0.4-win64/us101-us.dmp
+
+******************************************************************************
+commit 12e66de0a60ddf16adc466bce267675c72568e53
+Author: nickysn <nickysn@gmail.com>
+Date:   Mon Nov 5 15:04:36 2018 +0000
+
+    + added an interactive keyboard test
+    
+    git-svn-id: branches/unicodekvm@40228 -
+
+M	.gitattributes
+A	packages/rtl-console/tests/kbdtest.pp
+
+******************************************************************************
+commit f964dacd24b0e79df796036f788e8dd50fc79b71
+Author: nickysn <nickysn@gmail.com>
+Date:   Mon Nov 5 14:17:27 2018 +0000
+
+    * moved some drawing routines to a new unit 'vidutil'
+    
+    git-svn-id: branches/unicodekvm@40222 -
+
+M	.gitattributes
+M	packages/rtl-console/tests/kbddump.pp
+A	packages/rtl-console/tests/vidutil.pp
+
+******************************************************************************
+commit a7e13587a06f91b42ac671c7a01ae15d524612af
+Author: nickysn <nickysn@gmail.com>
+Date:   Thu Nov 1 17:46:05 2018 +0000
+
+    + added a keyboard dump test tool
+    
+    git-svn-id: branches/unicodekvm@40154 -
+
+M	.gitattributes
+A	packages/rtl-console/tests/kbddump.pp
+A	packages/rtl-console/tests/kbdutil.pp
+A	packages/rtl-console/tests/us101.txt
+
+******************************************************************************
+commit e7ea79d71dd0821336edb3f2e337ca2fd30e91dd
+Author: nickysn <nickysn@gmail.com>
+Date:   Tue Oct 30 02:05:23 2018 +0000
+
+    * show all details about the key event, without using KeyEventToString (because it
+      sometimes outputs control (<#32) ASCII characters)
+    
+    git-svn-id: branches/unicodekvm@40095 -
+
+M	packages/rtl-console/tests/kbd1.pp
+
+******************************************************************************
+commit c10c9607f1bdd0810304842349acb812718dee47
+Author: nickysn <nickysn@gmail.com>
+Date:   Tue Oct 30 01:52:51 2018 +0000
+
+    + also invoke TranslateKey to get more data (either Ascii or virtual key translation)
+      when converting a TKeyEvent to TExtendedKeyEvent
+    + also fill UnicodeChar from AsciiChar if AsciiChar is in the standard Ascii range
+      (#0..#127)
+    
+    git-svn-id: branches/unicodekvm@40094 -
+
+M	packages/rtl-console/src/inc/keyboard.inc
+
+******************************************************************************
+commit c5e35e8d117c75fa2c0fb181fe31ddc135871b62
+Author: nickysn <nickysn@gmail.com>
+Date:   Mon Oct 29 21:03:28 2018 +0000
+
+    * write physical key numbers both in decimal and hex
+    
+    git-svn-id: branches/unicodekvm@40093 -
+
+M	packages/rtl-console/tests/kbd1.pp
+
+******************************************************************************
+commit eb30bfa9f0291b247fcb7d3f84ade24fe8776c47
+Author: nickysn <nickysn@gmail.com>
+Date:   Mon Oct 29 20:51:49 2018 +0000
+
+    * print ASCII characters better
+    
+    git-svn-id: branches/unicodekvm@40092 -
+
+M	packages/rtl-console/tests/kbd1.pp
+
+******************************************************************************
+commit 59aeb8260345ed2899a780a4352bcaf6e875b339
+Author: nickysn <nickysn@gmail.com>
+Date:   Mon Oct 29 18:00:17 2018 +0000
+
+    + slight fixes and improvements to the test
+    
+    git-svn-id: branches/unicodekvm@40089 -
+
+M	packages/rtl-console/tests/kbd1.pp
+
+******************************************************************************
+commit 82b2e8a0804fefda6ab19dca1e434d6671ee35eb
+Author: nickysn <nickysn@gmail.com>
+Date:   Mon Oct 29 17:43:25 2018 +0000
+
+    + added an interactive keyboard unit test
+    
+    git-svn-id: branches/unicodekvm@40088 -
+
+M	.gitattributes
+A	packages/rtl-console/tests/kbd1.pp
+
+******************************************************************************
+commit aa7bddc62129bf70e79272e11a492f2b66a15d17
+Author: nickysn <nickysn@gmail.com>
+Date:   Mon Oct 29 17:34:51 2018 +0000
+
+    + added tests directory
+    
+    git-svn-id: branches/unicodekvm@40087 -
+
+******************************************************************************
+commit b6f0fa055f03a70056f4b9447fde0c880b0233bf
+Author: nickysn <nickysn@gmail.com>
+Date:   Mon Oct 29 17:33:57 2018 +0000
+
+    + added functions GetEnhancedKeyEvent and PollEnhancedKeyEvent and implemented
+      default fallbacks, which revert to calling GetKeyEvent and PollKeyEvent for
+      drivers that don't support the enhanced functions
+    
+    git-svn-id: branches/unicodekvm@40086 -
+
+M	packages/rtl-console/src/inc/keyboard.inc
+M	packages/rtl-console/src/inc/keybrdh.inc
+
+******************************************************************************
+commit 685d090bf2b5db6671b77e33a39c7594ec42fac3
+Author: nickysn <nickysn@gmail.com>
+Date:   Mon Oct 29 16:14:01 2018 +0000
+
+    + added GetEnhancedKeyEvent and PollEnhancedKeyEvent to TKeyboardDriver
+    
+    git-svn-id: branches/unicodekvm@40079 -
+
+M	packages/rtl-console/src/amicommon/keyboard.pp
+M	packages/rtl-console/src/go32v2/keyboard.pp
+M	packages/rtl-console/src/inc/keybrdh.inc
+M	packages/rtl-console/src/msdos/keyboard.pp
+M	packages/rtl-console/src/netware/keyboard.pp
+M	packages/rtl-console/src/netwlibc/keyboard.pp
+M	packages/rtl-console/src/os2commn/keyboard.pp
+M	packages/rtl-console/src/unix/keyboard.pp
+M	packages/rtl-console/src/win/keyboard.pp
+M	packages/rtl-console/src/win16/keyboard.pp
+
+******************************************************************************
+commit cee3065f9321d84ce0d76cf6c016a51814077c54
+Author: nickysn <nickysn@gmail.com>
+Date:   Mon Oct 29 16:00:19 2018 +0000
+
+    + introduced the TEnhancedKeyEvent record
+    
+    git-svn-id: branches/unicodekvm@40078 -
+
+M	packages/rtl-console/src/inc/keybrdh.inc
+
+******************************************************************************
+commit 6a612f90032fe3b129865fcfa59ed5191638faab
+Author: nickysn <nickysn@gmail.com>
+Date:   Sun Oct 28 17:26:54 2018 +0000
+
+    + created branch for keyboard/video/mouse unit unicode support development
+    
+    git-svn-id: branches/unicodekvm@40069 -
 
 ******************************************************************************
 commit b878d461c8e7f1eaa4a928c285f0208ea8f5ad7a
