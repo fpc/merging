@@ -1,4 +1,40 @@
 ******************************************************************************
+commit 39836e2d37ae11f4052cfa527394994d61495a44
+Author: florian <florian@freepascal.org>
+Date:   Sat Feb 12 23:18:25 2022 +0100
+
+      - removed superfluous comment
+
+M	rtl/i386/i386.inc
+
+******************************************************************************
+commit 0fb08a76194c8fd8e08236b9657e1e03e847d385
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Sat Feb 12 22:34:11 2022 +0100
+
+    pastojs: compile with pas2js
+
+M	packages/pastojs/src/fppjssrcmap.pp
+
+******************************************************************************
+commit b2251e34691a63bbb61cfaecd6125db6a51a23c6
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Sat Feb 12 22:33:45 2022 +0100
+
+    fcl-json: clean up
+
+M	packages/fcl-json/src/fpjson.pp
+
+******************************************************************************
+commit 3b9035c94638156629666dcdf6e2340db5405809
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Sat Feb 12 22:33:27 2022 +0100
+
+    fcl-js: clean up
+
+M	packages/fcl-js/src/jstree.pp
+
+******************************************************************************
 commit dfcbdd9aa64824a51376482bce581ce36049401e
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Sat Feb 12 21:21:54 2022 +0100
