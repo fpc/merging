@@ -1,4 +1,17 @@
 ******************************************************************************
+commit 6502f7b35ab7438a7c38c64686d86d44eec3a388
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Sun Feb 13 18:46:40 2022 +0100
+
+    * tosunits: rename gemcommon to gemcmmn so the unit name fits 8.3 limitations
+
+M	packages/tosunits/fpmake.pp
+M	packages/tosunits/src/aes.pas
+M	packages/tosunits/src/gem.pas
+R098	packages/tosunits/src/gemcommon.pas	packages/tosunits/src/gemcmmn.pas
+M	packages/tosunits/src/vdi.pas
+
+******************************************************************************
 commit 364a091474f2e652895a338e1110288e2d00d580
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Sun Feb 13 16:23:18 2022 +0200
