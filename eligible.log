@@ -1,4 +1,36 @@
 ******************************************************************************
+commit 83a5ba663643f5e87980186da0767c059f0f4488
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sun Feb 13 15:18:42 2022 +0200
+
+    + compile the charset unit for Win16. This fixes compilation after the
+      unicodekvm branch merge.
+
+M	rtl/win16/Makefile
+M	rtl/win16/Makefile.fpc
+
+******************************************************************************
+commit c22466183670db7f11f6cd160550eac330825302
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sun Feb 13 14:44:10 2022 +0200
+
+    * fixed object names in comments
+
+M	packages/rtl-extra/src/inc/objects.pp
+
+******************************************************************************
+commit e2f1be330639941d2ff01160dfa205ca35eb03c0
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sun Feb 13 14:41:30 2022 +0200
+
+    * new RawByteString and UnicodeString methods and objects in the 'objects' unit
+      put behind ifdefs (FPC_HAS_FEATURE_ANSISTRINGS,
+      FPC_HAS_FEATURE_UNICODESTRINGS, FPC_HAS_CPSTRING) to fix compilation on
+      embedded systems
+
+M	packages/rtl-extra/src/inc/objects.pp
+
+******************************************************************************
 commit 3bb0ae4bf965d66489db5350a1706267e5702087
 Author: Karoly Balogh <karoly@freepascal.org>
 Date:   Sun Feb 13 12:12:40 2022 +0100
@@ -48148,20 +48180,6 @@ M	rtl/win/sysos.inc
 M	rtl/win/syswin.inc
 
 ******************************************************************************
-commit 3f6ad30b6936bb215d97105bef9824abbaf0412c
-Author: Jonas Maebe <jonas@freepascal.org>
-Date:   Sat May 2 13:17:21 2020 +0000
-
-      * don't convert the fpu parameters size from tcgsize -> int -> float_tcgsize
-        if not required, to avoid translating OS_C64 into OS_F64 (fix for x86
-        test failures after r45205)
-    
-    git-svn-id: trunk@45221 -
-
-M	compiler/cgbase.pas
-M	compiler/cgobj.pas
-
-******************************************************************************
 commit de805fddcd15b4eaf9d92764d043d5527c30311b
 Author: florian <florian@freepascal.org>
 Date:   Sat May 2 12:33:46 2020 +0000
@@ -48273,35 +48291,6 @@ Date:   Fri May 1 13:11:02 2020 +0000
     git-svn-id: trunk@45208 -
 
 M	rtl/linux/linux.pp
-
-******************************************************************************
-commit 722ad1ff7b1f0ba015494a40ed282c606cbc1148
-Author: Jonas Maebe <jonas@freepascal.org>
-Date:   Fri May 1 13:02:48 2020 +0000
-
-      * support floating point parameters split over multiple locations, including
-        integer registers, for homogeneous records/arrays on ppc64le (related to
-        mantis #36934)
-    
-    git-svn-id: trunk@45205 -
-
-M	.gitattributes
-M	compiler/cgobj.pas
-A	tests/webtbs/tw36934b.pp
-
-******************************************************************************
-commit 05923af386db5572a68ab13f0b908c8c96e7831a
-Author: Jonas Maebe <jonas@freepascal.org>
-Date:   Fri May 1 13:02:45 2020 +0000
-
-      * ppc64le: fix storing homogeneous 64 bit float parameters in case they are
-        split over just FPU registers and memory (related to mantis #36934)
-    
-    git-svn-id: trunk@45204 -
-
-M	.gitattributes
-M	compiler/powerpc64/cpupara.pas
-A	tests/webtbs/tw36934a.pp
 
 ******************************************************************************
 commit 89d9679b53d03e369e22b7cf92c9d5ec1dd2cf98
@@ -57688,26 +57677,6 @@ Date:   Sat Jan 4 22:19:15 2020 +0000
     git-svn-id: trunk@43861 -
 
 M	compiler/x86/cgx86.pas
-
-******************************************************************************
-commit b7c6e01b03ac1d8fcedf2cfe6d150b83f83cef4a
-Author: florian <florian@freepascal.org>
-Date:   Sat Jan 4 21:54:53 2020 +0000
-
-      * cleaning up tcgsize: it makes no sense to declare every combination and type
-        the different vector types must be either handled in the high level cg or
-        by using the shuffle parameter
-    
-    git-svn-id: trunk@43860 -
-
-M	compiler/cgbase.pas
-M	compiler/cgobj.pas
-M	compiler/defutil.pas
-M	compiler/hlcgobj.pas
-M	compiler/m68k/cpubase.pas
-M	compiler/x86/cgx86.pas
-M	compiler/x86/cpubase.pas
-M	compiler/x86/rax86.pas
 
 ******************************************************************************
 commit 73c6cab0961f0bffe52aa6d81985f56d08e2d654
@@ -71036,6 +71005,7 @@ Date:   Sun Jan 20 18:50:09 2019 +0000
     git-svn-id: trunk@40949 -
 
 M	tests/utils/avx/readme.txt
+
 ******************************************************************************
 commit 75a89d21159b3c4106596993f938b77e43ee048d
 Author: florian <florian@freepascal.org>
@@ -71086,7 +71056,6 @@ Date:   Sat Jan 19 19:37:48 2019 +0000
     git-svn-id: trunk@40920 -
 
 M	compiler/arm/agarmgas.pas
-
 ******************************************************************************
 commit fd1a09a254edd18eaa752fc34d7aa13424992974
 Author: Károly Balogh <karoly@freepascal.org>
