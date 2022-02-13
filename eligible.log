@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 3bb0ae4bf965d66489db5350a1706267e5702087
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Sun Feb 13 12:12:40 2022 +0100
+
+    * tosunits: fix the cube spin on systems other than original TOS/EmuTOS, patch by mfro in atari-forum.com
+
+M	packages/tosunits/examples/gemcube.pas
+
+******************************************************************************
 commit 3c91a7c01ea16f5fc9239b21636d4127faacaf31
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Sun Feb 13 02:54:40 2022 +0200
