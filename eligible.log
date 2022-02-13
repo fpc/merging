@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 3c91a7c01ea16f5fc9239b21636d4127faacaf31
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sun Feb 13 02:54:40 2022 +0200
+
+    + emit an error message if the ihxutil is not found when compiling an ZX Spectrum executable with the internal linker
+    + emit a 'tried' message (fpc -vt) when using ihxutil for ZX Spectrum
+
+M	compiler/systems/t_zxspectrum.pas
+
+******************************************************************************
 commit 9f22623459866915d8769bd2e6cd9c8a75357c6e
 Author: Marcus Sackrow <alb42@web.de>
 Date:   Sun Feb 13 00:02:25 2022 +0100
