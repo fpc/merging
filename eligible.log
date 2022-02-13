@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 34630c2ef952944108b702134db3b99cf2ef1d2a
+Author: florian <florian@freepascal.org>
+Date:   Sun Feb 13 22:47:38 2022 +0100
+
+      * properly set types for currency divisions, resolves #38717
+
+M	compiler/nmat.pas
+A	tests/webtbs/tw38717.pp
+
+******************************************************************************
 commit 6502f7b35ab7438a7c38c64686d86d44eec3a388
 Author: Karoly Balogh <karoly@freepascal.org>
 Date:   Sun Feb 13 18:46:40 2022 +0100
