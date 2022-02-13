@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 364a091474f2e652895a338e1110288e2d00d580
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sun Feb 13 16:23:18 2022 +0200
+
+    + enabled compilation of unit ctypes for win16
+
+M	rtl/win16/Makefile
+M	rtl/win16/Makefile.fpc
+
+******************************************************************************
 commit 18f996fd03f11f6637feeb7b3854ba3304cd8198
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Sun Feb 13 16:13:50 2022 +0200
