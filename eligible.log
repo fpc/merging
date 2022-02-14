@@ -1,4 +1,13 @@
 ******************************************************************************
+commit d4d55f5c877064220bb13a0123e6e67df7e75237
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Mon Feb 14 20:42:26 2022 +0100
+
+    fcl-js: less hints
+
+M	packages/fcl-js/src/jstree.pp
+
+******************************************************************************
 commit 456bed94863ef0cb776454b020633b25a106f22e
 Author: Karoly Balogh <karoly@freepascal.org>
 Date:   Mon Feb 14 18:29:59 2022 +0100
