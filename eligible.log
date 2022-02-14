@@ -1,4 +1,23 @@
 ******************************************************************************
+commit 7e7072c8233435934c326b7c709feba1efaf4db1
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Mon Feb 14 22:35:04 2022 +0000
+
+    Update utils/fpcm/revision.inc after commit 8d65554495 dated 2022/02/13
+
+M	utils/fpcm/revision.inc
+
+******************************************************************************
+commit 6bded28a1004fae8410321c898049611e4fa3c33
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Sun Feb 13 22:18:17 2022 +0000
+
+     Fix gcc options for mips CPU
+
+M	utils/fpcm/fpcmake.inc
+M	utils/fpcm/fpcmake.ini
+
+******************************************************************************
 commit 680a5b94ff271521e7af907f08f6ad1d3160ea0c
 Author: florian <florian@freepascal.org>
 Date:   Mon Feb 14 22:54:36 2022 +0100
