@@ -1,4 +1,23 @@
 ******************************************************************************
+commit ff68e7b9de5045c67d723933985da998f115efb8
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Mon Feb 14 15:33:36 2022 +0100
+
+    * m68k-atari: override the exeext globally, not just at the final step of the linking. this fixes 'Linking <exename>.ttp' messages, when in fact <exename>.prg gets generated
+
+M	compiler/scanner.pas
+M	compiler/systems/t_atari.pas
+
+******************************************************************************
+commit c74a6f4ca27503ed8837a803169d6c40780329f1
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Mon Feb 14 15:08:19 2022 +0100
+
+    * tosunits: tabs to spaces and indendation change in gem.pas. no functional change.
+
+M	packages/tosunits/src/gem.pas
+
+******************************************************************************
 commit c46b45bf72ed7e4522e69611d0a5c5c2f44739c9
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Mon Feb 14 09:15:30 2022 +0100
