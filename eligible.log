@@ -1,4 +1,22 @@
 ******************************************************************************
+commit 680a5b94ff271521e7af907f08f6ad1d3160ea0c
+Author: florian <florian@freepascal.org>
+Date:   Mon Feb 14 22:54:36 2022 +0100
+
+      + test for last commit (44094dba2f96fcc6c252f9c42398b6740edb85a1)
+
+A	tests/tbs/tb0692.pp
+
+******************************************************************************
+commit 44094dba2f96fcc6c252f9c42398b6740edb85a1
+Author: ccrause <christo.crause@gmail.com>
+Date:   Mon Feb 14 22:33:32 2022 +0200
+
+    Resolve address of a symbol defined as absolute of another symbol, in assembler code.
+
+M	compiler/rautils.pas
+
+******************************************************************************
 commit d4d55f5c877064220bb13a0123e6e67df7e75237
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Mon Feb 14 20:42:26 2022 +0100
