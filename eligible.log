@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 456bed94863ef0cb776454b020633b25a106f22e
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Mon Feb 14 18:29:59 2022 +0100
+
+    * tosunits: add metados to the compilable units, reported and patch by mfro on atari-forum.com
+
+M	packages/tosunits/fpmake.pp
+
+******************************************************************************
 commit ff68e7b9de5045c67d723933985da998f115efb8
 Author: Karoly Balogh <karoly@freepascal.org>
 Date:   Mon Feb 14 15:33:36 2022 +0100
