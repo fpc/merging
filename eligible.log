@@ -1,4 +1,36 @@
 ******************************************************************************
+commit c46b45bf72ed7e4522e69611d0a5c5c2f44739c9
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Mon Feb 14 09:15:30 2022 +0100
+
+    * Patch from Laco to add TSingleField
+
+M	packages/fcl-db/src/base/bufdataset.pas
+M	packages/fcl-db/src/base/db.pas
+M	packages/fcl-db/src/base/dsparams.inc
+M	packages/fcl-db/src/base/fields.inc
+M	packages/fcl-db/src/base/xmldatapacketreader.pp
+M	packages/fcl-db/src/codegen/fpddcodegen.pp
+M	packages/fcl-db/src/datadict/fpdatadict.pp
+M	packages/fcl-db/src/dbase/dbf_fields.pas
+M	packages/fcl-db/src/export/fpfixedexport.pp
+M	packages/fcl-db/src/export/fprtfexport.pp
+M	packages/fcl-db/src/export/fptexexport.pp
+M	packages/fcl-db/src/memds/memds.pp
+M	packages/fcl-db/src/sqldb/odbc/odbcconn.pas
+M	packages/fcl-db/src/sqldb/postgres/pqconnection.pp
+M	packages/fcl-db/src/sqldb/sqldb.pp
+M	packages/fcl-db/src/sqldb/sqlite/sqlite3conn.pp
+M	packages/fcl-db/tests/bufdatasettoolsunit.pas
+M	packages/fcl-db/tests/memdstoolsunit.pas
+M	packages/fcl-db/tests/sqldbtoolsunit.pas
+M	packages/fcl-db/tests/testdbbasics.pas
+M	packages/fcl-db/tests/testdbexport.pas
+M	packages/fcl-db/tests/toolsunit.pas
+M	packages/fcl-sdo/src/das/sdo_das_utils.pas
+M	packages/fcl-web/src/restbridge/sqldbrestschema.pp
+
+******************************************************************************
 commit 34630c2ef952944108b702134db3b99cf2ef1d2a
 Author: florian <florian@freepascal.org>
 Date:   Sun Feb 13 22:47:38 2022 +0100
