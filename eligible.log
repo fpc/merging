@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 00a287e77d4917662b5f57ff99898b598c3fe996
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Mon Feb 14 23:24:36 2022 +0000
+
+     Fix compilation of mips64 compiler by simple use of 'make mips64'
+
+M	compiler/fpcdefs.inc
+
+******************************************************************************
 commit 7e7072c8233435934c326b7c709feba1efaf4db1
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Mon Feb 14 22:35:04 2022 +0000
