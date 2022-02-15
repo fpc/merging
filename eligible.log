@@ -1,4 +1,24 @@
 ******************************************************************************
+commit 7aabdb85fa9d718b2cfb3e306aa7de22a59cb746
+Author: florian <florian@freepascal.org>
+Date:   Tue Feb 15 20:57:18 2022 +0100
+
+      - removed probably accidently commited IDE configuration files
+
+D	packages/ide/fp.cfg
+D	packages/ide/fp.dsk
+D	packages/ide/fp.ini
+
+******************************************************************************
+commit b048ae37b20d06da7f9beb52dc7f50c9d2bb4fde
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Mon Feb 14 23:54:18 2022 +0000
+
+     Fix loading of 64-bit constant into register for 64-bit mips CPU
+
+M	compiler/mips/cgcpu.pas
+
+******************************************************************************
 commit ac3fab3e921dab8d23c6d9e8fb6c94da21f76351
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Tue Feb 15 15:47:14 2022 +0000
