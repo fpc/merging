@@ -1,4 +1,24 @@
 ******************************************************************************
+commit f1043ef09915962c0f36c3379baeb437c097ef7f
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Tue Feb 15 23:32:17 2022 +0100
+
+    * Patch from Laco to implement filtering on null values
+
+M	packages/fcl-db/src/base/bufdataset_parser.pp
+M	packages/fcl-db/src/dbase/dbf_prscore.pas
+M	packages/fcl-db/src/dbase/dbf_prsdef.pas
+
+******************************************************************************
+commit 0f5bd26cba164800a6a3f70e43f0d1af005b89c9
+Author: Bernd Kreuss <b.kreuss@xecro.com>
+Date:   Fri Sep 17 16:31:33 2021 +0200
+
+    remove unused resource strings
+
+M	packages/fcl-base/src/fpexprpars.pp
+
+******************************************************************************
 commit 7aabdb85fa9d718b2cfb3e306aa7de22a59cb746
 Author: florian <florian@freepascal.org>
 Date:   Tue Feb 15 20:57:18 2022 +0100
