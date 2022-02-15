@@ -1,4 +1,22 @@
 ******************************************************************************
+commit 855a0af427202506a4fa4bc5b7d8666e81f95493
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Tue Feb 15 14:52:08 2022 +0000
+
+    Update utils/fpcm/revision.inc after commit 6bded28a10
+
+M	utils/fpcm/revision.inc
+
+******************************************************************************
+commit 2c80b2419ead1870965686bfca004b2a7315c0a3
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Tue Feb 15 09:04:24 2022 +0000
+
+    Fix invalid typecast by postponing sym change to after address resolution in 44094dba
+
+M	compiler/rautils.pas
+
+******************************************************************************
 commit 00a287e77d4917662b5f57ff99898b598c3fe996
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Mon Feb 14 23:24:36 2022 +0000
