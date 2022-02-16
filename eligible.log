@@ -1,4 +1,17 @@
 ******************************************************************************
+commit 9ad2bdcecde1fd9f5696ef3cb76f6762b30c01ac
+Author: florian <florian@freepascal.org>
+Date:   Wed Feb 16 23:00:02 2022 +0100
+
+      + patch by Bart B: TBucketList threw access violations after Clear, resolves #39565
+      + test
+
+M	packages/fcl-base/src/contnrs.pp
+M	tests/Makefile
+M	tests/Makefile.fpc
+A	tests/test/units/contnrs/tbucketlist.pp
+
+******************************************************************************
 commit bcab6185b9f7a02da1aea46893ce7a38aca43ca4
 Author: florian <florian@freepascal.org>
 Date:   Wed Feb 16 21:30:14 2022 +0100
