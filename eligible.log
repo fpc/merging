@@ -1,4 +1,43 @@
 ******************************************************************************
+commit 7711ba610a7488361472f2a0bcefa52a573c653d
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Wed Feb 16 05:59:54 2022 +0200
+
+    - don't pass --export-dynamic to the linker when linking a library for the WASI target
+
+M	compiler/systems/t_wasi.pas
+
+******************************************************************************
+commit 2a339485214d53d5c37a390fc59a314413e192ab
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Wed Feb 16 05:42:52 2022 +0200
+
+    - removed commented out code for executing WASI dllcmd[2]
+
+M	compiler/systems/t_wasi.pas
+
+******************************************************************************
+commit e34116f7dea7c3f35da3a3ae43d14110d4c70fc1
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Wed Feb 16 05:34:09 2022 +0200
+
+    - removed --allow-undefined linker option when compiling a WASI library
+
+M	compiler/systems/t_wasi.pas
+
+******************************************************************************
+commit 590c8786902fb712aa84e1e87351f0cf484380a5
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Wed Feb 16 05:24:41 2022 +0200
+
+    + added separate startup code for libraries, that declares _initialize, instead of _start
+
+M	compiler/systems/t_wasi.pas
+M	rtl/wasi/Makefile
+M	rtl/wasi/Makefile.fpc
+A	rtl/wasi/si_dll.pp
+
+******************************************************************************
 commit 5f66de624d8f8c75e8a9b0323b5e4e709dc25685
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Wed Feb 16 05:17:01 2022 +0200
