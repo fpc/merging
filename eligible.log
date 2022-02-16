@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 5f66de624d8f8c75e8a9b0323b5e4e709dc25685
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Wed Feb 16 05:17:01 2022 +0200
+
+    * regenerate makefile
+
+M	rtl/android/Makefile
+
+******************************************************************************
 commit d2a2240a2cf9f00c8497c696155c9e0657a614fc
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Wed Feb 16 02:49:34 2022 +0200
