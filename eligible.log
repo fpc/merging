@@ -1,4 +1,13 @@
 ******************************************************************************
+commit bcab6185b9f7a02da1aea46893ce7a38aca43ca4
+Author: florian <florian@freepascal.org>
+Date:   Wed Feb 16 21:30:14 2022 +0100
+
+      * hopefully final fix for absolute references to absolute symbols
+
+M	compiler/rautils.pas
+
+******************************************************************************
 commit f8358977616796818531c57569d61af710be69c2
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Wed Feb 16 16:47:58 2022 +0000
