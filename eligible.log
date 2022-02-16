@@ -1,4 +1,26 @@
 ******************************************************************************
+commit f8358977616796818531c57569d61af710be69c2
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Wed Feb 16 16:47:58 2022 +0000
+
+     Add missing rtl/mips64 files and fix some rtl/mips64el files
+
+A	rtl/mips64/makefile.cpu
+A	rtl/mips64/set.inc
+M	rtl/mips64el/cpuh.inc
+M	rtl/mips64el/set.inc
+M	rtl/mips64el/setjumph.inc
+
+******************************************************************************
+commit f51c0daeb4c840d01f8d2e36e8b7a9eb945a924f
+Author: Ondrej Pokorny <ondrej@kluug.net>
+Date:   Wed Feb 16 16:24:23 2022 +0000
+
+    Fppdf fix encoding for standard fonts. Issue 39554
+
+M	packages/fcl-pdf/src/fppdf.pp
+
+******************************************************************************
 commit a7545e08926723802528d0ed139606d4fc718fde
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Wed Feb 16 11:55:22 2022 +0100
