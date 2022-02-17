@@ -1,4 +1,15 @@
 ******************************************************************************
+commit 72e88a345251c138efa396094f0e0d5f145f40bb
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Thu Feb 17 05:14:21 2022 +0200
+
+    - don't write the wasm-ld command line to the screen when linking a WASM
+      library. The command line, passed to the linker is dumped when compiling with
+      -vv anyway.
+
+M	compiler/systems/t_wasi.pas
+
+******************************************************************************
 commit 9ad2bdcecde1fd9f5696ef3cb76f6762b30c01ac
 Author: florian <florian@freepascal.org>
 Date:   Wed Feb 16 23:00:02 2022 +0100
