@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 67fedc6b5ba09803a2264cb4ea2b3dce06713af9
+Author: florian <florian@freepascal.org>
+Date:   Thu Feb 17 21:59:39 2022 +0100
+
+      * handle frac(+/-Inf or Nan) correctly in the software implementation, resolves #39584
+
+M	rtl/inc/genmath.inc
+A	tests/test/units/system/tfrac.pp
+
+******************************************************************************
 commit b3e079c5da47fa070524d0cb2ecd1d25be099235
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Thu Feb 17 14:10:06 2022 +0100
