@@ -1,4 +1,20 @@
 ******************************************************************************
+commit b5ce98fec736ad7d22017c9fa9045051c1b2325e
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Fri Feb 11 14:53:55 2022 +0100
+
+    + add C/C++ object files for aarch64-win64 compiled with LLVM 13.0.0
+
+M	tests/test/cg/obj/readme.txt
+A	tests/test/cg/obj/win64/aarch64/cpptcl1.o
+A	tests/test/cg/obj/win64/aarch64/cpptcl2.o
+A	tests/test/cg/obj/win64/aarch64/ctest.o
+A	tests/test/cg/obj/win64/aarch64/tcext3.o
+A	tests/test/cg/obj/win64/aarch64/tcext4.o
+A	tests/test/cg/obj/win64/aarch64/tcext5.o
+A	tests/test/cg/obj/win64/aarch64/tcext6.o
+
+******************************************************************************
 commit 7f33dc18d01914d30f52db7b81f449254fc9a244
 Author: Thorsten Otto <admin@tho-otto.de>
 Date:   Wed Feb 16 15:12:38 2022 +0100
