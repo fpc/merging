@@ -1,4 +1,81 @@
 ******************************************************************************
+commit 7f33dc18d01914d30f52db7b81f449254fc9a244
+Author: Thorsten Otto <admin@tho-otto.de>
+Date:   Wed Feb 16 15:12:38 2022 +0100
+
+    atari: fix in v_ftext
+
+M	packages/tosunits/src/vdi.pas
+
+******************************************************************************
+commit bbe18e2633e1537e36767634c3b9cc3906f8f5b2
+Author: Thorsten Otto <admin@tho-otto.de>
+Date:   Mon Feb 14 07:06:54 2022 +0100
+
+    tosunits: honor the window rectangle list in examples
+
+M	packages/tosunits/examples/gemcube.pas
+M	packages/tosunits/examples/gemwin.pas
+
+******************************************************************************
+commit a954fe6e8fbcb4ddca014a2a9f2086ccf85b5776
+Author: Thorsten Otto <admin@tho-otto.de>
+Date:   Sun Feb 13 12:38:38 2022 +0100
+
+    atari: some small bug fixes to new bindings
+
+M	packages/tosunits/src/aes.pas
+M	packages/tosunits/src/gem.pas
+M	packages/tosunits/src/vdi.pas
+
+******************************************************************************
+commit a9e3882e37fa75856678470d137ff2e6d648d727
+Author: Thorsten Otto <admin@tho-otto.de>
+Date:   Thu Feb 10 13:59:36 2022 +0100
+
+    vdi: enlarge control array, needed by some NVDI5 functions
+
+M	packages/tosunits/src/vditypes.inc
+
+******************************************************************************
+commit fdfd7c07ed33bb762b3abd0c64b30d82197ecf4f
+Author: Thorsten Otto <admin@tho-otto.de>
+Date:   Thu Feb 10 13:57:30 2022 +0100
+
+    vdi: add some extra checks for functions that are not always present
+
+M	packages/tosunits/src/vdi.pas
+
+******************************************************************************
+commit 850ba0bc7432168157aa582698976ea2e80b6cc3
+Author: Thorsten Otto <admin@tho-otto.de>
+Date:   Thu Feb 10 10:48:53 2022 +0100
+
+    atari: support ARGV protocol in ExecuteProcess
+
+M	rtl/atari/sysutils.pp
+
+******************************************************************************
+commit c223ae3610c215340a1fe34c61c9e6b7f8f454b1
+Author: Thorsten Otto <admin@tho-otto.de>
+Date:   Thu Feb 10 10:45:39 2022 +0100
+
+    rtl/atari: try to convert argv[0] to absolute pathname
+
+M	rtl/atari/syspara.inc
+
+******************************************************************************
+commit 0b1734cc04e76d2a7972c39ffc77b7d0bcb16455
+Author: Thorsten Otto <admin@tho-otto.de>
+Date:   Thu Feb 10 10:43:48 2022 +0100
+
+    rtl/atari: move common code of getenv
+
+M	rtl/atari/dos.pp
+M	rtl/atari/system.pp
+M	rtl/atari/sysutils.pp
+
+******************************************************************************
 commit 67fedc6b5ba09803a2264cb4ea2b3dce06713af9
 Author: florian <florian@freepascal.org>
 Date:   Thu Feb 17 21:59:39 2022 +0100
