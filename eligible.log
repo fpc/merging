@@ -1,4 +1,31 @@
 ******************************************************************************
+commit ab013b6b69820bc0863cbc43ca123ca36023578e
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Fri Feb 18 16:39:43 2022 +0100
+
+    * Need fielddefs
+
+M	packages/fcl-db/src/codegen/fpcgfieldmap.pp
+
+******************************************************************************
+commit 1b4ad74b68894681b8a521c02b7469e0a354bfa7
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Fri Feb 18 16:38:24 2022 +0100
+
+    * Need fielddefs
+
+M	packages/fcl-db/src/codegen/fpcgtypesafedataset.pp
+
+******************************************************************************
+commit e09bf7e2660d75462a65c1f1219ede5810752674
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Fri Feb 18 16:37:49 2022 +0100
+
+    * Fix fieldmap & object generator
+
+M	packages/fcl-db/src/codegen/fpcgfieldmap.pp
+
+******************************************************************************
 commit b5ce98fec736ad7d22017c9fa9045051c1b2325e
 Author: Sven/Sarah Barth <pascaldragon@gmail.com>
 Date:   Fri Feb 11 14:53:55 2022 +0100
