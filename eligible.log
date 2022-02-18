@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 04145589a9b263fc9159dbc55835e1e1e53d0237
+Author: florian <florian@freepascal.org>
+Date:   Fri Feb 18 22:47:38 2022 +0100
+
+      * improved fpc_frac_real
+
+M	rtl/inc/genmath.inc
+
+******************************************************************************
 commit 3f14a19d3e5ad546841bda2f8abbcb8029f79370
 Author: Sven/Sarah Barth <pascaldragon@gmail.com>
 Date:   Fri Feb 18 17:34:12 2022 +0100
