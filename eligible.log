@@ -1,4 +1,97 @@
 ******************************************************************************
+commit 3f14a19d3e5ad546841bda2f8abbcb8029f79370
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Fri Feb 18 17:34:12 2022 +0100
+
+    * fix typos in comments, no code changes
+
+M	compiler/pdecl.pas
+M	compiler/pdecobj.pas
+
+******************************************************************************
+commit 92eb260521827b0db9392c99b0966f6a7f928ad2
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Fri Feb 18 17:18:15 2022 +0100
+
+    + support for generic forward declarations fixes #39582, so add a test for it
+
+A	tests/webtbs/tw39582.pp
+
+******************************************************************************
+commit c14c3ec98f584b8952027e1e9b451ed7104c232c
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Fri Feb 18 17:10:09 2022 +0100
+
+    + support for generic forward declarations fixes #39581, so add a test for it
+
+A	tests/webtbs/tw39581.pp
+
+******************************************************************************
+commit 2a5023508a2bc4ff3ba4f3a0ca16366d3df86db8
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Fri Feb 18 17:06:45 2022 +0100
+
+    + add support for forward declarations of generic classes and interfaces (any implicit pointer type really); fixes #34128
+
+M	compiler/fmodule.pas
+M	compiler/pdecl.pas
+M	compiler/pdecobj.pas
+M	compiler/pdecsub.pas
+M	compiler/pgentype.pas
+M	compiler/pgenutil.pas
+M	compiler/ptype.pas
+A	tests/test/tgenfwd1.pp
+A	tests/test/tgenfwd10.pp
+A	tests/test/tgenfwd11.pp
+A	tests/test/tgenfwd12.pp
+A	tests/test/tgenfwd13.pp
+A	tests/test/tgenfwd2.pp
+A	tests/test/tgenfwd3.pp
+A	tests/test/tgenfwd4.pp
+A	tests/test/tgenfwd5.pp
+A	tests/test/tgenfwd6.pp
+A	tests/test/tgenfwd7.pp
+A	tests/test/tgenfwd8.pp
+A	tests/test/tgenfwd9.pp
+
+******************************************************************************
+commit 3444b23c9a7178cc475d9f72035a0b7530958bb7
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Fri Feb 18 17:03:56 2022 +0100
+
+    + add a method to retrieve a copy of a specialization context
+
+M	compiler/pgentype.pas
+
+******************************************************************************
+commit 094a353d879f36a3c46acb1fe91b56295abe388f
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Fri Feb 18 16:43:40 2022 +0100
+
+    + add ability to strictly compare defs with generic constraints (this is needed for declarations, while for normal code we're rather relaxed)
+
+M	compiler/defcmp.pas
+
+******************************************************************************
+commit 3e26beb1edc839f05063aa957164b69fdf8afe56
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Fri Feb 18 16:19:47 2022 +0100
+
+    * extract the code to parse a forward declaration out from types_dec into its own function parse_forward_declaration
+
+M	compiler/pdecl.pas
+
+******************************************************************************
+commit 7f1e420bb05add6439b6ae1028e841ad7780b481
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Fri Feb 18 16:17:14 2022 +0100
+
+    * move determine_generic_def out from pdecl.types_dec to pgenutil
+
+M	compiler/pdecl.pas
+M	compiler/pgenutil.pas
+
+******************************************************************************
 commit ab013b6b69820bc0863cbc43ca123ca36023578e
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Fri Feb 18 16:39:43 2022 +0100
