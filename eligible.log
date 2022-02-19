@@ -1,4 +1,24 @@
 ******************************************************************************
+commit 91a023a1789ac775da9e526a9908d77921e68443
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Feb 19 12:44:23 2022 +0100
+
+    * Better event
+
+M	packages/fcl-base/src/fpexprpars.pp
+M	packages/fcl-base/tests/testexprpars.pp
+
+******************************************************************************
+commit 939572ebb685767f16318c0811ba4d9eab2f34ec
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Feb 19 12:36:08 2022 +0100
+
+    * Implement ExtractIdentifierNames: fix issue 39454
+
+M	packages/fcl-base/src/fpexprpars.pp
+M	packages/fcl-base/tests/testexprpars.pp
+
+******************************************************************************
 commit acc590ac07e438509bc2f1b09b2d3991b294db1b
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Sat Feb 19 11:34:52 2022 +0100
