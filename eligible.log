@@ -1,4 +1,27 @@
 ******************************************************************************
+commit 82df643b7471ddaf5445fc99267081959cccd7c0
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Feb 19 17:52:34 2022 +0100
+
+    * Patch from Dokkie884 to implement inheritance
+
+M	packages/fcl-mustache/src/fpexmustache.pp
+M	packages/fcl-mustache/src/fpmustache.pp
+A	packages/fcl-mustache/tests/spec/inheritance.json
+M	packages/fcl-mustache/tests/tcexmustache.pas
+M	packages/fcl-mustache/tests/tcmustache.pas
+M	packages/fcl-mustache/tests/tcspecs.pas
+
+******************************************************************************
+commit d7ab5300968d67eda1a09f65e1be43b17b6a72ca
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Feb 19 17:45:50 2022 +0100
+
+    * Standalone tag fix from Dokkie884
+
+M	packages/fcl-mustache/src/fpmustache.pp
+
+******************************************************************************
 commit 003d3267f0a120ab2b375863e538ec7471113c29
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Sat Feb 19 16:23:13 2022 +0100
