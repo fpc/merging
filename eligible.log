@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 003d3267f0a120ab2b375863e538ec7471113c29
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Feb 19 16:23:13 2022 +0100
+
+    * Additional fieldtypes for GetFromField
+
+M	packages/fcl-db/src/base/fieldmap.pp
+
+******************************************************************************
 commit 91a023a1789ac775da9e526a9908d77921e68443
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Sat Feb 19 12:44:23 2022 +0100
