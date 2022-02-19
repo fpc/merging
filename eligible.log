@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 696b7b6f68d3dd75f870dcb5931dd6216640505c
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Wed Feb 16 10:09:39 2022 +0000
+
+      * x86: Improvements to JccMov2CMov to catch Jcc @Lbl; <movs>; JMP @Lbl
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
 commit 82df643b7471ddaf5445fc99267081959cccd7c0
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Sat Feb 19 17:52:34 2022 +0100
