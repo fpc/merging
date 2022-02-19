@@ -1,4 +1,14 @@
 ******************************************************************************
+commit d198fc46cb6cec08fc91cd35d34c64e182e207b5
+Author: florian <florian@freepascal.org>
+Date:   Sat Feb 19 23:42:57 2022 +0100
+
+      * just copy value parameters to a temp. when inlining instead of
+        using (@...)^ constructs, resolves #39590
+
+M	compiler/ncal.pas
+
+******************************************************************************
 commit 696b7b6f68d3dd75f870dcb5931dd6216640505c
 Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
 Date:   Wed Feb 16 10:09:39 2022 +0000
