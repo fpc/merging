@@ -1,4 +1,14 @@
 ******************************************************************************
+commit acc590ac07e438509bc2f1b09b2d3991b294db1b
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Sat Feb 19 11:34:52 2022 +0100
+
+    pastojs: set version to 2.3.1
+
+M	packages/pastojs/src/pas2jscompiler.pp
+M	utils/pas2js/dist/rtl.js
+
+******************************************************************************
 commit 04145589a9b263fc9159dbc55835e1e1e53d0237
 Author: florian <florian@freepascal.org>
 Date:   Fri Feb 18 22:47:38 2022 +0100
