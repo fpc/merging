@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 1cd8c249b1cba95a03488989ca6eb82232f88608
+Author: florian <florian@freepascal.org>
+Date:   Sun Feb 20 20:58:01 2022 +0100
+
+      * throw an internal error if the reference of lea contains a segment register
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
 commit 3a81f5c732ed75c555a9f6b96488cdb19bb9f4e4
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Sun Feb 20 18:22:35 2022 +0100
