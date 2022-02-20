@@ -1,4 +1,14 @@
 ******************************************************************************
+commit dea81f4f60174483f0c61a77dfb2a63dc117efb3
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sun Feb 20 23:48:23 2022 +0100
+
+    * Extra options for more flexibility
+
+M	packages/fcl-js/examples/cgutils.pp
+M	packages/fcl-js/examples/convcgi.lpr
+
+******************************************************************************
 commit 1cd8c249b1cba95a03488989ca6eb82232f88608
 Author: florian <florian@freepascal.org>
 Date:   Sun Feb 20 20:58:01 2022 +0100
