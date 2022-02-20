@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 3a81f5c732ed75c555a9f6b96488cdb19bb9f4e4
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sun Feb 20 18:22:35 2022 +0100
+
+    * Add -s --settings option
+
+M	utils/pas2js/dts2pas.pp
+
+******************************************************************************
 commit d198fc46cb6cec08fc91cd35d34c64e182e207b5
 Author: florian <florian@freepascal.org>
 Date:   Sat Feb 19 23:42:57 2022 +0100
