@@ -1,4 +1,32 @@
 ******************************************************************************
+commit c85bef5494f4ca409b37791f96acaef97eabc7b2
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Mon Feb 21 11:40:43 2022 +0100
+
+    * regenerated message files
+
+M	compiler/msgidx.inc
+M	compiler/msgtxt.inc
+
+******************************************************************************
+commit 471a5eb4e01279d5444dcc9f51f0c730e309a889
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Mon Feb 21 11:39:29 2022 +0100
+
+    help text: vlink is no longer default on MorphOS for a while now, remove from help text, add Atari and Sinclair QL where it is the default
+
+M	compiler/msg/errore.msg
+
+******************************************************************************
+commit 4b88fa8e3b56330086d17a01fb1f836d97dd04d0
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Mon Feb 21 11:35:24 2022 +0100
+
+    * powerpc-morphos: add support for linker map file generation, some code cleanups
+
+M	compiler/systems/t_morph.pas
+
+******************************************************************************
 commit dea81f4f60174483f0c61a77dfb2a63dc117efb3
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Sun Feb 20 23:48:23 2022 +0100
