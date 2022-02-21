@@ -1,4 +1,13 @@
 ******************************************************************************
+commit d209d3ba846b9f8a5858efe1a261f793b30349e7
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Wed Jan 12 08:52:35 2022 +0000
+
+    Refactoring procedures in aoptx86 to gain speed boosts
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
 commit c85bef5494f4ca409b37791f96acaef97eabc7b2
 Author: Karoly Balogh <karoly@freepascal.org>
 Date:   Mon Feb 21 11:40:43 2022 +0100
