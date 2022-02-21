@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 81c8078735cf79755750e39e0a6ad2159ae61ead
+Author: florian <florian@freepascal.org>
+Date:   Mon Feb 21 23:08:39 2022 +0100
+
+      * reorder string expressions with parentheses so fpc_*_concat_multi can be used efficiently, resolved #39479
+
+M	compiler/nadd.pas
+
+******************************************************************************
 commit d209d3ba846b9f8a5858efe1a261f793b30349e7
 Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
 Date:   Wed Jan 12 08:52:35 2022 +0000
