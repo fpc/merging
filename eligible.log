@@ -1,4 +1,40 @@
 ******************************************************************************
+commit 546455faca05d2827398cd0f2ab76ebe45de5b1e
+Author: florian <florian@freepascal.org>
+Date:   Tue Feb 22 22:08:53 2022 +0100
+
+      * throw error properly if a target does not support sections
+
+M	compiler/msg/errore.msg
+M	compiler/msgidx.inc
+M	compiler/msgtxt.inc
+M	compiler/pdecsub.pas
+
+******************************************************************************
+commit 665c1b396670d57d6c595bafeea3aa732f52170b
+Author: ccrause <christo.crause@gmail.com>
+Date:   Tue Feb 22 07:46:19 2022 +0200
+
+    Move member variable "section" to tprocdef.  Type of "section" to agree with symansistr define.
+
+M	compiler/hlcgobj.pas
+M	compiler/pdecsub.pas
+M	compiler/symdef.pas
+
+******************************************************************************
+commit 738a0a35de9c93d37368b6ea796372e757eff5d1
+Author: ccrause <christo.crause@gmail.com>
+Date:   Sun Feb 20 19:15:51 2022 +0200
+
+    Add section directive for subroutines for embedded and freertos systems.
+
+M	compiler/aasmtai.pas
+M	compiler/hlcgobj.pas
+M	compiler/pdecsub.pas
+M	compiler/symdef.pas
+M	compiler/systems.pas
+
+******************************************************************************
 commit 81c8078735cf79755750e39e0a6ad2159ae61ead
 Author: florian <florian@freepascal.org>
 Date:   Mon Feb 21 23:08:39 2022 +0100
