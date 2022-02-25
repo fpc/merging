@@ -1,4 +1,17 @@
 ******************************************************************************
+commit 9e3f64733359a6ca802b5e913ffc4c6626746ad8
+Author: florian <florian@freepascal.org>
+Date:   Fri Feb 25 21:56:09 2022 +0100
+
+      * var, type, threadvar, const sections require also in classes etc. at least one declaration, resolves #39599
+
+M	compiler/pdecobj.pas
+A	tests/webtfs/tw39599a.pp
+A	tests/webtfs/tw39599b.pp
+A	tests/webtfs/tw39599c.pp
+A	tests/webtfs/tw39599d.pp
+
+******************************************************************************
 commit d36761f4a4dac1f859bfbc12784e6c5a55a5b425
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Fri Feb 25 19:15:22 2022 +0100
