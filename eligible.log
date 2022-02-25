@@ -1,4 +1,60 @@
 ******************************************************************************
+commit d36761f4a4dac1f859bfbc12784e6c5a55a5b425
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Fri Feb 25 19:15:22 2022 +0100
+
+    fcl-net: no ESocketError after closing the connection
+
+M	packages/fcl-net/src/ssockets.pp
+M	packages/fcl-web/src/websocket/fpwebsocket.pp
+
+******************************************************************************
+commit 6b8ab2c4d2a6fdf412fd6e9e16288ca10c81d59c
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Wed Feb 23 14:00:07 2022 +0100
+
+    fcl-web: fixed typo
+
+M	packages/fcl-web/src/websocket/fpwebsocketclient.pp
+
+******************************************************************************
+commit 4f8d6c9df1adac8a8175bedc08f72f826245dd06
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Wed Feb 23 13:47:18 2022 +0100
+
+    fcl-web: added property TWebSocketServer.Host
+
+M	packages/fcl-web/src/websocket/fpwebsocketserver.pp
+
+******************************************************************************
+commit 93f2bd48ddb54550f2369b28af6823ab72f35d29
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Wed Feb 23 13:39:57 2022 +0100
+
+    fcl-base: fixed compile fpthreadpool with fpc 3.2.2
+
+M	packages/fcl-base/src/fpthreadpool.pp
+
+******************************************************************************
+commit 3e9ddf59df740d12ff51122bcdcdf1ce20b0cd56
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Wed Feb 23 13:34:20 2022 +0100
+
+    fcl-web: added IWSTransport.PeerPort, fixed compile with fpc 3.2.2
+
+M	packages/fcl-web/src/websocket/fpwebsocket.pp
+
+******************************************************************************
+commit 49f1f4d26e00de8f62e2f39bcf98520f6e98ae55
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Wed Feb 23 11:12:07 2022 +0100
+
+    fcl-net: fixed typo
+
+A	nohup.out
+M	packages/fcl-net/src/ssockets.pp
+
+******************************************************************************
 commit 5738a6ccf12819d7a4a039ea70e80f69432e3b61
 Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
 Date:   Wed Jan 19 15:59:05 2022 +0000
