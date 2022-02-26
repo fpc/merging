@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 08228d7fb37669f7ed4de4eedabd5dc576dc4f23
+Author: florian <florian@freepascal.org>
+Date:   Sat Feb 26 21:57:12 2022 +0100
+
+      * revert a650d346f1646c1b71380430a96c440e222a087d for now as it apparently does
+        not work with all language encoding
+
+M	rtl/inc/ustrings.inc
+
+******************************************************************************
 commit 9e3f64733359a6ca802b5e913ffc4c6626746ad8
 Author: florian <florian@freepascal.org>
 Date:   Fri Feb 25 21:56:09 2022 +0100
