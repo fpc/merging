@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 6f749cf43d6bfcad745e6639aa1b5dc09e570c27
+Author: florian <florian@freepascal.org>
+Date:   Sun Feb 27 23:19:38 2022 +0100
+
+      * first part to fix #39603
+
+M	compiler/avr/cpupara.pas
+M	compiler/hlcgobj.pas
+
+******************************************************************************
 commit 08228d7fb37669f7ed4de4eedabd5dc576dc4f23
 Author: florian <florian@freepascal.org>
 Date:   Sat Feb 26 21:57:12 2022 +0100
