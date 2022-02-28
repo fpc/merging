@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 33db5200e62fc14f07a000ca92afdbeb8f4dee0f
+Author: florian <florian@freepascal.org>
+Date:   Mon Feb 28 22:24:05 2022 +0100
+
+      * building for LLVM fixed
+
+M	compiler/hlcgobj.pas
+
+******************************************************************************
 commit 6f749cf43d6bfcad745e6639aa1b5dc09e570c27
 Author: florian <florian@freepascal.org>
 Date:   Sun Feb 27 23:19:38 2022 +0100
