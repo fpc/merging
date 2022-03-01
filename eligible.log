@@ -1,4 +1,22 @@
 ******************************************************************************
+commit 21326cfb9ab8b66889c9620ea99a14f435b58d5d
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Tue Mar 1 13:30:48 2022 +0100
+
+    * Remove SQLDB dependency of csvdataset unit
+
+M	packages/fcl-db/src/base/csvdataset.pp
+
+******************************************************************************
+commit 56acf11ec227af677531fc5950a7a28420746467
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Tue Mar 1 13:29:26 2022 +0100
+
+    * Fix memleak when writing CSV data. Fix issue #39607
+
+M	packages/fcl-db/src/base/csvdataset.pp
+
+******************************************************************************
 commit 33db5200e62fc14f07a000ca92afdbeb8f4dee0f
 Author: florian <florian@freepascal.org>
 Date:   Mon Feb 28 22:24:05 2022 +0100
