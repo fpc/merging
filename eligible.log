@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 2b66f60a8844f45cfad54fb59703b4c332e34171
+Author: florian <florian@freepascal.org>
+Date:   Wed Mar 2 23:09:53 2022 +0100
+
+      * do not throw an internal error in case of a misplaced string, resolves #39609
+
+M	compiler/psub.pas
+A	tests/webtbf/tw39609.pp
+
+******************************************************************************
 commit 8d864559b7014df07a9fffd16e0654cdbafdc421
 Author: florian <florian@freepascal.org>
 Date:   Tue Mar 1 22:55:27 2022 +0100
