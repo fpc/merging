@@ -1,4 +1,13 @@
 ******************************************************************************
+commit ac53225817b8a5b520996eb2326f76a7d68378b2
+Author: florian <florian@freepascal.org>
+Date:   Thu Mar 3 21:24:43 2022 +0100
+
+      * test for already resolved issue #38874
+
+A	tests/webtbf/tw38874.pp
+
+******************************************************************************
 commit 2b66f60a8844f45cfad54fb59703b4c332e34171
 Author: florian <florian@freepascal.org>
 Date:   Wed Mar 2 23:09:53 2022 +0100
