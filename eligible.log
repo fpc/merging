@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 3164b535e54f39fad4ec5030b2ed0ba05c12dcac
+Author: florian <florian@freepascal.org>
+Date:   Fri Mar 4 22:48:05 2022 +0100
+
+      * revision.inc update
+
+M	utils/fpcm/revision.inc
+
+******************************************************************************
 commit ac53225817b8a5b520996eb2326f76a7d68378b2
 Author: florian <florian@freepascal.org>
 Date:   Thu Mar 3 21:24:43 2022 +0100
@@ -9855,16 +9864,6 @@ A	packages/hash/src/sha512.pp
 M	packages/hash/tests/tests.pp
 M	packages/hash/tests/testsha256.pp
 A	packages/hash/tests/testsha512.pp
-
-******************************************************************************
-commit d70bb6a8c2c7465949bc8e6ce328789572b93987
-Author: Tomas Hajny <XHajT03@hajny.biz>
-Date:   Thu Nov 4 02:25:06 2021 +0100
-
-      * include installer building in zipinstall make target when building for relevant OS targets
-
-M	Makefile
-M	Makefile.fpc
 
 ******************************************************************************
 commit 44051b4af33b097a1069a0702108fc4799864c84
@@ -30263,17 +30262,6 @@ Date:   Sun Feb 28 10:29:59 2021 +0000
     git-svn-id: trunk@48839 -
 
 M	utils/json2pas/fpmake.pp
-
-******************************************************************************
-commit 0aae9dd37549cf1016e50e74a3169df7fba0db04
-Author: Tomas Hajny <hajny@freepascal.org>
-Date:   Sun Feb 28 10:27:51 2021 +0000
-
-      * make shortname really short
-    
-    git-svn-id: trunk@48838 -
-
-M	packages/tplylib/fpmake.pp
 
 ******************************************************************************
 commit fe57cd353657f96ea5846d9f2575811e1456ec6d
@@ -72982,6 +72970,7 @@ Date:   Sat Jan 19 19:37:48 2019 +0000
     git-svn-id: trunk@40920 -
 
 M	compiler/arm/agarmgas.pas
+
 ******************************************************************************
 commit fd1a09a254edd18eaa752fc34d7aa13424992974
 Author: Károly Balogh <karoly@freepascal.org>
@@ -72992,7 +72981,6 @@ Date:   Mon Jan 14 11:47:54 2019 +0000
     git-svn-id: trunk@40860 -
 
 M	rtl/morphos/lineinfo.pp
-
 ******************************************************************************
 commit b3ad384547fc2f8fb35b5ce7b1e73274f13c389d
 Author: Károly Balogh <karoly@freepascal.org>
