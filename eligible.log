@@ -3159,36 +3159,6 @@ M	compiler/systems/i_linux.pas
 M	compiler/utils/ppuutils/ppudump.pp
 
 ******************************************************************************
-commit 68b5ca633ca71a83c29b78cd3669bf15477cd94f
-Author: Jonas Maebe <jonas@freepascal.org>
-Date:   Sat Feb 5 21:34:00 2022 +0100
-
-    ppc platforms: fix missing TOC restoration room
-    
-    PPC platforms that use a TOC can never use a tail call to call a different
-    routine that potentially accesses globals, as it may use a different TOC and
-    then the linker must be able to insert an instruction after the branch to
-    restore the original TOC register value on "return". Even if FPC code itself
-    does not use the TOC register, it's still required since
-      1) the linker does not know this, and
-      2) the FPC code might still be called from other code that does use it
-
-M	compiler/ncgvmt.pas
-M	compiler/systems.pas
-
-******************************************************************************
-commit 83c18df69a79fe1035a0cf0bc0897c60d1af0293
-Author: Jonas Maebe <jonas@freepascal.org>
-Date:   Sat Feb 5 17:35:35 2022 +0100
-
-    ppc64: fix rtoc handling
-    
-    Save on procedure entry if it performs a call, rather than (only) before every
-    indirect call
-
-M	compiler/powerpc64/cgcpu.pas
-
-******************************************************************************
 commit 6dd5b63e2df7eca4f53868d2bf15cb3cd119c68f
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Sat Feb 5 16:58:08 2022 +0100
@@ -7899,17 +7869,6 @@ M	compiler/systems/t_sinclairql.pas
 M	compiler/systems/t_sunos.pas
 
 ******************************************************************************
-commit 2de72c854115908271912cd9b260a607c826eadb
-Author: Jonas Maebe <jonas@freepascal.org>
-Date:   Sun Nov 28 18:30:52 2021 +0100
-
-    Linux/PPC64: fix missing TOC loads
-    
-    Routines loading a global symbol need the TOC register
-
-M	compiler/ppcgen/cgppc.pas
-
-******************************************************************************
 commit e1a739d15d6e344727b196890e8afb0b0bd235ea
 Author: Jonas Maebe <jonas@freepascal.org>
 Date:   Sat Nov 27 12:01:47 2021 +0100
@@ -7925,15 +7884,6 @@ M	rtl/freebsd/x86_64/reloc.inc
 M	rtl/freebsd/x86_64/si_c.inc
 
 ******************************************************************************
-commit 9314bbbf080418827eef94a8bc392ce0497bf72b
-Author: florian <florian@freepascal.org>
-Date:   Sun Nov 28 00:03:08 2021 +0100
-
-      * compilation hopefully fixed
-
-M	compiler/ncgvmt.pas
-
-******************************************************************************
 commit 4f711a8b2c534fa786922acd8453c49b40bc1768
 Author: Yuriy Sydorov <jura@cp-lab.com>
 Date:   Sun Nov 28 01:02:09 2021 +0200
@@ -7941,18 +7891,6 @@ Date:   Sun Nov 28 01:02:09 2021 +0200
     * Use longint for Tmoveins.id instead of word to prevent overflow in extreme cases.
 
 M	compiler/rgobj.pas
-
-******************************************************************************
-commit 12f48c230bccd49f368be1e5a2855cb6c3a60c0f
-Author: florian <florian@freepascal.org>
-Date:   Sat Nov 27 23:33:22 2021 +0100
-
-      * use high level interface wrappers for powerpc64 if pic is generated as
-        the abi does not support branches between functions located in different
-        tocs which might happen for inter-module branches
-
-M	compiler/ncgvmt.pas
-M	compiler/ppcgen/hlcgppc.pas
 
 ******************************************************************************
 commit 5c55f1a16ee0c41f8f657f5a706bcb3bfc8a8f2c
