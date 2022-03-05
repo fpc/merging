@@ -1,4 +1,15 @@
 ******************************************************************************
+commit 39627cbdfb488c9dd0653f576737448098284226
+Author: florian <florian@freepascal.org>
+Date:   Sat Mar 5 20:35:15 2022 +0100
+
+    + AVX512VBMISupport and AVX512VBMI2Support
+
+M	rtl/i386/cpu.pp
+M	rtl/x86_64/cpu.pp
+M	tests/test/units/cpu/tcpu1.pp
+
+******************************************************************************
 commit 49f45764ec0dcb35b5fdb3cdf86473752dd63d61
 Author: Karoly Balogh <karoly@freepascal.org>
 Date:   Sat Mar 5 18:40:36 2022 +0100
