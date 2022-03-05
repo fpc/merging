@@ -30309,17 +30309,6 @@ M	compiler/nadd.pas
 M	compiler/nmat.pas
 
 ******************************************************************************
-commit 8602a29383f7e2b9e1c97c87bf2afa5ce276f9a3
-Author: Tomas Hajny <hajny@freepascal.org>
-Date:   Sun Feb 28 10:29:59 2021 +0000
-
-      * align shortname to previous releases
-    
-    git-svn-id: trunk@48839 -
-
-M	utils/json2pas/fpmake.pp
-
-******************************************************************************
 commit fe57cd353657f96ea5846d9f2575811e1456ec6d
 Author: florian <florian@freepascal.org>
 Date:   Sat Feb 27 22:07:58 2021 +0000
@@ -73037,6 +73026,7 @@ Date:   Mon Jan 14 11:47:54 2019 +0000
     git-svn-id: trunk@40860 -
 
 M	rtl/morphos/lineinfo.pp
+
 ******************************************************************************
 commit b3ad384547fc2f8fb35b5ce7b1e73274f13c389d
 Author: Károly Balogh <karoly@freepascal.org>
@@ -73047,7 +73037,6 @@ Date:   Mon Jan 14 07:22:41 2019 +0000
     git-svn-id: trunk@40857 -
 
 M	rtl/morphos/lineinfo.pp
-
 ******************************************************************************
 commit 56f0a71466be36f158e239238517287a47e59335
 Author: Károly Balogh <karoly@freepascal.org>
