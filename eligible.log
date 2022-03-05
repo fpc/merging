@@ -1,4 +1,49 @@
 ******************************************************************************
+commit 49f45764ec0dcb35b5fdb3cdf86473752dd63d61
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Sat Mar 5 18:40:36 2022 +0100
+
+    * nds: the embedded stub DOS unit was just a copy of the NDS one with minor fixes, so lets make the NDS port use the current cleaned one as well
+
+M	rtl/nds/dos.pp
+
+******************************************************************************
+commit 7d13e5c70d3a1cbcc76beca639b3b5a5b7ee778e
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Sat Mar 5 18:28:36 2022 +0100
+
+    * embedded: cleanup of the dummy DOS unit. remove the stubs for platform-specific helpers, cleanup tabs/spaces, cleanup the copyright-message mess
+
+M	rtl/embedded/dos.pp
+
+******************************************************************************
+commit 10191477aef35b233b08ccded1b8442ad763c156
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Sat Mar 5 17:59:15 2022 +0100
+
+    * m68k: allow vasm to be used for system_m68k_embedded target, simplify some code
+
+M	compiler/m68k/ag68kvasm.pas
+
+******************************************************************************
+commit 3024aea354579b389db901441f3c7af4aef633aa
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Sat Mar 5 17:14:08 2022 +0100
+
+    * add .prg extension to be ignored by git. this is used on Atari and a number of 8 bit platforms for executables
+
+M	.gitignore
+
+******************************************************************************
+commit 01142f11d7f6e50b6b80b75ae9a611f8fc662d78
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Wed Feb 23 01:03:53 2022 +0100
+
+    * z80-msxdos: cleaned up some msdos leftovers in i_msxdos. no functional changes.
+
+M	compiler/systems/i_msxdos.pas
+
+******************************************************************************
 commit 3164b535e54f39fad4ec5030b2ed0ba05c12dcac
 Author: florian <florian@freepascal.org>
 Date:   Fri Mar 4 22:48:05 2022 +0100
