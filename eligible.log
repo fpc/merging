@@ -1,4 +1,48 @@
 ******************************************************************************
+commit 61f9bc35e97e554dc79f282dcc6f8a89b1a1a3e1
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Sun Mar 6 22:08:25 2022 +0100
+
+    * regenerated message files after adding the z80-amstradcpc target files
+
+M	compiler/msgidx.inc
+M	compiler/msgtxt.inc
+
+******************************************************************************
+commit 554ae218cacff3de526f7f89f8f1543613e615ed
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Sun Mar 6 22:02:22 2022 +0100
+
+    * m68k: fix an endless syntax error loop in the assembler reader
+
+M	compiler/m68k/ra68kmot.pas
+
+******************************************************************************
+commit cb959c2e6fb5911c74c07e23d00346902521faff
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Sat Mar 5 21:51:57 2022 +0100
+
+    * z80-amstradcpc: add some initial files for the target (mostly just the clone of ZX Spectrum files for now)
+
+M	compiler/msg/errore.msg
+A	compiler/systems/i_amstradcpc.pas
+A	compiler/systems/t_amstradcpc.pas
+M	compiler/z80/cputarg.pas
+
+******************************************************************************
+commit ae892610080ecf4711f1b105a6464ed06ad639d7
+Author: florian <florian@freepascal.org>
+Date:   Sun Mar 6 22:00:19 2022 +0100
+
+      * prevent that a absolute symbol references itself, resolves #39604
+
+M	compiler/msg/errore.msg
+M	compiler/msgidx.inc
+M	compiler/msgtxt.inc
+M	compiler/pdecvar.pas
+A	tests/webtbf/tw39604.pp
+
+******************************************************************************
 commit ae3c0a215112c301bf8250070aaefae86f7b6513
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Mon Feb 21 21:53:31 2022 +0000
