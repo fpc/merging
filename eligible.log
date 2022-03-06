@@ -1,4 +1,22 @@
 ******************************************************************************
+commit ae3c0a215112c301bf8250070aaefae86f7b6513
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Mon Feb 21 21:53:31 2022 +0000
+
+    Add _IO_stdin_used global
+
+M	rtl/linux/mips/cprt0.as
+
+******************************************************************************
+commit 982071d4a998d0921a7e8d784d76004c10ef5053
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Mon Feb 21 18:08:56 2022 +0000
+
+     Try to fix mips gcc troubles
+
+M	utils/fpcm/fpcmake.ini
+
+******************************************************************************
 commit 6f0f339fc431f92c23a20316b5b355ad688c9d51
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Sun Mar 6 00:22:14 2022 +0100
