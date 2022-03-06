@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 6f0f339fc431f92c23a20316b5b355ad688c9d51
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Sun Mar 6 00:22:14 2022 +0100
+
+    fcl-passrc: pasuseanalyzer: mark library export function result sub elements
+
+M	packages/fcl-passrc/src/pasuseanalyzer.pas
+M	packages/fcl-passrc/tests/tcuseanalyzer.pas
+
+******************************************************************************
 commit 39627cbdfb488c9dd0653f576737448098284226
 Author: florian <florian@freepascal.org>
 Date:   Sat Mar 5 20:35:15 2022 +0100
