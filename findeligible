@@ -10,7 +10,7 @@ SVNFIXES_HASH=`git log "$SVNFIXES" --pretty=format:"%h" | head -n 1`
 MAIN_HASH=`git log "$MAIN" --pretty=format:"%h" | head -n 1`
 
 FIXES_HASH=`git log "$FIXES" --pretty=format:"%h" | head -n 1`
-GIT_START_HASH=37863a61
+GIT_START_HASH=`git log -n 1 git_start --pretty=format:"%h"`
 
 MERGE_BASE=`git merge-base $SVNFIXES_HASH $MAIN_HASH`
 
