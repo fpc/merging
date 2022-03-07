@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 853f8b2202fc70820e23a7cfc4287c30f7dfaa46
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Mon Mar 7 18:40:40 2022 +0000
+
+     Also define CPU_clean make targets for CPUs not yet in CYCLETARGETS, like mips64 now
+
+M	compiler/Makefile.fpc
+
+******************************************************************************
 commit c23a64523ed3be55e4f29f8f9b082ced0e703e0f
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Mon Mar 7 07:33:52 2022 +0000
