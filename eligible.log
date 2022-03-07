@@ -1,4 +1,13 @@
 ******************************************************************************
+commit c23a64523ed3be55e4f29f8f9b082ced0e703e0f
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Mon Mar 7 07:33:52 2022 +0000
+
+    Update revision.inc to 982071d4a9 hash
+
+M	utils/fpcm/revision.inc
+
+******************************************************************************
 commit 61f9bc35e97e554dc79f282dcc6f8a89b1a1a3e1
 Author: Karoly Balogh <karoly@freepascal.org>
 Date:   Sun Mar 6 22:08:25 2022 +0100
