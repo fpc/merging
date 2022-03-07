@@ -1,4 +1,22 @@
 ******************************************************************************
+commit 0d03cad279240f219a5f01b21207e751e4c38609
+Author: florian <florian@freepascal.org>
+Date:   Mon Mar 7 23:10:17 2022 +0100
+
+      * i386: make use of *fence instructions
+
+M	rtl/i386/i386.inc
+
+******************************************************************************
+commit 01ae235676fd3e5d3197e0cd2edd0c8c2e06907f
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Mon Mar 7 21:45:32 2022 +0000
+
+     Fix CPU_clean rule
+
+M	compiler/Makefile.fpc
+
+******************************************************************************
 commit 853f8b2202fc70820e23a7cfc4287c30f7dfaa46
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Mon Mar 7 18:40:40 2022 +0000
