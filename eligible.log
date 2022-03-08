@@ -1,4 +1,30 @@
 ******************************************************************************
+commit 27fb9086aaa079212cf225f194efd225e54c50a3
+Author: florian <florian@freepascal.org>
+Date:   Tue Mar 8 23:02:47 2022 +0100
+
+      * cleanup: cs_opt_loopunroll is a generic optimization for a long time already
+
+M	compiler/aarch64/cpuinfo.pas
+M	compiler/arm/cpuinfo.pas
+M	compiler/avr/cpuinfo.pas
+M	compiler/i386/cpuinfo.pas
+M	compiler/i8086/cpuinfo.pas
+M	compiler/jvm/cpuinfo.pas
+M	compiler/m68k/cpuinfo.pas
+M	compiler/mips/cpuinfo.pas
+M	compiler/powerpc/cpuinfo.pas
+M	compiler/powerpc64/cpuinfo.pas
+M	compiler/riscv32/cpuinfo.pas
+M	compiler/riscv64/cpuinfo.pas
+M	compiler/sparc/cpuinfo.pas
+M	compiler/sparc64/cpuinfo.pas
+M	compiler/wasm32/cpuinfo.pas
+M	compiler/x86_64/cpuinfo.pas
+M	compiler/xtensa/cpuinfo.pas
+M	compiler/z80/cpuinfo.pas
+
+******************************************************************************
 commit 59a7024d73b9345d667b839532200735255d1fac
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Tue Mar 8 11:42:24 2022 +0100
