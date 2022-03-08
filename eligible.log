@@ -1,4 +1,22 @@
 ******************************************************************************
+commit 59a7024d73b9345d667b839532200735255d1fac
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Tue Mar 8 11:42:24 2022 +0100
+
+    * Move() check for identical index. Additional fix for #39617
+
+M	rtl/objpas/classes/lists.inc
+
+******************************************************************************
+commit 2a19e152b70ffc0ff673e1bea07c836eb98d0c4b
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Tue Mar 8 11:35:24 2022 +0100
+
+    * Micro-optimization. Fix issue #39617
+
+M	rtl/objpas/classes/stringl.inc
+
+******************************************************************************
 commit 2f28c5596ff22f288c64a297c30b7d33a7efe284
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Mon Mar 7 23:46:15 2022 +0000
