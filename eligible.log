@@ -1,4 +1,24 @@
 ******************************************************************************
+commit e9dc638a76649987bba77eca8c789ef49d6433c4
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Wed Mar 9 13:41:06 2022 +0100
+
+    * regenerated message files after CPC naming fix
+
+M	compiler/msgidx.inc
+M	compiler/msgtxt.inc
+
+******************************************************************************
+commit e0599bb231c48e7a039e1703c09f6c6ff9a62632
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Wed Mar 9 13:36:23 2022 +0100
+
+    * z80-amstradcpc: fixed target naming mess, so -Tamstradcpc works now, also fixed the help text
+
+M	compiler/msg/errore.msg
+M	compiler/systems/i_amstradcpc.pas
+
+******************************************************************************
 commit 27fb9086aaa079212cf225f194efd225e54c50a3
 Author: florian <florian@freepascal.org>
 Date:   Tue Mar 8 23:02:47 2022 +0100
