@@ -1092,15 +1092,6 @@ M	compiler/pdecvar.pas
 A	tests/webtbf/tw39604.pp
 
 ******************************************************************************
-commit ae3c0a215112c301bf8250070aaefae86f7b6513
-Author: Pierre Muller <pierre@freepascal.org>
-Date:   Mon Feb 21 21:53:31 2022 +0000
-
-    Add _IO_stdin_used global
-
-M	rtl/linux/mips/cprt0.as
-
-******************************************************************************
 commit 982071d4a998d0921a7e8d784d76004c10ef5053
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Mon Feb 21 18:08:56 2022 +0000
