@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 14b40473fc2fcad52fdefa632863b7aa76bb2bf8
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Thu Mar 10 16:34:47 2022 +0100
+
+    * Added some clarifying comments for TWSMessage data
+
+M	packages/fcl-web/src/websocket/fpwebsocket.pp
+
+******************************************************************************
 commit 5ca52bcab1b61b5cd47325be5f5e4d3f3581f3b1
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Thu Mar 10 09:35:18 2022 +0100
