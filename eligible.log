@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 68bc5da3a23dd74a2fcc792f7f12223855644196
+Author: florian <florian@freepascal.org>
+Date:   Thu Mar 10 22:30:29 2022 +0100
+
+      * fix MovapXComisX2ComisX2 optimization
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
 commit 9e631db928b5bf3bd379830b9376b31fddc343f0
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Thu Mar 10 17:23:03 2022 +0100
