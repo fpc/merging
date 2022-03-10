@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 9e631db928b5bf3bd379830b9376b31fddc343f0
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Thu Mar 10 17:23:03 2022 +0100
+
+    * Rephrase more clear
+
+M	packages/fcl-web/src/websocket/fpwebsocket.pp
+
+******************************************************************************
 commit 14b40473fc2fcad52fdefa632863b7aa76bb2bf8
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Thu Mar 10 16:34:47 2022 +0100
