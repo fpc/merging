@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 0600287c638a5507710bd600e334e437675fe959
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Fri Mar 11 16:03:21 2022 +0100
+
+    * m68k: spilling read, write, and replace is now bound to CPU capabilities instead of CPU family. This probably fixes some issues on 68000, where spilling replacement was not respecting CPU displacement handling boundaries, leading to assembler errors.
+
+M	compiler/m68k/rgcpu.pas
+
+******************************************************************************
 commit 7f8591926af2de78051f2dbe91ee5d9e64a912b9
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Fri Mar 11 13:17:01 2022 +0100
