@@ -1,4 +1,22 @@
 ******************************************************************************
+commit 7f8591926af2de78051f2dbe91ee5d9e64a912b9
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Fri Mar 11 13:17:01 2022 +0100
+
+    * Publish OnError and OnConnectionHandshake
+
+M	packages/fcl-web/src/websocket/fpwebsocketserver.pp
+
+******************************************************************************
+commit 60919b497934d50e039c7a44962f101cb32f129e
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Fri Mar 11 13:01:42 2022 +0100
+
+    * m68k: disable the frame pointer optimization on subarchs that don't support long displacements for now, until the shortcomings of the cg can be addressed
+
+M	compiler/psub.pas
+
+******************************************************************************
 commit 68bc5da3a23dd74a2fcc792f7f12223855644196
 Author: florian <florian@freepascal.org>
 Date:   Thu Mar 10 22:30:29 2022 +0100
