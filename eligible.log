@@ -1,4 +1,16 @@
 ******************************************************************************
+commit 5e0d5cd92eb51686d5299ab62f6ce3806af8b93d
+Author: florian <florian@freepascal.org>
+Date:   Fri Mar 11 22:46:37 2022 +0100
+
+      * fix change information for a lot of MMX instructions
+
+M	compiler/i386/i386prop.inc
+M	compiler/i8086/i8086prop.inc
+M	compiler/x86/x86ins.dat
+M	compiler/x86_64/x8664pro.inc
+
+******************************************************************************
 commit 0600287c638a5507710bd600e334e437675fe959
 Author: Karoly Balogh <karoly@freepascal.org>
 Date:   Fri Mar 11 16:03:21 2022 +0100
