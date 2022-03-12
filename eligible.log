@@ -1,4 +1,35 @@
 ******************************************************************************
+commit 4ed7bd9f668123b7a20a2f871ed36a024e41596f
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sat Mar 12 19:17:40 2022 +0200
+
+    * fixed bug, where left and right shift were swapped in the i386-go32v2
+      keyboard unit as well.
+
+M	packages/rtl-console/src/go32v2/keyboard.pp
+
+******************************************************************************
+commit 55b8fd6e9425fe627352930a716c0871393e7d96
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sat Mar 12 18:53:43 2022 +0200
+
+    * fixed bug, where left and right shift were swapped in the i8086-msdos
+      keyboard unit.
+
+M	packages/rtl-console/src/msdos/keyboard.pp
+
+******************************************************************************
+commit 398c6519a541c47a6d86271daae53b2562fee0ee
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sat Mar 12 18:46:46 2022 +0200
+
+    * return the proper shift state in the i8086-msdos keyboard unit GetKeyEvent and
+      PollKeyEvent (previously, it was truncated, due to the native int being 16-bit
+      on i8086)
+
+M	packages/rtl-console/src/msdos/keyboard.pp
+
+******************************************************************************
 commit 5e0d5cd92eb51686d5299ab62f6ce3806af8b93d
 Author: florian <florian@freepascal.org>
 Date:   Fri Mar 11 22:46:37 2022 +0100
