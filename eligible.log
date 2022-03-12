@@ -1,4 +1,24 @@
 ******************************************************************************
+commit 501b2d6c6f48a43a1cf695fac795abca45cd0536
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sun Mar 13 00:34:50 2022 +0200
+
+    + get the current code page in the msdos keyboard unit as well
+
+M	packages/rtl-console/src/msdos/keyboard.pp
+
+******************************************************************************
+commit c881067b2395609448fdc7b49fce076b13ffae93
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sun Mar 13 00:26:55 2022 +0200
+
+    + get the current DOS code page in the go32v2 keyboard unit, so enhanced key
+      events Unicode characters are returned correctly (provided that the cpall and
+      fpwidestring unit are included as well)
+
+M	packages/rtl-console/src/go32v2/keyboard.pp
+
+******************************************************************************
 commit e1e939c844b4c285cdb52be178b938f5e9a44a0e
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Sun Mar 13 00:17:15 2022 +0200
