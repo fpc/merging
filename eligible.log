@@ -1,4 +1,47 @@
 ******************************************************************************
+commit e1e939c844b4c285cdb52be178b938f5e9a44a0e
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sun Mar 13 00:17:15 2022 +0200
+
+    + support 83/84-key keyboards in the go32v2 keyboard unit
+
+M	packages/rtl-console/src/go32v2/keyboard.pp
+
+******************************************************************************
+commit 91ccf4e9c643917472cd55d42094c2a1c29e05ac
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sat Mar 12 23:51:55 2022 +0200
+
+    + introduced the CurrentLegacy2EnhancedKeyEventTranslationCodePage private
+      variable in the keyboard unit. It is used for translating AsciiChar to
+      UnicodeChar in non-enhanced (i.e. non-unicode) consoles. It can be initialized
+      in SysInitKeyboard in non-unicode consoles, so they can return unicode
+      characters as well.
+
+M	packages/rtl-console/src/inc/keyboard.inc
+
+******************************************************************************
+commit b1a72a86e5b6af44300a19aebec096df00000e2a
+Author: florian <florian@freepascal.org>
+Date:   Sat Mar 12 22:41:31 2022 +0100
+
+      * more change information fixed
+
+M	compiler/i386/i386prop.inc
+M	compiler/i8086/i8086prop.inc
+M	compiler/x86/x86ins.dat
+M	compiler/x86_64/x8664pro.inc
+
+******************************************************************************
+commit be2c1c751df2f669920b3826ad495603fee09463
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Sat Mar 12 21:22:38 2022 +0100
+
+    * m68k: fixed the register save/restore for larger than 32K stackframes on subarchs which has no long displacement, to not trash register A0
+
+M	compiler/m68k/cgcpu.pas
+
+******************************************************************************
 commit 14ae44c362cbb78cafd5354137a3cf86e5f5fa0f
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Sat Mar 12 20:08:35 2022 +0100
