@@ -22,12 +22,12 @@ git log $GIT_START_HASH..$MAIN_HASH --pretty=format:"%H" > mainhashes
 
 # find all hashes not in fixes but in main
 # exclude commits being blocked
-grep -Fxv -f mergedhashes -f $SCRIPTDIR/blockedhashes mainhashes > eligiblehashes
+grep -Fxv -f mergedhashes -f .gitfpcblockedhashes mainhashes > eligiblehashes
 
 # find all hashes not in fixes but in eligiblesvnhash, so filter out commits
 # commited to trunk in svn but cherry-picked in git
 # exclude also commits being blocked
-grep -Fxv -f mergedhashes -f $SCRIPTDIR/blockedhashes $SCRIPTDIR/eligiblesvnhashes > eligiblehashesfromsvn
+grep -Fxv -f mergedhashes -f .gitfpcblockedhashes .gitfpceligiblesvnhashes > eligiblehashesfromsvn
 
 # get eligible hashes from git times
 {
