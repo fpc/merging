@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 14ae44c362cbb78cafd5354137a3cf86e5f5fa0f
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Sat Mar 12 20:08:35 2022 +0100
+
+    fcl-passrc: fixed parsing class var var
+
+M	packages/fcl-passrc/src/pparser.pp
+M	packages/fcl-passrc/tests/tcclasstype.pas
+
+******************************************************************************
 commit 4ed7bd9f668123b7a20a2f871ed36a024e41596f
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Sat Mar 12 19:17:40 2022 +0200
