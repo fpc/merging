@@ -29185,19 +29185,6 @@ Date:   Tue Apr 6 19:16:17 2021 +0000
 M	compiler/aopt.pas
 
 ******************************************************************************
-commit 503fc85dff6e31bf423aa2107f7e4612b5c88481
-Author: florian <florian@freepascal.org>
-Date:   Tue Apr 6 15:50:28 2021 +0000
-
-      * patch by J. Gareth Moreton: handle register allocations correctly in MovMov2Mov 3, resolves #38703
-    
-    git-svn-id: trunk@49128 -
-
-M	.gitattributes
-M	compiler/x86/aoptx86.pas
-A	tests/webtbs/tw38703.pp
-
-******************************************************************************
 commit e4cc8af8fc4e66ca5bf7d2741d749c2b5d30c195
 Author: florian <florian@freepascal.org>
 Date:   Mon Apr 5 15:39:07 2021 +0000
@@ -74348,6 +74335,7 @@ Date:   Mon Jan 14 07:22:41 2019 +0000
     git-svn-id: trunk@40857 -
 
 M	rtl/morphos/lineinfo.pp
+
 ******************************************************************************
 commit 56f0a71466be36f158e239238517287a47e59335
 Author: Károly Balogh <karoly@freepascal.org>
@@ -74358,7 +74346,6 @@ Date:   Sun Jan 13 16:23:18 2019 +0000
     git-svn-id: trunk@40856 -
 
 M	rtl/inc/heaptrc.pp
-
 ******************************************************************************
 commit 4d1ff152c4019ba3dccc64a1480d4d98b7be6e56
 Author: Károly Balogh <karoly@freepascal.org>
