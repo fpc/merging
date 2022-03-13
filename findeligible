@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+set -e
 
 SCRIPTDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 
@@ -6,10 +7,10 @@ SVNFIXES="origin/svn/fixes_3_2"
 FIXES="origin/fixes_3_2"
 MAIN="origin/main"
 
-SVNFIXES_HASH=`git log "$SVNFIXES" --pretty=format:"%h" | head -n 1`
-MAIN_HASH=`git log "$MAIN" --pretty=format:"%h" | head -n 1`
+SVNFIXES_HASH=`git log -n 1 "$SVNFIXES" --pretty=format:"%h"`
+MAIN_HASH=`git log -n 1 "$MAIN" --pretty=format:"%h"`
 
-FIXES_HASH=`git log "$FIXES" --pretty=format:"%h" | head -n 1`
+FIXES_HASH=`git log -n 1 "$FIXES" --pretty=format:"%h"`
 GIT_START_HASH=`git log -n 1 git_start --pretty=format:"%h"`
 
 MERGE_BASE=`git merge-base $SVNFIXES_HASH $MAIN_HASH`
@@ -20,13 +21,17 @@ git log $SVNFIXES_HASH..$FIXES_HASH --grep="cherry picked from commit" | grep -o
 # get all hashes of commits created to main in git
 git log $GIT_START_HASH..$MAIN_HASH --pretty=format:"%H" > mainhashes
 
+# find all commits being only updates of the submodules 
+git log $GIT_START_HASH..$MAIN_HASH --grep="^\* updated$" --pretty=format:"%H" > submoduleupdatehashes
+
 # find all hashes not in fixes but in main
 # exclude commits being blocked
-grep -Fxv -f mergedhashes -f .gitfpcblockedhashes mainhashes > eligiblehashes
+grep -Fxv -f mergedhashes -f .gitfpcblockedhashes -f submoduleupdatehashes mainhashes > eligiblehashes
 
 # find all hashes not in fixes but in eligiblesvnhash, so filter out commits
 # commited to trunk in svn but cherry-picked in git
 # exclude also commits being blocked
+# exclude commits being identified as submodule updates
 grep -Fxv -f mergedhashes -f .gitfpcblockedhashes .gitfpceligiblesvnhashes > eligiblehashesfromsvn
 
 # get eligible hashes from git times
@@ -41,3 +46,4 @@ rm mergedhashes
 rm mainhashes
 rm eligiblehashes
 rm eligiblehashesfromsvn
+rm submoduleupdatehashes
