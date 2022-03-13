@@ -48,15 +48,6 @@ M	install/macosx/scripts/buildinstalliosrelease.sh
 M	install/macosx/scripts/buildinstallx86release.sh
 
 ******************************************************************************
-commit 9964579853349d1e15812983c8f973abceb3075f
-Author: marcoonthegit <marcov@freepascal.org>
-Date:   Sat Jan 22 16:56:55 2022 +0100
-
-    * fix spell condtionally from Debian Lintian
-
-M	install/man/man5/fpc.cfg.5
-
-******************************************************************************
 commit 42bb4218f58bf5f2c8d24d6e67909e9ebca9de60
 Author: marcoonthegit <marcov@freepascal.org>
 Date:   Sat Jan 22 13:21:39 2022 +0100
