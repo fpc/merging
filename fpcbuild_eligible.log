@@ -48,15 +48,6 @@ M	install/macosx/scripts/buildinstalliosrelease.sh
 M	install/macosx/scripts/buildinstallx86release.sh
 
 ******************************************************************************
-commit 42bb4218f58bf5f2c8d24d6e67909e9ebca9de60
-Author: marcoonthegit <marcov@freepascal.org>
-Date:   Sat Jan 22 13:21:39 2022 +0100
-
-    * developper -> developer.
-
-M	install/man/man5/fpc.cfg.5
-
-******************************************************************************
 commit 569d4449ce6ca92a66b653e4bc3808f2e17e396d
 Author: FPK <florian@freepascal.org>
 Date:   Sun Jan 9 17:56:47 2022 +0000
@@ -73,15 +64,6 @@ Date:   Wed Jan 5 17:01:06 2022 +0100
       + Dockerfile for FPC-Gitlab-CI used
 
 A	Dockerfiles/Dockerfile.debian-buster-x86_64
-
-******************************************************************************
-commit 643967d3df3de151fa737b8f98419dd7ee6866f6
-Author: FPK <florian@freepascal.org>
-Date:   Sat Oct 9 11:50:19 2021 +0000
-
-      + LICENSE file taken from the FPC source repository
-
-A	LICENSE
 
 ******************************************************************************
 commit 9e677e43859d5ab3d95fe499eefa894b6bbc8218
