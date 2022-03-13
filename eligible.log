@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 6345a25304ed2de2cd28dadc24e4b5bc57d1a7c2
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sun Mar 13 08:07:29 2022 +0200
+
+    + support shift+pgup, shift+pgdn, ctrl+shift+pgup and ctrl+shift+pgdn in the
+      unix keyboard unit
+
+M	packages/rtl-console/src/unix/keyboard.pp
+
+******************************************************************************
 commit 501b2d6c6f48a43a1cf695fac795abca45cd0536
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Sun Mar 13 00:34:50 2022 +0200
