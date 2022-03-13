@@ -1,0 +1,439 @@
+******************************************************************************
+commit 830b4587c25f69e424542816f63cb3e6157b7219
+Author: marcoonthegit <marco@freepascal.org>
+Date:   Sat Mar 12 14:43:08 2022 +0100
+
+    * switched inno release to CHM
+     * mainly modified fpc.ist and fpcx86x64.ist
+     * the others are crosscompilers, and only the (unused?) documentation line changed.
+     * fpcx86_64 gives an error while building that needs manual renaming of the result. Can't find a diff between it and fpc.ist that could cause it.
+     * didn't commit makefile regeneration, because it had many massive changes. Will ask first.
+
+M	Makefile.fpc
+M	install/fpc.ist
+M	install/fpcmsdos.ist
+M	install/fpcx64.ist
+M	install/fpcx86x64.ist
+
+******************************************************************************
+commit f712018df486dde6588ca4520468455fd20fbe2f
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sat Jan 29 13:54:55 2022 +0100
+
+    FPC 3.2.2 packaging files
+
+M	install/darwin/macos/fpc-intel-macosx/ReadMe.txt
+R062	install/darwin/macos/fpc-intel-macosx/x86/Users/Shared/Free Pascal Compiler/Documentation/Getting Started (Intel).rtf	install/darwin/macos/fpc-intel-macosx/build/fpc-3.2.2rc1.intelarm64-macosx/Getting Started (Intel and ARM64).rtf
+A	install/darwin/macos/fpc-intel-macosx/createdmgs.sh
+M	install/darwin/macos/fpc-intel-macosx/fpc-intel-macosx.cross.ios.pkgproj
+M	install/darwin/macos/fpc-intel-macosx/fpc-intel-macosx.cross.jvm.pkgproj
+M	install/darwin/macos/fpc-intel-macosx/fpc-intel-macosx.cross.powerpc-macosx.pkgproj
+R094	install/darwin/macos/fpc-intel-macosx/fpc-intel-macosx.pkgproj	install/darwin/macos/fpc-intel-macosx/fpc-intelarm64-macosx.pkgproj
+M	install/darwin/macos/fpc-intel-macosx/ios/Users/Shared/Free Pascal Compiler/Documentation/Getting Started - iOS.rtf
+M	install/darwin/macos/fpc-intel-macosx/jvm/Users/Shared/Free Pascal Compiler/Documentation/Getting Started (JVM).txt
+M	install/darwin/macos/fpc-intel-macosx/ppc/Users/Shared/Free Pascal Compiler/Documentation/Getting Started (PowerPC Cross).rtf
+A	install/darwin/macos/fpc-powerpc-macosx/fpc-powerpc-macosx.packproj
+M	install/darwin/macos/fpc-powerpc-macosx/ppc/Developer/Documentation/Free Pascal Compiler/Getting Started (PowerPC).rtf
+
+******************************************************************************
+commit 79980c698620e3fa06313fc3087603300d19daad
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sat Jan 29 13:45:00 2022 +0100
+
+    Version used to build FPC 3.2.2
+    
+    Mainly added macOS/AArch64 support
+
+M	install/macosx/scripts/buildinstalliosrelease.sh
+M	install/macosx/scripts/buildinstallx86release.sh
+
+******************************************************************************
+commit 9964579853349d1e15812983c8f973abceb3075f
+Author: marcoonthegit <marcov@freepascal.org>
+Date:   Sat Jan 22 16:56:55 2022 +0100
+
+    * fix spell condtionally from Debian Lintian
+
+M	install/man/man5/fpc.cfg.5
+
+******************************************************************************
+commit 42bb4218f58bf5f2c8d24d6e67909e9ebca9de60
+Author: marcoonthegit <marcov@freepascal.org>
+Date:   Sat Jan 22 13:21:39 2022 +0100
+
+    * developper -> developer.
+
+M	install/man/man5/fpc.cfg.5
+
+******************************************************************************
+commit 569d4449ce6ca92a66b653e4bc3808f2e17e396d
+Author: FPK <florian@freepascal.org>
+Date:   Sun Jan 9 17:56:47 2022 +0000
+
+      * create doc-pdf.tar.gz and doc-pdf.zip, keep them both as artifacts
+
+M	.gitlab-ci.yml
+
+******************************************************************************
+commit 704de2d58f74d26aca2312f2c0b427d79e5576e0
+Author: florian <florian@freepascal.org>
+Date:   Wed Jan 5 17:01:06 2022 +0100
+
+      + Dockerfile for FPC-Gitlab-CI used
+
+A	Dockerfiles/Dockerfile.debian-buster-x86_64
+
+******************************************************************************
+commit 643967d3df3de151fa737b8f98419dd7ee6866f6
+Author: FPK <florian@freepascal.org>
+Date:   Sat Oct 9 11:50:19 2021 +0000
+
+      + LICENSE file taken from the FPC source repository
+
+A	LICENSE
+
+******************************************************************************
+commit 9e677e43859d5ab3d95fe499eefa894b6bbc8218
+Author: FPK <florian@freepascal.org>
+Date:   Sat Oct 9 11:49:13 2021 +0000
+
+      + .gitattributes to play safe
+
+A	.gitattributes
+
+******************************************************************************
+commit d18ac25cd5953cc0d0fcc26605a94ce07da8593d
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Sun Aug 15 12:03:57 2021 +0200
+
+    Change svn repository to github in install/makesource-svn
+
+M	install/makesource-svn
+
+******************************************************************************
+commit aca2a2425f113d1ef0e09a55431dbcbb097ee263
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Sun Aug 15 12:03:03 2021 +0200
+
+     Renamed makesource to makesource-svn
+
+R100	install/makesource	install/makesource-svn
+
+******************************************************************************
+commit 278273d2e348cefd7fcbb4a7792f5882629f101a
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Tue Aug 10 08:20:05 2021 +0200
+
+    Update fpcsrc from c5a128fae7 to 10acbca828
+
+M	fpcsrc
+
+******************************************************************************
+commit 5188692bf4b7f792596dbf495556cc965122f985
+Author: Florian Klämpfl <florian@freepascal.org>
+Date:   Sun Aug 8 16:08:45 2021 +0200
+
+      * fpcdocs uses always the main branch
+
+M	.gitmodules
+
+******************************************************************************
+commit ab918b97e2bf1b1c3534e01d22cc37f4fc43846c
+Author: pierre <pierre@freepascal.org>
+Date:   Fri May 8 21:25:43 2020 +0000
+
+     Regenerate Makefile using 3.3.1 version of fpcmake
+    
+    git-svn-id: trunk@1499 -
+
+M	Makefile
+
+******************************************************************************
+commit db4bc2103094ab27e90dba70a7e831798d8ffe0a
+Author: nickysn <nickysn@gmail.com>
+Date:   Sun Jun 7 03:50:34 2020 +0000
+
+    * updated nasm to the latest stable version
+    
+    git-svn-id: trunk@1514 -
+
+M	install/crossbinmsdos/nasm.exe
+
+******************************************************************************
+commit 98a7231bd3d09af6ac7c112e6163835c6f0816c3
+Author: pierre <pierre@freepascal.org>
+Date:   Tue Aug 4 10:20:58 2020 +0000
+
+    Regenerated all Makefile's
+    
+    git-svn-id: trunk@1526 -
+
+M	Makefile
+M	demo/Makefile
+M	demo/freebsd/Makefile
+M	demo/graph/Makefile
+M	demo/linux/Makefile
+M	demo/lister/Makefile
+M	demo/modex/Makefile
+M	demo/morphos/Makefile
+M	demo/netware/Makefile
+M	demo/netwlibc/Makefile
+M	demo/os2/Makefile
+M	demo/text/Makefile
+M	demo/unix/Makefile
+M	demo/win32/Makefile
+
+******************************************************************************
+commit 8b6f844abb34ff4916d30a6cc1de3a2ae359acf8
+Author: pierre <pierre@freepascal.org>
+Date:   Fri Nov 20 14:08:38 2020 +0000
+
+     Regenerate Makefile's after last fpcmake change in commit 47483
+    
+    git-svn-id: trunk@1533 -
+
+M	Makefile
+M	demo/Makefile
+M	demo/freebsd/Makefile
+M	demo/graph/Makefile
+M	demo/linux/Makefile
+M	demo/lister/Makefile
+M	demo/modex/Makefile
+M	demo/morphos/Makefile
+M	demo/netware/Makefile
+M	demo/netwlibc/Makefile
+M	demo/os2/Makefile
+M	demo/text/Makefile
+M	demo/unix/Makefile
+M	demo/win32/Makefile
+
+******************************************************************************
+commit 0265bca02790eda8d3f6f3e9d70757a0c82f1618
+Author: pierre <pierre@freepascal.org>
+Date:   Wed Feb 10 10:58:37 2021 +0000
+
+     Set Source directory for ppcjvm.exe to bin\i386-win32 and remove fpmkinst directory
+    
+    git-svn-id: trunk@1535 -
+
+M	install/fpcjvm.ist
+
+******************************************************************************
+commit 0b37ca48206e7373f6f82db3130018ac1eb21e46
+Author: Tomas Hajny <hajny@freepascal.org>
+Date:   Sun Feb 28 11:02:34 2021 +0000
+
+      + added binaries for asldos2, gdbos2 and makeos2
+    
+    git-svn-id: trunk@1543 -
+
+A	install/binos2/asldos2/bin/os2/emxfpemu
+A	install/binos2/asldos2/bin/os2/emxrev.cmd
+A	install/binos2/asldos2/bin/os2/emxuzdll.cmd
+A	install/binos2/asldos2/book/emxrt.inf
+A	install/binos2/gdbos2/pmgdb.hlp
+A	install/binos2/makeos2/doc/chmod.1
+A	install/binos2/makeos2/doc/cp.1
+A	install/binos2/makeos2/doc/date.1
+A	install/binos2/makeos2/doc/dd.1
+A	install/binos2/makeos2/doc/df.1
+A	install/binos2/makeos2/doc/diff.1
+A	install/binos2/makeos2/doc/du.1
+A	install/binos2/makeos2/doc/gnufutil.os2
+A	install/binos2/makeos2/doc/gnusutil.os2
+A	install/binos2/makeos2/doc/install.1
+A	install/binos2/makeos2/doc/ls.1
+A	install/binos2/makeos2/doc/make.emx
+A	install/binos2/makeos2/doc/make.man
+A	install/binos2/makeos2/doc/mkdir.1
+A	install/binos2/makeos2/doc/mv.1
+A	install/binos2/makeos2/doc/pwd.1
+A	install/binos2/makeos2/doc/rm.1
+A	install/binos2/makeos2/doc/rmdir.1
+
+******************************************************************************
+commit 614ec19bece6cb979e266afb000b33e7e851a5b4
+Author: pierre <pierre@freepascal.org>
+Date:   Mon Mar 8 07:38:36 2021 +0000
+
+    Check for gtr existence and use it if `gtr --help` contains "GNU.*coreutil"
+    
+    git-svn-id: trunk@1547 -
+
+M	install/makepack
+
+******************************************************************************
+commit 7085eea5073feaa4a5a98913eecdc8c9453b8ea9
+Author: pierre <pierre@freepascal.org>
+Date:   Fri Mar 12 13:28:14 2021 +0000
+
+     Update Makefile's after commits 48929/48930
+    
+    git-svn-id: trunk@1548 -
+
+M	Makefile
+M	demo/Makefile
+M	demo/freebsd/Makefile
+M	demo/graph/Makefile
+M	demo/linux/Makefile
+M	demo/lister/Makefile
+M	demo/modex/Makefile
+M	demo/morphos/Makefile
+M	demo/netware/Makefile
+M	demo/netwlibc/Makefile
+M	demo/os2/Makefile
+M	demo/text/Makefile
+M	demo/unix/Makefile
+M	demo/win32/Makefile
+
+******************************************************************************
+commit a04134b134bd645cb79d35812f90ee6df6661e3e
+Author: pierre <pierre@freepascal.org>
+Date:   Sun Mar 14 16:22:44 2021 +0000
+
+     Regenerate Makefile with latest fpcmake after previous commit #1551
+    
+    git-svn-id: trunk@1552 -
+
+M	Makefile
+
+******************************************************************************
+commit 00ca849325f654716b1a2db79637f9102ef15a4b
+Author: pierre <pierre@freepascal.org>
+Date:   Thu Mar 18 22:29:49 2021 +0000
+
+     Add ihxutil -> ihxu to renametoshort Makefile target
+    
+    git-svn-id: trunk@1556 -
+
+M	Makefile
+M	Makefile.fpc
+
+******************************************************************************
+commit 71488e4de71f84a28abc3dd5d61163ef04e33988
+Author: pierre <pierre@freepascal.org>
+Date:   Thu Mar 18 22:30:37 2021 +0000
+
+     Try to update to current trunk layout
+    
+    git-svn-id: trunk@1557 -
+
+M	install/go32v2/win-to-dos-zips.bat
+
+******************************************************************************
+commit 308ceef87b190c2bae06a26ac473d6e4b97d5d0c
+Author: pierre <pierre@freepascal.org>
+Date:   Thu Mar 18 22:32:21 2021 +0000
+
+     New script to check packages/utils zip names for go32v2 zip installer
+    
+    git-svn-id: trunk@1558 -
+
+A	install/go32v2/check.sh
+
+******************************************************************************
+commit 38b9c448137a7cf62faa9a08e574aa0083ed8322
+Author: pierre <pierre@freepascal.org>
+Date:   Sun Mar 21 10:41:50 2021 +0000
+
+    Add missing packages qlunits and utils/wasmbin to renametoshort list
+    
+    git-svn-id: trunk@1560 -
+
+M	Makefile
+M	Makefile.fpc
+
+******************************************************************************
+commit 9653812862e687d95ea5281119b1e367cbe62111
+Author: pierre <pierre@freepascal.org>
+Date:   Sat Mar 27 21:53:13 2021 +0000
+
+     Add generation of dos331.zip and dos331full.zip
+    
+    git-svn-id: trunk@1576 -
+
+M	install/go32v2/win-to-dos-zips.bat
+
+******************************************************************************
+commit bf231cbafefd0d26ad5f4bf3903f6ab8ed8adde3
+Author: pierre <pierre@freepascal.org>
+Date:   Sat Mar 27 22:14:16 2021 +0000
+
+     Accord shortname rule in Makefile.fpc for utils/tply directory to ShortName set inside fpmake.pp
+    
+    git-svn-id: trunk@1578 -
+
+M	Makefile
+M	Makefile.fpc
+
+******************************************************************************
+commit e1926e813b2de4f10ac3d79cf2f3b6a0b46b420d
+Author: pierre <pierre@freepascal.org>
+Date:   Sun Mar 28 00:00:25 2021 +0000
+
+     Adapt shortname rule for utils-pas2fpm (use p2fm, as given in utils/pas3fpm/fpmake.pp)
+    
+    git-svn-id: trunk@1579 -
+
+M	Makefile
+M	Makefile.fpc
+
+******************************************************************************
+commit 10871653e40dbe1b4ddccfe0f926b2ccfdc83116
+Author: pierre <pierre@freepascal.org>
+Date:   Sun Mar 28 21:25:24 2021 +0000
+
+     Fix short name of fcl-report
+    
+    git-svn-id: trunk@1580 -
+
+M	Makefile
+M	Makefile.fpc
+
+******************************************************************************
+commit e6a6006b9b7b71a5eb31a76a720a7ad66796f02a
+Author: pierre <pierre@freepascal.org>
+Date:   Sun Mar 28 21:52:44 2021 +0000
+
+    Fix short names for utils-fpcmkcfg and utils-pas2js
+    
+    git-svn-id: trunk@1581 -
+
+M	Makefile
+M	Makefile.fpc
+
+******************************************************************************
+commit 45deed2329abfa21ee17f61379b6d8311b5b8acc
+Author: pierre <pierre@freepascal.org>
+Date:   Mon Apr 12 21:10:25 2021 +0000
+
+    Regenerate Makefile's
+    
+    git-svn-id: trunk@1582 -
+
+M	Makefile
+M	demo/Makefile
+M	demo/freebsd/Makefile
+M	demo/graph/Makefile
+M	demo/linux/Makefile
+M	demo/lister/Makefile
+M	demo/modex/Makefile
+M	demo/morphos/Makefile
+M	demo/netware/Makefile
+M	demo/netwlibc/Makefile
+M	demo/os2/Makefile
+M	demo/text/Makefile
+M	demo/unix/Makefile
+M	demo/win32/Makefile
+
+******************************************************************************
+commit 31c4131240e5bb168ca75df11828630bf54262bb
+Author: Tomas Hajny <hajny@freepascal.org>
+Date:   Thu May 20 20:46:30 2021 +0000
+
+      * corrections for minor typos
+    
+    git-svn-id: trunk@1607 -
+
+M	install/doc/faq.htm
+M	install/doc/faq.txt
