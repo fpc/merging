@@ -1,4 +1,16 @@
 ******************************************************************************
+commit 7c68ead57aeae69834526b26b99bc40b2a2c941f
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Tue Mar 15 23:22:34 2022 +0100
+
+    fcl-pasrc: fixed multilinestrings # combos, double backticks become one, fixed apostroph, renamed MultilineStringsTrimLeft, MultilineStringsEOLStyle
+
+M	packages/fcl-passrc/src/pparser.pp
+M	packages/fcl-passrc/src/pscanner.pp
+M	packages/fcl-passrc/tests/tcscanner.pas
+M	packages/pastojs/tests/tcmodules.pas
+
+******************************************************************************
 commit e9ee0a0be3513d2949cbd1b120f1b0e90d896a93
 Author: florian <florian@freepascal.org>
 Date:   Tue Mar 15 22:37:38 2022 +0100
