@@ -1,4 +1,56 @@
 ******************************************************************************
+commit 27ed2808dcb4c95b101cada579f32ea3325e08d3
+Author: inoussa <inoussa.o@gmail.com>
+Date:   Tue Mar 15 09:28:49 2022 +0000
+
+    Unicode 14, Unicode Collation Algorithm 14, CLDR 40 support.
+
+M	packages/rtl-unicode/src/collations/collation_de.pas
+M	packages/rtl-unicode/src/collations/collation_de_be.inc
+M	packages/rtl-unicode/src/collations/collation_de_le.inc
+M	packages/rtl-unicode/src/collations/collation_es.pas
+M	packages/rtl-unicode/src/collations/collation_es_be.inc
+M	packages/rtl-unicode/src/collations/collation_es_le.inc
+M	packages/rtl-unicode/src/collations/collation_fr_ca.pas
+M	packages/rtl-unicode/src/collations/collation_ja.pas
+M	packages/rtl-unicode/src/collations/collation_ja_be.inc
+M	packages/rtl-unicode/src/collations/collation_ja_le.inc
+M	packages/rtl-unicode/src/collations/collation_ko.pas
+M	packages/rtl-unicode/src/collations/collation_ko_be.inc
+M	packages/rtl-unicode/src/collations/collation_ko_le.inc
+M	packages/rtl-unicode/src/collations/collation_ru.pas
+D	packages/rtl-unicode/src/collations/collation_ru_be.inc
+D	packages/rtl-unicode/src/collations/collation_ru_le.inc
+M	packages/rtl-unicode/src/collations/collation_sv.pas
+M	packages/rtl-unicode/src/collations/collation_sv_be.inc
+M	packages/rtl-unicode/src/collations/collation_sv_le.inc
+M	packages/rtl-unicode/src/collations/collation_zh.pas
+M	packages/rtl-unicode/src/collations/collation_zh_be.inc
+M	packages/rtl-unicode/src/collations/collation_zh_le.inc
+M	packages/rtl-unicode/src/inc/ucadata.inc
+M	packages/rtl-unicode/src/inc/ucadata_be.inc
+M	packages/rtl-unicode/src/inc/ucadata_le.inc
+M	rtl/objpas/unicodedata.inc
+M	rtl/objpas/unicodedata.pas
+M	rtl/objpas/unicodedata_be.inc
+M	rtl/objpas/unicodedata_le.inc
+M	rtl/objpas/unicodenumtable.pas
+M	rtl/objpas/weight_derivation.inc
+M	tests/test/units/fpwidestring/CollationTest_NON_IGNORABLE_SHORT.txt
+M	tests/test/units/fpwidestring/CollationTest_SHIFTED_SHORT.txt
+M	utils/unicode/cldrhelper.pas
+M	utils/unicode/cldrparser.lpi
+M	utils/unicode/cldrparser.lpr
+M	utils/unicode/cldrtest.pas
+M	utils/unicode/cldrtxt.pas
+M	utils/unicode/cldrxml.pas
+M	utils/unicode/data/readme.txt
+M	utils/unicode/helper.pas
+M	utils/unicode/unihelper.lpi
+M	utils/unicode/unihelper.lpr
+M	utils/unicode/weight_derivation.inc
+
+******************************************************************************
 commit 50b6978e681268a2ca80d62e8a7d274f65120719
 Author: florian <florian@freepascal.org>
 Date:   Mon Mar 14 23:11:03 2022 +0100
