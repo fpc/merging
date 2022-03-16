@@ -1,4 +1,13 @@
 ******************************************************************************
+commit a68884f7502941e37b4a51b525b1698a04d4eb3d
+Author: suve <veg@svgames.pl>
+Date:   Wed Mar 16 23:01:09 2022 +0100
+
+    Make pas2jni use cthreads on Unices
+
+M	utils/pas2jni/pas2jni.pas
+
+******************************************************************************
 commit f5de329076217765e1127c424c52837a572f0f50
 Author: florian <florian@freepascal.org>
 Date:   Wed Mar 16 23:03:49 2022 +0100
