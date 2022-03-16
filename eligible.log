@@ -1,4 +1,15 @@
 ******************************************************************************
+commit 25a681295a2ee176bd00493b02addc8cbc384139
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Wed Mar 16 07:00:17 2022 +0200
+
+    + added properties TEnhancedVideoCell.ForegroundColor and .BackgroundColor,
+      which can store up to 256 colors
+
+M	packages/rtl-console/src/inc/video.inc
+M	packages/rtl-console/src/inc/videoh.inc
+
+******************************************************************************
 commit 7c68ead57aeae69834526b26b99bc40b2a2c941f
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Tue Mar 15 23:22:34 2022 +0100
