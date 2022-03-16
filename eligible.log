@@ -1,4 +1,15 @@
 ******************************************************************************
+commit 0d9298f01aaaf8c137bef8ad4fc8f7a603e70db7
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Wed Mar 16 08:28:29 2022 +0200
+
+    * changed the video unit initialization sequence, so that the startup cursor
+      position is preserved at exit (or when switching to the user screen in the
+      IDE), when running in xterm or compatible (gnome-terminal, konsole, etc.)
+
+M	packages/rtl-console/src/unix/video.pp
+
+******************************************************************************
 commit 28732fffa2f153ea55cd450a075ab484111a2e7a
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Wed Mar 16 08:15:39 2022 +0200
