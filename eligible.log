@@ -1,4 +1,16 @@
 ******************************************************************************
+commit a9db41f1e5715fed88916e4cb2a11178af2bd10a
+Author: florian <florian@freepascal.org>
+Date:   Thu Mar 17 22:48:19 2022 +0100
+
+      * fixed SSSE3 change information
+
+M	compiler/i386/i386prop.inc
+M	compiler/i8086/i8086prop.inc
+M	compiler/x86/x86ins.dat
+M	compiler/x86_64/x8664pro.inc
+
+******************************************************************************
 commit f49675c4fe286879131001986f7707fc3aad2ac6
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Thu Mar 17 20:57:26 2022 +0200
