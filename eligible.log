@@ -1,4 +1,24 @@
 ******************************************************************************
+commit 729d920ed3f96c09ef015303d656455efdb078a6
+Author: Marcus Sackrow <alb42@web.de>
+Date:   Thu Mar 17 18:05:20 2022 +0100
+
+    AROS: Locks must be BPTR type
+
+M	rtl/amicommon/paramhandling.inc
+M	rtl/aros/system.pp
+
+******************************************************************************
+commit 5121e2c259c12411ea77fac454a83e498f0bd7d8
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Thu Mar 17 18:57:37 2022 +0200
+
+    + introduced TEnhancedVideoCell.EnhancedVideoAttributes, based on ECMA-48 and xterm
+
+M	packages/rtl-console/src/inc/video.inc
+M	packages/rtl-console/src/inc/videoh.inc
+
+******************************************************************************
 commit a68884f7502941e37b4a51b525b1698a04d4eb3d
 Author: suve <veg@svgames.pl>
 Date:   Wed Mar 16 23:01:09 2022 +0100
