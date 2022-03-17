@@ -1,4 +1,14 @@
 ******************************************************************************
+commit f49675c4fe286879131001986f7707fc3aad2ac6
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Thu Mar 17 20:57:26 2022 +0200
+
+    * convert advanced video attributes to legacy attributes (emulating bold, italic,
+      etc. using colors). Also, the blink attribute is converted correctly now.
+
+M	packages/rtl-console/src/inc/video.inc
+
+******************************************************************************
 commit 89726bbb982e2a3d02a1d2f0a47fd58fda11c87c
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Thu Mar 17 19:49:51 2022 +0200
