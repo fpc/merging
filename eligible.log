@@ -1,4 +1,24 @@
 ******************************************************************************
+commit 89726bbb982e2a3d02a1d2f0a47fd58fda11c87c
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Thu Mar 17 19:49:51 2022 +0200
+
+    + added second screen to the video4 test, which demonstrates all the attributes (without combining them)
+
+M	packages/rtl-console/tests/video4.pp
+
+******************************************************************************
+commit 921a72566f396e58fad456700d34cac40830d935
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Thu Mar 17 19:42:57 2022 +0200
+
+    + implemented enhanced video attributes in the Unix video unit
+    + added test for the enhanced video attributes
+
+M	packages/rtl-console/src/unix/video.pp
+A	packages/rtl-console/tests/video4.pp
+
+******************************************************************************
 commit 729d920ed3f96c09ef015303d656455efdb078a6
 Author: Marcus Sackrow <alb42@web.de>
 Date:   Thu Mar 17 18:05:20 2022 +0100
