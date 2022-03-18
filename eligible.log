@@ -1,4 +1,16 @@
 ******************************************************************************
+commit 6421f2c36bc406e30f732086588aeefd9ff96fc6
+Author: florian <florian@freepascal.org>
+Date:   Fri Mar 18 23:23:16 2022 +0100
+
+      * change information for SSE4.1 instructions
+
+M	compiler/i386/i386prop.inc
+M	compiler/i8086/i8086prop.inc
+M	compiler/x86/x86ins.dat
+M	compiler/x86_64/x8664pro.inc
+
+******************************************************************************
 commit f183b2952ea5438993f4395e47bbc8694f3ea6b5
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Sat Mar 19 00:04:13 2022 +0200
