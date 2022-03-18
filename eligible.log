@@ -1,4 +1,13 @@
 ******************************************************************************
+commit ca186440ebe63429d8642f770cd6f900a57ce60f
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Fri Mar 18 11:05:55 2022 +0000
+
+    Avoid repeated warnings about libgcc directory
+
+M	packages/fpmkunit/src/fpmkunit.pp
+
+******************************************************************************
 commit a9db41f1e5715fed88916e4cb2a11178af2bd10a
 Author: florian <florian@freepascal.org>
 Date:   Thu Mar 17 22:48:19 2022 +0100
