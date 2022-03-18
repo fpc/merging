@@ -1,4 +1,17 @@
 ******************************************************************************
+commit f183b2952ea5438993f4395e47bbc8694f3ea6b5
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sat Mar 19 00:04:13 2022 +0200
+
+    + introduced PTCKEY_LESS (the 102th key on international keyboards, <> when
+      used with US keyboard layout)
+
+M	packages/ptc/docs/CHANGES.txt
+M	packages/ptc/examples/keyboard3.pp
+M	packages/ptc/src/core/keyeventd.inc
+M	packages/ptc/src/x11/x11displayi.inc
+
+******************************************************************************
 commit 07ff5f423abb1107be587bbb1edb55e840017b5c
 Author: Marcus Sackrow <alb42@web.de>
 Date:   Fri Mar 18 21:03:05 2022 +0100
