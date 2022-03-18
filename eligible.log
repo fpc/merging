@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 07ff5f423abb1107be587bbb1edb55e840017b5c
+Author: Marcus Sackrow <alb42@web.de>
+Date:   Fri Mar 18 21:03:05 2022 +0100
+
+    AROS: 64 bit fix for sysutils FileCreate
+
+M	rtl/amicommon/sysutils.pp
+
+******************************************************************************
 commit ca186440ebe63429d8642f770cd6f900a57ce60f
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Fri Mar 18 11:05:55 2022 +0000
