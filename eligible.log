@@ -1,4 +1,16 @@
 ******************************************************************************
+commit 2099e35d826b5336d0aa5e1717dc6339dec27cf4
+Author: florian <florian@freepascal.org>
+Date:   Sat Mar 19 23:15:36 2022 +0100
+
+      * change information for SSE 4.2 instructions
+
+M	compiler/i386/i386prop.inc
+M	compiler/i8086/i8086prop.inc
+M	compiler/x86/x86ins.dat
+M	compiler/x86_64/x8664pro.inc
+
+******************************************************************************
 commit f1cf83bd8a2ff5b38a4fa5ecb6e2f8e102d8b372
 Author: Marcus Sackrow <alb42@web.de>
 Date:   Sat Mar 19 13:16:50 2022 +0100
