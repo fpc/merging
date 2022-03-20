@@ -1,4 +1,34 @@
 ******************************************************************************
+commit e9b8738f200167865f8c6d2d333a01243d25f9fd
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Sun Mar 20 13:34:36 2022 +0100
+
+    fcl-pasrc: clean up
+
+M	packages/fcl-passrc/src/pasresolver.pp
+
+******************************************************************************
+commit dedab626fe7eb60d63858ae68055845ad848a93a
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Sun Mar 20 13:28:32 2022 +0100
+
+    fcl-passrc: forbid nested anonymous procedure type
+
+M	packages/fcl-passrc/src/pasresolver.pp
+
+******************************************************************************
+commit 4181e24ea4517069f84d987204c715a19ff24640
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Sun Mar 20 13:26:57 2022 +0100
+
+    fcl-passrc: anonymous procedure type
+
+M	packages/fcl-passrc/src/pasresolver.pp
+M	packages/fcl-passrc/src/pparser.pp
+M	packages/fcl-passrc/tests/tcresolver.pas
+M	packages/pastojs/tests/tcmodules.pas
+
+******************************************************************************
 commit 2099e35d826b5336d0aa5e1717dc6339dec27cf4
 Author: florian <florian@freepascal.org>
 Date:   Sat Mar 19 23:15:36 2022 +0100
@@ -3855,28 +3885,6 @@ Date:   Sat Feb 12 17:32:48 2022 +0100
 M	rtl/m68k/m68k.inc
 
 ******************************************************************************
-commit 14289173bbaf1c7bb4c91808f065122198c9f047
-Author: Jonas Maebe <jonas@freepascal.org>
-Date:   Sat Feb 12 15:26:49 2022 +0100
-
-    PPC64: fix wrong ifdef for SYSV ABI
-    
-    The TOC is used by PPC64, not by PPC32. Resolves #39571
-
-M	compiler/systems.pas
-
-******************************************************************************
-commit 0fcc57fb4b7ca536b4177d19ef32da54e8ca352d
-Author: Jonas Maebe <jonas@freepascal.org>
-Date:   Sat Feb 12 15:26:27 2022 +0100
-
-    PPC64: don't save TOC in pure assembler routines
-    
-    Fix by Pierre
-
-M	compiler/powerpc64/cgcpu.pas
-
-******************************************************************************
 commit b97c8bdf5594ac273f9f3851030b694b97789035
 Author: Jonas Maebe <jonas@freepascal.org>
 Date:   Sat Feb 12 15:25:19 2022 +0100
@@ -4614,18 +4622,6 @@ M	packages/pastojs/src/fppas2js.pp
 M	packages/pastojs/tests/tcmodules.pas
 
 ******************************************************************************
-commit 2ee45c7ed8506abe59a2031152a052baf819ce5c
-Author: Jonas Maebe <jonas@freepascal.org>
-Date:   Mon Feb 7 20:30:35 2022 +0100
-
-    PowerPC32 SysV: fix abis_ppc_toc declaration
-    
-    No TOC on those platforms (as mentioned in tcgppcgen.get_rtoc_offset), so also
-    exclude from this constant
-
-M	compiler/systems.pas
-
-******************************************************************************
 commit c8403ad49ed815e53ab700f783b9c7e371dc4831
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Mon Feb 7 16:30:28 2022 +0100
@@ -4682,21 +4678,6 @@ Date:   Mon Feb 7 12:45:54 2022 +0100
     fcl-js: fixed comment
 
 M	packages/fcl-js/src/jstree.pp
-
-******************************************************************************
-commit 629c1de460917ce2b278443e1befafaed8f5c1be
-Author: Jonas Maebe <jonas@freepascal.org>
-Date:   Sun Feb 6 20:50:00 2022 +0100
-
-    TOC handling: clean up
-    
-    Also fix on 32 bits PowerPC
-
-M	compiler/ncgvmt.pas
-M	compiler/powerpc/cgcpu.pas
-M	compiler/powerpc64/cgcpu.pas
-M	compiler/ppcgen/cgppc.pas
-M	compiler/systems.pas
 
 ******************************************************************************
 commit d42f577a3ff2bd02b6ce709b6c89bf6fc08b32ae
