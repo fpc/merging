@@ -1,4 +1,16 @@
 ******************************************************************************
+commit c785fa4435a9abd48c8e338b1935cd5569900542
+Author: florian <florian@freepascal.org>
+Date:   Sun Mar 20 22:32:07 2022 +0100
+
+      * AES instruction change information fixed
+
+M	compiler/i386/i386prop.inc
+M	compiler/i8086/i8086prop.inc
+M	compiler/x86/x86ins.dat
+M	compiler/x86_64/x8664pro.inc
+
+******************************************************************************
 commit 04a2b42f63c20e0edf9982f5c7fbff7520ee001e
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Sun Mar 20 18:44:56 2022 +0100
