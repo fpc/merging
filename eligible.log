@@ -1,4 +1,24 @@
 ******************************************************************************
+commit 04a2b42f63c20e0edf9982f5c7fbff7520ee001e
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Sun Mar 20 18:44:56 2022 +0100
+
+    fcl-passrc: test forbidden anonymous function types
+
+M	packages/fcl-passrc/tests/tcresolver.pas
+
+******************************************************************************
+commit 89abeff99af7c1ab41b395d2e1466472f62542e2
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Sun Mar 20 17:58:23 2022 +0100
+
+    fcl-passrc: fixed mem leak on error during parsing function type
+
+M	packages/fcl-passrc/src/pasresolver.pp
+M	packages/fcl-passrc/src/pparser.pp
+M	packages/fcl-passrc/tests/tcresolver.pas
+
+******************************************************************************
 commit e9b8738f200167865f8c6d2d333a01243d25f9fd
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Sun Mar 20 13:34:36 2022 +0100
