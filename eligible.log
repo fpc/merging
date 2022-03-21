@@ -1,4 +1,14 @@
 ******************************************************************************
+commit ce20ba23fa4dcf5bcb2a1f152ab2eef67df8b3c8
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Mon Mar 21 13:38:23 2022 +0100
+
+    * ifoWriteString boolean renamed to ifoStringBoolean., read will now also observe ifoStringBoolean. Fix issue #39625
+
+M	packages/fcl-base/src/inifiles.pp
+M	packages/fcl-base/tests/tcinifile.pp
+
+******************************************************************************
 commit c785fa4435a9abd48c8e338b1935cd5569900542
 Author: florian <florian@freepascal.org>
 Date:   Sun Mar 20 22:32:07 2022 +0100
