@@ -16,38 +16,6 @@ M	install/fpcx64.ist
 M	install/fpcx86x64.ist
 
 ******************************************************************************
-commit f712018df486dde6588ca4520468455fd20fbe2f
-Author: Jonas Maebe <jonas@freepascal.org>
-Date:   Sat Jan 29 13:54:55 2022 +0100
-
-    FPC 3.2.2 packaging files
-
-M	install/darwin/macos/fpc-intel-macosx/ReadMe.txt
-R062	install/darwin/macos/fpc-intel-macosx/x86/Users/Shared/Free Pascal Compiler/Documentation/Getting Started (Intel).rtf	install/darwin/macos/fpc-intel-macosx/build/fpc-3.2.2rc1.intelarm64-macosx/Getting Started (Intel and ARM64).rtf
-A	install/darwin/macos/fpc-intel-macosx/createdmgs.sh
-M	install/darwin/macos/fpc-intel-macosx/fpc-intel-macosx.cross.ios.pkgproj
-M	install/darwin/macos/fpc-intel-macosx/fpc-intel-macosx.cross.jvm.pkgproj
-M	install/darwin/macos/fpc-intel-macosx/fpc-intel-macosx.cross.powerpc-macosx.pkgproj
-R094	install/darwin/macos/fpc-intel-macosx/fpc-intel-macosx.pkgproj	install/darwin/macos/fpc-intel-macosx/fpc-intelarm64-macosx.pkgproj
-M	install/darwin/macos/fpc-intel-macosx/ios/Users/Shared/Free Pascal Compiler/Documentation/Getting Started - iOS.rtf
-M	install/darwin/macos/fpc-intel-macosx/jvm/Users/Shared/Free Pascal Compiler/Documentation/Getting Started (JVM).txt
-M	install/darwin/macos/fpc-intel-macosx/ppc/Users/Shared/Free Pascal Compiler/Documentation/Getting Started (PowerPC Cross).rtf
-A	install/darwin/macos/fpc-powerpc-macosx/fpc-powerpc-macosx.packproj
-M	install/darwin/macos/fpc-powerpc-macosx/ppc/Developer/Documentation/Free Pascal Compiler/Getting Started (PowerPC).rtf
-
-******************************************************************************
-commit 79980c698620e3fa06313fc3087603300d19daad
-Author: Jonas Maebe <jonas@freepascal.org>
-Date:   Sat Jan 29 13:45:00 2022 +0100
-
-    Version used to build FPC 3.2.2
-    
-    Mainly added macOS/AArch64 support
-
-M	install/macosx/scripts/buildinstalliosrelease.sh
-M	install/macosx/scripts/buildinstallx86release.sh
-
-******************************************************************************
 commit 569d4449ce6ca92a66b653e4bc3808f2e17e396d
 Author: FPK <florian@freepascal.org>
 Date:   Sun Jan 9 17:56:47 2022 +0000
@@ -66,15 +34,6 @@ Date:   Wed Jan 5 17:01:06 2022 +0100
 A	Dockerfiles/Dockerfile.debian-buster-x86_64
 
 ******************************************************************************
-commit 9e677e43859d5ab3d95fe499eefa894b6bbc8218
-Author: FPK <florian@freepascal.org>
-Date:   Sat Oct 9 11:49:13 2021 +0000
-
-      + .gitattributes to play safe
-
-A	.gitattributes
-
-******************************************************************************
 commit d18ac25cd5953cc0d0fcc26605a94ce07da8593d
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Sun Aug 15 12:03:57 2021 +0200
@@ -82,15 +41,6 @@ Date:   Sun Aug 15 12:03:57 2021 +0200
     Change svn repository to github in install/makesource-svn
 
 M	install/makesource-svn
-
-******************************************************************************
-commit aca2a2425f113d1ef0e09a55431dbcbb097ee263
-Author: Pierre Muller <pierre@freepascal.org>
-Date:   Sun Aug 15 12:03:03 2021 +0200
-
-     Renamed makesource to makesource-svn
-
-R100	install/makesource	install/makesource-svn
 
 ******************************************************************************
 commit 278273d2e348cefd7fcbb4a7792f5882629f101a
@@ -398,15 +348,3 @@ M	demo/os2/Makefile
 M	demo/text/Makefile
 M	demo/unix/Makefile
 M	demo/win32/Makefile
-
-******************************************************************************
-commit 31c4131240e5bb168ca75df11828630bf54262bb
-Author: Tomas Hajny <hajny@freepascal.org>
-Date:   Thu May 20 20:46:30 2021 +0000
-
-      * corrections for minor typos
-    
-    git-svn-id: trunk@1607 -
-
-M	install/doc/faq.htm
-M	install/doc/faq.txt
