@@ -1,4 +1,26 @@
 ******************************************************************************
+commit 3317078ae121ed1462a4033242e6edccf25f9dde
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Mon Mar 21 23:01:31 2022 +0100
+
+    fcl-passrc: resolver: allow anonymous records only for var, const and variants
+
+M	packages/fcl-passrc/src/pasresolver.pp
+M	packages/fcl-passrc/tests/tcresolver.pas
+
+******************************************************************************
+commit de9880375118fc0718080b97bd61090353e32fef
+Author: florian <florian@freepascal.org>
+Date:   Mon Mar 21 22:51:40 2022 +0100
+
+      * few more updated change information entries
+
+M	compiler/i386/i386prop.inc
+M	compiler/i8086/i8086prop.inc
+M	compiler/x86/x86ins.dat
+M	compiler/x86_64/x8664pro.inc
+
+******************************************************************************
 commit ce20ba23fa4dcf5bcb2a1f152ab2eef67df8b3c8
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Mon Mar 21 13:38:23 2022 +0100
