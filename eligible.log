@@ -1,4 +1,16 @@
 ******************************************************************************
+commit fba3da47c6c762c7e260f89bba56bdead6c42ba7
+Author: florian <florian@freepascal.org>
+Date:   Tue Mar 22 22:55:26 2022 +0100
+
+      * continued to update change information
+
+M	compiler/i386/i386prop.inc
+M	compiler/i8086/i8086prop.inc
+M	compiler/x86/x86ins.dat
+M	compiler/x86_64/x8664pro.inc
+
+******************************************************************************
 commit 22eb1e099fa15b018ad81c0bdff24462190b7afd
 Author: Karoly Balogh <karoly@freepascal.org>
 Date:   Tue Mar 15 10:11:18 2022 +0100
