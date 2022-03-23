@@ -1,4 +1,25 @@
 ******************************************************************************
+commit f50e6dfe8e1f84e98395f8de4683ad729b6895f2
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Wed Mar 23 15:08:42 2022 +0100
+
+    fcl-passrc: do not allocate a temp list
+
+M	packages/fcl-passrc/src/pparser.pp
+
+******************************************************************************
+commit 35fd79ca523485df5e927e9f1a426dd9d814b530
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Wed Mar 23 14:57:30 2022 +0100
+
+    fcl-passrc: anonymous records
+
+M	packages/fcl-passrc/src/pasresolver.pp
+M	packages/fcl-passrc/src/pparser.pp
+M	packages/pastojs/src/fppas2js.pp
+M	packages/pastojs/tests/tcmodules.pas
+
+******************************************************************************
 commit ed520548be3ee7ec66e4dd909c0e61978960d7a7
 Author: Karoly Balogh <karoly@freepascal.org>
 Date:   Wed Mar 23 11:06:18 2022 +0100
