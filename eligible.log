@@ -1,4 +1,26 @@
 ******************************************************************************
+commit 652e75f8ec7e0705b4c394cbf906894afece306e
+Author: florian <florian@freepascal.org>
+Date:   Wed Mar 23 21:53:14 2022 +0100
+
+      * use v*csr instructions if they are available
+
+M	rtl/x86_64/math.inc
+
+******************************************************************************
+commit fbf68af60533634bd627ca24a9a6b57d4208df89
+Author: florian <florian@freepascal.org>
+Date:   Wed Mar 23 21:42:53 2022 +0100
+
+      * continued to update change information
+
+M	compiler/i386/i386prop.inc
+M	compiler/i8086/i8086prop.inc
+M	compiler/x86/x86ins.dat
+M	compiler/x86_64/x8664pro.inc
+M	rtl/x86_64/math.inc
+
+******************************************************************************
 commit f50e6dfe8e1f84e98395f8de4683ad729b6895f2
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Wed Mar 23 15:08:42 2022 +0100
