@@ -1,4 +1,14 @@
 ******************************************************************************
+commit ed520548be3ee7ec66e4dd909c0e61978960d7a7
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Wed Mar 23 11:06:18 2022 +0100
+
+    m68k: utilize cg.a_loadaddr_ref_cgpara in hlcgcpu, as m68k has an instruction for loading addresses directly to the stack (PEA), and the default implementation of hlcg.a_loadaddr_ref_cgpara doesn't use that code path
+
+M	compiler/m68k/cgcpu.pas
+M	compiler/m68k/hlcgcpu.pas
+
+******************************************************************************
 commit fba3da47c6c762c7e260f89bba56bdead6c42ba7
 Author: florian <florian@freepascal.org>
 Date:   Tue Mar 22 22:55:26 2022 +0100
