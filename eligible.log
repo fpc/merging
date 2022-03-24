@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 59c33d69abd815c2ce7b1dd4345f6c99b4391570
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Wed Mar 23 17:09:34 2022 +0100
+
+    Revert "m68k: utilize cg.a_loadaddr_ref_cgpara in hlcgcpu" for now, turns out it's not needed
+
+M	compiler/m68k/cgcpu.pas
+M	compiler/m68k/hlcgcpu.pas
+
+******************************************************************************
 commit 652e75f8ec7e0705b4c394cbf906894afece306e
 Author: florian <florian@freepascal.org>
 Date:   Wed Mar 23 21:53:14 2022 +0100
