@@ -1,4 +1,57 @@
 ******************************************************************************
+commit 5377cee3a29c267161a8e46aedb04e8e3b91cee5
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Mar 26 13:31:19 2022 +0100
+
+    fcl-css in build
+
+M	packages/fcl-css/src/fpcsstree.pp
+M	packages/fpmake_add.inc
+M	packages/fpmake_proc.inc
+
+******************************************************************************
+commit 5b3953dde37e5802b6417748f633bd9278bf95da
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Mar 26 13:26:26 2022 +0100
+
+    fcl-css package
+
+A	packages/fcl-css/Makefile
+A	packages/fcl-css/Makefile.fpc
+A	packages/fcl-css/examples/cssmin.lpr
+A	packages/fcl-css/examples/extractcssclasses.lpr
+A	packages/fcl-css/fpmake.pp
+A	packages/fcl-css/src/fpcssparser.pp
+A	packages/fcl-css/src/fpcssscanner.pp
+A	packages/fcl-css/src/fpcsstree.pp
+A	packages/fcl-css/src/fpcssutils.pp
+A	packages/fcl-css/tests/css/absolute.css
+A	packages/fcl-css/tests/css/animation.css
+A	packages/fcl-css/tests/css/anon.css
+A	packages/fcl-css/tests/css/bigbig.css
+A	packages/fcl-css/tests/css/class.css
+A	packages/fcl-css/tests/css/color.css
+A	packages/fcl-css/tests/css/font-face.css
+A	packages/fcl-css/tests/css/font-face2.css
+A	packages/fcl-css/tests/css/font.css
+A	packages/fcl-css/tests/css/hello.css
+A	packages/fcl-css/tests/css/id.css
+A	packages/fcl-css/tests/css/input_type.css
+A	packages/fcl-css/tests/css/margin.css
+A	packages/fcl-css/tests/css/media_query.css
+A	packages/fcl-css/tests/css/mystyle.css
+A	packages/fcl-css/tests/css/news.css
+A	packages/fcl-css/tests/css/padding.css
+A	packages/fcl-css/tests/css/style.css
+A	packages/fcl-css/tests/css/style2.css
+A	packages/fcl-css/tests/css/style_big.css
+A	packages/fcl-css/tests/css/wildcard.css
+A	packages/fcl-css/tests/tccssparser.pp
+A	packages/fcl-css/tests/tccssscanner.pp
+A	packages/fcl-css/tests/tccsstree.pp
+A	packages/fcl-css/tests/testcss.lpr
+
+******************************************************************************
 commit 2f33c970066529c482f37a6a77a11b01bb7fdccd
 Author: florian <florian@freepascal.org>
 Date:   Fri Mar 25 23:17:57 2022 +0100
