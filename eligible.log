@@ -1,4 +1,16 @@
 ******************************************************************************
+commit 6ea0050990e5786bf369dc68b0971f433e8c9069
+Author: florian <florian@freepascal.org>
+Date:   Sat Mar 26 23:44:42 2022 +0100
+
+      * finished change information for AVX1 instructions
+
+M	compiler/i386/i386prop.inc
+M	compiler/i8086/i8086prop.inc
+M	compiler/x86/x86ins.dat
+M	compiler/x86_64/x8664pro.inc
+
+******************************************************************************
 commit 1619bef4a01bdd73d97d3b9f0d50d212b2be01b0
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Sat Mar 26 22:44:54 2022 +0100
