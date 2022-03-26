@@ -1,4 +1,114 @@
 ******************************************************************************
+commit 1619bef4a01bdd73d97d3b9f0d50d212b2be01b0
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Mar 26 22:44:54 2022 +0100
+
+    * Test from Inoussa to test NormalizeNFD
+
+A	packages/rtl-unicode/tests/testnfd.lpr
+
+******************************************************************************
+commit 163d2ab344b7ef739f501d79b7a0de9b2bda0666
+Author: inoussa <inoussa.o@gmail.com>
+Date:   Thu Mar 24 18:03:26 2022 +0000
+
+    Unicode' unicodenumtable.pas removed : update Makefile.fpc.
+
+M	rtl/aix/Makefile
+M	rtl/aix/Makefile.fpc
+M	rtl/amiga/Makefile
+M	rtl/amiga/Makefile.fpc
+M	rtl/android/Makefile
+M	rtl/android/Makefile.fpc
+M	rtl/aros/Makefile
+M	rtl/aros/Makefile.fpc
+M	rtl/atari/Makefile
+M	rtl/atari/Makefile.fpc
+M	rtl/beos/Makefile
+M	rtl/beos/Makefile.fpc
+M	rtl/darwin/Makefile
+M	rtl/darwin/Makefile.fpc
+M	rtl/dragonfly/Makefile
+M	rtl/dragonfly/Makefile.fpc
+M	rtl/emx/Makefile
+M	rtl/emx/Makefile.fpc
+M	rtl/freebsd/Makefile
+M	rtl/freebsd/Makefile.fpc
+M	rtl/gba/Makefile
+M	rtl/gba/Makefile.fpc
+M	rtl/go32v2/Makefile
+M	rtl/go32v2/Makefile.fpc
+M	rtl/haiku/Makefile
+M	rtl/haiku/Makefile.fpc
+M	rtl/linux/Makefile
+M	rtl/linux/Makefile.fpc
+M	rtl/morphos/Makefile
+M	rtl/morphos/Makefile.fpc
+M	rtl/msdos/Makefile
+M	rtl/msdos/Makefile.fpc
+M	rtl/msxdos/Makefile
+M	rtl/msxdos/Makefile.fpc
+M	rtl/nds/Makefile
+M	rtl/nds/Makefile.fpc
+M	rtl/netbsd/Makefile
+M	rtl/netbsd/Makefile.fpc
+M	rtl/netware/Makefile
+M	rtl/netware/Makefile.fpc
+M	rtl/openbsd/Makefile
+M	rtl/openbsd/Makefile.fpc
+M	rtl/os2/Makefile
+M	rtl/os2/Makefile.fpc
+M	rtl/sinclairql/Makefile
+M	rtl/sinclairql/Makefile.fpc
+M	rtl/solaris/Makefile
+M	rtl/solaris/Makefile.fpc
+M	rtl/symbian/Makefile
+M	rtl/symbian/Makefile.fpc
+M	rtl/wasi/Makefile
+M	rtl/wasi/Makefile.fpc
+M	rtl/watcom/Makefile
+M	rtl/watcom/Makefile.fpc
+M	rtl/wii/Makefile
+M	rtl/wii/Makefile.fpc
+M	rtl/win16/Makefile
+M	rtl/win16/Makefile.fpc
+M	rtl/win64/Makefile
+M	rtl/win64/Makefile.fpc
+M	rtl/wince/Makefile
+M	rtl/wince/Makefile.fpc
+
+******************************************************************************
+commit 551f26767048e2cb9e1f895122cd8dac95b2dca6
+Author: inoussa <inoussa.o@gmail.com>
+Date:   Thu Mar 24 18:01:38 2022 +0000
+
+    Unicode source code's size reduction: short field names, delete unicodenumtable.pas.
+
+M	packages/rtl-unicode/src/collations/collation_de_be.inc
+M	packages/rtl-unicode/src/collations/collation_de_le.inc
+M	packages/rtl-unicode/src/collations/collation_es_be.inc
+M	packages/rtl-unicode/src/collations/collation_es_le.inc
+M	packages/rtl-unicode/src/collations/collation_ja_be.inc
+M	packages/rtl-unicode/src/collations/collation_ja_le.inc
+M	packages/rtl-unicode/src/collations/collation_ko_be.inc
+M	packages/rtl-unicode/src/collations/collation_ko_le.inc
+M	packages/rtl-unicode/src/collations/collation_sv_be.inc
+M	packages/rtl-unicode/src/collations/collation_sv_le.inc
+M	packages/rtl-unicode/src/collations/collation_zh_be.inc
+M	packages/rtl-unicode/src/collations/collation_zh_le.inc
+M	packages/rtl-unicode/src/inc/ucadata_be.inc
+M	packages/rtl-unicode/src/inc/ucadata_le.inc
+M	rtl/objpas/unicodedata.inc
+M	rtl/objpas/unicodedata.pas
+M	rtl/objpas/unicodedata_be.inc
+M	rtl/objpas/unicodedata_le.inc
+D	rtl/objpas/unicodenumtable.pas
+M	rtl/win32/Makefile
+M	rtl/win32/Makefile.fpc
+M	utils/unicode/helper.pas
+M	utils/unicode/unihelper.lpr
+
+******************************************************************************
 commit ee8c3ff3cfd8851111e5094dc6673cd997ddd74c
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Sat Mar 26 22:09:34 2022 +0100
