@@ -1,4 +1,19 @@
 ******************************************************************************
+commit 54c95288f868a762f1caa9d8e62fa6f193237cf2
+Author: marcoonthegit <marco@freepascal.org>
+Date:   Sat Mar 26 15:00:15 2022 +0100
+
+    * initialized some fields and data to -1 to make the results more similar to the slave chm (merged_chapter/example1/slave1) example.
+    
+    Now only
+      - the checksum at $4
+      - the number of topics (different issue)
+      - the offset of framename in #strings differs.
+
+M	packages/chm/src/chmsitemap.pas
+M	packages/chm/src/chmwriter.pas
+
+******************************************************************************
 commit 5377cee3a29c267161a8e46aedb04e8e3b91cee5
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Sat Mar 26 13:31:19 2022 +0100
