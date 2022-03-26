@@ -1,4 +1,13 @@
 ******************************************************************************
+commit ee8c3ff3cfd8851111e5094dc6673cd997ddd74c
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Mar 26 22:09:34 2022 +0100
+
+    * Correct whitespace definition
+
+M	packages/fcl-css/src/fpcssscanner.pp
+
+******************************************************************************
 commit 54c95288f868a762f1caa9d8e62fa6f193237cf2
 Author: marcoonthegit <marco@freepascal.org>
 Date:   Sat Mar 26 15:00:15 2022 +0100
