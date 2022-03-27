@@ -1,4 +1,45 @@
 ******************************************************************************
+commit 497dd20a088a67a950c7c61f0a365f170c547f18
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Sun Mar 27 08:23:22 2022 +0000
+
+     Regenerate Makefile's with trunk fpcmake
+
+M	packages/fcl-css/Makefile
+M	rtl/aix/Makefile
+M	rtl/amiga/Makefile
+M	rtl/android/Makefile
+M	rtl/aros/Makefile
+M	rtl/atari/Makefile
+M	rtl/beos/Makefile
+M	rtl/darwin/Makefile
+M	rtl/dragonfly/Makefile
+M	rtl/emx/Makefile
+M	rtl/freebsd/Makefile
+M	rtl/gba/Makefile
+M	rtl/go32v2/Makefile
+M	rtl/haiku/Makefile
+M	rtl/linux/Makefile
+M	rtl/morphos/Makefile
+M	rtl/msdos/Makefile
+M	rtl/msxdos/Makefile
+M	rtl/nds/Makefile
+M	rtl/netbsd/Makefile
+M	rtl/netware/Makefile
+M	rtl/openbsd/Makefile
+M	rtl/os2/Makefile
+M	rtl/sinclairql/Makefile
+M	rtl/solaris/Makefile
+M	rtl/symbian/Makefile
+M	rtl/wasi/Makefile
+M	rtl/watcom/Makefile
+M	rtl/wii/Makefile
+M	rtl/win16/Makefile
+M	rtl/win32/Makefile
+M	rtl/win64/Makefile
+M	rtl/wince/Makefile
+
+******************************************************************************
 commit 6ea0050990e5786bf369dc68b0971f433e8c9069
 Author: florian <florian@freepascal.org>
 Date:   Sat Mar 26 23:44:42 2022 +0100
