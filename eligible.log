@@ -1,4 +1,16 @@
 ******************************************************************************
+commit c3ec62878eb04316a545fdb98553f5d71002bb07
+Author: florian <florian@freepascal.org>
+Date:   Sun Mar 27 23:05:54 2022 +0200
+
+      * completed change information for AVX-2
+
+M	compiler/i386/i386prop.inc
+M	compiler/i8086/i8086prop.inc
+M	compiler/x86/x86ins.dat
+M	compiler/x86_64/x8664pro.inc
+
+******************************************************************************
 commit 497dd20a088a67a950c7c61f0a365f170c547f18
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Sun Mar 27 08:23:22 2022 +0000
