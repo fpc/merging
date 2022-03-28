@@ -1,4 +1,13 @@
 ******************************************************************************
+commit eccd1720c9812b99e0e70c3e37d3af36051fb7ad
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Mon Mar 28 15:26:24 2022 +0200
+
+    * No nil keys. Fix issue #39637
+
+M	packages/fcl-css/src/fpcsstree.pp
+
+******************************************************************************
 commit 8b9c7b8254385e5b797cbaa0b73e160a26f5ff77
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Mon Mar 28 13:52:31 2022 +0200
