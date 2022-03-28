@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 2dcca2eb6848b10defa57ef509f2990aea72f5ea
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Mon Mar 28 10:35:55 2022 +0000
+
+    Fix compilation by removing unicodenumtable unit
+
+M	rtl/nativent/buildrtl.pp
+
+******************************************************************************
 commit c3ec62878eb04316a545fdb98553f5d71002bb07
 Author: florian <florian@freepascal.org>
 Date:   Sun Mar 27 23:05:54 2022 +0200
