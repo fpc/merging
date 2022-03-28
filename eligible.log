@@ -1,4 +1,16 @@
 ******************************************************************************
+commit 16881556b915c6916a488334328d586951d76ff3
+Author: florian <florian@freepascal.org>
+Date:   Mon Mar 28 22:36:47 2022 +0200
+
+      * change information for AVX-512 mask register instructions
+
+M	compiler/i386/i386prop.inc
+M	compiler/i8086/i8086prop.inc
+M	compiler/x86/x86ins.dat
+M	compiler/x86_64/x8664pro.inc
+
+******************************************************************************
 commit eccd1720c9812b99e0e70c3e37d3af36051fb7ad
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Mon Mar 28 15:26:24 2022 +0200
