@@ -1,4 +1,16 @@
 ******************************************************************************
+commit 8b9c7b8254385e5b797cbaa0b73e160a26f5ff77
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Mon Mar 28 13:52:31 2022 +0200
+
+    * Fix parsing of bootstrap
+
+M	packages/fcl-css/src/fpcssparser.pp
+M	packages/fcl-css/src/fpcsstree.pp
+M	packages/fcl-css/tests/tccssparser.pp
+M	packages/fcl-css/tests/testcss.lpr
+
+******************************************************************************
 commit 2dcca2eb6848b10defa57ef509f2990aea72f5ea
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Mon Mar 28 10:35:55 2022 +0000
