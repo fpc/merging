@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 4fae1bb6dfd1d65f8250ef390541647006cd1236
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Tue Mar 29 12:11:40 2022 +0200
+
+    * Disable debug output
+
+M	packages/fcl-css/src/fpcssparser.pp
+
+******************************************************************************
 commit be046aa5558f8ab39441f9270a45f6e3ceb53745
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Tue Mar 29 11:02:36 2022 +0200
