@@ -1,4 +1,16 @@
 ******************************************************************************
+commit 0e4188749bacc70a7d472f05053a90a1d0ee620a
+Author: florian <florian@freepascal.org>
+Date:   Tue Mar 29 22:50:00 2022 +0200
+
+      * started with change information for AVX-512
+
+M	compiler/i386/i386prop.inc
+M	compiler/i8086/i8086prop.inc
+M	compiler/x86/x86ins.dat
+M	compiler/x86_64/x8664pro.inc
+
+******************************************************************************
 commit 4fae1bb6dfd1d65f8250ef390541647006cd1236
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Tue Mar 29 12:11:40 2022 +0200
