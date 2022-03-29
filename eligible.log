@@ -1,4 +1,20 @@
 ******************************************************************************
+commit be046aa5558f8ab39441f9270a45f6e3ceb53745
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Tue Mar 29 11:02:36 2022 +0200
+
+    * Allow extended chars, fix nested at rules. Fix issue #39638
+
+M	packages/fcl-css/examples/extractcssclasses.lpr
+M	packages/fcl-css/src/fpcssparser.pp
+M	packages/fcl-css/src/fpcssscanner.pp
+M	packages/fcl-css/src/fpcsstree.pp
+M	packages/fcl-css/src/fpcssutils.pp
+M	packages/fcl-css/tests/tccssparser.pp
+M	packages/fcl-css/tests/tccssscanner.pp
+M	packages/fcl-css/tests/tccsstree.pp
+
+******************************************************************************
 commit 16881556b915c6916a488334328d586951d76ff3
 Author: florian <florian@freepascal.org>
 Date:   Mon Mar 28 22:36:47 2022 +0200
