@@ -1,4 +1,22 @@
 ******************************************************************************
+commit a45394d849213a0a54e3e719cfc281f11d500ec0
+Author: magorium <10467276-magorium@users.noreply.gitlab.com>
+Date:   Sun Mar 27 07:13:55 2022 +0200
+
+    AROS: 64-bit filehandle compatibility fixes for doslibf.inc
+
+M	rtl/aros/i386/doslibf.inc
+
+******************************************************************************
+commit ff576fad0f4b3e3c92e9c695b518b34bd90e4830
+Author: magorium <10467276-magorium@users.noreply.gitlab.com>
+Date:   Sun Mar 27 07:10:32 2022 +0200
+
+    AROS: 64-bit filehandle compatibility/consistency fixes for ASYS_FileList related routines
+
+M	rtl/amicommon/sysutils.pp
+
+******************************************************************************
 commit 8512d7ac8f47e053ccc02f042cc0607f29d6c3fc
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Wed Mar 30 15:10:30 2022 -0600
