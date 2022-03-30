@@ -1,4 +1,50 @@
 ******************************************************************************
+commit 8512d7ac8f47e053ccc02f042cc0607f29d6c3fc
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Wed Mar 30 15:10:30 2022 -0600
+
+    Add x86_64 CPU to list requiring fpux80 support
+
+M	compiler/Makefile
+M	compiler/Makefile.fpc
+
+******************************************************************************
+commit 4718029fe07e813a2e61ece0ea9bd6d3db3d0bac
+Author: florian <florian@freepascal.org>
+Date:   Wed Mar 30 23:07:02 2022 +0200
+
+      * do not throw an error if syscall is used with a syntax not applicable for the current
+        target, resolves #39640
+
+M	compiler/msg/errore.msg
+M	compiler/msgidx.inc
+M	compiler/msgtxt.inc
+M	compiler/pdecsub.pas
+A	tests/webtbf/tw39640.pp
+
+******************************************************************************
+commit 405523ace2a9e24dcfe9f0b1b0376b33c7cf29c9
+Author: ccrause <christo.crause@gmail.com>
+Date:   Sun Mar 13 14:26:53 2022 +0200
+
+    Added test cases for AVR shift by compile time constant.
+
+M	tests/Makefile
+M	tests/Makefile.fpc
+A	tests/test/cpu8/avr/tshift_size.pp
+A	tests/test/cpu8/avr/tshift_speed.pp
+A	tests/test/cpu8/avr/ushift.pas
+
+******************************************************************************
+commit 6df2eb5fd44a69d2f9e8f663c8a4972c3cbbbb21
+Author: ccrause <christo.crause@gmail.com>
+Date:   Fri Mar 11 22:30:16 2022 +0200
+
+    Extra code generation options for shift with compile time constant.
+
+M	compiler/avr/cgcpu.pas
+
+******************************************************************************
 commit 385b271bcd6b4a8b845c89e12bdde6a48e8ba314
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Wed Mar 30 12:08:17 2022 +0200
