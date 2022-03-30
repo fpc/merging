@@ -1,4 +1,28 @@
 ******************************************************************************
+commit 385b271bcd6b4a8b845c89e12bdde6a48e8ba314
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Wed Mar 30 12:08:17 2022 +0200
+
+    pastojs: fixed searching TJSPromise in global scopes
+
+M	packages/fcl-passrc/src/pasresolver.pp
+M	packages/pastojs/src/fppas2js.pp
+M	packages/pastojs/tests/tcmodules.pas
+
+******************************************************************************
+commit 05c47722dd5bd09e8a7c3dd43fee47c0392ff873
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Wed Mar 30 11:40:13 2022 +0200
+
+    pastojs: added option ObfuscateLocalIdentifiers
+
+M	packages/pastojs/src/fppas2js.pp
+M	packages/pastojs/src/pas2jscompiler.pp
+M	packages/pastojs/src/pas2jsfiler.pp
+M	packages/pastojs/tests/tcmodules.pas
+M	packages/pastojs/tests/tcoptimizations.pas
+
+******************************************************************************
 commit 0e4188749bacc70a7d472f05053a90a1d0ee620a
 Author: florian <florian@freepascal.org>
 Date:   Tue Mar 29 22:50:00 2022 +0200
