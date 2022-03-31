@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 4994d9cab67d6be5206517e693065e41129b21fc
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Thu Mar 31 06:23:28 2022 +0000
+
+    Installer now also depends on rtl-unicode package
+
+M	installer/Makefile
+M	installer/Makefile.fpc
+
+******************************************************************************
 commit a45394d849213a0a54e3e719cfc281f11d500ec0
 Author: magorium <10467276-magorium@users.noreply.gitlab.com>
 Date:   Sun Mar 27 07:13:55 2022 +0200
