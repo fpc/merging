@@ -1,4 +1,14 @@
 ******************************************************************************
+commit a01dc282067e70f9e693e3272ba5aeb526336a3c
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Thu Mar 31 11:52:09 2022 +0200
+
+    pastojs: TJSArray([...])
+
+M	packages/pastojs/src/fppas2js.pp
+M	packages/pastojs/tests/tcmodules.pas
+
+******************************************************************************
 commit 4994d9cab67d6be5206517e693065e41129b21fc
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Thu Mar 31 06:23:28 2022 +0000
