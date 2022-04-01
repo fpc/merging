@@ -1,4 +1,15 @@
 ******************************************************************************
+commit 410c1bbaa0211b56076ede5ec0b2c9605c5cba62
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Fri Apr 1 22:09:53 2022 +0200
+
+    fcl-js: do not escape /
+
+M	packages/fcl-js/src/jswriter.pp
+M	packages/fcl-js/tests/tcwriter.pp
+M	packages/pastojs/tests/tcmodules.pas
+
+******************************************************************************
 commit cb2704dfb22c30aca8cd64b171d47e3a740f12bc
 Author: florian <florian@freepascal.org>
 Date:   Thu Mar 31 22:32:04 2022 +0200
