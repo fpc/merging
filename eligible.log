@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 0978f6ce16085662bca71344e135cad6a507ca49
+Author: florian <florian@freepascal.org>
+Date:   Fri Apr 1 23:06:21 2022 +0200
+
+      * probably check type for int_to_real instruction selection
+
+M	compiler/x86/nx86cnv.pas
+
+******************************************************************************
 commit 410c1bbaa0211b56076ede5ec0b2c9605c5cba62
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Fri Apr 1 22:09:53 2022 +0200
