@@ -1,4 +1,50 @@
 ******************************************************************************
+commit 31f74f65b082f33402f3e59ca04ed36461c0f1c7
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Apr 2 10:17:51 2022 +0200
+
+    * CGI demo for css minimizer/classname extractor
+
+A	packages/fcl-css/examples/fpcss.lpi
+A	packages/fcl-css/examples/fpcss.pp
+
+******************************************************************************
+commit 14c4a6796b35cd6efeeb84a6b6a5ea16f8221bdc
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Apr 2 10:14:36 2022 +0200
+
+    * Test for stringtoidentifier
+
+M	packages/fcl-css/tests/tccsstree.pp
+
+******************************************************************************
+commit aedb6dbacd0ee1d790c4092bef5bf46de0558c07
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Apr 2 10:14:19 2022 +0200
+
+    * Remove debug statement
+
+M	packages/fcl-css/src/fpcsstree.pp
+
+******************************************************************************
+commit 2b99abdd4df8f3aabe11d2ebe4d1fcbacf37fd5c
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Apr 2 10:07:11 2022 +0200
+
+    * Numeric chars allowed in identifier, no need to escape
+
+M	packages/fcl-css/src/fpcsstree.pp
+
+******************************************************************************
+commit 56108f479979e7dc9c10dceed5f74870e7d62c79
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Apr 2 10:06:40 2022 +0200
+
+    * Remove debug statement
+
+M	packages/fcl-css/src/fpcssutils.pp
+
+******************************************************************************
 commit 0978f6ce16085662bca71344e135cad6a507ca49
 Author: florian <florian@freepascal.org>
 Date:   Fri Apr 1 23:06:21 2022 +0200
