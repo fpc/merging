@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 727e25e93eea38a44e493722a9aa74aeb7333f6a
+Author: florian <florian@freepascal.org>
+Date:   Sat Apr 2 15:39:17 2022 +0200
+
+      * make __lib_csu* weak symbols on m68k-linux
+
+M	rtl/linux/m68k/cprt0.as
+
+******************************************************************************
 commit 3da54dcf9f87336887f592c98c0088372da876e6
 Author: Jonas Maebe <jonas@freepascal.org>
 Date:   Sat Apr 2 13:23:55 2022 +0200
