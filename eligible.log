@@ -1,4 +1,18 @@
 ******************************************************************************
+commit b1f85792d7a7aa90bc2b200d3d2db0c97875fc32
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sun Apr 3 11:12:27 2022 +0200
+
+    Symbolic constants: don't range check on in use in typed constants
+    
+    Same as 3da54dcf9f, but this type when used in type constant definitions
+    like record fiels
+
+M	compiler/ngtcon.pas
+A	tests/tbs/tb0693a.pp
+A	tests/tbs/tb0693b.pp
+
+******************************************************************************
 commit 727e25e93eea38a44e493722a9aa74aeb7333f6a
 Author: florian <florian@freepascal.org>
 Date:   Sat Apr 2 15:39:17 2022 +0200
