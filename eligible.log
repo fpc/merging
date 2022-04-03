@@ -1,4 +1,16 @@
 ******************************************************************************
+commit 9813eb9048a413d8cde171b9e2fd558da1e3a46f
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sun Apr 3 13:20:23 2022 +0200
+
+    AArch64 asm reader: add support for fpcmp(e) conditions
+    
+    Resolves #39643
+
+M	compiler/aarch64/racpugas.pas
+A	tests/webtbs/tw39643.pp
+
+******************************************************************************
 commit b1f85792d7a7aa90bc2b200d3d2db0c97875fc32
 Author: Jonas Maebe <jonas@freepascal.org>
 Date:   Sun Apr 3 11:12:27 2022 +0200
