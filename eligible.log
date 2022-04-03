@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 4e28962115ee9479d465ba00a1db6028d2badb60
+Author: florian <florian@freepascal.org>
+Date:   Sun Apr 3 23:31:50 2022 +0200
+
+      * 8086 compilation fixed
+
+M	compiler/x86/nx86cnv.pas
+
+******************************************************************************
 commit 5ce9353d58cd5ee2679dc510561ff35914329daa
 Author: florian <florian@freepascal.org>
 Date:   Sun Apr 3 23:14:41 2022 +0200
