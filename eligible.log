@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 5ce9353d58cd5ee2679dc510561ff35914329daa
+Author: florian <florian@freepascal.org>
+Date:   Sun Apr 3 23:14:41 2022 +0200
+
+      * i386: make also use of VCVTUSI2S* instruction if possible
+
+M	compiler/x86/nx86cnv.pas
+
+******************************************************************************
 commit 81d7e28a87ef6949e9bcffe214ba9e83c097f7e9
 Author: florian <florian@freepascal.org>
 Date:   Sun Apr 3 15:07:43 2022 +0200
