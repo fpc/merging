@@ -1,4 +1,31 @@
 ******************************************************************************
+commit 81d7e28a87ef6949e9bcffe214ba9e83c097f7e9
+Author: florian <florian@freepascal.org>
+Date:   Sun Apr 3 15:07:43 2022 +0200
+
+      + test for #39627, together with the last merge request it resolves #39627
+
+A	tests/webtbs/tw39627.pp
+
+******************************************************************************
+commit 96aa2bbf740e1af0e814fe6d07250fe06af9d510
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Sun Apr 3 00:41:50 2022 +0100
+
+      * [x86] Added new RefsMightOverlap method and implemented it into the XMM memory move optimisations to catch memory overlaps; fixes bug i39627
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
+commit ff64dacf259d083b728d1dece18ffe02bf8d4101
+Author: florian <florian@freepascal.org>
+Date:   Sun Apr 3 15:00:26 2022 +0200
+
+      + slowcpu define
+
+M	tests/bench/bdiv.pp
+
+******************************************************************************
 commit 9813eb9048a413d8cde171b9e2fd558da1e3a46f
 Author: Jonas Maebe <jonas@freepascal.org>
 Date:   Sun Apr 3 13:20:23 2022 +0200
