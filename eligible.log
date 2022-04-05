@@ -1,4 +1,15 @@
 ******************************************************************************
+commit 57107c331093212fa5bc0d8fc865b43755ff3f12
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Tue Apr 5 12:07:49 2022 +0200
+
+    m68k: opcode table updates based on vasm 1.9 (used with permission)
+
+M	compiler/m68k/m68kins.dat
+M	compiler/m68k/m68knop.inc
+M	compiler/m68k/m68ktab.inc
+
+******************************************************************************
 commit 6bbefcae9e4c96887653d17331b3dd616a654440
 Author: florian <florian@freepascal.org>
 Date:   Mon Apr 4 22:54:45 2022 +0200
