@@ -1,4 +1,43 @@
 ******************************************************************************
+commit 92a0640bcc6ad53326eec32db9cd8353f434e777
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Tue Feb 15 13:38:45 2022 +0000
+
+      * Local speedup in OptPass1LEA that avoids expensive calls if p and
+        hp1 are adjacent.
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
+commit 305e49c0b81b9db7872c2ff2717dbe54b92c8f3b
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Tue Feb 8 04:56:36 2022 +0000
+
+      * Some streamlining in x86's OptPass1LEA routine now that the stack
+        pointer is properly tracked, which also permits some deeper
+        optimisations on -O1 and -O2 virtually for free.
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
+commit 8120fb8b774ae89bba6a3d186e4b7723a84ed3d2
+Author: florian <florian@freepascal.org>
+Date:   Wed Apr 6 21:54:03 2022 +0200
+
+      * cosmetics
+
+M	compiler/x86/nx86cnv.pas
+
+******************************************************************************
+commit 7ff393085e3b1538a1c14f3ffcffa92a6b4a6c73
+Author: florian <florian@freepascal.org>
+Date:   Tue Apr 5 22:49:55 2022 +0200
+
+      * factored out tx86typeconvnode.int_to_real_mm_location
+
+M	compiler/x86/nx86cnv.pas
+
+******************************************************************************
 commit 57107c331093212fa5bc0d8fc865b43755ff3f12
 Author: Karoly Balogh <karoly@freepascal.org>
 Date:   Tue Apr 5 12:07:49 2022 +0200
