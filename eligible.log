@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 54dccaaad1a768d2028bdd7ecb238fe0e5415bd6
+Author: florian <florian@freepascal.org>
+Date:   Thu Apr 7 22:51:30 2022 +0200
+
+      * do not crash in case of too many $push directives, resolves #39652
+
+M	compiler/scandir.pas
+A	tests/webtbf/tw39652.pp
+
+******************************************************************************
 commit 92a0640bcc6ad53326eec32db9cd8353f434e777
 Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
 Date:   Tue Feb 15 13:38:45 2022 +0000
