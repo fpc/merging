@@ -1,4 +1,25 @@
 ******************************************************************************
+commit 815734c47a4afe7d07083757f9ed6df233762abb
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Fri Apr 8 17:40:36 2022 +0200
+
+    * fix #32034 and fix #39656: in a for-in-loop with an array constructor enforce the type of the loop variable for the elements
+    + added tests
+
+M	compiler/nflw.pas
+A	tests/webtbs/tw32034.pp
+A	tests/webtbs/tw39656.pp
+
+******************************************************************************
+commit 1180589046372dfb838bd87ce3f48b698853641f
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Fri Apr 8 16:11:49 2022 +0200
+
+    * free the placeholder for the count of the dynamic array in end_dynarray_const() and document it as such
+
+M	compiler/aasmcnst.pas
+
+******************************************************************************
 commit 54dccaaad1a768d2028bdd7ecb238fe0e5415bd6
 Author: florian <florian@freepascal.org>
 Date:   Thu Apr 7 22:51:30 2022 +0200
