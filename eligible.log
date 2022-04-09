@@ -1,4 +1,22 @@
 ******************************************************************************
+commit 35a7490ae1fb25d2baa3cf9abe37c5a8a7792eaf
+Author: florian <florian@freepascal.org>
+Date:   Sat Apr 9 21:12:28 2022 +0200
+
+      * provide __libc_csu_init and __libc_csu_fini as weak symbols
+
+M	rtl/linux/x86_64/si_c.inc
+
+******************************************************************************
+commit 191dd0c63794ef64b600f69ad6aa02781c681988
+Author: florian <florian@freepascal.org>
+Date:   Sat Apr 9 21:12:10 2022 +0200
+
+      + support .weak in the internal assembler
+
+M	compiler/assemble.pas
+
+******************************************************************************
 commit 971d7baa8a050489fe3f45db09669076d2c61b4b
 Author: florian <florian@freepascal.org>
 Date:   Fri Apr 8 22:41:25 2022 +0200
