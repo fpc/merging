@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 7ff6d7854346861f18eca51819c0dd15da72ba0f
+Author: florian <florian@freepascal.org>
+Date:   Mon Apr 11 22:22:34 2022 +0200
+
+      * mips(el)-linux: provide __libc_csu_* as weak symbols
+
+M	rtl/linux/mips/cprt0.as
+
+******************************************************************************
 commit 35a7490ae1fb25d2baa3cf9abe37c5a8a7792eaf
 Author: florian <florian@freepascal.org>
 Date:   Sat Apr 9 21:12:28 2022 +0200
