@@ -1,4 +1,16 @@
 ******************************************************************************
+commit 85c648e60318526bb63aa57dbf3c862805717606
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Mon Apr 11 22:10:48 2022 +0000
+
+     Check mf_symansistr is compatible with current compiler mode and issue a message before failing PPU loading
+
+M	compiler/fppu.pas
+M	compiler/msg/errore.msg
+M	compiler/msgidx.inc
+M	compiler/msgtxt.inc
+
+******************************************************************************
 commit 7ff6d7854346861f18eca51819c0dd15da72ba0f
 Author: florian <florian@freepascal.org>
 Date:   Mon Apr 11 22:22:34 2022 +0200
