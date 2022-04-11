@@ -1,13 +1,4 @@
 ******************************************************************************
-commit a20a7e3497bccf3415bf47ccc55f133eb9d6d6a0
-Author: florian <florian@freepascal.org>
-Date:   Sun Apr 10 23:19:34 2022 +0200
-
-      * define __libc_csu_* symbols as weak symbols on aarch64-linux
-
-M	rtl/linux/aarch64/cprt0.as
-
-******************************************************************************
 commit 35a7490ae1fb25d2baa3cf9abe37c5a8a7792eaf
 Author: florian <florian@freepascal.org>
 Date:   Sat Apr 9 21:12:28 2022 +0200
