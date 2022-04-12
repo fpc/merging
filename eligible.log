@@ -1,4 +1,13 @@
 ******************************************************************************
+commit d748bb6630dd628f6ee6859c60b4b373693eeb20
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Tue Apr 12 10:56:35 2022 +0200
+
+    pas2js: removed translation.html, it is now on the wiki https://wiki.freepascal.org/Pas2js_Transpiler
+
+D	utils/pas2js/docs/translation.html
+
+******************************************************************************
 commit 85c648e60318526bb63aa57dbf3c862805717606
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Mon Apr 11 22:10:48 2022 +0000
