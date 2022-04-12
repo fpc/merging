@@ -1,4 +1,15 @@
 ******************************************************************************
+commit 4c5fc2f9588bff0a009e4201218cd99ef7a8229e
+Author: florian <florian@freepascal.org>
+Date:   Tue Apr 12 17:35:51 2022 +0200
+
+      * patch by Rika: avoid that capacity of TQueue grows to much for certain
+        usage patterns, resolves #39662
+
+M	packages/rtl-generics/src/generics.collections.pas
+A	tests/webtbs/tw39662.pp
+
+******************************************************************************
 commit d748bb6630dd628f6ee6859c60b4b373693eeb20
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Tue Apr 12 10:56:35 2022 +0200
