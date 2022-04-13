@@ -1,4 +1,26 @@
 ******************************************************************************
+commit a939c0ccd48aa8502c347fc9cf39220d1db992c6
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Mon Apr 11 09:33:17 2022 +0000
+
+    Add several tests for 127 max ID length, related to bug report #39661
+
+A	tests/webtbs/tw39661a.pp
+A	tests/webtbs/tw39661b.pp
+A	tests/webtbs/tw39661c.pp
+A	tests/webtbs/tw39661d.pp
+A	tests/webtbs/tw39661e.pp
+
+******************************************************************************
+commit 379c1414a7088019cd71b98ea36353e65bd9e8f5
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Mon Apr 11 09:24:41 2022 +0000
+
+    Fix for bug report #39661
+
+M	compiler/symbase.pas
+
+******************************************************************************
 commit 4c5fc2f9588bff0a009e4201218cd99ef7a8229e
 Author: florian <florian@freepascal.org>
 Date:   Tue Apr 12 17:35:51 2022 +0200
