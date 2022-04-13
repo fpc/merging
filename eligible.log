@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 62f21ae60dfaa4dc6f37972a03ca9acf33d0b8d1
+Author: florian <florian@freepascal.org>
+Date:   Wed Apr 13 21:31:03 2022 +0200
+
+      + recurse into multiple subscription nodes when calculating contant @... expressions, resolves #39665
+
+M	compiler/nmem.pas
+A	tests/webtbs/tw39665.pp
+
+******************************************************************************
 commit a939c0ccd48aa8502c347fc9cf39220d1db992c6
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Mon Apr 11 09:33:17 2022 +0000
