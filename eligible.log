@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 43b4b343950aa11420fac1471c4d3a647541f2de
+Author: florian <florian@freepascal.org>
+Date:   Thu Apr 14 17:06:15 2022 +0200
+
+      * disallow offsetof trick for types involving implicit dereferences, resolves #39667 partially
+
+M	compiler/nmem.pas
+A	tests/webtbf/tw39667.pp
+
+******************************************************************************
 commit 62f21ae60dfaa4dc6f37972a03ca9acf33d0b8d1
 Author: florian <florian@freepascal.org>
 Date:   Wed Apr 13 21:31:03 2022 +0200
