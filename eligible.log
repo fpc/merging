@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 366d1332d18eece8de310aef2b9bb7af07d12e7d
+Author: florian <florian@freepascal.org>
+Date:   Sat Apr 16 21:40:33 2022 +0200
+
+      * nicer casing
+
+M	compiler/systems/i_embed.pas
+
+******************************************************************************
 commit 43b4b343950aa11420fac1471c4d3a647541f2de
 Author: florian <florian@freepascal.org>
 Date:   Thu Apr 14 17:06:15 2022 +0200
