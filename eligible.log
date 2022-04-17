@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 143c2ec232764523ba89d003169f6fede138feeb
+Author: florian <florian@freepascal.org>
+Date:   Sun Apr 17 21:25:51 2022 +0200
+
+      * powerpc-linux: provide also local __libc_csu_* routines
+
+M	rtl/linux/powerpc/cprt0.as
+
+******************************************************************************
 commit 366d1332d18eece8de310aef2b9bb7af07d12e7d
 Author: florian <florian@freepascal.org>
 Date:   Sat Apr 16 21:40:33 2022 +0200
