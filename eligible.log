@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 24570166711ac268f6fb55ad6f08d775ce686356
+Author: marcoonthegit <marco@freepascal.org>
+Date:   Mon Apr 18 21:23:10 2022 +0200
+
+    * TStringlist constructor with ownsobjects parameter, Delphi compatible + empty constructor to avoid compiler getting confused
+
+M	rtl/objpas/classes/classesh.inc
+M	rtl/objpas/classes/stringl.inc
+
+******************************************************************************
 commit 143c2ec232764523ba89d003169f6fede138feeb
 Author: florian <florian@freepascal.org>
 Date:   Sun Apr 17 21:25:51 2022 +0200
