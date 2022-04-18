@@ -1,4 +1,22 @@
 ******************************************************************************
+commit ee3b5f5a62f09a33031f5276351bb1877ba83b5a
+Author: florian <florian@freepascal.org>
+Date:   Mon Apr 18 23:27:34 2022 +0200
+
+      * x86_64: do not use copy_mm in g_concatcopy for 8 byte sized copies
+
+M	compiler/x86/cgx86.pas
+
+******************************************************************************
+commit 2f1eb9be18338485bd807dd03ea602d41948cf6d
+Author: florian <florian@freepascal.org>
+Date:   Mon Apr 18 23:22:47 2022 +0200
+
+      * support R_SUBMMX in spilling_create_store, resolves #39672
+
+M	compiler/x86/aasmcpu.pas
+
+******************************************************************************
 commit 24570166711ac268f6fb55ad6f08d775ce686356
 Author: marcoonthegit <marco@freepascal.org>
 Date:   Mon Apr 18 21:23:10 2022 +0200
