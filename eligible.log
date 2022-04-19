@@ -1,4 +1,24 @@
 ******************************************************************************
+commit fab610a92770b9e5c3cbc8427c88fa770821e414
+Author: florian <florian@freepascal.org>
+Date:   Tue Apr 19 22:34:56 2022 +0200
+
+      * call OptPass1_V_MOVAP for MOVDQA on i386
+
+M	compiler/i386/aoptcpu.pas
+
+******************************************************************************
+commit 4808ed63e3717bd68a3e1fe0c5bcf63463016e0d
+Author: florian <florian@freepascal.org>
+Date:   Tue Apr 19 22:16:09 2022 +0200
+
+     * use MOVDQA instead of MOVQ in spilling_create_store
+     * call OptPass1_V_MOVAP for MOVDQA
+
+M	compiler/x86/aasmcpu.pas
+M	compiler/x86_64/aoptcpu.pas
+
+******************************************************************************
 commit 862cffa0875e7c61e5e9b1fe3e31c75fb0f6f370
 Author: Sven/Sarah Barth <pascaldragon@gmail.com>
 Date:   Tue Apr 19 14:22:26 2022 +0200
