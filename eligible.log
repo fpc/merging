@@ -1,4 +1,24 @@
 ******************************************************************************
+commit 862cffa0875e7c61e5e9b1fe3e31c75fb0f6f370
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Tue Apr 19 14:22:26 2022 +0200
+
+    * have the unsigned 32-bit overload of IntToHex use the signed 32-bit one to avoid usage of 64-bit arithmetic (and parameter passing) when it can be avoided
+
+M	rtl/objpas/sysutils/sysstr.inc
+
+******************************************************************************
+commit d32134dd1a0b52525a3dbb6c5083b8d6e90647d2
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Tue Apr 19 14:21:26 2022 +0200
+
+    * fix #39664: ensure that the 8- and 16-bit signed overloads of IntToHex return the correct number of digits
+    + added test
+
+M	rtl/objpas/sysutils/sysstr.inc
+A	tests/webtbs/tw39664.pp
+
+******************************************************************************
 commit ee3b5f5a62f09a33031f5276351bb1877ba83b5a
 Author: florian <florian@freepascal.org>
 Date:   Mon Apr 18 23:27:34 2022 +0200
