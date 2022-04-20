@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 02289d1f5b986c96b0843110de46a143500f4c79
+Author: florian <florian@freepascal.org>
+Date:   Wed Apr 20 22:15:25 2022 +0200
+
+      + fold "a shl n1 shl n2" and "a shr n1 shr n2" into "a shl (n1+n2)" and "a shr (n1+n2)", resolves #39629
+
+M	compiler/nmat.pas
+
+******************************************************************************
 commit adb264a7118da122c9277409df70703634551055
 Author: Ondrej Pokorny <ondrej@kluug.net>
 Date:   Wed Apr 20 18:35:03 2022 +0000
