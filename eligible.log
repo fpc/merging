@@ -1,4 +1,62 @@
 ******************************************************************************
+commit 90844c2027e078fcc1ff6b8d3df911a77bac2ed3
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Fri Apr 1 17:21:20 2022 +0200
+
+    * fix #35261: apply slightly adjusted changes by Ryan Joseph to implement support for implicit generic function specializations
+    
+    The main adjustments were as follows:
+      - fixing coding style and identation
+      - fixing some typos
+      - using a better name for the property in tcallcandidates which holds the symbols created for anonymous parameter values
+
+M	compiler/defutil.pas
+M	compiler/globtype.pas
+M	compiler/htypechk.pas
+M	compiler/ncal.pas
+M	compiler/nld.pas
+M	compiler/pgenutil.pas
+M	compiler/symdef.pas
+M	compiler/symsym.pas
+M	compiler/symtable.pas
+M	compiler/utils/ppuutils/ppudump.pp
+A	tests/test/timpfuncspez1.pp
+A	tests/test/timpfuncspez10.pp
+A	tests/test/timpfuncspez11.pp
+A	tests/test/timpfuncspez12.pp
+A	tests/test/timpfuncspez13.pp
+A	tests/test/timpfuncspez14.pp
+A	tests/test/timpfuncspez15.pp
+A	tests/test/timpfuncspez16.pp
+A	tests/test/timpfuncspez17.pp
+A	tests/test/timpfuncspez18.pp
+A	tests/test/timpfuncspez19.pp
+A	tests/test/timpfuncspez2.pp
+A	tests/test/timpfuncspez20.pp
+A	tests/test/timpfuncspez21.pp
+A	tests/test/timpfuncspez22.pp
+A	tests/test/timpfuncspez23.pp
+A	tests/test/timpfuncspez24.pp
+A	tests/test/timpfuncspez25.pp
+A	tests/test/timpfuncspez26.pp
+A	tests/test/timpfuncspez27.pp
+A	tests/test/timpfuncspez28.pp
+A	tests/test/timpfuncspez29.pp
+A	tests/test/timpfuncspez3.pp
+A	tests/test/timpfuncspez30.pp
+A	tests/test/timpfuncspez31.pp
+A	tests/test/timpfuncspez32.pp
+A	tests/test/timpfuncspez33.pp
+A	tests/test/timpfuncspez34.pp
+A	tests/test/timpfuncspez35.pp
+A	tests/test/timpfuncspez4.pp
+A	tests/test/timpfuncspez5.pp
+A	tests/test/timpfuncspez6.pp
+A	tests/test/timpfuncspez7.pp
+A	tests/test/timpfuncspez8.pp
+A	tests/test/timpfuncspez9.pp
+
+******************************************************************************
 commit fab610a92770b9e5c3cbc8427c88fa770821e414
 Author: florian <florian@freepascal.org>
 Date:   Tue Apr 19 22:34:56 2022 +0200
