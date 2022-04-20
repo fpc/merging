@@ -1,4 +1,13 @@
 ******************************************************************************
+commit adb264a7118da122c9277409df70703634551055
+Author: Ondrej Pokorny <ondrej@kluug.net>
+Date:   Wed Apr 20 18:35:03 2022 +0000
+
+    db odbcconn: error messages received through SQLGetDiagRec are ANSI - convert them to CP_ACP
+
+M	packages/fcl-db/src/sqldb/odbc/odbcconn.pas
+
+******************************************************************************
 commit 90844c2027e078fcc1ff6b8d3df911a77bac2ed3
 Author: Sven/Sarah Barth <pascaldragon@gmail.com>
 Date:   Fri Apr 1 17:21:20 2022 +0200
