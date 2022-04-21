@@ -1,4 +1,14 @@
 ******************************************************************************
+commit ee7cbb61a0e1a6d282206819832981d89bcae634
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Thu Apr 21 23:08:19 2022 +0200
+
+    fcl-passrc: resolver: fixed call generic function with anonymous specialize function type
+
+M	packages/fcl-passrc/src/pasresolver.pp
+M	packages/fcl-passrc/tests/tcresolvegenerics.pas
+
+******************************************************************************
 commit 559fcdf73611ccba421b988237b062ed84a5e287
 Author: florian <florian@freepascal.org>
 Date:   Thu Apr 21 20:02:46 2022 +0200
