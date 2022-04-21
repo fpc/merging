@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 59672a698267ca16ea8812f4acf932f127cc7bc0
+Author: Bi0T1N <9175580-Bi0T1N@users.noreply.gitlab.com>
+Date:   Mon Apr 18 15:25:42 2022 +0200
+
+    Add support for OpenSSL 3.0
+
+M	packages/openssl/src/openssl.pas
+
+******************************************************************************
 commit 02289d1f5b986c96b0843110de46a143500f4c79
 Author: florian <florian@freepascal.org>
 Date:   Wed Apr 20 22:15:25 2022 +0200
