@@ -1,4 +1,13 @@
 ******************************************************************************
+commit b1d9d34665ce1f26bc1b95a87ab085a6bb3530ad
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Thu Apr 21 18:01:30 2022 +0200
+
+    * only abort due to a missing overload directive if there indeed was any procdef found (due to implicit specializations there might be none), fixes compilation of tests webtbs/tw38310b and webtbs/tw38310c
+
+M	compiler/htypechk.pas
+
+******************************************************************************
 commit 59672a698267ca16ea8812f4acf932f127cc7bc0
 Author: Bi0T1N <9175580-Bi0T1N@users.noreply.gitlab.com>
 Date:   Mon Apr 18 15:25:42 2022 +0200
