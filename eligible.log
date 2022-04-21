@@ -1,4 +1,17 @@
 ******************************************************************************
+commit 559fcdf73611ccba421b988237b062ed84a5e287
+Author: florian <florian@freepascal.org>
+Date:   Thu Apr 21 20:02:46 2022 +0200
+
+      * forbid cyclic pointer definitions, resolves #39634
+
+M	compiler/msg/errore.msg
+M	compiler/msgidx.inc
+M	compiler/msgtxt.inc
+M	compiler/ptype.pas
+A	tests/webtbf/tw39634.pp
+
+******************************************************************************
 commit b1d9d34665ce1f26bc1b95a87ab085a6bb3530ad
 Author: Sven/Sarah Barth <pascaldragon@gmail.com>
 Date:   Thu Apr 21 18:01:30 2022 +0200
