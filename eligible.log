@@ -1,4 +1,17 @@
 ******************************************************************************
+commit 6556d18bed27361321c0a2df91a1a6e126db2b36
+Author: florian <florian@freepascal.org>
+Date:   Fri Apr 22 22:08:20 2022 +0200
+
+      * better fix for #39634 which avoids breaking existing code
+
+M	compiler/defcmp.pas
+M	compiler/msg/errore.msg
+M	compiler/msgidx.inc
+M	compiler/msgtxt.inc
+M	compiler/ptype.pas
+
+******************************************************************************
 commit 97c16401f76ced3f0411d8f314acc4415bea24c1
 Author: Sven/Sarah Barth <pascaldragon@gmail.com>
 Date:   Thu Apr 21 22:30:30 2022 +0200
