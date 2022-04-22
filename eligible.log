@@ -1,4 +1,91 @@
 ******************************************************************************
+commit 97c16401f76ced3f0411d8f314acc4415bea24c1
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Thu Apr 21 22:30:30 2022 +0200
+
+    + add test for already fixed #39677
+
+A	tests/webtbs/tw39677.pp
+A	tests/webtbs/uw39677a.pp
+A	tests/webtbs/uw39677b.pp
+
+******************************************************************************
+commit 22a4cc66ec7dc79315a0f63d27d2ab003f7777f1
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Thu Apr 21 22:21:04 2022 +0200
+
+    * fix #39675: consider the symbols for unnamed parameters as used so that there won't be unnecessary hints about them
+    + added test
+
+M	compiler/pgenutil.pas
+A	tests/webtbs/tw39675.pp
+
+******************************************************************************
+commit 76753438edfdbf29d3c12c6793ee5ab9663eedde
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Thu Apr 21 22:09:43 2022 +0200
+
+    * fix #39681: also handle the result type of a specialized procvar when checking for a possible implicit specialization
+    + added test
+
+M	compiler/pgenutil.pas
+A	tests/webtbs/tw39681.pp
+
+******************************************************************************
+commit c0fa45dc922b2ee1fbf6d63782e50f8b46c162e5
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Thu Apr 21 22:01:02 2022 +0200
+
+    * a function can't be used to implicitely specialize a specialized procedure variable parameter and vice versa
+    + added test
+
+M	compiler/pgenutil.pas
+A	tests/test/timpfuncspez37.pp
+
+******************************************************************************
+commit a5f3040da528a76bf21187f647e15c24c82d980b
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Thu Apr 21 21:57:36 2022 +0200
+
+    * the index of the generic type parameter is not the same index of the paras list
+    + added test
+
+M	compiler/pgenutil.pas
+A	tests/test/timpfuncspez36.pp
+
+******************************************************************************
+commit 66bac7c415966d5531b9b1f020147b522740040b
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Thu Apr 21 21:33:31 2022 +0200
+
+    * fix #39679 and fix #39680: for implicit specializations a parameter used in a call might also inherit in some depth from a specialization used as parameter type
+    + added tests
+
+M	compiler/pgenutil.pas
+A	tests/webtbs/tw39679.pp
+A	tests/webtbs/tw39680.pp
+
+******************************************************************************
+commit 4053d59a2c9745af6f84fbca70293cae81a05006
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Thu Apr 21 21:04:25 2022 +0200
+
+    * fix #39673: also resolve the dummy symbol in case this isn't a reuse of the current generic's name
+    + added test
+
+M	compiler/ptype.pas
+A	tests/webtbs/tw39673.pp
+
+******************************************************************************
+commit 98a942a37e4d19a3c85f03c3fcc01f907abe3ef2
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Thu Apr 21 21:02:31 2022 +0200
+
+    * move handling of a dummy symbol (mainly either resolving it or generating a suitable error) inside single_type to a nested function as the same code is used multiple times
+
+M	compiler/ptype.pas
+
+******************************************************************************
 commit ee7cbb61a0e1a6d282206819832981d89bcae634
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Thu Apr 21 23:08:19 2022 +0200
