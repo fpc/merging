@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 876ae561585c22b9809764710f11b9a88da935ee
+Author: florian <florian@freepascal.org>
+Date:   Sat Apr 23 21:50:42 2022 +0200
+
+      * patch by Rika: fix for ... in iterator for TMap and TSet, resolves #39354
+
+M	packages/fcl-stl/src/gmap.pp
+A	tests/webtbs/tw39354.pp
+
+******************************************************************************
 commit 616538c2516640df33ac17702a0d5b957b69e445
 Author: marcoonthegit <marco@freepascal.org>
 Date:   Sat Apr 23 17:55:39 2022 +0200
