@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 616538c2516640df33ac17702a0d5b957b69e445
+Author: marcoonthegit <marco@freepascal.org>
+Date:   Sat Apr 23 17:55:39 2022 +0200
+
+    * Improve Delphi compatibility of TEvent(object) constructors, while keeping also backwards compat by adding default parameters.
+
+M	packages/fcl-base/src/syncobjs.pp
+
+******************************************************************************
 commit 74f95238064736efc2e83d349a712b8140f566e8
 Author: Sven/Sarah Barth <pascaldragon@gmail.com>
 Date:   Sat Apr 23 15:51:11 2022 +0200
