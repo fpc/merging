@@ -1,4 +1,24 @@
 ******************************************************************************
+commit 74f95238064736efc2e83d349a712b8140f566e8
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Sat Apr 23 15:51:11 2022 +0200
+
+    * in case of an implicit specialization ensure that the symbol of the generic is indeed considered as used once the final implicit specialization has been picked
+    + added test
+
+M	compiler/ncal.pas
+A	tests/webtbs/tw39684.pp
+
+******************************************************************************
+commit e0e8620deda3a3b67df3a99a1f7b9951db533d33
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Sat Apr 23 15:40:22 2022 +0200
+
+    * use a single if-condition for both check_hints and addsymref
+
+M	compiler/ncal.pas
+
+******************************************************************************
 commit 6556d18bed27361321c0a2df91a1a6e126db2b36
 Author: florian <florian@freepascal.org>
 Date:   Fri Apr 22 22:08:20 2022 +0200
