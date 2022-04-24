@@ -1,4 +1,13 @@
 ******************************************************************************
+commit bdd26766ed25c0cc6b9dd83861d2f3dadbbb2022
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Mon Apr 18 18:32:44 2022 +0100
+
+      * Changed -1 to $FFFFFFFF on DWord writes to suppress range check errors
+
+M	packages/chm/src/chmwriter.pas
+
+******************************************************************************
 commit f62ffa74dc5eed4acd756d59cb891a3bf49f4eb0
 Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
 Date:   Tue Apr 19 14:20:45 2022 +0100
