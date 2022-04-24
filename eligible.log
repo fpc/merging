@@ -1,4 +1,32 @@
 ******************************************************************************
+commit 9695dba4d98dcadab0fd972ed9b5b20d3323781f
+Author: florian <florian@freepascal.org>
+Date:   Sun Apr 24 22:42:09 2022 +0200
+
+      * AVR: fix TCpuAsmOptimizer.InstructionLoadsFromReg for MOVW
+      * simplify code for MovMov2Movw optimization
+
+M	compiler/avr/aoptcpu.pas
+
+******************************************************************************
+commit 49edb0b60641bd52de8dddb80b687197c35b6f1e
+Author: florian <florian@freepascal.org>
+Date:   Sun Apr 24 22:41:10 2022 +0200
+
+      * AVR: fix TAoptBaseCpu.RegModifiedByInstruction, resolves #39623
+
+M	compiler/avr/aoptcpub.pas
+
+******************************************************************************
+commit e87c52d7dc87eb53a11e91e2b27f55abbc03cc85
+Author: florian <florian@freepascal.org>
+Date:   Sun Apr 24 22:40:07 2022 +0200
+
+      * otherwise => else
+
+M	compiler/avr/cgcpu.pas
+
+******************************************************************************
 commit fc6d55872708c1d8f6a6b63caf58e9a8e452e86b
 Author: florian <florian@freepascal.org>
 Date:   Sun Apr 24 21:38:41 2022 +0200
