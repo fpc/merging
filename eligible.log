@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 3fac3996839bd40587fa0dce1ed747cb029af551
+Author: florian <florian@freepascal.org>
+Date:   Sun Apr 24 14:41:06 2022 +0200
+
+      * more precise test as suggested here: https://gitlab.com/freepascal.org/fpc/source/-/commit/876ae561585c22b9809764710f11b9a88da935ee#note_921869640
+
+M	tests/webtbs/tw39354.pp
+
+******************************************************************************
 commit 876ae561585c22b9809764710f11b9a88da935ee
 Author: florian <florian@freepascal.org>
 Date:   Sat Apr 23 21:50:42 2022 +0200
