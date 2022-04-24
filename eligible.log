@@ -1,4 +1,17 @@
 ******************************************************************************
+commit fc6d55872708c1d8f6a6b63caf58e9a8e452e86b
+Author: florian <florian@freepascal.org>
+Date:   Sun Apr 24 21:38:41 2022 +0200
+
+      * compile always with -CX -XX for Z80
+
+M	Makefile
+M	rtl/Makefile
+M	rtl/zxspectrum/Makefile
+M	utils/fpcm/fpcmake.inc
+M	utils/fpcm/fpcmake.ini
+
+******************************************************************************
 commit bdd26766ed25c0cc6b9dd83861d2f3dadbbb2022
 Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
 Date:   Mon Apr 18 18:32:44 2022 +0100
