@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 33eef1f9b12f4063fb7c93c01f4b184f0e1e4ee7
+Author: florian <florian@freepascal.org>
+Date:   Mon Apr 25 22:12:59 2022 +0200
+
+      * AVR: moved MovMov2Movw optimization into pass2 as it might prevent other optimizations
+
+M	compiler/avr/aoptcpu.pas
+
+******************************************************************************
 commit c203097ec2b68fa7b8374797e379ae4351cea575
 Author: marcoonthegit <marco@freepascal.org>
 Date:   Mon Apr 25 14:07:43 2022 +0200
