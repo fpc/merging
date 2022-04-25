@@ -1,4 +1,13 @@
 ******************************************************************************
+commit c203097ec2b68fa7b8374797e379ae4351cea575
+Author: marcoonthegit <marco@freepascal.org>
+Date:   Mon Apr 25 14:07:43 2022 +0200
+
+    * add overload to getenvironmentvariable so that it is also found when windows is before sysutils in the uses list.  bug #39448
+
+M	rtl/objpas/sysutils/osutilsh.inc
+
+******************************************************************************
 commit 9695dba4d98dcadab0fd972ed9b5b20d3323781f
 Author: florian <florian@freepascal.org>
 Date:   Sun Apr 24 22:42:09 2022 +0200
