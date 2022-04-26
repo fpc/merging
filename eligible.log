@@ -1,4 +1,44 @@
 ******************************************************************************
+commit 78fba07415e9caf09604ea3019ba2b4e0db0223e
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Tue Apr 26 13:22:00 2022 +0200
+
+    fcl-web: gitignore
+
+A	packages/fcl-web/tests/.gitignore
+
+******************************************************************************
+commit 3c5ad4eadf5afe1fd9afbce8793142d51f2a615c
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Tue Apr 26 13:21:50 2022 +0200
+
+    fcl-web: updated lpi
+
+M	packages/fcl-web/tests/cgigateway.lpi
+M	packages/fcl-web/tests/fpcunithpack.lpi
+M	packages/fcl-web/tests/testcgiapp.lpi
+M	packages/fcl-web/tests/testfpweb.lpi
+
+******************************************************************************
+commit bf2d0853b60de40b69dbb0efad3617bfb8d2c67d
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Tue Apr 26 13:17:34 2022 +0200
+
+    fcl-web: fixed compile tcjwt
+
+M	packages/fcl-web/tests/tcjwt.pp
+
+******************************************************************************
+commit c2e9642b278acc80cfce2232e8d97d439e88b6f5
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Tue Apr 26 12:59:30 2022 +0200
+
+    fcl-hash: gitignore testhash
+
+A	packages/fcl-hash/tests/.gitignore
+M	packages/fcl-hash/tests/testhash.lpi
+
+******************************************************************************
 commit d309b77b59612157a5a729170791cd9153599be5
 Author: marcoonthegit <marco@freepascal.org>
 Date:   Tue Apr 26 14:49:05 2022 +0200
