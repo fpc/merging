@@ -1,4 +1,61 @@
 ******************************************************************************
+commit d309b77b59612157a5a729170791cd9153599be5
+Author: marcoonthegit <marco@freepascal.org>
+Date:   Tue Apr 26 14:49:05 2022 +0200
+
+    * header added remaining files for bug #39481
+
+M	packages/fcl-res/src/rcparserfn.inc
+M	packages/fcl-res/src/yyinclude.pp
+M	packages/fcl-res/src/yypreproc.pp
+M	packages/fcl-web/src/base/cgiprotocol.pp
+M	packages/fcl-web/src/base/custapache.pp
+M	packages/fcl-web/src/base/custapache24.pp
+M	packages/fcl-web/src/base/fphttpstatus.pas
+M	packages/fcl-web/src/base/httpprotocol.pp
+M	packages/fcl-web/src/base/webpage.pp
+M	packages/fcl-web/src/hpack/uhpackimp.pp
+M	packages/fcl-web/src/hpack/uhpacktables.pp
+M	packages/fcl-web/src/restbridge/sqldbrestmodule.pp
+M	packages/fcl-web/src/webdata/extjsjson.pp
+M	packages/fcl-web/src/webdata/extjsxml.pp
+M	packages/fcl-web/src/webdata/fpextjs.pp
+M	packages/fcl-web/src/webdata/fpwebdata.pp
+M	packages/fcl-web/src/webdata/sqldbwebdata.pp
+M	packages/fpgtk/src/def/objectdef.pp
+M	packages/fpgtk/src/editor/buttonrow.pp
+M	packages/fpgtk/src/editor/finddlgs.pp
+M	packages/fpgtk/src/editor/gtkeditor.pp
+M	packages/fpgtk/src/editor/settingsrec.pp
+M	packages/fpgtk/src/editor/xpms.pp
+M	packages/fpgtk/src/fpglib.pp
+M	packages/fpgtk/src/fpgtk.pp
+M	packages/fpgtk/src/fpgtkext.pp
+M	packages/fppkg/src/pkgcommands.pp
+M	packages/fppkg/src/pkgdownload.pp
+M	packages/fppkg/src/pkgfphttp.pp
+M	packages/fppkg/src/pkgfpmake.pp
+M	packages/fppkg/src/pkgfppkg.pp
+M	packages/fppkg/src/pkgglobals.pp
+M	packages/fppkg/src/pkghandler.pp
+M	packages/fppkg/src/pkgmessages.pp
+M	packages/fppkg/src/pkgmkconv.pp
+M	packages/fppkg/src/pkgoptions.pp
+M	packages/fppkg/src/pkgpackagesstructure.pp
+M	packages/fppkg/src/pkgrepos.pp
+M	packages/fppkg/src/pkguninstalledsrcsrepo.pp
+M	packages/fppkg/src/pkgwget.pp
+M	packages/fv/src/colorsel.pas
+M	packages/fv/src/colortxt.pas
+M	packages/fv/src/editors.pas
+M	packages/fv/src/inplong.inc
+M	packages/fv/src/inplong.pas
+M	packages/fv/src/outline.inc
+M	packages/fv/src/outline.pas
+M	packages/fv/src/str.inc
+M	packages/fv/src/strtxt.inc
+
+******************************************************************************
 commit 476a4f0f91f1b98692124417815f4f2852d48335
 Author: marcoonthegit <marco@freepascal.org>
 Date:   Tue Apr 26 11:17:33 2022 +0200
