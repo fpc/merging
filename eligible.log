@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 045b938dfa801a251b7d5cbc5e4b09de781064a4
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Tue Apr 26 17:47:29 2022 +0200
+
+    * Add storage specifier for params
+
+M	packages/fcl-db/src/sqldb/sqldb.pp
+
+******************************************************************************
 commit 78fba07415e9caf09604ea3019ba2b4e0db0223e
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Tue Apr 26 13:22:00 2022 +0200
