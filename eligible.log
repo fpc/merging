@@ -1,4 +1,99 @@
 ******************************************************************************
+commit 476a4f0f91f1b98692124417815f4f2852d48335
+Author: marcoonthegit <marco@freepascal.org>
+Date:   Tue Apr 26 11:17:33 2022 +0200
+
+    * fix headers other packages up to (but not including) fcl-res (which are generated files)   bug #39481
+
+M	packages/fcl-fpcunit/src/DUnitCompatibleInterface.inc
+M	packages/fcl-fpcunit/src/digesttestreport.pp
+M	packages/fcl-image/tests/tcbarcodes.pas
+M	packages/fcl-json/src/fpjsonrtti.pp
+M	packages/fcl-json/src/jsonini.pp
+M	packages/fcl-net/src/amiga/resolve.inc
+M	packages/fcl-net/src/aros/resolve.inc
+M	packages/fcl-net/src/sslbase.pp
+M	packages/fcl-net/src/unix/resolve.inc
+M	packages/fcl-net/src/win/resolve.inc
+M	packages/fcl-passrc/src/passrcutil.pp
+M	packages/fcl-pdf/src/fontmetrics_stdpdf.inc
+M	packages/fcl-process/src/amicommon/process.inc
+M	packages/fcl-process/src/amicommon/simpleipc.inc
+M	packages/fcl-process/src/dummy/process.inc
+M	packages/fcl-registry/src/regdef.inc
+M	packages/fcl-registry/src/regini.inc
+M	packages/fcl-registry/src/registry.pp
+M	packages/fcl-registry/src/winreg.inc
+M	packages/fcl-registry/src/xmlreg.pp
+M	packages/fcl-registry/src/xregreg.inc
+M	packages/fcl-report/src/fpreportdata.pp
+M	packages/fcl-report/src/fpreportdatacsv.pp
+M	packages/fcl-report/src/fpreportdatadbf.pp
+M	packages/fcl-report/src/fpreportdatajson.pp
+M	packages/fcl-report/src/fpreporthtmlutil.pp
+M	packages/fcl-report/test/tcbasereport.pp
+M	packages/fcl-report/test/tchtmlparser.pas
+M	packages/fcl-report/test/tcreportdom.pp
+M	packages/fcl-report/test/tcreportgenerator.pas
+M	packages/fcl-report/test/tcreportstreamer.pp
+
+******************************************************************************
+commit afcf3e5201bf7e99e1f06d8f0319da338e700805
+Author: marcoonthegit <marco@freepascal.org>
+Date:   Tue Apr 26 10:59:44 2022 +0200
+
+    * Added headers (bug #39481) for fcl-db.
+
+M	packages/fcl-db/src/base/bufdataset_parser.pp
+M	packages/fcl-db/src/base/datasource.inc
+M	packages/fcl-db/src/base/dbcoll.pp
+M	packages/fcl-db/src/base/dsparams.inc
+M	packages/fcl-db/src/base/fieldmap.pp
+M	packages/fcl-db/src/base/sqltypes.pp
+M	packages/fcl-db/src/codegen/fpcgfieldmap.pp
+M	packages/fcl-db/src/codegen/fpcgtypesafedataset.pp
+M	packages/fcl-db/src/codegen/fpddpopcode.pp
+M	packages/fcl-db/src/dbase/dbf.pas
+M	packages/fcl-db/src/dbase/dbf_avl.pas
+M	packages/fcl-db/src/dbase/dbf_collate.pas
+M	packages/fcl-db/src/dbase/dbf_common.inc
+M	packages/fcl-db/src/dbase/dbf_cursor.pas
+M	packages/fcl-db/src/dbase/dbf_dbffile.pas
+M	packages/fcl-db/src/dbase/dbf_fields.pas
+M	packages/fcl-db/src/dbase/dbf_idxcur.pas
+M	packages/fcl-db/src/dbase/dbf_idxfile.pas
+M	packages/fcl-db/src/dbase/dbf_lang.pas
+M	packages/fcl-db/src/dbase/dbf_memo.pas
+M	packages/fcl-db/src/dbase/dbf_parser.pas
+M	packages/fcl-db/src/dbase/dbf_pgcfile.pas
+M	packages/fcl-db/src/dbase/dbf_pgfile.pas
+M	packages/fcl-db/src/dbase/dbf_prsdef.pas
+M	packages/fcl-db/src/dbase/dbf_prssupp.pas
+M	packages/fcl-db/src/dbase/dbf_struct.inc
+M	packages/fcl-db/src/dbase/dbf_wnix.inc
+M	packages/fcl-db/src/dbase/dbf_wos2.inc
+M	packages/fcl-db/src/dbase/dbf_wtil.pas
+M	packages/fcl-db/src/export/fpcsvexport.pp
+M	packages/fcl-db/src/export/fpdbexport.pp
+M	packages/fcl-db/src/export/fpdbfexport.pp
+M	packages/fcl-db/src/export/fpfixedexport.pp
+M	packages/fcl-db/src/export/fprtfexport.pp
+M	packages/fcl-db/src/export/fpsimplejsonexport.pp
+M	packages/fcl-db/src/export/fpsimplexmlexport.pp
+M	packages/fcl-db/src/export/fpsqlexport.pp
+M	packages/fcl-db/src/export/fptexexport.pp
+M	packages/fcl-db/src/json/extjsdataset.pp
+M	packages/fcl-db/src/json/fpjsondataset.pp
+M	packages/fcl-db/src/sqldb/interbase/ibconnection.pp
+M	packages/fcl-db/src/sqldb/mysql/mysqlconn.inc
+M	packages/fcl-db/src/sqldb/postgres/pqconnection.pp
+M	packages/fcl-db/src/sqldb/sqldbini.pp
+M	packages/fcl-db/src/sqldb/sqldblib.pp
+M	packages/fcl-db/src/sqlite/browseds.pas
+M	packages/fcl-db/src/sqlite/fillds.pas
+M	packages/fcl-db/src/sqlite/testds.pas
+
+******************************************************************************
 commit 33eef1f9b12f4063fb7c93c01f4b184f0e1e4ee7
 Author: florian <florian@freepascal.org>
 Date:   Mon Apr 25 22:12:59 2022 +0200
