@@ -1,4 +1,23 @@
 ******************************************************************************
+commit b42bc966ac4c66528ccd7acbee923214cc391b79
+Author: marcoonthegit <marco@freepascal.org>
+Date:   Wed Apr 27 15:20:47 2022 +0200
+
+    * fix bit setting macros in windows unit. Should fix bug #39272.
+       (bit setting only allowed setting bits to one, not zero, and not added).
+
+M	rtl/win/wininc/struct.inc
+
+******************************************************************************
+commit fefb13da3b1504093277ec9f5add1744e2e5de15
+Author: Ondrej Pokorny <lazarus@kluug.net>
+Date:   Wed Apr 27 12:04:44 2022 +0200
+
+    odbc: fix long string parameter bindings
+
+M	packages/fcl-db/src/sqldb/odbc/odbcconn.pas
+
+******************************************************************************
 commit 96c6045023aa49703a4e85210237010f81c708de
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Wed Apr 27 11:50:58 2022 +0200
