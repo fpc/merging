@@ -1,4 +1,74 @@
 ******************************************************************************
+commit 60c967f255d4116c784810a1f8bdf45e8f7982ea
+Author: Sergey Larin <sergy.larin@gmail.com>
+Date:   Thu Jan 27 15:35:15 2022 +0300
+
+    Optimized the comparison of a widestring variable with ''
+
+M	compiler/nadd.pas
+
+******************************************************************************
+commit 35db2b2da3732abc46140a1b930a877d7bbe4aa1
+Author: Sergey Larin <sergy.larin@gmail.com>
+Date:   Thu Jan 27 16:54:56 2022 +0300
+
+    Fixed optimization `Length(W)=0` -> `(Pointer(W)=nil) or (PLongword(Pointer(W)-4)^=0)` for WideString
+
+M	compiler/nadd.pas
+
+******************************************************************************
+commit 7b39089d4f60d08768c481674e94f4e7c09c3a86
+Author: florian <florian@freepascal.org>
+Date:   Wed Apr 27 22:57:30 2022 +0200
+
+      * updated
+
+M	utils/fpcm/revision.inc
+
+******************************************************************************
+commit 62d5ddffb8b56411a06b8288b6237e31ff3c711d
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Fri Apr 22 01:10:24 2022 +0100
+
+      * x86: Improvement to CMP/JE/CMP/@Lbl/SETE ->
+        CMP/SETE/CMP/SETE/OR optimisation to reduce
+        pass counts (and work better with improved
+        FLAGS register allocation).
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
+commit 1fd2d3a83d2f3b656e2fcfe6a3399255320f5459
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Sun Apr 24 04:27:55 2022 +0100
+
+      * x86: Improved TrySwapMovCmp to insert before
+        the FLAGS register is allocated.
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
+commit 6f24c8b4efccea67d092062009f413cc789a052c
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Thu Apr 21 01:02:17 2022 +0100
+
+      * x86: Code generation fixes where FLAGS
+        register is not properly allocated.
+
+M	compiler/hlcgobj.pas
+M	compiler/i386/cgcpu.pas
+M	compiler/i386/n386add.pas
+M	compiler/i386/n386mat.pas
+M	compiler/i8086/cgcpu.pas
+M	compiler/i8086/n8086mat.pas
+M	compiler/x86/cgx86.pas
+M	compiler/x86/nx86add.pas
+M	compiler/x86/nx86cnv.pas
+M	compiler/x86/nx86mat.pas
+M	compiler/x86/nx86set.pas
+M	compiler/x86_64/nx64cnv.pas
+
+******************************************************************************
 commit b8a8068dce424f75a4f5d2ff43c09151be24934e
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Wed Apr 27 18:23:21 2022 +0200
