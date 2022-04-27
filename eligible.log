@@ -1,4 +1,22 @@
 ******************************************************************************
+commit 7631dfb563f38c9e595de8f50ef96826fabb788d
+Author: marcoonthegit <marco@freepascal.org>
+Date:   Wed Apr 27 17:10:59 2022 +0200
+
+    * Use memorystream as a kind of tstringbuilder for json escaping(StringToJSONString), fixes bug #39525
+
+M	packages/fcl-json/src/fpjson.pp
+
+******************************************************************************
+commit dcb3906741b06fe4733ec409578820005a2a0f18
+Author: marcoonthegit <marco@freepascal.org>
+Date:   Wed Apr 27 16:47:15 2022 +0200
+
+    * typo fix in last commit.
+
+M	rtl/win/wininc/struct.inc
+
+******************************************************************************
 commit b42bc966ac4c66528ccd7acbee923214cc391b79
 Author: marcoonthegit <marco@freepascal.org>
 Date:   Wed Apr 27 15:20:47 2022 +0200
