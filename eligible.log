@@ -1,4 +1,24 @@
 ******************************************************************************
+commit 6bf0de0ba2f99e0cdd6ac2ca9157e3628976d065
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Fri Apr 29 01:07:59 2022 +0200
+
+    fcl-hash: use RDTSCP on i386 and x86-64
+
+M	packages/fcl-hash/src/fphashutils.pp
+M	packages/fcl-hash/tests/utestpem.pp
+
+******************************************************************************
+commit 0a44e3192d404146342f98e3e825f02cf3405da4
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Fri Apr 29 00:35:08 2022 +0200
+
+    fcl-hash: test rsa encrypt/decrypt
+
+M	packages/fcl-hash/src/fprsa.pas
+M	packages/fcl-hash/tests/utestpem.pp
+
+******************************************************************************
 commit 863959357444a0754aa3a8bcc5ef662c084bbe22
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Fri Apr 29 00:18:24 2022 +0200
