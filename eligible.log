@@ -1,4 +1,25 @@
 ******************************************************************************
+commit c43579a3254627bf53a17211597ed72670e6832f
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Thu Apr 28 19:28:28 2022 +0200
+
+    fcl-hash: asn check boundary, added rsa private/public key parse functions
+
+M	packages/fcl-hash/src/fpasn.pp
+M	packages/fcl-hash/src/fphashutils.pp
+M	packages/fcl-hash/src/fppem.pp
+M	packages/fcl-hash/src/fprsa.pas
+
+******************************************************************************
+commit 7664b32e5fbbe97a11ef8a71c8ecf55e8c92a99d
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Thu Apr 28 19:26:02 2022 +0200
+
+    fcl-hash: added rsa test
+
+M	packages/fcl-hash/tests/utestpem.pp
+
+******************************************************************************
 commit 60c967f255d4116c784810a1f8bdf45e8f7982ea
 Author: Sergey Larin <sergy.larin@gmail.com>
 Date:   Thu Jan 27 15:35:15 2022 +0300
