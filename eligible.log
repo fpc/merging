@@ -1,4 +1,43 @@
 ******************************************************************************
+commit 864b2ad3f30ffc573794d88bfef99fe6e7294c94
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Thu Apr 28 23:10:01 2022 +0200
+
+    fcl-hash: fixed freeing TBigIntContext.BIRadix and migrated to mode objfpc
+
+M	packages/fcl-hash/src/fppem.pp
+M	packages/fcl-hash/src/fprsa.pas
+M	packages/fcl-hash/src/fptlsbigint.pas
+
+******************************************************************************
+commit 67905957cb7f433c153ca53146a5910dbdacff22
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Thu Apr 28 23:07:54 2022 +0200
+
+    fcl-hash: fixed HexStrToBytes
+
+M	packages/fcl-hash/src/fphashutils.pp
+
+******************************************************************************
+commit 606f27563e4237e986ad8caf9ca57005f2138e89
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Thu Apr 28 23:04:58 2022 +0200
+
+    fcl-hash: fixed ASNParse_GetIntBytes for ASNSize<8
+
+M	packages/fcl-hash/src/fpasn.pp
+
+******************************************************************************
+commit 1dd23696e308e31d1f11672b62ec297bc7a91bfd
+Author: florian <florian@freepascal.org>
+Date:   Thu Apr 28 22:51:11 2022 +0200
+
+      * cleanup
+
+M	rtl/embedded/system.pp
+M	rtl/freertos/system.pp
+
+******************************************************************************
 commit c43579a3254627bf53a17211597ed72670e6832f
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Thu Apr 28 19:28:28 2022 +0200
