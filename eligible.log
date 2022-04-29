@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 216c848075589f86f1051eca2d6b35b0e99a33b0
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Fri Apr 29 02:18:42 2022 +0200
+
+    fcl-hash: use randomize
+
+M	packages/fcl-hash/src/fpasn.pp
+M	packages/fcl-hash/src/fphashutils.pp
+
+******************************************************************************
 commit 6bf0de0ba2f99e0cdd6ac2ca9157e3628976d065
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Fri Apr 29 01:07:59 2022 +0200
