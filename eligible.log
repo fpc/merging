@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 74ab27ae4717aed64f7aa12a1ea5dcc772582961
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Fri Apr 29 23:45:37 2022 +0200
+
+    cutils: also use minalign, when varalign equals it, not only when varalign is less than it (21 years old bug?)
+
+M	compiler/cutils.pas
+
+******************************************************************************
 commit 5d97ff43fa4b34f88279ef6e944fd1874cfa5c0e
 Author: florian <florian@freepascal.org>
 Date:   Fri Apr 29 22:59:26 2022 +0200
