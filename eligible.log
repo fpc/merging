@@ -1,4 +1,54 @@
 ******************************************************************************
+commit 5d97ff43fa4b34f88279ef6e944fd1874cfa5c0e
+Author: florian <florian@freepascal.org>
+Date:   Fri Apr 29 22:59:26 2022 +0200
+
+      + CPUAVR_HAS_ADIW
+
+M	compiler/avr/cpuinfo.pas
+
+******************************************************************************
+commit 314d3579fc29303cbeed06286e951ae31a2ed556
+Author: florian <florian@freepascal.org>
+Date:   Fri Apr 29 22:48:43 2022 +0200
+
+      * avr3 and avr31 should also have a movw instruction
+
+M	compiler/avr/cpuinfo.pas
+
+******************************************************************************
+commit 9540dc8989c53554a90b86e0874ce20eaf8a7cea
+Author: florian <florian@freepascal.org>
+Date:   Fri Apr 29 22:34:08 2022 +0200
+
+      * make test compiling on avr
+
+M	tests/test/tint642.pp
+
+******************************************************************************
+commit ab1a31d9acd6603bd7173f3d73853171013bbb71
+Author: florian <florian@freepascal.org>
+Date:   Fri Apr 29 22:22:23 2022 +0200
+
+      * enable random on avr, it does not increase program size if not used
+
+M	rtl/embedded/system.cfg
+
+******************************************************************************
+commit f2fc63aed25369295e2525f84c35e6c74e5fc779
+Author: magorium <10467276-magorium@users.noreply.gitlab.com>
+Date:   Fri Apr 29 22:03:43 2022 +0200
+
+    AROS 64bit fixes filehandles #2
+    
+    Solve crashes when opening, closing and managing files for AROS 64-bit when
+    filehandles are located in memory > 32-bit by making sure the used file
+    handles are actually of type BPTR/THandle instead of longint/cardinal
+    (and stays compatible to AROS 32-bit).
+
+M	rtl/aros/system.pp
+
+******************************************************************************
 commit 216c848075589f86f1051eca2d6b35b0e99a33b0
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Fri Apr 29 02:18:42 2022 +0200
