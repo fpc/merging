@@ -1,4 +1,23 @@
 ******************************************************************************
+commit bb1b0cdbf0a477f81c30db8ebcd4d989c7d132a3
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Sat Apr 30 10:33:57 2022 +0200
+
+    fcl-web: RS256 using sign/verify
+
+M	packages/fcl-web/src/jwt/fpjwarsa.pp
+M	packages/fcl-web/tests/tcjwt.pp
+
+******************************************************************************
+commit 19f97666e88abe2e9062973e59d435bb5eb7ce6e
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sat Apr 30 11:12:01 2022 +0300
+
+    + enabled compilation of the package ptc on OpenBSD
+
+M	packages/ptc/fpmake.pp
+
+******************************************************************************
 commit f0c3d69068b3e9e3156a3b89af62233ed96dc086
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Sat Apr 30 01:56:14 2022 +0200
