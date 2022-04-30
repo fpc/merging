@@ -1,4 +1,23 @@
 ******************************************************************************
+commit e339f8b66053c2a35e20e8d71d1b97d2513bd668
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Sat Apr 30 15:04:22 2022 +0200
+
+    fcl-web: TJWTSignerRSA: prefix hash with ASN1 digest info
+
+M	packages/fcl-hash/src/fprsa.pas
+M	packages/fcl-web/src/jwt/fpjwarsa.pp
+
+******************************************************************************
+commit 22c86e857e34668c3c430f84132fa7763e870e76
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sat Apr 30 15:26:51 2022 +0300
+
+    + enabled compilation of units ptcgraph, ptccrt and ptcmouse on FreeBSD
+
+M	packages/graph/fpmake.pp
+
+******************************************************************************
 commit a596fab3d5271475c6e2ea57de309905250529e3
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Sat Apr 30 15:12:14 2022 +0300
