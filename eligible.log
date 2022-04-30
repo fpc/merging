@@ -1,4 +1,22 @@
 ******************************************************************************
+commit f227efb2589e121cbeed03ab1024b89b25674615
+Author: Ramon M <ramon.mifsud@yandex.com>
+Date:   Wed Apr 27 20:47:25 2022 +0200
+
+    Enabled mouse support for macOS and *BSD.  Free Vision apps can now make use of the mouse for these O/Ss.
+
+M	packages/rtl-console/src/unix/mouse.pp
+
+******************************************************************************
+commit c3db9d63f2bc2341769266a9172772d6a1c710a9
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sat Apr 30 11:44:39 2022 +0300
+
+    + enabled compilation of units ptcgraph, ptccrt and ptcmouse on OpenBSD
+
+M	packages/graph/fpmake.pp
+
+******************************************************************************
 commit bb1b0cdbf0a477f81c30db8ebcd4d989c7d132a3
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Sat Apr 30 10:33:57 2022 +0200
