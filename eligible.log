@@ -1,4 +1,36 @@
 ******************************************************************************
+commit f0c3d69068b3e9e3156a3b89af62233ed96dc086
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Sat Apr 30 01:56:14 2022 +0200
+
+    fcl-web: added TJWTSignerRS384, TJWTSignerRS512
+
+M	packages/fcl-web/src/jwt/fpjwarsa.pp
+M	packages/fcl-web/tests/tcjwt.pp
+
+******************************************************************************
+commit 44902c339b85bd855f65d40836b6aa9f5dc471a1
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Sat Apr 30 01:42:12 2022 +0200
+
+    fcl-web: added TJWTSignerRS256
+
+A	packages/fcl-web/src/jwt/fpjwarsa.pp
+M	packages/fcl-web/src/jwt/fpjwt.pp
+M	packages/fcl-web/tests/tcjwt.pp
+M	packages/fcl-web/tests/testfpweb.lpi
+M	packages/fcl-web/tests/testfpweb.lpr
+
+******************************************************************************
+commit d038f9f6e0a4041e2fb20f4e7d25bf88cb35e4f4
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Sat Apr 30 01:41:13 2022 +0200
+
+    fcl-hash: do not call randomize too often
+
+M	packages/fcl-hash/src/fphashutils.pp
+
+******************************************************************************
 commit 74ab27ae4717aed64f7aa12a1ea5dcc772582961
 Author: Karoly Balogh <karoly@freepascal.org>
 Date:   Fri Apr 29 23:45:37 2022 +0200
