@@ -1,4 +1,13 @@
 ******************************************************************************
+commit a596fab3d5271475c6e2ea57de309905250529e3
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sat Apr 30 15:12:14 2022 +0300
+
+    + enabled compilation of unit ptc on FreeBSD
+
+M	packages/ptc/fpmake.pp
+
+******************************************************************************
 commit f227efb2589e121cbeed03ab1024b89b25674615
 Author: Ramon M <ramon.mifsud@yandex.com>
 Date:   Wed Apr 27 20:47:25 2022 +0200
