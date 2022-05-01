@@ -1,4 +1,13 @@
 ******************************************************************************
+commit eba76dd0526f13fd297eaea1cc0d6228f88571b8
+Author: florian <florian@freepascal.org>
+Date:   Sun May 1 10:55:48 2022 +0200
+
+      * allow 32 byte alignment of constants and variables on aarch64-darwin
+
+M	compiler/systems/i_darwin.pas
+
+******************************************************************************
 commit 95ba16228a8018187bf4e1a1d6324ede023efede
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Sun May 1 10:34:47 2022 +0300
