@@ -1,4 +1,68 @@
 ******************************************************************************
+commit f5742f21a082bf59603184944f4c988a9aa533b8
+Author: florian <florian@freepascal.org>
+Date:   Sun May 1 22:58:24 2022 +0200
+
+      * do not run test, it is about successful compilation and runtime on weak CPUs is high
+
+M	tests/webtbs/tw15203.pp
+
+******************************************************************************
+commit 0ae45bd2cf17b5d9dcc39f4f4590a214329e57c6
+Author: florian <florian@freepascal.org>
+Date:   Sun May 1 22:42:30 2022 +0200
+
+      + AVR: track flag usage
+      + AVR: take care of allocated flags when spilling
+      * AVR: trgcpu.do_spill_read might also use ADIW
+
+M	compiler/aasmtai.pas
+M	compiler/avr/aasmcpu.pas
+M	compiler/avr/cgcpu.pas
+M	compiler/avr/navradd.pas
+M	compiler/avr/navrmat.pas
+M	compiler/avr/rgcpu.pas
+
+******************************************************************************
+commit 6d6774bcc4756c701b7418d803dd7b4907894c2d
+Author: florian <florian@freepascal.org>
+Date:   Sun May 1 22:40:34 2022 +0200
+
+      * write number of iterations
+
+M	tests/test/tint642.pp
+
+******************************************************************************
+commit 038230bbeaa0828d92b1740874b753308afb162b
+Author: florian <florian@freepascal.org>
+Date:   Sun May 1 20:13:08 2022 +0200
+
+      * AVR: use adiw to create spilling constants if possible
+      * AVR: insert allocations for registers used by spilling so the assembler optimizer does not remove spilling code
+
+M	compiler/avr/rgcpu.pas
+
+******************************************************************************
+commit 46b52d92d38fbbda8255542e888d23f0359b3081
+Author: florian <florian@freepascal.org>
+Date:   Sun May 1 20:12:07 2022 +0200
+
+      + AVR: helpers take care of ADIW
+
+M	compiler/avr/aoptcpu.pas
+M	compiler/avr/aoptcpub.pas
+
+******************************************************************************
+commit bcdc75cecfae395076c02ecb822f670d41632971
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sun May 1 22:22:33 2022 +0200
+
+    * Add license message
+
+M	packages/gmp/src/libgmp.pp
+M	packages/libnettle/src/libnettle.pp
+
+******************************************************************************
 commit 7d98462c1cd28524492922303630f599fb4b1615
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Sun May 1 20:17:53 2022 +0200
