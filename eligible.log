@@ -1,4 +1,43 @@
 ******************************************************************************
+commit 7d98462c1cd28524492922303630f599fb4b1615
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Sun May 1 20:17:53 2022 +0200
+
+    fcl-hash: added PSS helper functions I2OSP, MGF1SHA256
+
+M	packages/fcl-hash/src/fphashutils.pp
+M	packages/fcl-hash/src/fprsa.pas
+M	packages/fcl-web/tests/tcjwt.pp
+
+******************************************************************************
+commit a81e527e1d49d2a4f232574d7e0f2c5a8fcd949d
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Sun May 1 14:18:01 2022 +0200
+
+    fcl-web: test writing rsa keys as DER, test with RFC 7515 values
+
+M	packages/fcl-hash/src/fphashutils.pp
+M	packages/fcl-web/tests/tcjwt.pp
+
+******************************************************************************
+commit 727f019fd799bbf37ab013c551388aef897bf732
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Sun May 1 14:16:49 2022 +0200
+
+    fcl-hash: init X509 key with strings, write as ASN and DER
+
+M	packages/fcl-hash/src/fprsa.pas
+
+******************************************************************************
+commit 727d606b45402e6812b975cc83ff5b9d0d8de1dd
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Sun May 1 14:15:01 2022 +0200
+
+    fcl-hash: added some asn write functions
+
+M	packages/fcl-hash/src/fpasn.pp
+
+******************************************************************************
 commit ddfe51415b9ce782b80d4ddbbcb94a68baeb4f21
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Sun May 1 16:22:55 2022 +0200
