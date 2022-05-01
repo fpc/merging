@@ -1,4 +1,31 @@
 ******************************************************************************
+commit fbd26ab472cc5b6e2b75f006afa4d9174026c277
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sun May 1 16:00:52 2022 +0200
+
+    * Ignore output programs
+
+A	packages/fcl-passrc/examples/.gitignore
+
+******************************************************************************
+commit 7ea34ceb222eb03fd7cd448fcbd90f5caefdb143
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sun May 1 15:58:43 2022 +0200
+
+    * Ignore fonts & output programs
+
+A	packages/fcl-pdf/examples/.gitignore
+
+******************************************************************************
+commit caa4574c7304ce7110ac2d9d828bba73a9cec20d
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sun May 1 15:57:17 2022 +0200
+
+    * Ignore fonts
+
+A	packages/fcl-pdf/tests/.gitignore
+
+******************************************************************************
 commit 4e5916d17d69e79b1b2fd27032fd8bdd7b996b23
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Sun May 1 14:00:26 2022 +0200
