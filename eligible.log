@@ -1,4 +1,37 @@
 ******************************************************************************
+commit 4e5916d17d69e79b1b2fd27032fd8bdd7b996b23
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sun May 1 14:00:26 2022 +0200
+
+     * Add libnettle into build
+
+M	packages/fpmake_add.inc
+M	packages/fpmake_proc.inc
+M	packages/libnettle/fpmake.pp
+
+******************************************************************************
+commit b90b6f2b872f203eca409cd31f863fc8567f6445
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sun May 1 13:56:29 2022 +0200
+
+    * Libnettle & dynamically loadable version of libgmp
+
+M	packages/gmp/fpmake.pp
+A	packages/gmp/src/libgmp.pp
+A	packages/libnettle/Makefile
+A	packages/libnettle/Makefile.fpc
+A	packages/libnettle/examples/rsasign.lpi
+A	packages/libnettle/examples/rsasign.pp
+A	packages/libnettle/examples/rsautil.pas
+A	packages/libnettle/examples/rsaverify.lpi
+A	packages/libnettle/examples/rsaverify.pp
+A	packages/libnettle/examples/test-sign-verify.sh
+A	packages/libnettle/examples/testkey
+A	packages/libnettle/examples/testkey.pub
+A	packages/libnettle/fpmake.pp
+A	packages/libnettle/src/libnettle.pp
+
+******************************************************************************
 commit eba76dd0526f13fd297eaea1cc0d6228f88571b8
 Author: florian <florian@freepascal.org>
 Date:   Sun May 1 10:55:48 2022 +0200
