@@ -1,4 +1,59 @@
 ******************************************************************************
+commit ddfe51415b9ce782b80d4ddbbcb94a68baeb4f21
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sun May 1 16:22:55 2022 +0200
+
+    * Ignore output programs
+
+A	packages/fcl-db/examples/.gitignore
+A	packages/fcl-db/tests/.gitignore
+A	packages/fcl-hash/examples/.gitignore
+A	packages/fcl-js/tests/.gitignore
+A	packages/fcl-json/tests/.gitignore
+A	packages/fcl-mustache/tests/.gitignore
+A	packages/fcl-web/examples/restbridge/.gitignore
+A	packages/paszlib/examples/.gitignore
+A	packages/paszlib/examples/testsingle.pas
+A	packages/paszlib/tests/.gitignore
+A	packages/regexpr/tests/.gitignore
+
+******************************************************************************
+commit 6c33e240ffdda78a327b00d472907bec8bd19169
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sun May 1 16:09:56 2022 +0200
+
+    * Ignore output programs
+
+A	packages/fcl-base/tests/.gitignore
+
+******************************************************************************
+commit 395851a554b9e8dffeaac2cc553424a7f8681011
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sun May 1 16:08:29 2022 +0200
+
+    * Ignore output programs
+
+A	packages/fcl-js/examples/.gitignore
+
+******************************************************************************
+commit 4afb8fad427028f21486eb937ac3a2e12855bc22
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sun May 1 16:06:14 2022 +0200
+
+    * Ignore output programs
+
+A	packages/fcl-css/tests/.gitignore
+
+******************************************************************************
+commit b8f7a53dcb1e26299c5b264fe2392b4368cfc9da
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sun May 1 16:04:49 2022 +0200
+
+    * Ignore output programs
+
+A	packages/fcl-css/examples/.gitignore
+
+******************************************************************************
 commit fbd26ab472cc5b6e2b75f006afa4d9174026c277
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Sun May 1 16:00:52 2022 +0200
