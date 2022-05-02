@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 4df9da6c15e8b2492a75f7fd2dcb75a047307bc3
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Mon May 2 10:36:16 2022 +0200
+
+    * Fix library name
+
+M	packages/gmp/src/libgmp.pp
+
+******************************************************************************
 commit 0f30dad3412e3ea678b821bc8995f2066c9cb9d9
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Mon May 2 10:00:25 2022 +0200
