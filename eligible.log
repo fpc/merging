@@ -1,4 +1,22 @@
 ******************************************************************************
+commit a6766d62eed085ed4ac65e7ecb81876b0205f11c
+Author: ccrause <christo.crause@gmail.com>
+Date:   Sun May 1 21:31:27 2022 +0200
+
+    Fix generation of default linker script for esp-idf v4.4
+
+M	compiler/systems/t_freertos.pas
+
+******************************************************************************
+commit 76e4e5d8948ed5601fafba16343c8adba04303af
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Mon May 2 22:38:49 2022 +0200
+
+    fcl-hash: started RSASSA_PSS_Verify
+
+M	packages/fcl-hash/src/fprsa.pas
+
+******************************************************************************
 commit 4df9da6c15e8b2492a75f7fd2dcb75a047307bc3
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Mon May 2 10:36:16 2022 +0200
