@@ -1,4 +1,77 @@
 ******************************************************************************
+commit c6e9c7c1f838170d97d8f5e38c86c509045cf6f4
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Tue May 3 12:20:21 2022 +0200
+
+    * Change writeln+exit to ignore
+
+M	packages/fcl-db/tests/testfieldtypes.pas
+
+******************************************************************************
+commit 3ecc1272e09b761fab6a02ba842d7507518ed943
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Tue May 3 23:02:15 2022 +0200
+
+    fcl-web: removed des3 encoded pem example
+
+M	packages/fcl-web/tests/tcjwt.pp
+
+******************************************************************************
+commit 5acd7a7b83643e3c4f8dc96955906b67ea14eb8e
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Mon May 2 14:06:38 2022 +0200
+
+    Rename tsymtable.insert and delete methods to insertsym ands deletesym
+
+M	compiler/blockutl.pas
+M	compiler/jvm/jvmdef.pas
+M	compiler/jvm/njvmcon.pas
+M	compiler/jvm/njvmutil.pas
+M	compiler/jvm/pjvm.pas
+M	compiler/jvm/symcpu.pas
+M	compiler/ncal.pas
+M	compiler/ngenutil.pas
+M	compiler/ninl.pas
+M	compiler/pdecl.pas
+M	compiler/pdecsub.pas
+M	compiler/pdecvar.pas
+M	compiler/pexpr.pas
+M	compiler/pgenutil.pas
+M	compiler/pmodules.pas
+M	compiler/pparautl.pas
+M	compiler/procdefutil.pas
+M	compiler/pstatmnt.pas
+M	compiler/psub.pas
+M	compiler/psystem.pas
+M	compiler/ptype.pas
+M	compiler/scanner.pas
+M	compiler/symbase.pas
+M	compiler/symcreat.pas
+M	compiler/symdef.pas
+M	compiler/symsym.pas
+M	compiler/symtable.pas
+M	compiler/symutil.pas
+
+******************************************************************************
+commit 8851c8968c3490fd48988274e1557e7ebce23808
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Tue May 3 22:52:23 2022 +0200
+
+    fcl-web: added des3 encoded pem example
+
+M	packages/fcl-web/tests/tcjwt.pp
+
+******************************************************************************
+commit 2ec59db2fa7933213a2c67b892858282df6afed5
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Tue May 3 22:35:49 2022 +0200
+
+    fcl-hash: fixed fptlsbigint on i386
+
+M	packages/fcl-hash/src/fprsa.pas
+M	packages/fcl-hash/src/fptlsbigint.pas
+
+******************************************************************************
 commit 29881ee675c9f3fe4961d3956120eed76c666937
 Author: florian <florian@freepascal.org>
 Date:   Tue May 3 19:38:49 2022 +0200
