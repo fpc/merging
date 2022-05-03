@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 29881ee675c9f3fe4961d3956120eed76c666937
+Author: florian <florian@freepascal.org>
+Date:   Tue May 3 19:38:49 2022 +0200
+
+      * for now, IO is not supported on AVR
+
+M	tests/test/tint642.pp
+
+******************************************************************************
 commit 36b4a77c946529d278d938122ac70c8e0621b531
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Tue May 3 19:20:58 2022 +0200
