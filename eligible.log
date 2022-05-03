@@ -1,4 +1,31 @@
 ******************************************************************************
+commit 8a64bddb20127015318dd91c50ce242e695b121a
+Author: Ondrej Pokorny <lazarus@kluug.net>
+Date:   Tue May 3 11:13:24 2022 +0200
+
+    db testsuite: add TestMSSQLLargeStrings
+
+M	packages/fcl-db/tests/testfieldtypes.pas
+
+******************************************************************************
+commit f57adee862b0fed791fae215c1f12403771a0e00
+Author: Ondrej Pokorny <lazarus@kluug.net>
+Date:   Wed Apr 27 16:24:47 2022 +0200
+
+    odbc: bind string parameters as SQL_WLONGVARCHAR only for more than 2000 characters
+
+M	packages/fcl-db/src/sqldb/odbc/odbcconn.pas
+
+******************************************************************************
+commit 989b378bcd9007540afe067cb8edfce46948fbd5
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Tue May 3 12:06:04 2022 +0200
+
+    * Remove debug define
+
+M	packages/fcl-hash/src/fptlsbigint.pas
+
+******************************************************************************
 commit 120303576b775f666c7e993cba9baf0296d947b3
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Tue May 3 01:51:56 2022 +0200
