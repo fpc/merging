@@ -1,4 +1,24 @@
 ******************************************************************************
+commit 120303576b775f666c7e993cba9baf0296d947b3
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Tue May 3 01:51:56 2022 +0200
+
+    fcl-web: fpjwarsa: catch exceptions during verification
+
+M	packages/fcl-web/src/jwt/fpjwarsa.pp
+
+******************************************************************************
+commit 37d107a953a30829760954daf9eaad1057648367
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Tue May 3 01:39:26 2022 +0200
+
+    fcl-web: TJWTSignerPS256, TJWTSignerPS384, TJWTSignerPS512
+
+M	packages/fcl-hash/src/fprsa.pas
+M	packages/fcl-web/src/jwt/fpjwarsa.pp
+M	packages/fcl-web/tests/tcjwt.pp
+
+******************************************************************************
 commit a6766d62eed085ed4ac65e7ecb81876b0205f11c
 Author: ccrause <christo.crause@gmail.com>
 Date:   Sun May 1 21:31:27 2022 +0200
