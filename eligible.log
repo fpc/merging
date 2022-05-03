@@ -1,4 +1,15 @@
 ******************************************************************************
+commit 36b4a77c946529d278d938122ac70c8e0621b531
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Tue May 3 19:20:58 2022 +0200
+
+    fcl-hash: less hints and disable range checking for bigint
+
+M	packages/fcl-base/src/basenenc.pp
+M	packages/fcl-hash/src/fphashutils.pp
+M	packages/fcl-hash/src/fptlsbigint.pas
+
+******************************************************************************
 commit 2093be8fc3a132b2887e7bfd62ed8901c8b4505d
 Author: Ondrej Pokorny <lazarus@kluug.net>
 Date:   Tue May 3 12:01:07 2022 +0200
