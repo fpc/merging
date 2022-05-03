@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 2093be8fc3a132b2887e7bfd62ed8901c8b4505d
+Author: Ondrej Pokorny <lazarus@kluug.net>
+Date:   Tue May 3 12:01:07 2022 +0200
+
+    db xmldatapacketreader: fix range check error in InitLoadRecords
+
+M	packages/fcl-db/src/base/xmldatapacketreader.pp
+
+******************************************************************************
 commit 8a64bddb20127015318dd91c50ce242e695b121a
 Author: Ondrej Pokorny <lazarus@kluug.net>
 Date:   Tue May 3 11:13:24 2022 +0200
