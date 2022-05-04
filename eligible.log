@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 12866e2e61cbf2da72b2e5891c7e50d8928bb035
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Wed May 4 11:27:55 2022 +0200
+
+    * Forgot to commit fix
+
+M	packages/fcl-base/src/basenenc.pp
+
+******************************************************************************
 commit 82c27c72c9ffb1f9d6dec0657b2d5ba6100b8307
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Wed May 4 10:00:38 2022 +0200
