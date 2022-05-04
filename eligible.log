@@ -1,4 +1,13 @@
 ******************************************************************************
+commit beb97b8110db0b60e55e3a0fa6169c16d58198ab
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Wed May 4 19:03:33 2022 +0200
+
+    * Use const for string argument
+
+M	packages/fcl-base/src/basenenc.pp
+
+******************************************************************************
 commit 12866e2e61cbf2da72b2e5891c7e50d8928bb035
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Wed May 4 11:27:55 2022 +0200
