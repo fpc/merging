@@ -1,4 +1,15 @@
 ******************************************************************************
+commit 82c27c72c9ffb1f9d6dec0657b2d5ba6100b8307
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Wed May 4 10:00:38 2022 +0200
+
+    * Do not make assumptions about string encoding
+
+M	packages/fcl-base/src/basenenc.pp
+M	packages/fcl-hash/src/fpasn.pp
+M	packages/fcl-hash/src/fppem.pp
+
+******************************************************************************
 commit c6e9c7c1f838170d97d8f5e38c86c509045cf6f4
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Tue May 3 12:20:21 2022 +0200
