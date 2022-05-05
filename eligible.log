@@ -1,4 +1,13 @@
 ******************************************************************************
+commit cab37732c4b064eb11d09b796002be3edb30b58b
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Thu May 5 12:04:52 2022 +0200
+
+    * Avoid memory allocation in IsNullOrWhitespace. Fix issue #39702
+
+M	rtl/objpas/sysutils/syshelp.inc
+
+******************************************************************************
 commit beb97b8110db0b60e55e3a0fa6169c16d58198ab
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Wed May 4 19:03:33 2022 +0200
