@@ -1,4 +1,120 @@
 ******************************************************************************
+commit d78e39d360f3a4873caad0c214628d0bcd263973
+Author: magorium <10467276-magorium@users.noreply.gitlab.com>
+Date:   Sun May 1 08:24:16 2022 +0200
+
+    AROS: 32/64-bit RTL utility compatibility update
+    
+    Update some utility RTL record structures to be 32/64-bit compatible.
+    
+    Unit Utility was already up-to-date with these changes.
+
+M	rtl/aros/i386/utild1.inc
+M	rtl/aros/i386/utild2.inc
+
+******************************************************************************
+commit 853b9c5c96f8faaf73c1fc5ead2153e2ddf93885
+Author: magorium <10467276-magorium@users.noreply.gitlab.com>
+Date:   Sun May 1 08:23:33 2022 +0200
+
+    AROS: Unit amigados, record field members update
+    
+    Update some amigados unit record field members for AROS compatiblity.
+    
+    These changes reflect the changes made in the doslib RTL (that were present in
+    the previous commit).
+
+M	packages/arosunits/src/amigados.pas
+
+******************************************************************************
+commit 94d47bf7cb5e01c97905763979df0956b8cac421
+Author: magorium <10467276-magorium@users.noreply.gitlab.com>
+Date:   Sun May 1 08:23:18 2022 +0200
+
+    AROS: RTL doslib, record field members update
+    
+    Update some doslib RTL record field members for AROS compatiblity.
+
+M	rtl/aros/doslibd.inc
+
+******************************************************************************
+commit d207a293c7640517ced9a02366cb4e54b16cc0f9
+Author: magorium <10467276-magorium@users.noreply.gitlab.com>
+Date:   Sun May 1 08:22:05 2022 +0200
+
+    AROS: 32/64-bit unit amigados compatibility update
+    
+    Update some amigados record structures to be 32/64-bit compatible.
+    
+    These changes reflect the changes made in the doslib RTL (that were present in
+    the previous commit) but note that some of Unit amigados' record structures
+    were already up to date.
+
+M	packages/arosunits/src/amigados.pas
+
+******************************************************************************
+commit b2f6ca70cdc4f46602c8bf0bbc46bcd2b301c22a
+Author: magorium <10467276-magorium@users.noreply.gitlab.com>
+Date:   Sun May 1 08:21:30 2022 +0200
+
+    AROS: 32/64-bit RTL doslib compatibility update
+    
+    Update some doslib RTL record structures to be 32/64-bit compatible.
+
+M	rtl/aros/doslibd.inc
+
+******************************************************************************
+commit 2324055b1fb39b7846f3094fe2edb8872d1f3977
+Author: magorium <10467276-magorium@users.noreply.gitlab.com>
+Date:   Sun May 1 08:20:48 2022 +0200
+
+    AROS: Unit exec update. Memory sizes are IPTR
+    
+    Memory sizes are expressed in IPTR/PtrUInt in order to be compatible to both
+    32 and 64-bit.
+    
+    This changes some of Exec API call signatures and should not impact
+    existing code.
+    
+    These changes reflect the changes made in the exec RTL (that were present in
+    the previous commit) but note that Unit Exec record structures were already
+    up to date.
+    
+    See: https://github.com/aros-development-team/AROS/commit/d7df812342ac2bfc7df2fd271c4cab473fe804b3
+
+M	packages/arosunits/src/exec.pas
+
+******************************************************************************
+commit e339d236e151e89a94b30460e0cc15e758d5bd45
+Author: magorium <10467276-magorium@users.noreply.gitlab.com>
+Date:   Sun May 1 08:20:21 2022 +0200
+
+    AROS: RTL exec update. Memory sizes are IPTR
+    
+    Memory sizes are expressed in IPTR/PtrUInt in order to be compatible to both
+    32 and 64-bit.
+    
+    Affects both record structures and API call signatures.
+    
+    See: https://github.com/aros-development-team/AROS/commit/d7df812342ac2bfc7df2fd271c4cab473fe804b3
+
+M	rtl/aros/i386/execd.inc
+M	rtl/aros/i386/execf.inc
+
+******************************************************************************
+commit 2a75debff6ac80dbb0492d4e90e8c68b01f1c718
+Author: magorium <10467276-magorium@users.noreply.gitlab.com>
+Date:   Sun May 1 08:19:24 2022 +0200
+
+    AROS: 32/64-bit RTL exec compatibility update
+    
+    Update some exec RTL record structures to be 32/64-bit compatible.
+    
+    Unit Exec was already up-to-date with these changes.
+
+M	rtl/aros/i386/execd.inc
+
+******************************************************************************
 commit 61304bf324b59cfab9579af02e4c77bf4d5daff6
 Author: magorium <10467276-magorium@users.noreply.gitlab.com>
 Date:   Mon Apr 25 13:43:07 2022 +0200
