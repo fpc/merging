@@ -1,4 +1,84 @@
 ******************************************************************************
+commit 61304bf324b59cfab9579af02e4c77bf4d5daff6
+Author: magorium <10467276-magorium@users.noreply.gitlab.com>
+Date:   Mon Apr 25 13:43:07 2022 +0200
+
+    AROS: Add stack aligned record fields for 32-bit and 64-bit compatibility
+    
+    Final step that attempts to ensure that fields of particular records are
+    'STACKED' (stack aligned) properly for both 32 and 64 bit.
+    
+    AROS introduced STACKED structure members, which are members that are padded
+    according to the current used stacksize which in itself is based on the target
+    CPU.
+    
+    These structures are required to have a particular defined size in memory and
+    have a particular field alignment, therefor these records are always end-padded
+    (whether required or not) so that we are able to force the compiler to add
+    padding depending on the RECORDMIN setting.
+    
+    Other available FPC directives and/or solutions seem currently not able to
+    solve that issue and we do not wish to manually check each structure to
+    determine if it requires end-padding or not (based on bitness) simply because
+    it is unmaintainable.
+    
+    This change attempts to ensure that these record structures compile using the
+    correct memory size and field layout for both 32 and 64-bit CPU's.
+    
+    The introduction of stack aligned record fields solves a lot of 64-bit related
+    crashes when working with native OOP such as MUI and BOOPSI.
+    
+    Note: Not tested on big endian.
+
+M	packages/arosunits/src/datatypes.pas
+M	packages/arosunits/src/intuition.pas
+M	packages/arosunits/src/mui.pas
+
+******************************************************************************
+commit 1fde206ee6703e9ace1a809ae49fb511d35a07d7
+Author: magorium <10467276-magorium@users.noreply.gitlab.com>
+Date:   Mon Apr 25 13:42:52 2022 +0200
+
+    AROS: Change MethodID fields (back) to their original 32-bit (longword) size
+    
+    Preparations for the introduction of stack aligned record fields (AROS STACKED
+    structure members).
+    
+    MethodID really is 32-bit wide so we need to change those back to their
+    original size.
+
+M	packages/arosunits/src/datatypes.pas
+M	packages/arosunits/src/intuition.pas
+M	packages/arosunits/src/mui.pas
+
+******************************************************************************
+commit aa8fe28a05b423cc4a59e9b985d8cc401ce153bd
+Author: magorium <10467276-magorium@users.noreply.gitlab.com>
+Date:   Mon Apr 25 13:42:25 2022 +0200
+
+    AROS: Remove CPU64 ifdef's ensuring 64-bit compatibility for records/fields
+    
+    Preparation for the introduction of stack aligned records fields (AROS STACKED
+    structure members).
+    
+    Remove unmaintainable superfluous ifdef's that are used inside certain record
+    structures (in an attempt to use correct padding on 64-bit targets) because
+    they are not in line with the introduction of stack aligned record fields.
+
+M	packages/arosunits/src/datatypes.pas
+M	packages/arosunits/src/mui.pas
+
+******************************************************************************
+commit c4e85e5d2c25f57b11faa3d6828ffbff29b73294
+Author: florian <florian@freepascal.org>
+Date:   Fri May 6 23:25:36 2022 +0200
+
+      * made test compilable if no floating point type support is available
+
+M	tests/test/cg/cpudefs.inc
+M	tests/test/cg/tcalcla1.pp
+
+******************************************************************************
 commit ca332f1002217c0817e1a768c5fc2fd0a082552c
 Author: marcoonthegit <marco@freepascal.org>
 Date:   Fri May 6 18:44:31 2022 +0200
