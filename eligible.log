@@ -1,4 +1,13 @@
 ******************************************************************************
+commit ca332f1002217c0817e1a768c5fc2fd0a082552c
+Author: marcoonthegit <marco@freepascal.org>
+Date:   Fri May 6 18:44:31 2022 +0200
+
+    * also remove .git dirs.
+
+M	utils/rmcvsdir.pp
+
+******************************************************************************
 commit efe414f128b6797c2b7bbed9cecdadd02242ab62
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Fri May 6 10:47:02 2022 +0200
