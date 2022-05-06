@@ -1,4 +1,13 @@
 ******************************************************************************
+commit efe414f128b6797c2b7bbed9cecdadd02242ab62
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Fri May 6 10:47:02 2022 +0200
+
+    * Example for RSA signing
+
+A	packages/fcl-web/examples/jwt/signrs256.lpr
+
+******************************************************************************
 commit bce88f2e2bf76c3f979902aaa60598a0487f1509
 Author: florian <florian@freepascal.org>
 Date:   Thu May 5 19:35:01 2022 +0200
