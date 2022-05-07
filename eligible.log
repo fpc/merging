@@ -1,4 +1,43 @@
 ******************************************************************************
+commit 78f23a462e3f4d4c3be14d4ea2a83877093543c5
+Author: florian <florian@freepascal.org>
+Date:   Sat May 7 23:12:45 2022 +0200
+
+      * set minimum compiler to compile the compiler to 3.2.0
+
+M	compiler/pp.pas
+
+******************************************************************************
+commit f4e28ab357c786dc55efc9f9b3f5a4356f7d0629
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Thu Jan 6 22:03:14 2022 +0000
+
+      * x86: Fixes to GetInt/MMRegisterBetween assignments
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
+commit fb14bc845943073730f66be5c0450fe08afca276
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Wed May 4 22:35:11 2022 +0100
+
+      * New webtbs/tw39646.pp test to evaluate fix for
+        i39646
+
+A	tests/webtbs/tw39646.pp
+
+******************************************************************************
+commit 54aae023ea2f4ee864c4ef3ce98ad387c166cb52
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Mon May 2 00:50:10 2022 +0100
+
+      * Bug fix that prevents downsizing of
+        "(x div y) and z" when "x div y" is 64-bit and
+        z is 32-bit or less.  Fixes i39646
+
+M	compiler/ncnv.pas
+
+******************************************************************************
 commit 4a8ddc50b3d45ec2d7c4a4e800ed630ab780b2b8
 Author: marcoonthegit <marco@freepascal.org>
 Date:   Sat May 7 22:10:27 2022 +0200
