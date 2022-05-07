@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 4a8ddc50b3d45ec2d7c4a4e800ed630ab780b2b8
+Author: marcoonthegit <marco@freepascal.org>
+Date:   Sat May 7 22:10:27 2022 +0200
+
+    * fix TreeView_GetItemRect reported by 440bx on forum
+
+M	packages/winunits-base/src/commctrl.pp
+
+******************************************************************************
 commit c745e2cfba3dee29c22a28ac313d6776e5118c32
 Author: marcoonthegit <marco@freepascal.org>
 Date:   Sat May 7 19:05:35 2022 +0200
