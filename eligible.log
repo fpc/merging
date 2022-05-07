@@ -1,4 +1,18 @@
 ******************************************************************************
+commit 62c9e19f39c455969d0894c6b9c43a555773a154
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat May 7 10:30:46 2022 +0200
+
+    * QOI format read/write implementation by Marģers
+
+A	packages/fcl-image/examples/wrpngf.pas
+A	packages/fcl-image/examples/wrqoif.pas
+M	packages/fcl-image/fpmake.pp
+A	packages/fcl-image/src/fpreadqoi.pas
+A	packages/fcl-image/src/fpwriteqoi.pas
+A	packages/fcl-image/src/qoicomn.pas
+
+******************************************************************************
 commit 712823eb6c53fb9fec5843c796bd60560ea6212e
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Sat May 7 10:19:55 2022 +0200
