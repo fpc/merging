@@ -1,4 +1,13 @@
 ******************************************************************************
+commit c745e2cfba3dee29c22a28ac313d6776e5118c32
+Author: marcoonthegit <marco@freepascal.org>
+Date:   Sat May 7 19:05:35 2022 +0200
+
+    * improved version that is still readable and has hex inline. Most importantly, it writes directly to result string rather than a temp, saving a copy that is hurting specially for longer strings.
+
+M	packages/fcl-json/src/fpjson.pp
+
+******************************************************************************
 commit 62c9e19f39c455969d0894c6b9c43a555773a154
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Sat May 7 10:30:46 2022 +0200
