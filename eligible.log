@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 712823eb6c53fb9fec5843c796bd60560ea6212e
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat May 7 10:19:55 2022 +0200
+
+    * Add some delphi compatibility enumerateds to TShiftState
+
+M	rtl/objpas/classes/classesh.inc
+
+******************************************************************************
 commit d78e39d360f3a4873caad0c214628d0bcd263973
 Author: magorium <10467276-magorium@users.noreply.gitlab.com>
 Date:   Sun May 1 08:24:16 2022 +0200
