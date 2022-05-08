@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 4add05c625395fec0a2eda897f3f3dec67f760bd
+Author: florian <florian@freepascal.org>
+Date:   Sun May 8 17:49:14 2022 +0200
+
+      * x86_64-linux and i386-linux align variables and constants up to 64 byte boundaries
+
+M	compiler/systems/i_linux.pas
+
+******************************************************************************
 commit 3d3c904ac588dc79441b0d9c29bd79b6744358c7
 Author: Jonas Maebe <jonas@freepascal.org>
 Date:   Sun May 8 15:03:14 2022 +0200
