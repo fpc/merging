@@ -1,4 +1,15 @@
 ******************************************************************************
+commit 8bef28ccbeaa95f39020c4c954ba9bee9ee5c0a9
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Mon May 9 21:19:06 2022 +0200
+
+    PPU version: bump
+    
+    fcaea210758 changed name mangling
+
+M	compiler/ppu.pas
+
+******************************************************************************
 commit 4add05c625395fec0a2eda897f3f3dec67f760bd
 Author: florian <florian@freepascal.org>
 Date:   Sun May 8 17:49:14 2022 +0200
