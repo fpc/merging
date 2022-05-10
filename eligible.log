@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 8184287ec0c49498f61a587290a0117806282d64
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Tue May 10 23:18:01 2022 +0200
+
+     Fix for variables longer than 127 chars
+
+M	compiler/symbase.pas
+A	tests/webtbs/tw39661f.pp
+
+******************************************************************************
 commit 578ce51fc3178e9a6a1602337ee6626426739b5f
 Author: florian <florian@freepascal.org>
 Date:   Tue May 10 22:38:19 2022 +0200
