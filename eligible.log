@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 578ce51fc3178e9a6a1602337ee6626426739b5f
+Author: florian <florian@freepascal.org>
+Date:   Tue May 10 22:38:19 2022 +0200
+
+      * fix broken merge
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
 commit a73869b879537feb38206e95e3ebbadf755fb406
 Author: florian <florian@freepascal.org>
 Date:   Mon May 9 22:45:21 2022 +0200
