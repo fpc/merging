@@ -1,4 +1,13 @@
 ******************************************************************************
+commit deec6fc4ba954e698c7e928d9d2cbb2724a40b43
+Author: florian <florian@freepascal.org>
+Date:   Wed May 11 20:58:38 2022 +0200
+
+      * set max. variable and constant alignment for win32 and win64 to 64 byte boundaries
+
+M	compiler/systems/i_win.pas
+
+******************************************************************************
 commit 8184287ec0c49498f61a587290a0117806282d64
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Tue May 10 23:18:01 2022 +0200
