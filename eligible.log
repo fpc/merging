@@ -1,4 +1,23 @@
 ******************************************************************************
+commit 4f9c19d94334a8ae546c0e9e0aaae699f16efad5
+Author: florian <florian@freepascal.org>
+Date:   Thu May 12 22:55:59 2022 +0200
+
+      * simplifications by Rika (*2 loops => shl/Bsr), resolves #39717
+
+M	compiler/raatt.pas
+M	compiler/rgobj.pas
+
+******************************************************************************
+commit 69d40dd17a37b87ea0d9ab6aac62703819652470
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Thu May 12 22:32:26 2022 +0200
+
+    Use round to convert float constant into s64comp type for LLVM compiler as is done in general case
+
+M	compiler/llvm/nllvmcon.pas
+
+******************************************************************************
 commit deec6fc4ba954e698c7e928d9d2cbb2724a40b43
 Author: florian <florian@freepascal.org>
 Date:   Wed May 11 20:58:38 2022 +0200
