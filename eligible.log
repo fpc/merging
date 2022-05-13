@@ -1,4 +1,25 @@
 ******************************************************************************
+commit 812736bd416afb2f02c894259aaa8b74f88f9c3f
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Fri May 13 22:56:36 2022 +0300
+
+    + support the atomic.fence instruction in the WebAssembly internal object writer
+
+M	compiler/wasm32/aasmcpu.pas
+
+******************************************************************************
+commit 1d70437017f8158469f0d91186ccfb177bdb15dd
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Fri May 13 22:46:27 2022 +0300
+
+    + added intrinsic (for RTL internal use) that emits the WebAssembly atomic.fence instruction
+
+M	compiler/wasm32/ccpuinnr.inc
+M	compiler/wasm32/nwasminl.pas
+M	rtl/wasm32/cpuh.inc
+M	rtl/wasm32/cpuinnr.inc
+
+******************************************************************************
 commit ddab39dbdc65259d388133c8a99f9ab028c0e879
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Fri May 13 21:15:54 2022 +0300
