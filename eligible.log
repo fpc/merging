@@ -1,4 +1,27 @@
 ******************************************************************************
+commit ddab39dbdc65259d388133c8a99f9ab028c0e879
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Fri May 13 21:15:54 2022 +0300
+
+    + enable the atomics extension on the llvm-mc command line (extension appears
+      to be recognized since LLVM 8.0, so it should be safe to always enable this
+      from the llvm-mc command line)
+
+M	compiler/systems.pas
+M	compiler/wasm32/agllvmmc.pas
+
+******************************************************************************
+commit 5198e47e36c8bceb2842570a7e3f4ec7fd8748e0
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Fri May 13 20:55:12 2022 +0300
+
+    + added the atomic memory access WebAssembly instructions from the threading proposal for WebAssembly
+
+M	compiler/wasm32/cpubase.pas
+M	compiler/wasm32/itcpugas.pas
+M	compiler/wasm32/strinst.inc
+
+******************************************************************************
 commit de7d7d34cab1e3d04a8539345b2b0a5912dff36a
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Fri May 13 08:52:28 2022 +0200
