@@ -1,4 +1,358 @@
 ******************************************************************************
+commit fd125b506e5f69cd2d70d011745c73bb35f8bfb8
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Wed May 11 22:38:23 2022 +0200
+
+    LLVM debug info: LLVM 7.0 support
+    
+    Also defined some llvm flags in a negative way so they can be removed from
+    later versions rather than added
+
+M	compiler/llvm/dbgllvm.pas
+M	compiler/llvm/llvminfo.pas
+
+******************************************************************************
+commit edbddec98a5e2ea120ea0217656cbc0fadd838cd
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sun May 1 20:39:43 2022 +0200
+
+    llvmdbg: diflags/dispflags fixes
+    
+    Fix MainSubprogram flag for older LLVM versions, as it was a plain flag rather
+    than a subprogram flag there.
+    
+    Added visibility flags for procdefs (public/private/protected)
+    
+    Write flags as enum rather than integer to avoid issues with changing values
+    across different LLVM versions
+
+M	compiler/llvm/dbgllvm.pas
+M	compiler/llvm/llvminfo.pas
+
+******************************************************************************
+commit 816ab7ffcce3ae3b73fe5fbb0cf1f363a9efcfff
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sun May 1 20:37:09 2022 +0200
+
+    llvm metadata: counter per unit rather than globally
+    
+    Results in less high numbers, and reproducible results when partially
+    rebuilding
+
+M	compiler/llvm/aasmllvm.pas
+M	compiler/llvm/aasmllvmmetadata.pas
+
+******************************************************************************
+commit 9b280db2b12bd6fb201ebc967af98a1320ca14cd
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sat Apr 30 14:54:18 2022 +0200
+
+    dbgllvm: add scopeLine attribute for function debug info
+    
+    Ensures that breaking on the function correctly sets the breakpoint on the
+    first source line of the function (rather than potentially in the prologue
+    without line information)
+
+M	compiler/llvm/dbgllvm.pas
+
+******************************************************************************
+commit d1aaeff832bd6b0ef20f1f38c156622b0939ac7e
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sat Apr 30 14:52:19 2022 +0200
+
+    dbgllvm: fix crash for files without procedures/functions
+
+M	compiler/llvm/dbgllvm.pas
+
+******************************************************************************
+commit 067d96242c10b0ec3c24f1461d71d450d9d72fc5
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sat Apr 30 14:49:56 2022 +0200
+
+    dbgllvm: fix crash when generating debug info for procdef of imported struct
+
+M	compiler/llvm/dbgllvm.pas
+
+******************************************************************************
+commit cf6a97c8edea0f589a46eb3b862ef36455c18ec9
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sat Apr 30 14:44:31 2022 +0200
+
+    LLVM: fix fileinfo of temp allocations
+
+M	compiler/llvm/tgllvm.pas
+
+******************************************************************************
+commit 8d2d91d5055e27ee3c2bed9444241d4ee5bd6dbb
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Fri Apr 29 22:01:45 2022 +0200
+
+    dbgllvm: fix infinite loop when writing multi-dimensional array info
+
+M	compiler/llvm/dbgllvm.pas
+
+******************************************************************************
+commit a7e19e9f068422a4d6ff58ecc1559c0f5627612c
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Fri Apr 29 22:00:28 2022 +0200
+
+    llvm metadata: use cardinal instead of tsuperregister for unnamed metadata numbers
+    
+    We're not putting these into registers, so no need to limit ourselves
+
+M	compiler/llvm/aasmllvmmetadata.pas
+
+******************************************************************************
+commit a75adf542dc2e3c8c0ff80a976d96cc53d5598ba
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Thu Apr 28 21:57:37 2022 +0200
+
+    dbgllvm: handle empty spFlags
+
+M	compiler/llvm/dbgllvm.pas
+
+******************************************************************************
+commit 91563115c42448df25ac313b4be6049e0f65d11f
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Thu Apr 28 21:56:46 2022 +0200
+
+    dbgllvm: handle array of const (stub)
+
+M	compiler/llvm/dbgllvm.pas
+
+******************************************************************************
+commit aec7aefdd5a0beea97fe69de99815f350afaf717
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Thu Apr 28 21:55:30 2022 +0200
+
+    dbgllvm: create dummy line info for instructions that shouldn't have any
+    
+    Use line 0 for that, like clang does
+
+M	compiler/llvm/dbgllvm.pas
+
+******************************************************************************
+commit 20674089bd3306c2b2b9bef14647e9c41c6499c8
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Tue Apr 26 20:26:47 2022 +0200
+
+    llvmdbg: add declaration for all DISPFlags
+
+M	compiler/llvm/dbgllvm.pas
+
+******************************************************************************
+commit 13055bb58a2ca715666b5f19a8ce4b507e921886
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Tue Apr 26 20:25:38 2022 +0200
+
+    llvmtype: ensure all processed defs get recorded
+    
+    This is necessary so they get reset as well, as they may be reprocessed while
+    compiling other units (both by llvmtype and dbgllvm)
+
+M	compiler/llvm/llvmtype.pas
+
+******************************************************************************
+commit f832444eaa72854e53515b253914221095c92419
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Tue Apr 26 10:30:04 2022 +0200
+
+    LLVM lineinfo: fix nolineinfo generation
+    
+    LLVM requires line info metadata for all call instructions that may potentially
+    be inlined. So attach one to all call instructions in nolineinfo regions, but
+    set their line number to 0 (same as what clang does)
+
+M	compiler/llvm/dbgllvm.pas
+
+******************************************************************************
+commit 40418f5b3d5d69b4c38fefbbc46d353b84bc02ae
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Wed Apr 20 22:21:04 2022 +0200
+
+    dbgllvm: remove restriction to only write struct procdef in context of struct
+    
+    Does not make a difference for LLVM since all debug info for procdefs is
+    assigned to the definition instructions for the procdef anyway, and avoids
+    issues when only generating line info (in that case the structs will never
+    be processed, but we still have to generate the basic debug info for their
+    procdefs to provide a scope for their line info)
+
+M	compiler/llvm/dbgllvm.pas
+
+******************************************************************************
+commit 6cacd9c824d34c42f71977b23342dcf2403b47de
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Wed Apr 20 21:54:59 2022 +0200
+
+    llvmdbg: initial version based on dbgdwarf
+    
+    Line information is mostly functional, type information not yet (except
+    for basic procdef info, as that's required for line info)
+
+A	compiler/llvm/dbgllvm.pas
+
+******************************************************************************
+commit f1bcd02aaf66b7eeaddc6173ded485938f8335b7
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Wed Apr 20 21:43:10 2022 +0200
+
+    Typed const builder: store tsym
+    
+    Useful for LLVM debug info generation
+
+M	compiler/aasmcnst.pas
+M	compiler/cresstr.pas
+M	compiler/llvm/aasmllvm.pas
+M	compiler/llvm/hlcgllvm.pas
+M	compiler/llvm/llvmtype.pas
+M	compiler/llvm/nllvmcal.pas
+M	compiler/llvm/nllvmtcon.pas
+M	compiler/llvm/nllvmutil.pas
+M	compiler/ngtcon.pas
+
+******************************************************************************
+commit 5075198a8b76034e5b5c36b8d783e276c6f11b56
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Mon Apr 18 13:30:32 2022 +0200
+
+    tfileposinfo: separate types for the fields
+    
+    Allows other units to declare variables of the appropriate type when storing
+    those values separately
+
+M	compiler/globtype.pas
+
+******************************************************************************
+commit b7b495a679e1ed166c6f99f1247398d3dec5dd4d
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sat Apr 16 21:15:06 2022 +0200
+
+    LLVM: assign procdef.procstarttai, like in the regular code generator
+
+M	compiler/llvm/hlcgllvm.pas
+
+******************************************************************************
+commit 229eb93e72156f8d7175c3ae379087b8a46b60e9
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sat Apr 16 21:13:21 2022 +0200
+
+    tnodeuitls: merge GenerateObjCImageInfo into InsertObjectInfo
+    
+    LLVM needs to insert the Objective-C image info into the general object info
+    metadata. This way we don't need to store a reference to that metadata so
+    as to add extra data to it later (tnodeutils is never instantiated, it only
+    contains class methods)
+
+M	compiler/llvm/nllvmutil.pas
+M	compiler/ngenutil.pas
+M	compiler/objcgutl.pas
+
+******************************************************************************
+commit 78535bbcd884a550ce399bc6c0ce8ca47017b45e
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sat Apr 16 21:05:05 2022 +0200
+
+    agllvm: support for writing specialised metadata nodes
+
+M	compiler/llvm/agllvm.pas
+
+******************************************************************************
+commit d29473154267150c65be268cf070941573a58ffc
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sat Apr 9 14:48:38 2022 +0200
+
+    LLVM: enable DWARF debug info generation
+
+M	compiler/dbgbase.pas
+M	compiler/llvm/llvminfo.pas
+M	compiler/llvm/llvmnode.pas
+M	compiler/llvm/nllvmutil.pas
+M	compiler/systems.inc
+M	compiler/systems.pas
+
+******************************************************************************
+commit 527c68b6c3c9a77318768ad43b1558278dacf465
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sat Apr 9 15:00:56 2022 +0200
+
+    agllvm: remove useless code
+
+M	compiler/llvm/agllvm.pas
+
+******************************************************************************
+commit a8cb061a5063fdab6cd5c1a92d7abe5feadc0c8a
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sat Apr 9 14:50:27 2022 +0200
+
+    LLVM: support for attaching metadata to instructions
+
+M	compiler/llvm/aasmllvm.pas
+M	compiler/llvm/aasmllvmmetadata.pas
+M	compiler/llvm/agllvm.pas
+
+******************************************************************************
+commit 4293d4455c6481529846ff30ee7f50a19ff31bf1
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sat Apr 9 15:01:22 2022 +0200
+
+    LLVM: factor out writing operands in agllvm
+
+M	compiler/llvm/agllvm.pas
+
+******************************************************************************
+commit 411fa298ae03b9420a722ed347428c27ee423c29
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sat Apr 9 14:49:15 2022 +0200
+
+    LLVM: data location debug info support
+    
+    This was added to LLVM for Fortran arrays, but can also be used for Pascal
+    dynamic arrays
+
+M	compiler/llvm/llvminfo.pas
+
+******************************************************************************
+commit 1d010d918bdc0d0eb07220f75ead869100093f1d
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Fri May 13 20:54:14 2022 +0200
+
+    LLVM metadata: specialised metadata fleshing out
+
+M	compiler/llvm/aasmllvmmetadata.pas
+
+******************************************************************************
+commit ac89cfc6c705d65fa0e8a359d0a83e0a08a261ed
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Fri May 13 20:53:37 2022 +0200
+
+    aasmtai: added tai_string.Create(ansistring)
+    
+    Also prevent range check errors for empty strings
+
+M	compiler/aasmtai.pas
+
+******************************************************************************
+commit 4da1ad71a4ead2a6643e56087d03c1ddb6303416
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sun Apr 18 17:46:45 2021 +0200
+
+    * moved a bunch of constants from dbgdwarf to dbgdwarfconst
+
+M	compiler/dbgdwarf.pas
+A	compiler/dbgdwarfconst.pas
+
+******************************************************************************
+commit a285500d3680b13c2c5795d99c51404764b7df39
+Author: florian <florian@freepascal.org>
+Date:   Fri May 13 22:37:43 2022 +0200
+
+      * patch by Rike: Use reverse_longword instead of manually reversing longword, resolves #39720
+
+M	compiler/ncgcon.pas
+M	compiler/ncon.pas
+
+******************************************************************************
 commit 812736bd416afb2f02c894259aaa8b74f88f9c3f
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Fri May 13 22:56:36 2022 +0300
