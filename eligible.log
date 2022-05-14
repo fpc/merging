@@ -1,4 +1,41 @@
 ******************************************************************************
+commit 16cb409fbf3004690ac9cc22a41e4d564f1e441d
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sat May 14 22:31:12 2022 +0200
+
+    LLVM: separate as_clang_llvm_darwin
+    
+    The Darwin local label prefix ('L') is different from that on most other
+    platforms ('.L). While LLVM generally handles that for us, for inline
+    assembly it's still FPC's job to adhere to the target conventions.
+
+M	compiler/assemble.pas
+M	compiler/llvm/agllvm.pas
+M	compiler/options.pas
+M	compiler/systems.inc
+M	compiler/systems.pas
+
+******************************************************************************
+commit 481741c65b34f6090e319161eadfa4612f786736
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sat May 14 13:59:05 2022 +0200
+
+    llvmdbg: remove some commented dbgdwarf code
+    
+    Also adjusted some hashtable sizes
+
+M	compiler/llvm/dbgllvm.pas
+
+******************************************************************************
+commit e8da1d081a710fb13101bc265bc363d05049316f
+Author: florian <florian@freepascal.org>
+Date:   Sat May 14 22:23:35 2022 +0200
+
+      + Aarch64: MovOp2AddUtxw optimization
+
+M	compiler/aarch64/aoptcpu.pas
+
+******************************************************************************
 commit 9b87fb4a347a3ac3aef351440911b50899b5e444
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Sat May 14 21:26:13 2022 +0200
