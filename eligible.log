@@ -1,4 +1,15 @@
 ******************************************************************************
+commit cddffbed58d6cf218eb0266455b0ae5c8bc806a3
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sat May 14 08:33:52 2022 +0200
+
+    llvmdbg: disable open array data location
+    
+    Since we don't generate full debug info for parameters yet, this internalerrors
+
+M	compiler/llvm/dbgllvm.pas
+
+******************************************************************************
 commit fd125b506e5f69cd2d70d011745c73bb35f8bfb8
 Author: Jonas Maebe <jonas@freepascal.org>
 Date:   Wed May 11 22:38:23 2022 +0200
