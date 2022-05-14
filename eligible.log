@@ -1,4 +1,24 @@
 ******************************************************************************
+commit a0d4cccd873a152308f0f917f636d17ed6d86100
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Sat May 14 21:05:08 2022 +0200
+
+     Fix syntax error for isLocal field for function/procedure type LLVM debug information
+
+M	compiler/llvm/dbgllvm.pas
+
+******************************************************************************
+commit f6c741ee73d12001867ae9a750165320871cc340
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Sat May 7 11:34:54 2022 +0100
+
+      * Corrected label reference counts caused by TAsmLabel.GetName incrementing refs
+
+M	compiler/aasmbase.pas
+M	compiler/aasmcnst.pas
+M	compiler/objcgutl.pas
+
+******************************************************************************
 commit cddffbed58d6cf218eb0266455b0ae5c8bc806a3
 Author: Jonas Maebe <jonas@freepascal.org>
 Date:   Sat May 14 08:33:52 2022 +0200
