@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 9b87fb4a347a3ac3aef351440911b50899b5e444
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Sat May 14 21:26:13 2022 +0200
+
+    Use '.L' as labelprefix for LLVM compiler variant
+
+M	compiler/llvm/agllvm.pas
+
+******************************************************************************
 commit a0d4cccd873a152308f0f917f636d17ed6d86100
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Sat May 14 21:05:08 2022 +0200
