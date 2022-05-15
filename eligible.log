@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 0d74752b1fd94103ee9dd360bc56c1d22c6f6bb9
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sun May 15 18:01:48 2022 +0200
+
+    Fix %cpu type as spotted by Alexey Torgashin
+
+M	tests/webtbs/twm0226.pp
+
+******************************************************************************
 commit 9b11509dd077389a25f3abafdf172a03002dca1e
 Author: Jonas Maebe <jonas@freepascal.org>
 Date:   Sun May 15 10:56:59 2022 +0200
