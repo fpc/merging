@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 81fd3e274831ad5caab055f3066cf3751e96d4c2
+Author: florian <florian@freepascal.org>
+Date:   Sun May 15 19:32:27 2022 +0200
+
+      * more readable fix for the missing ait_instruction check
+
+M	compiler/aarch64/aoptcpu.pas
+
+******************************************************************************
 commit 27db63969a047b37e4cacbd5d1be12b75cdf8dd7
 Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
 Date:   Sun May 15 17:01:35 2022 +0100
