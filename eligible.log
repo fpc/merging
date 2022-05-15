@@ -1,4 +1,22 @@
 ******************************************************************************
+commit 27db63969a047b37e4cacbd5d1be12b75cdf8dd7
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Sun May 15 17:01:35 2022 +0100
+
+      * a64: Fix where hp1's was assumed to be an instruction and not actually checked
+
+M	compiler/aarch64/aoptcpu.pas
+
+******************************************************************************
+commit 41704feab4b322b2e5d5cc13852be2f0be067b64
+Author: marcoonthegit <marco@freepascal.org>
+Date:   Sun May 15 18:22:18 2022 +0200
+
+      * fix ipv6_ constants in unxsockh. bug 29111  Apparently changed since 2005
+
+M	packages/rtl-extra/src/linux/unxsockh.inc
+
+******************************************************************************
 commit 0d74752b1fd94103ee9dd360bc56c1d22c6f6bb9
 Author: Jonas Maebe <jonas@freepascal.org>
 Date:   Sun May 15 18:01:48 2022 +0200
