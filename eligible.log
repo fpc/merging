@@ -1,4 +1,22 @@
 ******************************************************************************
+commit 9b11509dd077389a25f3abafdf172a03002dca1e
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sun May 15 10:56:59 2022 +0200
+
+    Text for merge request #226
+
+A	tests/webtbs/twm0226.pp
+
+******************************************************************************
+commit 1923c8a6117876ed9646ed0ea8a7f8f2f49123bf
+Author: Brendan Dougherty <brandougherty1@gmail.com>
+Date:   Sun May 15 08:56:50 2022 +0000
+
+    Only use Win64 vectorcall special case if calling convention is vectorcall.
+
+M	compiler/x86_64/cpupara.pas
+
+******************************************************************************
 commit 16cb409fbf3004690ac9cc22a41e4d564f1e441d
 Author: Jonas Maebe <jonas@freepascal.org>
 Date:   Sat May 14 22:31:12 2022 +0200
