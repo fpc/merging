@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 9f47e21da3c24a06be2dde8435acd3b3a2d1aa72
+Author: florian <florian@freepascal.org>
+Date:   Mon May 16 22:56:30 2022 +0200
+
+      * increase default dwarf version for linux targets where current distributions exist
+
+M	compiler/systems/i_linux.pas
+
+******************************************************************************
 commit 7f886cc4b0f57b41c7391a2e359b3db16281232a
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Mon May 16 15:12:07 2022 +0000
