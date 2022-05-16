@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 7f886cc4b0f57b41c7391a2e359b3db16281232a
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Mon May 16 15:12:07 2022 +0000
+
+     Call increfs manually to avoid removal of stabs debug related labels
+
+M	compiler/dbgstabs.pas
+
+******************************************************************************
 commit 81fd3e274831ad5caab055f3066cf3751e96d4c2
 Author: florian <florian@freepascal.org>
 Date:   Sun May 15 19:32:27 2022 +0200
