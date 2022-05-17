@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 5203c3e84962c29670f4e0a87fd23cd6737ad882
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Tue May 17 23:28:47 2022 +0200
+
+    Add dumping of backtrace in case of unhandled exception inside TCustomInstaller.Run method
+
+M	packages/fpmkunit/src/fpmkunit.pp
+
+******************************************************************************
 commit be969205ad77a1ecaa8dfd98bcfe6257d3a07b0c
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Tue May 17 22:47:13 2022 +0200
