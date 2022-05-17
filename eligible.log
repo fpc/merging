@@ -1,4 +1,13 @@
 ******************************************************************************
+commit be969205ad77a1ecaa8dfd98bcfe6257d3a07b0c
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Tue May 17 22:47:13 2022 +0200
+
+     Do not alloc/dealloc NR_DEFAULTFLAGS for wasm32, as it is NR_NO
+
+M	compiler/wasm32/hlcgcpu.pas
+
+******************************************************************************
 commit 9f47e21da3c24a06be2dde8435acd3b3a2d1aa72
 Author: florian <florian@freepascal.org>
 Date:   Mon May 16 22:56:30 2022 +0200
