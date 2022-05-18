@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 050153fb503b5090e29ad31e8bf4c3b8501e691a
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Wed May 18 12:36:31 2022 +0200
+
+    * Make sure webcompiler works again
+
+M	packages/fcl-passrc/src/pparser.pp
+M	utils/pas2js/pas2jswebcompiler.pp
+
+******************************************************************************
 commit 5203c3e84962c29670f4e0a87fd23cd6737ad882
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Tue May 17 23:28:47 2022 +0200
