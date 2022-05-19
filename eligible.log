@@ -1,4 +1,32 @@
 ******************************************************************************
+commit 621f3b8387ca140437280a6cd91936bbc304f2b1
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Thu May 19 09:51:38 2022 +0200
+
+    fcl-passrc: fixed compile pscanner with pas2js
+
+M	packages/fcl-passrc/src/pscanner.pp
+
+******************************************************************************
+commit f102e40b691268bf3ec424491c918501fac489fb
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Thu May 19 09:46:40 2022 +0200
+
+    fcl-passrc: moved ReadNextPascalToken to fpscanner
+
+M	packages/fcl-passrc/src/pparser.pp
+M	packages/fcl-passrc/src/pscanner.pp
+
+******************************************************************************
+commit dd6ccd0fb4bf6ed6988ad04fb71ee441a4600438
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Thu May 19 09:46:15 2022 +0200
+
+    fcl-json: fixed compile with fpc 3.2.2
+
+M	packages/fcl-json/src/fpjson.pp
+
+******************************************************************************
 commit 1b22a68fc6be4fb51c57a5f01b5193abacab4cf1
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Wed May 18 14:48:11 2022 +0200
