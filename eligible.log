@@ -1,4 +1,18 @@
 ******************************************************************************
+commit d8f06aa4f163efae1c2938662c5e816e25a42b64
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Fri May 20 17:36:37 2022 +0300
+
+    + added instrinsic support for the all the 2-parameter read-modify-write
+      WebAssembly atomic operations (add, sub, and, or, xor, xchg). Note that they
+      are not implemented in the internal assembler, yet.
+
+M	compiler/wasm32/ccpuinnr.inc
+M	compiler/wasm32/nwasminl.pas
+M	rtl/wasm32/cpuh.inc
+M	rtl/wasm32/cpuinnr.inc
+
+******************************************************************************
 commit c5a443d0dd4579f9873ece67624bba33edce8cef
 Author: Karoly Balogh <karoly@freepascal.org>
 Date:   Fri May 20 01:55:52 2022 +0200
