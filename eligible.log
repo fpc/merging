@@ -1,4 +1,13 @@
 ******************************************************************************
+commit c5a443d0dd4579f9873ece67624bba33edce8cef
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Fri May 20 01:55:52 2022 +0200
+
+    amunits: correct the HookEntry wrapper functions to new compiler behavior. at some point during 3.3.1, the compiler started to omit stackframes when not needed, which broke the previous assumptions about stackframe handling
+
+M	packages/amunits/src/coreunits/utility.pas
+
+******************************************************************************
 commit c79df5f0fccf50ec0c18d580af898b68021d49e4
 Author: florian <florian@freepascal.org>
 Date:   Thu May 19 22:28:09 2022 +0200
