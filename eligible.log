@@ -1,4 +1,14 @@
 ******************************************************************************
+commit a1ee4e04ed8b5410a10b49b854fa17420eea19fc
+Author: florian <florian@freepascal.org>
+Date:   Fri May 20 22:50:59 2022 +0200
+
+      * if a for loop does not change a variable, we can propate it if it is a constant, resolves #39726
+
+M	compiler/optconstprop.pas
+M	compiler/psub.pas
+
+******************************************************************************
 commit 8817e896db8619b278e679b1c62bbec316a12f0a
 Author: Jonas Maebe <jonas@freepascal.org>
 Date:   Fri May 20 21:18:44 2022 +0200
