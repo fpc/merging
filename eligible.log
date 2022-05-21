@@ -1,4 +1,16 @@
 ******************************************************************************
+commit e03b9205206455c56174029ccc35d27a0e43b61a
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Fri May 20 19:33:20 2022 +0300
+
+    + added intrinsic support for the WebAssembly cmpxchg atomic operations as well
+
+M	compiler/wasm32/ccpuinnr.inc
+M	compiler/wasm32/nwasminl.pas
+M	rtl/wasm32/cpuh.inc
+M	rtl/wasm32/cpuinnr.inc
+
+******************************************************************************
 commit a1ee4e04ed8b5410a10b49b854fa17420eea19fc
 Author: florian <florian@freepascal.org>
 Date:   Fri May 20 22:50:59 2022 +0200
