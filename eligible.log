@@ -1,4 +1,88 @@
 ******************************************************************************
+commit ccc843f98319c4dc3e5a6654f4c20a238969e284
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sat May 21 21:57:32 2022 +0200
+
+    llvmdbg: emit uppercase symbol names unless C++-style debug info is selected
+    
+    Otherwise gdb won't find the symbols unless you use the exact case
+
+M	compiler/llvm/dbgllvm.pas
+
+******************************************************************************
+commit 9a7a97175ef8d78e03d878b29ee5d48d24186016
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sat May 21 20:55:52 2022 +0200
+
+    llvmdbg: emit debug information for global variables
+
+M	compiler/llvm/dbgllvm.pas
+
+******************************************************************************
+commit 1b393c80aad885242259470682078971d29a83a1
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sat May 21 20:54:58 2022 +0200
+
+    llvmdbg: fix missing initialisation when there are no procedures
+
+M	compiler/llvm/dbgllvm.pas
+
+******************************************************************************
+commit d0bf7acc188e3a0b701c58f48a196bc2d8ded78b
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sat May 21 20:54:04 2022 +0200
+
+    llvmdbg: build hashtable to lookup llvmdecl belonging to a global variable
+    
+    We need to attach the debug info to it
+
+M	compiler/aasmdata.pas
+M	compiler/llvm/dbgllvm.pas
+
+******************************************************************************
+commit e865ab4c3a52fac811b39f24b4572610b0e59a7e
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sat May 21 20:51:06 2022 +0200
+
+    llvmdbg: handle nil in more places
+    
+    "void" is represented as "null" in LLVM debug information, which we represent
+    by nil
+
+M	compiler/llvm/aasmllvmmetadata.pas
+M	compiler/llvm/dbgllvm.pas
+
+******************************************************************************
+commit a33e6230a00bde7fda922ccf94a49da79f0bff5c
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sat May 21 20:48:43 2022 +0200
+
+    llvm metadata: add DIGlobalVariableExpression enum
+    
+    Only documented as of LLVM 9.0, but existed already in 7.0.
+    Also fixed DIGlobalVariable not being marked as unique
+
+M	compiler/llvm/aasmllvmmetadata.pas
+
+******************************************************************************
+commit f8967668371d7b2fe86362f898745d1710ab9abe
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sat May 21 20:48:01 2022 +0200
+
+    agllvm: fix writing metadata operands for variable declarations
+
+M	compiler/llvm/agllvm.pas
+
+******************************************************************************
+commit 91481a5fae82c1995f41256dfdb08c0f278348c5
+Author: florian <florian@freepascal.org>
+Date:   Sat May 21 22:31:51 2022 +0200
+
+      * more robust code for constant propagation in for loops
+
+M	compiler/optconstprop.pas
+
+******************************************************************************
 commit f1cb5d8f71cc09bd03a3fc6a67a1803bc2265016
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Sat May 21 18:03:14 2022 +0300
