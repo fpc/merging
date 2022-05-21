@@ -1,4 +1,13 @@
 ******************************************************************************
+commit e376851fd8aabb05ac93bc234ae06fd9ed0cdd32
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sat May 21 16:29:28 2022 +0300
+
+    * fixes to the WebAssembly atomic function intrinsics
+
+M	rtl/wasm32/cpuh.inc
+
+******************************************************************************
 commit 08a9b16c82d61ea383854174b81528532ef124ab
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Sat May 21 03:31:42 2022 +0200
