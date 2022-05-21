@@ -1,4 +1,25 @@
 ******************************************************************************
+commit 08a9b16c82d61ea383854174b81528532ef124ab
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Sat May 21 03:31:42 2022 +0200
+
+    fcl-json: fixed tests
+
+M	packages/fcl-json/tests/testjson.lpi
+M	packages/fcl-json/tests/testjsonreader.pas
+
+******************************************************************************
+commit 5700cb56aca837a4ba11b3451ab3630596e98ca9
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Sat May 21 03:27:27 2022 +0200
+
+    fcl-json: fixed StringToJSONString
+
+M	packages/fcl-json/src/fpjson.pp
+M	packages/fcl-json/tests/jsonconftest.pas
+M	packages/fcl-json/tests/testjsondata.pas
+
+******************************************************************************
 commit e03b9205206455c56174029ccc35d27a0e43b61a
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Fri May 20 19:33:20 2022 +0300
