@@ -1,4 +1,36 @@
 ******************************************************************************
+commit f1cb5d8f71cc09bd03a3fc6a67a1803bc2265016
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sat May 21 18:03:14 2022 +0300
+
+    + support intrinsic for the memory.atomic.notify WebAssembly instruction
+
+M	compiler/wasm32/nwasminl.pas
+M	rtl/wasm32/cpuh.inc
+
+******************************************************************************
+commit 86643710c438d759e902012bd98c90a9996f070b
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sat May 21 17:53:38 2022 +0300
+
+    + support intrinsics for the WebAssembly memory.atomic.wait32 and memory.atomic.wait64 instructions
+
+M	compiler/wasm32/ccpuinnr.inc
+M	compiler/wasm32/nwasminl.pas
+M	rtl/wasm32/cpuh.inc
+M	rtl/wasm32/cpuinnr.inc
+
+******************************************************************************
+commit 3cfdf000a2506431a9176e47aeadb1db67d7357d
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sat May 21 17:24:21 2022 +0300
+
+    + support the new WebAssembly threads and atomics instructions in the internal assembler
+
+M	compiler/wasm32/aasmcpu.pas
+M	compiler/wasm32/cpubase.pas
+
+******************************************************************************
 commit e376851fd8aabb05ac93bc234ae06fd9ed0cdd32
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Sat May 21 16:29:28 2022 +0300
