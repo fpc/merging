@@ -1,4 +1,32 @@
 ******************************************************************************
+commit 172803b2f7e5123e8d2f973dd281665e446340c1
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Mon May 23 00:55:46 2022 +0200
+
+    fcl-passrc: fixed compile pas2js
+
+M	packages/fcl-passrc/src/pscanner.pp
+
+******************************************************************************
+commit 1b7aefc11df9cf7f034a29c4c372d571ab49e78b
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Mon May 23 00:55:37 2022 +0200
+
+    fcl-json: fixed compile pas2js
+
+M	packages/fcl-json/src/fpjson.pp
+
+******************************************************************************
+commit f2ba814b9e75bfae1aadfcb4fbefb0696f5c8c0d
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Mon May 23 00:50:18 2022 +0200
+
+    fcl-json: StringToJSON: fixed pas2js compile and less mem allocations
+
+M	packages/fcl-json/src/fpjson.pp
+M	packages/fcl-json/tests/testjsondata.pas
+
+******************************************************************************
 commit 20e3a7311c6a44fd44995f3e56c94098f60da32d
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Sun May 22 23:46:29 2022 +0200
