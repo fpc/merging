@@ -1,4 +1,16 @@
 ******************************************************************************
+commit 47c271dcd0635ea584023800d66d1ef8ca5ec07e
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sun May 22 06:34:10 2022 +0300
+
+    + implemented InterlockedIncrement, InterlockedDecrement, InterlockedExchange,
+      InterlockedCompareExchange and InterlockedExchangeAdd for WebAssembly in a
+      thread safe way, using the thread and atomics extension, when the RTL is
+      compiled with -dFPC_WASM_THREADS
+
+M	rtl/wasm32/wasm32.inc
+
+******************************************************************************
 commit ccc843f98319c4dc3e5a6654f4c20a238969e284
 Author: Jonas Maebe <jonas@freepascal.org>
 Date:   Sat May 21 21:57:32 2022 +0200
