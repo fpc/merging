@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 4c8e802dd36a951f6925bb8bcf4c9ea043235f81
+Author: florian <florian@freepascal.org>
+Date:   Sun May 22 22:51:57 2022 +0200
+
+      * continue const. propagation after a for loop when possible
+
+M	compiler/optconstprop.pas
+M	compiler/psub.pas
+
+******************************************************************************
 commit bcea5581def3f663a2fa52bca29f7e2191e7e45e
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Sun May 22 19:56:39 2022 +0200
