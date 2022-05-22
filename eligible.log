@@ -1,4 +1,13 @@
 ******************************************************************************
+commit db9375d23fc0c859c6d0249fcfb59f8160025e71
+Author: marcoonthegit <marco@freepascal.org>
+Date:   Sun May 22 12:37:58 2022 +0200
+
+    * add  GetDateFormatEx, from bug #35118 by 440bx
+
+M	rtl/win/wininc/func.inc
+
+******************************************************************************
 commit 47c271dcd0635ea584023800d66d1ef8ca5ec07e
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Sun May 22 06:34:10 2022 +0300
