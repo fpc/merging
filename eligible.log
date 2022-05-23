@@ -1,4 +1,22 @@
 ******************************************************************************
+commit 32fa0ecaf991bb0f8ecca00675a31808976fbef4
+Author: florian <florian@freepascal.org>
+Date:   Mon May 23 22:28:49 2022 +0200
+
+      * cleanup
+
+M	compiler/symtype.pas
+
+******************************************************************************
+commit e8e53d13cde14e49512f220373c6ef2f9352e1db
+Author: florian <florian@freepascal.org>
+Date:   Mon May 23 21:46:41 2022 +0200
+
+      * fix #39730 as suggested by Jonas
+
+M	compiler/x86/cgx86.pas
+
+******************************************************************************
 commit 172803b2f7e5123e8d2f973dd281665e446340c1
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Mon May 23 00:55:46 2022 +0200
