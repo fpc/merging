@@ -1,4 +1,25 @@
 ******************************************************************************
+commit 99d66b4c93821f5b4dfbc0fc236ad0c7626d5310
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Tue May 24 15:16:40 2022 +0300
+
+    + added AtomicAdd() and AtomicSub() intrinsics to the WebAssembly unit
+
+M	rtl/wasm32/webassembly.pp
+
+******************************************************************************
+commit 585d0cf5746ab85b5dc5a202606f8426d4a282ab
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Tue May 24 14:50:42 2022 +0300
+
+    + added unit WebAssembly for WebAssembly-specific stuff. Currently contains
+      the AtomicFence intrinsic, which emits the atomic.fence instruction.
+
+M	rtl/wasi/Makefile
+M	rtl/wasi/Makefile.fpc
+A	rtl/wasm32/webassembly.pp
+
+******************************************************************************
 commit d9781bcebee08dfdbbdee90a595e92ce1fc284fd
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Tue May 24 14:10:04 2022 +0300
