@@ -1,4 +1,50 @@
 ******************************************************************************
+commit 6e4e3b85800d8f12fabe4527e4c13ec5002d9a02
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Tue May 24 11:06:59 2022 +0300
+
+    * fixed WebAssembly code generation in thlcgwasm.g_overflowCheck_loc (patch by Pierre)
+
+M	compiler/wasm32/hlcgcpu.pas
+
+******************************************************************************
+commit 8bea5dd41e86662f33771e442650d774af1a3d4b
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Tue May 24 11:00:10 2022 +0300
+
+    * WebAssembly code generation fix in thlcgwasm.a_op_reg_reg_reg_checkoverflow, based on patch by Pierre (but simplified, to use a single block)
+
+M	compiler/wasm32/hlcgcpu.pas
+
+******************************************************************************
+commit 283c213a0c6ffb942860649f703b4cf8862e4f5f
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Tue May 24 10:47:38 2022 +0300
+
+    * patch by Pierre, which fixes WebAssembly code generation for signed div/mod with overflow checking
+
+M	compiler/wasm32/nwasmmat.pas
+
+******************************************************************************
+commit 0f4340e65963273c12c30358b34df6eb055fea4c
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Tue May 24 10:30:20 2022 +0300
+
+    * fix regressions after previous patch by correctly parsing output, which does not contain '##WASI-EXITCODE:'
+
+M	tests/utils/dotest.pp
+
+******************************************************************************
+commit a8b789d183513c381c0dc60c0cd50700e8909dfe
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Tue May 24 10:15:44 2022 +0300
+
+    * patch from Pierre for working around the exitcode <= 125 limitation in wasmtime
+
+M	rtl/wasi/system.pp
+M	tests/utils/dotest.pp
+
+******************************************************************************
 commit 32fa0ecaf991bb0f8ecca00675a31808976fbef4
 Author: florian <florian@freepascal.org>
 Date:   Mon May 23 22:28:49 2022 +0200
