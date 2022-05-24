@@ -1,4 +1,41 @@
 ******************************************************************************
+commit 9274f17c527a2e785206282bd05fe7f4ccc7a01d
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Tue May 24 16:06:05 2022 +0300
+
+    + reserved inline numbers for the WebAssembly atomic loads and stores
+
+M	compiler/wasm32/ccpuinnr.inc
+M	rtl/wasm32/cpuinnr.inc
+
+******************************************************************************
+commit 7fa8f514af5bf6d2e1865353b34ab56d92b54e1b
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Tue May 24 15:40:13 2022 +0300
+
+    + added AtomicCompareExchange() to the WebAssembly unit
+
+M	rtl/wasm32/webassembly.pp
+
+******************************************************************************
+commit 9ba01e7aee19489072b616647ec044ce03a14a43
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Tue May 24 15:24:25 2022 +0300
+
+    + added AtomicExchange() to the WebAssembly unit
+
+M	rtl/wasm32/webassembly.pp
+
+******************************************************************************
+commit 362cabe6845a0769cc8e7fcd4dd5c75a74a07a85
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Tue May 24 15:21:59 2022 +0300
+
+    + added AtomicAnd(), AtomicOr() and AtomicXor() to the WebAssembly unit
+
+M	rtl/wasm32/webassembly.pp
+
+******************************************************************************
 commit 99d66b4c93821f5b4dfbc0fc236ad0c7626d5310
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Tue May 24 15:16:40 2022 +0300
