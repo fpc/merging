@@ -1,4 +1,25 @@
 ******************************************************************************
+commit e74797d41150a8b333a104c245d69a700da0401a
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Tue May 24 11:38:42 2022 +0300
+
+    * replaced several internal errors, related to the WebAssembly labels
+      resolution with more meaningful error messages, in order to ease the
+      debugging of the compiler. Based on patch by Pierre.
+
+M	compiler/wasm32/cpupi.pas
+M	compiler/wasm32/hlcgcpu.pas
+
+******************************************************************************
+commit 748f71e5bbbe88d57dfa3cdc2569c698a982fc27
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Tue May 24 11:18:52 2022 +0300
+
+    + enabled compilation of units variants and rtti, bug #39579 is now fixed
+
+M	packages/rtl-objpas/fpmake.pp
+
+******************************************************************************
 commit 6e4e3b85800d8f12fabe4527e4c13ec5002d9a02
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Tue May 24 11:06:59 2022 +0300
