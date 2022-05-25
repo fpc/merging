@@ -1,4 +1,23 @@
 ******************************************************************************
+commit 219294c02b4129d8a063626c72dc3f867ab75680
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Wed May 25 19:05:28 2022 +0300
+
+    + added AtomicLoad() to the WebAssembly unit
+
+M	rtl/wasm32/webassembly.pp
+
+******************************************************************************
+commit 0103964250203de699636e16921fec85562f0b17
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Wed May 25 18:55:41 2022 +0300
+
+    + implemented WebAssembly atomic load intrinsics
+
+M	compiler/wasm32/nwasminl.pas
+M	rtl/wasm32/cpuh.inc
+
+******************************************************************************
 commit 9274f17c527a2e785206282bd05fe7f4ccc7a01d
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Tue May 24 16:06:05 2022 +0300
