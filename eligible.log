@@ -1,4 +1,70 @@
 ******************************************************************************
+commit 3cb4952745479eb8cd8b445951e8fd13f88b6fc5
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Wed May 25 20:18:07 2022 +0300
+
+    * AtomicWait marked as inline
+
+M	rtl/wasm32/webassembly.pp
+
+******************************************************************************
+commit a916aa36d82bf3d37588c1118ad838940453e527
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Wed May 25 20:16:50 2022 +0300
+
+    + added AtomicNotify() to the WebAssembly unit
+
+M	rtl/wasm32/webassembly.pp
+
+******************************************************************************
+commit 19cce3e42e46f010065146dec761dc6b00a6efc1
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Wed May 25 20:11:54 2022 +0300
+
+    + added AtomicWait() to the WebAssembly unit
+
+M	rtl/wasm32/webassembly.pp
+
+******************************************************************************
+commit 7cac9d2f02bfc1d207b28974340503afbe68d00c
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Wed May 25 19:30:59 2022 +0300
+
+    + added AtomicStore() to the WebAssembly unit
+
+M	rtl/wasi/Makefile
+M	rtl/wasi/Makefile.fpc
+M	rtl/wasm32/webassembly.pp
+
+******************************************************************************
+commit f12752372f5e2544e5c4a9d60794c037b55df546
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Wed May 25 17:33:44 2022 +0200
+
+    Regenerate Makefile after: Add implicit units to wasi rtl
+
+M	rtl/wasi/Makefile
+
+******************************************************************************
+commit f4964691b0ae2590ddd9a530f78ad9a378898098
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Wed May 25 17:32:39 2022 +0200
+
+     Add implicit units to wasi rtl
+
+M	rtl/wasi/Makefile.fpc
+
+******************************************************************************
+commit 16f5863847120e1990e3bcb14948d78a04936df0
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Wed May 25 19:22:45 2022 +0300
+
+    + added WebAssembly atomic store intrinsics
+
+M	compiler/wasm32/nwasminl.pas
+M	rtl/wasm32/cpuh.inc
+
+******************************************************************************
 commit 219294c02b4129d8a063626c72dc3f867ab75680
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Wed May 25 19:05:28 2022 +0300
