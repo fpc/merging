@@ -1,4 +1,16 @@
 ******************************************************************************
+commit 86b774e792a8454aaa2523b45f6492b488dd42cf
+Author: florian <florian@freepascal.org>
+Date:   Wed May 25 22:40:51 2022 +0200
+
+      + some more cpu specfic files for mips64(el)
+
+A	rtl/mips64/strings.inc
+A	rtl/mips64/stringss.inc
+A	rtl/mips64el/strings.inc
+A	rtl/mips64el/stringss.inc
+
+******************************************************************************
 commit 3cb4952745479eb8cd8b445951e8fd13f88b6fc5
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Wed May 25 20:18:07 2022 +0300
