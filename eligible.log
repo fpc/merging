@@ -1,4 +1,24 @@
 ******************************************************************************
+commit 7c21b371051de1de1ca7891802b48a51a8d2197f
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Thu May 26 00:27:50 2022 +0200
+
+     Avoid some range check error and convert internalerror into error messages
+
+M	compiler/ogwasm.pas
+
+******************************************************************************
+commit e0de75224b17627c9087f5cad5180c43cf8fffe5
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Thu May 26 00:00:44 2022 +0200
+
+    Add help for -Aomf option for wasm32 CPU and new message for ogwasm binary writer
+
+M	compiler/msg/errore.msg
+M	compiler/msgidx.inc
+M	compiler/msgtxt.inc
+
+******************************************************************************
 commit 86b774e792a8454aaa2523b45f6492b488dd42cf
 Author: florian <florian@freepascal.org>
 Date:   Wed May 25 22:40:51 2022 +0200
