@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 2c9776ac6be8ca1245ac6e3b20f4756c625cd6af
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Thu May 26 21:38:31 2022 +0000
+
+     Remove %OS by %TARGET, as spotted by Gareth
+
+M	tests/test/tblock8.pp
+M	tests/test/tblock9.pp
+
+******************************************************************************
 commit e148afd506194474790e974cad61118610935f93
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Thu May 26 22:43:37 2022 +0200
