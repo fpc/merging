@@ -1,4 +1,1026 @@
 ******************************************************************************
+commit 39b7b07ebb2f6416ce2de95bd8423f24df5375c7
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Sun Feb 6 13:43:29 2022 +0100
+
+    + add tests for function references, anonymous functions and C-blocks
+
+A	tests/test/tanonfunc1.pp
+A	tests/test/tanonfunc10.pp
+A	tests/test/tanonfunc11.pp
+A	tests/test/tanonfunc12.pp
+A	tests/test/tanonfunc13.pp
+A	tests/test/tanonfunc14.pp
+A	tests/test/tanonfunc15.pp
+A	tests/test/tanonfunc16.pp
+A	tests/test/tanonfunc17.pp
+A	tests/test/tanonfunc18.pp
+A	tests/test/tanonfunc19.pp
+A	tests/test/tanonfunc2.pp
+A	tests/test/tanonfunc20.pp
+A	tests/test/tanonfunc21.pp
+A	tests/test/tanonfunc22.pp
+A	tests/test/tanonfunc23.pp
+A	tests/test/tanonfunc24.pp
+A	tests/test/tanonfunc25.pp
+A	tests/test/tanonfunc26.pp
+A	tests/test/tanonfunc27.pp
+A	tests/test/tanonfunc28.pp
+A	tests/test/tanonfunc29.pp
+A	tests/test/tanonfunc3.pp
+A	tests/test/tanonfunc30.pp
+A	tests/test/tanonfunc31.pp
+A	tests/test/tanonfunc32.pp
+A	tests/test/tanonfunc33.pp
+A	tests/test/tanonfunc34.pp
+A	tests/test/tanonfunc35.pp
+A	tests/test/tanonfunc36.pp
+A	tests/test/tanonfunc37.pp
+A	tests/test/tanonfunc38.pp
+A	tests/test/tanonfunc39.pp
+A	tests/test/tanonfunc4.pp
+A	tests/test/tanonfunc40.pp
+A	tests/test/tanonfunc41.pp
+A	tests/test/tanonfunc42.pp
+A	tests/test/tanonfunc43.pp
+A	tests/test/tanonfunc44.pp
+A	tests/test/tanonfunc45.pp
+A	tests/test/tanonfunc46.pp
+A	tests/test/tanonfunc47.pp
+A	tests/test/tanonfunc48.pp
+A	tests/test/tanonfunc49.pp
+A	tests/test/tanonfunc5.pp
+A	tests/test/tanonfunc50.pp
+A	tests/test/tanonfunc51.pp
+A	tests/test/tanonfunc52.pp
+A	tests/test/tanonfunc53.pp
+A	tests/test/tanonfunc54.pp
+A	tests/test/tanonfunc55.pp
+A	tests/test/tanonfunc56.pp
+A	tests/test/tanonfunc57.pp
+A	tests/test/tanonfunc58.pp
+A	tests/test/tanonfunc59.pp
+A	tests/test/tanonfunc6.pp
+A	tests/test/tanonfunc7.pp
+A	tests/test/tanonfunc8.pp
+A	tests/test/tanonfunc9.pp
+A	tests/test/tblock4.pp
+A	tests/test/tblock5.pp
+A	tests/test/tblock6.pp
+A	tests/test/tblock7.pp
+A	tests/test/tblock8.pp
+A	tests/test/tblock9.pp
+A	tests/test/tfuncref1.pp
+A	tests/test/tfuncref10.pp
+A	tests/test/tfuncref11.pp
+A	tests/test/tfuncref12.pp
+A	tests/test/tfuncref13.pp
+A	tests/test/tfuncref14.pp
+A	tests/test/tfuncref15.pp
+A	tests/test/tfuncref16.pp
+A	tests/test/tfuncref17.pp
+A	tests/test/tfuncref18.pp
+A	tests/test/tfuncref19.pp
+A	tests/test/tfuncref2.pp
+A	tests/test/tfuncref20.pp
+A	tests/test/tfuncref21.pp
+A	tests/test/tfuncref22.pp
+A	tests/test/tfuncref23.pp
+A	tests/test/tfuncref24.pp
+A	tests/test/tfuncref25.pp
+A	tests/test/tfuncref26.pp
+A	tests/test/tfuncref27.pp
+A	tests/test/tfuncref28.pp
+A	tests/test/tfuncref29.pp
+A	tests/test/tfuncref3.pp
+A	tests/test/tfuncref30.pp
+A	tests/test/tfuncref31.pp
+A	tests/test/tfuncref32.pp
+A	tests/test/tfuncref4.pp
+A	tests/test/tfuncref5.pp
+A	tests/test/tfuncref6.pp
+A	tests/test/tfuncref7.pp
+A	tests/test/tfuncref8.pp
+A	tests/test/tfuncref9.pp
+A	tests/test/uanonfunc20.pp
+A	tests/test/uanonfunc21.pp
+A	tests/test/uanonfunc22.pp
+A	tests/test/uanonfunc55.pp
+A	tests/test/ufuncref10.pp
+
+******************************************************************************
+commit 7974f39522b36a525cdfd730a5c989d78308e88f
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Wed May 25 22:11:08 2022 +0200
+
+    * implement assignment of procedure and method variables and routines (global, instance and nested) to function references
+
+M	compiler/defcmp.pas
+M	compiler/htypechk.pas
+M	compiler/ncnv.pas
+M	compiler/parser.pas
+M	compiler/pbase.pas
+M	compiler/pexpr.pas
+M	compiler/procdefutil.pas
+
+******************************************************************************
+commit 9f3dcdb211ec3cecc9013f45e811bd0f633a7072
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Tue Apr 19 14:01:50 2022 +0200
+
+    + add method to find a procinfo for a nested function by the corresponding procdef
+
+M	compiler/procinfo.pas
+
+******************************************************************************
+commit c6aba5cd8dbd71f7393b1b52ba401c20e09341c8
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Wed Mar 30 22:45:58 2022 +0200
+
+    * make tprocinfo.addnestedproc public so that it can be used to add generated functions
+
+M	compiler/procinfo.pas
+
+******************************************************************************
+commit 702f79ec8cfbcf1f077977f595b6aadbc186abd3
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Wed Mar 30 22:43:31 2022 +0200
+
+    + add method tprocsym.Find_procdef_by_funcrefdef to find a procdef that's compatible with the specified function reference
+
+M	compiler/symsym.pas
+
+******************************************************************************
+commit 943da88ddacfbad9b5d730ed61c59cb31529e27e
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Wed Mar 30 22:42:30 2022 +0200
+
+    * rework tprocsym.Find_procdef_byprocvardef so that its implementation can be used in a more generic manner
+
+M	compiler/symsym.pas
+
+******************************************************************************
+commit f2305d1cee38e762aa2409adb9d01dc6751db740
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Tue Feb 15 21:46:23 2022 +0100
+
+    * if an invokable that isn't a function reference is followed by a point in a mode that doesn't use TP/Delphi style calling without parameters then don't call it like is done with normal procvars
+
+M	compiler/pexpr.pas
+
+******************************************************************************
+commit 76df7144bae7df032872ce6a009b6bee110ef2e8
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Wed May 18 22:31:17 2022 +0200
+
+    * implement necessary conversion functionality for anonymous procdefs to function reference interfaces including capturing of variables
+
+M	compiler/defcmp.pas
+M	compiler/ncnv.pas
+
+******************************************************************************
+commit f8b1801a8fb7a247ea31be7260c44e333d069a8e
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Sun Feb 6 13:10:47 2022 +0100
+
+    + implement necessary functionality in tcgprocinfo to initialize and populate the capturer
+    
+    Based on code by Blaise.ru
+
+M	compiler/psub.pas
+
+******************************************************************************
+commit 9b9ae2db1ad85bb5d9aa0aab7772b8aea9bb32be
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Sun Feb 6 13:09:01 2022 +0100
+
+    * two function references are equal to each other as long as their signatures match
+
+M	compiler/defcmp.pas
+
+******************************************************************************
+commit 6fe9a1509497cac3937163bc676693c832e62fe2
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Sun Feb 6 13:06:16 2022 +0100
+
+    + add function to check whether a procdef can be converted to a function reference
+
+M	compiler/defcmp.pas
+
+******************************************************************************
+commit 749faa42eed7c49def6323af3412831cf1e6adb8
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Sun Feb 6 13:03:32 2022 +0100
+
+    * do not insert the $result symbol again when the VMT for the capturer is built
+
+M	compiler/pparautl.pas
+
+******************************************************************************
+commit 9aac622dc91b8c9b6c9293c12901cf9f57d4d048
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Sun Feb 6 13:00:57 2022 +0100
+
+    + add necessary core functions and functionality to implement capturing of variables
+    
+    Based on code by Blaise.ru
+
+M	compiler/procdefutil.pas
+M	compiler/symdef.pas
+
+******************************************************************************
+commit 0e0739a64f4da96b414f5ed447428c44ad8155ca
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Sun Feb 6 12:52:11 2022 +0100
+
+    * regenerate msg{idx,txt}.inc
+
+M	compiler/msgidx.inc
+M	compiler/msgtxt.inc
+
+******************************************************************************
+commit a0171e433531aa21219e715be55a936ef9d5efc3
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Sun Feb 6 12:51:17 2022 +0100
+
+    + add an error message for when a symbol can't be captured
+
+M	compiler/msg/errore.msg
+
+******************************************************************************
+commit 897f0e178414116764304b49b26db58beef476d8
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Sun Feb 6 12:49:57 2022 +0100
+
+    * if a symbol is not part of a symtable then assume it's from the current module
+
+M	compiler/pgenutil.pas
+
+******************************************************************************
+commit b5ab81c98342cf824a8337be41ea15e1f5502b75
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Sun Feb 6 12:49:21 2022 +0100
+
+    * an internal definition in a specialization might not have a genericdef
+
+M	compiler/pgenutil.pas
+
+******************************************************************************
+commit 90ebeb275a6cb28db8397cdaab9eb16eb961b835
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Sun Feb 6 12:46:58 2022 +0100
+
+    + add utility function to retrieve a file position of a usage of a type symbol from a type's definition
+
+M	compiler/symdef.pas
+
+******************************************************************************
+commit 3eac88eeaf90fa5addcf7b03612dafe9236cd114
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Sat Feb 5 21:46:37 2022 +0100
+
+    * protected symbols are visible for defs declared in a local symtable as well
+
+M	compiler/symtable.pas
+
+******************************************************************************
+commit 533a11ec80671a14059c89f6ccd15be44f16f1c8
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Sat Feb 5 21:36:50 2022 +0100
+
+    * correctly handle calling convention for function references
+
+M	compiler/pdecl.pas
+M	compiler/pdecvar.pas
+M	compiler/pgenutil.pas
+
+******************************************************************************
+commit 47d7520b32b13967dbf65464edd65cf713477f67
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Sat Feb 5 21:28:43 2022 +0100
+
+    * consider invokables as related when they're equal
+
+M	compiler/defcmp.pas
+
+******************************************************************************
+commit 145b37425d4af659e6d77faa75cc564c9bfa8395
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Sat Feb 5 21:27:25 2022 +0100
+
+    + add function funcref_equal to check whether two function references are considered equal enough to be assignable
+
+M	compiler/defcmp.pas
+
+******************************************************************************
+commit ff0b560fe422caa2692f77799dd382e566a89fdc
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Sat Feb 5 20:45:34 2022 +0100
+
+    * set the flag that the symtable contains a generic at the end of the corresponding block of types_dec() to ensure that the owner is assigned correctly
+
+M	compiler/pdecl.pas
+
+******************************************************************************
+commit 6299e94c8f99fa043920d005c4111d657f690e7c
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Sat Feb 5 20:41:44 2022 +0100
+
+    * set the type symbol of the procvar while it is parsed so that a function reference can have itself as part of the parameters or the return type
+
+M	compiler/ptype.pas
+
+******************************************************************************
+commit 06a00b53c3ea8d0ff655a0b925c26dcb275be1e7
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Sun Feb 6 19:14:18 2022 +0100
+
+    * also handle function references when a generic one had been parsed
+
+M	compiler/pgenutil.pas
+
+******************************************************************************
+commit b297199ab6dd8e698fd8009d8c5b4bc26fb53376
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Sat Feb 5 19:31:18 2022 +0100
+
+    + add a field to denote that a symbol (mainly local and parameter ones) was captured through another symbol
+
+M	compiler/symsym.pas
+
+******************************************************************************
+commit ec96d4242a682926ef1df2724a9cea074aa69f8b
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Sat Feb 5 18:57:12 2022 +0100
+
+    * check hierarchy of the current generic or specialization def independant of whether it's a record- or objectdef
+
+M	compiler/pgenutil.pas
+
+******************************************************************************
+commit f02fc4fe0fa850f574eab90ac308933cb8eb1485
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Sat Feb 5 18:55:18 2022 +0100
+
+    * move checking for a def in the hierarchy to a separate nested function and use it to check the hierarchy of the current def being specialized as well
+
+M	compiler/pgenutil.pas
+
+******************************************************************************
+commit 5cf15be434bdaf2cacca29270030a5fd0ca4012e
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Sun Jan 30 17:19:05 2022 +0100
+
+    + add a constructor for trecorddef to declare an internal record type as part of a specific other type
+    
+    Based on code by Blaise.ru
+
+M	compiler/symdef.pas
+
+******************************************************************************
+commit 92082ab28f3f7d4a149cf3ca0b6a6190c50be29f
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Thu Jan 27 23:11:33 2022 +0100
+
+    * correctly handle directives for anonymous functions
+
+M	compiler/pdecsub.pas
+
+******************************************************************************
+commit e8b0fc88e340b1b288e9e31ae8f3d5b7847ab686
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Thu May 26 18:02:31 2022 +0200
+
+    * correctly handle directives for function references
+
+M	compiler/pdecl.pas
+M	compiler/pdecvar.pas
+
+******************************************************************************
+commit fd26453d5a802abadf17a5a3dc258e6bea4ac632
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Thu Jan 27 22:25:03 2022 +0100
+
+    * name of result variable of anonymous functions can be changed (and must be in modes without modeswitch Result)
+
+M	compiler/pdecsub.pas
+
+******************************************************************************
+commit 7de854ef1ec86310c67192a734cd1114ef03ad26
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Mon Jan 17 22:41:06 2022 +0100
+
+    + add method register_implemented_interface to tobjectdef which registers an implemented interface and - if desired - also initializes the GUID related fields of the objectdef
+    * use that method in all locations outside symdef that add add an implemented interface
+    
+    Based on work by Blaise.ru
+
+M	compiler/jvm/pjvm.pas
+M	compiler/pdecobj.pas
+M	compiler/pgenutil.pas
+M	compiler/symdef.pas
+
+******************************************************************************
+commit 76d3a9c4b5a20a226aad427a61c87e12595e0139
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Mon Jan 17 22:31:41 2022 +0100
+
+    * generate a better name if the procdef is an anonymous one
+
+M	compiler/symdef.pas
+
+******************************************************************************
+commit cdf676c9b5334642fc72a5f17928b8280cbe6038
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Mon Jan 17 22:21:14 2022 +0100
+
+    * a function also captures other nested functions when these are called
+
+M	compiler/ncal.pas
+
+******************************************************************************
+commit eaeb6148874625b62b5bb6e8e75f802b88ea11d5
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Mon Jan 17 22:18:40 2022 +0100
+
+    + provide a tsym based variant of ChangeOwnerAndName
+
+M	compiler/pgenutil.pas
+M	compiler/symtype.pas
+
+******************************************************************************
+commit a7a0f47d9802eec87bd1154c5abdd4a5251dc5f4
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Mon Jan 17 22:17:57 2022 +0100
+
+    * extract a symbol or def from its previous owner if that owner has OwnsObjects set to true
+
+M	compiler/symtype.pas
+
+******************************************************************************
+commit 088c746d45fadc744878771d586ecd42a1d75b31
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Sun Jan 9 13:27:36 2022 +0100
+
+    * reset written source lines once a section is encountered
+
+M	compiler/aggas.pas
+M	compiler/llvm/agllvm.pas
+M	compiler/powerpc/agppcmpw.pas
+M	compiler/x86/agx86int.pas
+M	compiler/x86/agx86nsm.pas
+M	compiler/z80/agsdasz80.pas
+M	compiler/z80/agz80vasm.pas
+
+******************************************************************************
+commit 6ac50f4100ee4c4e967dbd5754d338d4c7debe3a
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Sun Jan 9 13:25:52 2022 +0100
+
+    + add method ResetSourceLines to TExternalAssembler to reset already written lines
+
+M	compiler/assemble.pas
+
+******************************************************************************
+commit 1d4c28fb35ffe12a16ae79c8e6cd3c4a85b38c7b
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Fri Jan 7 19:14:38 2022 +0100
+
+    * regenerate msg{idx,txt}.inc after message change in last commit
+
+M	compiler/msgidx.inc
+M	compiler/msgtxt.inc
+
+******************************************************************************
+commit 2be8f01efe35eec1c1bb9b278b54de3715fc5b2f
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Thu Jul 22 17:44:01 2021 +0200
+
+    * implement assignment of anonymous functions to procedure or method variables if they either capture nothing or (in case of method variables) at most the Self variable
+
+M	compiler/defcmp.pas
+M	compiler/htypechk.pas
+M	compiler/ncnv.pas
+M	compiler/nld.pas
+M	compiler/pparautl.pas
+M	compiler/symdef.pas
+
+******************************************************************************
+commit 17514ed5c0dcbfcc2d141653b021adf870d825ff
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Thu Jul 22 17:42:39 2021 +0200
+
+    * allow to ignore Self parameters; for this the parameter skipping needs to be repeated to correctly catch all cases
+
+M	compiler/defcmp.pas
+
+******************************************************************************
+commit 8e2478e6328415ca01414db2a77c2180c23631bc
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Thu May 27 07:18:00 2021 +0200
+
+    * check whether an anonymous function can be assigned to a global, method or nested function variable
+
+M	compiler/defcmp.pas
+
+******************************************************************************
+commit 5129c2cb9ac6bd7756bf77f8d94d60c0390e9734
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Thu Jul 22 17:19:50 2021 +0200
+
+    * consider Self parameters of nested functions as captured as well
+
+M	compiler/nld.pas
+
+******************************************************************************
+commit d56a90e5ed984b10ce192d3197e72fba5b4e184c
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Thu May 27 07:17:15 2021 +0200
+
+    * keep track of symbols that are accessed from a nested/anonymous function that belong to a surrounding scope
+
+M	compiler/nld.pas
+M	compiler/procinfo.pas
+M	compiler/symdef.pas
+
+******************************************************************************
+commit ddba001b651a404c2b01bdb88679599cc5df118f
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Thu Jul 22 17:12:00 2021 +0200
+
+    * ensure that nested functions of main program, main program finalization and unit initialization/finalization are generated
+
+M	compiler/pmodules.pas
+
+******************************************************************************
+commit 4dbdb4f0f1ec9a675c22f0f5650a8cc5b44275e2
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Sun May 2 14:52:33 2021 +0200
+
+    + initial support for anonymous functions, for now as essentially nested functions
+    
+    Based on work by Blaise.ru
+
+M	compiler/pdecsub.pas
+M	compiler/pexpr.pas
+M	compiler/psub.pas
+M	compiler/symconst.pas
+M	compiler/utils/ppuutils/ppudump.pp
+
+******************************************************************************
+commit 4e4d268963dd6d2b596d1cb5a70332015011bb04
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Thu Jul 22 17:10:31 2021 +0200
+
+    + add modeswitch for anonymous functions
+
+M	compiler/globtype.pas
+M	compiler/utils/ppuutils/ppudump.pp
+
+******************************************************************************
+commit 2cc621618accab4ce12b8f5b34c5f883fa460b3b
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Sun Apr 11 23:00:08 2021 +0200
+
+    * Delphi-mode calling without parenthesis
+
+M	compiler/ncal.pas
+M	compiler/ncnv.pas
+M	compiler/ngenutil.pas
+M	compiler/nld.pas
+M	compiler/nutils.pas
+M	compiler/pexpr.pas
+
+******************************************************************************
+commit c3736810ac018b5aadb7d54c6f6c4c41d1c59344
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Sun Feb 6 21:44:59 2022 +0100
+
+    * if an interface is declared inherit the invokable flag from the parent interface
+
+M	compiler/pdecobj.pas
+
+******************************************************************************
+commit 2ed2c213136a4e7eede7ec2f4761f4d23bb27562
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Sun Feb 6 19:39:53 2022 +0100
+
+    + add support for parsing function references
+
+M	compiler/pdecl.pas
+M	compiler/pdecvar.pas
+M	compiler/pexpr.pas
+M	compiler/procdefutil.pas
+M	compiler/ptype.pas
+
+******************************************************************************
+commit 7f3a5eb9abbf23c97b22ac93c287ec7e228f0ae3
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Wed Mar 30 22:17:07 2022 +0200
+
+    * extend tabstractprocdef.getcopyas by a parameter to control whether the copy should be registered or not
+
+M	compiler/arm/symcpu.pas
+M	compiler/blockutl.pas
+M	compiler/i386/symcpu.pas
+M	compiler/i8086/symcpu.pas
+M	compiler/jvm/pjvm.pas
+M	compiler/jvm/symcpu.pas
+M	compiler/m68k/symcpu.pas
+M	compiler/powerpc/symcpu.pas
+M	compiler/symcreat.pas
+M	compiler/symdef.pas
+M	compiler/x86_64/symcpu.pas
+
+******************************************************************************
+commit 90eabdd6b4cb82333039c102808beebc9df0a3d7
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Mon May 23 23:03:10 2022 +0200
+
+    * ensure insert_self_and_vmt_para can deal with a preexisting self symbol as long as it has the expected type
+
+M	compiler/pparautl.pas
+
+******************************************************************************
+commit 39f553496995104b1b674d48eead521243ce70f8
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Thu Jan 27 22:38:07 2022 +0100
+
+    * adjust handle_calling_convention so that it can be used with both proc(var)defs and invokables
+
+M	compiler/pdecsub.pas
+M	compiler/pparautl.pas
+
+******************************************************************************
+commit c92e290d679ac3d7b46b15b8f3a53fbf59284cd8
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Thu Jan 27 22:37:10 2022 +0100
+
+    * extend parse_proctype_directives to handle proc(var)defs as well as invokables
+
+M	compiler/pdecsub.pas
+
+******************************************************************************
+commit bb637fa389d846893ed8e5b4d2b1fd02b1382ab9
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Tue Jan 25 19:53:48 2022 +0100
+
+    * adjust parse_proctype_directives so that it can handle a function reference as well
+
+M	compiler/pdecsub.pas
+
+******************************************************************************
+commit a20bfc07535f5e6d7d27fafdec826ed8de07ee61
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Tue Feb 8 07:34:09 2022 +0100
+
+    + add utility function to check whether an invokable can be invoked without explicit parameters
+
+M	compiler/defutil.pas
+
+******************************************************************************
+commit 22bbcf4b27a574dd3e8bf1978f10f35cacf71b57
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Tue Jan 18 23:10:35 2022 +0100
+
+    + add utility function to retrieve the invoke procdef of a function reference interface
+
+M	compiler/defutil.pas
+
+******************************************************************************
+commit 833a971877521a3a906207fb37e84ccbc9f27f23
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Sun Feb 6 21:42:20 2022 +0100
+
+    + add utility function to check whether an objectdef is an invokable one
+
+M	compiler/defutil.pas
+
+******************************************************************************
+commit f0748ad59bdff939e9d3c2f535fc8e046ec3a305
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Sun Feb 6 21:41:47 2022 +0100
+
+    + add flag to denote that an objectdef is invokable, thus can be used like a function variable
+
+M	compiler/symconst.pas
+M	compiler/utils/ppuutils/ppudump.pp
+
+******************************************************************************
+commit 122c6c92cb5e494385d3fa3adffe6bee6ec4a51c
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Fri Jul 23 12:01:09 2021 +0200
+
+    + add function to check whether a def is an invokable function reference
+
+M	compiler/defutil.pas
+
+******************************************************************************
+commit b28495a423993aebba17b3e157ea75e10f5e7179
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Sun Feb 6 19:37:53 2022 +0100
+
+    + add flag to denote an object def as a function reference
+
+M	compiler/symconst.pas
+M	compiler/utils/ppuutils/ppudump.pp
+
+******************************************************************************
+commit ec02d0abb083a556a5240c27b4baf8a7dc606cc6
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Tue Jan 18 23:09:13 2022 +0100
+
+    + add constants for the Invoke symbol of a function reference interface (both for declaring and finding it)
+
+M	compiler/symconst.pas
+
+******************************************************************************
+commit 2912e38e91f1940d84b6a846ecc1f9888fb7cc67
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Sun Feb 21 21:07:17 2021 +0100
+
+    + add modeswitch for anonymous function and function references
+
+M	compiler/globtype.pas
+M	compiler/utils/ppuutils/ppudump.pp
+
+******************************************************************************
+commit 5e148c1dca80849b7ddd9b51574cab821fab7a60
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Thu Feb 10 07:25:58 2022 +0100
+
+    + add a new tproccopytyp pc_normal_no_paras to copy an abstractprocdef without its parameters (useful if the parameters themselves will be reused and the original def otherwise deleted)
+
+M	compiler/symdef.pas
+
+******************************************************************************
+commit 6a9b4a1b13b4e0585301037c6f26838216f43ebd
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Fri Jan 7 19:13:28 2022 +0100
+
+    + apply patch by Blaise.ru: allow initialisation of method pointers with class methods (when class types are
+    known at compile time)
+    * adjust error message when a method pointer isn't suitable
+    + add tests
+
+M	compiler/msg/errore.msg
+M	compiler/ngtcon.pas
+A	tests/test/tprocvar17.pp
+A	tests/test/tprocvar18.pp
+A	tests/test/tprocvar19.pp
+A	tests/test/tprocvar20.pp
+
+******************************************************************************
+commit bc4eb00a7a1d2c2050a8056d13abaf8656897bc0
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Thu Jan 6 21:59:11 2022 +0100
+
+    * apply patch by Blaise.ru: proper code generation for assigning class non-static methods, accessed via a class reference type, to method pointers
+    + added test
+
+M	compiler/pexpr.pas
+A	tests/test/tprocvar16.pp
+
+******************************************************************************
+commit 6e7a82440ef55b0e8d125e49b791ac8dd7ca43f9
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Thu Jan 6 21:54:46 2022 +0100
+
+    * apply patch by Blaise.ru: avoid internal error when assigning class methods, accessed via a class reference type, to incompatible procvars
+    + added tests
+
+M	compiler/ncnv.pas
+A	tests/test/tprocvar11.pp
+A	tests/test/tprocvar12.pp
+A	tests/test/tprocvar13.pp
+A	tests/test/tprocvar14.pp
+A	tests/test/tprocvar15.pp
+
+******************************************************************************
+commit a8cf67d73b3a9421ec3089eae5c54e38e934161f
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Thu Jan 6 21:33:57 2022 +0100
+
+    * apply patch by Blaise.ru: reject assignments of instance methods, accessed via a type, to method pointers
+    + add tests
+
+M	compiler/pexpr.pas
+A	tests/test/tprocvar10.pp
+A	tests/test/tprocvar4.pp
+A	tests/test/tprocvar5.pp
+A	tests/test/tprocvar6.pp
+A	tests/test/tprocvar7.pp
+A	tests/test/tprocvar8.pp
+A	tests/test/tprocvar9.pp
+
+******************************************************************************
+commit acee4eb27ac492447d4dbde978f8989dcd292d54
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Thu Jan 6 18:40:54 2022 +0100
+
+    - apply patch by Blaise.ru: pdflags are no longer required in generate_specialization_phase2() after parse_proc_directives() was done, so remove its unused modification after that call
+
+M	compiler/pgenutil.pas
+
+******************************************************************************
+commit e5df46722ef25585c66dc698943515ce95438283
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Thu Jan 6 18:36:38 2022 +0100
+
+    * apply part of patch by Blaise.ru: reduce code duplication when parsing anonymous procvar types
+
+M	compiler/pdecl.pas
+
+******************************************************************************
+commit bd226c00f16b778444c41673678b2ba6eb6e1000
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Thu Jan 6 18:29:13 2022 +0100
+
+    * apply part of patch by Blaise.ru: check only once whether writable consts are enabled or not by determining the type of the assembly list earlier (it's only not needed in an error case anyway)
+
+M	compiler/pdecl.pas
+
+******************************************************************************
+commit e5ac99a4c97b52c95b26829b6f62ec0029798e7c
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Thu Jan 6 18:22:23 2022 +0100
+
+    * apply patch by Blaise.ru: parse_object_proc_directives() and parse_object_record_directives() should only be called with procdefs, so change the parameter from tabstractprocdef to tprocdef to make this explicit
+
+M	compiler/pdecsub.pas
+
+******************************************************************************
+commit 9c9c6cc81bcd2d99e54a7b040b1f80641ce49b9b
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Thu Jan 6 18:17:26 2022 +0100
+
+    * apply patch by Blaise.ru:
+      - all call sites of parse_var_proc_directives() have the tprocvardef easily available, so use parse_proctype_directives() directly
+      - remove the now no longer required parse_var_proc_directives()
+
+M	compiler/pdecl.pas
+M	compiler/pdecsub.pas
+M	compiler/pgenutil.pas
+
+******************************************************************************
+commit 0bbfad1add6d76b4aad7bac9d6b2cb34b8f7fe1e
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Thu Jan 6 18:04:32 2022 +0100
+
+    * apply patch by Blaise.ru:
+      - avoid creation of a dummy typesym just to call parse_var_proc_directives() by introducing a new parse_proctype_directives() that takes a tprocvardef instead of a symbol like the former does
+      - have parse_var_proc_directives() call parse_proctype_directives() to avoid duplicated code
+
+M	compiler/pdecsub.pas
+M	compiler/pdecvar.pas
+M	compiler/ptype.pas
+
+******************************************************************************
+commit 542c3f0c4c916a61cce0614fc855241ba0e4e8c3
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Sat May 1 23:32:22 2021 +0200
+
+    * use tproc_parse_flags in parse_proc_dec_finish as well
+
+M	compiler/pdecsub.pas
+M	compiler/pgenutil.pas
+
+******************************************************************************
+commit 9664ad4138ec531b0be7680bb274db0fdb39b554
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Sat May 1 23:08:30 2021 +0200
+
+    * use tparse_proc_flags for parse_proc_head as well
+
+M	compiler/pdecobj.pas
+M	compiler/pdecsub.pas
+M	compiler/pgenutil.pas
+
+******************************************************************************
+commit ee187f78f411711fe221f871fea01b203114264c
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Sat May 1 22:29:08 2021 +0200
+
+    * have read_body return the created procdef
+
+M	compiler/psub.pas
+
+******************************************************************************
+commit f6a444c6fcfa9f1993841e8dce9a36899a8d8c9a
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Sat May 1 22:11:11 2021 +0200
+
+    * combine the Boolean parameters of read_proc and read_proc_dec into a set
+
+M	compiler/pdecobj.pas
+M	compiler/pdecsub.pas
+M	compiler/psub.pas
+M	compiler/symcreat.pas
+
+******************************************************************************
+commit 934e3bba63c67b577d941d675cba3dccb2d53826
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Wed Apr 7 21:25:53 2021 +0200
+
+    * set proctypeoption for procvars
+
+M	compiler/ptype.pas
+
+******************************************************************************
+commit 4bc957a1aa3bc241350f8ee2f917dfd0cf80f8f2
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Wed Apr 7 21:32:29 2021 +0200
+
+    * extend procvar_dec so that procvars don't have to be registered
+
+M	compiler/ptype.pas
+
+******************************************************************************
+commit 3aebcccdf29cbe199a204f573fc1390e3760f678
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Wed Apr 7 21:25:13 2021 +0200
+
+    * allow procvars to not be registered right away
+
+M	compiler/i8086/symcpu.pas
+M	compiler/pdecsub.pas
+M	compiler/pdecvar.pas
+M	compiler/ptype.pas
+M	compiler/symdef.pas
+
+******************************************************************************
+commit a764c035b23b0a278afa3710542ce850923804e1
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Sat May 21 19:04:37 2022 +0200
+
+    * if the symbol belongs to the current def also consider it a specialization if it's a nameless type symbol from an implicit function specialization as their owner gets changed to the function itself
+
+M	compiler/symdef.pas
+
+******************************************************************************
+commit 6a6a17717ac141abdd0b6f661f766010837ff212
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Sat May 21 19:03:42 2022 +0200
+
+    + add a new symoption for symbols created for nameless types during implicit function specialization so that they can be recognized
+
+M	compiler/pgenutil.pas
+M	compiler/symconst.pas
+M	compiler/utils/ppuutils/ppudump.pp
+
+******************************************************************************
+commit 8bef91d1de212c03036d234ebd0ece80a11f1867
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Sun Jan 30 17:17:29 2022 +0100
+
+    * declare the type symbol of an internal def as sp_internal
+
+M	compiler/symdef.pas
+
+******************************************************************************
+commit 30a7199165e96728ee8ab899209fe83ed775454d
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Sun Jan 30 17:23:40 2022 +0100
+
+    * make the VMT symbol and type def of the corresponding class or object instead of having them be global
+    * bump PPU version to avoid potential compilation errors due to this
+    
+    Based on code by Blaise.ru
+
+M	compiler/ncgvmt.pas
+M	compiler/nobj.pas
+M	compiler/ppu.pas
+M	compiler/symconst.pas
+M	compiler/symdef.pas
+
+******************************************************************************
+commit ac4df2b0660b1f7896ab20d30a7f845f446d5b72
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Sat Feb 5 19:36:49 2022 +0100
+
+    * don't check for a duplicate internal symbol in inherited symtables
+
+M	compiler/symtable.pas
+
+******************************************************************************
+commit 3ca3c7a60609c3dd861f4335bc8118a83f0a0551
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Mon May 23 23:01:36 2022 +0200
+
+    - remove duplicate paraprintnodetree to ensure that there the right paraprintnodetree is used (namely the one from globals)
+
+M	compiler/verbose.pas
+
+******************************************************************************
+commit 7f9428eed57e3275a3de99229a3fc2761f38b2bf
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Thu May 26 16:19:05 2022 +0200
+
+    * add cblock directive so that the test fails for the correct reason
+
+M	tests/webtbf/tw30022.pp
+
+******************************************************************************
 commit 6ee4ee960e41ae5053cbce3cf1336d20e57be942
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Thu May 26 18:20:07 2022 +0300
