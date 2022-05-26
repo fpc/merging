@@ -1,4 +1,17 @@
 ******************************************************************************
+commit 66b471e5160235499f94848a8eed6084c86497df
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Thu May 26 15:06:35 2022 +0300
+
+    + support different versions of llvm-mc (version 10 seems to be the earliest that works)
+
+M	compiler/msg/errore.msg
+M	compiler/msgidx.inc
+M	compiler/msgtxt.inc
+M	compiler/systems.inc
+M	compiler/wasm32/agllvmmc.pas
+
+******************************************************************************
 commit 3994626cb110c51bb87776f71fc886ad15c0c4ff
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Thu May 26 14:14:46 2022 +0300
