@@ -1,4 +1,15 @@
 ******************************************************************************
+commit 6ee4ee960e41ae5053cbce3cf1336d20e57be942
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Thu May 26 18:20:07 2022 +0300
+
+    + added "(experimental)" to the compiler help screen for the WebAssembly compiler options that are still unstable/experimental
+
+M	compiler/msg/errore.msg
+M	compiler/msgidx.inc
+M	compiler/msgtxt.inc
+
+******************************************************************************
 commit 66b471e5160235499f94848a8eed6084c86497df
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Thu May 26 15:06:35 2022 +0300
