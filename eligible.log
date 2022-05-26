@@ -1,4 +1,27 @@
 ******************************************************************************
+commit 3994626cb110c51bb87776f71fc886ad15c0c4ff
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Thu May 26 14:14:46 2022 +0300
+
+    * fixed the message in the previous commit
+
+M	compiler/msg/errore.msg
+M	compiler/msgidx.inc
+M	compiler/msgtxt.inc
+
+******************************************************************************
+commit 0c6287894b88ebf70c22f4c65a83e8ff2ab99315
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Thu May 26 14:12:10 2022 +0300
+
+    * the WebAssembly internal assembler renamed WASM (previously it was OMF, which was the ID of the MS-DOS .obj writer, which I forgot to rename)
+
+M	compiler/msg/errore.msg
+M	compiler/msgidx.inc
+M	compiler/msgtxt.inc
+M	compiler/ogwasm.pas
+
+******************************************************************************
 commit 7c21b371051de1de1ca7891802b48a51a8d2197f
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Thu May 26 00:27:50 2022 +0200
