@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 02211971a39e4436e53a40833acfb026f874574d
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Fri May 27 00:29:59 2022 +0200
+
+    fcl-passrc: added enums msFunctionReferences,msAnonymousFunctions
+
+M	packages/fcl-passrc/src/pscanner.pp
+M	packages/pastojs/src/pas2jsfiler.pp
+
+******************************************************************************
 commit 2c9776ac6be8ca1245ac6e3b20f4756c625cd6af
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Thu May 26 21:38:31 2022 +0000
