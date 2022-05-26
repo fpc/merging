@@ -1,4 +1,24 @@
 ******************************************************************************
+commit e148afd506194474790e974cad61118610935f93
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Thu May 26 22:43:37 2022 +0200
+
+     Fix cycling with -CR option
+
+M	compiler/pdecl.pas
+
+******************************************************************************
+commit 45bf47ee05bde9acb4c64b1c39ea0009cb405c7d
+Author: florian <florian@freepascal.org>
+Date:   Thu May 26 22:34:12 2022 +0200
+
+      * compilation with -O3 fixed
+
+M	compiler/pdecl.pas
+M	compiler/ptype.pas
+M	compiler/symdef.pas
+
+******************************************************************************
 commit 39b7b07ebb2f6416ce2de95bd8423f24df5375c7
 Author: Sven/Sarah Barth <pascaldragon@gmail.com>
 Date:   Sun Feb 6 13:43:29 2022 +0100
