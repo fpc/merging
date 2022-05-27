@@ -1,4 +1,22 @@
 ******************************************************************************
+commit 1ce1a0fe1fe3642b2daca5e16b1058cad0d3b5fb
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sat May 28 02:17:20 2022 +0300
+
+    * added non-atomic implementations of the atomic operations in the WebAssembly unit, used when the RTL is compiled without -CTwasmthreads
+
+M	rtl/wasm32/webassembly.pp
+
+******************************************************************************
+commit bf412455494aa6401c89ff331f89ce9dc1eff77f
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sat May 28 01:26:17 2022 +0300
+
+    * fixed compilation of ppudump
+
+M	compiler/utils/ppuutils/ppudump.pp
+
+******************************************************************************
 commit 1fce5121f3b239994a241d91508f928ca2052988
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Sat May 28 01:18:55 2022 +0300
