@@ -1,4 +1,55 @@
 ******************************************************************************
+commit 1fce5121f3b239994a241d91508f928ca2052988
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sat May 28 01:18:55 2022 +0300
+
+    + added the 'wasmthreads' target switch (enabled via -CTwasmthreads)
+
+M	compiler/globtype.pas
+M	compiler/msg/errore.msg
+M	compiler/msgidx.inc
+M	compiler/msgtxt.inc
+
+******************************************************************************
+commit ee89b7c9ec683320f2fa32cca9b46340a77b074f
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sat May 28 00:47:09 2022 +0300
+
+    * fixed warning
+
+M	compiler/ogwasm.pas
+
+******************************************************************************
+commit ca29df1aa9c58b951d8e2dbaa7b98a4e56563f3e
+Author: florian <florian@freepascal.org>
+Date:   Fri May 27 23:31:28 2022 +0200
+
+      * Risc-V: return with mret from interrupt handlers, resolves #39737
+
+M	compiler/riscv32/cgcpu.pas
+M	compiler/riscv64/cgcpu.pas
+
+******************************************************************************
+commit b810afa1930e12916402d601db6d6c6ae5d9bd61
+Author: florian <florian@freepascal.org>
+Date:   Thu May 26 22:30:01 2022 +0200
+
+      * test also cmem unit intensively
+
+A	tests/test/theap.inc
+M	tests/test/theap.pp
+A	tests/test/theap_cmem.pp
+
+******************************************************************************
+commit 3a095f5ed5b1b715f5697aaac3d1274ca4674251
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sat May 28 00:30:43 2022 +0300
+
+    + support all the new types in encode_wasm_basic_type
+
+M	compiler/wasm32/cpubase.pas
+
+******************************************************************************
 commit 907e8402ab8ac165fe0a35cc81d180db03df8330
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Sat May 28 00:16:51 2022 +0300
