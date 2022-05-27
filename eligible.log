@@ -1,4 +1,13 @@
 ******************************************************************************
+commit bb39ec161058e23c3fd41b3fcc9f9c47adb20779
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Fri May 27 12:32:53 2022 +0000
+
+     Avoid invalid typecast to tabstractvarsym
+
+M	compiler/defcmp.pas
+
+******************************************************************************
 commit 653303274fc0b22a23f8909852a60a26ce2de92f
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Fri May 27 11:45:24 2022 +0200
