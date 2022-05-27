@@ -1,4 +1,24 @@
 ******************************************************************************
+commit 0c9b622a742063d1496cb47ff9b18db2480fbe31
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Fri May 27 07:36:50 2022 +0200
+
+    * fix compilation with DEBUG_NODE_XML defined
+
+M	compiler/procdefutil.pas
+
+******************************************************************************
+commit f73fc7d566fc275c067398b083de92fccbf8a1b3
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Fri May 27 07:24:46 2022 +0200
+
+    * fix #39736: ensure that the capturer object and any converted function reference interface are considered used
+    + added test
+
+M	compiler/procdefutil.pas
+A	tests/webtbs/tw39736.pp
+
+******************************************************************************
 commit 02211971a39e4436e53a40833acfb026f874574d
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Fri May 27 00:29:59 2022 +0200
