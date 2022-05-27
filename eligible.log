@@ -1,4 +1,25 @@
 ******************************************************************************
+commit c9ed14f87bf4bfac5231cb2a65ca3cae06cf958c
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Fri May 27 22:56:05 2022 +0300
+
+    + enable the 64-bit SAR instruction on the WebAssembly target
+
+M	rtl/inc/systemh.inc
+M	tests/tbs/tb0627b.pp
+
+******************************************************************************
+commit b6aaa06f83f64b1f574f0ba41ac8566c2b5d325b
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Fri May 27 22:35:25 2022 +0300
+
+    + enable the ROL/ROR instructions for WebAssembly
+
+M	compiler/fpcdefs.inc
+M	rtl/inc/systemh.inc
+M	tests/tbs/tb0627b.pp
+
+******************************************************************************
 commit 4765d885dfacf93db8202c3b6217a806c09d0dcc
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Fri May 27 19:16:52 2022 +0200
