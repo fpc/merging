@@ -1,4 +1,57 @@
 ******************************************************************************
+commit 907e8402ab8ac165fe0a35cc81d180db03df8330
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sat May 28 00:16:51 2022 +0300
+
+    + added the WebAssembly reference and vector types to TWasmBasicType
+
+M	compiler/wasm32/agwat.pas
+M	compiler/wasm32/cpubase.pas
+M	compiler/wasm32/itcpugas.pas
+
+******************************************************************************
+commit 288871059448cddfb241a8a8be22854b5e71b640
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sat May 28 00:02:27 2022 +0300
+
+    + added the WebAssembly table instructions
+
+M	compiler/wasm32/cpubase.pas
+M	compiler/wasm32/itcpugas.pas
+M	compiler/wasm32/strinst.inc
+
+******************************************************************************
+commit 534383f6860ddc205294134f53d981ed1002dbb5
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Fri May 27 23:58:27 2022 +0300
+
+    + added the WebAssembly reference instructions ref.null, ref.is_null and ref.func
+
+M	compiler/wasm32/cpubase.pas
+M	compiler/wasm32/itcpugas.pas
+M	compiler/wasm32/strinst.inc
+
+******************************************************************************
+commit e2eadc51a3516e7945d559531ebe4bb7d9a26bf7
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Fri May 27 23:38:49 2022 +0300
+
+    + added the memory.init and data.drop instructions
+
+M	compiler/wasm32/cpubase.pas
+M	compiler/wasm32/itcpugas.pas
+M	compiler/wasm32/strinst.inc
+
+******************************************************************************
+commit dbba2d2746022e583890e6ddda9d081eea30d40e
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Fri May 27 23:23:27 2022 +0300
+
+    + implemented popcnt via the popcnt instruction in WebAssembly
+
+M	compiler/wasm32/nwasminl.pas
+
+******************************************************************************
 commit c9ed14f87bf4bfac5231cb2a65ca3cae06cf958c
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Fri May 27 22:56:05 2022 +0300
