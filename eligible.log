@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 653303274fc0b22a23f8909852a60a26ce2de92f
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Fri May 27 11:45:24 2022 +0200
+
+    fcl-passrc: resolver: fixed error when accessing element of forward class
+
+M	packages/fcl-passrc/src/pasresolver.pp
+M	packages/fcl-passrc/tests/tcresolver.pas
+
+******************************************************************************
 commit 0c9b622a742063d1496cb47ff9b18db2480fbe31
 Author: Sven/Sarah Barth <pascaldragon@gmail.com>
 Date:   Fri May 27 07:36:50 2022 +0200
