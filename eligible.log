@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 4765d885dfacf93db8202c3b6217a806c09d0dcc
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Fri May 27 19:16:52 2022 +0200
+
+    * Export wasiAlloc, wasiFree
+
+M	rtl/wasi/system.pp
+
+******************************************************************************
 commit bb39ec161058e23c3fd41b3fcc9f9c47adb20779
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Fri May 27 12:32:53 2022 +0000
