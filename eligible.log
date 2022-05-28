@@ -1,4 +1,15 @@
 ******************************************************************************
+commit 4556cb35d1c96f4d775a2ae993b0476453d232a6
+Author: florian <florian@freepascal.org>
+Date:   Sat May 28 21:22:11 2022 +0200
+
+      + completed Risc-V 64 pseudo instructions
+      * typo fixed
+
+M	compiler/riscv/cpubase.pas
+M	compiler/riscv/itcpugas.pas
+
+******************************************************************************
 commit 6a00f9f40367640fb0ba40f8b705ba93da7de93a
 Author: florian <florian@freepascal.org>
 Date:   Sat May 28 21:15:53 2022 +0200
