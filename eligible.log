@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 638de87a5a14b2ff5d5ab5ee9553f82b0421f010
+Author: Marcus Sackrow <alb42@web.de>
+Date:   Sat May 28 22:46:50 2022 +0200
+
+    AThreads: prevent deadlock for event set before waited
+
+M	rtl/amicommon/athreads.pp
+
+******************************************************************************
 commit 4556cb35d1c96f4d775a2ae993b0476453d232a6
 Author: florian <florian@freepascal.org>
 Date:   Sat May 28 21:22:11 2022 +0200
