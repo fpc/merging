@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 1c7626715d14138249a4a7fe0e9fea786ec00959
+Author: florian <florian@freepascal.org>
+Date:   Sat May 28 20:09:13 2022 +0200
+
+      * the stack pointer on Risc-V points always at the last used position, resolves #39739
+
+M	compiler/systems/t_embed.pas
+M	compiler/systems/t_freertos.pas
+
+******************************************************************************
 commit 34ebeb15ed8e3ab334edcfd953bfc328c7b52b5b
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Sat May 28 19:59:45 2022 +0300
