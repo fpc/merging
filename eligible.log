@@ -1,4 +1,35 @@
 ******************************************************************************
+commit 6a00f9f40367640fb0ba40f8b705ba93da7de93a
+Author: florian <florian@freepascal.org>
+Date:   Sat May 28 21:15:53 2022 +0200
+
+      * unified Risc-V 32 and 64 cpubase.pas
+
+R089	compiler/riscv32/cpubase.pas	compiler/riscv/cpubase.pas
+M	compiler/riscv/itcpugas.pas
+D	compiler/riscv64/cpubase.pas
+
+******************************************************************************
+commit 09587d0c1b6dd5e8de98b1e5af284c7a51523d01
+Author: florian <florian@freepascal.org>
+Date:   Sat May 28 20:47:58 2022 +0200
+
+      * standard Risc-V pseudo instructions for Risc-V 32 completed
+
+M	compiler/riscv/itcpugas.pas
+M	compiler/riscv32/cpubase.pas
+
+******************************************************************************
+commit b29b81ae7b610091241f2f22e53ae2948e114a61
+Author: florian <florian@freepascal.org>
+Date:   Sat May 28 20:25:28 2022 +0200
+
+      * pseudo instructions for flag handling
+
+M	compiler/riscv/itcpugas.pas
+M	compiler/riscv32/cpubase.pas
+
+******************************************************************************
 commit 1c7626715d14138249a4a7fe0e9fea786ec00959
 Author: florian <florian@freepascal.org>
 Date:   Sat May 28 20:09:13 2022 +0200
