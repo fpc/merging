@@ -1,4 +1,16 @@
 ******************************************************************************
+commit 34ebeb15ed8e3ab334edcfd953bfc328c7b52b5b
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sat May 28 19:59:45 2022 +0300
+
+    * pass the option to create shared, imported memory to the linker, in case the module is compiled with -CTwasmthreads
+      Note that this breaks running programs compiled with -CTwasmthreads with "wasmtime run --wasm-features threads", but
+      there's not much we can do about that, since shared memory is required for threading, and wasmtime still doesn't
+      support it.
+
+M	compiler/systems/t_wasi.pas
+
+******************************************************************************
 commit d3782401347e6887bbf2d9fc421c2c658beaac6f
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Sat May 28 17:41:28 2022 +0300
