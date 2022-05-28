@@ -1,4 +1,16 @@
 ******************************************************************************
+commit 83604b709c0e8383329d3fc67c37f380a6279404
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sat May 28 11:01:25 2022 +0200
+
+    ngtcon: fix def of emitted vmt in procedure of object typed constants
+    
+    Fixes compilation of tests/test/tprocvar17 with the LLVM backend, and probably
+    some other tests as well
+
+M	compiler/ngtcon.pas
+
+******************************************************************************
 commit 7cd082ba5fdff0517a53e8d711ef654c252b5b51
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Sat May 28 04:04:02 2022 +0300
