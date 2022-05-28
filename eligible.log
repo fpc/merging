@@ -1,4 +1,24 @@
 ******************************************************************************
+commit 7cd082ba5fdff0517a53e8d711ef654c252b5b51
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sat May 28 04:04:02 2022 +0300
+
+    + produce a target_features section when compiling with -CTwasmthreads
+
+M	compiler/ogwasm.pas
+M	compiler/wasmbase.pas
+
+******************************************************************************
+commit 1dd80d596d0f11601c6c834df19cc1916bf9ea6b
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sat May 28 03:31:53 2022 +0300
+
+    + added a 'producers' custom section to WebAssembly object modules, containing the FPC version
+
+M	compiler/ogwasm.pas
+M	compiler/wasmbase.pas
+
+******************************************************************************
 commit 1ce1a0fe1fe3642b2daca5e16b1058cad0d3b5fb
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Sat May 28 02:17:20 2022 +0300
