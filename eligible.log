@@ -1,4 +1,16 @@
 ******************************************************************************
+commit d3782401347e6887bbf2d9fc421c2c658beaac6f
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sat May 28 17:41:28 2022 +0300
+
+    + added the WebAssembly saturating truncation instructions to the internal assembler
+
+M	compiler/wasm32/aasmcpu.pas
+M	compiler/wasm32/cpubase.pas
+M	compiler/wasm32/itcpugas.pas
+M	compiler/wasm32/strinst.inc
+
+******************************************************************************
 commit 0ba7ef98b39d7d34ecc34f36cb230f5f9c9f0f2e
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Sat May 28 16:00:43 2022 +0300
