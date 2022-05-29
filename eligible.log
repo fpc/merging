@@ -1,4 +1,93 @@
 ******************************************************************************
+commit 60b0bc55354360e257aa58cab02629465f1f28f9
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sun May 29 13:24:14 2022 +0200
+
+    read_record_fields: fix overflows of variant record size variables
+    
+    Could happen in case of > 32 bit variant parts, or variant parts at offsets
+    > 32 bit offsets.
+    
+    Fixes webtbs/tw9039c with a compiler compiled with -Cr
+
+M	compiler/pdecvar.pas
+
+******************************************************************************
+commit a19deace45acd25050ecfe0c8f31db1255982876
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sun May 29 13:22:46 2022 +0200
+
+    llvmdbg: fix overflows for aggregates > 2^61 bytes
+    
+    LLVM does not support aggregates larger than that at all, because internally
+    it stores all sizes in bits in an uint64. Their rationale for not having
+    special support for that is that there is no hardware with full 64 bit VM
+    address space anyway. So truncate our size emissions in debug info also to
+    that.
+
+M	compiler/llvm/dbgllvm.pas
+
+******************************************************************************
+commit 9e7895575ed1f29e0493d1f6a8e1704786ff1ac3
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sun May 29 11:27:22 2022 +0200
+
+    tarraydef.elecount: fix overflow detection
+    
+    It did not trigger in case of an array[0..high(asizeint)]. Fixes compilation
+    of webtbs/tw9039[ab] with a compiler built with range checking enabled.
+
+M	compiler/symdef.pas
+
+******************************************************************************
+commit 743d7c50d0b74afe5709a7f976af2cf3259ada49
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sat May 28 22:06:33 2022 +0200
+
+    do_set: immediately exit in case of range error
+    
+    Prevents run time error in case of a compiler compiled with range checks
+    enabled (webtbf/tw10890a)
+
+M	compiler/ncnv.pas
+
+******************************************************************************
+commit 70908b1449289321e48f58b71266fc3e4884071a
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sat May 28 21:59:12 2022 +0200
+
+    llvm: support for adding/subtracting constants to pointers in typed constants
+    
+    Fixes webtbs/tw34027 for llvm
+
+M	compiler/aasmcnst.pas
+M	compiler/llvm/nllvmtcon.pas
+M	compiler/ngtcon.pas
+
+******************************************************************************
+commit 573f2c20d757f2bac27c023d421a81e028c5ecd8
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sat May 28 13:58:24 2022 +0200
+
+    taddnode.cmp_of_disjunct_ranges: fortify in case of programs with errors
+    
+    Fixes compilation of webtbf/tw3116 with a compiler compiled with -Cr
+
+M	compiler/nadd.pas
+
+******************************************************************************
+commit 8c67a4370be13ff0fe91ca86f4107680037d1657
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sat May 28 13:45:56 2022 +0200
+
+    rautils: don't interpret ".L3" as potentially meaning "unitx.identifier"
+    
+    Fixes compilation of webtbs/tw10641.pp with a compiler compiled with
+    range checking
+
+M	compiler/rautils.pas
+
+******************************************************************************
 commit 390084d59e268e846d90a4b5210a4aa955f9fe5b
 Author: florian <florian@freepascal.org>
 Date:   Sun May 29 10:37:12 2022 +0200
