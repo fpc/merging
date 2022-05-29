@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 390084d59e268e846d90a4b5210a4aa955f9fe5b
+Author: florian <florian@freepascal.org>
+Date:   Sun May 29 10:37:12 2022 +0200
+
+      * tests fixed
+
+M	tests/test/theap.inc
+M	tests/test/theap.pp
+
+******************************************************************************
 commit 638de87a5a14b2ff5d5ab5ee9553f82b0421f010
 Author: Marcus Sackrow <alb42@web.de>
 Date:   Sat May 28 22:46:50 2022 +0200
