@@ -1,4 +1,22 @@
 ******************************************************************************
+commit 29cfa3b2252eb8305ebd322ce1ca55ab5092de69
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Sun May 29 13:57:19 2022 +0200
+
+    * ensure that the VMT for the function reference interface is generated correctly, but for this the invokedef needs to be copied without hidden parameters (and handle_calling_convention will be done by the VMT builder as well)
+
+M	compiler/procdefutil.pas
+
+******************************************************************************
+commit dadc10658ccc475d2f016d5c360d1172d1d66842
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Sun May 29 13:55:57 2022 +0200
+
+    * set the correct symtable level for the invoke procdef
+
+M	compiler/procdefutil.pas
+
+******************************************************************************
 commit 60b0bc55354360e257aa58cab02629465f1f28f9
 Author: Jonas Maebe <jonas@freepascal.org>
 Date:   Sun May 29 13:24:14 2022 +0200
