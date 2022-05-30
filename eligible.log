@@ -1,4 +1,15 @@
 ******************************************************************************
+commit 5a680f014892d09c531e93ff6c058731f803b84c
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Mon May 30 23:05:45 2022 +0200
+
+    * fix #39745: the conversion from ordinals to pointer types in mode Delphi is not allowed for a void type (happens when using a typecast to convert a method without parameters to a function reference)
+    + added test
+
+M	compiler/defcmp.pas
+A	tests/webtbs/tw39745.pp
+
+******************************************************************************
 commit 252707a873aace64a0154f099f1dab71e9c58426
 Author: florian <florian@freepascal.org>
 Date:   Mon May 30 21:12:37 2022 +0200
