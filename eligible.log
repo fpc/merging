@@ -1,4 +1,23 @@
 ******************************************************************************
+commit 252707a873aace64a0154f099f1dab71e9c58426
+Author: florian <florian@freepascal.org>
+Date:   Mon May 30 21:12:37 2022 +0200
+
+      + "rescued" mkrvreg.pp from old svn data
+
+A	compiler/utils/mkrvreg.pp
+
+******************************************************************************
+commit ae457a18adb106ee3c91d3f6fda679a16ba5264c
+Author: florian <florian@freepascal.org>
+Date:   Mon May 30 21:10:34 2022 +0200
+
+      * unified Risc-V 32 and 64 register data file
+
+R100	compiler/riscv32/rv32reg.dat	compiler/riscv/rvreg.dat
+D	compiler/riscv64/rv32reg.dat
+
+******************************************************************************
 commit 5d6ef0f70cd44d289fc6619e57826bf53e4aee7b
 Author: florian <florian@freepascal.org>
 Date:   Mon May 30 18:40:27 2022 +0200
