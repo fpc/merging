@@ -1,4 +1,27 @@
 ******************************************************************************
+commit eaeb8b70fffcd163dcc3945ad999649b6d5e9227
+Author: florian <florian@freepascal.org>
+Date:   Tue May 31 22:37:06 2022 +0200
+
+      + added Risc-V register information file generation to the compiler Makefile
+      * more stringent naming of register file information for Risc-V
+
+M	compiler/Makefile
+M	compiler/Makefile.fpc
+M	compiler/riscv/cpubase.pas
+M	compiler/riscv/itcpugas.pas
+R100	compiler/riscv64/rrv32con.inc	compiler/riscv64/rrv64con.inc
+R100	compiler/riscv64/rrv32dwa.inc	compiler/riscv64/rrv64dwa.inc
+R100	compiler/riscv64/rrv32nor.inc	compiler/riscv64/rrv64nor.inc
+R100	compiler/riscv64/rrv32num.inc	compiler/riscv64/rrv64num.inc
+R100	compiler/riscv64/rrv32rni.inc	compiler/riscv64/rrv64rni.inc
+R100	compiler/riscv64/rrv32sri.inc	compiler/riscv64/rrv64sri.inc
+R100	compiler/riscv64/rrv32sta.inc	compiler/riscv64/rrv64sta.inc
+R100	compiler/riscv64/rrv32std.inc	compiler/riscv64/rrv64std.inc
+R100	compiler/riscv64/rrv32sup.inc	compiler/riscv64/rrv64sup.inc
+M	compiler/utils/mkrvreg.pp
+
+******************************************************************************
 commit 2cdbdcd5c56251e49e7c56391a8adb04adc5912c
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Tue May 31 14:26:00 2022 +0000
