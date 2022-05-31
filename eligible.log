@@ -1,4 +1,108 @@
 ******************************************************************************
+commit a27bc236a06f2dde0c4f8521f1ce0d3e2f75856c
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Tue May 31 23:16:41 2022 +0200
+
+    * fix #39742: when assigning a function to a function reference it's not the function itself that needs to be checked to be captureable, but instead what it captures (this applies for both the non-generic and the generic case)
+    + added tests
+
+M	compiler/procdefutil.pas
+A	tests/test/tfuncref37.pp
+A	tests/test/tfuncref38.pp
+A	tests/test/tfuncref39.pp
+A	tests/test/tfuncref40.pp
+A	tests/test/tfuncref41.pp
+A	tests/test/tfuncref42.pp
+A	tests/webtbs/tw39742.pp
+
+******************************************************************************
+commit 0874521a78d357e6b94edf0ce5ed7b243b66298e
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Tue May 31 22:46:53 2022 +0200
+
+    + add tests to ensure that the assignment of nested function variables to function references is forbidden
+
+A	tests/test/tfuncref35.pp
+A	tests/test/tfuncref36.pp
+
+******************************************************************************
+commit 883cc6d697a33d1e02e5cb2bfcc1eec8343e938b
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Tue May 31 22:45:43 2022 +0200
+
+    + add tests that ensure that the overload selection works correctly when functions, methods or nested functions are assigned when overloads for function references are involved as well
+
+A	tests/test/tfuncref33.pp
+A	tests/test/tfuncref34.pp
+
+******************************************************************************
+commit 2372a069268bb381d8248207ee7a0484811f5b27
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Tue May 31 22:43:22 2022 +0200
+
+    * fix #39740: consider a conversion of a procedure or procedure variable to a function reference as a bit more expensive than otherwise
+    + added test
+
+M	compiler/defcmp.pas
+M	compiler/htypechk.pas
+A	tests/webtbs/tw39740.pp
+
+******************************************************************************
+commit 492754ecca850986a256273918bc4006fcd63bf7
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Tue May 31 22:41:00 2022 +0200
+
+    * the check for nested procvars is now done during the conversion in capturer_add_procvar_or_proc so loosen the check in proc_to_funcref_equal_internal
+
+M	compiler/defcmp.pas
+
+******************************************************************************
+commit 3b7842c30e21d72345fbc4708523a283848279b4
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Tue May 31 22:39:47 2022 +0200
+
+    * ensure that a nested function variable can not be assigned to a function reference
+
+M	compiler/procdefutil.pas
+
+******************************************************************************
+commit 26888342654bf4e8679de36aa069118cc4a52859
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Tue May 31 22:39:31 2022 +0200
+
+    * regenerate msg{idx,txt}.inc
+
+M	compiler/msgidx.inc
+M	compiler/msgtxt.inc
+
+******************************************************************************
+commit ea8e3cfc37b068aefe4c0cb20e3fc081ef043bcc
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Tue May 31 22:39:04 2022 +0200
+
+    + add an error message that a nested function variable can not be assigned to a function reference
+
+M	compiler/msg/errore.msg
+
+******************************************************************************
+commit 4361e36ce0254e4cda21977745ec4bc619952253
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Tue May 31 22:38:08 2022 +0200
+
+    * make proc_to_funcref_conv publicly available
+
+M	compiler/defcmp.pas
+
+******************************************************************************
+commit 7bb1b12b4f6c6c15f9c441aaa5a20a5438e3d90c
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Tue May 31 21:35:55 2022 +0200
+
+    + add a mode Delphi equivalent for tanonfunc56 to check whether overload selection works correctly
+
+A	tests/test/tanonfunc60.pp
+
+******************************************************************************
 commit eaeb8b70fffcd163dcc3945ad999649b6d5e9227
 Author: florian <florian@freepascal.org>
 Date:   Tue May 31 22:37:06 2022 +0200
