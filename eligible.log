@@ -1,4 +1,34 @@
 ******************************************************************************
+commit 9e70f49745836204da6e132ae0822e832a521261
+Author: marcoonthegit <marco@freepascal.org>
+Date:   Wed Jun 1 16:56:02 2022 +0200
+
+    * fix missing ifdef for the non win32/64/unix targets.
+     * also do watcom.
+
+M	rtl/amicommon/classes.pp
+M	rtl/atari/classes.pp
+M	rtl/beos/classes.pp
+M	rtl/embedded/classes.pp
+M	rtl/freertos/classes.pp
+M	rtl/gba/classes.pp
+M	rtl/go32v2/classes.pp
+M	rtl/haiku/classes.pp
+M	rtl/macos/classes.pp
+M	rtl/msdos/classes.pp
+M	rtl/nativent/classes.pp
+M	rtl/netware/classes.pp
+M	rtl/netwlibc/classes.pp
+M	rtl/os2/classes.pp
+M	rtl/sinclairql/classes.pp
+M	rtl/symbian/classes.pp
+M	rtl/wasi/classes.pp
+M	rtl/watcom/classes.pp
+M	rtl/wii/classes.pp
+M	rtl/win16/classes.pp
+M	rtl/wince/classes.pp
+
+******************************************************************************
 commit e5ac0b26891f1d5934e8023204f6574195a709cb
 Author: marcoonthegit <marco@freepascal.org>
 Date:   Wed Jun 1 13:54:06 2022 +0200
