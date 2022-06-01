@@ -1,4 +1,23 @@
 ******************************************************************************
+commit f1b166d6b8013fe8e9c192dfe9e3908c5b379625
+Author: florian <florian@freepascal.org>
+Date:   Wed Jun 1 22:34:51 2022 +0200
+
+      * zero is a valid Risc-V register alias
+
+M	compiler/riscv/rarvgas.pas
+
+******************************************************************************
+commit ec3a04da9b8f5f172ce3563ee17b17cae393eef3
+Author: florian <florian@freepascal.org>
+Date:   Wed Jun 1 22:31:26 2022 +0200
+
+      + forgotten pseudo-instructions added
+
+M	compiler/riscv/cpubase.pas
+M	compiler/riscv/itcpugas.pas
+
+******************************************************************************
 commit 9e70f49745836204da6e132ae0822e832a521261
 Author: marcoonthegit <marco@freepascal.org>
 Date:   Wed Jun 1 16:56:02 2022 +0200
