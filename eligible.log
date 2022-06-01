@@ -1,4 +1,13 @@
 ******************************************************************************
+commit d38c881828a81741bfaa4c88f2ee52d4e799b647
+Author: marcoonthegit <marco@freepascal.org>
+Date:   Wed Jun 1 11:00:56 2022 +0200
+
+    * add IEquatable<T>, requested on forum.
+
+M	rtl/objpas/objpas.pp
+
+******************************************************************************
 commit 430f1910ed39628284a38dc8a7d44e0380c9cdd6
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Wed Jun 1 00:35:55 2022 +0200
