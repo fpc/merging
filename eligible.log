@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 41dbedfe2275bb536a9eff35bb1054ce1f64b2b3
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Thu Jun 2 17:54:59 2022 +0000
+
+     Fix compilation ofrtl/nds/classes.pp unit
+
+M	rtl/nds/classes.pp
+
+******************************************************************************
 commit f1b166d6b8013fe8e9c192dfe9e3908c5b379625
 Author: florian <florian@freepascal.org>
 Date:   Wed Jun 1 22:34:51 2022 +0200
