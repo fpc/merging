@@ -1,4 +1,13 @@
 ******************************************************************************
+commit ea659cbc2065d5c0ccc0dc8804eb02efbc9bccb5
+Author: florian <florian@freepascal.org>
+Date:   Thu Jun 2 22:47:35 2022 +0200
+
+      * "fast lane" code and comment fixed
+
+M	compiler/riscv/rarvgas.pas
+
+******************************************************************************
 commit 41dbedfe2275bb536a9eff35bb1054ce1f64b2b3
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Thu Jun 2 17:54:59 2022 +0000
