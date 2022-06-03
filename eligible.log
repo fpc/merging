@@ -1,4 +1,15 @@
 ******************************************************************************
+commit 8499fb34b26cecd2550f8108aca26b57972bb8e6
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Fri Jun 3 09:17:38 2022 +0200
+
+    fcl-passrc: fixed method override modifier inherits overload modifier
+
+M	packages/fcl-passrc/src/pasresolver.pp
+M	packages/fcl-passrc/tests/tcresolver.pas
+M	packages/pastojs/src/pas2jsfiler.pp
+
+******************************************************************************
 commit ea659cbc2065d5c0ccc0dc8804eb02efbc9bccb5
 Author: florian <florian@freepascal.org>
 Date:   Thu Jun 2 22:47:35 2022 +0200
