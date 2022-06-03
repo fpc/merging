@@ -1,4 +1,24 @@
 ******************************************************************************
+commit 762057f46d321c99d1cd274a7e19eca5180ba746
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Fri Jun 3 11:45:23 2022 -0700
+
+     Fix compilation of 32-bit powerpc compiler
+
+M	compiler/powerpc/rappcgas.pas
+
+******************************************************************************
+commit dbbf7e7f3bf1c565ff756c97e91ee5df1357b130
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Tue May 31 15:23:57 2022 -0700
+
+     Add several increfs to avoid troubles on AIX target OS
+
+M	compiler/powerpc/rappcgas.pas
+M	compiler/powerpc64/rappcgas.pas
+M	compiler/ppcgen/cgppc.pas
+
+******************************************************************************
 commit 8499fb34b26cecd2550f8108aca26b57972bb8e6
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Fri Jun 3 09:17:38 2022 +0200
