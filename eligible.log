@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 309d8a90fd2b03fedbef3577b8b793d583c20fc5
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Sat Jun 4 10:52:20 2022 +0200
+
+    fcl-passrc: fixed searching overload in mode delphi
+
+M	packages/fcl-passrc/src/pasresolver.pp
+M	packages/fcl-passrc/tests/tcresolver.pas
+
+******************************************************************************
 commit 49ad3b0d2c03a4bbfab9fbe779044357c1e0546c
 Author: Jonas Maebe <jonas-devlists@watlock.be>
 Date:   Sat Jun 4 10:23:11 2022 +0200
