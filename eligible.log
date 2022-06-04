@@ -1,4 +1,181 @@
 ******************************************************************************
+commit 1a28b1b5c48acce54ffc534d2d057735e45c24c9
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Sat Jun 4 22:51:36 2022 +0200
+
+    fpdoc: less hints
+
+M	utils/fpdoc/dglobals.pp
+M	utils/fpdoc/dwriter.pp
+
+******************************************************************************
+commit 43444ab7f0680d1b1b003aae5ab5a251e7d4e298
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Sat Jun 4 22:49:29 2022 +0200
+
+    fcl-passrc: fixed releasing modules of a package
+
+M	packages/fcl-passrc/src/pastree.pp
+
+******************************************************************************
+commit 5b90eaf2dd3a153f2fdf7da85420eabe7432687b
+Author: marcoonthegit <marco@freepascal.org>
+Date:   Sat Jun 4 22:40:23 2022 +0200
+
+    * move char index checks up. fixes bug #39758
+
+M	rtl/objpas/sysutils/sysencoding.inc
+
+******************************************************************************
+commit 1d8b21bcfc2ed4b60fe625ff82c75153bf77f05c
+Author: florian <florian@freepascal.org>
+Date:   Sat Jun 4 22:26:45 2022 +0200
+
+      * align memory blocks in cmem at least to stack alignment boundaries, resolves #39730
+
+M	rtl/inc/cmem.pp
+
+******************************************************************************
+commit 25e832940cb6fa76e0c365762f66c466a1e6eef3
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sat Jun 4 22:14:02 2022 +0200
+
+    llvmdbg: support for generating debug information for local/para varsyms
+    
+    Note that not all symbols are covered yet, because absolutevarsyms are not
+    yet supported and those are e.g. used for function result aliases.
+    Additionally, not all types are fully supported yet.
+
+M	compiler/llvm/aasmllvm.pas
+M	compiler/llvm/dbgllvm.pas
+M	rtl/inc/llvmintr.inc
+
+******************************************************************************
+commit e7ec91eca8b4182e97a6cb88f50504285495df6c
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sat Jun 4 21:49:27 2022 +0200
+
+    dbgllvm: rename hastable for staticvarsym declarations
+
+M	compiler/llvm/dbgllvm.pas
+
+******************************************************************************
+commit a76038e1d1eb5a07a2cab78044e793f947247457
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Fri May 27 21:24:59 2022 +0200
+
+    hlcgobj: new getlocal and recordnewsymloc methods
+    
+    Call hlcg.getlocal instead of tg.getlocal when used for actual parameters/local
+    variables. Has an extra tsym parameter, which will enable the LLVM backend to
+    insert debug information.
+    
+    Call hlcg.recordnewsymloc when the location of a (local/para) symbol changes,
+    so debug info tracking can be updated (only done for LLVM currently)
+
+M	compiler/hlcgobj.pas
+M	compiler/llvm/hlcgllvm.pas
+M	compiler/ncgld.pas
+M	compiler/ncgutil.pas
+
+******************************************************************************
+commit a76085e463af334c83a13341f3349e6ee29d396c
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Fri May 27 21:23:09 2022 +0200
+
+    tllvmcallpara: record whether it's passed to metadata
+    
+    Sometimes we need the def to store a the original def of the passed parameter,
+    e.g. for the first argument to llvm.dbg.addr
+
+M	compiler/llvm/aasmllvm.pas
+M	compiler/llvm/agllvm.pas
+M	compiler/llvm/hlcgllvm.pas
+
+******************************************************************************
+commit 41a6c5e967abc1588e2fa9bbb301704555b31b7b
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Fri May 27 21:21:01 2022 +0200
+
+    agllvm: support specialised metadata with field names
+    
+    Necessary for DIExpression
+
+M	compiler/llvm/agllvm.pas
+
+******************************************************************************
+commit c92a035614a1c9866ca2daba28ae283974b68219
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Fri May 27 21:20:42 2022 +0200
+
+    agllvm: support nested constants in parameters
+    
+    Needed for metadata support
+
+M	compiler/llvm/agllvm.pas
+
+******************************************************************************
+commit abfd975571b3fd59209717b7ec76e2740aa97507
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Thu May 26 14:21:38 2022 +0200
+
+    TCGParaLocation: remove alignment gap
+
+M	compiler/parabase.pas
+
+******************************************************************************
+commit dc1e0a6bb3391a0fc1dc1b031abb454b0f1f4dd7
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Thu May 26 13:39:15 2022 +0200
+
+    tllvmcallpara: turned into object and added convenience methods
+
+M	compiler/llvm/aasmllvm.pas
+M	compiler/llvm/agllvm.pas
+M	compiler/llvm/hlcgllvm.pas
+M	compiler/llvm/llvmtype.pas
+M	compiler/llvm/nllvmbas.pas
+M	compiler/llvm/rgllvm.pas
+M	compiler/parabase.pas
+
+******************************************************************************
+commit fe0048bcecff7c5c9af3fa64be991da072fb1ec1
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Mon May 23 22:16:26 2022 +0200
+
+    llvm: changed llvm_metadatatype from untyped pointer to undefineddef
+    
+    That matches its meaning better, as it should not result in type conversions.
+    E.g. some kinds of metadata parameters expect a "type register" parameter such
+    as "metadata i32* %reg.3"
+
+M	compiler/llvm/llvmdef.pas
+M	compiler/psystem.pas
+
+******************************************************************************
+commit aa43441ac98ddd6cf5fcb6b6109775a4ec91ee33
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sun May 22 22:07:51 2022 +0200
+
+    llvm: replaced boolean fields in tllvmcallpara with a set
+
+M	compiler/llvm/aasmllvm.pas
+M	compiler/llvm/agllvm.pas
+M	compiler/llvm/hlcgllvm.pas
+M	compiler/llvm/nllvmbas.pas
+
+******************************************************************************
+commit 573b2554f4ed717c9d6f8ebed7e0fcb29021ff86
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sat Jun 4 15:46:02 2022 +0200
+
+    llvminfo: fix copy/paste error in llvm 14 comment
+    
+    Spotted by @Alexey-T1
+
+M	compiler/llvm/llvminfo.pas
+
+******************************************************************************
 commit 13ebe495dfe85ce19b5013c995468ff5001a2c3d
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Sat Jun 4 21:09:40 2022 +0200
