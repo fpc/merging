@@ -1,4 +1,15 @@
 ******************************************************************************
+commit a45e5e7ab643ada0dc7c122c405a3e84078a9e89
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sat Jun 4 13:34:09 2022 +0200
+
+    llvm: version 14.0 support
+
+M	compiler/llvm/agllvm.pas
+M	compiler/llvm/llvmdef.pas
+M	compiler/llvm/llvminfo.pas
+
+******************************************************************************
 commit 309d8a90fd2b03fedbef3577b8b793d583c20fc5
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Sat Jun 4 10:52:20 2022 +0200
