@@ -1,4 +1,37 @@
 ******************************************************************************
+commit 49ad3b0d2c03a4bbfab9fbe779044357c1e0546c
+Author: Jonas Maebe <jonas-devlists@watlock.be>
+Date:   Sat Jun 4 10:23:11 2022 +0200
+
+    msg*.inc: regenerated
+
+M	compiler/msgidx.inc
+M	compiler/msgtxt.inc
+
+******************************************************************************
+commit 3ef0db24047a6e5108585a9be8f68bcba18e4903
+Author: Jonas Maebe <jonas-devlists@watlock.be>
+Date:   Sat Jun 4 10:22:19 2022 +0200
+
+    LLVM: list supported LLVM/Xcode versions
+    
+    Use the -i or -il command line parameter
+
+M	compiler/msg/errore.msg
+M	compiler/options.pas
+
+******************************************************************************
+commit 591c1b0177b188bdb18572a0b3b20dd1d1ac076b
+Author: Jonas Maebe <jonas-devlists@watlock.be>
+Date:   Sat Jun 4 09:43:39 2022 +0200
+
+    llvm: added support for newer Xcode toolchains
+    
+    Based on https://en.wikipedia.org/wiki/Xcode#Xcode_11.x_-_13.x_(since_SwiftUI_framework)_2
+
+M	compiler/llvm/llvminfo.pas
+
+******************************************************************************
 commit a05aa25aadd53a6e9857e511a82158c782c61678
 Author: florian <florian@freepascal.org>
 Date:   Fri Jun 3 22:53:44 2022 +0200
