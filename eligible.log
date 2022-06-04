@@ -1,4 +1,24 @@
 ******************************************************************************
+commit 13ebe495dfe85ce19b5013c995468ff5001a2c3d
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Sat Jun 4 21:09:40 2022 +0200
+
+    fcl-passrc: fixed parsing property hints
+
+M	packages/fcl-passrc/src/pparser.pp
+M	packages/fcl-passrc/tests/tcresolver.pas
+
+******************************************************************************
+commit 36d7b534378976f9afae0001765e133166bac41e
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Sat Jun 4 20:40:32 2022 +0200
+
+    fcl-passrc: resolver: fixed emit hints for used units
+
+M	packages/fcl-passrc/src/pasresolver.pp
+M	packages/fcl-passrc/tests/tcresolver.pas
+
+******************************************************************************
 commit a45e5e7ab643ada0dc7c122c405a3e84078a9e89
 Author: Jonas Maebe <jonas@freepascal.org>
 Date:   Sat Jun 4 13:34:09 2022 +0200
