@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 7ddeaa54c0e5f112df0d24ee6f718e8b2d43da2d
+Author: marcoonthegit <marco@freepascal.org>
+Date:   Sun Jun 5 18:51:52 2022 +0200
+
+    * patch from Bart to fix convutils temperature fix.
+
+M	packages/rtl-objpas/src/inc/convutil.inc
+M	packages/rtl-objpas/src/inc/stdconvs.pp
+
+******************************************************************************
 commit 471028193656a9e9221e93679ff35ba59b0e6e54
 Author: marcoonthegit <marco@freepascal.org>
 Date:   Sun Jun 5 18:03:28 2022 +0200
