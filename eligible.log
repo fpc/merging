@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 51ab0d759f6138a639453a429216f0907ac8dae8
+Author: florian <florian@freepascal.org>
+Date:   Sun Jun 5 20:51:47 2022 +0200
+
+      * patch by Rika: improve EncodeUleb128/EncodeSleb128, part of #39750
+
+M	compiler/cutils.pas
+
+******************************************************************************
 commit 7ddeaa54c0e5f112df0d24ee6f718e8b2d43da2d
 Author: marcoonthegit <marco@freepascal.org>
 Date:   Sun Jun 5 18:51:52 2022 +0200
