@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 009816cbc592749217ceb096dd088e114b354965
+Author: marcoonthegit <marco@freepascal.org>
+Date:   Sun Jun 5 12:37:11 2022 +0200
+
+    * Also set clock12 to false if ampm is before %I. bug #39760 and fix from liao bozhi
+
+M	packages/rtl-extra/src/unix/clocale.pp
+
+******************************************************************************
 commit 1a28b1b5c48acce54ffc534d2d057735e45c24c9
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Sat Jun 4 22:51:36 2022 +0200
