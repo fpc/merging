@@ -1,4 +1,13 @@
 ******************************************************************************
+commit c4be74abf30f52c8ae00455793e793dd5d3c53b2
+Author: marcoonthegit <marco@freepascal.org>
+Date:   Sun Jun 5 15:28:03 2022 +0200
+
+    * typo fix in last commit
+
+M	packages/rtl-extra/src/unix/clocale.pp
+
+******************************************************************************
 commit 009816cbc592749217ceb096dd088e114b354965
 Author: marcoonthegit <marco@freepascal.org>
 Date:   Sun Jun 5 12:37:11 2022 +0200
