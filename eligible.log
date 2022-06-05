@@ -1,4 +1,23 @@
 ******************************************************************************
+commit 471028193656a9e9221e93679ff35ba59b0e6e54
+Author: marcoonthegit <marco@freepascal.org>
+Date:   Sun Jun 5 18:03:28 2022 +0200
+
+    * guard agains empty arrays in a few tArrayHelper binsearch methods
+        fixes bug #39761
+
+M	packages/rtl-generics/src/generics.collections.pas
+
+******************************************************************************
+commit 2df9dd9c146279cdf698dd1e35e467e686959b03
+Author: marcoonthegit <marco@freepascal.org>
+Date:   Sun Jun 5 17:46:58 2022 +0200
+
+    * another fix for  bug #39758, this time the end of the string
+
+M	rtl/objpas/sysutils/sysencoding.inc
+
+******************************************************************************
 commit c4be74abf30f52c8ae00455793e793dd5d3c53b2
 Author: marcoonthegit <marco@freepascal.org>
 Date:   Sun Jun 5 15:28:03 2022 +0200
