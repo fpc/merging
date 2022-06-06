@@ -1,4 +1,91 @@
 ******************************************************************************
+commit f2c8018f9bdd78f0a7a6e7ef16b235fb81ec01bb
+Author: marcoonthegit <marco@freepascal.org>
+Date:   Mon Jun 6 23:13:27 2022 +0200
+
+    * Add some Delphi compatibel constants to the ConvUtils unit bug 39771
+
+M	packages/rtl-objpas/src/inc/convutil.inc
+
+******************************************************************************
+commit 167f434e84b212e94d88ab6beb5256876b45525d
+Author: marcoonthegit <marco@freepascal.org>
+Date:   Mon Jun 6 23:12:05 2022 +0200
+
+    * Implement CompatibleConversionType and CompatibleConversionType for ConvUtils unit bug #39770
+
+M	packages/rtl-objpas/src/inc/convutil.inc
+
+******************************************************************************
+commit 7886233b0ee033daa47f3a843e1c58664c20d1ed
+Author: marcoonthegit <marco@freepascal.org>
+Date:   Mon Jun 6 23:10:14 2022 +0200
+
+    * Implement ConvUnitAdd, ConvUnitDiff, ConvUnitInc and ConvUnitDec bug #39769
+
+M	packages/rtl-objpas/src/inc/convutil.inc
+
+******************************************************************************
+commit 7da3e17571b49af62db85185272b4284df90c7bd
+Author: marcoonthegit <marco@freepascal.org>
+Date:   Mon Jun 6 23:05:02 2022 +0200
+
+    * Implement ConvUtils.ConvUnitCompareValue and ConvUtils.ConvUnitSameValue bug
+    #39768
+
+M	packages/rtl-objpas/src/inc/convutil.inc
+
+******************************************************************************
+commit 706443c354b0c9db48f7461a15f48086deb5a187
+Author: Jonas Maebe <jonas-devlists@watlock.be>
+Date:   Mon Jun 6 23:12:25 2022 +0200
+
+    dbgllvm: support for record field debug information
+
+M	compiler/llvm/dbgllvm.pas
+M	compiler/symsym.pas
+
+******************************************************************************
+commit b456833b03f54db6bea77cb2f4df20c856eba971
+Author: Jonas Maebe <jonas-devlists@watlock.be>
+Date:   Mon Jun 6 10:24:05 2022 +0200
+
+    aasmllvmmetadata: remove leftover unused type
+
+M	compiler/llvm/aasmllvmmetadata.pas
+
+******************************************************************************
+commit 5d02c65425b2cb33d5c3b6ca07a13c35b4dac90a
+Author: Jonas Maebe <jonas-devlists@watlock.be>
+Date:   Sun Jun 5 23:00:39 2022 +0200
+
+    objcdef: remove duplicate variant start check
+
+M	compiler/objcdef.pas
+
+******************************************************************************
+commit 76e3cfc38f770ac7fc6ef9cc2a1720eea5b4e99c
+Author: Jonas Maebe <jonas-devlists@watlock.be>
+Date:   Sun Jun 5 22:30:44 2022 +0200
+
+    parentfpstruct: don't add vo_is_firstfield to first field of record
+    
+    That flag is only for the first field of variant parts of records
+
+M	compiler/symcreat.pas
+
+******************************************************************************
+commit 60c95032fa92ee43565368feb999d9c66e1d9c64
+Author: Jonas Maebe <jonas-devlists@watlock.be>
+Date:   Sun Jun 5 22:12:52 2022 +0200
+
+    llvm: removed Xcode 10.0/10.1 as supported versions
+    
+    These already did not work because they predate clang 7
+
+M	compiler/llvm/llvminfo.pas
+
+******************************************************************************
 commit 927e3fd455e895dea7a8af31eeb5bc82c6f7d24f
 Author: florian <florian@freepascal.org>
 Date:   Mon Jun 6 22:13:47 2022 +0200
