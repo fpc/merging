@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 3751958a32e2446b410fb94e09fe136fce538fe8
+Author: marcoonthegit <marco@freepascal.org>
+Date:   Mon Jun 6 17:28:31 2022 +0200
+
+    * Fix not setting result in ConvUtils.RegisterConversionType mantis #39767
+
+M	packages/rtl-objpas/src/inc/convutil.inc
+
+******************************************************************************
 commit 3c4f1c454f7fa720e14dd7e9fe2a5d9c53b79a01
 Author: marcoonthegit <marco@freepascal.org>
 Date:   Mon Jun 6 17:20:51 2022 +0200
