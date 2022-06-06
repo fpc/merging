@@ -1,4 +1,22 @@
 ******************************************************************************
+commit 3c4f1c454f7fa720e14dd7e9fe2a5d9c53b79a01
+Author: marcoonthegit <marco@freepascal.org>
+Date:   Mon Jun 6 17:20:51 2022 +0200
+
+    * commit weird temperature scale conversion bug #39763
+
+M	packages/rtl-objpas/src/inc/stdconvs.pp
+
+******************************************************************************
+commit 18c0a0eebe5001f3ad5936f6f74eb816e35947ff
+Author: marcoonthegit <marco@freepascal.org>
+Date:   Mon Jun 6 17:19:49 2022 +0200
+
+    * * commit convertfrom/to fixes from bug #39764 and #39765
+
+M	packages/rtl-objpas/src/inc/convutil.inc
+
+******************************************************************************
 commit 51ab0d759f6138a639453a429216f0907ac8dae8
 Author: florian <florian@freepascal.org>
 Date:   Sun Jun 5 20:51:47 2022 +0200
