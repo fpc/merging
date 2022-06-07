@@ -1,4 +1,67 @@
 ******************************************************************************
+commit 870d612e155199c0d76af4f47c49718acae6f442
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Wed Jun 8 00:20:57 2022 +0200
+
+    Fix compilation of m68k-linux rtl with -dFPC_USE_LIBC
+
+M	rtl/m68k/m68k.inc
+
+******************************************************************************
+commit 28d32b20101454d7278dddaef98691f415e4fb77
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Wed Jun 8 00:12:20 2022 +0200
+
+    Fix compilation of sparc64-linux rtl with -dFPC_USE_LIBC
+
+M	rtl/linux/sparc64/stat.inc
+
+******************************************************************************
+commit 1433c4f2f8b8c892ffb9bcb7a4bd1821e3ab8124
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Wed Jun 8 00:10:48 2022 +0200
+
+    Fix compilation of sparc-linux rtl with -dFPC_USE_LIBC
+
+M	rtl/linux/sparc/stat.inc
+
+******************************************************************************
+commit a730bf2b003c3715c19d4fa0a7c56407e3760f36
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Wed Jun 8 00:07:05 2022 +0200
+
+    Fix oversized type size constant
+
+M	compiler/llvm/dbgllvm.pas
+
+******************************************************************************
+commit 9e8d779f316db1895795a5fa191e4e50c27ffeb5
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Wed Jun 8 00:00:20 2022 +0200
+
+    Fix compilation of arm compiler with LLVM=1
+
+M	compiler/llvm/dbgllvm.pas
+
+******************************************************************************
+commit 84c04f36f3ec06f8e1635337533fb70e372756c0
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Tue Jun 7 23:49:21 2022 +0200
+
+     Fix compilation for x86_64-linux target using libc with -dFPC_USE_LIBC option
+
+M	packages/rtl-extra/src/unix/ipc.pp
+
+******************************************************************************
+commit 2307dc8f26b202a6eef263f2e2d7e6d2ec04a641
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Tue Jun 7 12:56:57 2022 +0200
+
+     Try to fix real constant problems for llvm compiler
+
+M	compiler/wasm32/agllvmmc.pas
+
+******************************************************************************
 commit f382f2d6edcda2ea561d522194d61a8845b596b9
 Author: Jonas Maebe <jonas-devlists@watlock.be>
 Date:   Tue Jun 7 21:16:09 2022 +0200
