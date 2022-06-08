@@ -1,4 +1,27 @@
 ******************************************************************************
+commit c13517634fb6065309eda729db210ea2af3b1e32
+Author: florian <florian@freepascal.org>
+Date:   Wed Jun 8 22:59:09 2022 +0200
+
+      * patch by Rika: Replace some instances of manual work with endianness with cryptic oneliners, resolves #39719
+
+M	compiler/ogomf.pas
+M	compiler/omfbase.pas
+M	compiler/owomflib.pas
+M	compiler/symtype.pas
+M	compiler/utils/ppuutils/ppudump.pp
+
+******************************************************************************
+commit ec97a511d5ff005877006ba199a287a7f4287872
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Wed Jun 8 22:43:45 2022 +0200
+
+     Remove accidently added binaries in commit 0e142c00
+
+D	packages/fpmake-llvm
+D	packages/fpmake-reg
+
+******************************************************************************
 commit da5865139840a94a35177e27297296244787876d
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Wed Jun 8 10:29:58 2022 +0000
