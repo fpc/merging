@@ -1,4 +1,13 @@
 ******************************************************************************
+commit da5865139840a94a35177e27297296244787876d
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Wed Jun 8 10:29:58 2022 +0000
+
+    Avoid Invalid typecast error when using -CR option by using tabstractrecordsymtable type for record or object symtable
+
+M	compiler/llvm/dbgllvm.pas
+
+******************************************************************************
 commit 870d612e155199c0d76af4f47c49718acae6f442
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Wed Jun 8 00:20:57 2022 +0200
