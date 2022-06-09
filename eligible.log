@@ -1,4 +1,22 @@
 ******************************************************************************
+commit deddc441bc0023d1bf64f61408fdcb1d57edac34
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Thu Jun 9 18:31:19 2022 +0200
+
+    pastojs: updated date
+
+M	packages/pastojs/src/pas2jscompiler.pp
+
+******************************************************************************
+commit 0a8e174efc32eaf5d7c320680493f7df29411dac
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Thu Jun 9 18:28:06 2022 +0200
+
+    fcl-passrc: fixed compile
+
+M	packages/fcl-passrc/src/pparser.pp
+
+******************************************************************************
 commit b7e64867be297b95a4e4fef330e422a0725d3368
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Thu Jun 9 17:00:32 2022 +0200
