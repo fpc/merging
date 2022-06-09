@@ -1,4 +1,16 @@
 ******************************************************************************
+commit 33f5da686ea0c853f5259277ed458b02e8d95a82
+Author: Dimitrios Chr. Ioannidis <d.ioannidis@nephelae.eu>
+Date:   Wed Jun 8 23:10:36 2022 +0300
+
+    TInetSocket connect timeout support under 1 second fix.
+    
+    
+    (cherry picked from commit f20b6275563a6051ea91ab2f1b1521dd287be83f)
+
+M	packages/fcl-net/src/ssockets.pp
+
+******************************************************************************
 commit c13517634fb6065309eda729db210ea2af3b1e32
 Author: florian <florian@freepascal.org>
 Date:   Wed Jun 8 22:59:09 2022 +0200
