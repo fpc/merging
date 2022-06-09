@@ -1,4 +1,172 @@
 ******************************************************************************
+commit b7e64867be297b95a4e4fef330e422a0725d3368
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Thu Jun 9 17:00:32 2022 +0200
+
+    pastojs: TPasElement free instead of reference count
+
+M	packages/pastojs/src/fppas2js.pp
+M	packages/pastojs/src/pas2jscompiler.pp
+M	packages/pastojs/src/pas2jsfiler.pp
+M	packages/pastojs/tests/tcfiler.pas
+M	packages/pastojs/tests/tcmodules.pas
+
+******************************************************************************
+commit 1fc7609fa898962cb9187cee44e660d597fd76f2
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Thu Jun 9 17:00:15 2022 +0200
+
+    fcl-passrc: TPasElement free instead of reference count
+
+M	packages/fcl-passrc/src/pasresolveeval.pas
+M	packages/fcl-passrc/src/pasresolver.pp
+M	packages/fcl-passrc/src/passrcutil.pp
+M	packages/fcl-passrc/src/pastounittest.pp
+M	packages/fcl-passrc/src/pastree.pp
+M	packages/fcl-passrc/src/pasuseanalyzer.pas
+M	packages/fcl-passrc/src/pparser.pp
+M	packages/fcl-passrc/tests/tcbaseparser.pas
+M	packages/fcl-passrc/tests/tcresolver.pas
+
+******************************************************************************
+commit acc8c69cf582a3643341085226e8a57842191123
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Thu Jun 9 16:21:24 2022 +0200
+
+    fpdoc: free TPasElement instead of reference count
+
+M	utils/fpdoc/dglobals.pp
+
+******************************************************************************
+commit eae098ae3e44dd98e50902ff9be8e2ba5729fcd2
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Thu Jun 9 15:56:20 2022 +0200
+
+    pastojs: fixed tests
+
+M	packages/fcl-passrc/src/pastree.pp
+M	packages/pastojs/tests/tcconverter.pas
+
+******************************************************************************
+commit 11e4f6285d382916fc6aa1807f4600cdf0b58ee2
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Thu Jun 9 12:30:35 2022 +0200
+
+    pas2js: fixed mem leak pcu
+
+M	packages/fcl-passrc/src/pparser.pp
+M	packages/pastojs/src/pas2jsfiler.pp
+
+******************************************************************************
+commit 31c893407191eabd96a2e866943b8d2cd8c3d2bf
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Thu Jun 9 12:23:04 2022 +0200
+
+    pas2js: fixed mem leak resources
+
+M	packages/pastojs/src/pas2jscompiler.pp
+M	packages/pastojs/src/pas2jshtmlresources.pp
+
+******************************************************************************
+commit 2970d98550d5d666c78513ed072240e0a6a99cfd
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Thu Jun 9 12:18:38 2022 +0200
+
+    pas2js: fixed mem leak file cache
+
+M	packages/pastojs/src/pas2jsfilecache.pp
+
+******************************************************************************
+commit a6be7fc1c2a3c4d3bb98e09d266fdbe76dc9f77f
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Thu Jun 9 12:06:36 2022 +0200
+
+    pastojs: fixed mem leak with specializations
+
+M	packages/pastojs/src/fppas2js.pp
+
+******************************************************************************
+commit 3f2e2ad0fa97b8bdcc10fd85fae8ca0bfe3d07ee
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Thu Jun 9 12:02:07 2022 +0200
+
+    fcl-passrc: fixed directives DispatchField and DispatchStrField
+
+M	packages/fcl-passrc/src/pscanner.pp
+M	packages/pastojs/src/fppas2js.pp
+M	packages/pastojs/tests/tcmodules.pas
+
+******************************************************************************
+commit e49094f0456f6bff7a98b94d9c925f7a22b835c1
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Thu Jun 9 08:50:17 2022 +0200
+
+    pastojs: TPasElement free instead of refence count
+
+M	packages/fcl-passrc/src/pparser.pp
+M	packages/pastojs/src/fppas2js.pp
+
+******************************************************************************
+commit a01c20ad20a8741c20f5823dca8465e73908dcab
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Tue Jun 7 22:53:29 2022 +0200
+
+    pastojs: started TPasElement free instead of refence count
+
+M	packages/fcl-js/src/jstree.pp
+M	packages/pastojs/src/fppas2js.pp
+M	packages/pastojs/src/pas2jscompiler.pp
+M	packages/pastojs/src/pas2jsfiler.pp
+M	packages/pastojs/tests/tcfiler.pas
+M	packages/pastojs/tests/tcmodules.pas
+
+******************************************************************************
+commit 9e8903383beb58b50b32f85f9217c1c89c9ed78f
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Tue Jun 7 21:47:24 2022 +0200
+
+    fcl-passrc: transition TPasElement from reference count to free
+
+M	packages/fcl-passrc/tests/tcresolver.pas
+
+******************************************************************************
+commit 64a8c73df231fecf3cdf24f05bace9ac8a155213
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Tue Jun 7 21:45:42 2022 +0200
+
+    fcl-passrc: transition TPasElement from reference count to free
+
+M	packages/fcl-passrc/src/pasresolveeval.pas
+M	packages/fcl-passrc/src/pasresolver.pp
+M	packages/fcl-passrc/src/passrcutil.pp
+M	packages/fcl-passrc/src/pastounittest.pp
+M	packages/fcl-passrc/src/pastree.pp
+M	packages/fcl-passrc/src/pasuseanalyzer.pas
+M	packages/fcl-passrc/src/pparser.pp
+M	packages/fcl-passrc/src/pscanner.pp
+M	packages/fcl-passrc/tests/tcbaseparser.pas
+M	packages/fcl-passrc/tests/tcresolver.pas
+
+******************************************************************************
+commit b4666447243b0d2c3fd8eb09884ae2363aa3cb85
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Mon Jun 6 19:46:36 2022 +0200
+
+    fcl-passrc: started transition TPasElement reference counting to Parent free
+
+M	packages/fcl-passrc/src/pasresolveeval.pas
+M	packages/fcl-passrc/src/pasresolver.pp
+M	packages/fcl-passrc/src/pastree.pp
+M	packages/fcl-passrc/src/pasuseanalyzer.pas
+M	packages/fcl-passrc/src/pparser.pp
+M	packages/fcl-passrc/tests/tcexprparser.pas
+M	packages/fcl-passrc/tests/tconstparser.pas
+M	packages/fcl-passrc/tests/tcresolver.pas
+M	packages/fcl-passrc/tests/tcstatements.pas
+M	packages/fcl-passrc/tests/tctypeparser.pas
+M	packages/fcl-passrc/tests/tcvarparser.pas
+
+******************************************************************************
 commit 33f5da686ea0c853f5259277ed458b02e8d95a82
 Author: Dimitrios Chr. Ioannidis <d.ioannidis@nephelae.eu>
 Date:   Wed Jun 8 23:10:36 2022 +0300
