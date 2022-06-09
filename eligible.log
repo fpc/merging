@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 8bd1f196393e22d49f8bd281da3d4cf3c0926891
+Author: florian <florian@freepascal.org>
+Date:   Thu Jun 9 22:55:11 2022 +0200
+
+      * few MIPS64 fixes
+
+M	compiler/mips/cpubase.pas
+
+******************************************************************************
 commit deddc441bc0023d1bf64f61408fdcb1d57edac34
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Thu Jun 9 18:31:19 2022 +0200
