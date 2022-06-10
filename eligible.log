@@ -1,4 +1,24 @@
 ******************************************************************************
+commit 22926e4fc7a522d8985028922e6e3fd2bdcb46f8
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Sat Jun 11 00:21:07 2022 +0200
+
+    pastojs: faster concat append array:=array+
+
+M	packages/pastojs/src/fppas2js.pp
+M	packages/pastojs/tests/tcmodules.pas
+
+******************************************************************************
+commit 34605e9cd1138632d3b5b099aed9836816059d3e
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Fri Jun 10 23:39:52 2022 +0200
+
+    pastojs: faster concat append for var args
+
+M	packages/pastojs/src/fppas2js.pp
+M	packages/pastojs/tests/tcmodules.pas
+
+******************************************************************************
 commit 41495627876fe3c013abdd8e9f650be3a3ccea98
 Author: florian <florian@freepascal.org>
 Date:   Fri Jun 10 23:20:26 2022 +0200
