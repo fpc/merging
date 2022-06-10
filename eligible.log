@@ -1,4 +1,24 @@
 ******************************************************************************
+commit 41495627876fe3c013abdd8e9f650be3a3ccea98
+Author: florian <florian@freepascal.org>
+Date:   Fri Jun 10 23:20:26 2022 +0200
+
+      * more MIPS64 fixes
+
+M	compiler/mips/cgcpu.pas
+
+******************************************************************************
+commit 1e3c5865deec7240c649ba147f9616b3f7364494
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Fri Jun 10 23:12:30 2022 +0200
+
+    pastojs: fixed concat append for nil and referenced array
+
+M	packages/pastojs/src/fppas2js.pp
+M	packages/pastojs/tests/tcmodules.pas
+M	utils/pas2js/dist/rtl.js
+
+******************************************************************************
 commit d3a2145e5a7fed0a8710ab939365ed2fca07864a
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Fri Jun 10 18:46:18 2022 +0200
