@@ -1,4 +1,23 @@
 ******************************************************************************
+commit 330b0b11575e4ddccc687708b8a3d4d70a5d4ac4
+Author: marcoonthegit <marco@freepascal.org>
+Date:   Fri Jun 10 10:41:54 2022 +0200
+
+    * Fix for ConvUtils.CompatibleConversionTypes by Bart, resolves bug #39775
+
+M	packages/rtl-objpas/src/inc/convutil.inc
+
+******************************************************************************
+commit b0b034805c46a889fdff9ec989560ff97e31a130
+Author: marcoonthegit <marco@freepascal.org>
+Date:   Fri Jun 10 10:38:14 2022 +0200
+
+    * Implements some more Delphi compatible functions in ConvUtils unit, resolves
+    bug #39773
+
+M	packages/rtl-objpas/src/inc/convutil.inc
+
+******************************************************************************
 commit 8bd1f196393e22d49f8bd281da3d4cf3c0926891
 Author: florian <florian@freepascal.org>
 Date:   Thu Jun 9 22:55:11 2022 +0200
