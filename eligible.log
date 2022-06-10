@@ -1,4 +1,24 @@
 ******************************************************************************
+commit cba89a4713bfcf19444fae0ea0a5c5c381ef1b7c
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Fri Jun 10 16:32:52 2022 +0200
+
+    pas2js: faster arrayConcatN
+
+M	utils/pas2js/dist/rtl.js
+
+******************************************************************************
+commit 2dd072a492f7e8d718801470d786f694ce8b08f0
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Fri Jun 10 15:48:21 2022 +0200
+
+    pastojs: started array of interface
+
+M	packages/pastojs/src/fppas2js.pp
+M	packages/pastojs/tests/tcmodules.pas
+M	utils/pas2js/dist/rtl.js
+
+******************************************************************************
 commit 330b0b11575e4ddccc687708b8a3d4d70a5d4ac4
 Author: marcoonthegit <marco@freepascal.org>
 Date:   Fri Jun 10 10:41:54 2022 +0200
