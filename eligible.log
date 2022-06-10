@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 9056887aaedd811e0518ebb1b98219b561e04cba
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Jun 11 00:55:27 2022 +0200
+
+    * Correct windows DLL name
+
+M	packages/wasmtime/src/wasmtime.pp
+
+******************************************************************************
 commit 22926e4fc7a522d8985028922e6e3fd2bdcb46f8
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Sat Jun 11 00:21:07 2022 +0200
