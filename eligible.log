@@ -1,4 +1,18 @@
 ******************************************************************************
+commit d3a2145e5a7fed0a8710ab939365ed2fca07864a
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Fri Jun 10 18:46:18 2022 +0200
+
+    pastojs: faster AnArray:=Concat(AnArray,...)
+
+M	packages/pastojs/src/fppas2js.pp
+M	packages/pastojs/src/pas2jsfiler.pp
+M	packages/pastojs/tests/tcconverter.pas
+M	packages/pastojs/tests/tcfiler.pas
+M	packages/pastojs/tests/tcmodules.pas
+M	utils/pas2js/dist/rtl.js
+
+******************************************************************************
 commit cba89a4713bfcf19444fae0ea0a5c5c381ef1b7c
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Fri Jun 10 16:32:52 2022 +0200
