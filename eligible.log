@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 9201047f31ec67e94b578ace4ac6537db69fd3c9
+Author: florian <florian@freepascal.org>
+Date:   Sat Jun 11 23:08:58 2022 +0200
+
+      * a few more MISP64 fixes
+
+M	compiler/mips/cgcpu.pas
+
+******************************************************************************
 commit f77bd0226f76b7bccda774c7b09adf42384d6b00
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Sat Jun 11 17:12:22 2022 +0200
