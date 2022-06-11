@@ -1,4 +1,22 @@
 ******************************************************************************
+commit f77bd0226f76b7bccda774c7b09adf42384d6b00
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Jun 11 17:12:22 2022 +0200
+
+    * Fix missing inherited
+
+M	packages/fcl-web/src/jsonrpc/webjsonrpc.pp
+
+******************************************************************************
+commit b201d0a752a12ca090e195b925d811bce750e758
+Author: marcoonthegit <marco@freepascal.org>
+Date:   Sat Jun 11 19:07:46 2022 +0200
+
+    * change note section to be more 12 conformant
+
+M	rtl/freebsd/x86_64/cprt0.as
+
+******************************************************************************
 commit fb7565fc6ce27b835a8007a5f8af2950236bcbaa
 Author: marcoonthegit <marco@freepascal.org>
 Date:   Sat Jun 11 17:59:33 2022 +0200
