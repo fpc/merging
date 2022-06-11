@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 0cc00b355ccdf38ff61e21c1ae7cd666ef781026
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Jun 11 11:47:35 2022 +0200
+
+    * Fix by Bart to fix conversion to temperature. Fix issue 39776
+
+M	packages/rtl-objpas/src/inc/convutil.inc
+M	rtl/objpas/rtlconst.inc
+
+******************************************************************************
 commit 9056887aaedd811e0518ebb1b98219b561e04cba
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Sat Jun 11 00:55:27 2022 +0200
