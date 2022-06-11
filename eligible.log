@@ -1,4 +1,22 @@
 ******************************************************************************
+commit fb7565fc6ce27b835a8007a5f8af2950236bcbaa
+Author: marcoonthegit <marco@freepascal.org>
+Date:   Sat Jun 11 17:59:33 2022 +0200
+
+     * set freebsd to ld.bfd
+
+M	compiler/systems/t_bsd.pas
+
+******************************************************************************
+commit b36b6104241f34c798c86c2abce990f8f971e6f4
+Author: marcoonthegit <marco@freepascal.org>
+Date:   Sat Jun 11 17:55:04 2022 +0200
+
+     * FreeBSD version to 12 in trunk
+
+M	rtl/freebsd/x86_64/cprt0.as
+
+******************************************************************************
 commit 0cc00b355ccdf38ff61e21c1ae7cd666ef781026
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Sat Jun 11 11:47:35 2022 +0200
