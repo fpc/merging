@@ -1,4 +1,18 @@
 ******************************************************************************
+commit 3a34fc7be3402cb52a436935f31c3c4ccb5a2d86
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sun Jun 12 21:07:35 2022 +0200
+
+    llvm: use formaldef rather than undefineddef for llvm_metadata
+    
+    Better matches the intent, and fixes compilation issues on AArch64
+
+M	compiler/llvm/llvmdef.pas
+M	compiler/llvm/llvmpara.pas
+M	compiler/llvm/nllvmcal.pas
+M	compiler/psystem.pas
+
+******************************************************************************
 commit 25999ad8fff58ed787b8ec2999e5963052b1699f
 Author: Jonas Maebe <jonas-devlists@watlock.be>
 Date:   Sun Jun 12 11:24:38 2022 +0200
