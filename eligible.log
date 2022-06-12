@@ -1,4 +1,13 @@
 ******************************************************************************
+commit def37052f159ff189b79860a51f66fb97f3904ab
+Author: florian <florian@freepascal.org>
+Date:   Sun Jun 12 23:00:09 2022 +0200
+
+      + RiscV32: patch by kupferstecher: compiler support of CH32V30*, part of #39777
+
+M	compiler/riscv32/cpuinfo.pas
+
+******************************************************************************
 commit 3a34fc7be3402cb52a436935f31c3c4ccb5a2d86
 Author: Jonas Maebe <jonas@freepascal.org>
 Date:   Sun Jun 12 21:07:35 2022 +0200
