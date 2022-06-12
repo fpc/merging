@@ -1,4 +1,89 @@
 ******************************************************************************
+commit 25999ad8fff58ed787b8ec2999e5963052b1699f
+Author: Jonas Maebe <jonas-devlists@watlock.be>
+Date:   Sun Jun 12 11:24:38 2022 +0200
+
+    llvm: support for opaque pointers
+    
+    Will be the default starting with LLVM 15, and required with LLVM 16.
+    Tested with LLVM 14 and '-mllvm -opaque-pointers'. See
+    https://releases.llvm.org/14.0.0/docs/OpaquePointers.html for more
+    information.
+
+M	compiler/llvm/agllvm.pas
+M	compiler/llvm/hlcgllvm.pas
+M	compiler/llvm/llvmdef.pas
+M	compiler/llvm/llvminfo.pas
+M	compiler/llvm/llvmtype.pas
+M	compiler/llvm/nllvmcnv.pas
+M	compiler/llvm/nllvmtcon.pas
+
+******************************************************************************
+commit 71c58c7b3d050d931f624c485f762f5fa1e30e51
+Author: Jonas Maebe <jonas-devlists@watlock.be>
+Date:   Sun Jun 12 11:16:24 2022 +0200
+
+    agllvm: missing space between type and tai operand
+
+M	compiler/llvm/agllvm.pas
+
+******************************************************************************
+commit d45076d9d6bb0c73c91b9a615679d3fc277e7cdb
+Author: Jonas Maebe <jonas-devlists@watlock.be>
+Date:   Sat Jun 11 11:15:34 2022 +0200
+
+    nllvmadd: fix not always forcing pointer constants in registers
+    
+    There could have been a typeconversion around the pointerconstn/niln.
+    This was hidden because llvmtype fixed it up later, but with opaque
+    pointers it showed up again.
+
+M	compiler/llvm/nllvmadd.pas
+
+******************************************************************************
+commit 2ce4f0baf561ba5ace64b9389c9f156f0c618909
+Author: Jonas Maebe <jonas-devlists@watlock.be>
+Date:   Sat Jun 11 11:14:26 2022 +0200
+
+    defutil: new is_address() helper
+    
+    Returns whether a def represents an address
+
+M	compiler/defutil.pas
+
+******************************************************************************
+commit ae36829ecd629e506c94bdf3b202e3a3ad44c868
+Author: Jonas Maebe <jonas-devlists@watlock.be>
+Date:   Fri Jun 10 22:09:55 2022 +0200
+
+    regexpr: disable forced optimisation switch
+    
+    This should be specifiable via (fp)make
+
+M	packages/regexpr/src/regexpr.pas
+
+******************************************************************************
+commit e6b8aa07d7ebdab77f72838fb3a36035c4d75d19
+Author: Jonas Maebe <jonas-devlists@watlock.be>
+Date:   Wed Jun 8 12:58:58 2022 +0200
+
+    dbgllvm: removed some commented-out declarations
+
+M	compiler/llvm/dbgllvm.pas
+
+******************************************************************************
+commit fc94770cdb70e26d869c8a75e2b9bd70f171e692
+Author: Jonas Maebe <jonas-devlists@watlock.be>
+Date:   Tue Jun 7 23:08:43 2022 +0200
+
+    dbgllvm: emit all symbolic constants as enum values/strings
+    
+    Easier to read in the .ll files, and avoids potential mismatches with their
+    value in LLVM (in case it changes across LLVM versions)
+
+M	compiler/llvm/dbgllvm.pas
+
+******************************************************************************
 commit 9201047f31ec67e94b578ace4ac6537db69fd3c9
 Author: florian <florian@freepascal.org>
 Date:   Sat Jun 11 23:08:58 2022 +0200
