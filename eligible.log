@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 480199a7d974b23fb1b790079cb206bad7d4829f
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Mon Jun 13 10:10:36 2022 +0200
+
+    * Patch from Bart, Fix issue #39778
+
+M	packages/rtl-objpas/src/inc/convutil.inc
+
+******************************************************************************
 commit 3434d10968fc0c79be967abc5b36e98f0c013656
 Author: Joost van der Sluis <joost@cnoc.nl>
 Date:   Mon Jun 13 00:57:40 2022 +0200
