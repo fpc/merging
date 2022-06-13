@@ -1,4 +1,13 @@
 ******************************************************************************
+commit dfe78668c2673286fc50f504881ed45d2ab99d15
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Mon Jun 13 11:25:23 2022 +0200
+
+    * fix for "other" keyword
+
+M	packages/webidl/src/webidlparser.pp
+
+******************************************************************************
 commit 480199a7d974b23fb1b790079cb206bad7d4829f
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Mon Jun 13 10:10:36 2022 +0200
