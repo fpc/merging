@@ -1,4 +1,24 @@
 ******************************************************************************
+commit d153c75e84df79e2765ee566a40e2e7b4af1e39d
+Author: florian <florian@freepascal.org>
+Date:   Mon Jun 13 23:07:22 2022 +0200
+
+      * small MIPS64 fix
+
+M	compiler/mips/cpupara.pas
+
+******************************************************************************
+commit 03a961709b0a41630ae65f3723df5470bd34d58e
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Mon Jun 13 22:51:14 2022 +0200
+
+    arm paramanager: always create at least one paraloc
+    
+    Even for parameters of 0 bytes. Matches behaviour on other targets.
+
+M	compiler/arm/cpupara.pas
+
+******************************************************************************
 commit dfe78668c2673286fc50f504881ed45d2ab99d15
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Mon Jun 13 11:25:23 2022 +0200
