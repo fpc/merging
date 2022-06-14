@@ -1,4 +1,19 @@
 ******************************************************************************
+commit bcdb68a8c4b512b845c6e0291a86a0e5b03d7344
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Tue Jun 14 18:13:10 2022 +0200
+
+    webidl: fixed keeping stacktrace on exception, fixed uninitializd var in ParseConst, gitignore linux test file, parse empty interface without brackets
+
+M	packages/webidl/src/webidlparser.pp
+M	packages/webidl/src/webidltopas.pp
+A	packages/webidl/tests/.gitignore
+M	packages/webidl/tests/tcidlparser.pp
+M	packages/webidl/tests/tcidlscanner.pp
+M	packages/webidl/tests/testidl.lpi
+M	utils/pas2js/webidl2pas.lpi
+
+******************************************************************************
 commit 598da1936e0f95aeadea62ed77cd1eaae45f43dc
 Author: Sven/Sarah Barth <pascaldragon@gmail.com>
 Date:   Tue Jun 14 14:33:21 2022 +0200
