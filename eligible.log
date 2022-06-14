@@ -1,4 +1,25 @@
 ******************************************************************************
+commit 82bfe6cf0ddf5bea81f8560f3cfd84137161e8b4
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Wed Jun 15 00:10:14 2022 +0200
+
+    webidl: parse [LegacyNullToEmptyString] DOMString
+
+M	packages/webidl/src/webidlparser.pp
+M	packages/webidl/tests/tcidlparser.pp
+
+******************************************************************************
+commit 5446a3afec4a203157f58aacf0f18bbd5b04ef1f
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Tue Jun 14 21:45:02 2022 +0200
+
+    webidl: fixed parsing optional attributes
+
+M	packages/webidl/src/webidlparser.pp
+M	packages/webidl/tests/tcidlparser.pp
+M	utils/pas2js/webidl2pas.lpi
+
+******************************************************************************
 commit b28adbad5f0e67ee1231c2db8d7618ad7130b58d
 Author: Ondrej Pokorny <lazarus@kluug.net>
 Date:   Tue May 3 18:34:05 2022 +0200
