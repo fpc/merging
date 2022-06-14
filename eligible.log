@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 0d8156fee9625e8d85aa67f2667b7bf77e1dbfec
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Tue Jun 14 14:10:53 2022 +0200
+
+    * use a TCmdStr as parameter for SetVerbosity as it gets passed a TCmdStr in the option handling, thus may contain a parameter value (especially -vmXXX) larger than 255 characters
+
+M	compiler/verbose.pas
+
+******************************************************************************
 commit d153c75e84df79e2765ee566a40e2e7b4af1e39d
 Author: florian <florian@freepascal.org>
 Date:   Mon Jun 13 23:07:22 2022 +0200
