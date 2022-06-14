@@ -1,4 +1,22 @@
 ******************************************************************************
+commit 598da1936e0f95aeadea62ed77cd1eaae45f43dc
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Tue Jun 14 14:33:21 2022 +0200
+
+    * change ChangeMessageVerbosity from String to AnsiString as long parameters might be passed to it
+
+M	compiler/verbose.pas
+
+******************************************************************************
+commit 5562e3e440991e5d1270ea81925c403e1425da4e
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Tue Jun 14 14:32:47 2022 +0200
+
+    + add a AnsiString based overload of GetToken
+
+M	compiler/cutils.pas
+
+******************************************************************************
 commit 0d8156fee9625e8d85aa67f2667b7bf77e1dbfec
 Author: Sven/Sarah Barth <pascaldragon@gmail.com>
 Date:   Tue Jun 14 14:10:53 2022 +0200
