@@ -1,4 +1,17 @@
 ******************************************************************************
+commit 98ec81896e01c501f7215dd2a39f535621b4c4f4
+Author: florian <florian@freepascal.org>
+Date:   Wed Jun 15 23:29:53 2022 +0200
+
+      * do not throw messages on potentially uninitialized internal symbols, resolves #39744
+
+M	compiler/optdfa.pas
+M	compiler/procdefutil.pas
+M	compiler/symconst.pas
+M	compiler/utils/ppuutils/ppudump.pp
+A	tests/webtbs/tw39744.pp
+
+******************************************************************************
 commit ae346a87a128eb15db921cad916258839a1fe5ce
 Author: Sven/Sarah Barth <pascaldragon@gmail.com>
 Date:   Wed Jun 15 22:55:13 2022 +0200
