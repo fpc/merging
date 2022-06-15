@@ -1,4 +1,25 @@
 ******************************************************************************
+commit d8196a6ffe33a6315645c8f91e3247055b4a9c52
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Wed Jun 15 09:46:04 2022 +0200
+
+    webidl: parse stringifier;
+
+M	packages/webidl/src/webidldefs.pp
+M	packages/webidl/src/webidlparser.pp
+M	packages/webidl/tests/tcidlparser.pp
+
+******************************************************************************
+commit cc3589d459a7e8b4dcac2957809e0d6d541c8e94
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Wed Jun 15 09:20:58 2022 +0200
+
+    webidl: allow func arg name callback
+
+M	packages/webidl/src/webidlparser.pp
+M	packages/webidl/tests/tcidlparser.pp
+
+******************************************************************************
 commit a0f572892ecea623a8004a8d2dd023bfdef2218c
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Wed Jun 15 09:08:26 2022 +0200
