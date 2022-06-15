@@ -1,4 +1,32 @@
 ******************************************************************************
+commit a0f572892ecea623a8004a8d2dd023bfdef2218c
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Wed Jun 15 09:08:26 2022 +0200
+
+    webidl: parse getter/setter with default name
+
+M	packages/webidl/src/webidlparser.pp
+M	packages/webidl/tests/tcidlparser.pp
+
+******************************************************************************
+commit 32c3e6e844c1b305f3c3e1a5c799b7af8bc7ff38
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Wed Jun 15 08:39:35 2022 +0200
+
+    * OnDisconnect before disconnecting objects (cleanup). Fix issue #39780
+
+M	packages/fcl-web/src/websocket/fpwebsocketclient.pp
+
+******************************************************************************
+commit 9f7b814747deb93c7d34dcd35f46adeb895e50d5
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Wed Jun 15 08:37:38 2022 +0200
+
+    * OnDisconnect before disconnecting objects
+
+M	packages/fcl-web/src/websocket/fpwebsocketclient.pp
+
+******************************************************************************
 commit 82bfe6cf0ddf5bea81f8560f3cfd84137161e8b4
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Wed Jun 15 00:10:14 2022 +0200
