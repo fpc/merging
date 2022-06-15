@@ -1,4 +1,22 @@
 ******************************************************************************
+commit ae346a87a128eb15db921cad916258839a1fe5ce
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Wed Jun 15 22:55:13 2022 +0200
+
+    * ensure that the heaptrc unit can be used on Linux and BSD without linking against the C library
+
+M	rtl/inc/heaptrc.pp
+
+******************************************************************************
+commit c3f27a2f1c2fe0f1db4594aaa5d111eaf50dc78a
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Wed Jun 15 22:49:22 2022 +0200
+
+    * don't load the controller unit if the currently compiled unit *is* the controller unit (which might happen if one compiles the controller unit as part of a program)
+
+M	compiler/pmodules.pas
+
+******************************************************************************
 commit d8196a6ffe33a6315645c8f91e3247055b4a9c52
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Wed Jun 15 09:46:04 2022 +0200
