@@ -1,4 +1,13 @@
 ******************************************************************************
+commit eed6effe27a384a2455c76d41811677aa2279ac9
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Thu Jun 16 21:49:46 2022 +0000
+
+     Put systems_bsd into systems_weak_linking to fix heaptrc compilation failure for netbsd and dragonfly target OS introduced by commit ae346a87
+
+M	compiler/systems.pas
+
+******************************************************************************
 commit e28b76a64e197166d26620b550ff959e22bd0435
 Author: florian <florian@freepascal.org>
 Date:   Thu Jun 16 23:01:18 2022 +0200
