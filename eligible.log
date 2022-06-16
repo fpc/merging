@@ -1,4 +1,13 @@
 ******************************************************************************
+commit e28b76a64e197166d26620b550ff959e22bd0435
+Author: florian <florian@freepascal.org>
+Date:   Thu Jun 16 23:01:18 2022 +0200
+
+      * avr tiny has no adiw/sbiw instructions, resolves #39783
+
+M	compiler/avr/cpuinfo.pas
+
+******************************************************************************
 commit 98ec81896e01c501f7215dd2a39f535621b4c4f4
 Author: florian <florian@freepascal.org>
 Date:   Wed Jun 15 23:29:53 2022 +0200
