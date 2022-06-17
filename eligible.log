@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 5ca8593f143c6420891f96bb871e70354fc6de6c
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Fri Jun 17 15:26:08 2022 +0200
+
+    fcl-passrc: fixed overload double override
+
+M	packages/fcl-passrc/src/pasresolver.pp
+M	packages/fcl-passrc/tests/tcresolver.pas
+
+******************************************************************************
 commit eed6effe27a384a2455c76d41811677aa2279ac9
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Thu Jun 16 21:49:46 2022 +0000
