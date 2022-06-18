@@ -1,4 +1,36 @@
 ******************************************************************************
+commit 99e3789fa321237a9d74d74ed46784b89bc39018
+Author: marcoonthegit <marco@freepascal.org>
+Date:   Sat Jun 18 13:58:00 2022 +0200
+
+     * commit ACM's fpc.diff, resolves mantis #37220 and FreeBSD 12/13 syscall port
+
+M	rtl/bsd/bunxsysc.inc
+M	rtl/bsd/ossysc.inc
+M	rtl/freebsd/sysnr.inc
+M	rtl/freebsd/unxfunc.inc
+M	rtl/unix/bunxh.inc
+
+******************************************************************************
+commit 4118173e1d81c015e40c3f8f86d6f4e4d4d786e6
+Author: marcoonthegit <marco@freepascal.org>
+Date:   Sat Jun 18 13:48:39 2022 +0200
+
+     * prt0 for x86_64
+
+M	rtl/freebsd/x86_64/prt0.as
+
+******************************************************************************
+commit 61f559ff569c0926461cf1ca33ba4f66dbcd72f4
+Author: marcoonthegit <marco@freepascal.org>
+Date:   Sat Jun 18 13:46:48 2022 +0200
+
+     * fix ident patch script and i386/cprt0.as
+
+M	rtl/freebsd/i386/cprt0.as
+M	rtl/freebsd/i386/identpatch.sh
+
+******************************************************************************
 commit 94665a40d760b6cdc22b89278c201ace10a0b57f
 Author: florian <florian@freepascal.org>
 Date:   Fri Jun 17 23:38:29 2022 +0200
