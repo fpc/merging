@@ -1,4 +1,82 @@
 ******************************************************************************
+commit 6d9578a38f0e5448e42efe18159255fbf09caf7e
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Sat Jun 18 15:49:48 2022 +0200
+
+    webidl: ifndef
+
+M	packages/webidl/src/webidlparser.pp
+M	packages/webidl/src/webidlscanner.pp
+M	packages/webidl/tests/tcidlparser.pp
+
+******************************************************************************
+commit 6719b7df29df885c603806a44f3e34b1a5b2e7ae
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Sat Jun 18 14:57:34 2022 +0200
+
+    webidl: attribute name interface
+
+M	packages/webidl/src/webidlparser.pp
+M	packages/webidl/tests/tcidlparser.pp
+
+******************************************************************************
+commit 75f8d43e363fe326b87dd7654c7427a13dcbbd68
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Sat Jun 18 14:26:53 2022 +0200
+
+    fcl-passrc: use TMaxFloat
+
+M	packages/fcl-passrc/src/pscanner.pp
+
+******************************************************************************
+commit 1471d49fb6d6696ddfaa79bd53ec39c7f1dc1a60
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Sat Jun 18 14:26:11 2022 +0200
+
+    webidl: #if defined()
+
+M	packages/webidl/src/webidlscanner.pp
+M	packages/webidl/tests/tcidlparser.pp
+
+******************************************************************************
+commit bf25b32cb23331bf2e4357965384ff22bcb13603
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Sat Jun 18 14:25:37 2022 +0200
+
+    webidl: fixed typos
+
+M	utils/pas2js/webidl2pas.pp
+
+******************************************************************************
+commit b1981d646ee5769e6925665a1e7e1b10d756080c
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Fri Jun 17 19:37:24 2022 +0200
+
+    webidl: #ifdef..#endif
+
+M	packages/webidl/src/webidlscanner.pp
+M	packages/webidl/tests/tcidlparser.pp
+
+******************************************************************************
+commit 3348b9f01b6cd52656ef435aba5bab22c538dbfb
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Fri Jun 17 18:52:04 2022 +0200
+
+    webidl: fixed attribute name required
+
+M	packages/webidl/src/webidlparser.pp
+M	packages/webidl/tests/tcidlparser.pp
+
+******************************************************************************
+commit cdfe3aa1eb1922c965b2587c4efdda694cf589b9
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Sat Jun 18 14:53:08 2022 +0200
+
+     Avoid null array size field for aarch64-linux TUContext
+
+M	rtl/linux/aarch64/sighndh.inc
+
+******************************************************************************
 commit b16ce8806b6819770d0f207eceaaabf834f67740
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Sat Jun 18 14:48:58 2022 +0200
