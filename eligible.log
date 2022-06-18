@@ -1,4 +1,17 @@
 ******************************************************************************
+commit d2a1f9cb200b2b2b7ee5219c16e4250b037cb043
+Author: florian <florian@freepascal.org>
+Date:   Sat Jun 18 20:13:03 2022 +0200
+
+      * get rid of cs_opt_none
+      * $O+ sets cs_opt_level2 instead of cs_opt_none which made no sense
+
+M	compiler/globtype.pas
+M	compiler/scandir.pas
+M	compiler/switches.pas
+M	compiler/utils/ppuutils/ppudump.pp
+
+******************************************************************************
 commit d5a50eee8aeab634b763e2b8e9c80f4936c50fcc
 Author: Jonas Maebe <jonas@freepascal.org>
 Date:   Sat Jun 18 16:49:19 2022 +0200
