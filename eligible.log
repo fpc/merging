@@ -1,4 +1,22 @@
 ******************************************************************************
+commit 5418ccf31ebfe3857cfa784367f22eab253e1f22
+Author: marcoonthegit <marco@freepascal.org>
+Date:   Sat Jun 18 14:52:24 2022 +0200
+
+     * fix bootstrapping *BSD with 3.2.2, which isn't flagged as supporting weakexternal on those targets
+
+M	rtl/inc/heaptrc.pp
+
+******************************************************************************
+commit 46de243fe607d4117a40994bb7b135013708f617
+Author: marcoonthegit <marco@freepascal.org>
+Date:   Sat Jun 18 14:50:13 2022 +0200
+
+     * fix bootstrap with 3.2.2, whi
+
+M	rtl/inc/heaptrc.pp
+
+******************************************************************************
 commit 99e3789fa321237a9d74d74ed46784b89bc39018
 Author: marcoonthegit <marco@freepascal.org>
 Date:   Sat Jun 18 13:58:00 2022 +0200
