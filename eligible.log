@@ -1,4 +1,22 @@
 ******************************************************************************
+commit b16ce8806b6819770d0f207eceaaabf834f67740
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Jun 18 14:48:58 2022 +0200
+
+    * Fix arrayPush
+
+M	utils/pas2js/dist/rtl.js
+
+******************************************************************************
+commit 7822a90e209cc3f1cf74c0eedd100b2ae0f4b523
+Author: ccrause <christo.crause@gmail.com>
+Date:   Fri Jun 17 22:56:10 2022 +0200
+
+    Increase reference count of jump label, fixes #39784
+
+M	compiler/avr/aasmcpu.pas
+
+******************************************************************************
 commit 6fb16ceec631a8067fc7c1dc9384fe29cff6f142
 Author: marcoonthegit <marco@freepascal.org>
 Date:   Sat Jun 18 15:26:23 2022 +0200
@@ -19622,15 +19640,6 @@ A	tests/tbf/tb0277.pp
 A	tests/tbf/tb0278.pp
 A	tests/tbf/tb0279.pp
 A	tests/tbf/tb0280.pp
-
-******************************************************************************
-commit 4b196ece470115f1c04a5628eaf68e55a5700512
-Author: Pierre Muller <pierre@freepascal.org>
-Date:   Mon Nov 1 16:09:18 2021 +0000
-
-     Fix freebsd rtl compilation failure after better type check of variant element inside record case clause
-
-M	rtl/freebsd/ptypes.inc
 
 ******************************************************************************
 commit 40df9554239c1aec7ba8e8ad26e2db8daa3ab864
@@ -79693,28 +79702,6 @@ Date:   Wed May 1 22:00:06 2019 +0000
 M	rtl/unix/scripts/check_sys.sh
 
 ******************************************************************************
-commit 429bd929e8f1f3ec59c9be42b2d1321593a66842
-Author: pierre <pierre@freepascal.org>
-Date:   Wed May 1 16:04:38 2019 +0000
-
-    Update dev_t, ino_t and nlink_t types to cunit64
-    
-    git-svn-id: trunk@41968 -
-
-M	rtl/freebsd/ptypes.inc
-
-******************************************************************************
-commit 5fb61dc3862846a378934540fc62fa3f975ce343
-Author: pierre <pierre@freepascal.org>
-Date:   Wed May 1 15:59:52 2019 +0000
-
-     FreeBSD fixes for stat and dirent records
-    
-    git-svn-id: trunk@41967 -
-
-M	rtl/bsd/ostypes.inc
-
-******************************************************************************
 commit 5c7adf9af382ee5919ebfb7c806cab3d520977dd
 Author: pierre <pierre@freepascal.org>
 Date:   Wed May 1 14:49:14 2019 +0000
@@ -82541,6 +82528,7 @@ Date:   Sun Jan 13 16:23:18 2019 +0000
     git-svn-id: trunk@40856 -
 
 M	rtl/inc/heaptrc.pp
+
 ******************************************************************************
 commit 4d1ff152c4019ba3dccc64a1480d4d98b7be6e56
 Author: Károly Balogh <karoly@freepascal.org>
@@ -82565,7 +82553,6 @@ Date:   Sun Jan 13 13:16:01 2019 +0000
 
 M	.gitattributes
 A	rtl/morphos/lineinfo.pp
-
 ******************************************************************************
 commit 644c47e1213118690d78d593a1c217335215fb1b
 Author: florian <florian@freepascal.org>
