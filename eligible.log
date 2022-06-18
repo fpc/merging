@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 6fb16ceec631a8067fc7c1dc9384fe29cff6f142
+Author: marcoonthegit <marco@freepascal.org>
+Date:   Sat Jun 18 15:26:23 2022 +0200
+
+     * enable dbus for freebsd
+
+M	packages/dbus/fpmake.pp
+
+******************************************************************************
 commit 5418ccf31ebfe3857cfa784367f22eab253e1f22
 Author: marcoonthegit <marco@freepascal.org>
 Date:   Sat Jun 18 14:52:24 2022 +0200
@@ -15,38 +24,6 @@ Date:   Sat Jun 18 14:50:13 2022 +0200
      * fix bootstrap with 3.2.2, whi
 
 M	rtl/inc/heaptrc.pp
-
-******************************************************************************
-commit 99e3789fa321237a9d74d74ed46784b89bc39018
-Author: marcoonthegit <marco@freepascal.org>
-Date:   Sat Jun 18 13:58:00 2022 +0200
-
-     * commit ACM's fpc.diff, resolves mantis #37220 and FreeBSD 12/13 syscall port
-
-M	rtl/bsd/bunxsysc.inc
-M	rtl/bsd/ossysc.inc
-M	rtl/freebsd/sysnr.inc
-M	rtl/freebsd/unxfunc.inc
-M	rtl/unix/bunxh.inc
-
-******************************************************************************
-commit 4118173e1d81c015e40c3f8f86d6f4e4d4d786e6
-Author: marcoonthegit <marco@freepascal.org>
-Date:   Sat Jun 18 13:48:39 2022 +0200
-
-     * prt0 for x86_64
-
-M	rtl/freebsd/x86_64/prt0.as
-
-******************************************************************************
-commit 61f559ff569c0926461cf1ca33ba4f66dbcd72f4
-Author: marcoonthegit <marco@freepascal.org>
-Date:   Sat Jun 18 13:46:48 2022 +0200
-
-     * fix ident patch script and i386/cprt0.as
-
-M	rtl/freebsd/i386/cprt0.as
-M	rtl/freebsd/i386/identpatch.sh
 
 ******************************************************************************
 commit 94665a40d760b6cdc22b89278c201ace10a0b57f
@@ -430,33 +407,6 @@ Date:   Sat Jun 11 17:12:22 2022 +0200
     * Fix missing inherited
 
 M	packages/fcl-web/src/jsonrpc/webjsonrpc.pp
-
-******************************************************************************
-commit b201d0a752a12ca090e195b925d811bce750e758
-Author: marcoonthegit <marco@freepascal.org>
-Date:   Sat Jun 11 19:07:46 2022 +0200
-
-    * change note section to be more 12 conformant
-
-M	rtl/freebsd/x86_64/cprt0.as
-
-******************************************************************************
-commit fb7565fc6ce27b835a8007a5f8af2950236bcbaa
-Author: marcoonthegit <marco@freepascal.org>
-Date:   Sat Jun 11 17:59:33 2022 +0200
-
-     * set freebsd to ld.bfd
-
-M	compiler/systems/t_bsd.pas
-
-******************************************************************************
-commit b36b6104241f34c798c86c2abce990f8f971e6f4
-Author: marcoonthegit <marco@freepascal.org>
-Date:   Sat Jun 11 17:55:04 2022 +0200
-
-     * FreeBSD version to 12 in trunk
-
-M	rtl/freebsd/x86_64/cprt0.as
 
 ******************************************************************************
 commit 0cc00b355ccdf38ff61e21c1ae7cd666ef781026
