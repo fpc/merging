@@ -1,4 +1,55 @@
 ******************************************************************************
+commit d5a50eee8aeab634b763e2b8e9c80f4936c50fcc
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sat Jun 18 16:49:19 2022 +0200
+
+    x86-64: properly set parameter alignment if not default
+
+M	compiler/x86_64/cpupara.pas
+
+******************************************************************************
+commit c42e64db82d1c0c40a4b470d46bc70e3fd4a2477
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sat Jun 18 16:15:47 2022 +0200
+
+    x86-64: keep tcgpara vardef the same as the para's real def
+    
+    Only override the paraloc's vardef if necessary. This fixes compilation of
+    tests/test/cg/tvectorcall*.pp for LLVM
+
+M	compiler/x86_64/cpupara.pas
+
+******************************************************************************
+commit 1b2d7755aceb4592607340d8703410aab776be54
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sat Jun 18 15:11:04 2022 +0200
+
+    darwin: also run dsymutil for DWARF 4
+
+M	compiler/systems/t_darwin.pas
+
+******************************************************************************
+commit 2a7100be8763501ac345d9a907fa46b7aeeaabf7
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Sat Jun 18 16:29:18 2022 +0200
+
+    webidl: extended attributes, exposed=*
+
+M	packages/webidl/src/webidldefs.pp
+M	packages/webidl/src/webidlparser.pp
+M	packages/webidl/src/webidlscanner.pp
+M	packages/webidl/tests/tcidlparser.pp
+
+******************************************************************************
+commit 2b6c46b50d6de99750619bdc399cf3839399d9df
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Sat Jun 18 16:06:02 2022 +0200
+
+    webidl: less hints
+
+M	packages/webidl/src/webidlparser.pp
+
+******************************************************************************
 commit 6d9578a38f0e5448e42efe18159255fbf09caf7e
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Sat Jun 18 15:49:48 2022 +0200
