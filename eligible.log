@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 1ac2334b593e9ba9d9b3442fd1c1952e8fb1ec75
+Author: florian <florian@freepascal.org>
+Date:   Sat Jun 18 21:02:01 2022 +0200
+
+      * do not use Dwarf-4 yet as it is too little tested and has no benefits
+
+M	compiler/systems/i_linux.pas
+
+******************************************************************************
 commit d2a1f9cb200b2b2b7ee5219c16e4250b037cb043
 Author: florian <florian@freepascal.org>
 Date:   Sat Jun 18 20:13:03 2022 +0200
