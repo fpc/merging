@@ -1,4 +1,34 @@
 ******************************************************************************
+commit a653a4e0e99637d5858f085b1adeb527e2b9b170
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Sun Jun 19 22:18:34 2022 +0200
+
+    webidltopas: started split TWebIDLToPas2js
+
+M	packages/webidl/src/webidltopas.pp
+
+******************************************************************************
+commit b4cf545a94870056395983691ac2b9fb9e6bd883
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Sun Jun 19 22:05:12 2022 +0200
+
+    webidltopas: started split TWebIDLToPas2js
+
+M	packages/webidl/src/webidltopas.pp
+M	utils/pas2js/webidl2pas.pp
+
+******************************************************************************
+commit ad9383f2c09bb277e4a3ee9a0e3fb8a3d80499c5
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Sun Jun 19 21:03:10 2022 +0200
+
+    webidltopas: started outputformat
+
+M	packages/webidl/src/webidlparser.pp
+M	packages/webidl/src/webidltopas.pp
+M	utils/pas2js/webidl2pas.pp
+
+******************************************************************************
 commit 9a9a87a94babe84cfd0e7c98ad4444ef342b722b
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Sun Jun 19 18:29:02 2022 +0200
