@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 9a9a87a94babe84cfd0e7c98ad4444ef342b722b
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Sun Jun 19 18:29:02 2022 +0200
+
+    webidl: fixed AV on field without type
+
+M	packages/webidl/src/webidltopas.pp
+
+******************************************************************************
 commit a0f69557cc15fa9fcac56658a4cbbfa3c480385b
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Sun Jun 19 17:22:07 2022 +0200
