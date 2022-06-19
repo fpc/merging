@@ -1,4 +1,31 @@
 ******************************************************************************
+commit a0f69557cc15fa9fcac56658a4cbbfa3c480385b
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sun Jun 19 17:22:07 2022 +0200
+
+    * Actually write error message if there is one
+
+M	packages/fcl-web/examples/websocket/client/wsclient.lpr
+
+******************************************************************************
+commit 7335f0c1d643629c539c221686fd353bdad8096f
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sun Jun 19 17:21:42 2022 +0200
+
+    * Print help message
+
+M	packages/fcl-web/examples/websocket/server/wsserver.lpr
+
+******************************************************************************
+commit 7d0d909a741ab29294313af6fe1eea32bd37075a
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sun Jun 19 17:14:53 2022 +0200
+
+    * need to pass connection. Do not call disconnect event twice
+
+M	packages/fcl-web/src/websocket/fpcustwsserver.pp
+
+******************************************************************************
 commit a4d8d2c2108fb83b489d2fa0ab03177c11b6395c
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Sun Jun 19 16:53:58 2022 +0200
