@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 50af4d03888997a768c626627e395cdc76fcba76
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sun Jun 19 14:55:12 2022 +0200
+
+    * OnDisconnect called too often
+
+M	packages/fcl-web/src/websocket/fpcustwsserver.pp
+M	packages/fcl-web/src/websocket/fpwebsocket.pp
+
+******************************************************************************
 commit ac6637276b67c6fe377b3566bbd28c49ae3db365
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Sun Jun 19 12:51:28 2022 +0200
