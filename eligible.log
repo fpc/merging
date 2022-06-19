@@ -1,4 +1,16 @@
 ******************************************************************************
+commit 2f9c283bb17f3f4f4f6cc9983f6e08e23db24d94
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Sun Jun 19 22:36:48 2022 +0200
+
+    webidltopas: default GetTypeName
+
+M	packages/webidl/src/webidldefs.pp
+M	packages/webidl/src/webidlparser.pp
+M	packages/webidl/src/webidlscanner.pp
+M	packages/webidl/src/webidltopas.pp
+
+******************************************************************************
 commit a653a4e0e99637d5858f085b1adeb527e2b9b170
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Sun Jun 19 22:18:34 2022 +0200
