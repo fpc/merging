@@ -1,4 +1,17 @@
 ******************************************************************************
+commit b4926283f8af906dd917ea966c3878f811f75843
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Mon Jun 20 08:42:50 2022 +0200
+
+    webidltopas: show source positions
+
+M	packages/webidl/src/webidldefs.pp
+M	packages/webidl/src/webidlparser.pp
+M	packages/webidl/src/webidlscanner.pp
+M	packages/webidl/src/webidltopas.pp
+M	utils/pas2js/webidl2pas.lpi
+
+******************************************************************************
 commit 2f9c283bb17f3f4f4f6cc9983f6e08e23db24d94
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Sun Jun 19 22:36:48 2022 +0200
