@@ -1776,15 +1776,6 @@ M	rtl/win64/classes.pp
 M	rtl/wince/classes.pp
 
 ******************************************************************************
-commit d38c881828a81741bfaa4c88f2ee52d4e799b647
-Author: marcoonthegit <marco@freepascal.org>
-Date:   Wed Jun 1 11:00:56 2022 +0200
-
-    * add IEquatable<T>, requested on forum.
-
-M	rtl/objpas/objpas.pp
-
-******************************************************************************
 commit 430f1910ed39628284a38dc8a7d44e0380c9cdd6
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Wed Jun 1 00:35:55 2022 +0200
@@ -4682,15 +4673,6 @@ Date:   Sun May 15 17:01:35 2022 +0100
 M	compiler/aarch64/aoptcpu.pas
 
 ******************************************************************************
-commit 41704feab4b322b2e5d5cc13852be2f0be067b64
-Author: marcoonthegit <marco@freepascal.org>
-Date:   Sun May 15 18:22:18 2022 +0200
-
-      * fix ipv6_ constants in unxsockh. bug 29111  Apparently changed since 2005
-
-M	packages/rtl-extra/src/linux/unxsockh.inc
-
-******************************************************************************
 commit 0d74752b1fd94103ee9dd360bc56c1d22c6f6bb9
 Author: Jonas Maebe <jonas@freepascal.org>
 Date:   Sun May 15 18:01:48 2022 +0200
@@ -5384,15 +5366,6 @@ Date:   Mon May 2 00:50:10 2022 +0100
         z is 32-bit or less.  Fixes i39646
 
 M	compiler/ncnv.pas
-
-******************************************************************************
-commit 4a8ddc50b3d45ec2d7c4a4e800ed630ab780b2b8
-Author: marcoonthegit <marco@freepascal.org>
-Date:   Sat May 7 22:10:27 2022 +0200
-
-    * fix TreeView_GetItemRect reported by 440bx on forum
-
-M	packages/winunits-base/src/commctrl.pp
 
 ******************************************************************************
 commit c745e2cfba3dee29c22a28ac313d6776e5118c32
@@ -6515,25 +6488,6 @@ Date:   Wed Apr 27 17:10:59 2022 +0200
     * Use memorystream as a kind of tstringbuilder for json escaping(StringToJSONString), fixes bug #39525
 
 M	packages/fcl-json/src/fpjson.pp
-
-******************************************************************************
-commit dcb3906741b06fe4733ec409578820005a2a0f18
-Author: marcoonthegit <marco@freepascal.org>
-Date:   Wed Apr 27 16:47:15 2022 +0200
-
-    * typo fix in last commit.
-
-M	rtl/win/wininc/struct.inc
-
-******************************************************************************
-commit b42bc966ac4c66528ccd7acbee923214cc391b79
-Author: marcoonthegit <marco@freepascal.org>
-Date:   Wed Apr 27 15:20:47 2022 +0200
-
-    * fix bit setting macros in windows unit. Should fix bug #39272.
-       (bit setting only allowed setting bits to one, not zero, and not added).
-
-M	rtl/win/wininc/struct.inc
 
 ******************************************************************************
 commit fefb13da3b1504093277ec9f5add1744e2e5de15
