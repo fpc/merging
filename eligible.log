@@ -4342,15 +4342,6 @@ M	packages/pastojs/src/fppas2js.pp
 M	packages/pastojs/tests/tcmodules.pas
 
 ******************************************************************************
-commit db9375d23fc0c859c6d0249fcfb59f8160025e71
-Author: marcoonthegit <marco@freepascal.org>
-Date:   Sun May 22 12:37:58 2022 +0200
-
-    * add  GetDateFormatEx, from bug #35118 by 440bx
-
-M	rtl/win/wininc/func.inc
-
-******************************************************************************
 commit 47c271dcd0635ea584023800d66d1ef8ca5ec07e
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Sun May 22 06:34:10 2022 +0300
@@ -5596,15 +5587,6 @@ M	tests/test/cg/cpudefs.inc
 M	tests/test/cg/tcalcla1.pp
 
 ******************************************************************************
-commit ca332f1002217c0817e1a768c5fc2fd0a082552c
-Author: marcoonthegit <marco@freepascal.org>
-Date:   Fri May 6 18:44:31 2022 +0200
-
-    * also remove .git dirs.
-
-M	utils/rmcvsdir.pp
-
-******************************************************************************
 commit efe414f128b6797c2b7bbed9cecdadd02242ab62
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Fri May 6 10:47:02 2022 +0200
@@ -6735,15 +6717,6 @@ Date:   Mon Apr 25 22:12:59 2022 +0200
       * AVR: moved MovMov2Movw optimization into pass2 as it might prevent other optimizations
 
 M	compiler/avr/aoptcpu.pas
-
-******************************************************************************
-commit c203097ec2b68fa7b8374797e379ae4351cea575
-Author: marcoonthegit <marco@freepascal.org>
-Date:   Mon Apr 25 14:07:43 2022 +0200
-
-    * add overload to getenvironmentvariable so that it is also found when windows is before sysutils in the uses list.  bug #39448
-
-M	rtl/objpas/sysutils/osutilsh.inc
 
 ******************************************************************************
 commit 9695dba4d98dcadab0fd972ed9b5b20d3323781f
