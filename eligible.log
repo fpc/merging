@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 8c5bc91855dcdb1812d0d8ad851e1eef92047187
+Author: florian <florian@freepascal.org>
+Date:   Mon Jun 20 22:42:42 2022 +0200
+
+     + tests for convutils unit by Bart B, resolves #39793
+
+M	tests/Makefile
+M	tests/Makefile.fpc
+
+******************************************************************************
 commit b4926283f8af906dd917ea966c3878f811f75843
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Mon Jun 20 08:42:50 2022 +0200
