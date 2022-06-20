@@ -6812,15 +6812,6 @@ M	packages/fcl-stl/src/gmap.pp
 A	tests/webtbs/tw39354.pp
 
 ******************************************************************************
-commit 616538c2516640df33ac17702a0d5b957b69e445
-Author: marcoonthegit <marco@freepascal.org>
-Date:   Sat Apr 23 17:55:39 2022 +0200
-
-    * Improve Delphi compatibility of TEvent(object) constructors, while keeping also backwards compat by adding default parameters.
-
-M	packages/fcl-base/src/syncobjs.pp
-
-******************************************************************************
 commit 74f95238064736efc2e83d349a712b8140f566e8
 Author: Sven/Sarah Barth <pascaldragon@gmail.com>
 Date:   Sat Apr 23 15:51:11 2022 +0200
@@ -7114,16 +7105,6 @@ Date:   Mon Apr 18 23:22:47 2022 +0200
       * support R_SUBMMX in spilling_create_store, resolves #39672
 
 M	compiler/x86/aasmcpu.pas
-
-******************************************************************************
-commit 24570166711ac268f6fb55ad6f08d775ce686356
-Author: marcoonthegit <marco@freepascal.org>
-Date:   Mon Apr 18 21:23:10 2022 +0200
-
-    * TStringlist constructor with ownsobjects parameter, Delphi compatible + empty constructor to avoid compiler getting confused
-
-M	rtl/objpas/classes/classesh.inc
-M	rtl/objpas/classes/stringl.inc
 
 ******************************************************************************
 commit 143c2ec232764523ba89d003169f6fede138feeb
