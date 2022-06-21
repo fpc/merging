@@ -1,4 +1,49 @@
 ******************************************************************************
+commit b2350d90ea29de8c1009c8d1babfbfd9a25df899
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Wed Jun 22 02:09:05 2022 +0300
+
+    * fixed typo in comment
+
+M	compiler/wasm32/nwasmmat.pas
+
+******************************************************************************
+commit 09b492536594be8666b3569e0d757088b52f8533
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Wed Jun 22 02:03:05 2022 +0300
+
+    + enabled compilation of package fcl-db for wasm32-wasi
+
+M	packages/fcl-db/fpmake.pp
+
+******************************************************************************
+commit 9a85db897244d3745312f9247941f7e894faf3fe
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Wed Jun 22 02:02:03 2022 +0300
+
+    + enabled compilation of package fcl-json for wasm32-wasi
+
+M	packages/fcl-json/fpmake.pp
+
+******************************************************************************
+commit ca550e1a704e6345044d283b9921fb0fa7f66a11
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Wed Jun 22 01:54:22 2022 +0300
+
+    + enabled compilation of unit FmtBcd for wasm32-wasi
+
+M	packages/rtl-objpas/fpmake.pp
+
+******************************************************************************
+commit 90e43e055b34073fb92f5fd7f89a6a4ef790bf5b
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Wed Jun 22 01:47:07 2022 +0300
+
+    * fixed WebAssembly code generation for integer unary minus with overflow checking
+
+M	compiler/wasm32/nwasmmat.pas
+
+******************************************************************************
 commit b11434a6f8f8f41730b7ec49c21bfa613bb99378
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Wed Jun 22 01:10:02 2022 +0300
