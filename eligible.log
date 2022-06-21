@@ -1,4 +1,18 @@
 ******************************************************************************
+commit 14dc066d6ba599bc2ef8a34545920266f956adc8
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Tue Jun 21 23:12:28 2022 +0300
+
+    + added check whether PPU and program are compiled in the same WebAssembly
+      exceptions mode (either both are turned on, or both are turned off)
+
+M	compiler/fppu.pas
+M	compiler/globtype.pas
+M	compiler/msg/errore.msg
+M	compiler/msgidx.inc
+M	compiler/msgtxt.inc
+
+******************************************************************************
 commit f26725e70cef018762baad434b03afb93e00bb80
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Tue Jun 21 09:08:28 2022 +0200
