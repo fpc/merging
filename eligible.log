@@ -1,4 +1,32 @@
 ******************************************************************************
+commit b11434a6f8f8f41730b7ec49c21bfa613bb99378
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Wed Jun 22 01:10:02 2022 +0300
+
+    + WebAssembly: use the 64-bit div instruction, instead of an RTL helper for 64-bit division
+
+M	compiler/wasm32/hlcgcpu.pas
+M	compiler/wasm32/nwasmmat.pas
+
+******************************************************************************
+commit 7f34f27a1c393c264687a5148bf91744436c75ad
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Wed Jun 22 00:33:49 2022 +0300
+
+    + enabled compilation of package symbolic for wasm32-wasi
+
+M	packages/symbolic/fpmake.pp
+
+******************************************************************************
+commit 8920a4c08d238f7433c187db1666a4fae621b145
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Wed Jun 22 00:31:11 2022 +0300
+
+    + enabled compilation of package webidl for wasm32-wasi
+
+M	packages/webidl/fpmake.pp
+
+******************************************************************************
 commit 0b9e02d920f95367d89a2da0657376115411830d
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Wed Jun 22 00:20:58 2022 +0300
