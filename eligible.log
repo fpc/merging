@@ -1,4 +1,23 @@
 ******************************************************************************
+commit 0b9e02d920f95367d89a2da0657376115411830d
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Wed Jun 22 00:20:58 2022 +0300
+
+    + enabled compilation of package libtar for wasm32-wasi
+
+M	packages/libtar/fpmake.pp
+
+******************************************************************************
+commit 4d6e3b4e1a4a9a0d7eb8933d83c154de1f612a8f
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Tue Jun 21 23:59:25 2022 +0300
+
+    * Don't call secondpass(left) in twasmtypeconvnode.second_int_to_real, this fixes bug #39735.
+
+M	compiler/wasm32/nwasmcnv.pas
+A	tests/webtbs/tw39735.pp
+
+******************************************************************************
 commit 14dc066d6ba599bc2ef8a34545920266f956adc8
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Tue Jun 21 23:12:28 2022 +0300
