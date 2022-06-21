@@ -1,4 +1,27 @@
 ******************************************************************************
+commit bc6ab39ea2f13d24b8a53a177901cbf3fc689143
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Tue Jun 21 05:43:35 2022 +0300
+
+    * WebAssembly exceptions fix: fixed raise without parameters in except..end
+      blocks in WebAssembly native and branchful exceptions mode. Fixes #39752
+
+M	compiler/wasm32/nwasmflw.pas
+M	rtl/inc/compproc.inc
+M	rtl/wasm32/except_branchful.inc
+M	rtl/wasm32/except_native.inc
+
+******************************************************************************
+commit 48f115686d105165d9637ffcfcce2f10b6192d9c
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Tue Jun 21 04:47:04 2022 +0300
+
+    + print more exceptions debug info, when the WebAssembly RTL is compiled with -dEXCDEBUG
+
+M	rtl/wasm32/except_branchful.inc
+M	rtl/wasm32/except_native.inc
+
+******************************************************************************
 commit 8c5bc91855dcdb1812d0d8ad851e1eef92047187
 Author: florian <florian@freepascal.org>
 Date:   Mon Jun 20 22:42:42 2022 +0200
