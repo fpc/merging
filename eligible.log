@@ -1,4 +1,61 @@
 ******************************************************************************
+commit 45415f0645a09545decea45ea40ca226f47410b8
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Wed Jun 22 03:58:57 2022 +0300
+
+    + enabled compilation of package fcl-js for wasm32-wasi
+
+M	packages/fcl-js/fpmake.pp
+
+******************************************************************************
+commit e7dc8ba5352e6155101fe1179b3141c6f49e11b8
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Wed Jun 22 03:57:36 2022 +0300
+
+    + enabled compilation of package fcl-mustache for wasm32-wasi
+
+M	packages/fcl-mustache/fpmake.pp
+
+******************************************************************************
+commit 8471879cd9c88c0e30700db210f1abb7d54374a0
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Wed Jun 22 03:55:43 2022 +0300
+
+    + enabled compilation of package fcl-passrc for wasm32-wasi
+
+M	packages/fcl-passrc/fpmake.pp
+
+******************************************************************************
+commit 283b1daca8cc58afd398b6e372b653732c0a3b03
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Wed Jun 22 03:53:38 2022 +0300
+
+    + enabled compilation of package fcl-sdo for wasm32-wasi
+
+M	packages/fcl-sdo/fpmake.pp
+
+******************************************************************************
+commit b923613eadbb455b35adae8facfb479b7f9f3629
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Wed Jun 22 03:37:36 2022 +0300
+
+    + make use of the unsigned remainder instructions in WebAssembly (i32.rem_s, i64.rem_u)
+
+M	compiler/wasm32/nwasmmat.pas
+
+******************************************************************************
+commit 9b16fafc526d9ea57209fa6d48a364ccb72eb1d2
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Wed Jun 22 03:21:21 2022 +0300
+
+    + generate exception checks after calls to fpc_overflow class in WebAssembly
+      branchful exceptions mode, because fpc_overflow can raise an exception in case
+      unit SysUtils is included.
+
+M	compiler/wasm32/hlcgcpu.pas
+M	compiler/wasm32/nwasmmat.pas
+
+******************************************************************************
 commit b2350d90ea29de8c1009c8d1babfbfd9a25df899
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Wed Jun 22 02:09:05 2022 +0300
