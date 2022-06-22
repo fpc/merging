@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 160c5a3d39089b4205c8eecc47d3707d2b00b1fa
+Author: florian <florian@freepascal.org>
+Date:   Wed Jun 22 22:18:02 2022 +0200
+
+      * patch by Bart B:  Fix for TryStrToConvUnit in ConvUtils unit, resolves #39797
+
+M	packages/rtl-objpas/src/inc/convutil.inc
+
+******************************************************************************
 commit b2a5334a7594238d83b84144e41cb0e37d8fc1c9
 Author: Sven/Sarah Barth <pascaldragon@gmail.com>
 Date:   Wed Jun 22 09:44:21 2022 +0200
