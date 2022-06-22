@@ -1,4 +1,14 @@
 ******************************************************************************
+commit b2a5334a7594238d83b84144e41cb0e37d8fc1c9
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Wed Jun 22 09:44:21 2022 +0200
+
+    * fix #39795: when extracting make_prettystring it was forgotten to also append the const part of the name to the specialize name
+
+M	compiler/pgenutil.pas
+A	tests/webtbs/tw39795.pp
+
+******************************************************************************
 commit 45415f0645a09545decea45ea40ca226f47410b8
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Wed Jun 22 03:58:57 2022 +0300
