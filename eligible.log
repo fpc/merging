@@ -1,4 +1,62 @@
 ******************************************************************************
+commit ec6f3288222b0b17641d13d2b2f5a2a4f53ee385
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Thu Jun 23 17:38:19 2022 +0200
+
+    fcl-base: fixed range check error
+
+M	packages/fcl-base/src/contnrs.pp
+M	packages/fcl-base/src/pascodegen.pp
+
+******************************************************************************
+commit 8d79dcc0d0454d1c0e53753c89217185961bdd4b
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Thu Jun 23 17:18:28 2022 +0200
+
+    webidl: exitcode 1 on exception, wasmjob: units
+
+M	packages/webidl/src/webidlparser.pp
+M	packages/webidl/src/webidltopas.pp
+M	utils/pas2js/webidl2pas.pp
+
+******************************************************************************
+commit bf52952b868320247eeb9482ba568b21483197eb
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Thu Jun 23 17:07:53 2022 +0200
+
+    fcl-base: pascodegen: do not write empty line for default section
+
+M	packages/fcl-base/src/pascodegen.pp
+
+******************************************************************************
+commit 943272b6f20d823554ec49bb57e08b66026036ae
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Thu Jun 23 16:30:40 2022 +0200
+
+    webidl: dynarray: do not prepend duplicate T
+
+M	packages/webidl/src/webidltopas.pp
+
+******************************************************************************
+commit a9ec4b3767c6475c90c195de1d623b94f30429f1
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Thu Jun 23 16:24:16 2022 +0200
+
+    webidl: added -f
+
+M	utils/pas2js/webidl2pas.pp
+
+******************************************************************************
+commit 832bbe9cab4289a844a9c4f5a4c948bd1c1af78e
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Thu Jun 23 16:19:51 2022 +0200
+
+    webidl: TWebIDLToPasWasmJob clean up
+
+M	packages/webidl/src/webidltopas.pp
+M	utils/pas2js/webidl2pas.pp
+
+******************************************************************************
 commit 160c5a3d39089b4205c8eecc47d3707d2b00b1fa
 Author: florian <florian@freepascal.org>
 Date:   Wed Jun 22 22:18:02 2022 +0200
