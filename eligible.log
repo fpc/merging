@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 2d8b10a5d82f3a1940ce63c7295dd10b0883add9
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Wed Jun 8 20:23:11 2022 +0100
+
+      * Improved TESTALL.BAT file for JVM tests
+
+M	tests/test/jvm/testall.bat
+
+******************************************************************************
 commit ec6f3288222b0b17641d13d2b2f5a2a4f53ee385
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Thu Jun 23 17:38:19 2022 +0200
