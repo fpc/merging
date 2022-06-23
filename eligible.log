@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 8eb2cea3494b684c5e5591e12b98511636ad1353
+Author: florian <florian@freepascal.org>
+Date:   Thu Jun 23 23:10:48 2022 +0200
+
+      * do not throw an internal error if slice is used on dyn. array paramters, resolves #39806
+
+M	compiler/ninl.pas
+A	tests/webtbf/tw39806.pp
+
+******************************************************************************
 commit 2d8b10a5d82f3a1940ce63c7295dd10b0883add9
 Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
 Date:   Wed Jun 8 20:23:11 2022 +0100
