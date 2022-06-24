@@ -1,4 +1,26 @@
 ******************************************************************************
+commit 0ac7e38797294fa66e7d8615cbe574903f061222
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Fri Jun 24 19:51:32 2022 +0200
+
+    webidl: wasmjob: split unit
+
+M	packages/webidl/src/webidltopas.pp
+A	packages/webidl/src/webidltopas2js.pp
+A	packages/webidl/src/webidltowasmjob.pp
+M	utils/pas2js/webidl2pas.lpi
+M	utils/pas2js/webidl2pas.pp
+
+******************************************************************************
+commit 1173a6b2e993482704e097cc19c31810220c1044
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Fri Jun 24 19:46:04 2022 +0200
+
+    webidl: wasmjob: setter for JSValue
+
+M	packages/webidl/src/webidltopas.pp
+
+******************************************************************************
 commit a64f44e5791be2d210308f91c262b6211f90a6a0
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Fri Jun 24 10:41:28 2022 +0200
