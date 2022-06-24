@@ -1,4 +1,13 @@
 ******************************************************************************
+commit a64f44e5791be2d210308f91c262b6211f90a6a0
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Fri Jun 24 10:41:28 2022 +0200
+
+    webidl: wasmjob: setter for primitive types
+
+M	packages/webidl/src/webidltopas.pp
+
+******************************************************************************
 commit e0baf898b1f670cb09e7c59bdff2128f88c706c2
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Fri Jun 24 10:16:51 2022 +0200
