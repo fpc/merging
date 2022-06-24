@@ -1,4 +1,16 @@
 ******************************************************************************
+commit 65d8c3d7ebef6ea5a893314b4a3267d3f1d6bcd6
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sat Jun 25 00:15:31 2022 +0300
+
+    * refactored duplicated code for epoch to datetime and vice versa conversion
+      between the dos and sysutils units for the WASI platform
+
+M	rtl/wasi/dos.pp
+M	rtl/wasi/sysutils.pp
+M	rtl/wasi/wasiutil.pp
+
+******************************************************************************
 commit 3ef7fedfec87ad663a98ea197f5fade1034bc052
 Author: florian <florian@freepascal.org>
 Date:   Fri Jun 24 22:33:27 2022 +0200
