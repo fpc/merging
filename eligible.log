@@ -1,4 +1,24 @@
 ******************************************************************************
+commit e0baf898b1f670cb09e7c59bdff2128f88c706c2
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Fri Jun 24 10:16:51 2022 +0200
+
+    webidl: wasmjob: getter for base types
+
+M	packages/webidl/src/webidlparser.pp
+M	packages/webidl/src/webidltopas.pp
+
+******************************************************************************
+commit bb68aa7e16a1703f603a4b75d63baa38ba74c6a5
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Thu Jun 23 17:59:57 2022 +0200
+
+    webidl: wasmjob: prepend classprefix to all external types
+
+M	packages/fcl-base/src/pascodegen.pp
+M	packages/webidl/src/webidltopas.pp
+
+******************************************************************************
 commit 8eb2cea3494b684c5e5591e12b98511636ad1353
 Author: florian <florian@freepascal.org>
 Date:   Thu Jun 23 23:10:48 2022 +0200
