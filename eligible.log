@@ -1,4 +1,23 @@
 ******************************************************************************
+commit 06ef8fba46d86a709511e4d72b8ec3cda227efac
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Fri Jun 24 20:56:56 2022 +0200
+
+    webidl: fpmake
+
+M	packages/webidl/fpmake.pp
+
+******************************************************************************
+commit 947eda3964749bf28f36db59a8774b558dac8eac
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Fri Jun 24 20:55:26 2022 +0200
+
+    webidl: headers
+
+M	packages/webidl/src/webidltopas2js.pp
+M	packages/webidl/src/webidltowasmjob.pp
+
+******************************************************************************
 commit 0ac7e38797294fa66e7d8615cbe574903f061222
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Fri Jun 24 19:51:32 2022 +0200
