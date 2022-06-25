@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 95dfccbb5e35bd5e97013e0336ee6a95ec6b04b4
+Author: florian <florian@freepascal.org>
+Date:   Sat Jun 25 21:39:11 2022 +0200
+
+      * do not optimize away +0.0 if no fastmath is passed as -0.0+(+0.0)=+0.0
+
+M	compiler/nadd.pas
+
+******************************************************************************
 commit df8a3ab009c9675d297c9723ea846fbdd8b5e60e
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Sat Jun 25 17:15:52 2022 +0200
