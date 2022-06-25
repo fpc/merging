@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 05c2bd85d36d0338e33d31293c04dd9704bc07bc
+Author: marcoonthegit <marco@freepascal.org>
+Date:   Sat Jun 25 15:49:48 2022 +0200
+
+    * THandleObjectArray added
+
+M	packages/fcl-base/src/syncobjs.pp
+
+******************************************************************************
 commit ecb4a0abca5e7d187e7e6ef2a593918d29d61115
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Sat Jun 25 14:49:44 2022 +0200
