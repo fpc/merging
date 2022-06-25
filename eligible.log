@@ -1,4 +1,24 @@
 ******************************************************************************
+commit ecb4a0abca5e7d187e7e6ef2a593918d29d61115
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Jun 25 14:49:44 2022 +0200
+
+    * Restore display of exception type. fix issue #39811
+
+M	tests/test/units/convutils/tconv1.pp
+
+******************************************************************************
+commit b2ad1d3efd85f162b1180914ceee8f47ae9887c5
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Jun 25 14:33:33 2022 +0200
+
+    * Patch from Bart. Fix for issue #39797
+
+M	packages/rtl-objpas/src/inc/convutil.inc
+M	rtl/objpas/rtlconst.inc
+M	tests/test/units/convutils/tconv1.pp
+
+******************************************************************************
 commit 53623d71841b1acd4676a27dff1bf4948d24f111
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Sat Jun 25 12:48:10 2022 +0200
