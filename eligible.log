@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 53623d71841b1acd4676a27dff1bf4948d24f111
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Jun 25 12:48:10 2022 +0200
+
+    * Fix test regressions
+
+M	packages/rtl-objpas/src/inc/convutil.inc
+M	tests/test/units/convutils/tconv1.pp
+
+******************************************************************************
 commit e6d0b9510b23e42bf15871224652f465b198e395
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Sat Jun 25 01:38:02 2022 +0200
