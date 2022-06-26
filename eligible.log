@@ -1,4 +1,172 @@
 ******************************************************************************
+commit 4058a0ac4b4b1f47dc58a3055ebda62edaf6560e
+Author: magorium <10467276-magorium@users.noreply.gitlab.com>
+Date:   Thu May 12 23:25:15 2022 +0200
+
+    AROS: Make sure opaque SMP extension is used for ABIv11 only
+    
+    These changes adds an additional record field to record structure TMsgPort in
+    order to support SMP for ABIv11 (non m68k targets only).
+    
+    This additional field contains two opaque IPTR's/PtrUInt's and therefor breaks
+    compatibility between ABIv0, ABIv1 and ABIv11 as well as make them binary
+    incompatible.
+    
+    It also renders ABIv11 incompatible with itself when this change was introduced
+    on march 18 2022. Recompilation of existing code for this ABI is thus required.
+    
+    See: https://github.com/deadw00d/AROS/commit/b9bc67accce27db0e2cc0f79f554dc76e9b17a73
+
+M	packages/arosunits/src/exec.pas
+M	rtl/aros/i386/execd.inc
+
+******************************************************************************
+commit c6601203291f2460a9cff03cc67c238bb6701169
+Author: magorium <10467276-magorium@users.noreply.gitlab.com>
+Date:   Thu May 12 23:23:50 2022 +0200
+
+    AROS: Ensure that spinlocks for SMP enabled build is not possible for ABIv11
+    
+    These changes makes sure that the use of record structure spinlock is not
+    active/available when compiling for AROS ABIv11 as that ABI does not support
+    spinlocks as implemented for AROS ABIv1.
+    
+    Note that this is a ABI and Binary Compatible break between ABIv1 and ABIv11.
+
+M	packages/arosunits/src/exec.pas
+M	rtl/aros/i386/execd.inc
+
+******************************************************************************
+commit 14f97748380ef4aa4dcf3859e493d2273ae4928f
+Author: magorium <10467276-magorium@users.noreply.gitlab.com>
+Date:   Thu May 12 23:21:17 2022 +0200
+
+    AROS: Ensure that spinlocks for SMP enabled build can only be active for ABIv1
+    
+    These changes makes sure that the use of record structure TSpinlock can only
+    be enabled/active for AROS ABIv1 as that ABI is currently the only ABI that
+    is able to support SMP by using the spinlock record structure.
+
+M	packages/arosunits/src/exec.pas
+M	rtl/aros/i386/execd.inc
+
+******************************************************************************
+commit 41a48fe385604914f7c40aed701a8b7304fe809a
+Author: magorium <10467276-magorium@users.noreply.gitlab.com>
+Date:   Thu May 12 23:19:16 2022 +0200
+
+    AROS: Use structure spinlock for SMP enabled build (ABI/BC break)
+    
+    This commit will add an additional spinlock field to record structures
+    TMsgPort and TSemaphoreRequest for a SMP enabled build.
+    
+    This will break ABI and Binary Compatibility between ABIv0 and ABIv1 and for
+    ABIv1 (for a SMP enabled build).
+    
+    Recompilation in such case is required as both record structures TMsgPort and
+    TSemaphoreRequest are embedded in other record structures which causes a
+    myriad of changes to those records including different record sizes and other
+    field offsets.
+    
+    Note that SMP is currently only available for ABIv1 and afaik only supported
+    for AROS target x86_64 while AROS target i386 has initial support for SMP
+    (but not actively enabled).
+    
+    SMP enabled build can be 'activated' by defining AROS_PLATFORM_SMP and
+    AROSEXEC_SMP.
+
+M	packages/arosunits/src/exec.pas
+M	rtl/aros/i386/execd.inc
+
+******************************************************************************
+commit b467de658d6a4b1c9d677935d8d0566429e1de7e
+Author: magorium <10467276-magorium@users.noreply.gitlab.com>
+Date:   Thu May 12 23:17:47 2022 +0200
+
+    AROS: Add structure spinlock for SMP builds
+    
+    In 2015 ABIv1 introduced support for spinlocks for SMP enabled builds (1) by
+    use of a special spinlock structure.
+    
+    This structure was later updated to end up in its current form in 2017 (2)
+    
+    This commit adds this record structure to both RTL (execd) and unit (exec).
+    
+    The structure can be "enabled" by defining AROSPLATFORM_SMP during build.
+    
+    1) https://github.com/aros-development-team/AROS/commit/b6045c27fdb925491cc8081837b978d288f057a3
+    2) https://github.com/aros-development-team/AROS/commit/0ffdbdc48f6b5add7efb3cc193fa98739dedeff3
+
+M	packages/arosunits/src/exec.pas
+M	rtl/aros/i386/execd.inc
+
+******************************************************************************
+commit b218393b5747b7c2ee86099a91315012a9b616e8
+Author: magorium <10467276-magorium@users.noreply.gitlab.com>
+Date:   Tue May 10 23:41:22 2022 +0200
+
+    AROS: ABI compatibility update AROSSupportBase (ABI/API/BC break)
+    
+    These changes break API/Binary Compatibility between ABIv0 and ABIv1.
+    
+    Field stdOut is replaced by undefined field named _pad for ABIv1 while
+    (still) being present as stdOut for ABIv0.
+    
+    Field DebugConfig is completely removed from ABIv1 (still present for ABIv0).
+    
+    If your code depends on either of these two fields then you need to make
+    appropriate changes when compiling for ABIv1.
+    
+    Removing dependency on either of these two mentioned fields is preferred.
+    
+    Both RTL (execd.inc) and unit (exec.pas) are updated.
+    
+    See also https://github.com/aros-development-team/AROS/commit/194cc5e1c52a9dc67aa2275c8acb26673e454757
+
+M	packages/arosunits/src/exec.pas
+M	rtl/aros/i386/execd.inc
+
+******************************************************************************
+commit 8bc7d5897d19829217f2953128c2bf1cf718e791
+Author: magorium <10467276-magorium@users.noreply.gitlab.com>
+Date:   Sun May 8 10:05:35 2022 +0200
+
+    AROS: ABI compatibility update structure TETask (ABI/BC break)
+    
+    These changes break Binary Compatibility between ABIv0 and ABIv1.
+    
+    Record TETask was not compliant to ABIv1 because field et_Compatibility is
+    only required for ABIv0 (https://github.com/deadw00d/AROS/commit/06538a17900b3e6c45d053128957fba8668c2c15).
+    
+    Therefor these changes update record TETask for both RTL (execd.inc) and unit
+    exec (exec.pas) so that field et_Compatibility is only present for ABIv0.
+    
+    The impact of these changes should be minimal because all relevant fields are
+    still accessible (some located at another offset) and code should never rely
+    on the size of this structure.
+
+M	packages/arosunits/src/exec.pas
+M	rtl/aros/i386/execd.inc
+
+******************************************************************************
+commit 08cc81ff60ca9f66ce9f4de4bf36e30dec1403d2
+Author: magorium <10467276-magorium@users.noreply.gitlab.com>
+Date:   Sun May 8 10:03:13 2022 +0200
+
+    AROS: Update RTL structure TETask (execd)
+    
+    Bring RTL (execd.inc) structure TETask up to date to unit exec (exec.pas).
+    
+    This structure situated in the RTL was (literally) based on the MorphOS
+    version which is not compliant to AROS.
+    
+    The original MorphOS TETask structure can still be 'activated' when the flag
+    AROS_MORPHOS_COMPATIBLE is defined when compiling the RTL and exec unit (as
+    is also the case in the original AROS repo).
+
+M	rtl/aros/i386/execd.inc
+
+******************************************************************************
 commit 5a0d76e45ab161063d5981a807ffcdd8f683314f
 Author: magorium <10467276-magorium@users.noreply.gitlab.com>
 Date:   Fri May 6 21:49:44 2022 +0200
