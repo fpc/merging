@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 576ef5a33d0331af55047818aa4556b1ce448ab1
+Author: marcoonthegit <marco@freepascal.org>
+Date:   Sun Jun 26 19:10:43 2022 +0200
+
+    * make infinite a default param
+
+M	packages/fcl-base/src/syncobjs.pp
+
+******************************************************************************
 commit 8d42a9df83f0ad18cc8f5593e415a6b74d3950f6
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Sun Jun 26 14:15:57 2022 +0200
@@ -1860,24 +1869,6 @@ Date:   Sun Jun 5 17:46:58 2022 +0200
     * another fix for  bug #39758, this time the end of the string
 
 M	rtl/objpas/sysutils/sysencoding.inc
-
-******************************************************************************
-commit c4be74abf30f52c8ae00455793e793dd5d3c53b2
-Author: marcoonthegit <marco@freepascal.org>
-Date:   Sun Jun 5 15:28:03 2022 +0200
-
-    * typo fix in last commit
-
-M	packages/rtl-extra/src/unix/clocale.pp
-
-******************************************************************************
-commit 009816cbc592749217ceb096dd088e114b354965
-Author: marcoonthegit <marco@freepascal.org>
-Date:   Sun Jun 5 12:37:11 2022 +0200
-
-    * Also set clock12 to false if ampm is before %I. bug #39760 and fix from liao bozhi
-
-M	packages/rtl-extra/src/unix/clocale.pp
 
 ******************************************************************************
 commit 1a28b1b5c48acce54ffc534d2d057735e45c24c9
@@ -14069,15 +14060,6 @@ M	packages/regexpr/tests/tcregexp.pp
 M	packages/regexpr/tests/testregexpr.lpi
 M	packages/regexpr/tests/testregexpr.pp
 A	packages/regexpr/tests/tests.pp
-
-******************************************************************************
-commit e39f7ec8a057684d5f9f3a63d947cbc514fff559
-Author: Sven/Sarah Barth <pascaldragon@gmail.com>
-Date:   Sun Jan 30 12:11:08 2022 +0100
-
-    * fix #39548: correctly declare the function result of SysAllocStringLen()
-
-M	packages/winunits-base/src/activex.pp
 
 ******************************************************************************
 commit 9b4033fa80bff4b50cd2faa83a49aea8ed71c17f
