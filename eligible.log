@@ -1,4 +1,77 @@
 ******************************************************************************
+commit 5a0d76e45ab161063d5981a807ffcdd8f683314f
+Author: magorium <10467276-magorium@users.noreply.gitlab.com>
+Date:   Fri May 6 21:49:44 2022 +0200
+
+    AROS: 32/64-bit fix field alignment for unit conunit
+    
+    Make sure AROS' record structures are C-packed.
+
+M	packages/arosunits/src/conunit.pas
+
+******************************************************************************
+commit 030fe14bdecfb96d136cef785ff55f3087da6c71
+Author: magorium <10467276-magorium@users.noreply.gitlab.com>
+Date:   Fri May 6 21:49:25 2022 +0200
+
+    AROS: 32/64-bit fix field alignment for unit commodities
+    
+    Make sure AROS' record structures are C-packed.
+
+M	packages/arosunits/src/commodities.pas
+
+******************************************************************************
+commit 9a47cc5c47528ffefc554f9a7c1fc90fa084e9c4
+Author: magorium <10467276-magorium@users.noreply.gitlab.com>
+Date:   Fri May 6 21:49:06 2022 +0200
+
+    AROS: 64-bit fix elf structures for unit amigados
+    
+    Make sure ELF structures are compliant to 64-bit when target is 64-bit.
+
+M	packages/arosunits/src/amigados.pas
+
+******************************************************************************
+commit 1d1a68761e27d473aee8d41a6c15a5a1f7a4324e
+Author: magorium <10467276-magorium@users.noreply.gitlab.com>
+Date:   Fri May 6 21:48:18 2022 +0200
+
+    AROS: 32/64-bit compatibility update for unit agraphics
+    
+    Make TRastPort compliant to both ABI's by removing redundant ifdef.
+    
+    Add information about (new) fields.
+
+M	packages/arosunits/src/agraphics.pas
+
+******************************************************************************
+commit 3439b220a71c0888cd906ea010265e202717ff46
+Author: magorium <10467276-magorium@users.noreply.gitlab.com>
+Date:   Fri May 6 21:46:49 2022 +0200
+
+    AROS: 32/64-bit compatibility update for unit intuition
+    
+    Make TDrawInfo compliant to both ABI's by removing redundant ifdef.
+    
+    Add information about (new) fields.
+    
+    Update dri_version to v3.
+
+M	packages/arosunits/src/intuition.pas
+
+******************************************************************************
+commit e07185bc11189d4fc24b1d8c5d12dd6f33dc2d25
+Author: magorium <10467276-magorium@users.noreply.gitlab.com>
+Date:   Fri May 6 21:45:44 2022 +0200
+
+    AROS: 32/64-bit compatibility update for unit workbench
+    
+    Make TAppMessage compliant to both ABI's as well as 32/64-bit by
+    changing field am_ID to be of type IPTR for all targets..
+
+M	packages/arosunits/src/workbench.pas
+
+******************************************************************************
 commit 576ef5a33d0331af55047818aa4556b1ce448ab1
 Author: marcoonthegit <marco@freepascal.org>
 Date:   Sun Jun 26 19:10:43 2022 +0200
