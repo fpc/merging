@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 98d297cf54f795967dca33cd43b14d5c006979c4
+Author: florian <florian@freepascal.org>
+Date:   Sun Jun 26 22:26:16 2022 +0200
+
+      * patch by Bart B to refactor ConvUtils (no functional changes), resolves #39813
+
+M	packages/rtl-objpas/src/inc/convutil.inc
+
+******************************************************************************
 commit 4058a0ac4b4b1f47dc58a3055ebda62edaf6560e
 Author: magorium <10467276-magorium@users.noreply.gitlab.com>
 Date:   Thu May 12 23:25:15 2022 +0200
