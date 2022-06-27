@@ -1,4 +1,53 @@
 ******************************************************************************
+commit 54ba991c111410bb74b1a97eee90f7f8ca6ba017
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Mon Jun 27 18:56:08 2022 +0200
+
+    webidl: wasmjob: callback wrapper for primitive types
+
+M	packages/webidl/src/webidltopas.pp
+M	packages/webidl/src/webidltowasmjob.pp
+
+******************************************************************************
+commit bbda3631fa9b338c5d5db160f749660140d82ba3
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Mon Jun 27 14:34:21 2022 +0200
+
+    webidl: add const modifier to function def arguments
+
+M	packages/webidl/src/webidltopas.pp
+
+******************************************************************************
+commit a50e0382c591d279280ad2c3a569b708a001acc0
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Mon Jun 27 14:31:04 2022 +0200
+
+    webidl: added Function and BigInteger to base types
+
+M	packages/webidl/src/webidldefs.pp
+M	packages/webidl/src/webidltopas.pp
+
+******************************************************************************
+commit dd0acb63606006c27294a6177abddb72e85823c7
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Mon Jun 27 13:55:49 2022 +0200
+
+    webidl: resolving type defs
+
+M	packages/webidl/src/webidldefs.pp
+M	packages/webidl/src/webidlparser.pp
+M	packages/webidl/src/webidltopas.pp
+
+******************************************************************************
+commit fb5456da796a6245a48e054e816aad09c11e8838
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Mon Jun 27 11:30:31 2022 +0200
+
+    webidl: wasmjob: prefix callbacks with T
+
+M	packages/webidl/src/webidltopas.pp
+
+******************************************************************************
 commit b9dc428e20e65e6bffad1e541a039aae950783a2
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Mon Jun 27 11:19:25 2022 +0200
