@@ -1,4 +1,13 @@
 ******************************************************************************
+commit f92102a5f22ae7b978ecf91d59781e16f0b82163
+Author: florian <florian@freepascal.org>
+Date:   Mon Jun 27 22:45:01 2022 +0200
+
+      * patch by Rika: SwapEndian([u]int16) has unnecessary “and $FFFF”, resolves #39814
+
+M	rtl/inc/generic.inc
+
+******************************************************************************
 commit 54ba991c111410bb74b1a97eee90f7f8ca6ba017
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Mon Jun 27 18:56:08 2022 +0200
