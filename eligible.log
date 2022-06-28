@@ -1,4 +1,22 @@
 ******************************************************************************
+commit 6aaa92680cba719e316605bde85763c43a083e43
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Tue Jun 28 23:38:35 2022 +0200
+
+    webidl: wasmjob: object attribute
+
+M	packages/webidl/src/webidltowasmjob.pp
+
+******************************************************************************
+commit c50ef1efcfa251ec06c577f8b462aecff3d79814
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Tue Jun 28 23:23:11 2022 +0200
+
+    webidl: wasmjob: create unique local var
+
+M	packages/webidl/src/webidltowasmjob.pp
+
+******************************************************************************
 commit 623b723b113d9bc862ecaac881d881c832171d82
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Tue Jun 28 23:14:19 2022 +0200
