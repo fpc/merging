@@ -1,4 +1,35 @@
 ******************************************************************************
+commit 623b723b113d9bc862ecaac881d881c832171d82
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Tue Jun 28 23:14:19 2022 +0200
+
+    webidl: wasmjob: pass method as argument
+
+M	packages/webidl/src/webidltowasmjob.pp
+
+******************************************************************************
+commit f1075020189b3a526597a5e9f1c5d4813508ecfc
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Tue Jun 28 10:13:14 2022 +0200
+
+    webidl: cast
+
+M	packages/webidl/src/webidltowasmjob.pp
+
+******************************************************************************
+commit ceda27ae256cb00987c9face4adfa80a20477534
+Author: florian <florian@freepascal.org>
+Date:   Tue Jun 28 22:45:17 2022 +0200
+
+      * allow type parameters in variant parts of records as we do not now
+        what type is used during specialization, resolves #39805
+
+M	compiler/pdecvar.pas
+M	tests/test/tgeneric26.pp
+A	tests/webtbf/tw39805b.pp
+A	tests/webtbs/tw39805a.pp
+
+******************************************************************************
 commit f92102a5f22ae7b978ecf91d59781e16f0b82163
 Author: florian <florian@freepascal.org>
 Date:   Mon Jun 27 22:45:01 2022 +0200
