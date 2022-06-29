@@ -6072,16 +6072,6 @@ Date:   Fri May 13 08:52:28 2022 +0200
 M	packages/fcl-web/fpmake.pp
 
 ******************************************************************************
-commit 6f6a003414f3f141a63bdbfcc0090ab34828383a
-Author: Michaël Van Canneyt <michael@freepascal.org>
-Date:   Fri May 13 08:52:09 2022 +0200
-
-    * Patches from Pascal Riekenberg, some small corrections
-
-M	rtl/win/wininc/defines.inc
-M	rtl/win/wininc/redef.inc
-
-******************************************************************************
 commit 4f9c19d94334a8ae546c0e9e0aaae699f16efad5
 Author: florian <florian@freepascal.org>
 Date:   Thu May 12 22:55:59 2022 +0200
