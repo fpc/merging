@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 29be433e1b360eb782eefa3405d673cb0e4bce7a
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Wed Jun 29 04:03:48 2022 +0200
+
+    webidl: wasmjob: function type object as arg and return type
+
+M	packages/webidl/src/webidltowasmjob.pp
+
+******************************************************************************
 commit 6aaa92680cba719e316605bde85763c43a083e43
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Tue Jun 28 23:38:35 2022 +0200
