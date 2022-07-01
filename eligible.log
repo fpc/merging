@@ -1,4 +1,13 @@
 ******************************************************************************
+commit fcb5531fbc90cab7e998ce8eab655182d165ac50
+Author: florian <florian@freepascal.org>
+Date:   Fri Jul 1 23:04:50 2022 +0200
+
+      * convert a+/-const1-/const2 in into a+/-(-const1)+(-const2) to enable further optimizations, resolves #39782
+
+M	compiler/nadd.pas
+
+******************************************************************************
 commit 83ce54b8153d6eb47b392517e3092ae0f501dcee
 Author: florian <florian@freepascal.org>
 Date:   Thu Jun 30 22:00:01 2022 +0200
