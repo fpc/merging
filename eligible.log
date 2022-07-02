@@ -1,4 +1,13 @@
 ******************************************************************************
+commit c5a0d16c585fd7af0135537346b6f0611d51d739
+Author: florian <florian@freepascal.org>
+Date:   Sat Jul 2 23:35:59 2022 +0200
+
+      * experimental test for #39758
+
+A	tests/webtbs/tw39758.pp
+
+******************************************************************************
 commit f5cf8956c5622b240dd8f2013a983afdf5b59014
 Author: Jeppe <jeppe@j-software.dk>
 Date:   Sat Jul 2 14:08:31 2022 +0200
