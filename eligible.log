@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 6dfc0c4bae77665408d5e011fad5b694c82bc3b7
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Wed Jun 29 18:31:41 2022 +0200
+
+    * Do not define UNICODE by default, only in Uregexpr
+
+M	packages/regexpr/src/regexpr.pas
+
+******************************************************************************
 commit fcb5531fbc90cab7e998ce8eab655182d165ac50
 Author: florian <florian@freepascal.org>
 Date:   Fri Jul 1 23:04:50 2022 +0200
