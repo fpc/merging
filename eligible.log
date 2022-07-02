@@ -1,4 +1,22 @@
 ******************************************************************************
+commit c286e444991a4bffdc1161f9a18c5fca36497c61
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Jul 2 12:18:20 2022 +0200
+
+    * Use correct define for regexpr, name has changed
+
+M	packages/regexpr/src/uregexpr.pp
+
+******************************************************************************
+commit d6dbcb5c8b914f11f5931f07e60e40ca6f29f698
+Author: Alexey Torgashin <support@uvviewsoft.com>
+Date:   Sat Jul 2 09:31:43 2022 +0000
+
+    Update packages/regexpr/src/regexpr.pas
+
+M	packages/regexpr/src/regexpr.pas
+
+******************************************************************************
 commit 6dfc0c4bae77665408d5e011fad5b694c82bc3b7
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Wed Jun 29 18:31:41 2022 +0200
