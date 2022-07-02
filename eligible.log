@@ -1,4 +1,28 @@
 ******************************************************************************
+commit f5cf8956c5622b240dd8f2013a983afdf5b59014
+Author: Jeppe <jeppe@j-software.dk>
+Date:   Sat Jul 2 14:08:31 2022 +0200
+
+    riscv: Merge stack code, fix interrupted code
+    
+    - Stack pointer is kept below register save area. This ensures that
+    registers are not overwritten by interrupt handlers.
+    - RV32 and 64 code is merged to base class.
+
+M	compiler/riscv/cgrv.pas
+M	compiler/riscv32/cgcpu.pas
+M	compiler/riscv64/cgcpu.pas
+
+******************************************************************************
+commit 37b5147b19c893de4555b0760cc8df1aa24b0f93
+Author: Jeppe <jeppe@j-software.dk>
+Date:   Sat Jun 25 14:11:58 2022 +0200
+
+    riscv32: Fix potential FP proc_exit bug
+
+M	compiler/riscv32/cgcpu.pas
+
+******************************************************************************
 commit ff3f183eb2b6c00a9cb0a49b6b6635beb44c312d
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Sat Jul 2 13:05:00 2022 +0200
