@@ -1,4 +1,13 @@
 ******************************************************************************
+commit ff3f183eb2b6c00a9cb0a49b6b6635beb44c312d
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Jul 2 13:05:00 2022 +0200
+
+    * Patch from Bart to remove unneeded test
+
+M	tests/test/units/convutils/tconv1.pp
+
+******************************************************************************
 commit c286e444991a4bffdc1161f9a18c5fca36497c61
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Sat Jul 2 12:18:20 2022 +0200
