@@ -1,4 +1,22 @@
 ******************************************************************************
+commit f754ecf3d4e183f18c7429b53b828bc59b2eac26
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sun Jul 3 10:31:25 2022 +0200
+
+    * Fix AV when reading palette. Fixes issue #39823
+
+M	packages/fcl-image/src/fpreadxpm.pp
+
+******************************************************************************
+commit 672f90bf40cc6fe8d3dbb2be0402e41d7113fc00
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sun Jul 3 10:27:04 2022 +0200
+
+     Reset col when reading new lines. Fix issue #39356
+
+M	packages/fcl-db/src/base/sqlscript.pp
+
+******************************************************************************
 commit c5a0d16c585fd7af0135537346b6f0611d51d739
 Author: florian <florian@freepascal.org>
 Date:   Sat Jul 2 23:35:59 2022 +0200
