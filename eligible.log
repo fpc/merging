@@ -1,4 +1,13 @@
 ******************************************************************************
+commit a2a2a6d79edcf53dc406daa1730968c766ea893d
+Author: florian <florian@freepascal.org>
+Date:   Sun Jul 3 16:09:09 2022 +0200
+
+      * naming fixed, it is a test for #39785
+
+R100	tests/webtbs/tw39758.pp	tests/webtbs/tw39785.pp
+
+******************************************************************************
 commit f754ecf3d4e183f18c7429b53b828bc59b2eac26
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Sun Jul 3 10:31:25 2022 +0200
