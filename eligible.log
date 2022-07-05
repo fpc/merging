@@ -1,4 +1,32 @@
 ******************************************************************************
+commit e28238da9b5111fbceaf4bdc81528ef4cdfe26e2
+Author: florian <florian@freepascal.org>
+Date:   Tue Jul 5 23:04:17 2022 +0200
+
+      * handle absolute on strings correctly for dwarf debug info, resolves #39816
+
+M	compiler/dbgdwarf.pas
+A	tests/webtbs/tw39816.pp
+
+******************************************************************************
+commit a19add9c886b7f64a2371633e16cf8ac2e9447fd
+Author: Robert Roland <rob.roland@gmail.com>
+Date:   Sun Jul 3 19:40:29 2022 -0700
+
+    Add cntfrq_el0 and cntpct_el0 AArch64 registers
+
+M	compiler/aarch64/a64reg.dat
+M	compiler/aarch64/ra64con.inc
+M	compiler/aarch64/ra64dwa.inc
+M	compiler/aarch64/ra64nor.inc
+M	compiler/aarch64/ra64num.inc
+M	compiler/aarch64/ra64rni.inc
+M	compiler/aarch64/ra64sri.inc
+M	compiler/aarch64/ra64sta.inc
+M	compiler/aarch64/ra64std.inc
+M	compiler/aarch64/ra64sup.inc
+
+******************************************************************************
 commit a9db747eb912f4124d9690d9395413479a2848f5
 Author: florian <florian@freepascal.org>
 Date:   Mon Jul 4 22:51:50 2022 +0200
