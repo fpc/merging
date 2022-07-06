@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 1d32a575e756319dd8ba62a0a2960973dbe3eee1
+Author: florian <florian@freepascal.org>
+Date:   Wed Jul 6 19:50:07 2022 +0200
+
+      * as correctly pointed out by Bart B, -gw instead of -g should be used in the test for #39816
+
+M	tests/webtbs/tw39816.pp
+
+******************************************************************************
 commit e28238da9b5111fbceaf4bdc81528ef4cdfe26e2
 Author: florian <florian@freepascal.org>
 Date:   Tue Jul 5 23:04:17 2022 +0200
