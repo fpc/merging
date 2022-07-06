@@ -1,4 +1,23 @@
 ******************************************************************************
+commit 012204422613f44a6908f22c96d18a23e906d8c4
+Author: florian <florian@freepascal.org>
+Date:   Wed Jul 6 20:39:38 2022 +0200
+
+      * part of last commit
+
+M	rtl/objpas/sysutils/syscodepages.inc
+
+******************************************************************************
+commit 4fecfe3df3d3eaea31e1c4da6eaeb5a84d07e0bc
+Author: florian <florian@freepascal.org>
+Date:   Wed Jul 6 20:07:39 2022 +0200
+
+      * fix SysUtils.HashName as proposed by Awkward in #39827, resolves #39827
+      * adapted to syscodepages.inc for the fixed HashName
+
+M	rtl/objpas/sysutils/sysansi.inc
+
+******************************************************************************
 commit 1d32a575e756319dd8ba62a0a2960973dbe3eee1
 Author: florian <florian@freepascal.org>
 Date:   Wed Jul 6 19:50:07 2022 +0200
