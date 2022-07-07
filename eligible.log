@@ -1,4 +1,23 @@
 ******************************************************************************
+commit 1aae90b29495ba2602bc57a94a7f2bdb1df4602b
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Thu Jul 7 09:42:46 2022 +0200
+
+    webidl: wasmjob: array name
+
+M	packages/webidl/src/webidltopas.pp
+M	packages/webidl/src/webidltowasmjob.pp
+
+******************************************************************************
+commit 748678267458b7da6d655f1988dea51142a7c9e9
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Thu Jun 30 22:28:52 2022 +0200
+
+    webidl: wasmjob: started return type array
+
+M	packages/webidl/src/webidltowasmjob.pp
+
+******************************************************************************
 commit 7bad1771390cbc297580a4d5bdea5b5281a9012e
 Author: Jonas Maebe <jonas@freepascal.org>
 Date:   Wed Jul 6 21:12:37 2022 +0200
