@@ -1,4 +1,14 @@
 ******************************************************************************
+commit bcb5365ccae8de57a976d9b88b6eaa7837647138
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Fri Jul 8 10:25:40 2022 +0200
+
+    webidl: array arg pass as const
+
+M	packages/webidl/src/webidltopas.pp
+M	packages/webidl/src/webidltowasmjob.pp
+
+******************************************************************************
 commit f6b5c513bb73bc476a71769e094ea8401eab13eb
 Author: florian <florian@freepascal.org>
 Date:   Thu Jul 7 23:00:12 2022 +0200
