@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 776c39dc0a8b7563b0f511d19346e280a749e9ee
+Author: florian <florian@freepascal.org>
+Date:   Sat Jul 9 22:03:26 2022 +0200
+
+      + avr-embedded: keep fpc.* sections, should resolve #39825
+
+M	compiler/systems/t_embed.pas
+
+******************************************************************************
 commit bcb5365ccae8de57a976d9b88b6eaa7837647138
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Fri Jul 8 10:25:40 2022 +0200
