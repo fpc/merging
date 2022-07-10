@@ -1,4 +1,36 @@
 ******************************************************************************
+commit 6ea4ddd3d5dcc27ae70d8e33e8a744b289fcc449
+Author: florian <florian@freepascal.org>
+Date:   Sun Jul 10 22:52:22 2022 +0200
+
+      * deprecated warning fixed
+
+M	packages/libtar/src/libtar.pp
+
+******************************************************************************
+commit 4193563190b9a25de40bd6803f58e3529539bb18
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sat Jul 9 20:44:10 2022 +0200
+
+    LLVM address sanitizer: add asan library and rpath on Darwin
+    
+    Also verified that "make all" works with asan on macOS/AArch64
+
+M	compiler/systems/t_darwin.pas
+
+******************************************************************************
+commit 8c251db2c1bb15d4f9ee8ef84a6998babca199f1
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sun Jul 10 21:31:13 2022 +0200
+
+    Darwin: fix compilation on macOS/AArch64 after 1f328cf3
+    
+    No function suffixes there since there's no backward compatibility issue.
+
+M	rtl/unix/oscdeclh.inc
+M	rtl/unix/unxdeclh.inc
+
+******************************************************************************
 commit 3385ce92a2ce8a7c6b47b02c689e8b28b8fc8362
 Author: Joost van der Sluis <joost@cnoc.nl>
 Date:   Sun Jul 10 12:21:17 2022 +0200
