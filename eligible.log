@@ -1,4 +1,14 @@
 ******************************************************************************
+commit ef15d3d9ec80213697bb2acbfba3e6ca0f8fd487
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Sat Jun 25 01:19:02 2022 +0100
+
+      * Fixed infinite loop when CONSTPROP is enabled
+        but USELOADMODIFYSTORE is not.
+
+M	compiler/optconstprop.pas
+
+******************************************************************************
 commit 6ea4ddd3d5dcc27ae70d8e33e8a744b289fcc449
 Author: florian <florian@freepascal.org>
 Date:   Sun Jul 10 22:52:22 2022 +0200
