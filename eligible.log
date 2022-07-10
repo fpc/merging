@@ -1,4 +1,17 @@
 ******************************************************************************
+commit 3385ce92a2ce8a7c6b47b02c689e8b28b8fc8362
+Author: Joost van der Sluis <joost@cnoc.nl>
+Date:   Sun Jul 10 12:21:17 2022 +0200
+
+     * Always generate CFI-information. During linking it can be omitted when
+       no debug-information is requested. On Linux this needed a change in the
+       linker-script. On Windows it already works as desired. Other targets
+       may need some adjustments as well.
+
+M	compiler/cfidwarf.pas
+M	compiler/systems/t_linux.pas
+
+******************************************************************************
 commit 776c39dc0a8b7563b0f511d19346e280a749e9ee
 Author: florian <florian@freepascal.org>
 Date:   Sat Jul 9 22:03:26 2022 +0200
