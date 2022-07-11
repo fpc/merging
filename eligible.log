@@ -1,4 +1,14 @@
 ******************************************************************************
+commit e25594c48e207157dddad49d8dd246fe59537e57
+Author: florian <florian@freepascal.org>
+Date:   Mon Jul 11 22:07:06 2022 +0200
+
+      * correctly truncate rtti symbol names of enumeration types, resolves #39829
+
+M	compiler/ncgrtti.pas
+A	tests/webtbs/tw39829.pp
+
+******************************************************************************
 commit 9d776f058e238e618459630848265f9bd5e008b5
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Mon Jul 11 18:03:32 2022 +0200
