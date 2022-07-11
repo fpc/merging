@@ -1,4 +1,26 @@
 ******************************************************************************
+commit 9d776f058e238e618459630848265f9bd5e008b5
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Mon Jul 11 18:03:32 2022 +0200
+
+    * Move fdbf back to private section
+
+M	packages/fcl-db/src/dbase/dbf.pas
+
+******************************************************************************
+commit 9d4cdc9383ceeac758aa1a305b185d595f468fdb
+Author: Frank Rademakers <frank.rademakers@gmail.com>
+Date:   Mon Jul 11 15:57:30 2022 +0000
+
+    Additional Visual Foxpro functionality for TDbf. AutoInc fields work and can...
+
+M	packages/fcl-db/src/dbase/dbf.pas
+M	packages/fcl-db/src/dbase/dbf_dbffile.pas
+M	packages/fcl-db/src/dbase/dbf_fields.pas
+M	packages/fcl-db/src/dbase/dbf_pgfile.pas
+M	packages/fcl-db/src/dbase/dbf_struct.inc
+
+******************************************************************************
 commit 501f3972779ce635f67c5c0bfd3cbc34d4699f4a
 Author: Luiz Américo Pereira Câmara <camara_luiz@yahoo.com.br>
 Date:   Sun Jul 10 21:06:12 2022 -0300
