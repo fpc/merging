@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 501f3972779ce635f67c5c0bfd3cbc34d4699f4a
+Author: Luiz Américo Pereira Câmara <camara_luiz@yahoo.com.br>
+Date:   Sun Jul 10 21:06:12 2022 -0300
+
+    fpexprpars: fix access violation when setting an expression after clear
+
+M	packages/fcl-base/src/fpexprpars.pp
+M	packages/fcl-base/tests/testexprpars.pp
+
+******************************************************************************
 commit ef15d3d9ec80213697bb2acbfba3e6ca0f8fd487
 Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
 Date:   Sat Jun 25 01:19:02 2022 +0100
