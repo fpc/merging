@@ -1,4 +1,15 @@
 ******************************************************************************
+commit cf5feb0dca15e1898739352de4bc0028b831d0f9
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Tue Jul 12 19:16:23 2022 +0300
+
+    + support writing of 32-bit and 64-bit relocations in the REL object writer
+      for Z80. This fixes DWARF debug output and makes it behave consistently with
+      the Z80 external assembler writer.
+
+M	compiler/ogrel.pas
+
+******************************************************************************
 commit d9e156e90e5a33aeba270962ebc16ea1c103223d
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Fri Jul 8 11:03:30 2022 +0200
