@@ -1,4 +1,13 @@
 ******************************************************************************
+commit d9e156e90e5a33aeba270962ebc16ea1c103223d
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Fri Jul 8 11:03:30 2022 +0200
+
+    webidl: wasmjob: error on passing not supported array as argument
+
+M	packages/webidl/src/webidltowasmjob.pp
+
+******************************************************************************
 commit e25594c48e207157dddad49d8dd246fe59537e57
 Author: florian <florian@freepascal.org>
 Date:   Mon Jul 11 22:07:06 2022 +0200
