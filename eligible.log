@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 8363c48863a1d8ee33fe1cecbd184030f86da0e9
+Author: florian <florian@freepascal.org>
+Date:   Tue Jul 12 22:11:49 2022 +0200
+
+      * patch by rika: simplify tscannerfile.readstring, resolves #39835
+
+M	compiler/scanner.pas
+
+******************************************************************************
 commit cf5feb0dca15e1898739352de4bc0028b831d0f9
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Tue Jul 12 19:16:23 2022 +0300
