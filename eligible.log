@@ -1,4 +1,31 @@
 ******************************************************************************
+commit 2606cef21fc2d8d3679d33c994d9d5fb04a68def
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Wed Jul 13 23:19:48 2022 +0300
+
+    + set the TLS flag for threadvar sections when WASM threads are enabled
+
+M	compiler/ogwasm.pas
+
+******************************************************************************
+commit eb8325300e523a56d4a11c8f2dcb16f5892a5cf7
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Wed Jul 13 22:41:18 2022 +0300
+
+    + added WASM segment flag constants
+
+M	compiler/wasmbase.pas
+
+******************************************************************************
+commit 9859125c7b927677e77085dd99b4b4b83df65ee1
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Wed Jul 13 22:38:46 2022 +0300
+
+    + added the WASM_SYM_TLS symbol flag constant
+
+M	compiler/wasmbase.pas
+
+******************************************************************************
 commit 8363c48863a1d8ee33fe1cecbd184030f86da0e9
 Author: florian <florian@freepascal.org>
 Date:   Tue Jul 12 22:11:49 2022 +0200
