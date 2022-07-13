@@ -1,4 +1,32 @@
 ******************************************************************************
+commit d27c3b4b7922dae901d42653b1a6b1859b72b04c
+Author: florian <florian@freepascal.org>
+Date:   Wed Jul 13 22:53:26 2022 +0200
+
+      + test for #33559
+
+A	tests/webtbs/tw33559.pp
+
+******************************************************************************
+commit b821b9d502b1cfea62fcf2fa36f439eac09739a3
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Wed Jul 13 23:50:48 2022 +0300
+
+    + WebAssembly multithreading: also declare threadvar sections as TLS and prefix their name with '.tbss' when using the external assembler
+
+M	compiler/aggas.pas
+M	compiler/wasm32/agllvmmc.pas
+
+******************************************************************************
+commit fa5575ea549cb3b9f6c70c3d6429db41fa46864b
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Wed Jul 13 23:27:30 2022 +0300
+
+    + prefix the threadvar sections with '.tbss' when WASM multithreading is enabled
+
+M	compiler/ogwasm.pas
+
+******************************************************************************
 commit 2606cef21fc2d8d3679d33c994d9d5fb04a68def
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Wed Jul 13 23:19:48 2022 +0300
