@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 557e82373484ddb4b48373d7e4931d7b234043bd
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Thu Jul 14 00:22:12 2022 +0300
+
+    + introduced trefaddr.addr_got_tls, to be used for generating WebAssembly threadvar access, when WASM multithreading is turned on
+
+M	compiler/cgbase.pas
+M	compiler/wasm32/agllvmmc.pas
+
+******************************************************************************
 commit d27c3b4b7922dae901d42653b1a6b1859b72b04c
 Author: florian <florian@freepascal.org>
 Date:   Wed Jul 13 22:53:26 2022 +0200
