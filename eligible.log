@@ -1901,15 +1901,6 @@ M	packages/webidl/src/webidlparser.pp
 M	packages/webidl/tests/tcidlparser.pp
 
 ******************************************************************************
-commit cdfe3aa1eb1922c965b2587c4efdda694cf589b9
-Author: Pierre Muller <pierre@freepascal.org>
-Date:   Sat Jun 18 14:53:08 2022 +0200
-
-     Avoid null array size field for aarch64-linux TUContext
-
-M	rtl/linux/aarch64/sighndh.inc
-
-******************************************************************************
 commit b16ce8806b6819770d0f207eceaaabf834f67740
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Sat Jun 18 14:48:58 2022 +0200
@@ -2678,15 +2669,6 @@ Date:   Wed Jun 8 10:29:58 2022 +0000
     Avoid Invalid typecast error when using -CR option by using tabstractrecordsymtable type for record or object symtable
 
 M	compiler/llvm/dbgllvm.pas
-
-******************************************************************************
-commit 28d32b20101454d7278dddaef98691f415e4fb77
-Author: Pierre Muller <pierre@freepascal.org>
-Date:   Wed Jun 8 00:12:20 2022 +0200
-
-    Fix compilation of sparc64-linux rtl with -dFPC_USE_LIBC
-
-M	rtl/linux/sparc64/stat.inc
 
 ******************************************************************************
 commit a730bf2b003c3715c19d4fa0a7c56407e3760f36
