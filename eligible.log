@@ -1,4 +1,26 @@
 ******************************************************************************
+commit b900be6142403533e6c6d7cc2ab78eca1676b797
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Thu Jul 14 04:15:47 2022 +0300
+
+    + added WebAssembly intrinsics for reading __tls_size, __tls_align and __tls_base
+
+M	compiler/wasm32/ccpuinnr.inc
+M	compiler/wasm32/nwasminl.pas
+M	rtl/wasm32/cpuh.inc
+M	rtl/wasm32/cpuinnr.inc
+
+******************************************************************************
+commit 7475d22154dd441e70e8c256642e33a1e6a42dbc
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Thu Jul 14 03:57:06 2022 +0300
+
+    + declare the three magic global variables (__tls_size, __tls_align, __tls_base), created by the linker, when WebAssembly multithreading is enabled
+
+M	compiler/wasm32/cpubase.pas
+M	compiler/wasm32/nwasmutil.pas
+
+******************************************************************************
 commit 4db653998bc84211acce9ca2945d06dbd2feb90a
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Thu Jul 14 02:09:12 2022 +0300
