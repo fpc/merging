@@ -1,4 +1,16 @@
 ******************************************************************************
+commit 4db653998bc84211acce9ca2945d06dbd2feb90a
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Thu Jul 14 02:09:12 2022 +0300
+
+    + generate proper WebAssembly threadvar access when multithreading is turned on
+
+M	compiler/ogwasm.pas
+M	compiler/wasm32/cpunode.pas
+M	compiler/wasm32/hlcgcpu.pas
+A	compiler/wasm32/nwasmld.pas
+
+******************************************************************************
 commit 557e82373484ddb4b48373d7e4931d7b234043bd
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Thu Jul 14 00:22:12 2022 +0300
