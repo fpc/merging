@@ -1,4 +1,34 @@
 ******************************************************************************
+commit 4e3c170ad4fc325c532c2075dece7459b9682f5e
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Thu Jul 14 20:57:11 2022 +0300
+
+    + allow changing the stack size for the WASI platform
+
+M	compiler/systems/t_wasi.pas
+
+******************************************************************************
+commit c910ec814cb6bfb0627142dfa44e17ecafc9e49b
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Thu Jul 14 20:56:11 2022 +0300
+
+    * set the default stack size for the WASI platform to 65536 bytes (this is the
+      default, used by the linker)
+
+M	compiler/systems/i_wasi.pas
+
+******************************************************************************
+commit db980a5d18d1de83a9ceccad8ce9e283d58484f9
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Thu Jul 14 20:29:41 2022 +0300
+
+    + add the "-m wasm32" parameter to the linker, when linking for the WASI
+      target. No idea if it does anything, but is passed to the linker by the
+      official WASI SDK, so it shouldn't hurt.
+
+M	compiler/systems/t_wasi.pas
+
+******************************************************************************
 commit e3139fea211474f8b31ac880c259ae68b8278c6f
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Thu Jul 14 05:14:20 2022 +0300
