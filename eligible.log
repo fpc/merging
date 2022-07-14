@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 30f5558bf2fdc410e73ebf597574e64cf114fa19
+Author: florian <florian@freepascal.org>
+Date:   Thu Jul 14 22:38:07 2022 +0200
+
+      * patch by Rika: optimize TStringHelper.StartsWith / EndsWith, resolves #39706
+
+M	rtl/objpas/sysutils/syshelp.inc
+
+******************************************************************************
 commit 4e3c170ad4fc325c532c2075dece7459b9682f5e
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Thu Jul 14 20:57:11 2022 +0300
