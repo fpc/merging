@@ -1,4 +1,15 @@
 ******************************************************************************
+commit e3139fea211474f8b31ac880c259ae68b8278c6f
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Thu Jul 14 05:14:20 2022 +0300
+
+    + setup a thread manager (functions are still not yet implemented), when the WASI RTL is compiled with multithreading support
+
+M	rtl/wasi/system.pp
+A	rtl/wasi/systhrd.inc
+M	rtl/wasm32/wasm32.inc
+
+******************************************************************************
 commit b900be6142403533e6c6d7cc2ab78eca1676b797
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Thu Jul 14 04:15:47 2022 +0300
