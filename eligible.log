@@ -1,4 +1,17 @@
 ******************************************************************************
+commit 799c22d5534e3f296eaafbb6b4ee3680e1ac8438
+Author: florian <florian@freepascal.org>
+Date:   Fri Jul 15 18:54:49 2022 +0200
+
+    Revert "  * patch by Rika: SwapEndian([u]int16) has unnecessary “and $FFFF”, resolves #39814"
+    
+    This reverts commit f92102a5f22ae7b978ecf91d59781e16f0b82163.
+    
+    The and $ffff is needed to avoid range check warnings when the function is inlined with a constant parameter
+
+M	rtl/inc/generic.inc
+
+******************************************************************************
 commit 8d90cd3e64c8e2cd348f5f5d88714ee259f05527
 Author: Sven/Sarah Barth <pascaldragon@gmail.com>
 Date:   Fri Jul 15 16:19:32 2022 +0200
