@@ -1,4 +1,85 @@
 ******************************************************************************
+commit dba189f4af385e887d479365612d398358d9f732
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Fri Jul 15 16:09:52 2022 +0300
+
+    + show a "linking" message before invoking the linker for the wasm32-embedded target
+
+M	compiler/systems/t_embed.pas
+
+******************************************************************************
+commit 46dcd4da760057b54e5f5694e8f75408c33fbb3d
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Fri Jul 15 16:07:16 2022 +0300
+
+    - removed debug writeln when calling the linker for the wasm32-embedded target
+
+M	compiler/systems/t_embed.pas
+
+******************************************************************************
+commit b6c4592513f8a8295093b82c5293c2570003c33d
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Fri Jul 15 16:06:03 2022 +0300
+
+    + allow specifying custom extra linker options for the wasm32-wasi target
+
+M	compiler/systems/t_wasi.pas
+
+******************************************************************************
+commit ad35fc82af76c5460dce612b2792398bcc9833d6
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Fri Jul 15 16:04:01 2022 +0300
+
+    + allow specifying custom extra linker options for the wasm32-embedded target
+
+M	compiler/systems/t_embed.pas
+
+******************************************************************************
+commit ec9c81e77e0f39f2a5748fadac320f6251959748
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Fri Jul 15 15:59:34 2022 +0300
+
+    * use current_module.sharedlibfilename instead of current_module.exefilename, when linking a library for the wasm32-embedded target
+
+M	compiler/systems/t_embed.pas
+
+******************************************************************************
+commit 9dfda963a3df7c62be5ec5c94de0b149de590f2d
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Fri Jul 15 15:57:23 2022 +0300
+
+    + allow creating a linker map file, when compiling for the wasm32-embedded target
+
+M	compiler/systems/t_embed.pas
+
+******************************************************************************
+commit 078aa5d04677fbbfb0818bcd0b004719c742c5e4
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Fri Jul 15 15:53:55 2022 +0300
+
+    + pass '-m wasm32' to the linker, when compiling for the wasm32-embedded target
+
+M	compiler/systems/t_embed.pas
+
+******************************************************************************
+commit 1bbd16d1b7d8c7c48348d63a5bcba07e32ef9982
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Fri Jul 15 15:53:13 2022 +0300
+
+    + allow setting the stack size for the wasm32-embedded target
+
+M	compiler/systems/t_embed.pas
+
+******************************************************************************
+commit 8aee781950f2333140c7bace9bd9c36be86af4d2
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Fri Jul 15 15:51:00 2022 +0300
+
+    * set the stack size to 64kb and stack align to 16 bytes for the wasm32-embedded target
+
+M	compiler/systems/i_embed.pas
+
+******************************************************************************
 commit 7cef39657f0211ce337b25aae8c0cd7901b03718
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Thu Jul 14 21:07:53 2022 +0300
