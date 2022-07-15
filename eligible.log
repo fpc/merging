@@ -1,4 +1,15 @@
 ******************************************************************************
+commit 8d90cd3e64c8e2cd348f5f5d88714ee259f05527
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Fri Jul 15 16:19:32 2022 +0200
+
+    * fix #39826: correctly handle function references that are part of generics/specializations, but are not generics/specializations themselves
+    + added test
+
+M	compiler/procdefutil.pas
+A	tests/webtbs/tw39826.pp
+
+******************************************************************************
 commit 4144f8d93a7f63d62ad13092c72a290b3a3f967f
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Fri Jul 15 17:06:47 2022 +0300
