@@ -1,4 +1,22 @@
 ******************************************************************************
+commit 90305b6032926a4e7d19d8cdedb183310d56edb7
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sat Jul 16 02:13:42 2022 +0300
+
+    + write the actual DWARF debug sections in the WebAssembly object writer. The relocations aren't ready, yet, though.
+
+M	compiler/ogwasm.pas
+
+******************************************************************************
+commit b82af25e63e562264c0cf2d3ce5077a272129480
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sat Jul 16 01:40:21 2022 +0300
+
+    * fixed crashes with the WebAssembly internal object writer, when debug info is enabled. The debug info itself is not yet written to the file, though.
+
+M	compiler/ogwasm.pas
+
+******************************************************************************
 commit a9698b6f6ef11184139ef9e53c3bed8b24c0942b
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Sat Jul 16 00:54:11 2022 +0300
