@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 7cef39657f0211ce337b25aae8c0cd7901b03718
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Thu Jul 14 21:07:53 2022 +0300
+
+    * stack alignment on the WASI platform is 16 bytes
+
+M	compiler/systems/i_wasi.pas
+
+******************************************************************************
 commit 30f5558bf2fdc410e73ebf597574e64cf114fa19
 Author: florian <florian@freepascal.org>
 Date:   Thu Jul 14 22:38:07 2022 +0200
