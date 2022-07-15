@@ -1,4 +1,22 @@
 ******************************************************************************
+commit a9698b6f6ef11184139ef9e53c3bed8b24c0942b
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sat Jul 16 00:54:11 2022 +0300
+
+    + introduced TWasmObjSection.IsDebug
+
+M	compiler/ogwasm.pas
+
+******************************************************************************
+commit eed1fbe38aad67688da6bf7b142e146ca34a2fbd
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sat Jul 16 00:46:47 2022 +0300
+
+    + added custom section descriptions for DWARF debug info for the WebAssembly object writer (not actually emitted, yet)
+
+M	compiler/wasmbase.pas
+
+******************************************************************************
 commit 22a1849733049dfa003389287e2420f6e9ff0c5c
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Fri Jul 15 21:04:30 2022 +0200
