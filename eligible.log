@@ -1,4 +1,31 @@
 ******************************************************************************
+commit d1f035f456df43bbd068ecda33d2ec08d9190b2b
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Sun Jul 10 16:24:59 2022 +0100
+
+      * arm: Labels to constants are now data labels and not jump labels
+
+M	compiler/arm/hlcgcpu.pas
+
+******************************************************************************
+commit be39828fca10b355e2cf9ee514736e87157748a0
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Sun Jul 10 16:10:05 2022 +0100
+
+      * arm: Symbol reference counts are corrected when PC-relative data is inserted
+
+M	compiler/arm/aasmcpu.pas
+
+******************************************************************************
+commit 94c87243ca2a55d5374a22900b59bfbdda348d8a
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Sat Jul 9 17:44:20 2022 +0100
+
+      * Reference counts are now properly incremented on duplicated taicpu objects
+
+M	compiler/aasmtai.pas
+
+******************************************************************************
 commit 799c22d5534e3f296eaafbb6b4ee3680e1ac8438
 Author: florian <florian@freepascal.org>
 Date:   Fri Jul 15 18:54:49 2022 +0200
