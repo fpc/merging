@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 4144f8d93a7f63d62ad13092c72a290b3a3f967f
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Fri Jul 15 17:06:47 2022 +0300
+
+    * apply the same alignment parameters to wasm32-embedded as wasm32-wasi
+
+M	compiler/systems/i_embed.pas
+
+******************************************************************************
 commit dba189f4af385e887d479365612d398358d9f732
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Fri Jul 15 16:09:52 2022 +0300
