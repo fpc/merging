@@ -1,4 +1,13 @@
 ******************************************************************************
+commit fcadc801638ae44193e61aafa7ec1a65630159d0
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sat Jul 16 19:08:06 2022 +0300
+
+    * don't write R_WASM_TABLE_INDEX_I32 relocations, always use R_WASM_FUNCTION_OFFSET_I32 in debug sections
+
+M	compiler/ogwasm.pas
+
+******************************************************************************
 commit 972a9df03189ef97cb7de63bbf9af1e56f74cd6e
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Sat Jul 16 07:42:53 2022 +0300
