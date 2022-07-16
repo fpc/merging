@@ -1,4 +1,15 @@
 ******************************************************************************
+commit 972a9df03189ef97cb7de63bbf9af1e56f74cd6e
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sat Jul 16 07:42:53 2022 +0300
+
+    + always (even when multithreading is off) create a "target features" section
+      in the WebAssembly object writer, since we still require some (very commonly
+      supported) extensions, even without multithreading
+
+M	compiler/ogwasm.pas
+
+******************************************************************************
 commit bf17a84dd28433d810b4f83dec7bf08a1eb52c87
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Sat Jul 16 04:34:15 2022 +0300
