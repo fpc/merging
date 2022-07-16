@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 63c8e458bba2831baaae76913d61ab0ccabc4b94
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sat Jul 16 19:31:14 2022 +0300
+
+    * workaround crash when generating WebAssembly DWARF debug info for threadvars, while multithreading is turned off
+
+M	compiler/ogwasm.pas
+
+******************************************************************************
 commit fcadc801638ae44193e61aafa7ec1a65630159d0
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Sat Jul 16 19:08:06 2022 +0300
