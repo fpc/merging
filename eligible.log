@@ -1,4 +1,25 @@
 ******************************************************************************
+commit 399e699b723150f05c03c67cd4451e148bd9801c
+Author: florian <florian@freepascal.org>
+Date:   Sat Jul 16 22:13:21 2022 +0200
+
+      * tests for merge request 244
+
+A	tests/tbf/tb0291.pp
+A	tests/tbf/tb0292.pp
+A	tests/tbf/tb0293.pp
+A	tests/tbs/tb0694.pp
+
+******************************************************************************
+commit c26f9329b683ec0beebc131ecae9c120ba32627b
+Author: Rika Ichinose <rrunewalsh@gmail.com>
+Date:   Mon Jun 20 22:41:57 2022 +0300
+
+    Support arrays and classes in compile-time OffsetOf.
+
+M	compiler/nmem.pas
+
+******************************************************************************
 commit 63c8e458bba2831baaae76913d61ab0ccabc4b94
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Sat Jul 16 19:31:14 2022 +0300
