@@ -1,4 +1,13 @@
 ******************************************************************************
+commit bf17a84dd28433d810b4f83dec7bf08a1eb52c87
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sat Jul 16 04:34:15 2022 +0300
+
+    + implemented the R_WASM_FUNCTION_OFFSET_I32 relocation in the WebAssembly object writer
+
+M	compiler/ogwasm.pas
+
+******************************************************************************
 commit 6a94d2683bdf2ff9cec4aae2815d079b592c0650
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Sat Jul 16 04:08:44 2022 +0300
