@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 6a94d2683bdf2ff9cec4aae2815d079b592c0650
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sat Jul 16 04:08:44 2022 +0300
+
+    + emit WASM DWARF debug info relocations
+
+M	compiler/ogwasm.pas
+
+******************************************************************************
 commit 90305b6032926a4e7d19d8cdedb183310d56edb7
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Sat Jul 16 02:13:42 2022 +0300
