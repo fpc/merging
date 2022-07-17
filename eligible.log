@@ -1,4 +1,20 @@
 ******************************************************************************
+commit 7a1f617194277944c5c742e04bca327d4ed4ba38
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Sun Jul 17 21:12:14 2022 +0000
+
+    Cleanup bsd and sysctl units make rules
+
+M	rtl/dragonfly/Makefile
+M	rtl/dragonfly/Makefile.fpc
+M	rtl/freebsd/Makefile
+M	rtl/freebsd/Makefile.fpc
+M	rtl/netbsd/Makefile
+M	rtl/netbsd/Makefile.fpc
+M	rtl/openbsd/Makefile
+M	rtl/openbsd/Makefile.fpc
+
+******************************************************************************
 commit a16f35dcb18eedba213c9311a76babef6d529dff
 Author: florian <florian@freepascal.org>
 Date:   Sun Jul 17 22:14:13 2022 +0200
