@@ -1,4 +1,16 @@
 ******************************************************************************
+commit a16f35dcb18eedba213c9311a76babef6d529dff
+Author: florian <florian@freepascal.org>
+Date:   Sun Jul 17 22:14:13 2022 +0200
+
+      + support RV32E Extension
+
+M	compiler/riscv/agrvgas.pas
+M	compiler/riscv32/cgcpu.pas
+M	compiler/riscv32/cpuinfo.pas
+M	tests/tbf/tb0293.pp
+
+******************************************************************************
 commit 399e699b723150f05c03c67cd4451e148bd9801c
 Author: florian <florian@freepascal.org>
 Date:   Sat Jul 16 22:13:21 2022 +0200
