@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 769b8a07b093512ecf79ab5df2b687679356f748
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Mon Jul 18 20:35:32 2022 +0200
+
+    webidl: using JOB_JS, record as TJSObject
+
+M	packages/webidl/src/webidltopas.pp
+M	packages/webidl/src/webidltowasmjob.pp
+
+******************************************************************************
 commit 99f34158ca892b4dfb86247b34db22692340991e
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Mon Jul 18 19:05:31 2022 +0200
