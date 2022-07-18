@@ -1,4 +1,42 @@
 ******************************************************************************
+commit 62e9de223d6df636a44d5737f0eccdec68d0fea6
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Mon Jul 18 18:14:13 2022 +0200
+
+    webidl: fixed tests
+
+M	packages/webidl/tests/tcwebidldefs.pp
+
+******************************************************************************
+commit 20746a907df39a74d531cd812500b57fea9b9c28
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Mon Jul 18 18:11:53 2022 +0200
+
+    webidl: prefix enum types
+
+M	packages/webidl/src/webidltopas.pp
+
+******************************************************************************
+commit f8c49c4a1fb273f70d7498b8830fd01f63d3de24
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Mon Jul 18 17:48:51 2022 +0200
+
+    webidl: resolve typedef in args and resulttypes
+
+M	packages/webidl/src/webidltopas.pp
+M	packages/webidl/src/webidltowasmjob.pp
+
+******************************************************************************
+commit 2076f200deba77d8ce8cc8a7032c146cbb9a59d0
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Mon Jul 18 17:11:15 2022 +0200
+
+    webidl: add typedef
+
+M	packages/webidl/src/webidltopas.pp
+M	packages/webidl/src/webidltowasmjob.pp
+
+******************************************************************************
 commit 7a1f617194277944c5c742e04bca327d4ed4ba38
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Sun Jul 17 21:12:14 2022 +0000
