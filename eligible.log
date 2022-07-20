@@ -1,4 +1,31 @@
 ******************************************************************************
+commit 0e8d87bc269d3e59a174b8b4bcc84c7dbc7ff6b1
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Wed Jul 20 08:57:54 2022 +0200
+
+    * Add Cross-Origin Isolation headers
+
+M	packages/fcl-web/examples/simpleserver/simpleserver.pas
+
+******************************************************************************
+commit 7930b31da796951433d8e380776cdd0f32f91c8d
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Wed Jul 20 08:52:47 2022 +0200
+
+    * Patch from RDA to add S/MIME functions. Fix issue #39839
+
+M	packages/openssl/src/openssl.pas
+
+******************************************************************************
+commit 258b4576a27d5d086c4a5ba33f75c65992b59ecb
+Author: Yuri Serebrennikov <yus.serebrennikov@gmail.com>
+Date:   Tue Jul 19 22:33:28 2022 +0300
+
+    Fix error getting payload when receiving a close command.
+
+M	packages/fcl-web/src/websocket/fpwebsocket.pp
+
+******************************************************************************
 commit 769b8a07b093512ecf79ab5df2b687679356f748
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Mon Jul 18 20:35:32 2022 +0200
