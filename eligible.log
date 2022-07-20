@@ -1,4 +1,13 @@
 ******************************************************************************
+commit e66378ee59998ae15f8a3b6afae4f657d17d37c3
+Author: florian <florian@freepascal.org>
+Date:   Wed Jul 20 22:16:19 2022 +0200
+
+      * RiscV: generate mret only for FreeRTOS and Embedded
+
+M	compiler/riscv/cgrv.pas
+
+******************************************************************************
 commit 0e8d87bc269d3e59a174b8b4bcc84c7dbc7ff6b1
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Wed Jul 20 08:57:54 2022 +0200
