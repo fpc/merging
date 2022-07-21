@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 984dcbb8107ed0e732f5879fa8449a0ff2df05bf
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Thu Jul 21 09:33:38 2022 +0200
+
+    webidl: sort interfaces topological
+
+M	packages/webidl/src/webidlparser.pp
+M	packages/webidl/src/webidltopas.pp
+
+******************************************************************************
 commit e66378ee59998ae15f8a3b6afae4f657d17d37c3
 Author: florian <florian@freepascal.org>
 Date:   Wed Jul 20 22:16:19 2022 +0200
