@@ -1,4 +1,69 @@
 ******************************************************************************
+commit fd38810f338741511c609ba5cbff2192063de737
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Thu Jul 21 12:14:20 2022 +0200
+
+    webidl: skip fields without name
+
+M	packages/webidl/src/webidltowasmjob.pp
+
+******************************************************************************
+commit a84c13ad18ff12ebaf83ff9072aebdcc7e37798b
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Thu Jul 21 11:30:36 2022 +0200
+
+    webidl: write typedefs and callbacks in one list, they may depend on each other
+
+M	packages/webidl/src/webidltopas.pp
+
+******************************************************************************
+commit 88efd9eed64a5e7b90d4895a331cd3d6b9e7923f
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Thu Jul 21 11:17:03 2022 +0200
+
+    webidl: write function with result type undefined as procedure
+
+M	packages/webidl/src/webidltowasmjob.pp
+
+******************************************************************************
+commit d35640bf10a2e58f2204408563568aeae41b1f18
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Thu Jul 21 11:15:16 2022 +0200
+
+    webidl: parse deleter
+
+M	packages/webidl/src/webidlparser.pp
+M	packages/webidl/src/webidlscanner.pp
+
+******************************************************************************
+commit 368289d5d869d5c0f9a58d13f8f95162ec806b18
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Thu Jul 21 11:03:38 2022 +0200
+
+    webidl: wasmjob: rename conflicting arg names
+
+M	packages/webidl/src/webidltopas.pp
+
+******************************************************************************
+commit f1a6d977653cd4852bae6c2eedac4f1692f49575
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Thu Jul 21 10:48:40 2022 +0200
+
+    webidl: wasmjob: skip constructor
+
+M	packages/webidl/src/webidltowasmjob.pp
+
+******************************************************************************
+commit e660f2ea84132f96b5448d102cdf2d331c6a3f23
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Thu Jul 21 10:42:12 2022 +0200
+
+    webidl: wasmjob: skip getter
+
+M	packages/webidl/src/webidlparser.pp
+M	packages/webidl/src/webidltowasmjob.pp
+
+******************************************************************************
 commit 984dcbb8107ed0e732f5879fa8449a0ff2df05bf
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Thu Jul 21 09:33:38 2022 +0200
