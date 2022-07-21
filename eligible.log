@@ -1,4 +1,32 @@
 ******************************************************************************
+commit 6915cd9b269649ca945a4fc952ee7dedb1b38b85
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Thu Jul 21 14:01:50 2022 +0200
+
+    webidl: resolve parent interfaces
+
+M	packages/webidl/src/webidltopas.pp
+
+******************************************************************************
+commit c2b1eeb8c6dcb1090173193e2966d5328f8ed912
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Thu Jul 21 13:47:10 2022 +0200
+
+    webidl: fixed read object property
+
+M	packages/webidl/src/webidltowasmjob.pp
+
+******************************************************************************
+commit 85e84d048b3593ba03fc4790124f4c54f0c0d229
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Thu Jul 21 13:35:24 2022 +0200
+
+    webidl: fixed cloning pasnames of args
+
+M	packages/fcl-base/src/pascodegen.pp
+M	packages/webidl/src/webidltopas.pp
+
+******************************************************************************
 commit fd38810f338741511c609ba5cbff2192063de737
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Thu Jul 21 12:14:20 2022 +0200
