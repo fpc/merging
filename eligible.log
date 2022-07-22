@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 5604bd951ee6bada9d50bc86d8ec1dbdd84e6948
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sat Jul 16 21:14:09 2022 +0300
+
+    * an attempt to fix WebAssembly debug info section relocations
+
+M	compiler/ogwasm.pas
+
+******************************************************************************
 commit 2da28054d4ebb426bdf6fd3888df387c4cf6d0fc
 Author: florian <florian@freepascal.org>
 Date:   Thu Jul 21 23:18:41 2022 +0200
