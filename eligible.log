@@ -1,4 +1,16 @@
 ******************************************************************************
+commit 19ad26afd850fa79b4bd599042a87c88abebdf14
+Author: florian <florian@freepascal.org>
+Date:   Fri Jul 22 22:55:53 2022 +0200
+
+      * Riscv32 and Riscv64 on linux: enable safecall support
+
+M	compiler/fpcdefs.inc
+M	compiler/riscv32/cpuinfo.pas
+M	compiler/riscv64/cpuinfo.pas
+M	compiler/systems/i_linux.pas
+
+******************************************************************************
 commit 5604bd951ee6bada9d50bc86d8ec1dbdd84e6948
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Sat Jul 16 21:14:09 2022 +0300
