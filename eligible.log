@@ -1,4 +1,25 @@
 ******************************************************************************
+commit 3e94af163bdff38073de96da87ed074c167afdb2
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Tue Jul 12 17:28:59 2022 +0100
+
+      * x86: Fixed bug in "Mov0LblCmp0Je -> Mov0JmpLblCmp0Je" optimisation
+        where the reference count was increased twice.
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
+commit 9432a550e190d0530971363b55918ce85c045d58
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Thu May 5 05:42:06 2022 +0100
+
+      * x86: Bug fix where aoc_ForceNewIteration was
+        checked in the wrong pass.
+
+M	compiler/i386/aoptcpu.pas
+M	compiler/x86_64/aoptcpu.pas
+
+******************************************************************************
 commit 19ad26afd850fa79b4bd599042a87c88abebdf14
 Author: florian <florian@freepascal.org>
 Date:   Fri Jul 22 22:55:53 2022 +0200
