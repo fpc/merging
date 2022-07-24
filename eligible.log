@@ -1,4 +1,31 @@
 ******************************************************************************
+commit 90b8b9d121a3d60c65022f3456d896f68a472795
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Mon Jul 25 01:17:28 2022 +0300
+
+    * don't reserve bss data for wasm global vars
+
+M	compiler/wasm32/nwasmutil.pas
+
+******************************************************************************
+commit 8d441929a8c725273d101a0cc3138ce59f9c59e8
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sun Jul 24 19:04:28 2022 +0300
+
+    + introduced tcpustaticvarsym.is_wasm_global
+
+M	compiler/wasm32/symcpu.pas
+
+******************************************************************************
+commit 55482bd87644bcc0d813b90b4c67187695d8ff55
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sun Jul 24 17:50:30 2022 +0300
+
+    + allow the 'section' directive for the WebAssembly platforms
+
+M	compiler/systems.pas
+
+******************************************************************************
 commit fcae0e311db59f8c545d7b2f37f94a343c8ac206
 Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
 Date:   Sun Jul 10 17:47:51 2022 +0100
