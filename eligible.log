@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 7bd1ac4507647dcc1b07f0ee09acd8676f0960c5
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Mon Jul 25 01:57:13 2022 +0300
+
+    * fixed comment
+
+M	compiler/wasm32/cpubase.pas
+
+******************************************************************************
 commit 90b8b9d121a3d60c65022f3456d896f68a472795
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Mon Jul 25 01:17:28 2022 +0300
