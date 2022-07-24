@@ -1,4 +1,13 @@
 ******************************************************************************
+commit fcae0e311db59f8c545d7b2f37f94a343c8ac206
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Sun Jul 10 17:47:51 2022 +0100
+
+      x86: Direct assignment instructions are no longer checked prior to calling CheckJumpMovTransferOpt, instead relying on the callee to do the heavy lifting (also fixed -Os bug)
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
 commit 2ed4071c1e02e8374aa8ca5235df314eed3dc7a8
 Author: Jonas Maebe <jonas@freepascal.org>
 Date:   Sun Jul 24 15:00:49 2022 +0200
