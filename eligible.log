@@ -1,4 +1,61 @@
 ******************************************************************************
+commit 2ed4071c1e02e8374aa8ca5235df314eed3dc7a8
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sun Jul 24 15:00:49 2022 +0200
+
+    ARM: fixed compiler compilation after 75c16b612660
+
+M	compiler/arm/tripletcpu.pas
+
+******************************************************************************
+commit 425707e936772a859aa4e0208fd671397f0b2808
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sun Jul 24 14:46:11 2022 +0200
+
+    Fix compilation with -Oodfa
+
+M	compiler/systems/t_linux.pas
+
+******************************************************************************
+commit 7ef33cf4b2857437662c9aaf505d824e3fdca023
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sun Jul 24 14:13:59 2022 +0200
+
+    llvm: generalised sanitizer linking support
+    
+    Also enabled automatic detection of sanitizer library + setting rpath to Linux
+
+M	compiler/link.pas
+M	compiler/systems/t_darwin.pas
+M	compiler/systems/t_linux.pas
+
+******************************************************************************
+commit 75c16b61266043673223fdfed30c543e353d4b6c
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sun Jul 24 14:07:41 2022 +0200
+
+    llvm: support for getting the llvm rtl (rt) architecture name
+    
+    This is the name used as part of the llvm rt libraries, like
+    asan (address sanitizer)
+
+M	compiler/arm/tripletcpu.pas
+M	compiler/globtype.pas
+M	compiler/i386/tripletcpu.pas
+
+******************************************************************************
+commit 1148caaece7a1924ca70f4a6db73790bb02c8856
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sat Jul 16 21:12:54 2022 +0200
+
+    llvm: move asan library linking support to texternallinker
+    
+    This way other platforms besides Darwin can also use it.
+
+M	compiler/link.pas
+M	compiler/systems/t_darwin.pas
+
+******************************************************************************
 commit 3e94af163bdff38073de96da87ed074c167afdb2
 Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
 Date:   Tue Jul 12 17:28:59 2022 +0100
