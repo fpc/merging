@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 6e1d7b4e57e0317e53947c0f33203c28325c0489
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Mon Jul 25 02:44:51 2022 +0300
+
+    + introduced methods for converting WebAssembly global var types from a Pascal type to TWasmBasicType
+
+M	compiler/wasm32/symcpu.pas
+
+******************************************************************************
 commit 7bd1ac4507647dcc1b07f0ee09acd8676f0960c5
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Mon Jul 25 01:57:13 2022 +0300
