@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 6ba6658aec7e3beb8a908807a91fec0eb3f7d602
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Mon Jul 25 17:16:47 2022 +0200
+
+    webidl: wasmjob: resolve function return types, use IJSArray for arrays
+
+M	packages/webidl/src/webidltopas.pp
+M	packages/webidl/src/webidltowasmjob.pp
+
+******************************************************************************
 commit c6af4df9b91312d1feac6863b934ef14794b31a4
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Mon Jul 25 05:35:00 2022 +0300
