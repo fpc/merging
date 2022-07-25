@@ -1,4 +1,54 @@
 ******************************************************************************
+commit 9b1d5ef92a2abfe43fe2df53ca8f054c465f9f19
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Mon Jul 25 18:49:45 2022 +0200
+
+    webidl: nicer error messages, fixed function returning Object
+
+M	packages/webidl/src/webidltopas.pp
+M	packages/webidl/src/webidltowasmjob.pp
+
+******************************************************************************
+commit f0eccda1ab3e83086bc9835edd4f8f6bf658d661
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Mon Jul 25 18:26:59 2022 +0200
+
+    webidl: nicer error pos
+
+M	packages/webidl/src/webidlparser.pp
+M	packages/webidl/src/webidltowasmjob.pp
+
+******************************************************************************
+commit db6e1ef1ccc4b729a7b67c2b6406172497b9f499
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Mon Jul 25 18:03:01 2022 +0200
+
+    webidl: parse enforcerange
+
+M	packages/webidl/src/webidlparser.pp
+
+******************************************************************************
+commit 35cae0bd3d8abeb67f8da64a1de3ceba33a814c2
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Mon Jul 25 17:58:32 2022 +0200
+
+    webidl: parse enforcerange
+
+M	packages/webidl/src/webidlparser.pp
+
+******************************************************************************
+commit d3220b46d220b876a59ccd297dbd14b0f9d1f6c5
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Mon Jul 25 17:48:58 2022 +0200
+
+    webidl: parse undefined
+
+M	packages/webidl/src/webidldefs.pp
+M	packages/webidl/src/webidlparser.pp
+M	packages/webidl/src/webidltopas.pp
+M	packages/webidl/src/webidltowasmjob.pp
+
+******************************************************************************
 commit 6ba6658aec7e3beb8a908807a91fec0eb3f7d602
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Mon Jul 25 17:16:47 2022 +0200
