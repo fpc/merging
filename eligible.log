@@ -1,4 +1,34 @@
 ******************************************************************************
+commit 7cefe8a822589c09be7d80381a6ef9c4cc32e3aa
+Author: Robert Roland <rob.roland@gmail.com>
+Date:   Sat Jul 9 14:22:17 2022 -0700
+
+    Adding AArch64 CurrentEL register
+    
+    CurrentEL is used to determine the current "exception level" in the CPU.
+    
+    It has four possible results:
+    
+    0b00 - EL0 - Application
+    0b01 - EL1 - Rich OS
+    0b10 - EL2 - Hypervisor
+    0b11 - EL3 - Firmware
+    
+    https://developer.arm.com/documentation/ddi0595/2020-12/AArch64-Registers/CurrentEL--Current-Exception-Level
+    https://developer.arm.com/documentation/102412/0100/Privilege-and-Exception-levels
+
+M	compiler/aarch64/a64reg.dat
+M	compiler/aarch64/ra64con.inc
+M	compiler/aarch64/ra64dwa.inc
+M	compiler/aarch64/ra64nor.inc
+M	compiler/aarch64/ra64num.inc
+M	compiler/aarch64/ra64rni.inc
+M	compiler/aarch64/ra64sri.inc
+M	compiler/aarch64/ra64sta.inc
+M	compiler/aarch64/ra64std.inc
+M	compiler/aarch64/ra64sup.inc
+
+******************************************************************************
 commit 9b1d5ef92a2abfe43fe2df53ca8f054c465f9f19
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Mon Jul 25 18:49:45 2022 +0200
