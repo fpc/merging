@@ -1,4 +1,14 @@
 ******************************************************************************
+commit f32ef29253f6f347c568adf4686de4e10893bc6d
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Tue Jul 26 02:07:05 2022 +0300
+
+    * WebAssembly high level code generator: use the global.get and global.set
+      instructions to access references to symbols of type AT_WASM_GLOBAL
+
+M	compiler/wasm32/hlcgcpu.pas
+
+******************************************************************************
 commit 7cefe8a822589c09be7d80381a6ef9c4cc32e3aa
 Author: Robert Roland <rob.roland@gmail.com>
 Date:   Sat Jul 9 14:22:17 2022 -0700
