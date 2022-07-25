@@ -1,4 +1,15 @@
 ******************************************************************************
+commit c6af4df9b91312d1feac6863b934ef14794b31a4
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Mon Jul 25 05:35:00 2022 +0300
+
+    + declare user-defined wasm globals in the llvm-mc assembly output
+
+M	compiler/aggas.pas
+M	compiler/wasm32/aasmcpu.pas
+M	compiler/wasm32/nwasmutil.pas
+
+******************************************************************************
 commit 6e1d7b4e57e0317e53947c0f33203c28325c0489
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Mon Jul 25 02:44:51 2022 +0300
