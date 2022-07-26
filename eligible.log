@@ -1,4 +1,45 @@
 ******************************************************************************
+commit 92944e7b5e942352aab44e1123071a791119b982
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Wed Jul 27 00:13:37 2022 +0200
+
+    webidl: nicer local var names
+
+M	packages/webidl/src/webidltopas.pp
+M	packages/webidl/src/webidltopas2js.pp
+
+******************************************************************************
+commit 0ea798d8625b0ec1f1084b3bd48231360b19d481
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Wed Jul 27 00:10:37 2022 +0200
+
+    webidl: wasmjob: fixed multi used functions
+
+M	packages/webidl/src/webidltopas.pp
+M	packages/webidl/src/webidltopas2js.pp
+M	packages/webidl/src/webidltowasmjob.pp
+
+******************************************************************************
+commit 4809c1fa64204fe868eef38d0196ff24c8371813
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Wed Jul 27 00:01:46 2022 +0200
+
+    webidl: wasmjob: fixed multi used function
+
+M	packages/webidl/src/webidltopas.pp
+M	packages/webidl/src/webidltopas2js.pp
+M	packages/webidl/src/webidltowasmjob.pp
+
+******************************************************************************
+commit 9dabf6e3e4944204eb9ce1c4346a8d8265e0e7a6
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Tue Jul 26 21:31:12 2022 +0200
+
+    webidl: property enum
+
+M	packages/webidl/src/webidltowasmjob.pp
+
+******************************************************************************
 commit 3d6c53ee74d148bba2a3da49d76792037b78eae7
 Author: Jonas Maebe <jonas@freepascal.org>
 Date:   Tue Jul 26 21:50:44 2022 +0200
