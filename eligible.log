@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 81a7da51a5c6affea394cfea7b604fe392ad83c9
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Tue Jul 26 09:34:33 2022 +0200
+
+    * fix #39843: apply patch by michalgw to fix the declarations of CryptStringToBinary(A/W)
+
+M	packages/winunits-jedi/src/jwawincrypt.pas
+
+******************************************************************************
 commit f32ef29253f6f347c568adf4686de4e10893bc6d
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Tue Jul 26 02:07:05 2022 +0300
