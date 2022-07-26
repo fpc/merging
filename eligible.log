@@ -1,4 +1,71 @@
 ******************************************************************************
+commit b47588b088a00db62b3384453f3c0fd76b26144b
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Tue Jul 26 20:54:00 2022 +0200
+
+    webidl: skip proc type property
+
+M	packages/webidl/src/webidltowasmjob.pp
+
+******************************************************************************
+commit b3e7d867cf9474edcad7c961e180146f7e533950
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Tue Jul 26 20:48:56 2022 +0200
+
+    webidl: fixed property
+
+M	packages/webidl/src/webidltowasmjob.pp
+
+******************************************************************************
+commit 2c6b82417692b8884f2f24d5e6d96b796fba4790
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Tue Jul 26 20:31:28 2022 +0200
+
+    webidl: fixed job call
+
+M	packages/webidl/src/webidltopas.pp
+M	packages/webidl/src/webidltowasmjob.pp
+
+******************************************************************************
+commit 1072e68498e545bb69879614e02d3bda335e4cba
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Tue Jul 26 20:27:14 2022 +0200
+
+    webidl: GetOverloads: resolve typedefs
+
+M	packages/webidl/src/webidltopas.pp
+M	packages/webidl/src/webidltowasmjob.pp
+
+******************************************************************************
+commit 3c4e4187aa5d46f14596bd3e3ac08a279eb0de40
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Tue Jul 26 15:31:33 2022 +0200
+
+    webidl: wasmjob: Cast as class function, default ancestor IJSObject, methods
+
+M	packages/webidl/src/webidltopas.pp
+M	packages/webidl/src/webidltowasmjob.pp
+
+******************************************************************************
+commit 2cbbcdf096c9554ab1b2930bcbcc5625000a59bc
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Mon Jul 25 19:26:10 2022 +0200
+
+    webidl: wasmjob: write implicit arrays as IJSArray
+
+M	packages/webidl/src/webidltopas.pp
+M	packages/webidl/src/webidltowasmjob.pp
+
+******************************************************************************
+commit 6bc34710c8c24948fdae13761225cb0d3fd7b1d6
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Mon Jul 25 19:17:07 2022 +0200
+
+    webidl: wasmjob: write forward interface definitions
+
+M	packages/webidl/src/webidltowasmjob.pp
+
+******************************************************************************
 commit 81a7da51a5c6affea394cfea7b604fe392ad83c9
 Author: Sven/Sarah Barth <pascaldragon@gmail.com>
 Date:   Tue Jul 26 09:34:33 2022 +0200
