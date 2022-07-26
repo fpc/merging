@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 0e9ea11859fca6ff4a40536c22f8c25483344252
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Tue Jul 26 15:44:27 2022 +0100
+
+      * x86: Bug fix where a tai type was assumed and could sometimes trigger an invalid typecast under -CriotR
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
 commit b47588b088a00db62b3384453f3c0fd76b26144b
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Tue Jul 26 20:54:00 2022 +0200
