@@ -1,4 +1,29 @@
 ******************************************************************************
+commit 3d6c53ee74d148bba2a3da49d76792037b78eae7
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Tue Jul 26 21:50:44 2022 +0200
+
+    parentfpstruct: explicitly trash before initialising
+    
+    It's an internal sym, but it contains user data. Together with the previous
+    commit resolves #39845
+
+M	compiler/ngenutil.pas
+M	compiler/psub.pas
+A	tests/webtbs/tw39845.pp
+
+******************************************************************************
+commit 5012e45d0482034268a530ef31a3e33c2360e1d2
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Tue Jul 26 21:50:03 2022 +0200
+
+    variable trashing: don't trash internal syms
+    
+    Since they're managed by the code generator, they should always be valid.
+
+M	compiler/ngenutil.pas
+
+******************************************************************************
 commit 0e9ea11859fca6ff4a40536c22f8c25483344252
 Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
 Date:   Tue Jul 26 15:44:27 2022 +0100
