@@ -1,4 +1,14 @@
 ******************************************************************************
+commit de650dea55203e30699f786b59cc811498c9671d
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Wed Jul 27 16:26:07 2022 +0100
+
+      * x86: Fixed minor logic bug in aoc_ForceNewIteration check where UpdateUsedRegs was called at the wrong time.
+
+M	compiler/i386/aoptcpu.pas
+M	compiler/x86_64/aoptcpu.pas
+
+******************************************************************************
 commit 5bfbc145c6d3a6b7744e2ff0c478274e6b6e0e99
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Wed Jul 27 09:03:32 2022 +0200
