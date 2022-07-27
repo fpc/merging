@@ -1,4 +1,34 @@
 ******************************************************************************
+commit becbd5411cce8e6aa23bbf206ef52b25e6224eda
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Wed Jul 27 23:56:55 2022 +0200
+
+    webidl: wasmjob: fixed idlinterface arg
+
+M	packages/webidl/src/webidltopas.pp
+M	packages/webidl/src/webidltowasmjob.pp
+
+******************************************************************************
+commit c9947b4ee6865af658ac101c8f6cb0b3370c6dcd
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Wed Jul 27 23:42:01 2022 +0200
+
+    webidl: added option --globals
+
+M	packages/webidl/src/webidltopas.pp
+M	packages/webidl/src/webidltowasmjob.pp
+M	utils/pas2js/webidl2pas.pp
+
+******************************************************************************
+commit d36d9c7deee6449511feda19dfcd7b5918bc3167
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Wed Jul 27 23:41:35 2022 +0200
+
+    fcl-base: typo
+
+M	packages/fcl-base/src/pascodegen.pp
+
+******************************************************************************
 commit de650dea55203e30699f786b59cc811498c9671d
 Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
 Date:   Wed Jul 27 16:26:07 2022 +0100
