@@ -1,4 +1,22 @@
 ******************************************************************************
+commit 5bfbc145c6d3a6b7744e2ff0c478274e6b6e0e99
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Wed Jul 27 09:03:32 2022 +0200
+
+    webidl: classname as keyword
+
+M	packages/webidl/src/webidltopas.pp
+
+******************************************************************************
+commit 6007752ff3bc2b59bf0292448345880ab91828ea
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Wed Jul 27 08:20:39 2022 +0200
+
+    webidl: property get array
+
+M	packages/webidl/src/webidltowasmjob.pp
+
+******************************************************************************
 commit 92944e7b5e942352aab44e1123071a791119b982
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Wed Jul 27 00:13:37 2022 +0200
