@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 7232e3ac442427c39fafa9dd4479e152bf73de50
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Thu Jul 28 02:23:45 2022 +0200
+
+    webidl: wasmjob: nicer callback code
+
+M	packages/webidl/src/webidltowasmjob.pp
+
+******************************************************************************
 commit becbd5411cce8e6aa23bbf206ef52b25e6224eda
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Wed Jul 27 23:56:55 2022 +0200
