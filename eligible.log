@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 6c065e69fd17b5fb5fd7384f4ca97317cafb11dd
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Thu Jul 28 00:46:25 2022 +0100
+
+      * x86: Corrected some incorrect uses of RemoveCurrentP in OptPass1_V_MOVAP.
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
 commit 7232e3ac442427c39fafa9dd4479e152bf73de50
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Thu Jul 28 02:23:45 2022 +0200
