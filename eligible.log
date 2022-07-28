@@ -1,4 +1,31 @@
 ******************************************************************************
+commit 3a07aadba2db6140876ab58ab55ec7b0a6cc6d93
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Thu Jul 28 22:46:41 2022 +0200
+
+    llvm: llvm/clang 15.0 support
+
+M	compiler/llvm/llvminfo.pas
+
+******************************************************************************
+commit 815b17a43b059c1aba2023ce866200f6cf887f2d
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Thu Jul 28 22:46:11 2022 +0200
+
+    llvm: correctly write aliases when using opaque pointers
+
+M	compiler/llvm/agllvm.pas
+
+******************************************************************************
+commit d2c2ddb337c3bea49c1fb5b6ad7408fa128b2d53
+Author: florian <florian@freepascal.org>
+Date:   Thu Jul 28 22:42:42 2022 +0200
+
+      + VPXorVMov2Mov optimization
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
 commit 6c065e69fd17b5fb5fd7384f4ca97317cafb11dd
 Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
 Date:   Thu Jul 28 00:46:25 2022 +0100
