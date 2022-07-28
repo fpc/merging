@@ -49018,17 +49018,6 @@ M	rtl/sinclairql/Makefile.fpc
 M	utils/fpcm/fpcmmain.pp
 
 ******************************************************************************
-commit bcd52d66eebc596272727d608126b6bc81cf43a3
-Author: pierre <pierre@freepascal.org>
-Date:   Tue Nov 10 17:21:00 2020 +0000
-
-     Use default linker script and only add FPC specific sections for Linux OS
-    
-    git-svn-id: trunk@47374 -
-
-M	compiler/systems/t_linux.pas
-
-******************************************************************************
 commit da042f77009d70a65e01126fae4216392a1fa18b
 Author: pierre <pierre@freepascal.org>
 Date:   Tue Nov 10 16:23:22 2020 +0000
@@ -85419,6 +85408,7 @@ Date:   Sun Jan 13 13:16:01 2019 +0000
 
 M	.gitattributes
 A	rtl/morphos/lineinfo.pp
+
 ******************************************************************************
 commit 644c47e1213118690d78d593a1c217335215fb1b
 Author: florian <florian@freepascal.org>
@@ -85431,7 +85421,6 @@ Date:   Sun Jan 13 10:32:00 2019 +0000
 M	.gitattributes
 M	compiler/ncgset.pas
 A	tests/webtbs/tw34818.pp
-
 ******************************************************************************
 commit b223d1c3048a22c1d2bdb3e8d933414e2843a737
 Author: florian <florian@freepascal.org>
