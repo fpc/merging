@@ -1,4 +1,13 @@
 ******************************************************************************
+commit e1312deafeb565c9cb5fea486e46273accc88d26
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Fri Jul 29 13:24:22 2022 +0200
+
+    pas2js: fixed array push records/sets
+
+M	utils/pas2js/dist/rtl.js
+
+******************************************************************************
 commit e45b31ced5358e8b6fbf62fcffebf3122c394637
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Fri Jul 29 03:36:30 2022 +0200
