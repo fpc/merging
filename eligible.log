@@ -1,4 +1,15 @@
 ******************************************************************************
+commit c122e16bebcaa76a8e1740d7404c1eaf56082a9f
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Fri Jul 29 17:34:55 2022 +0200
+
+    * fix #39849: it's an error when the file (or string) parameter of a Read*/Write* is followed by a ":"
+    + added test
+
+M	compiler/ninl.pas
+A	tests/webtbf/tw39849.pp
+
+******************************************************************************
 commit e1312deafeb565c9cb5fea486e46273accc88d26
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Fri Jul 29 13:24:22 2022 +0200
