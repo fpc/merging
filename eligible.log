@@ -1,4 +1,14 @@
 ******************************************************************************
+commit e45b31ced5358e8b6fbf62fcffebf3122c394637
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Fri Jul 29 03:36:30 2022 +0200
+
+    * Set buffer size
+
+M	packages/fcl-db/src/dbase/dbf.pas
+M	packages/fcl-db/src/export/fpdbfexport.pp
+
+******************************************************************************
 commit 2f355fe96b895ebd47c8817d450bd60ea1473d6e
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Fri Jul 29 03:17:23 2022 +0200
