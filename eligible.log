@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 2f355fe96b895ebd47c8817d450bd60ea1473d6e
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Fri Jul 29 03:17:23 2022 +0200
+
+    * Allow descendentsto set default buffer size
+
+M	packages/fcl-db/src/base/dataset.inc
+M	packages/fcl-db/src/base/db.pas
+
+******************************************************************************
 commit 3a07aadba2db6140876ab58ab55ec7b0a6cc6d93
 Author: Jonas Maebe <jonas@freepascal.org>
 Date:   Thu Jul 28 22:46:41 2022 +0200
