@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 6c47f8f4d79d3cd571e5d6526dec0791d2b2c8f8
+Author: florian <florian@freepascal.org>
+Date:   Fri Jul 29 21:46:07 2022 +0200
+
+      * do not warn on anonymous functions without captured variables about being not used, resolves #39853
+
+M	compiler/pdecsub.pas
+A	tests/webtbs/tw39853.pp
+
+******************************************************************************
 commit c122e16bebcaa76a8e1740d7404c1eaf56082a9f
 Author: Sven/Sarah Barth <pascaldragon@gmail.com>
 Date:   Fri Jul 29 17:34:55 2022 +0200
