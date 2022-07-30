@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 77e350b6b8dc61de3cba519b0f4f79b25eea9f49
+Author: florian <florian@freepascal.org>
+Date:   Sat Jul 30 22:09:17 2022 +0200
+
+      + VPXor2VPXor optimization
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
 commit 06cbb6edc7f1c0964999224e64fdb21238ed2bcd
 Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
 Date:   Mon May 16 06:28:23 2022 +0100
