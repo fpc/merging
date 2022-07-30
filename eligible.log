@@ -1,4 +1,33 @@
 ******************************************************************************
+commit 06cbb6edc7f1c0964999224e64fdb21238ed2bcd
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Mon May 16 06:28:23 2022 +0100
+
+      * a64: Updated debug messages to follow standard.
+
+M	compiler/armgen/aoptarm.pas
+
+******************************************************************************
+commit d6ff4ed9673ab5a0cd0ec8fd4c1df23429755d17
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Sun May 15 20:29:55 2022 +0100
+
+      * arm/a64: New sbfx/ubfx -> mov optimisation
+
+M	compiler/aarch64/aoptcpu.pas
+M	compiler/arm/aoptcpu.pas
+M	compiler/armgen/aoptarm.pas
+
+******************************************************************************
+commit 637645b6d6d534f65d56a5b6a8582507f8f89941
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Sun May 15 18:16:39 2022 +0100
+
+      * a64: New movz reg,#0 -> mov reg,xzr (or wzr) optimisation
+
+M	compiler/aarch64/aoptcpu.pas
+
+******************************************************************************
 commit 6c47f8f4d79d3cd571e5d6526dec0791d2b2c8f8
 Author: florian <florian@freepascal.org>
 Date:   Fri Jul 29 21:46:07 2022 +0200
