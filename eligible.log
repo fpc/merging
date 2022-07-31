@@ -1,4 +1,40 @@
 ******************************************************************************
+commit 899981f318cdafa2e2e4764f0bc5a26889091ebb
+Author: florian <florian@freepascal.org>
+Date:   Sun Jul 31 22:10:00 2022 +0200
+
+      + forgotten comments for new optimizations
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
+commit f5d76c55932f8e5ca2c267fb9b0a1a6abc3936ce
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Sat Jul 30 18:18:10 2022 +0100
+
+      * x86: Reference count fix in CMP/Jcc and TEST/Jcc redirect optimisations
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
+commit 8ba76f7d0a71e5d27ec63a7d81983a649913b8c9
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Sat Jul 30 18:49:21 2022 +0100
+
+      * New test to catch i39851
+
+A	tests/webtbs/tw39851.pp
+
+******************************************************************************
+commit b1e65ca49fca83bd215b4c8e8427560bf9083cdf
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Sat Jul 30 18:16:12 2022 +0100
+
+      * x86: Fixed bug where redirected jump has its condition changed (fixes i39851)
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
 commit 99074a557895249d03538e5df9861fcd6ae9a6f0
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Sun Jul 31 21:09:09 2022 +0300
