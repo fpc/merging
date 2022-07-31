@@ -1,4 +1,42 @@
 ******************************************************************************
+commit 8c9a07a3e816372a5ae2d46e0dd9d822d56e6e6b
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sun Jul 31 20:12:11 2022 +0300
+
+    + added test for wasmglobals, where the globals are declared in the implementation section of a unit
+
+A	tests/test/wasm/twasmglobal2.pp
+A	tests/test/wasm/uwasmglobal2.pp
+
+******************************************************************************
+commit 6d23d22d5000c677a8c59a79a9bfbfd8b9c20dfd
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sun Jul 31 20:04:43 2022 +0300
+
+    + added wasm dir to test dirs
+
+M	tests/Makefile
+M	tests/Makefile.fpc
+
+******************************************************************************
+commit 6d3da836113fb65085d437d4b7f932a1d049cfd3
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sun Jul 31 19:54:34 2022 +0300
+
+    + added test for wasm globals
+
+A	tests/test/wasm/twasmglobal1.pp
+
+******************************************************************************
+commit 65b442567218f772939978849f85c497f96c4dc7
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sun Jul 31 19:28:09 2022 +0300
+
+    + support declaring wasm globals in the WebAssembly internal object writer
+
+M	compiler/ogwasm.pas
+
+******************************************************************************
 commit 77e350b6b8dc61de3cba519b0f4f79b25eea9f49
 Author: florian <florian@freepascal.org>
 Date:   Sat Jul 30 22:09:17 2022 +0200
