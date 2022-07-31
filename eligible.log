@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 99074a557895249d03538e5df9861fcd6ae9a6f0
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Sun Jul 31 21:09:09 2022 +0300
+
+    * .lpi version update
+
+M	compiler/ppcwasm32.lpi
+
+******************************************************************************
 commit 8c9a07a3e816372a5ae2d46e0dd9d822d56e6e6b
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Sun Jul 31 20:12:11 2022 +0300
