@@ -1,4 +1,26 @@
 ******************************************************************************
+commit d13a8671274398f7bc01e2a9dfbc9fd4b2bee4b6
+Author: kamischi <karl-michael.schindler@web.de>
+Date:   Sun Jul 31 23:54:25 2022 +0200
+
+    Update reference
+
+M	compiler/msg/errord.msg
+M	compiler/msg/errordu.msg
+
+******************************************************************************
+commit dd5c2ea6e92ec1af35393ffc8ab83cf81fb80eba
+Author: kamischi <karl-michael.schindler@web.de>
+Date:   Sun Jul 31 23:46:41 2022 +0200
+
+    Update errord*.msg
+    
+    new messages and other changes in errore.msg have been translated or ported to the German message files.
+
+M	compiler/msg/errord.msg
+M	compiler/msg/errordu.msg
+
+******************************************************************************
 commit 899981f318cdafa2e2e4764f0bc5a26889091ebb
 Author: florian <florian@freepascal.org>
 Date:   Sun Jul 31 22:10:00 2022 +0200
