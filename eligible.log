@@ -1,4 +1,58 @@
 ******************************************************************************
+commit 89605f47c23776c423698a5b4bc2493060e3c13c
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Sun Jul 31 07:07:50 2022 +0100
+
+      * x86: Correct fileinfo for PostPeepholeOptCall
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
+commit f7dcb68c5a0173048e3a1fb2cdd1a2c5c0f3b761
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Sun Jul 31 07:06:21 2022 +0100
+
+      * x86: Correct fileinfo for OptPass2MOV
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
+commit 6eede0f71f0fa802f18aeb6217d3f82b9d5834a1
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Sun Jul 31 07:05:33 2022 +0100
+
+      * x86: Correct fileinfo and some refactoring for OptPass1CMP
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
+commit e9b394a5507b35cff1ea969ef7991ee0fe2c6d45
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Sun Jul 31 06:59:24 2022 +0100
+
+      * x86: Correct fileinfo and some refactoring for OptPass1SHLSAL
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
+commit 0c62ac9f1624faffca6d6505b6564e8b9969d3c0
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Sun Jul 31 06:25:21 2022 +0100
+
+      * x86: Correct fileinfo and some refactoring for OptPass1LEA
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
+commit f19b390c685209851873339a9c9f9756b0bf81c1
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Sun Jul 31 06:16:32 2022 +0100
+
+      * x86: Correct fileinfo and some refactoring for imul2leashl optimisation
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
 commit fecdaeed0d3bed360647dda6c864588f1245f570
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Tue Aug 2 17:52:19 2022 +0200
