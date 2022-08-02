@@ -1,4 +1,13 @@
 ******************************************************************************
+commit fecdaeed0d3bed360647dda6c864588f1245f570
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Tue Aug 2 17:52:19 2022 +0200
+
+     Fix searching of gstrip binary in cross-environment for solaris OS target
+
+M	compiler/systems/t_sunos.pas
+
+******************************************************************************
 commit 59811090e1269d403f67bbf74d6288d4103eebc9
 Author: florian <florian@freepascal.org>
 Date:   Mon Aug 1 22:58:57 2022 +0200
