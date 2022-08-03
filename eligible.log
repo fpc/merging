@@ -1,4 +1,22 @@
 ******************************************************************************
+commit ceab50cafbfe9b4b8cce092994fd1bf888e9c476
+Author: florian <florian@freepascal.org>
+Date:   Wed Aug 3 22:42:25 2022 +0200
+
+      * use simpler FMOV instead of UMOV
+
+M	compiler/aarch64/cgcpu.pas
+
+******************************************************************************
+commit 7704fe9319a6e7b251022149216d04993b4f94a9
+Author: Benito van der Zander <benito@benibela.de>
+Date:   Tue Jun 7 19:44:31 2022 +0000
+
+    fix stack trace crash, see #39492
+
+M	rtl/aarch64/aarch64.inc
+
+******************************************************************************
 commit dd13b4608886c540135bf83d2992107bc03fdeb0
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Wed Aug 3 23:11:44 2022 +0300
