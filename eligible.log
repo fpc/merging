@@ -1,4 +1,40 @@
 ******************************************************************************
+commit e9594227538ce6dc537f25cf7082b5853034282b
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Wed Aug 3 20:56:44 2022 +0300
+
+    * wasm32 obj writer: do the relocations before writing the code, data and debug sections
+
+M	compiler/ogwasm.pas
+
+******************************************************************************
+commit edf5fce7e33aa26cebca17878b42971c8da91475
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Wed Aug 3 20:51:58 2022 +0300
+
+    * wasm32 obj writer: determine the section number for the datacount, code, data and debug sections ahead of time (before writing the sections)
+
+M	compiler/ogwasm.pas
+
+******************************************************************************
+commit b5a71086e840fd6080d2d376ed43d31918ed1d0a
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Wed Aug 3 20:44:11 2022 +0300
+
+    * wasm32 obj writer: moved the writing of the data sections ahead
+
+M	compiler/ogwasm.pas
+
+******************************************************************************
+commit 2a196899bcac210138cc267bb47475075aa07cb0
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Wed Aug 3 20:30:09 2022 +0300
+
+    * wasm32 obj writer: writing the debug section symbols to the symbol table moved before the writing of the debug sections themselves
+
+M	compiler/ogwasm.pas
+
+******************************************************************************
 commit 89605f47c23776c423698a5b4bc2493060e3c13c
 Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
 Date:   Sun Jul 31 07:07:50 2022 +0100
