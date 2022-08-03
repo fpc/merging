@@ -1,4 +1,23 @@
 ******************************************************************************
+commit dd13b4608886c540135bf83d2992107bc03fdeb0
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Wed Aug 3 23:11:44 2022 +0300
+
+    * use WasmCustomSectionName to obtain the debug section names in MaybeWriteDebugSection and MaybeAddDebugSectionToSymbolTable
+
+M	compiler/ogwasm.pas
+
+******************************************************************************
+commit efd92fba01224190b6b225f487ef3735aa9c58a0
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Wed Aug 3 23:04:53 2022 +0300
+
+    + introduced TWasmCustomDebugSectionType
+
+M	compiler/ogwasm.pas
+M	compiler/wasmbase.pas
+
+******************************************************************************
 commit cc260eb7b2549e88bb6c2aa0480197ee5eaf5016
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Wed Aug 3 22:02:19 2022 +0300
