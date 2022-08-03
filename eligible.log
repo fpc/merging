@@ -1,4 +1,13 @@
 ******************************************************************************
+commit cc260eb7b2549e88bb6c2aa0480197ee5eaf5016
+Author: Nikolay Nikolov <nickysn@gmail.com>
+Date:   Wed Aug 3 22:02:19 2022 +0300
+
+    * wasm32 obj writer: use Data.ObjSectionList.Find to find the debug section by name in MaybeWriteDebugSection
+
+M	compiler/ogwasm.pas
+
+******************************************************************************
 commit e9594227538ce6dc537f25cf7082b5853034282b
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Wed Aug 3 20:56:44 2022 +0300
