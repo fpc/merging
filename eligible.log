@@ -1,4 +1,19 @@
 ******************************************************************************
+commit a401898139b7e50d9b6e872de949b56e4fe0e24d
+Author: florian <florian@freepascal.org>
+Date:   Thu Aug 4 23:00:44 2022 +0200
+
+      * spelling fixes
+
+M	compiler/dbgstabs.pas
+M	compiler/jvm/njvmcal.pas
+M	compiler/ncgld.pas
+M	compiler/pdecobj.pas
+M	compiler/pdecsub.pas
+M	compiler/pexpr.pas
+M	compiler/x86_64/hlcgcpu.pas
+
+******************************************************************************
 commit ceab50cafbfe9b4b8cce092994fd1bf888e9c476
 Author: florian <florian@freepascal.org>
 Date:   Wed Aug 3 22:42:25 2022 +0200
