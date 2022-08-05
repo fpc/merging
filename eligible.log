@@ -1,4 +1,23 @@
 ******************************************************************************
+commit aff2a424312993642fcaeeb34814a43ac6973dcd
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Thu Jun 30 12:12:46 2022 +0100
+
+    * x86: Shrink TEST instruction on MovAndTest2Test
+      where possible.
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
+commit d7f1e56191970344b538f551391f36907e9fb048
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Mon Jun 27 00:56:35 2022 +0100
+
+      * x86: MovAndTest2Test optimisation now accepts a smaller sub-regiser on the TEST instruction
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
 commit a401898139b7e50d9b6e872de949b56e4fe0e24d
 Author: florian <florian@freepascal.org>
 Date:   Thu Aug 4 23:00:44 2022 +0200
