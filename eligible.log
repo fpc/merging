@@ -1,4 +1,13 @@
 ******************************************************************************
+commit a45ba3add5f08399745e8f6f4e4eff58a63c5853
+Author: florian <florian@freepascal.org>
+Date:   Fri Aug 5 23:02:05 2022 +0200
+
+      * x86-64: math helpers do not need a stackframe
+
+M	rtl/x86_64/mathu.inc
+
+******************************************************************************
 commit aff2a424312993642fcaeeb34814a43ac6973dcd
 Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
 Date:   Thu Jun 30 12:12:46 2022 +0100
