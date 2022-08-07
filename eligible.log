@@ -1,4 +1,13 @@
 ******************************************************************************
+commit a5486e04cd7dac0acdf4efe24129736650154064
+Author: Yuri Serebrennikov <yus.serebrennikov@gmail.com>
+Date:   Sun Aug 7 22:58:18 2022 +0300
+
+    Added SSL support for Websocket client.
+
+M	packages/fcl-web/src/websocket/fpwebsocketclient.pp
+
+******************************************************************************
 commit 9c72ab651d46f2648d6c7fb30ca884da80be8ef6
 Author: florian <florian@freepascal.org>
 Date:   Sat Aug 6 15:04:35 2022 +0200
