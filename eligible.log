@@ -1,4 +1,13 @@
 ******************************************************************************
+commit a08ac618a4ca9c5ace5af9c3b3253f11e6aa297c
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Mon Aug 8 16:11:09 2022 +0200
+
+    * Remove dependency on fpopenssl unit
+
+M	packages/fcl-web/src/websocket/fpwebsocketclient.pp
+
+******************************************************************************
 commit d7801027c4abb7e1a53155dba2026a8b90789791
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Mon Aug 8 14:43:12 2022 +0200
