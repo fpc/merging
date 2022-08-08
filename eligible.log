@@ -1,4 +1,13 @@
 ******************************************************************************
+commit d7801027c4abb7e1a53155dba2026a8b90789791
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Mon Aug 8 14:43:12 2022 +0200
+
+    * Use default handler for SSL sockets
+
+M	packages/fcl-web/src/websocket/fpwebsocketclient.pp
+
+******************************************************************************
 commit d347487be9d2883f94856c0dbd73d46c52889a01
 Author: marcoonthegit <marco@freepascal.org>
 Date:   Mon Aug 8 12:04:50 2022 +0200
