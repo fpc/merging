@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 5afd809e88788ea53097471a7ee783826475d15a
+Author: florian <florian@freepascal.org>
+Date:   Mon Aug 8 23:14:19 2022 +0200
+
+      + handle LOC_FLAGS in thlcgobj.location_force_mem, resolves #39292
+
+M	compiler/hlcgobj.pas
+A	tests/webtbs/tw39292.pp
+
+******************************************************************************
 commit a08ac618a4ca9c5ace5af9c3b3253f11e6aa297c
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Mon Aug 8 16:11:09 2022 +0200
