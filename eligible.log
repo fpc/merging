@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 53d745962f437c65c9130c1da33fa01eb723d8eb
+Author: marcoonthegit <marco@freepascal.org>
+Date:   Tue Aug 9 11:27:23 2022 +0200
+
+    * also add other threadpool functions
+
+M	rtl/win/wininc/base.inc
+M	rtl/win/wininc/func.inc
+
+******************************************************************************
 commit fd179a61f9fd68759262ed42772955583191d2c1
 Author: marcoonthegit <marco@freepascal.org>
 Date:   Tue Aug 9 09:59:19 2022 +0200
