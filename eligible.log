@@ -1,4 +1,19 @@
 ******************************************************************************
+commit fd179a61f9fd68759262ed42772955583191d2c1
+Author: marcoonthegit <marco@freepascal.org>
+Date:   Tue Aug 9 09:59:19 2022 +0200
+
+    * give pthread_start_routine a proper Delphi compat prototype.
+     * add Delphi alias for callback.
+     * add queueuserworkitem
+     * add name clause GetDateFormatEx
+    
+    closes #39852
+
+M	rtl/win/wininc/base.inc
+M	rtl/win/wininc/func.inc
+
+******************************************************************************
 commit 5afd809e88788ea53097471a7ee783826475d15a
 Author: florian <florian@freepascal.org>
 Date:   Mon Aug 8 23:14:19 2022 +0200
