@@ -1,4 +1,13 @@
 ******************************************************************************
+commit f18d6f1c852579643b1d7c07d991242d3031c436
+Author: florian <florian@freepascal.org>
+Date:   Wed Aug 10 18:22:26 2022 +0200
+
+      * fixed and improved generic ArcTan2 implementation by Paolo Valle, resolves #39861
+
+M	rtl/objpas/math.pp
+
+******************************************************************************
 commit 53d745962f437c65c9130c1da33fa01eb723d8eb
 Author: marcoonthegit <marco@freepascal.org>
 Date:   Tue Aug 9 11:27:23 2022 +0200
