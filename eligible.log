@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 306559667c7c569f3da35d2d3d2d692b53a5c3fd
+Author: florian <florian@freepascal.org>
+Date:   Thu Aug 11 22:32:45 2022 +0200
+
+      * patch by Rika for ArcTan2 to reduce code size
+
+M	rtl/objpas/math.pp
+
+******************************************************************************
 commit f18d6f1c852579643b1d7c07d991242d3031c436
 Author: florian <florian@freepascal.org>
 Date:   Wed Aug 10 18:22:26 2022 +0200
