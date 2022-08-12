@@ -1,4 +1,24 @@
 ******************************************************************************
+commit 5e7330448dfdf3974ebf638dc8837c87bf0c2e5f
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Fri Aug 12 17:43:57 2022 +0200
+
+    * fix #39858: correctly keep track of symbols that need to be captured into the capturer
+    + added test
+
+M	compiler/procdefutil.pas
+A	tests/webtbs/tw39858.pp
+
+******************************************************************************
+commit 260368ea557daad41a5395c9d08bf1f2eadfa2fe
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Fri Aug 12 17:43:15 2022 +0200
+
+    * the clause for converting the captured symbols of a nested function must not be entered by an anonymous function
+
+M	compiler/procdefutil.pas
+
+******************************************************************************
 commit 6407b5f4db68d24454b0fbaaad864727b5c61352
 Author: Sven/Sarah Barth <pascaldragon@gmail.com>
 Date:   Fri Aug 12 17:19:32 2022 +0200
