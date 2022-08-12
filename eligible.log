@@ -1,4 +1,43 @@
 ******************************************************************************
+commit 6407b5f4db68d24454b0fbaaad864727b5c61352
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Fri Aug 12 17:19:32 2022 +0200
+
+    * try to specialize a specialize node if it's followed by a < in a non-code section so that we might get better error messages
+
+M	compiler/pexpr.pas
+
+******************************************************************************
+commit 33ef88858ddb65eedff41e3a1108cd6baf563917
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Fri Aug 12 17:01:22 2022 +0200
+
+    * extract generating the specialization from a specialize node into a separate function
+
+M	compiler/pexpr.pas
+
+******************************************************************************
+commit abb7aebaba5721512c3d16857c78781c60259e66
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Fri Aug 12 14:47:13 2022 +0200
+
+    * fix typo in comment
+
+M	compiler/pexpr.pas
+
+******************************************************************************
+commit 35958a9b6b927d8ce9b1d0002ba942e14c6b8422
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Fri Aug 12 14:45:12 2022 +0200
+
+    * fix #39860: even if the block type is not correct for the specialization of a generic routine continue to specialize it to not trigger e.g. an internal error
+    + added tests
+
+M	compiler/pexpr.pas
+A	tests/webtbf/tw39860a.pp
+A	tests/webtbf/tw39860b.pp
+
+******************************************************************************
 commit 306559667c7c569f3da35d2d3d2d692b53a5c3fd
 Author: florian <florian@freepascal.org>
 Date:   Thu Aug 11 22:32:45 2022 +0200
