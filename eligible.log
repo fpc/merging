@@ -1,4 +1,14 @@
 ******************************************************************************
+commit be4a317cb463f031e91527ca4e74ce03c7e3d661
+Author: florian <florian@freepascal.org>
+Date:   Sat Aug 13 22:30:55 2022 +0200
+
+      * proper naming
+
+M	rtl/darwin/aarch64/sig_cpu.inc
+M	rtl/darwin/aarch64/sighnd.inc
+
+******************************************************************************
 commit 8028a769f408d54a475bab50ec467531e547c13f
 Author: florian <florian@freepascal.org>
 Date:   Fri Aug 12 22:11:39 2022 +0200
