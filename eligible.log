@@ -1,4 +1,13 @@
 ******************************************************************************
+commit a135940cf5184c7af0b2ca1a7c72f58a45dc4f3c
+Author: ccrause <christo.crause@gmail.com>
+Date:   Sun Aug 14 19:49:26 2022 +0200
+
+    Mark .noinit section with nobits flag.
+
+M	compiler/aasmtai.pas
+
+******************************************************************************
 commit f532cf16983992b278e7fb0254312f935022151b
 Author: marcoonthegit <marco@freepascal.org>
 Date:   Sun Aug 14 16:24:19 2022 +0200
