@@ -1,4 +1,14 @@
 ******************************************************************************
+commit f532cf16983992b278e7fb0254312f935022151b
+Author: marcoonthegit <marco@freepascal.org>
+Date:   Sun Aug 14 16:24:19 2022 +0200
+
+    * Use an own put for tfpginterfacedobjectlist as per bug #39846.
+       Maybe not the most elegant, but solves the immediately
+
+M	rtl/objpas/fgl.pp
+
+******************************************************************************
 commit 27c1bb3beaa237e9813194205425c312b6308cbd
 Author: Sven/Sarah Barth <pascaldragon@gmail.com>
 Date:   Sun Aug 14 15:42:32 2022 +0200
