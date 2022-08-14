@@ -1,4 +1,15 @@
 ******************************************************************************
+commit 27c1bb3beaa237e9813194205425c312b6308cbd
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Sun Aug 14 15:42:32 2022 +0200
+
+    * an objectdef also requires an init for its members if a member (or a member of one of the parents) has a complex initialization
+    + added test
+
+M	compiler/symdef.pas
+A	tests/tbs/tb0695.pp
+
+******************************************************************************
 commit be4a317cb463f031e91527ca4e74ce03c7e3d661
 Author: florian <florian@freepascal.org>
 Date:   Sat Aug 13 22:30:55 2022 +0200
