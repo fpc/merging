@@ -1,4 +1,15 @@
 ******************************************************************************
+commit 6c98a632850715f63fa0c83473dd23d977ca8469
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Mon Aug 15 16:56:06 2022 +0200
+
+    fcl-passrc: resolver: allow for for-loop var only local vars
+
+M	packages/fcl-passrc/src/pasresolveeval.pas
+M	packages/fcl-passrc/src/pasresolver.pp
+M	packages/fcl-passrc/tests/tcresolver.pas
+
+******************************************************************************
 commit cc66eb27ab549216e2b1e99026f0beb31e5d0102
 Author: florian <florian@freepascal.org>
 Date:   Sun Aug 14 22:25:22 2022 +0200
