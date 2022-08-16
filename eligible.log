@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 44dca29926bd8364d5b013cbc6820fde67cf3e75
+Author: florian <florian@freepascal.org>
+Date:   Tue Aug 16 20:26:01 2022 +0200
+
+      + some debug messages added
+      * cosmetics
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
 commit aa32bd344a4eb2b7473e1f84b0b211d2be086547
 Author: marcoonthegit <marco@freepascal.org>
 Date:   Tue Aug 16 15:23:04 2022 +0200
