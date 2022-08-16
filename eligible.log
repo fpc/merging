@@ -256,15 +256,6 @@ Date:   Sun Aug 7 22:58:18 2022 +0300
 M	packages/fcl-web/src/websocket/fpwebsocketclient.pp
 
 ******************************************************************************
-commit 9c72ab651d46f2648d6c7fb30ca884da80be8ef6
-Author: florian <florian@freepascal.org>
-Date:   Sat Aug 6 15:04:35 2022 +0200
-
-      * use g_concatcopy_unaligned on MIPS if needed
-
-M	compiler/mips/cgcpu.pas
-
-******************************************************************************
 commit a45ba3add5f08399745e8f6f4e4eff58a63c5853
 Author: florian <florian@freepascal.org>
 Date:   Fri Aug 5 23:02:05 2022 +0200
@@ -16192,15 +16183,6 @@ Date:   Sun Feb 6 20:15:00 2022 +0100
 M	compiler/constexp.pas
 
 ******************************************************************************
-commit 9348f58e70085123db1c1051b6d481d2490e3ed3
-Author: Florian Klämpfl <florian@freepascal.org>
-Date:   Sun Feb 6 20:13:51 2022 +0100
-
-    * cosmetics
-
-M	compiler/mips/cgcpu.pas
-
-******************************************************************************
 commit 621dcbeaf2118a9cb7622db19bb5d859e0e22f9d
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Sun Feb 6 19:16:48 2022 +0100
@@ -16388,15 +16370,6 @@ Date:   Fri Feb 4 19:57:42 2022 +0000
      Also set mipseb or mipsel macro for 64-bit mips CPU
 
 M	compiler/fpcdefs.inc
-
-******************************************************************************
-commit c2ffd51c63da98e9a38634a9440804b3a55083ed
-Author: Pierre Muller <pierre@freepascal.org>
-Date:   Fri Feb 4 18:32:49 2022 +0000
-
-    Fix compilation from 32-bit CPU by avoiding use of aint variable in for loop
-
-M	compiler/mips/cgcpu.pas
 
 ******************************************************************************
 commit ea812d1c2ea7994f610b30cd459c0e235f46fdd3
