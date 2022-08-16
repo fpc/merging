@@ -1,4 +1,29 @@
 ******************************************************************************
+commit 761f65cef8dbb17867efcb380db2b28d1454e701
+Author: Ondrej Pokorny <lazarus@kluug.net>
+Date:   Tue Aug 16 22:41:25 2022 +0200
+
+    do not publish enums with jumps - keep error on static properties
+
+M	compiler/pdecvar.pas
+
+******************************************************************************
+commit 55629aeb19b0e7cf968d33c9fc0f465baba8f82d
+Author: Ondrej Pokorny <lazarus@kluug.net>
+Date:   Tue Aug 16 20:47:44 2022 +0200
+
+    do not publish enums with jumps
+
+M	compiler/msg/errore.msg
+M	compiler/msgidx.inc
+M	compiler/msgtxt.inc
+M	compiler/pdecvar.pas
+M	compiler/symdef.pas
+M	compiler/symtype.pas
+A	tests/webtbf/tw39866.pp
+A	tests/webtbs/tw39866.pp
+
+******************************************************************************
 commit 44dca29926bd8364d5b013cbc6820fde67cf3e75
 Author: florian <florian@freepascal.org>
 Date:   Tue Aug 16 20:26:01 2022 +0200
