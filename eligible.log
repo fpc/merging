@@ -1,4 +1,13 @@
 ******************************************************************************
+commit aa32bd344a4eb2b7473e1f84b0b211d2be086547
+Author: marcoonthegit <marco@freepascal.org>
+Date:   Tue Aug 16 15:23:04 2022 +0200
+
+    * Some bio functions added, patch by RDA, closes #39854
+
+M	packages/openssl/src/openssl.pas
+
+******************************************************************************
 commit 85230758e453f88ee2b89665f774994db443d968
 Author: florian <florian@freepascal.org>
 Date:   Mon Aug 15 23:16:55 2022 +0200
