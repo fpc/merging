@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 9e14dee1c35bd3131a99de5fcd613afeee9757f7
+Author: florian <florian@freepascal.org>
+Date:   Wed Aug 17 20:56:15 2022 +0200
+
+      * fixed Math.Tanh as proposed by Paolo Valle, resolves #39867
+
+M	rtl/objpas/math.pp
+A	tests/webtbs/tw39867.pp
+
+******************************************************************************
 commit 533cd8292234c3ee350b3e9fe147b579b38fedd9
 Author: marcoonthegit <marco@freepascal.org>
 Date:   Wed Aug 17 18:37:31 2022 +0200
