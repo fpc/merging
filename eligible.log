@@ -1,4 +1,16 @@
 ******************************************************************************
+commit 533cd8292234c3ee350b3e9fe147b579b38fedd9
+Author: marcoonthegit <marco@freepascal.org>
+Date:   Wed Aug 17 18:37:31 2022 +0200
+
+    * applied patch from Alexey for closes #39704
+     * reviewed checks at start of function to match Delphi in rangecheck errors and other exits
+     * test for the above.
+
+M	rtl/objpas/sysutils/syshelp.inc
+A	tests/test/units/sysutils/tstringhelperjoin.pp
+
+******************************************************************************
 commit 761f65cef8dbb17867efcb380db2b28d1454e701
 Author: Ondrej Pokorny <lazarus@kluug.net>
 Date:   Tue Aug 16 22:41:25 2022 +0200
