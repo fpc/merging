@@ -1,4 +1,15 @@
 ******************************************************************************
+commit 61debb1559eb3fe499316c673a7bd8a265cd58b7
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Thu Aug 18 23:09:01 2022 +0200
+
+    * fix #39869: correctly check whether the recorded token stream still needs to be parsed (the replay depth of the scanner needs to be *larger* than what it was before starting the playback)
+    + added test
+
+M	compiler/pgenutil.pas
+A	tests/webtbs/tw39869.pp
+
+******************************************************************************
 commit a2d7503f714ee8ff856efd8d17548fbab928f0ec
 Author: florian <florian@freepascal.org>
 Date:   Thu Aug 18 21:22:16 2022 +0200
@@ -87613,17 +87624,6 @@ Date:   Sun Dec 2 18:54:04 2018 +0000
 
 M	compiler/m68k/n68kinl.pas
 M	compiler/ncginl.pas
-
-******************************************************************************
-commit 90557f2e6203427f135eecf9f56ae8eaab5c1ced
-Author: florian <florian@freepascal.org>
-Date:   Sun Dec 2 14:49:24 2018 +0000
-
-    * properly calcualte aligncount as proposed by Jeppe, should resolve #33323
-    
-    git-svn-id: trunk@40449 -
-
-M	rtl/inc/generic.inc
 
 ******************************************************************************
 commit 31ae109a317d480dec469a000603d82f58d813b7
