@@ -1,4 +1,14 @@
 ******************************************************************************
+commit d25daba08a0fc72cc646a0cf79e60695cb76397f
+Author: marcoonthegit <marco@freepascal.org>
+Date:   Thu Aug 18 13:58:40 2022 +0200
+
+    * Patch from Alexey T.  closes #39705
+     * don't use copy in helper.indexof(). Watch those 0 based indexes.
+
+M	rtl/objpas/sysutils/syshelp.inc
+
+******************************************************************************
 commit 9e14dee1c35bd3131a99de5fcd613afeee9757f7
 Author: florian <florian@freepascal.org>
 Date:   Wed Aug 17 20:56:15 2022 +0200
