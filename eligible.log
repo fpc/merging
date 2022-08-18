@@ -1,4 +1,13 @@
 ******************************************************************************
+commit a2d7503f714ee8ff856efd8d17548fbab928f0ec
+Author: florian <florian@freepascal.org>
+Date:   Thu Aug 18 21:22:16 2022 +0200
+
+      * patch by Rika: This speeds up DefaultReplacements by a lot (order of magnitude or so), resolves #39722
+
+M	compiler/globals.pas
+
+******************************************************************************
 commit d25daba08a0fc72cc646a0cf79e60695cb76397f
 Author: marcoonthegit <marco@freepascal.org>
 Date:   Thu Aug 18 13:58:40 2022 +0200
