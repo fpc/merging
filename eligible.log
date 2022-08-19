@@ -1,4 +1,17 @@
 ******************************************************************************
+commit 84de6a00491c1f20c7fc988d01197f8ae012af62
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Fri Aug 19 11:59:50 2022 +0200
+
+    Revert "  * patch by Rika: This speeds up DefaultReplacements by a lot (order of magnitude or so), resolves #39722"
+    
+    This reverts commit a2d7503f714ee8ff856efd8d17548fbab928f0ec.
+    
+    Reason: breaks replacements in config file parsing.
+
+M	compiler/globals.pas
+
+******************************************************************************
 commit 61debb1559eb3fe499316c673a7bd8a265cd58b7
 Author: Sven/Sarah Barth <pascaldragon@gmail.com>
 Date:   Thu Aug 18 23:09:01 2022 +0200
