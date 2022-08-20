@@ -1,4 +1,31 @@
 ******************************************************************************
+commit d3d4de78186a2aaec323b49c8c8dc5dd677a8f42
+Author: florian <florian@freepascal.org>
+Date:   Sat Aug 20 18:11:24 2022 +0200
+
+      * test for #39834, previous commits resolve #39834
+
+A	tests/webtbs/tw39834.pp
+
+******************************************************************************
+commit 131c1e1b938c14cd5a3892d92d20f2950b13cc3a
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Thu Aug 18 07:31:37 2022 +0100
+
+      * Converted assertion into an internal error
+
+M	compiler/cgutils.pas
+
+******************************************************************************
+commit 32f4931fd24c18db383d9ce156dec1a65c83d98a
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Thu Aug 18 07:30:58 2022 +0100
+
+      * x86: Fixed bug where the magic number of an integer division wasn't fully sign-extended, causing incorrect logic within the compiler.
+
+M	compiler/cgutils.pas
+
+******************************************************************************
 commit 9ad1995c6d139d2692703accc23a71f4db6ea63b
 Author: marcoonthegit <marco@freepascal.org>
 Date:   Sat Aug 20 16:16:33 2022 +0200
