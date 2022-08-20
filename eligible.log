@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 9ad1995c6d139d2692703accc23a71f4db6ea63b
+Author: marcoonthegit <marco@freepascal.org>
+Date:   Sat Aug 20 16:16:33 2022 +0200
+
+    * Patch by Rika to have a char specific  TStringHelper.replace. Probably faster with low number of char matches. closes #39707
+     * also raise rangeerror for startindex<0 in previous committed join() patch.
+
+M	rtl/objpas/sysutils/syshelp.inc
+
+******************************************************************************
 commit d6e8375e64516fd5e2310c8baf4efdd4420c6e36
 Author: florian <florian@freepascal.org>
 Date:   Fri Aug 19 22:28:08 2022 +0200
