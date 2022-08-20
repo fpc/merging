@@ -1,4 +1,13 @@
 ******************************************************************************
+commit c67004d92910ec162f39d76dfb2141dafa5ecdc6
+Author: marcoonthegit <marco@freepascal.org>
+Date:   Sat Aug 20 22:41:36 2022 +0200
+
+    * custom variant support for integer types, first part of #39815
+
+M	packages/rtl-objpas/src/inc/variants.pp
+
+******************************************************************************
 commit d3d4de78186a2aaec323b49c8c8dc5dd677a8f42
 Author: florian <florian@freepascal.org>
 Date:   Sat Aug 20 18:11:24 2022 +0200
