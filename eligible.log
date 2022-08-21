@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 3eb800fac60ac71b84277a16db479060a15e6da5
+Author: marcoonthegit <marco@freepascal.org>
+Date:   Sun Aug 21 14:18:48 2022 +0200
+
+    * merge in different openbsd langinfo.h with some ifdefs.
+     * alternate solution that generates less new files at the expense of a few ifdefs.   bug #29317
+
+M	packages/rtl-extra/src/bsd/clocale.inc
+
+******************************************************************************
 commit c67004d92910ec162f39d76dfb2141dafa5ecdc6
 Author: marcoonthegit <marco@freepascal.org>
 Date:   Sat Aug 20 22:41:36 2022 +0200
