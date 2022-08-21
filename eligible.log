@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 83b455551151c7c808bc5c6bd9eafddb56e264ad
+Author: marcoonthegit <marco@freepascal.org>
+Date:   Sun Aug 21 18:43:34 2022 +0200
+
+    * a few more simple handlers get custom variant intercepts. Also part of #39815
+
+M	packages/rtl-objpas/src/inc/variants.pp
+
+******************************************************************************
 commit 3eb800fac60ac71b84277a16db479060a15e6da5
 Author: marcoonthegit <marco@freepascal.org>
 Date:   Sun Aug 21 14:18:48 2022 +0200
