@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 5af087cfc3ad9a328c3a709e7857fcd27471f359
+Author: florian <florian@freepascal.org>
+Date:   Sun Aug 21 23:03:02 2022 +0200
+
+      * experimental test for #39722, no sure if it will work this way on all platforms
+
+A	tests/webtbs/tw39722.pp
+
+******************************************************************************
 commit 83b455551151c7c808bc5c6bd9eafddb56e264ad
 Author: marcoonthegit <marco@freepascal.org>
 Date:   Sun Aug 21 18:43:34 2022 +0200
