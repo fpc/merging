@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 4f7dffadbbc11c11a7fe4d790a562d3e78e4445e
+Author: florian <florian@freepascal.org>
+Date:   Mon Aug 22 21:33:52 2022 +0200
+
+      * extended test
+
+M	tests/webtbs/tw39722.pp
+
+******************************************************************************
 commit 1d95e6087a37fb9ef776e4322d351035a63ce909
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Mon Aug 22 19:49:05 2022 +0200
