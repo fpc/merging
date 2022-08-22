@@ -1,15 +1,4 @@
 ******************************************************************************
-commit f341baeaa783fff4b50cec8757e3b7a85837bfd7
-Author: marcoonthegit <marco@freepascal.org>
-Date:   Mon Aug 22 13:22:57 2022 +0200
-
-     * fixed ambiguity between pipe(2) with two params and pipe(3) with one that broke -dFPC_USE_LIBC
-
-M	rtl/freebsd/unxfunc.inc
-M	rtl/unix/baseunix.pp
-M	rtl/unix/bunxh.inc
-
-******************************************************************************
 commit 5af087cfc3ad9a328c3a709e7857fcd27471f359
 Author: florian <florian@freepascal.org>
 Date:   Sun Aug 21 23:03:02 2022 +0200
