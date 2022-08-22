@@ -1,4 +1,59 @@
 ******************************************************************************
+commit 1d95e6087a37fb9ef776e4322d351035a63ce909
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Mon Aug 22 19:49:05 2022 +0200
+
+    fcl-web: fixed TCustomWebsocketClient.FreeConnectionObjects
+
+M	packages/fcl-web/src/websocket/fpwebsocketclient.pp
+
+******************************************************************************
+commit 4c9f2b8b25958fb80887205ff74b3df3e4c1c056
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Mon Aug 22 19:29:22 2022 +0200
+
+    fcl-web: TCustomWSServer.OnDisconnect: pass TCustomWebsocketClient as Sender instead of connection
+
+M	packages/fcl-web/src/websocket/fpcustwsserver.pp
+M	packages/fcl-web/src/websocket/fpwebsocketclient.pp
+
+******************************************************************************
+commit 8ebced609c453363e0168b1d3b6baff393817896
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Mon Aug 22 19:14:03 2022 +0200
+
+    fcl-web: comment
+
+M	packages/fcl-web/src/websocket/fpwebsocketserver.pp
+
+******************************************************************************
+commit 87857252a46b212ac383cdd91ce6a028ed9defb1
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Mon Aug 22 19:12:04 2022 +0200
+
+    fcl-web: TCustomWSServer.RemoveConnection: call DoDisconnect on disconnect
+
+M	packages/fcl-web/src/websocket/fpcustwsserver.pp
+
+******************************************************************************
+commit 0b24d5f92e1995fc6afe2dd72a23c8ace29bebce
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Mon Aug 22 19:08:38 2022 +0200
+
+    fcl-web: comments
+
+M	packages/fcl-web/src/websocket/fpcustwsserver.pp
+
+******************************************************************************
+commit 4503070f7f140a7696fd3b9ac445865b90179d84
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Mon Aug 22 18:59:30 2022 +0200
+
+    fcl-web: clean up
+
+M	packages/fcl-web/src/websocket/fpwebsocket.pp
+
+******************************************************************************
 commit 5af087cfc3ad9a328c3a709e7857fcd27471f359
 Author: florian <florian@freepascal.org>
 Date:   Sun Aug 21 23:03:02 2022 +0200
