@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 85c7368759f5fb53aa23e03c8cc27c2deb424b62
+Author: florian <florian@freepascal.org>
+Date:   Wed Aug 24 21:15:18 2022 +0200
+
+      * handle also simulated flags in tmipselnotnode.second_boolean, resolves #39877
+
+M	compiler/mips/ncpumat.pas
+A	tests/webtbs/tw39877.pp
+
+******************************************************************************
 commit 27f8f077d53b0bcea6111023f23c40b0fa54bcc3
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Wed Aug 24 14:13:17 2022 +0200
