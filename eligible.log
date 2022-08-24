@@ -1,4 +1,22 @@
 ******************************************************************************
+commit f8bf34303c62190b66f0cacd081a3c0328c13e99
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Wed Aug 24 09:54:10 2022 +0200
+
+    * Fix from Kevin Jesshope to fix concurrent access in case of CGI
+
+M	packages/fcl-web/src/base/fpmimetypes.pp
+
+******************************************************************************
+commit 87ea9a9e0f5cfbaaa4112fb07f728326214d459c
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Wed Aug 24 09:52:40 2022 +0200
+
+    * Fix from Kevin Jesshope to correct filename detection in CGI app
+
+M	packages/fcl-web/src/base/fpwebfile.pp
+
+******************************************************************************
 commit 2670eb1ce74564d64524a0f5abb8b685894b34aa
 Author: florian <florian@freepascal.org>
 Date:   Tue Aug 23 21:27:44 2022 +0200
