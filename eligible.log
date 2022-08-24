@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 27f8f077d53b0bcea6111023f23c40b0fa54bcc3
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Wed Aug 24 14:13:17 2022 +0200
+
+    * Patch from Luxa Olivetti, fix for issue #33737
+
+M	packages/fcl-db/src/sqldb/postgres/pqconnection.pp
+
+******************************************************************************
 commit f8bf34303c62190b66f0cacd081a3c0328c13e99
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Wed Aug 24 09:54:10 2022 +0200
