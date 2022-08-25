@@ -1,4 +1,44 @@
 ******************************************************************************
+commit ad64eb7af84c366a4b197d981dbec90ba06e22de
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Thu Aug 25 11:56:30 2022 +0200
+
+    webidl: test interface attribute boolean
+
+M	packages/webidl/tests/tcwebidl2wasmjob.pas
+
+******************************************************************************
+commit 0894b5fd029d8e5a2fba8941d4b8e20466ef0613
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Thu Aug 25 11:43:11 2022 +0200
+
+    webidl: added typedef test for wasmjob
+
+A	packages/webidl/tests/tcwebidl2wasmjob.pas
+M	packages/webidl/tests/tcwebidldefs.pp
+M	packages/webidl/tests/testidl.lpi
+M	packages/webidl/tests/testidl.pas
+
+******************************************************************************
+commit 90df440df3f89ef3da3953affa88e13130db30d6
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Thu Aug 25 11:42:17 2022 +0200
+
+    webidl: INputStream, OutputStream, set default unitname, wasmjob: variants
+
+M	packages/webidl/src/webidltopas.pp
+M	packages/webidl/src/webidltowasmjob.pp
+
+******************************************************************************
+commit bdc4297811d2fca79a7c2c02e88fd31b1088ba46
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Thu Aug 25 11:41:20 2022 +0200
+
+    fcl-base: comment
+
+M	packages/fcl-base/src/pascodegen.pp
+
+******************************************************************************
 commit 85c7368759f5fb53aa23e03c8cc27c2deb424b62
 Author: florian <florian@freepascal.org>
 Date:   Wed Aug 24 21:15:18 2022 +0200
