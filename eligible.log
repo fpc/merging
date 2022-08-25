@@ -1,4 +1,45 @@
 ******************************************************************************
+commit 73185e89e1e50c0c39f9d08607465c35bb364d5d
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Thu Aug 25 16:01:12 2022 +0200
+
+    webidl: pass variant args as const
+
+M	packages/webidl/src/webidltopas.pp
+M	packages/webidl/tests/tcwebidl2wasmjob.pas
+
+******************************************************************************
+commit 922210eaa8c6f96a29a909926aa2decad31286d0
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Thu Aug 25 15:47:12 2022 +0200
+
+    webidl: promise: add comment of returntype
+
+M	packages/webidl/src/webidltowasmjob.pp
+M	packages/webidl/tests/tcwebidl2wasmjob.pas
+
+******************************************************************************
+commit 7f4841c76d9e3b3574af03afafa583a6282393de
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Thu Aug 25 15:35:33 2022 +0200
+
+    webidl: Promise as IJSPromise
+
+M	packages/webidl/src/webidltopas.pp
+M	packages/webidl/src/webidltowasmjob.pp
+M	packages/webidl/tests/tcwebidl2wasmjob.pas
+
+******************************************************************************
+commit 0acab89b0b9b7be8451c839a814f70e0a89f91bf
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Thu Aug 25 12:11:39 2022 +0200
+
+    webidl: test interface function setEventHandler
+
+M	packages/webidl/src/webidltowasmjob.pp
+M	packages/webidl/tests/tcwebidl2wasmjob.pas
+
+******************************************************************************
 commit ad64eb7af84c366a4b197d981dbec90ba06e22de
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Thu Aug 25 11:56:30 2022 +0200
