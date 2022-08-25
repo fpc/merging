@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 717d38f0601d506e41b82c222c429c6f98362c55
+Author: florian <florian@freepascal.org>
+Date:   Thu Aug 25 20:40:05 2022 +0200
+
+      * prettier casing of Str* functions, resolves #39879
+
+M	rtl/objpas/sysutils/syspchh.inc
+
+******************************************************************************
 commit 73185e89e1e50c0c39f9d08607465c35bb364d5d
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Thu Aug 25 16:01:12 2022 +0200
