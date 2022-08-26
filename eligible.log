@@ -1,4 +1,23 @@
 ******************************************************************************
+commit 3f24bd38864d884b37aa4c8da025c51a437452cd
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Fri Aug 19 11:52:02 2022 +0100
+
+      * x86: Improved unsigned integer division for when BMI2 is available.
+
+M	compiler/x86/nx86mat.pas
+
+******************************************************************************
+commit 079905654dbb98e0838a18e3d25a86b03889c012
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Sat Aug 20 12:51:26 2022 +0100
+
+      * x86: 64-bit integer division reciprocal algorithm uses IMUL
+        with an immediate for the modulus version where possible
+
+M	compiler/x86/nx86mat.pas
+
+******************************************************************************
 commit 8f2734e1f18b96d4b1e8399fc9fa7d4b322d04d8
 Author: Karoly Balogh <karoly@freepascal.org>
 Date:   Fri Aug 26 12:48:18 2022 +0200
