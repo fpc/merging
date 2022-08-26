@@ -1,4 +1,40 @@
 ******************************************************************************
+commit e5957b1ef0a3bcb7d6d04a24525f0a8634e26ed6
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Fri Aug 26 18:05:13 2022 +0200
+
+    * fix #39875: when a WideString constant is used to initialize a PChar the constant needs to be converted to the current code page
+    + added test
+
+M	compiler/ngtcon.pas
+A	tests/webtbs/tw39875.pp
+
+******************************************************************************
+commit 5135b586cb692ca40e08114cc25cab5f709fda76
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Fri Aug 26 17:42:22 2022 +0200
+
+    * fix #39857: don't trash symbols marked as vo_is_internal
+    + added test
+
+M	compiler/ngenutil.pas
+A	tests/webtbs/tw39857.pp
+
+******************************************************************************
+commit 8595c927a87f661700dce8391bfab95cddd730ba
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Fri Aug 26 17:16:29 2022 +0200
+
+    * fix #39876: correctly Read(Str) enum types which have a size smaller than 4 Byte
+    + added tests
+
+M	compiler/ninl.pas
+M	rtl/inc/compproc.inc
+M	rtl/inc/text.inc
+A	tests/webtbs/tw39876a.pp
+A	tests/webtbs/tw39876b.pp
+
+******************************************************************************
 commit 717d38f0601d506e41b82c222c429c6f98362c55
 Author: florian <florian@freepascal.org>
 Date:   Thu Aug 25 20:40:05 2022 +0200
