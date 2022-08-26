@@ -1,4 +1,13 @@
 ******************************************************************************
+commit f2a5bf17fc9192bcb7ba4c53800e6cbd726c382d
+Author: florian <florian@freepascal.org>
+Date:   Fri Aug 26 21:53:39 2022 +0200
+
+      * improves node complexity calculations
+
+M	compiler/nutils.pas
+
+******************************************************************************
 commit 3d9d80b007dfee801cf5ae9769283733c75d1963
 Author: Karoly Balogh <karoly@freepascal.org>
 Date:   Fri Aug 26 20:29:44 2022 +0200
