@@ -299,17 +299,6 @@ Date:   Fri Aug 19 11:59:50 2022 +0200
 M	compiler/globals.pas
 
 ******************************************************************************
-commit 61debb1559eb3fe499316c673a7bd8a265cd58b7
-Author: Sven/Sarah Barth <pascaldragon@gmail.com>
-Date:   Thu Aug 18 23:09:01 2022 +0200
-
-    * fix #39869: correctly check whether the recorded token stream still needs to be parsed (the replay depth of the scanner needs to be *larger* than what it was before starting the playback)
-    + added test
-
-M	compiler/pgenutil.pas
-A	tests/webtbs/tw39869.pp
-
-******************************************************************************
 commit a2d7503f714ee8ff856efd8d17548fbab928f0ec
 Author: florian <florian@freepascal.org>
 Date:   Thu Aug 18 21:22:16 2022 +0200
@@ -451,17 +440,6 @@ Date:   Sun Aug 14 16:24:19 2022 +0200
        Maybe not the most elegant, but solves the immediately
 
 M	rtl/objpas/fgl.pp
-
-******************************************************************************
-commit 27c1bb3beaa237e9813194205425c312b6308cbd
-Author: Sven/Sarah Barth <pascaldragon@gmail.com>
-Date:   Sun Aug 14 15:42:32 2022 +0200
-
-    * an objectdef also requires an init for its members if a member (or a member of one of the parents) has a complex initialization
-    + added test
-
-M	compiler/symdef.pas
-A	tests/tbs/tb0695.pp
 
 ******************************************************************************
 commit be4a317cb463f031e91527ca4e74ce03c7e3d661
