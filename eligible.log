@@ -1,4 +1,50 @@
 ******************************************************************************
+commit 8f2734e1f18b96d4b1e8399fc9fa7d4b322d04d8
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Fri Aug 26 12:48:18 2022 +0200
+
+    m68k: ignore the mk68kins binary
+
+M	.gitignore
+
+******************************************************************************
+commit ecbd5840cef7db23b6ac4da18061dbead8a9dfa7
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Fri Aug 26 12:46:58 2022 +0200
+
+    m68k-amiga: print offsets during stacktraces, instead of absolute addresses, which are not really helpful in a single address space
+
+M	rtl/amicommon/sysos.inc
+M	rtl/amiga/system.pp
+
+******************************************************************************
+commit 832b566097608a1864baf649e03638603d610ce8
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Fri Aug 26 12:42:21 2022 +0200
+
+    m68k: add a CPU capability to signal the CPU has no 48 bit encodiing limits
+
+M	compiler/m68k/cpuinfo.pas
+
+******************************************************************************
+commit 6c67798272308aee107d13be45ca61f0a7e5c12a
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Fri Aug 26 12:41:25 2022 +0200
+
+    m68k: disable an A_MOVE in the spilling code in an effort to finally try to unbreak paszlib
+
+M	compiler/m68k/rgcpu.pas
+
+******************************************************************************
+commit 7d23c2e9d0f569d3560f774da097ebb443c8c737
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Fri Aug 26 01:19:12 2022 +0200
+
+    m68k: use CPU capabilities at places instead of hardwiring cpu_coldfire
+
+M	compiler/m68k/cgcpu.pas
+
+******************************************************************************
 commit e5957b1ef0a3bcb7d6d04a24525f0a8634e26ed6
 Author: Sven/Sarah Barth <pascaldragon@gmail.com>
 Date:   Fri Aug 26 18:05:13 2022 +0200
