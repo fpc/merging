@@ -1,4 +1,13 @@
 ******************************************************************************
+commit f9a4631adfa3ac07fb46811aaa847691e6de6be1
+Author: florian <florian@freepascal.org>
+Date:   Sat Aug 27 21:21:45 2022 +0200
+
+      * don't switch a+/-/sqr(b) into an fma statement if b is too complex
+
+M	compiler/nadd.pas
+
+******************************************************************************
 commit 3695bb5da509d5ce98ff59c2b0a76da714b61578
 Author: Karoly Balogh <karoly@freepascal.org>
 Date:   Sat Aug 27 19:19:42 2022 +0200
