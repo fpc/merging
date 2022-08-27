@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 3695bb5da509d5ce98ff59c2b0a76da714b61578
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Sat Aug 27 19:19:42 2022 +0200
+
+    powerpc-morphos: enable 'section' keyword support, and force the startup code to be in the .text section, to fix linking external objects with unnamed sections on this platform
+
+M	compiler/systems.pas
+M	rtl/morphos/si_prc.pp
+
+******************************************************************************
 commit f2a5bf17fc9192bcb7ba4c53800e6cbd726c382d
 Author: florian <florian@freepascal.org>
 Date:   Fri Aug 26 21:53:39 2022 +0200
