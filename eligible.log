@@ -1,4 +1,52 @@
 ******************************************************************************
+commit a93942cd272eb048590c7e0ad3a373067853c4da
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Sun Aug 28 21:39:10 2022 +0200
+
+    * correctly convert a single WideChar to a PChar constant with the correct code page
+    + added test
+
+M	compiler/ngtcon.pas
+A	tests/tbs/tb0696.pp
+
+******************************************************************************
+commit 889c164f787fb720314ec1090f725927a06eb69c
+Author: florian <florian@freepascal.org>
+Date:   Sun Aug 28 21:49:38 2022 +0200
+
+      + new test
+
+A	tests/tbf/tb0294.pp
+
+******************************************************************************
+commit 8e9a019fb75cb2098dcfd4ca9e730ab818755feb
+Author: florian <florian@freepascal.org>
+Date:   Sun Aug 28 21:44:33 2022 +0200
+
+      * moved tests to proper location
+
+R100	tests/tbf/tw39485.pp	tests/webtbf/tw39485.pp
+R100	tests/tbf/tw39514.pp	tests/webtbf/tw39514.pp
+
+******************************************************************************
+commit 0440749562b0a7aae0055c4441985be4869403c8
+Author: florian <florian@freepascal.org>
+Date:   Sun Aug 28 21:01:09 2022 +0200
+
+      + test for #39873
+
+A	tests/webtbs/tw39873.pp
+
+******************************************************************************
+commit 7bcefd287d8109ed80190797e33bb5422395436a
+Author: rich2014 <102933068+rich2014@users.noreply.github.com>
+Date:   Sun Aug 21 17:14:34 2022 +0800
+
+    FIX: DARWIN: aarch64: tstatfs.fstypename length error (#39873)
+
+M	rtl/darwin/ptypes.inc
+
+******************************************************************************
 commit f9a4631adfa3ac07fb46811aaa847691e6de6be1
 Author: florian <florian@freepascal.org>
 Date:   Sat Aug 27 21:21:45 2022 +0200
