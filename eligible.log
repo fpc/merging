@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 5a60eac0c816b8d4c107d5d0f751ce487f70df61
+Author: florian <florian@freepascal.org>
+Date:   Mon Aug 29 21:36:03 2022 +0200
+
+      + MovzMovz2Movz optimization
+
+M	compiler/aarch64/aoptcpu.pas
+
+******************************************************************************
 commit a93942cd272eb048590c7e0ad3a373067853c4da
 Author: Sven/Sarah Barth <pascaldragon@gmail.com>
 Date:   Sun Aug 28 21:39:10 2022 +0200
