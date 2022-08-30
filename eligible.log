@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 92e5ede3478073799ed5df091349fb4b90635e92
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Tue Aug 30 10:42:26 2022 +0200
+
+    m68k: fixed the capabilities flags inverted logic issues committed in 7d23c2e9
+
+M	compiler/m68k/cgcpu.pas
+
+******************************************************************************
 commit 5a60eac0c816b8d4c107d5d0f751ce487f70df61
 Author: florian <florian@freepascal.org>
 Date:   Mon Aug 29 21:36:03 2022 +0200
