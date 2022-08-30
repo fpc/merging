@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 76aa9b1f8b23c74a174dc436b3865b7fa5c1d7af
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Tue Aug 30 12:46:38 2022 +0200
+
+    * Call CheckSession before handling request, but after handling CORS
+
+M	packages/fcl-web/src/jsonrpc/webjsonrpc.pp
+
+******************************************************************************
 commit 92e5ede3478073799ed5df091349fb4b90635e92
 Author: Karoly Balogh <karoly@freepascal.org>
 Date:   Tue Aug 30 10:42:26 2022 +0200
