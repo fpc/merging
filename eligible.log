@@ -1,4 +1,13 @@
 ******************************************************************************
+commit fd83fd5779e5f19373202c57209f648bae072640
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Wed Aug 31 22:14:06 2022 +0200
+
+    m68k-linux: try to be as ColdFire compatible in the startup code as possible, so explicitly use jsr, otherwise this might compile to a long bsr, that is not CF compatible (except cfv4)
+
+M	rtl/linux/m68k/prt0.as
+
+******************************************************************************
 commit fd94b6db913cf9c38ee03a179ecc180ef52db711
 Author: florian <florian@freepascal.org>
 Date:   Wed Aug 31 20:43:49 2022 +0200
