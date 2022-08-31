@@ -1,4 +1,49 @@
 ******************************************************************************
+commit fd94b6db913cf9c38ee03a179ecc180ef52db711
+Author: florian <florian@freepascal.org>
+Date:   Wed Aug 31 20:43:49 2022 +0200
+
+      * fix for TCpuAsmOptimizer.OptPass1SXTW
+
+M	compiler/aarch64/aoptcpu.pas
+
+******************************************************************************
+commit 018c1e5dfdcf49b3e7d5e3035ddb089b3cfc2897
+Author: florian <florian@freepascal.org>
+Date:   Wed Aug 31 20:36:46 2022 +0200
+
+      * cosmetics
+
+M	compiler/armgen/aoptarm.pas
+
+******************************************************************************
+commit 8a0498622b029a9c1150347f45a2fa310099a2d0
+Author: florian <florian@freepascal.org>
+Date:   Wed Aug 31 20:33:59 2022 +0200
+
+      + AArchz64: TCpuAsmOptimizer.OptPass1SXTW
+
+M	compiler/aarch64/aoptcpu.pas
+
+******************************************************************************
+commit 2931b43000b5950b345e8f2aba87ec384e36b284
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Thu May 12 23:17:21 2022 +0100
+
+      * New test for #39713
+
+A	tests/webtbs/tw39713.pp
+
+******************************************************************************
+commit 798a4d76117736af4bafb662ecaacf66f0c45be4
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Thu May 12 09:00:41 2022 +0100
+
+      * Fix to bug that would reset nf_write flag on tempref nodes in assignments
+
+M	compiler/ninl.pas
+
+******************************************************************************
 commit 89dbfd0d990d3b3b193c51b9d699999b19816534
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Wed Aug 31 19:14:52 2022 +0200
