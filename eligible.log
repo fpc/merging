@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 89dbfd0d990d3b3b193c51b9d699999b19816534
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Wed Aug 31 19:14:52 2022 +0200
+
+    pastojs: fixed search inc file
+
+M	packages/pastojs/src/pas2jsfilecache.pp
+
+******************************************************************************
 commit 76aa9b1f8b23c74a174dc436b3865b7fa5c1d7af
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Tue Aug 30 12:46:38 2022 +0200
