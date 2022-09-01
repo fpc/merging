@@ -1,4 +1,13 @@
 ******************************************************************************
+commit a8b4d702e206df803a1aca1205283d98cf350f9b
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Thu Sep 1 20:43:14 2022 +0200
+
+    webidl: wasmjob: use const for class function cast
+
+M	packages/webidl/src/webidltowasmjob.pp
+
+******************************************************************************
 commit fd83fd5779e5f19373202c57209f648bae072640
 Author: Karoly Balogh <karoly@freepascal.org>
 Date:   Wed Aug 31 22:14:06 2022 +0200
