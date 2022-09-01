@@ -1,4 +1,41 @@
 ******************************************************************************
+commit 9061fba9ff2599442b5fd214efaa2789c34a261b
+Author: florian <florian@freepascal.org>
+Date:   Thu Sep 1 22:01:03 2022 +0200
+
+      * refactoring
+      * cosmetics
+
+M	compiler/armgen/aoptarm.pas
+
+******************************************************************************
+commit ad1c19864d20b4fb311f8e74ace511a58c40cdc8
+Author: florian <florian@freepascal.org>
+Date:   Thu Sep 1 21:44:01 2022 +0200
+
+      * small refactoring
+
+M	compiler/aarch64/aoptcpu.pas
+
+******************************************************************************
+commit 9adcc891cf8bff2098fd9360ae1b4d5d508213c1
+Author: florian <florian@freepascal.org>
+Date:   Thu Sep 1 21:35:28 2022 +0200
+
+      + Aarch64: SxtwOp2Op optimization
+
+M	compiler/aarch64/aoptcpu.pas
+
+******************************************************************************
+commit 29495c9ba57dce83d6753ed19e301855ea37f035
+Author: florian <florian@freepascal.org>
+Date:   Thu Sep 1 21:07:32 2022 +0200
+
+      * refactor TCpuAsmOptimizer.OptPass1SXTW
+
+M	compiler/aarch64/aoptcpu.pas
+
+******************************************************************************
 commit a8b4d702e206df803a1aca1205283d98cf350f9b
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Thu Sep 1 20:43:14 2022 +0200
