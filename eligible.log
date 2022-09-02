@@ -1,4 +1,31 @@
 ******************************************************************************
+commit 4846bd78fb0e7f1199ed3d5f52b5099bb183ccc8
+Author: florian <florian@freepascal.org>
+Date:   Fri Sep 2 22:18:39 2022 +0200
+
+      * building of arm compiler fixed
+
+M	compiler/armgen/aoptarm.pas
+
+******************************************************************************
+commit c1db756617aaa5ed0477ce48292b44e1bb997179
+Author: florian <florian@freepascal.org>
+Date:   Fri Sep 2 22:01:46 2022 +0200
+
+      + ARM/Aarch64: *xt*Op2Op optimizations
+
+M	compiler/armgen/aoptarm.pas
+
+******************************************************************************
+commit cebb47fe9aa7298b8ff50bc2963266f78ce4830e
+Author: florian <florian@freepascal.org>
+Date:   Fri Sep 2 21:26:20 2022 +0200
+
+      * factor out GetNextInstructionUsingReg calls in TARMAsmOptimizer.OptPass1*XT*
+
+M	compiler/armgen/aoptarm.pas
+
+******************************************************************************
 commit 9061fba9ff2599442b5fd214efaa2789c34a261b
 Author: florian <florian@freepascal.org>
 Date:   Thu Sep 1 22:01:03 2022 +0200
