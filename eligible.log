@@ -1,4 +1,23 @@
 ******************************************************************************
+commit 5cbb36f218ebb40c708c29b342ecbf43e7ffc6ba
+Author: florian <florian@freepascal.org>
+Date:   Sat Sep 3 19:12:00 2022 +0200
+
+      * factor out TARMAsmOptimizer.USxtOp2Op
+
+M	compiler/aarch64/aoptcpu.pas
+M	compiler/armgen/aoptarm.pas
+
+******************************************************************************
+commit ed7b0c5e68bd870faadb6fdb8b24969cb434b78b
+Author: florian <florian@freepascal.org>
+Date:   Sat Sep 3 19:03:48 2022 +0200
+
+      * AArch64: extended SxtwMov2Data to CMP and CMN
+
+M	compiler/aarch64/aoptcpu.pas
+
+******************************************************************************
 commit 4846bd78fb0e7f1199ed3d5f52b5099bb183ccc8
 Author: florian <florian@freepascal.org>
 Date:   Fri Sep 2 22:18:39 2022 +0200
