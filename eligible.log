@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 4b1978026a3c63f1de96e8e310b4535e2b2d4197
+Author: florian <florian@freepascal.org>
+Date:   Sun Sep 4 20:37:43 2022 +0200
+
+      * more use of USxtOp2Op
+
+M	compiler/armgen/aoptarm.pas
+
+******************************************************************************
 commit 5cbb36f218ebb40c708c29b342ecbf43e7ffc6ba
 Author: florian <florian@freepascal.org>
 Date:   Sat Sep 3 19:12:00 2022 +0200
