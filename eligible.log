@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 645fe8a0c309f3c33297509b977ba76954edc05e
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Sun Aug 28 14:18:36 2022 +0100
+
+      * x86: EDX is now deallocated before MULX instructions in the "magic div" algorithm so it can be used as the destination
+
+M	compiler/x86/nx86mat.pas
+
+******************************************************************************
 commit 4b1978026a3c63f1de96e8e310b4535e2b2d4197
 Author: florian <florian@freepascal.org>
 Date:   Sun Sep 4 20:37:43 2022 +0200
