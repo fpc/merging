@@ -1,4 +1,13 @@
 ******************************************************************************
+commit f097d1ea353382bdab42490a2cc91d239de82e24
+Author: florian <florian@freepascal.org>
+Date:   Mon Sep 5 23:22:53 2022 +0200
+
+      * use the bts instruction on x86 if possible, the reg,reg variant is better than a mov/shl/or sequence
+
+M	compiler/x86/nx86add.pas
+
+******************************************************************************
 commit 645fe8a0c309f3c33297509b977ba76954edc05e
 Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
 Date:   Sun Aug 28 14:18:36 2022 +0100
