@@ -1,4 +1,35 @@
 ******************************************************************************
+commit 4e0b9e85341bcac28c1f146cab638d29390edef8
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Mon Sep 5 22:39:18 2022 +0200
+
+    fcl-css: keep exception stack traces, fixed parsing empty rule
+
+M	packages/fcl-css/src/fpcssparser.pp
+
+******************************************************************************
+commit 051c5fc7b6f76bdc9f740718f1ff2a48281178cb
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Mon Sep 5 22:38:40 2022 +0200
+
+    fcl-css: StringToCSSString: fixed advancing utf-8
+
+M	packages/fcl-css/src/fpcsstree.pp
+
+******************************************************************************
+commit e01ab79823d0e31dfebe5dc9d5807ec04a4c63e1
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Mon Sep 5 22:37:28 2022 +0200
+
+    fcl-css: added test lpi, ignore lib, run from other dir, cleaned up
+
+M	packages/fcl-css/tests/.gitignore
+M	packages/fcl-css/tests/tccssparser.pp
+M	packages/fcl-css/tests/tccssscanner.pp
+A	packages/fcl-css/tests/testcss.lpi
+M	packages/fcl-css/tests/testcss.lpr
+
+******************************************************************************
 commit f097d1ea353382bdab42490a2cc91d239de82e24
 Author: florian <florian@freepascal.org>
 Date:   Mon Sep 5 23:22:53 2022 +0200
