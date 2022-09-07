@@ -1,4 +1,13 @@
 ******************************************************************************
+commit b6a7504665b4382c0f879dc8d82c0bd4ea4efa41
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Wed Sep 7 20:08:13 2022 +0200
+
+    fcl-css: TCSSStringElement = Class(TCSSBaseStringElement)
+
+M	packages/fcl-css/src/fpcsstree.pp
+
+******************************************************************************
 commit 3a11ee9a14ae2e43449db6acdfd9e1312cde68a5
 Author: florian <florian@freepascal.org>
 Date:   Tue Sep 6 21:42:10 2022 +0200
