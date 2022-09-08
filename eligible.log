@@ -1,4 +1,13 @@
 ******************************************************************************
+commit bc100eda4d4bb811d63a265a4f13bcce76b64fce
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Thu Sep 8 13:10:52 2022 +0200
+
+    * Patch from Luca Olivetti to fix memleak in CORS support. Fixes issue #39886
+
+M	packages/fcl-web/src/base/fphttp.pp
+
+******************************************************************************
 commit b6a7504665b4382c0f879dc8d82c0bd4ea4efa41
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Wed Sep 7 20:08:13 2022 +0200
