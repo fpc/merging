@@ -1,4 +1,31 @@
 ******************************************************************************
+commit de586e55c0a5376939753c86787645c84264b44c
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Thu Sep 8 14:59:38 2022 +0200
+
+    fcl-css: added GetCSSPath
+
+M	packages/fcl-css/src/fpcsstree.pp
+
+******************************************************************************
+commit a40a3ee34dc8d30bf968d5becfc0295b53226025
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Thu Sep 8 14:36:04 2022 +0200
+
+    fcl-csss: comment
+
+M	packages/fcl-css/src/fpcssutils.pp
+
+******************************************************************************
+commit e244c7bbb2092db39637c83b34a428631f90a5a7
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Thu Sep 8 14:35:50 2022 +0200
+
+    fcl-css: added TCSSElement.Parent
+
+M	packages/fcl-css/src/fpcsstree.pp
+
+******************************************************************************
 commit bc100eda4d4bb811d63a265a4f13bcce76b64fce
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Thu Sep 8 13:10:52 2022 +0200
