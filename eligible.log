@@ -1,4 +1,44 @@
 ******************************************************************************
+commit a7e983b08abf4d384fd84a1f7f42579fa93c384e
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Fri Sep 9 23:26:06 2022 +0200
+
+    fcl-css: updated fpmake
+
+M	packages/fcl-css/fpmake.pp
+
+******************************************************************************
+commit 2d1510e067311b17d450b3904b7528cbcd52fdb3
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Fri Sep 9 23:21:45 2022 +0200
+
+    fcl-css: started TCSSResolver
+
+A	packages/fcl-css/src/fpcssresolver.pas
+M	packages/fcl-css/tests/tccssparser.pp
+A	packages/fcl-css/tests/tccssresolver.pp
+M	packages/fcl-css/tests/testcss.lpi
+M	packages/fcl-css/tests/testcss.lpr
+
+******************************************************************************
+commit 23098d049ddd5f65cef550a478a6734f579f0756
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Fri Sep 9 23:18:55 2022 +0200
+
+    fcl-css: fixed mode
+
+M	packages/fcl-css/src/fpcssparser.pp
+
+******************************************************************************
+commit 72466cac467bbb1da954bd6a5891ed1ae1eacb34
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Fri Sep 9 23:18:28 2022 +0200
+
+    fcl-css: TCSSIntegerElement.GetAsString: append units
+
+M	packages/fcl-css/src/fpcsstree.pp
+
+******************************************************************************
 commit 63a2395e2c552f5b983406f20b88dd364458bf09
 Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
 Date:   Wed Sep 7 17:37:49 2022 +0100
