@@ -1,4 +1,16 @@
 ******************************************************************************
+commit a2c518285c6460734fd700d5d922540db556014a
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Sat Sep 10 12:53:03 2022 +0200
+
+    fcl-css: selector child combinator
+
+M	packages/fcl-css/src/fpcssresolver.pas
+M	packages/fcl-css/src/fpcssscanner.pp
+M	packages/fcl-css/src/fpcsstree.pp
+M	packages/fcl-css/tests/tccssresolver.pp
+
+******************************************************************************
 commit a7e983b08abf4d384fd84a1f7f42579fa93c384e
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Fri Sep 9 23:26:06 2022 +0200
