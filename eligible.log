@@ -1,4 +1,14 @@
 ******************************************************************************
+commit a6afacd63303bee50cb04ca5d5a13c5c79c8158e
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Sat Sep 10 13:40:23 2022 +0200
+
+    fcl-css: resolver: adjacent and general sibling combinator
+
+M	packages/fcl-css/src/fpcssresolver.pas
+M	packages/fcl-css/tests/tccssresolver.pp
+
+******************************************************************************
 commit a2c518285c6460734fd700d5d922540db556014a
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Sat Sep 10 12:53:03 2022 +0200
