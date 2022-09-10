@@ -1,4 +1,14 @@
 ******************************************************************************
+commit a23a4805f4b8dbf76c6472db14825350341e0405
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Sat Sep 10 15:56:38 2022 +0200
+
+    fcl-css: resolver: has attribute check
+
+M	packages/fcl-css/src/fpcssresolver.pas
+M	packages/fcl-css/tests/tccssresolver.pp
+
+******************************************************************************
 commit a6afacd63303bee50cb04ca5d5a13c5c79c8158e
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Sat Sep 10 13:40:23 2022 +0200
