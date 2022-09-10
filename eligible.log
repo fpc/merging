@@ -1,4 +1,19 @@
 ******************************************************************************
+commit b33ae75c591490b85a09300dac1f912ab8cade93
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Sun Sep 11 00:47:40 2022 +0200
+
+    fcl-css: attribute selector operations
+
+M	packages/fcl-css/src/fpcssparser.pp
+M	packages/fcl-css/src/fpcssresolver.pas
+M	packages/fcl-css/src/fpcssscanner.pp
+M	packages/fcl-css/src/fpcsstree.pp
+M	packages/fcl-css/tests/tccssparser.pp
+M	packages/fcl-css/tests/tccssresolver.pp
+M	packages/fcl-css/tests/tccsstree.pp
+
+******************************************************************************
 commit 6cbb3d982d3f547ad09a73aaf5939c6092ae3aab
 Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
 Date:   Wed Sep 7 17:07:05 2022 +0100
