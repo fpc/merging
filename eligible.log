@@ -1,4 +1,25 @@
 ******************************************************************************
+commit c3d0d3edd3652c5448c9fdb9470e707841ac46fd
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Sun Sep 11 22:13:36 2022 +0200
+
+    fcl-css: tests for :first-of-type, :last-of-type
+
+M	packages/fcl-css/src/fpcssresolver.pas
+M	packages/fcl-css/tests/tccssresolver.pp
+
+******************************************************************************
+commit db499b61c0a030b0c9cddac026e854d540ed600e
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Sun Sep 11 21:44:07 2022 +0200
+
+    fcl-css: resolver: :root
+
+M	packages/fcl-css/src/fpcssresolver.pas
+M	packages/fcl-css/tests/tccssresolver.pp
+M	packages/fcl-css/tests/tccsstree.pp
+
+******************************************************************************
 commit b33ae75c591490b85a09300dac1f912ab8cade93
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Sun Sep 11 00:47:40 2022 +0200
