@@ -1,4 +1,23 @@
 ******************************************************************************
+commit 3e9fd9073fbb232f34b914e8fced3691bfbaa496
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Sun Sep 11 23:16:19 2022 +0200
+
+    fcl-css: resolver: invalid selectors
+
+M	packages/fcl-css/src/fpcssresolver.pas
+M	packages/fcl-css/tests/tccssresolver.pp
+
+******************************************************************************
+commit e024fdc5d7a5ff55e3ff96ed11ebd921fd582d78
+Author: florian <florian@freepascal.org>
+Date:   Sun Sep 11 22:42:58 2022 +0200
+
+      * cleanup
+
+M	compiler/nutils.pas
+
+******************************************************************************
 commit c3d0d3edd3652c5448c9fdb9470e707841ac46fd
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Sun Sep 11 22:13:36 2022 +0200
