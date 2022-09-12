@@ -1,4 +1,32 @@
 ******************************************************************************
+commit a429b4743640ba738a9f178458ec8110f2f13615
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Mon Sep 12 10:12:12 2022 +0200
+
+    pastojs: added const
+
+M	packages/pastojs/src/pas2jscompiler.pp
+
+******************************************************************************
+commit 7ce609e72168df2869aa355afaa22edd4e14ef91
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Mon Sep 12 10:10:26 2022 +0200
+
+    fcl-css: empty and class
+
+M	packages/fcl-css/src/fpcssresolver.pas
+M	packages/fcl-css/tests/tccssresolver.pp
+
+******************************************************************************
+commit a6dd77e32a3e7c802c578890214bc39504e991c2
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Sun Sep 11 23:48:04 2022 +0200
+
+    fcl-css: fixed ~= searching only words separated by whitespace
+
+M	packages/fcl-css/src/fpcssresolver.pas
+
+******************************************************************************
 commit 3e9fd9073fbb232f34b914e8fced3691bfbaa496
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Sun Sep 11 23:16:19 2022 +0200
