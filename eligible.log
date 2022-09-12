@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 9848349610219cd0d2dadc67b112fb09a8317e91
+Author: florian <florian@freepascal.org>
+Date:   Mon Sep 12 23:07:11 2022 +0200
+
+      * allocate registers correctly for method pointers on 16 bit address cpus, resolves #39603
+
+M	compiler/ncgld.pas
+
+******************************************************************************
 commit d4a74319389a0319f28cb6947f53bcb46d609539
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Mon Sep 12 22:19:31 2022 +0200
