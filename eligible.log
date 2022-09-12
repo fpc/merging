@@ -1,4 +1,13 @@
 ******************************************************************************
+commit eff489a37a09c7607da289c96365cbf12e8c755f
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Mon Sep 12 10:56:48 2022 +0200
+
+    webidl: fixed compile with fpc 3.2.2
+
+M	packages/webidl/src/webidlparser.pp
+
+******************************************************************************
 commit a429b4743640ba738a9f178458ec8110f2f13615
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Mon Sep 12 10:12:12 2022 +0200
