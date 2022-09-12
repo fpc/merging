@@ -1,4 +1,27 @@
 ******************************************************************************
+commit d4a74319389a0319f28cb6947f53bcb46d609539
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Mon Sep 12 22:19:31 2022 +0200
+
+    fcl-css: test inline style
+
+M	packages/fcl-css/src/fpcssparser.pp
+M	packages/fcl-css/src/fpcssresolver.pas
+M	packages/fcl-css/tests/tccssresolver.pp
+
+******************************************************************************
+commit 02f41731ebc658a56b7708f7584bd5010103f054
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Mon Sep 12 22:18:24 2022 +0200
+
+    pastojs: fixed concat array of record and static array
+
+M	packages/fcl-passrc/tests/tcresolver.pas
+M	packages/pastojs/src/fppas2js.pp
+M	packages/pastojs/tests/tcmodules.pas
+M	utils/pas2js/dist/rtl.js
+
+******************************************************************************
 commit eff489a37a09c7607da289c96365cbf12e8c755f
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Mon Sep 12 10:56:48 2022 +0200
