@@ -141,15 +141,6 @@ Date:   Wed Sep 7 17:03:19 2022 +0100
 M	compiler/x86/rgx86.pas
 
 ******************************************************************************
-commit e9c278b9f127fccd9b577bb91011634839561152
-Author: mattias <nc-gaertnma@netcologne.de>
-Date:   Sat Sep 10 16:22:11 2022 +0200
-
-    fpdoc: fixed ElementType, issue 39887
-
-M	utils/fpdoc/dw_chm.pp
-
-******************************************************************************
 commit a23a4805f4b8dbf76c6472db14825350341e0405
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Sat Sep 10 15:56:38 2022 +0200
