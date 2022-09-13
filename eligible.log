@@ -1,4 +1,13 @@
 ******************************************************************************
+commit cc7d67d08cca783f2d0f439b24285a526e9185f5
+Author: florian <florian@freepascal.org>
+Date:   Tue Sep 13 22:30:52 2022 +0200
+
+      * i8086 compiler fixed after 9848349610219cd0d2dadc67b112fb09a8317e91
+
+M	compiler/ncgld.pas
+
+******************************************************************************
 commit 9848349610219cd0d2dadc67b112fb09a8317e91
 Author: florian <florian@freepascal.org>
 Date:   Mon Sep 12 23:07:11 2022 +0200
