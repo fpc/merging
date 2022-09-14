@@ -1,4 +1,22 @@
 ******************************************************************************
+commit 6a0e8feeba03a1c89ea7dd6f7c13b2aeeca4a81a
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Wed Sep 14 21:49:39 2022 +0200
+
+    fcl-css: fixed compile
+
+M	packages/fcl-css/src/fpcssresolver.pas
+
+******************************************************************************
+commit 9156d1025732c0744a2b8cfb8d5295333a1cf94d
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Wed Sep 14 21:44:18 2022 +0200
+
+    fcl-css: test
+
+M	packages/fcl-css/tests/tccssresolver.pp
+
+******************************************************************************
 commit 11373226348f53234c333d25deae715d687172b9
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Wed Sep 14 20:00:00 2022 +0200
