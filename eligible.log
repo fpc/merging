@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 11373226348f53234c333d25deae715d687172b9
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Wed Sep 14 20:00:00 2022 +0200
+
+    fcl-css: started calls
+
+M	packages/fcl-css/src/fpcssresolver.pas
+M	packages/fcl-css/tests/tccssresolver.pp
+
+******************************************************************************
 commit 843ef82002b2477bc09713f80259a965c408f7f5
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Wed Sep 14 17:05:12 2022 +0200
