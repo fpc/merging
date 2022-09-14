@@ -1,4 +1,39 @@
 ******************************************************************************
+commit 843ef82002b2477bc09713f80259a965c408f7f5
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Wed Sep 14 17:05:12 2022 +0200
+
+    fcl-css: attribute value integer
+
+M	packages/fcl-css/src/fpcssparser.pp
+M	packages/fcl-css/tests/tccssresolver.pp
+
+******************************************************************************
+commit a9fb193b1c308a0a052d394386766a3232153a3d
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Wed Sep 14 16:55:02 2022 +0200
+
+    fcl-css: descendant combinator
+
+M	packages/fcl-css/src/fpcssresolver.pas
+
+******************************************************************************
+commit 0c4d61b3ded37eb1dbc6c567411c599beea91dea
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Wed Sep 14 16:48:44 2022 +0200
+
+    fcl-css: added two char tokens, parse descendant combinator as binary op
+
+M	packages/fcl-css/src/fpcssparser.pp
+M	packages/fcl-css/src/fpcssresolver.pas
+M	packages/fcl-css/src/fpcssscanner.pp
+M	packages/fcl-css/src/fpcsstree.pp
+M	packages/fcl-css/tests/tccssparser.pp
+M	packages/fcl-css/tests/tccssresolver.pp
+M	packages/fcl-css/tests/tccssscanner.pp
+M	packages/fcl-css/tests/tccsstree.pp
+
+******************************************************************************
 commit cc7d67d08cca783f2d0f439b24285a526e9185f5
 Author: florian <florian@freepascal.org>
 Date:   Tue Sep 13 22:30:52 2022 +0200
