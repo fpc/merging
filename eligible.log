@@ -1,4 +1,27 @@
 ******************************************************************************
+commit abed465c089b9b046b44fedafc7aed6720ea12b5
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Thu Sep 15 16:01:23 2022 +0200
+
+    fcl-css: fixed skipping invalid, skip utf8bom, nth-child
+
+M	packages/fcl-css/src/fpcssparser.pp
+M	packages/fcl-css/src/fpcssresolver.pas
+M	packages/fcl-css/src/fpcssscanner.pp
+M	packages/fcl-css/tests/tccssparser.pp
+M	packages/fcl-css/tests/tccssresolver.pp
+M	packages/fcl-css/tests/testcss.lpi
+
+******************************************************************************
+commit 18a226962291704c2edfe4a0daf196c41305ec55
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Mon Aug 1 17:16:01 2022 +0200
+
+    fcl-base: fixed local names
+
+M	packages/fcl-base/src/pascodegen.pp
+
+******************************************************************************
 commit 8a6ee0055ad5109e050d293c9a92529484899be2
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Thu Sep 15 10:52:25 2022 +0200
