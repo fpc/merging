@@ -1,4 +1,15 @@
 ******************************************************************************
+commit 8a6ee0055ad5109e050d293c9a92529484899be2
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Thu Sep 15 10:52:25 2022 +0200
+
+    fcl-css: started skipping invalid selectors
+
+M	packages/fcl-css/src/fpcssparser.pp
+M	packages/fcl-css/src/fpcssscanner.pp
+M	packages/fcl-css/tests/tccssparser.pp
+
+******************************************************************************
 commit f562a8d9fdaccdfd630db4792ec4e0ba3a8d6e58
 Author: florian <florian@freepascal.org>
 Date:   Wed Sep 14 22:34:20 2022 +0200
