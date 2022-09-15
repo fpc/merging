@@ -1,4 +1,15 @@
 ******************************************************************************
+commit 62a57bf82ef45c28142baa6f07d3b9b8873b7d57
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Thu Sep 15 22:57:05 2022 +0200
+
+    * fix #39903: correctly parse anonymous function references in records (and classes/objects)
+    + added test
+
+M	compiler/pdecvar.pas
+A	tests/webtbs/tw39903.pp
+
+******************************************************************************
 commit abed465c089b9b046b44fedafc7aed6720ea12b5
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Thu Sep 15 16:01:23 2022 +0200
