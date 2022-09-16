@@ -1,4 +1,26 @@
 ******************************************************************************
+commit e21186cac0739d0a8290759c551a3feceb1b4360
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Fri Sep 16 15:14:22 2022 +0200
+
+    * fix #39902: in case of mode ObjFPC function pointers passed to parameters need to be checked for the correct procdef as well
+    + added adjusted/extended test
+
+M	compiler/htypechk.pas
+A	tests/webtbs/tw39902b.pp
+
+******************************************************************************
+commit 13fb30c52ef398c3c8a82c262ea64bb83567fe55
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Fri Sep 16 15:12:48 2022 +0200
+
+    * fix #39902: correctly handle assignment of procvars to properties with a field write accessor
+    + added adjusted/extended test
+
+M	compiler/pexpr.pas
+A	tests/webtbs/tw39902a.pp
+
+******************************************************************************
 commit 68253e2a738a32d47259137de23d67c5adc1d228
 Author: Jonas Maebe <jonas-devlists@watlock.be>
 Date:   Fri Sep 16 15:21:25 2022 +0200
