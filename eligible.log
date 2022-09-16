@@ -1,4 +1,24 @@
 ******************************************************************************
+commit b8723226787a98cd1bb7a1020dc0e73029991df3
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Tue Aug 16 03:40:29 2022 +0100
+
+      * x86: New "shr %cl; shr x" swap optimisation
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
+commit 6757bf3832ddfe5cc0fd488e98b20d5245fbe8bd
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Mon Aug 15 06:56:00 2022 +0100
+
+      * x86: New SHR-based optimisations
+
+M	compiler/i386/aoptcpu.pas
+M	compiler/x86/aoptx86.pas
+M	compiler/x86_64/aoptcpu.pas
+
+******************************************************************************
 commit e21186cac0739d0a8290759c551a3feceb1b4360
 Author: Sven/Sarah Barth <pascaldragon@gmail.com>
 Date:   Fri Sep 16 15:14:22 2022 +0200
