@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 68253e2a738a32d47259137de23d67c5adc1d228
+Author: Jonas Maebe <jonas-devlists@watlock.be>
+Date:   Fri Sep 16 15:21:25 2022 +0200
+
+    Missing file from b26703feaa9
+
+A	compiler/versioncmp.pas
+
+******************************************************************************
 commit d1d0afe337c11f386fc189630265b6142f5f734a
 Author: Sven/Sarah Barth <pascaldragon@gmail.com>
 Date:   Fri Sep 16 14:32:25 2022 +0200
