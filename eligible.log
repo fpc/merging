@@ -1,4 +1,22 @@
 ******************************************************************************
+commit d1d0afe337c11f386fc189630265b6142f5f734a
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Fri Sep 16 14:32:25 2022 +0200
+
+    * handle_calling_convention is only needed for a function reference used in a record/class/object when it's an anonymous one
+
+M	compiler/pdecvar.pas
+
+******************************************************************************
+commit c43f671baa06671d2aa86653f3925b9dc8f74c4d
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Fri Sep 16 14:31:57 2022 +0200
+
+    * check whether the hdef is still a procvardef before accessing it as such
+
+M	compiler/pdecvar.pas
+
+******************************************************************************
 commit b0e1867b4c2658568d72cb1d023a5a010d483825
 Author: Jonas Maebe <jonas-devlists@watlock.be>
 Date:   Sun Sep 11 21:24:00 2022 +0200
