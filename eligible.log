@@ -1,4 +1,128 @@
 ******************************************************************************
+commit b0e1867b4c2658568d72cb1d023a5a010d483825
+Author: Jonas Maebe <jonas-devlists@watlock.be>
+Date:   Sun Sep 11 21:24:00 2022 +0200
+
+    symcreat: support for scanner/parser escape sequences
+    
+    Support escape sequences when parsing internally generated code. Used for now
+    to force interpreting certain identifiers as unit/namespace identifiers.
+
+M	compiler/finput.pas
+M	compiler/scanner.pas
+M	compiler/symcreat.pas
+M	compiler/symtable.pas
+
+******************************************************************************
+commit e746cf96daffc2365178a934dcd1eb28ac955f4c
+Author: Jonas Maebe <jonas-devlists@watlock.be>
+Date:   Sat Sep 10 10:49:54 2022 +0200
+
+    Overload selection: call procvars if result is compatible with parameter
+    
+    Previously we only autmatically called procvars without parameters in TP/Delphi
+    modes if their result type was equal to the parameter type to which they were
+    passed. Resolves #39748.
+
+M	compiler/htypechk.pas
+A	tests/webtbs/tw39748.pp
+A	tests/webtbs/tw39748a.pp
+
+******************************************************************************
+commit 136022a7b2f24e0005aa966f84042815d6d50187
+Author: Jonas Maebe <jonas-devlists@watlock.be>
+Date:   Fri Sep 9 21:06:08 2022 +0200
+
+    objc: stop generating coalesced sections
+    
+    When targeting >= Mac OS X 10.6, don't generate coalesced sections anymore
+    because they are deprecated. Resolves #39818
+
+M	compiler/objcgutl.pas
+
+******************************************************************************
+commit df3a0af7e0574f160e3934175b9ae4252269a1d0
+Author: Jonas Maebe <jonas-devlists@watlock.be>
+Date:   Fri Sep 9 18:45:37 2022 +0200
+
+    objc: use compile-time macOS version checks
+    
+    Use "modern" APIs for calling inherited messages when targeting Mac OS X 10.6
+    or later
+
+M	compiler/ncal.pas
+M	compiler/objcutil.pas
+
+******************************************************************************
+commit b26703feaa97b31004bf833428a0a7cf8315e1fb
+Author: Jonas Maebe <jonas-devlists@watlock.be>
+Date:   Fri Sep 9 15:00:43 2022 +0200
+
+    Darwin version comparisons: factored out into object
+    
+    Use numeric instead of string comparisons
+
+M	compiler/cutils.pas
+M	compiler/globals.pas
+M	compiler/llvm/nllvmutil.pas
+M	compiler/options.pas
+M	compiler/systems/t_darwin.pas
+M	compiler/triplet.pas
+
+******************************************************************************
+commit 657b9a62033085763aef3004e928f56abb9bbc7b
+Author: Jonas Maebe <jonas-devlists@watlock.be>
+Date:   Thu Sep 8 11:09:57 2022 +0200
+
+    LLVM: support for -Sv (manual vector usage)
+    
+    Override register type for vectors to "integer registers" because we don't
+    use mmregister on LLVM (they're all virtual, so it doesn't matter)
+
+M	compiler/llvm/hlcgllvm.pas
+M	compiler/llvm/nllvmadd.pas
+
+******************************************************************************
+commit f51798e449aa229723742425342b84f41025791e
+Author: Jonas Maebe <jonas-devlists@watlock.be>
+Date:   Thu Sep 8 11:09:20 2022 +0200
+
+    High level codegen: set MM register type for vectors
+
+M	compiler/hlcgobj.pas
+
+******************************************************************************
+commit a6c7ed5e61f961a022897dde1d47140998466a23
+Author: Jonas Maebe <jonas-devlists@watlock.be>
+Date:   Thu Sep 8 11:03:14 2022 +0200
+
+    vector support: use vector result types
+    
+    Set the result of a vector add node to a vector type.
+    
+    Ensure that that these vector types are still asignment-compatible with
+    regular array types (may want to change this when we expose vector types),
+    and don't remove type conversions from vector types to array types (so the
+    code generator pass can still rely on the resultdef being a vector type)
+
+M	compiler/defcmp.pas
+M	compiler/defutil.pas
+M	compiler/nadd.pas
+M	compiler/ncnv.pas
+
+******************************************************************************
+commit cb96acefc93200a2e035edb877edd8cd5721c5d9
+Author: Jonas Maebe <jonas-devlists@watlock.be>
+Date:   Thu Sep 8 11:01:00 2022 +0200
+
+    vector support: check supported type during parsing already
+    
+    Avoids internalerrors at the code generation stage when using an unsupported
+    type
+
+M	compiler/nadd.pas
+
+******************************************************************************
 commit 62a57bf82ef45c28142baa6f07d3b9b8873b7d57
 Author: Sven/Sarah Barth <pascaldragon@gmail.com>
 Date:   Thu Sep 15 22:57:05 2022 +0200
