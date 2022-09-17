@@ -1,4 +1,18 @@
 ******************************************************************************
+commit 168016b865d3d1ea7de06f0be713ca4ce18b717c
+Author: florian <florian@freepascal.org>
+Date:   Sat Sep 17 22:46:57 2022 +0200
+
+      * patch by Rika: Use linear file list in FInput.TInputFileManager instead of linked, resolves #39880
+
+M	compiler/browcol.pas
+M	compiler/finput.pas
+M	compiler/fppu.pas
+A	tests/webtbs/iw39880.inc
+A	tests/webtbs/tw39880.pp
+A	tests/webtbs/uw39880.pp
+
+******************************************************************************
 commit b8723226787a98cd1bb7a1020dc0e73029991df3
 Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
 Date:   Tue Aug 16 03:40:29 2022 +0100
