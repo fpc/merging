@@ -1,4 +1,44 @@
 ******************************************************************************
+commit e7218d09fbf59d858cc952569537d739e93401f5
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Thu Aug 18 12:23:55 2022 +0100
+
+      * x86: New MovShr/Sar2Movx optimisation
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
+commit 3963a30f9e434871c515109f24632751a710ae51
+Author: florian <florian@freepascal.org>
+Date:   Sun Sep 18 15:50:37 2022 +0200
+
+      * prettier exception message, resolves #39909
+
+M	rtl/objpas/rtlconst.inc
+
+******************************************************************************
+commit c8fee693450dd3cd085a662952b4239483e2e1d2
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Sun Sep 18 12:03:48 2022 +0200
+
+    * fix #39907: only load system class types from units that are marked as a System unit
+    + added test
+
+M	compiler/symdef.pas
+A	tests/webtbs/tw39907.pp
+A	tests/webtbs/uw39907.pp
+
+******************************************************************************
+commit 7b09eee02a70122b34747137458412f1a29ae541
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Sun Sep 18 11:57:08 2022 +0200
+
+    * mark units compiled with cs_compilesystem with a corresponding flag
+
+M	compiler/fppu.pas
+M	compiler/globtype.pas
+
+******************************************************************************
 commit aca84a812800fce7ef0377b43501a8efae755a13
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Sun Sep 18 14:02:40 2022 +0200
