@@ -1,4 +1,41 @@
 ******************************************************************************
+commit 5a6d9ff5329a79ddc330a4e8b6a59c4805a19113
+Author: J. Gareth "Kit" Moreton <gareth@moreton-family.com>
+Date:   Sun Sep 18 19:02:24 2022 +0000
+
+    x86: Deeper insight in OptPass2ADD and OptPass2SUB to produce more efficient code
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
+commit 76e0ec6744f8affb72f2c82b61a897facfddab7d
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Sun Sep 18 11:04:41 2022 +0200
+
+    fcl-css: fixed reading unary tile not as identifier
+
+M	packages/fcl-css/src/fpcssparser.pp
+M	packages/fcl-css/src/fpcssresolver.pas
+
+******************************************************************************
+commit 533d8a775254137e288df31ea99b48676f3faa98
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Sun Sep 18 10:20:23 2022 +0200
+
+    fcl-css: :is(a,b)
+
+M	packages/fcl-css/tests/tccssresolver.pp
+
+******************************************************************************
+commit 6d104459e2f5857b518f68444b835f1f21dcd586
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Sun Sep 18 10:05:48 2022 +0200
+
+    fcl-css: :is :where, nth-child of
+
+M	packages/fcl-css/tests/tccssresolver.pp
+
+******************************************************************************
 commit e7218d09fbf59d858cc952569537d739e93401f5
 Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
 Date:   Thu Aug 18 12:23:55 2022 +0100
