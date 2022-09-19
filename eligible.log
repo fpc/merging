@@ -1,4 +1,35 @@
 ******************************************************************************
+commit 48f6ecc1f15892237f903d2d2bf59474a17cbc76
+Author: florian <florian@freepascal.org>
+Date:   Mon Sep 19 23:11:12 2022 +0200
+
+      * improve .gitignore
+
+M	.gitignore
+
+******************************************************************************
+commit af1194de4d5a33681608e7e745249db774e3a22a
+Author: florian <florian@freepascal.org>
+Date:   Mon Sep 19 23:02:54 2022 +0200
+
+      * end of an include file works like a new line with regard to single line (//) comments, resolves #39912
+
+M	compiler/scanner.pas
+A	tests/webtbs/ib39912.inc
+A	tests/webtbs/tb39912.pp
+
+******************************************************************************
+commit 9e783cc3ad4bffe0381afd0034896e30045a1515
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Mon Sep 19 22:50:06 2022 +0200
+
+    * Connection list, allow to set descendent for connections  and disconnect/connectiondropped events
+
+M	packages/fcl-net/examples/isockcli.pp
+M	packages/fcl-net/examples/isocksvr.pp
+M	packages/fcl-net/src/ssockets.pp
+
+******************************************************************************
 commit 879b6f1e6e20aaa9be81167eb015d9f1135929fa
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Mon Sep 19 09:33:28 2022 +0200
