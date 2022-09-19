@@ -1,4 +1,31 @@
 ******************************************************************************
+commit 4f9acc10f092a6a59a8c213ca29c08227ee1ab61
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Mon Sep 19 23:15:20 2022 +0200
+
+    * fix #39898: when a loadnode is captured ensure that its nf_load_procvar flag is applied to the subscript node as well
+    + added tests
+
+M	compiler/procdefutil.pas
+A	tests/test/tanonfunc61.pp
+A	tests/test/tanonfunc62.pp
+A	tests/test/tanonfunc63.pp
+A	tests/test/tanonfunc64.pp
+A	tests/test/tanonfunc65.pp
+A	tests/test/tanonfunc66.pp
+A	tests/test/tanonfunc67.pp
+A	tests/test/tanonfunc68.pp
+A	tests/test/tanonfunc69.pp
+A	tests/test/tanonfunc70.pp
+A	tests/test/tfuncref43.pp
+A	tests/test/tfuncref44.pp
+A	tests/test/tfuncref45.pp
+A	tests/test/tfuncref46.pp
+A	tests/test/tfuncref47.pp
+A	tests/test/tfuncref48.pp
+A	tests/test/tfuncref49.pp
+
+******************************************************************************
 commit 48f6ecc1f15892237f903d2d2bf59474a17cbc76
 Author: florian <florian@freepascal.org>
 Date:   Mon Sep 19 23:11:12 2022 +0200
