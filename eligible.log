@@ -1,4 +1,25 @@
 ******************************************************************************
+commit 879b6f1e6e20aaa9be81167eb015d9f1135929fa
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Mon Sep 19 09:33:28 2022 +0200
+
+    fcl-css: parse relational selector list
+
+M	packages/fcl-css/src/fpcssparser.pp
+M	packages/fcl-css/src/fpcssresolver.pas
+M	packages/fcl-css/src/fpcsstree.pp
+M	packages/fcl-css/tests/tccsstree.pp
+
+******************************************************************************
+commit 6454c931b8fa4d8479dbd8c572b3d48356e62134
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Mon Sep 19 09:24:35 2022 +0200
+
+    fcl-css: resolveR: surpress duplicate warnings
+
+M	packages/fcl-css/src/fpcssresolver.pas
+
+******************************************************************************
 commit 5a7664f7d12a47e9efd859aeeae763460d7d0e62
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Mon Sep 19 09:09:53 2022 +0200
