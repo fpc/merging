@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 5a7664f7d12a47e9efd859aeeae763460d7d0e62
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Mon Sep 19 09:09:53 2022 +0200
+
+    fcl-css: cache nth-child lists
+
+M	packages/fcl-css/src/fpcssresolver.pas
+M	packages/fcl-css/tests/tccssresolver.pp
+
+******************************************************************************
 commit 5a6d9ff5329a79ddc330a4e8b6a59c4805a19113
 Author: J. Gareth "Kit" Moreton <gareth@moreton-family.com>
 Date:   Sun Sep 18 19:02:24 2022 +0000
