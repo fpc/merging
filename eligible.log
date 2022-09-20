@@ -1,4 +1,24 @@
 ******************************************************************************
+commit 5913434ba91a5726dd2842277eb378cba6eb2e3f
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Tue Sep 20 22:39:28 2022 +0100
+
+    Add DISABLE_SYSTEMINLINE check to be able to avoid setting SYSTEMINLINE macro
+
+M	rtl/inc/macpas.pp
+M	rtl/inc/systemh.inc
+M	rtl/java/jsystemh_types.inc
+
+******************************************************************************
+commit b8920670f442575cc5e981066c1512377d2ac50f
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Tue Sep 20 22:33:14 2022 +0100
+
+     Change is_macro to return true for A_JAL if in pic mode
+
+M	compiler/mips/aasmcpu.pas
+
+******************************************************************************
 commit 2187bfaddd5734e223948e60857b502909e80c8b
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Tue Sep 20 22:53:37 2022 +0200
