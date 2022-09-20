@@ -1,4 +1,31 @@
 ******************************************************************************
+commit 9c7d1515bfa32bb78906e09e0c66793bc802300a
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Tue Sep 20 17:06:01 2022 +0200
+
+    * Prevent codetools from messing up types again
+
+M	packages/fcl-net/src/ssockets.pp
+
+******************************************************************************
+commit 2cbc6bb6749fe327d5febedbd7971b5ea16bf3eb
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Tue Sep 20 17:03:45 2022 +0200
+
+    * Better solution for last commit, correct sockets definitions in implementation
+
+M	packages/fcl-net/src/ssockets.pp
+
+******************************************************************************
+commit dcc0b706bc48979458080099b7a92ca83646c6d1
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Tue Sep 20 16:53:34 2022 +0200
+
+    * Fix problem reported by Pierre
+
+M	packages/fcl-net/src/ssockets.pp
+
+******************************************************************************
 commit 4f9acc10f092a6a59a8c213ca29c08227ee1ab61
 Author: Sven/Sarah Barth <pascaldragon@gmail.com>
 Date:   Mon Sep 19 23:15:20 2022 +0200
