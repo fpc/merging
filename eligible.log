@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 2187bfaddd5734e223948e60857b502909e80c8b
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Tue Sep 20 22:53:37 2022 +0200
+
+     Add name of unit for return type if not from current module in tprocdef.customprocname
+
+M	compiler/symdef.pas
+
+******************************************************************************
 commit 9c7d1515bfa32bb78906e09e0c66793bc802300a
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Tue Sep 20 17:06:01 2022 +0200
