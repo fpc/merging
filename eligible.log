@@ -1,4 +1,17 @@
 ******************************************************************************
+commit efbf5eaa01649749fc7f8adee03b63db407ec2a3
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Wed Sep 21 21:25:30 2022 +0200
+
+    Fix loading of ObjC protocol type after c8fee69345
+    
+    That type lives in the objcbase unit, not in the system unit
+    
+    Resolves #39914
+
+M	compiler/symdef.pas
+
+******************************************************************************
 commit 5913434ba91a5726dd2842277eb378cba6eb2e3f
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Tue Sep 20 22:39:28 2022 +0100
