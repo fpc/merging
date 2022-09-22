@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 960c154f48e79f22f570ffcb75d1fcbc21c334e2
+Author: florian <florian@freepascal.org>
+Date:   Thu Sep 22 23:00:24 2022 +0200
+
+      * properly named
+
+R100	tests/webtbs/ib39912.inc	tests/webtbs/iw39912.inc
+R080	tests/webtbs/tb39912.pp	tests/webtbs/tw39912.pp
+
+******************************************************************************
 commit efbf5eaa01649749fc7f8adee03b63db407ec2a3
 Author: Jonas Maebe <jonas@freepascal.org>
 Date:   Wed Sep 21 21:25:30 2022 +0200
