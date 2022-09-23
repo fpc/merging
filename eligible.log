@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 2bf377744ae19bff141878708df2c9beb78b03f8
+Author: Henrique Gottardi Werlang <henriquewerlang@hotmail.com>
+Date:   Thu Sep 15 11:14:35 2022 -0300
+
+    Changed the interface creation to keep the generic name of an interface.
+
+M	utils/pas2js/dist/rtl.js
+
+******************************************************************************
 commit dbbb91705f606be92e0cc9daeaefeaeb290ad643
 Author: florian <florian@freepascal.org>
 Date:   Fri Sep 23 21:55:50 2022 +0200
