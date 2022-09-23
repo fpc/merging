@@ -1,4 +1,22 @@
 ******************************************************************************
+commit b11366c95b2c9eb3611e71919692eae50cd0e7a5
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Fri Sep 23 15:50:19 2022 +0200
+
+    * when generating the call to the extracted function reference inside the nested routine we need to use the parameters of the nested function and not those of the newly created procdef (fixes some of the test case failures with -O2)
+
+M	compiler/procdefutil.pas
+
+******************************************************************************
+commit 965bba5ab477bcfe124c7981e47f53457e718928
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Fri Sep 23 14:44:42 2022 +0200
+
+    * cleanup captured symbols when moving them from the nested function to the new method
+
+M	compiler/procdefutil.pas
+
+******************************************************************************
 commit 960c154f48e79f22f570ffcb75d1fcbc21c334e2
 Author: florian <florian@freepascal.org>
 Date:   Thu Sep 22 23:00:24 2022 +0200
