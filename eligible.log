@@ -1,4 +1,13 @@
 ******************************************************************************
+commit dbbb91705f606be92e0cc9daeaefeaeb290ad643
+Author: florian <florian@freepascal.org>
+Date:   Fri Sep 23 21:55:50 2022 +0200
+
+      * improved fix for #39912
+
+M	compiler/scanner.pas
+
+******************************************************************************
 commit b11366c95b2c9eb3611e71919692eae50cd0e7a5
 Author: Sven/Sarah Barth <pascaldragon@gmail.com>
 Date:   Fri Sep 23 15:50:19 2022 +0200
