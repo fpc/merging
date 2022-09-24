@@ -6404,15 +6404,6 @@ M	packages/rtl-objpas/src/inc/convutil.inc
 M	packages/rtl-objpas/src/inc/stdconvs.pp
 
 ******************************************************************************
-commit 2df9dd9c146279cdf698dd1e35e467e686959b03
-Author: marcoonthegit <marco@freepascal.org>
-Date:   Sun Jun 5 17:46:58 2022 +0200
-
-    * another fix for  bug #39758, this time the end of the string
-
-M	rtl/objpas/sysutils/sysencoding.inc
-
-******************************************************************************
 commit 1a28b1b5c48acce54ffc534d2d057735e45c24c9
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Sat Jun 4 22:51:36 2022 +0200
