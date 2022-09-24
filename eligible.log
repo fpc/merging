@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 1a66cde35bd76cc076e25f8c2f71426f333117c2
+Author: florian <florian@freepascal.org>
+Date:   Sat Sep 24 22:48:41 2022 +0200
+
+      * apply ShlOp2Shl optimization also to floating point operations
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
 commit 444fe092da1e614163712d0710f6f38b2948ee3b
 Author: florian <florian@freepascal.org>
 Date:   Sat Sep 24 20:39:06 2022 +0200
