@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 444fe092da1e614163712d0710f6f38b2948ee3b
+Author: florian <florian@freepascal.org>
+Date:   Sat Sep 24 20:39:06 2022 +0200
+
+      * propertly check equality with the for-counter when propagating constants, resolves #39915
+
+M	compiler/optconstprop.pas
+A	tests/webtbs/tw39915.pp
+
+******************************************************************************
 commit 2bf377744ae19bff141878708df2c9beb78b03f8
 Author: Henrique Gottardi Werlang <henriquewerlang@hotmail.com>
 Date:   Thu Sep 15 11:14:35 2022 -0300
