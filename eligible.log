@@ -6404,16 +6404,6 @@ M	packages/rtl-objpas/src/inc/convutil.inc
 M	packages/rtl-objpas/src/inc/stdconvs.pp
 
 ******************************************************************************
-commit 471028193656a9e9221e93679ff35ba59b0e6e54
-Author: marcoonthegit <marco@freepascal.org>
-Date:   Sun Jun 5 18:03:28 2022 +0200
-
-    * guard agains empty arrays in a few tArrayHelper binsearch methods
-        fixes bug #39761
-
-M	packages/rtl-generics/src/generics.collections.pas
-
-******************************************************************************
 commit 2df9dd9c146279cdf698dd1e35e467e686959b03
 Author: marcoonthegit <marco@freepascal.org>
 Date:   Sun Jun 5 17:46:58 2022 +0200
@@ -6440,15 +6430,6 @@ Date:   Sat Jun 4 22:49:29 2022 +0200
     fcl-passrc: fixed releasing modules of a package
 
 M	packages/fcl-passrc/src/pastree.pp
-
-******************************************************************************
-commit 5b90eaf2dd3a153f2fdf7da85420eabe7432687b
-Author: marcoonthegit <marco@freepascal.org>
-Date:   Sat Jun 4 22:40:23 2022 +0200
-
-    * move char index checks up. fixes bug #39758
-
-M	rtl/objpas/sysutils/sysencoding.inc
 
 ******************************************************************************
 commit 1d8b21bcfc2ed4b60fe625ff82c75153bf77f05c
