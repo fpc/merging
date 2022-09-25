@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 93752573657acece7e917904e59078ab99cbef93
+Author: florian <florian@freepascal.org>
+Date:   Sun Sep 25 20:43:57 2022 +0200
+
+      * look ahead for ShlOp2Op optimization
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
 commit 1a66cde35bd76cc076e25f8c2f71426f333117c2
 Author: florian <florian@freepascal.org>
 Date:   Sat Sep 24 22:48:41 2022 +0200
