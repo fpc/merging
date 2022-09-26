@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 88cf633b973ba2002e8f392ad0748b614bf1f1c9
+Author: florian <florian@freepascal.org>
+Date:   Mon Sep 26 21:28:39 2022 +0200
+
+      * use append_object_struct also for dwarf-3 when creating dwarf debug info for objects, resolves #39920
+
+M	compiler/dbgdwarf.pas
+
+******************************************************************************
 commit 93752573657acece7e917904e59078ab99cbef93
 Author: florian <florian@freepascal.org>
 Date:   Sun Sep 25 20:43:57 2022 +0200
