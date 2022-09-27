@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 123f196d5d4bbbac76bf1b918a6a0e4dda0174ff
+Author: florian <florian@freepascal.org>
+Date:   Tue Sep 27 22:10:56 2022 +0200
+
+      * small correction to linker script
+
+M	compiler/systems/t_embed.pas
+
+******************************************************************************
 commit 88cf633b973ba2002e8f392ad0748b614bf1f1c9
 Author: florian <florian@freepascal.org>
 Date:   Mon Sep 26 21:28:39 2022 +0200
