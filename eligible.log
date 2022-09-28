@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 8b3c9e0970507bf7cddfe8946032bf9a20ba93aa
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Wed Sep 28 17:53:14 2022 +0200
+
+    * Fix use of classname
+
+M	packages/fcl-web/src/jsonrpc/fpjsonrpc.pp
+
+******************************************************************************
 commit 123f196d5d4bbbac76bf1b918a6a0e4dda0174ff
 Author: florian <florian@freepascal.org>
 Date:   Tue Sep 27 22:10:56 2022 +0200
