@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 9e9b38d0cfc08bbc3c9aa873ba41441b9ea0afb7
+Author: florian <florian@freepascal.org>
+Date:   Thu Sep 29 23:06:03 2022 +0200
+
+      * cfi for avr needs 32 bit pc begin and range
+
+M	compiler/cfidwarf.pas
+
+******************************************************************************
 commit 1fc54dd8bbdb83ad9a8f82e4a16d73a17178b655
 Author: florian <florian@freepascal.org>
 Date:   Wed Sep 28 22:46:51 2022 +0200
