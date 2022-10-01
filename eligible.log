@@ -1,4 +1,22 @@
 ******************************************************************************
+commit 51a3030b6a5b37adc64f59c6bd9b2e41d724f8ef
+Author: florian <florian@freepascal.org>
+Date:   Sat Oct 1 12:11:30 2022 +0200
+
+      + test for heapsort fallback to Generics.Collections.TArrayHelper.Sort
+
+A	packages/rtl-generics/tests/tqsort_killer.pp
+
+******************************************************************************
+commit 3fff2aca6dd7912d3d2d5a23a441d0ccb979d045
+Author: Rika Ichinose <rrunewalsh@gmail.com>
+Date:   Thu Sep 29 23:06:07 2022 +0300
+
+    Add heapsort fallback to Generics.Collections.TArrayHelper.Sort.
+
+M	packages/rtl-generics/src/generics.collections.pas
+
+******************************************************************************
 commit 9e9b38d0cfc08bbc3c9aa873ba41441b9ea0afb7
 Author: florian <florian@freepascal.org>
 Date:   Thu Sep 29 23:06:03 2022 +0200
