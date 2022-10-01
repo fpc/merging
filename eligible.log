@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 7dc2a617882931374ba3cf12955d657bc4631bb8
+Author: florian <florian@freepascal.org>
+Date:   Sat Oct 1 19:03:55 2022 +0200
+
+      * comment for git fixed
+
+M	compiler/Makefile.fpc
+
+******************************************************************************
 commit 2b63c02bc503dc1b1081c90dec770bf78473ecbd
 Author: paweld <biuro@paweld.it>
 Date:   Sat Oct 1 14:17:49 2022 +0000
