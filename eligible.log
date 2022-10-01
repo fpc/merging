@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 2b63c02bc503dc1b1081c90dec770bf78473ecbd
+Author: paweld <biuro@paweld.it>
+Date:   Sat Oct 1 14:17:49 2022 +0000
+
+    Incorrect function name imported from `comctl32.dll` - for `LoadIconWithScaleDown` function.
+
+M	packages/winunits-base/src/commctrl.pp
+
+******************************************************************************
 commit 0a9e1ede723605b2cf0a1319a56535068f36fbd8
 Author: florian <florian@freepascal.org>
 Date:   Sat Oct 1 15:37:52 2022 +0200
