@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 0a9e1ede723605b2cf0a1319a56535068f36fbd8
+Author: florian <florian@freepascal.org>
+Date:   Sat Oct 1 15:37:52 2022 +0200
+
+      * improve test for Generics.Collections.TArrayHelper.QSort, resolves #39932
+
+M	packages/rtl-generics/tests/tqsort_killer.pp
+
+******************************************************************************
 commit 51a3030b6a5b37adc64f59c6bd9b2e41d724f8ef
 Author: florian <florian@freepascal.org>
 Date:   Sat Oct 1 12:11:30 2022 +0200
