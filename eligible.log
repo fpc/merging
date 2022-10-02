@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 9a760db57350c5efcf0521ece91c4157d0fc1d36
+Author: florian <florian@freepascal.org>
+Date:   Sun Oct 2 20:46:56 2022 +0200
+
+      * nicer error message
+
+M	compiler/htypechk.pas
+
+******************************************************************************
 commit 7dc2a617882931374ba3cf12955d657bc4631bb8
 Author: florian <florian@freepascal.org>
 Date:   Sat Oct 1 19:03:55 2022 +0200
