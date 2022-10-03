@@ -1,4 +1,13 @@
 ******************************************************************************
+commit f8848dd1857855256d50e4855725fae3aa5b4d60
+Author: florian <florian@freepascal.org>
+Date:   Mon Oct 3 22:03:55 2022 +0200
+
+      * fix for commit a91e5478, mixed localalignmax and constalignmax
+
+M	compiler/systems/i_linux.pas
+
+******************************************************************************
 commit a91e547832499249ef916470154a1a2b31421ee4
 Author: florian <florian@freepascal.org>
 Date:   Mon Oct 3 14:40:57 2022 +0200
