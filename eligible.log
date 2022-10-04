@@ -1,4 +1,24 @@
 ******************************************************************************
+commit 01c982ad707f23090c37e04f646ac7878e3bba0c
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Tue Oct 4 20:55:49 2022 +0200
+
+    fcl-passrc: omit hint for not used anonymous type
+
+M	packages/fcl-passrc/src/pasuseanalyzer.pas
+
+******************************************************************************
+commit a2182cb7a5026cd3a746c559a93a7f2747c6e635
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Tue Oct 4 20:42:02 2022 +0200
+
+    fcl-passrc: omit hint for not used anonymous type
+
+M	packages/fcl-passrc/src/pasuseanalyzer.pas
+M	packages/fcl-passrc/tests/tcuseanalyzer.pas
+M	packages/pastojs/tests/tcpas2jsanalyzer.pas
+
+******************************************************************************
 commit eb8c322a537af698f9ee8de05ad61227ab004545
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Tue Oct 4 17:52:09 2022 +0200
