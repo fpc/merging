@@ -1,4 +1,13 @@
 ******************************************************************************
+commit e736011c37a7421efa7c4b560f7eb25b93afaa78
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Tue Oct 4 11:14:00 2022 +0200
+
+    * Fix from Bart for issue #39938
+
+M	packages/fcl-base/src/maskutils.pp
+
+******************************************************************************
 commit f8848dd1857855256d50e4855725fae3aa5b4d60
 Author: florian <florian@freepascal.org>
 Date:   Mon Oct 3 22:03:55 2022 +0200
