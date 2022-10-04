@@ -1,4 +1,13 @@
 ******************************************************************************
+commit eb8c322a537af698f9ee8de05ad61227ab004545
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Tue Oct 4 17:52:09 2022 +0200
+
+    * Use aValue instead of Value. Fix issue #39938
+
+M	packages/fcl-base/src/maskutils.pp
+
+******************************************************************************
 commit e736011c37a7421efa7c4b560f7eb25b93afaa78
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Tue Oct 4 11:14:00 2022 +0200
