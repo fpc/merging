@@ -1,4 +1,14 @@
 ******************************************************************************
+commit ad7cc0e69d28afc3091c8b9a1e90175533efa9a2
+Author: florian <florian@freepascal.org>
+Date:   Wed Oct 5 22:47:48 2022 +0200
+
+      * handle <dyn.array>+[] (and swapped) correctly, resolves #39919
+
+M	compiler/nadd.pas
+A	tests/webtbs/tw39919.pp
+
+******************************************************************************
 commit 2291100bbd2fe7447246bb69f17d29158ee3f71e
 Author: marcoonthegit <marco@freepascal.org>
 Date:   Wed Oct 5 20:46:04 2022 +0200
