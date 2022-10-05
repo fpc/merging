@@ -483,15 +483,6 @@ M	compiler/fppu.pas
 M	compiler/globtype.pas
 
 ******************************************************************************
-commit aca84a812800fce7ef0377b43501a8efae755a13
-Author: Pierre Muller <pierre@freepascal.org>
-Date:   Sun Sep 18 14:02:40 2022 +0200
-
-     Add /usr/lib64 and /lib64 to default library path list for sparc linux
-
-M	compiler/systems/t_linux.pas
-
-******************************************************************************
 commit 168016b865d3d1ea7de06f0be713ca4ce18b717c
 Author: florian <florian@freepascal.org>
 Date:   Sat Sep 17 22:46:57 2022 +0200
