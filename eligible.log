@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 569f83e33dd158cd13c338824a8d3179228732a4
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Wed Oct 5 10:49:31 2022 +0200
+
+    fcl-web: TWSServerConnection.HandshakeResponseSent propagates result
+
+M	packages/fcl-web/src/websocket/fpwebsocket.pp
+
+******************************************************************************
 commit 01c982ad707f23090c37e04f646ac7878e3bba0c
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Tue Oct 4 20:55:49 2022 +0200
