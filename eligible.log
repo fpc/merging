@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 2291100bbd2fe7447246bb69f17d29158ee3f71e
+Author: marcoonthegit <marco@freepascal.org>
+Date:   Wed Oct 5 20:46:04 2022 +0200
+
+    * fix and test for bug #39884 solving daysbetween when zero date is crossed.
+
+M	packages/rtl-objpas/src/inc/dateutil.inc
+A	tests/test/units/dateutil/testdaysbetween.pp
+
+******************************************************************************
 commit 569f83e33dd158cd13c338824a8d3179228732a4
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Wed Oct 5 10:49:31 2022 +0200
