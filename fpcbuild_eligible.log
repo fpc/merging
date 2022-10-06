@@ -1,21 +1,4 @@
 ******************************************************************************
-commit 830b4587c25f69e424542816f63cb3e6157b7219
-Author: marcoonthegit <marco@freepascal.org>
-Date:   Sat Mar 12 14:43:08 2022 +0100
-
-    * switched inno release to CHM
-     * mainly modified fpc.ist and fpcx86x64.ist
-     * the others are crosscompilers, and only the (unused?) documentation line changed.
-     * fpcx86_64 gives an error while building that needs manual renaming of the result. Can't find a diff between it and fpc.ist that could cause it.
-     * didn't commit makefile regeneration, because it had many massive changes. Will ask first.
-
-M	Makefile.fpc
-M	install/fpc.ist
-M	install/fpcmsdos.ist
-M	install/fpcx64.ist
-M	install/fpcx86x64.ist
-
-******************************************************************************
 commit 569d4449ce6ca92a66b653e4bc3808f2e17e396d
 Author: FPK <florian@freepascal.org>
 Date:   Sun Jan 9 17:56:47 2022 +0000
