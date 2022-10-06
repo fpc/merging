@@ -1,4 +1,15 @@
 ******************************************************************************
+commit 9f293df425a6c31b554bfbbad9f1020611b077cd
+Author: florian <florian@freepascal.org>
+Date:   Thu Oct 6 22:56:38 2022 +0200
+
+      * export DynArrayAssign, resolves #39897
+
+M	rtl/inc/dynarr.inc
+M	rtl/inc/dynarrh.inc
+A	tests/webtbs/tw39897.pp
+
+******************************************************************************
 commit ad7cc0e69d28afc3091c8b9a1e90175533efa9a2
 Author: florian <florian@freepascal.org>
 Date:   Wed Oct 5 22:47:48 2022 +0200
