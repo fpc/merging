@@ -1,4 +1,14 @@
 ******************************************************************************
+commit b934517871cf6fafd0313b4ab408886cc0c2df60
+Author: florian <florian@freepascal.org>
+Date:   Fri Oct 7 22:32:59 2022 +0200
+
+      * patch by Rika: Optimize some compiler/CFileUtl.pas functions for returning unchanged strings, resolves #39882
+
+M	compiler/cfileutl.pas
+M	compiler/cutils.pas
+
+******************************************************************************
 commit 9f293df425a6c31b554bfbbad9f1020611b077cd
 Author: florian <florian@freepascal.org>
 Date:   Thu Oct 6 22:56:38 2022 +0200
