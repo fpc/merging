@@ -1,4 +1,17 @@
 ******************************************************************************
+commit d12bf094aba2667fcacbc7d4c9ae6ac2c32b2e28
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sat Oct 8 22:27:23 2022 +0200
+
+    cs_opt_consts: disable when non-local gotos are active
+    
+    This optimisation can insert code after the call to fpc_setjmp, resulting in
+    it not getting executed after a longjmp. Fixes tmacnonlocalgoto on AArch64
+    with -O2 or higher.
+
+M	compiler/psub.pas
+
+******************************************************************************
 commit 5b73fc4d0e772bac6f6c8f24ca948e96ac6fb186
 Author: florian <florian@freepascal.org>
 Date:   Sat Oct 8 20:49:10 2022 +0200
