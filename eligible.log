@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 5b73fc4d0e772bac6f6c8f24ca948e96ac6fb186
+Author: florian <florian@freepascal.org>
+Date:   Sat Oct 8 20:49:10 2022 +0200
+
+      * marked parameters in ucomplex with const
+
+M	packages/rtl-extra/src/inc/ucomplex.pp
+
+******************************************************************************
 commit 188cac3bc6dc666167aacf47fedff1a81d378137
 Author: Sven/Sarah Barth <pascaldragon@gmail.com>
 Date:   Sat Oct 8 13:51:17 2022 +0200
