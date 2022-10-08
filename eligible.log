@@ -1,4 +1,39 @@
 ******************************************************************************
+commit 188cac3bc6dc666167aacf47fedff1a81d378137
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Sat Oct 8 13:51:17 2022 +0200
+
+    * enable OpenStrings by default in mode Delphi
+    + added test
+
+M	compiler/scanner.pas
+A	tests/tbs/tb0698.pp
+
+******************************************************************************
+commit 920e1c8d1916b723d2aa60268f1c6a8b5527712c
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Sat Oct 8 13:46:28 2022 +0200
+
+    * change PPU version as the change regarding $P/$OpenStrings affects the token buffers of generics (which contains the current settings)
+
+M	compiler/ppu.pas
+
+******************************************************************************
+commit 6cbbf9c52aad12dcaf3ff5e44cbe19f39a5b7018
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Sat Oct 8 13:45:59 2022 +0200
+
+    * $P/$OpenStrings is supposed to be a local switch, so change that accordingly
+    + added tests
+
+M	compiler/globtype.pas
+M	compiler/pdecsub.pas
+M	compiler/switches.pas
+M	compiler/utils/ppuutils/ppudump.pp
+A	tests/tbf/tb0295.pp
+A	tests/tbs/tb0697.pp
+
+******************************************************************************
 commit b934517871cf6fafd0313b4ab408886cc0c2df60
 Author: florian <florian@freepascal.org>
 Date:   Fri Oct 7 22:32:59 2022 +0200
