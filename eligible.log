@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 3e5f6d322853f4615392217e462a59f1a9c59178
+Author: florian <florian@freepascal.org>
+Date:   Sun Oct 9 21:30:44 2022 +0200
+
+      * use AllocRegbetween in TARMAsmOptimizer.RemoveSuperfluousMove, resolves #39921
+
+M	compiler/armgen/aoptarm.pas
+
+******************************************************************************
 commit 02aac653d2599332b70af2cb3433e8f5d76e6400
 Author: Sven/Sarah Barth <pascaldragon@gmail.com>
 Date:   Sun Oct 9 13:20:14 2022 +0200
