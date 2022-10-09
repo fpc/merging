@@ -1,4 +1,13 @@
 ******************************************************************************
+commit f2580efc1585bf5f3810b7b90321bfae3d7d313f
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sun Oct 9 12:42:50 2022 +0200
+
+    * Fix memleak in case of error.
+
+M	packages/fcl-web/src/jsonrpc/fpjsonrpc.pp
+
+******************************************************************************
 commit d12bf094aba2667fcacbc7d4c9ae6ac2c32b2e28
 Author: Jonas Maebe <jonas@freepascal.org>
 Date:   Sat Oct 8 22:27:23 2022 +0200
