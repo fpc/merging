@@ -1,4 +1,23 @@
 ******************************************************************************
+commit 02aac653d2599332b70af2cb3433e8f5d76e6400
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Sun Oct 9 13:20:14 2022 +0200
+
+    * optimize shortstring concatenations if they're on the right side of an assignment to directly use the left side instead of a temporary
+
+M	compiler/nadd.pas
+M	compiler/nopt.pas
+
+******************************************************************************
+commit 32261a0f6d6a7277bd48712f13a4480c14c75a73
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Sun Oct 9 12:42:09 2022 +0200
+
+    * fix copy/paste typo in comments
+
+M	compiler/nadd.pas
+
+******************************************************************************
 commit f2580efc1585bf5f3810b7b90321bfae3d7d313f
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Sun Oct 9 12:42:50 2022 +0200
