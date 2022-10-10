@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 3e181d7640ded13fddab537b461c3a1aaf78fc59
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Tue Oct 11 00:41:24 2022 +0200
+
+    pastojs: fixed clone array of tobject, pas2js issue 39238
+
+M	packages/pastojs/src/fppas2js.pp
+
+******************************************************************************
 commit 1b6982107f1ac4b4111e37be0a3649d155a2bc1e
 Author: florian <florian@freepascal.org>
 Date:   Mon Oct 10 22:45:31 2022 +0200
