@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 1b6982107f1ac4b4111e37be0a3649d155a2bc1e
+Author: florian <florian@freepascal.org>
+Date:   Mon Oct 10 22:45:31 2022 +0200
+
+      * TDebugInfoDwarf3.appenddef_object should not write an extra finish_entry for objects and C++ classes
+
+M	compiler/dbgdwarf.pas
+
+******************************************************************************
 commit 3e5f6d322853f4615392217e462a59f1a9c59178
 Author: florian <florian@freepascal.org>
 Date:   Sun Oct 9 21:30:44 2022 +0200
