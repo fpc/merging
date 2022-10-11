@@ -1,4 +1,15 @@
 ******************************************************************************
+commit 989895c82f1cf77d9549bedc5fdc8897758d044e
+Author: florian <florian@freepascal.org>
+Date:   Tue Oct 11 22:10:37 2022 +0200
+
+      * patch by Bart B: FormatFloat correctly outputs NaN now, resolves #32868
+      + test
+
+M	rtl/objpas/sysutils/fmtflt.inc
+A	tests/webtbs/tw32868.pp
+
+******************************************************************************
 commit bb51ac77dd8ba9ad3512f3552515f5ddcd051d11
 Author: Sven/Sarah Barth <pascaldragon@gmail.com>
 Date:   Tue Oct 11 07:36:20 2022 +0200
