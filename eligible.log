@@ -1,4 +1,49 @@
 ******************************************************************************
+commit b150480c60aff770924e4ffd3382132b189aba2d
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Wed Oct 12 22:51:42 2022 +0200
+
+    Darwin: don't try to print size statistics if the binary wasn't linked
+
+M	compiler/systems/t_darwin.pas
+
+******************************************************************************
+commit a835d8b533fd7ebba6d375602a4b5c981ac465fb
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Wed Oct 12 22:50:25 2022 +0200
+
+    rgobj: reduce compilation time of programs with long movelists
+    
+    Reduces compilation time of webtbs/tw2242 for AArch64 with -O2 from
+    15 minutes to 10 seconds on my system.
+    
+    from 15 minutes to 10 seconds
+
+M	compiler/rgobj.pas
+
+******************************************************************************
+commit e2ade64a1e34f6374b9f3a4f1ff802b4b9a4c803
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Wed Oct 12 22:49:26 2022 +0200
+
+    cgbase: make first parameter of supregset_reset "out"
+
+M	compiler/cgbase.pas
+
+******************************************************************************
+commit d217a459aac3cc2ec2792045ea7f27bc042bc789
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Wed Oct 12 21:24:28 2022 +0100
+
+      Fix bug report #39952.
+      * compiler/aggas.pas: Avoid use of .long for 64bit constant
+        for targets that automatically insert alignments.
+      + tests/webtbs/tw39952.pp: New test from bug report 39952.
+
+M	compiler/aggas.pas
+A	tests/webtbs/tw39952.pp
+
+******************************************************************************
 commit f0c0d8a033f8ece2dc406f6b59abff9b9a480b6f
 Author: florian <florian@freepascal.org>
 Date:   Wed Oct 12 21:56:30 2022 +0200
