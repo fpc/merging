@@ -1,4 +1,13 @@
 ******************************************************************************
+commit eb17e6fd2d85f700250dcbf721dd41d3bc096b55
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Thu Oct 13 00:56:07 2022 +0200
+
+    fcl-web: fixed crash in websocket server on windows when closing when already disconnected
+
+M	packages/fcl-web/src/websocket/fpcustwsserver.pp
+
+******************************************************************************
 commit b150480c60aff770924e4ffd3382132b189aba2d
 Author: Jonas Maebe <jonas@freepascal.org>
 Date:   Wed Oct 12 22:51:42 2022 +0200
