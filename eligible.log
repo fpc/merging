@@ -1,4 +1,22 @@
 ******************************************************************************
+commit 0b3c608d79fdc8e3aa1a198ad3152e7009c11336
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Thu Oct 13 13:00:57 2022 +0200
+
+    * Faster DupeString by Rika. Fixes issue #39949
+
+M	packages/rtl-objpas/src/inc/strutils.pp
+
+******************************************************************************
+commit d5777174d8ec13dc54e09497a21a030debc5c088
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Thu Oct 13 12:45:16 2022 +0200
+
+    * Optimization of TStringHelper.Split by Rika. Fixes issue #39948
+
+M	rtl/objpas/sysutils/syshelp.inc
+
+******************************************************************************
 commit eb17e6fd2d85f700250dcbf721dd41d3bc096b55
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Thu Oct 13 00:56:07 2022 +0200
