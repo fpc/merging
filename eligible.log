@@ -1,4 +1,13 @@
 ******************************************************************************
+commit e2a26ecece15f944eaa327c30143bb55a4528235
+Author: florian <florian@freepascal.org>
+Date:   Thu Oct 13 23:15:38 2022 +0200
+
+      * fixes tcg64frv.a_op64_const_reg_reg based on the analysis of Bart B, resolves #39953
+
+M	compiler/riscv32/cgcpu.pas
+
+******************************************************************************
 commit 0b3c608d79fdc8e3aa1a198ad3152e7009c11336
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Thu Oct 13 13:00:57 2022 +0200
