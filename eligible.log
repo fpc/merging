@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 1c86a4bbebf6bce1f14f2e3e17ab132fb3ccb8db
+Author: florian <florian@freepascal.org>
+Date:   Fri Oct 14 23:11:08 2022 +0200
+
+      * if a pointer_to_array type conversion is applied to a variable, it is not written, resolves #39957
+
+M	compiler/ncnv.pas
+A	tests/webtbs/tw39957.pp
+
+******************************************************************************
 commit 27315ac528fb6921a0a66e5d54c36cc3ff9b7200
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Fri Oct 14 18:48:02 2022 +0200
