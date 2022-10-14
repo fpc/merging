@@ -1,4 +1,15 @@
 ******************************************************************************
+commit 27315ac528fb6921a0a66e5d54c36cc3ff9b7200
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Fri Oct 14 18:48:02 2022 +0200
+
+    fcl-css: shorten PseudoAttribute to Pseudo
+
+M	packages/fcl-css/src/fpcssresolver.pas
+M	packages/fcl-css/src/fpcsstree.pp
+M	packages/fcl-css/tests/tccssresolver.pp
+
+******************************************************************************
 commit e2a26ecece15f944eaa327c30143bb55a4528235
 Author: florian <florian@freepascal.org>
 Date:   Thu Oct 13 23:15:38 2022 +0200
