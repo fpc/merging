@@ -1,4 +1,17 @@
 ******************************************************************************
+commit c83e6c34a90cc86ce1c3f3aae1da39d618793335
+Author: Jeppe <jeppe@j-software.dk>
+Date:   Sun Oct 16 17:37:53 2022 +0200
+
+    riscv32: Fix 64bit comparisons
+    
+    - Code taken from MIPS backend
+    - Removed some unused code generated for RV32 64bit integer ops
+
+M	compiler/riscv32/cgcpu.pas
+M	compiler/riscv32/nrv32add.pas
+
+******************************************************************************
 commit 73e5d6f70fc9354e10d5fa8498fba52dfb024c61
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Sun Oct 16 13:51:41 2022 +0200
