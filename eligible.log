@@ -1,4 +1,17 @@
 ******************************************************************************
+commit 5670a7543cb170889fee2f3e8e65ccfd96c0b18e
+Author: florian <florian@freepascal.org>
+Date:   Sun Oct 16 22:51:50 2022 +0200
+
+      * properly reset nf_write/nf_modify flags for min/max inline nodes, needed by dead store optimization, resolves #39958
+      * factored out nutils.node_reset_pass1_write
+
+M	compiler/nflw.pas
+M	compiler/ninl.pas
+M	compiler/nutils.pas
+A	tests/webtbs/tw39958.pp
+
+******************************************************************************
 commit c83e6c34a90cc86ce1c3f3aae1da39d618793335
 Author: Jeppe <jeppe@j-software.dk>
 Date:   Sun Oct 16 17:37:53 2022 +0200
