@@ -2245,16 +2245,6 @@ Date:   Sun Aug 14 19:49:26 2022 +0200
 M	compiler/aasmtai.pas
 
 ******************************************************************************
-commit f532cf16983992b278e7fb0254312f935022151b
-Author: marcoonthegit <marco@freepascal.org>
-Date:   Sun Aug 14 16:24:19 2022 +0200
-
-    * Use an own put for tfpginterfacedobjectlist as per bug #39846.
-       Maybe not the most elegant, but solves the immediately
-
-M	rtl/objpas/fgl.pp
-
-******************************************************************************
 commit be4a317cb463f031e91527ca4e74ce03c7e3d661
 Author: florian <florian@freepascal.org>
 Date:   Sat Aug 13 22:30:55 2022 +0200
@@ -2349,16 +2339,6 @@ Date:   Wed Aug 10 18:22:26 2022 +0200
       * fixed and improved generic ArcTan2 implementation by Paolo Valle, resolves #39861
 
 M	rtl/objpas/math.pp
-
-******************************************************************************
-commit 53d745962f437c65c9130c1da33fa01eb723d8eb
-Author: marcoonthegit <marco@freepascal.org>
-Date:   Tue Aug 9 11:27:23 2022 +0200
-
-    * also add other threadpool functions
-
-M	rtl/win/wininc/base.inc
-M	rtl/win/wininc/func.inc
 
 ******************************************************************************
 commit 5afd809e88788ea53097471a7ee783826475d15a
