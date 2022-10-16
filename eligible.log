@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 73e5d6f70fc9354e10d5fa8498fba52dfb024c61
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Sun Oct 16 13:51:41 2022 +0200
+
+    fcl-css: renamed TCSSNode to ICSSNode, resolver: list of style elements
+
+M	packages/fcl-css/src/fpcssresolver.pas
+M	packages/fcl-css/tests/tccssresolver.pp
+
+******************************************************************************
 commit 1c86a4bbebf6bce1f14f2e3e17ab132fb3ccb8db
 Author: florian <florian@freepascal.org>
 Date:   Fri Oct 14 23:11:08 2022 +0200
@@ -2346,21 +2356,6 @@ Author: marcoonthegit <marco@freepascal.org>
 Date:   Tue Aug 9 11:27:23 2022 +0200
 
     * also add other threadpool functions
-
-M	rtl/win/wininc/base.inc
-M	rtl/win/wininc/func.inc
-
-******************************************************************************
-commit fd179a61f9fd68759262ed42772955583191d2c1
-Author: marcoonthegit <marco@freepascal.org>
-Date:   Tue Aug 9 09:59:19 2022 +0200
-
-    * give pthread_start_routine a proper Delphi compat prototype.
-     * add Delphi alias for callback.
-     * add queueuserworkitem
-     * add name clause GetDateFormatEx
-    
-    closes #39852
 
 M	rtl/win/wininc/base.inc
 M	rtl/win/wininc/func.inc
