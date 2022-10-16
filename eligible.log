@@ -2394,17 +2394,6 @@ Date:   Mon Aug 8 14:43:12 2022 +0200
 M	packages/fcl-web/src/websocket/fpwebsocketclient.pp
 
 ******************************************************************************
-commit d347487be9d2883f94856c0dbd73d46c52889a01
-Author: marcoonthegit <marco@freepascal.org>
-Date:   Mon Aug 8 12:04:50 2022 +0200
-
-    * wait up to 10ms extra till process really done to get rest of input, closes #39821
-     * avoid closing a popassinput handle.
-
-M	packages/fcl-process/src/pipes.pp
-M	packages/fcl-process/src/win/process.inc
-
-******************************************************************************
 commit a5486e04cd7dac0acdf4efe24129736650154064
 Author: Yuri Serebrennikov <yus.serebrennikov@gmail.com>
 Date:   Sun Aug 7 22:58:18 2022 +0300
