@@ -1,4 +1,16 @@
 ******************************************************************************
+commit e457cdad8a9f8e03cbcd167a090e2bba15f7aa6c
+Author: florian <florian@freepascal.org>
+Date:   Mon Oct 17 21:14:32 2022 +0200
+
+      * patch by avk959 to solve infinite loop in FindMatchesBoyerMoore*, resolves #39885 and #39709
+      + tests
+
+M	packages/rtl-objpas/src/inc/strutils.pp
+A	tests/webtbs/tw39709.pp
+A	tests/webtbs/tw39885.pp
+
+******************************************************************************
 commit 5670a7543cb170889fee2f3e8e65ccfd96c0b18e
 Author: florian <florian@freepascal.org>
 Date:   Sun Oct 16 22:51:50 2022 +0200
