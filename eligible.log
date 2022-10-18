@@ -1,4 +1,32 @@
 ******************************************************************************
+commit 45b1d592f5a4bf280c7f1a59394aac2cd8f4a541
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Thu Oct 13 22:07:01 2022 +0100
+
+      * x86: Bug fix where "mov $0,%reg" was inserted on the wrong side of a SETcc instruction
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
+commit 27aa4d4e3495db95e396cf32746ecd93020f484c
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Fri Oct 14 22:19:31 2022 +0100
+
+      * x86: ConvertJumpToRET now sets the condition to C_None
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
+commit 6b77017cb9f95a445f1173ba3badc05758112d84
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Thu Oct 13 22:27:31 2022 +0100
+
+      * x86: Added two new tests for i39922
+
+A	tests/webtbs/tw39922.pp
+A	tests/webtbs/tw39922a.pp
+
+******************************************************************************
 commit c89848a00f59cc2539c5ff3862a547218129f594
 Author: Jonas Maebe <jonas@freepascal.org>
 Date:   Tue Oct 18 21:49:19 2022 +0200
