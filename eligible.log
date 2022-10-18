@@ -1,4 +1,33 @@
 ******************************************************************************
+commit c89848a00f59cc2539c5ff3862a547218129f594
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Tue Oct 18 21:49:19 2022 +0200
+
+    powerpc64le: fix reading FPU control word after 0758aa1143
+    
+    Also, missing rest of the commit message for that change:
+    
+    The default implementation of SysResetFPU now sets the FPU control word that
+    was last set from any thread (Delphi and FPC i386/x86-64-compatible). No longer
+    call SysInitFPU when starting a new thread, only SysResetFPU. Combined, this
+    means that new FPC-started threads will always start out with that control
+    word on all architectures.
+    
+    Added generic fpc_cpuinit implementation that is used unless
+    FPC_SYSTEM_HAS_FPC_CPUINIT has been defined.
+    
+    Ensure that the softfloat exception mask is initially set to the same
+    value as the hardware fpu exception mask on architectures that use both.
+    
+    SafeLoadLibrary now saves/restores the FPU control word on all platforms.
+    
+    Removed outdated fpc_mtfsb0_corrected define check in powerpc64.inc
+    
+    Resolves #38230
+
+M	rtl/ppcgen/ppcfpuex.inc
+
+******************************************************************************
 commit 0758aa1143a6498532b3d100ed15edd63ca878b6
 Author: Jonas Maebe <jonas@freepascal.org>
 Date:   Mon Oct 17 19:43:01 2022 +0000
