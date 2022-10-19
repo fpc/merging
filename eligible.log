@@ -1,4 +1,13 @@
 ******************************************************************************
+commit fb7787b11eef04a5f0f136ecfe83cea67a2e8619
+Author: Michael VAN CANNEYT <mvancanneyt@tixeo.com>
+Date:   Wed Oct 19 17:54:04 2022 +0200
+
+    * Added debugcapture route
+
+M	packages/fcl-web/examples/simpleserver/simpleserver.pas
+
+******************************************************************************
 commit 2d94575fa8124933e47924909766b9eaedfc2bba
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Wed Oct 19 16:43:52 2022 +0100
