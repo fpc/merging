@@ -1,4 +1,31 @@
 ******************************************************************************
+commit 850685844b9a0028b7ef11b4239975ab2a61db45
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Wed Oct 19 22:57:02 2022 +0200
+
+    * Fix handling of options file
+
+M	packages/fcl-web/examples/simpleserver/simpleserver.pas
+
+******************************************************************************
+commit 9e60c686b42b79ea69b97aa5376e4e71e8fb333c
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Wed Oct 19 22:56:07 2022 +0200
+
+    * Add crossoriginisolation and debugcapture
+
+M	utils/pas2js/httpcompiler.pp
+
+******************************************************************************
+commit e142953c6d2b796e833e441773acd51325a7ed77
+Author: florian <florian@freepascal.org>
+Date:   Wed Oct 19 22:48:54 2022 +0200
+
+      * make the hidden high parameter for short strings a byte for 8 bit CPUs
+
+M	compiler/pparautl.pas
+
+******************************************************************************
 commit 991460c4ee3c26f0811e3ee749bad8e98cd467b3
 Author: ccrause <christo.crause@gmail.com>
 Date:   Sun Oct 16 14:17:16 2022 +0200
@@ -37759,7 +37786,6 @@ Date:   Mon Oct 29 17:34:51 2018 +0000
     + added tests directory
     
     git-svn-id: branches/unicodekvm@40087 -
-
 ******************************************************************************
 commit b6f0fa055f03a70056f4b9447fde0c880b0233bf
 Author: nickysn <nickysn@gmail.com>
@@ -37804,6 +37830,7 @@ Date:   Mon Oct 29 16:00:19 2018 +0000
     git-svn-id: branches/unicodekvm@40078 -
 
 M	packages/rtl-console/src/inc/keybrdh.inc
+
 ******************************************************************************
 commit 6a612f90032fe3b129865fcfa59ed5191638faab
 Author: nickysn <nickysn@gmail.com>
