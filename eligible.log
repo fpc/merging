@@ -1,4 +1,13 @@
 ******************************************************************************
+commit dd0711a27e85d15d45dc47e7b014c6bcc3fbf230
+Author: Martin <mfr-git@mfriebe.de>
+Date:   Wed Oct 19 23:10:33 2022 +0200
+
+    Fix incorrect dwarf entry count. Issue #39928 introduced in 1b6982107f1ac4b4111e37be0a3649d155a2bc1e
+
+M	compiler/dbgdwarf.pas
+
+******************************************************************************
 commit 850685844b9a0028b7ef11b4239975ab2a61db45
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Wed Oct 19 22:57:02 2022 +0200
@@ -37777,7 +37786,6 @@ Date:   Mon Oct 29 17:43:25 2018 +0000
 
 M	.gitattributes
 A	packages/rtl-console/tests/kbd1.pp
-
 ******************************************************************************
 commit aa7bddc62129bf70e79272e11a492f2b66a15d17
 Author: nickysn <nickysn@gmail.com>
@@ -37786,6 +37794,7 @@ Date:   Mon Oct 29 17:34:51 2018 +0000
     + added tests directory
     
     git-svn-id: branches/unicodekvm@40087 -
+
 ******************************************************************************
 commit b6f0fa055f03a70056f4b9447fde0c880b0233bf
 Author: nickysn <nickysn@gmail.com>
