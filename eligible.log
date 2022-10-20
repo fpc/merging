@@ -1,4 +1,16 @@
 ******************************************************************************
+commit 229d88c50fc0b4d07f7c1c51923f7acf59c896a7
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Thu Oct 20 22:24:25 2022 +0200
+
+    Thumb(2): fix compilation after FPU control word changes
+    
+    Resolves #39966
+
+M	rtl/arm/cpuh.inc
+M	rtl/arm/thumb2.inc
+
+******************************************************************************
 commit dd0711a27e85d15d45dc47e7b014c6bcc3fbf230
 Author: Martin <mfr-git@mfriebe.de>
 Date:   Wed Oct 19 23:10:33 2022 +0200
@@ -37774,7 +37786,6 @@ Date:   Mon Oct 29 18:00:17 2018 +0000
     git-svn-id: branches/unicodekvm@40089 -
 
 M	packages/rtl-console/tests/kbd1.pp
-
 ******************************************************************************
 commit 82b2e8a0804fefda6ab19dca1e434d6671ee35eb
 Author: nickysn <nickysn@gmail.com>
@@ -37786,6 +37797,7 @@ Date:   Mon Oct 29 17:43:25 2018 +0000
 
 M	.gitattributes
 A	packages/rtl-console/tests/kbd1.pp
+
 ******************************************************************************
 commit aa7bddc62129bf70e79272e11a492f2b66a15d17
 Author: nickysn <nickysn@gmail.com>
