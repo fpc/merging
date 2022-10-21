@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 87a9214983a52f7564ec282cfaedfdc107b6541a
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Fri Oct 21 12:10:09 2022 +0100
+
+    pastojs: FindDefaultConfig: search in symlinked compiler exe
+
+M	packages/pastojs/src/pas2jscompilercfg.pp
+
+******************************************************************************
 commit 229d88c50fc0b4d07f7c1c51923f7acf59c896a7
 Author: Jonas Maebe <jonas@freepascal.org>
 Date:   Thu Oct 20 22:24:25 2022 +0200
@@ -37775,7 +37784,6 @@ Date:   Mon Oct 29 20:51:49 2018 +0000
     git-svn-id: branches/unicodekvm@40092 -
 
 M	packages/rtl-console/tests/kbd1.pp
-
 ******************************************************************************
 commit 59aeb8260345ed2899a780a4352bcaf6e875b339
 Author: nickysn <nickysn@gmail.com>
@@ -37786,6 +37794,7 @@ Date:   Mon Oct 29 18:00:17 2018 +0000
     git-svn-id: branches/unicodekvm@40089 -
 
 M	packages/rtl-console/tests/kbd1.pp
+
 ******************************************************************************
 commit 82b2e8a0804fefda6ab19dca1e434d6671ee35eb
 Author: nickysn <nickysn@gmail.com>
