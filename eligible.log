@@ -1,4 +1,19 @@
 ******************************************************************************
+commit 0a2447a9559f579cdd225603a7a4ece9575f5c28
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Fri Oct 21 13:36:03 2022 +0200
+
+    * Publish all available & needed properties
+
+M	packages/fcl-web/src/base/fphtml.pp
+M	packages/fcl-web/src/base/fpwebfile.pp
+M	packages/fcl-web/src/base/fpwebproxy.pp
+M	packages/fcl-web/src/jsonrpc/fpextdirect.pp
+M	packages/fcl-web/src/jsonrpc/webjsonrpc.pp
+M	packages/fcl-web/src/restbridge/sqldbrestmodule.pp
+M	packages/fcl-web/src/webdata/fpwebdata.pp
+
+******************************************************************************
 commit 87a9214983a52f7564ec282cfaedfdc107b6541a
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Fri Oct 21 12:10:09 2022 +0100
