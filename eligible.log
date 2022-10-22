@@ -1,4 +1,31 @@
 ******************************************************************************
+commit a1ea1dd98e7c76d656a232e822d3d7c47063a11a
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Sat Oct 22 18:41:09 2022 +0100
+
+      * x86: Changed BMI2 check to BMI1 for ordinal ANDN optimisation
+
+M	compiler/x86/nx86add.pas
+
+******************************************************************************
+commit afc9acda374142b802a0fa02e11d0e98140d85f8
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Sat Oct 22 15:54:49 2022 -0500
+
+     Change wrong "$macros off" into "$macro off"
+
+M	rtl/inc/cmem.pp
+
+******************************************************************************
+commit f3179cb718ed68d61805a758793dd8487d085a45
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Sat Oct 22 15:34:38 2022 -0500
+
+     Add system_powerpc_wii to supported_targets of powerpc generic GNU assembler
+
+M	compiler/ppcgen/agppcgas.pas
+
+******************************************************************************
 commit 626e23d89fbb58d5eb3aa4ac9532fe8790d1d689
 Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
 Date:   Fri Oct 21 10:35:05 2022 +0100
@@ -37735,7 +37762,6 @@ Date:   Mon Nov 5 16:35:56 2018 +0000
 
 M	packages/rtl-console/src/win/keyboard.pp
 M	packages/rtl-console/src/win/winevent.pp
-
 ******************************************************************************
 commit d38e97c6616ada8556c94de84668ae26f69fa4f1
 Author: nickysn <nickysn@gmail.com>
@@ -37777,6 +37803,7 @@ A	packages/rtl-console/tests/fpc-3.0.4-win64/us101-us-ralt.dmp
 A	packages/rtl-console/tests/fpc-3.0.4-win64/us101-us-rctrl.dmp
 A	packages/rtl-console/tests/fpc-3.0.4-win64/us101-us-rshift.dmp
 A	packages/rtl-console/tests/fpc-3.0.4-win64/us101-us.dmp
+
 ******************************************************************************
 commit 12e66de0a60ddf16adc466bce267675c72568e53
 Author: nickysn <nickysn@gmail.com>
