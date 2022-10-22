@@ -1,4 +1,50 @@
 ******************************************************************************
+commit 626e23d89fbb58d5eb3aa4ac9532fe8790d1d689
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Fri Oct 21 10:35:05 2022 +0100
+
+      * x86: The code generator will now attempt manipulate "x and (not y)" (where x and y are ordinals) to use ANDN.
+
+M	compiler/x86/nx86add.pas
+
+******************************************************************************
+commit 567244007ecf2a289cc6761dfd53c4db97bf0ee9
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Thu Oct 13 16:41:09 2022 +0100
+
+      * x86: Improvement to bug fix so an optimisation can still be made even if the other register is in use
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
+commit 41b8f6a42e7c43acf8295c26acdd861210ed98b5
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Thu Oct 13 16:11:40 2022 +0100
+
+      * x86: Bug fix where improved AddMov2Mov optimisation didn't
+        check to see if the other register was modified in between
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
+commit fa76baa3d4a6415d004686bfe99068837f51ea5d
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Thu Oct 13 21:01:38 2022 +0100
+
+      * New test to evaluate i39918
+
+A	tests/webtbs/tw39918.pp
+
+******************************************************************************
+commit 8f269d4540fdd94c2d1891653892875946a18d66
+Author: florian <florian@freepascal.org>
+Date:   Sat Oct 22 15:05:52 2022 +0200
+
+      * check for proper exception type
+
+M	tests/webtbs/tw3157.pp
+
+******************************************************************************
 commit 2b48afe151a41943520040852a7d075968ff1bf6
 Author: florian <florian@freepascal.org>
 Date:   Fri Oct 21 21:14:39 2022 +0200
@@ -37731,7 +37777,6 @@ A	packages/rtl-console/tests/fpc-3.0.4-win64/us101-us-ralt.dmp
 A	packages/rtl-console/tests/fpc-3.0.4-win64/us101-us-rctrl.dmp
 A	packages/rtl-console/tests/fpc-3.0.4-win64/us101-us-rshift.dmp
 A	packages/rtl-console/tests/fpc-3.0.4-win64/us101-us.dmp
-
 ******************************************************************************
 commit 12e66de0a60ddf16adc466bce267675c72568e53
 Author: nickysn <nickysn@gmail.com>
@@ -37796,6 +37841,7 @@ Date:   Tue Oct 30 01:52:51 2018 +0000
     git-svn-id: branches/unicodekvm@40094 -
 
 M	packages/rtl-console/src/inc/keyboard.inc
+
 ******************************************************************************
 commit c5e35e8d117c75fa2c0fb181fe31ddc135871b62
 Author: nickysn <nickysn@gmail.com>
