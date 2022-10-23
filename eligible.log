@@ -1,4 +1,13 @@
 ******************************************************************************
+commit e63cc73cfa4672c92b7ebfd3600aa18683bab528
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sun Oct 23 22:24:46 2022 +0200
+
+    Darwin/AArch64: future-proof version check
+
+M	rtl/darwin/aarch64/sig_cpu.inc
+
+******************************************************************************
 commit 86547d35d78ffd26e1d0b63187ebc8472beb204b
 Author: florian <florian@freepascal.org>
 Date:   Sun Oct 23 22:09:00 2022 +0200
@@ -37748,7 +37757,6 @@ Date:   Tue Nov 6 02:15:03 2018 +0000
 
 M	.gitattributes
 A	packages/rtl-console/tests/kbdbdump.pp
-
 ******************************************************************************
 commit ba4d10ade0776de1c8bb10a6a41d3afe33c9ee5d
 Author: nickysn <nickysn@gmail.com>
@@ -37759,6 +37767,7 @@ Date:   Mon Nov 5 18:23:31 2018 +0000
     git-svn-id: branches/unicodekvm@40234 -
 
 M	packages/rtl-console/src/win/keyboard.pp
+
 ******************************************************************************
 commit 58d899bf75308e6b69159dd531e1daef7b4b06e8
 Author: nickysn <nickysn@gmail.com>
