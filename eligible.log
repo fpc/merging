@@ -1,4 +1,18 @@
 ******************************************************************************
+commit ae4c8359aabf282d0e1047ab9b5d89cfda3e8928
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sun Oct 23 09:46:48 2022 +0200
+
+    Darwin/AArch64: detect when SIGILL indicates an FPU exception
+    
+    Parse the ESR (ESR_ELx, Exception Syndrome Register (ELx)), return run error
+    as in float_raise
+
+M	rtl/darwin/aarch64/sig_cpu.inc
+M	rtl/darwin/aarch64/sighnd.inc
+M	rtl/darwin/signal.inc
+
+******************************************************************************
 commit a1ea1dd98e7c76d656a232e822d3d7c47063a11a
 Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
 Date:   Sat Oct 22 18:41:09 2022 +0100
@@ -37746,7 +37760,6 @@ Date:   Mon Nov 5 17:54:08 2018 +0000
     git-svn-id: branches/unicodekvm@40233 -
 
 M	packages/rtl-console/src/win/keyboard.pp
-
 ******************************************************************************
 commit 28235033d742b7fb75e08fd661724b754e2d9d45
 Author: nickysn <nickysn@gmail.com>
@@ -37762,6 +37775,7 @@ Date:   Mon Nov 5 16:35:56 2018 +0000
 
 M	packages/rtl-console/src/win/keyboard.pp
 M	packages/rtl-console/src/win/winevent.pp
+
 ******************************************************************************
 commit d38e97c6616ada8556c94de84668ae26f69fa4f1
 Author: nickysn <nickysn@gmail.com>
