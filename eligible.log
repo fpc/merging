@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 86547d35d78ffd26e1d0b63187ebc8472beb204b
+Author: florian <florian@freepascal.org>
+Date:   Sun Oct 23 22:09:00 2022 +0200
+
+      + apply OpTest/Or2Op optimization to ANDN as well
+      + DebugMsg for OpTest/Or2Op added
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
 commit ae4c8359aabf282d0e1047ab9b5d89cfda3e8928
 Author: Jonas Maebe <jonas@freepascal.org>
 Date:   Sun Oct 23 09:46:48 2022 +0200
@@ -37749,7 +37759,6 @@ Date:   Mon Nov 5 18:23:31 2018 +0000
     git-svn-id: branches/unicodekvm@40234 -
 
 M	packages/rtl-console/src/win/keyboard.pp
-
 ******************************************************************************
 commit 58d899bf75308e6b69159dd531e1daef7b4b06e8
 Author: nickysn <nickysn@gmail.com>
@@ -37760,6 +37769,7 @@ Date:   Mon Nov 5 17:54:08 2018 +0000
     git-svn-id: branches/unicodekvm@40233 -
 
 M	packages/rtl-console/src/win/keyboard.pp
+
 ******************************************************************************
 commit 28235033d742b7fb75e08fd661724b754e2d9d45
 Author: nickysn <nickysn@gmail.com>
