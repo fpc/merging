@@ -1,4 +1,23 @@
 ******************************************************************************
+commit 3fa77a4f627e5ce993c88be7849e27b64e7ae80a
+Author: florian <florian@freepascal.org>
+Date:   Mon Oct 24 22:10:34 2022 +0200
+
+      * fix life information propagation for while loops, resolves #39971
+      * warnings/errors fixed which are caused by the new life information propagation
+      + test
+
+M	compiler/dbgdwarf.pas
+M	compiler/ngtcon.pas
+M	compiler/optdfa.pas
+M	compiler/pgenutil.pas
+M	compiler/systems/t_bsd.pas
+M	compiler/systems/t_linux.pas
+M	compiler/systems/t_win.pas
+M	tests/test/opt/tdfa2.pp
+A	tests/webtbs/tw39971.pp
+
+******************************************************************************
 commit e63cc73cfa4672c92b7ebfd3600aa18683bab528
 Author: Jonas Maebe <jonas@freepascal.org>
 Date:   Sun Oct 23 22:24:46 2022 +0200
@@ -37748,7 +37767,6 @@ Date:   Tue Nov 6 02:15:03 2018 +0000
 
 M	.gitattributes
 A	packages/rtl-console/tests/kbdbdump.pp
-
 ******************************************************************************
 commit ba4d10ade0776de1c8bb10a6a41d3afe33c9ee5d
 Author: nickysn <nickysn@gmail.com>
@@ -37759,6 +37777,7 @@ Date:   Mon Nov 5 18:23:31 2018 +0000
     git-svn-id: branches/unicodekvm@40234 -
 
 M	packages/rtl-console/src/win/keyboard.pp
+
 ******************************************************************************
 commit 58d899bf75308e6b69159dd531e1daef7b4b06e8
 Author: nickysn <nickysn@gmail.com>
