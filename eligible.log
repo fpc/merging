@@ -3408,15 +3408,6 @@ Date:   Mon Jul 25 19:17:07 2022 +0200
 M	packages/webidl/src/webidltowasmjob.pp
 
 ******************************************************************************
-commit 81a7da51a5c6affea394cfea7b604fe392ad83c9
-Author: Sven/Sarah Barth <pascaldragon@gmail.com>
-Date:   Tue Jul 26 09:34:33 2022 +0200
-
-    * fix #39843: apply patch by michalgw to fix the declarations of CryptStringToBinary(A/W)
-
-M	packages/winunits-jedi/src/jwawincrypt.pas
-
-******************************************************************************
 commit f32ef29253f6f347c568adf4686de4e10893bc6d
 Author: Nikolay Nikolov <nickysn@gmail.com>
 Date:   Tue Jul 26 02:07:05 2022 +0300
@@ -37766,6 +37757,7 @@ A	packages/rtl-console/tests/bios/us101_numlock_lshift.bdf
 A	packages/rtl-console/tests/bios/us101_ralt.bdf
 A	packages/rtl-console/tests/bios/us101_rctrl.bdf
 A	packages/rtl-console/tests/bios/us101_rshift.bdf
+
 ******************************************************************************
 commit 3101c29dba54326550bdbc87f30921ff961b5ad6
 Author: nickysn <nickysn@gmail.com>
@@ -37777,7 +37769,6 @@ Date:   Tue Nov 6 02:15:03 2018 +0000
 
 M	.gitattributes
 A	packages/rtl-console/tests/kbdbdump.pp
-
 ******************************************************************************
 commit ba4d10ade0776de1c8bb10a6a41d3afe33c9ee5d
 Author: nickysn <nickysn@gmail.com>
