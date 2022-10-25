@@ -1,4 +1,22 @@
 ******************************************************************************
+commit 0f43c7b229f2b400edbd22ac0e2b242755260a41
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Tue Oct 25 17:52:08 2022 +0200
+
+    pas2js: use exename instead of paramstr 0, to search pas2js.cfg in exe location
+
+M	utils/pas2js/pas2js.pp
+
+******************************************************************************
+commit 6685e22ead441cd00e292e6940e2ece96b674fa5
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Mon Oct 24 19:21:55 2022 +0200
+
+    fcl-css: clearstyles
+
+M	packages/fcl-css/src/fpcssresolver.pas
+
+******************************************************************************
 commit be401422fd786e0c14b27340eef512f70d1f668d
 Author: florian <florian@freepascal.org>
 Date:   Mon Oct 24 22:52:52 2022 +0200
@@ -37732,7 +37750,6 @@ Date:   Tue Nov 6 17:06:36 2018 +0000
 
 M	.gitattributes
 A	packages/rtl-console/tests/bios/kbd_us.ods
-
 ******************************************************************************
 commit 72919d64ef2caacaea28851fa8288bfb444fe092
 Author: nickysn <nickysn@gmail.com>
@@ -37769,6 +37786,7 @@ Date:   Tue Nov 6 02:15:03 2018 +0000
 
 M	.gitattributes
 A	packages/rtl-console/tests/kbdbdump.pp
+
 ******************************************************************************
 commit ba4d10ade0776de1c8bb10a6a41d3afe33c9ee5d
 Author: nickysn <nickysn@gmail.com>
