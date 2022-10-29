@@ -1,4 +1,13 @@
 ******************************************************************************
+commit f0e31628ad7d584507612b2d7c4ea017532cea78
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Sat Oct 29 12:15:59 2022 +0200
+
+    * ensure that hmodule is initialized correctly
+
+M	compiler/pgenutil.pas
+
+******************************************************************************
 commit e050a019a278827a3ae9c0a32cdcb2dde00ce50d
 Author: Sven/Sarah Barth <pascaldragon@gmail.com>
 Date:   Fri Oct 28 17:40:53 2022 +0200
@@ -37723,7 +37732,6 @@ Date:   Tue Nov 6 23:47:49 2018 +0000
     git-svn-id: branches/unicodekvm@40253 -
 
 M	packages/rtl-console/tests/bios/kbd_us.ods
-
 ******************************************************************************
 commit 33c7d4c67d179e92088aed30184ce635ab8a1979
 Author: nickysn <nickysn@gmail.com>
@@ -37734,6 +37742,7 @@ Date:   Tue Nov 6 23:39:55 2018 +0000
     git-svn-id: branches/unicodekvm@40252 -
 
 M	packages/rtl-console/tests/bios/kbd_us.ods
+
 ******************************************************************************
 commit 98e77922bf2d5667315633180e563e6b9406463b
 Author: nickysn <nickysn@gmail.com>
