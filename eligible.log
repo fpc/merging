@@ -1,4 +1,23 @@
 ******************************************************************************
+commit e1b3c03dafb2779c7ba1b40752a56f28a3597e43
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Sat Oct 29 21:32:12 2022 +0100
+
+    Add test for mips code generation bug
+
+A	tests/test/cg/testcompo.pp
+
+******************************************************************************
+commit dce70b3b704985cdfb7cdf40cc7d59e5d52d5422
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Thu Oct 27 22:48:46 2022 +0100
+
+    Short version of the mips code genration bug
+
+M	compiler/ncal.pas
+M	compiler/ncgcal.pas
+
+******************************************************************************
 commit f9a76aaa569c4c17c0e79e1100a2ec522903286a
 Author: marcoonthegit <marco@freepascal.org>
 Date:   Sat Oct 29 16:12:40 2022 +0200
@@ -37709,7 +37728,6 @@ Date:   Wed Nov 7 18:10:29 2018 +0000
     git-svn-id: branches/unicodekvm@40266 -
 
 M	packages/rtl-console/src/win/keyboard.pp
-
 ******************************************************************************
 commit 9a2e1b99cb890ef06a238b37b7873fd6efd6b31a
 Author: nickysn <nickysn@gmail.com>
@@ -37733,6 +37751,7 @@ Date:   Wed Nov 7 17:55:54 2018 +0000
     git-svn-id: branches/unicodekvm@40262 -
 
 M	packages/rtl-console/src/win/keyboard.pp
+
 ******************************************************************************
 commit 1d2414a2b880b7c4320a6a6105472b298dc72177
 Author: nickysn <nickysn@gmail.com>
