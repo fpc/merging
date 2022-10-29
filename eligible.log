@@ -1,4 +1,39 @@
 ******************************************************************************
+commit f18524f2fe32fdbb798b38a19d9e9bbc24fef3e4
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sat Oct 29 14:13:53 2022 +0200
+
+    Darwin: fix mac0S 11.0 version string
+    
+    Prevents LLVM warnings
+
+M	compiler/options.pas
+
+******************************************************************************
+commit cd8ddffe426f37743c0d17ecfa990b5b9ddf442a
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sat Oct 29 14:12:43 2022 +0200
+
+    AArch64: X18 is not a volatile register
+    
+    It may be unused on some platforms, but in general it's reserved for OS library
+    usage (usually related to TLS)
+
+M	compiler/aarch64/cpubase.pas
+
+******************************************************************************
+commit 49fb1b4c292e3fe305a470b3a2c4dd52f6d46733
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sat Oct 29 13:45:48 2022 +0200
+
+    RTTI: don't generate full RTTI for internal types
+    
+    These are types created by the code generator for internal purposes, and hence
+    are never queried by user code
+
+M	compiler/ncgrtti.pas
+
+******************************************************************************
 commit f0e31628ad7d584507612b2d7c4ea017532cea78
 Author: Sven/Sarah Barth <pascaldragon@gmail.com>
 Date:   Sat Oct 29 12:15:59 2022 +0200
@@ -37700,7 +37735,6 @@ Date:   Wed Nov 7 17:47:21 2018 +0000
     git-svn-id: branches/unicodekvm@40260 -
 
 M	packages/rtl-console/src/inc/keybrdh.inc
-
 ******************************************************************************
 commit 4212b6a92f513812e59fe0072a1f66b79326da90
 Author: nickysn <nickysn@gmail.com>
@@ -37732,6 +37766,7 @@ Date:   Tue Nov 6 23:47:49 2018 +0000
     git-svn-id: branches/unicodekvm@40253 -
 
 M	packages/rtl-console/tests/bios/kbd_us.ods
+
 ******************************************************************************
 commit 33c7d4c67d179e92088aed30184ce635ab8a1979
 Author: nickysn <nickysn@gmail.com>
