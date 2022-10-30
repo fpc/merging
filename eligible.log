@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 3ba9cf5b4ffe0a10dc0874f69e0d72e5c77f7358
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Mon Oct 24 09:23:18 2022 +0100
+
+      * x86: PostPeepholeOptTestOr has different debug messages for each found instruction, and also tests for BEXTR and BZHI.
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
 commit a7d1f7d7712b7f8845a59937fc9e22e67a7fa5ca
 Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
 Date:   Thu Oct 27 06:50:25 2022 +0100
@@ -37715,7 +37724,6 @@ Date:   Mon Nov 12 23:10:28 2018 +0000
     git-svn-id: branches/unicodekvm@40299 -
 
 M	packages/rtl-console/tests/bios/kbd_us.ods
-
 ******************************************************************************
 commit d681d51e38659918dcef5a7322d286ee94dcd698
 Author: nickysn <nickysn@gmail.com>
@@ -37726,6 +37734,7 @@ Date:   Mon Nov 12 17:50:42 2018 +0000
     git-svn-id: branches/unicodekvm@40298 -
 
 M	packages/rtl-console/src/inc/keybrdh.inc
+
 ******************************************************************************
 commit f05c6666fe97f365f376fb3b7d8d8c0f6b91fb3b
 Author: nickysn <nickysn@gmail.com>
