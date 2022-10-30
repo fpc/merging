@@ -1,4 +1,13 @@
 ******************************************************************************
+commit ae12a79bf75e2019cba48e94d54b1f5c2fe07f92
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Sun Oct 30 10:59:31 2022 +0100
+
+    Avoid string truncation
+
+M	compiler/utils/ppuutils/ppudump.pp
+
+******************************************************************************
 commit e1b3c03dafb2779c7ba1b40752a56f28a3597e43
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Sat Oct 29 21:32:12 2022 +0100
@@ -37717,7 +37726,6 @@ Date:   Mon Nov 12 14:32:26 2018 +0000
     git-svn-id: branches/unicodekvm@40293 -
 
 M	packages/rtl-console/src/inc/keyboard.inc
-
 ******************************************************************************
 commit 2593a69eaf0a96b39821dab37f402efc0fbbf4ab
 Author: nickysn <nickysn@gmail.com>
@@ -37728,6 +37736,7 @@ Date:   Wed Nov 7 18:10:29 2018 +0000
     git-svn-id: branches/unicodekvm@40266 -
 
 M	packages/rtl-console/src/win/keyboard.pp
+
 ******************************************************************************
 commit 9a2e1b99cb890ef06a238b37b7873fd6efd6b31a
 Author: nickysn <nickysn@gmail.com>
