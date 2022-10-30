@@ -1,4 +1,35 @@
 ******************************************************************************
+commit 6d3e3d06e2bc18dc15000093869e821a050d9b60
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sun Oct 30 21:56:29 2022 +0100
+
+    Linux: don't discard CFI when using it for exceptions
+
+M	compiler/systems/t_linux.pas
+
+******************************************************************************
+commit 57935a895cd02101ae2e26701579133fb23f75e2
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sat Oct 29 21:02:10 2022 +0200
+
+    Darwin: really fix -Xg for DWARF4
+
+M	compiler/options.pas
+M	compiler/systems/t_darwin.pas
+
+******************************************************************************
+commit e62cf5b9e7f98f8beaef2ab288574aced94b15ec
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sat Oct 29 17:23:31 2022 +0200
+
+    systems_iphonesym -> systems_iphonesim
+    
+    It's a simulator, not a symbolator
+
+M	compiler/link.pas
+M	compiler/systems.pas
+
+******************************************************************************
 commit 3ba9cf5b4ffe0a10dc0874f69e0d72e5c77f7358
 Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
 Date:   Mon Oct 24 09:23:18 2022 +0100
@@ -37689,7 +37720,6 @@ Date:   Thu Nov 15 15:18:40 2018 +0000
     git-svn-id: branches/unicodekvm@40317 -
 
 M	packages/rtl-console/src/win/keyboard.pp
-
 ******************************************************************************
 commit 4f482516ddfff69c94bdcc0872ca6e6e8d04ed4e
 Author: nickysn <nickysn@gmail.com>
@@ -37724,6 +37754,7 @@ Date:   Mon Nov 12 23:10:28 2018 +0000
     git-svn-id: branches/unicodekvm@40299 -
 
 M	packages/rtl-console/tests/bios/kbd_us.ods
+
 ******************************************************************************
 commit d681d51e38659918dcef5a7322d286ee94dcd698
 Author: nickysn <nickysn@gmail.com>
