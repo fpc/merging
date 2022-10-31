@@ -1,4 +1,15 @@
 ******************************************************************************
+commit 87044c004f22c34457a634074dbd8b253fadaa35
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Mon Oct 31 18:03:52 2022 +0100
+
+    fcl-css: clean up
+
+M	packages/fcl-css/src/fpcssparser.pp
+M	packages/fcl-css/src/fpcssresolver.pas
+M	packages/fcl-css/tests/tccssresolver.pp
+
+******************************************************************************
 commit 92cc78e723496ec16475848d6339bd8ddbcad9cd
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Sun Oct 30 23:31:57 2022 +0100
@@ -37718,7 +37729,6 @@ Date:   Thu Nov 15 17:00:59 2018 +0000
     git-svn-id: branches/unicodekvm@40320 -
 
 M	packages/rtl-console/src/win/keyboard.pp
-
 ******************************************************************************
 commit aac266e82de41fb899e2e2be34b8ca3ebcc02389
 Author: nickysn <nickysn@gmail.com>
@@ -37729,6 +37739,7 @@ Date:   Thu Nov 15 15:18:40 2018 +0000
     git-svn-id: branches/unicodekvm@40317 -
 
 M	packages/rtl-console/src/win/keyboard.pp
+
 ******************************************************************************
 commit 4f482516ddfff69c94bdcc0872ca6e6e8d04ed4e
 Author: nickysn <nickysn@gmail.com>
