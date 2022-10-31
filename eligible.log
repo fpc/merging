@@ -1,4 +1,30 @@
 ******************************************************************************
+commit 0eee70ac816afaebbc567e00a5c18a6ee46873e1
+Author: florian <florian@freepascal.org>
+Date:   Mon Oct 31 20:19:10 2022 +0100
+
+      * fix FindUnitSymtable for exception symtables, resolves #24801 and #39974
+      * more consistent naming of exceptsymtable enumeration symbol
+
+M	compiler/symconst.pas
+M	compiler/symdef.pas
+M	compiler/symtable.pas
+M	compiler/symtype.pas
+A	tests/webtbs/tw24801.pp
+A	tests/webtbs/uw24801.pp
+
+******************************************************************************
+commit dbd8259c48e3654620507cfcac4f532ba857aaab
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Thu Oct 13 22:55:14 2022 +0100
+
+      * x86: Fixed mistake in var9 optimisation under -Os; "andl $255,%eax" is not
+            smaller than "movzbl %al,%eax" because the immediate is sign-extended,
+            not zero-extended, so $255 will be stored as a 32-bit value.
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
 commit 87044c004f22c34457a634074dbd8b253fadaa35
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Mon Oct 31 18:03:52 2022 +0100
@@ -37699,7 +37725,6 @@ Date:   Fri Nov 16 16:51:20 2018 +0000
     git-svn-id: branches/unicodekvm@40328 -
 
 M	packages/rtl-console/src/inc/keybrdh.inc
-
 ******************************************************************************
 commit baa6525a9e73f885381e94a7a8acf03c2d4f406f
 Author: nickysn <nickysn@gmail.com>
@@ -37729,6 +37754,7 @@ Date:   Thu Nov 15 17:00:59 2018 +0000
     git-svn-id: branches/unicodekvm@40320 -
 
 M	packages/rtl-console/src/win/keyboard.pp
+
 ******************************************************************************
 commit aac266e82de41fb899e2e2be34b8ca3ebcc02389
 Author: nickysn <nickysn@gmail.com>
