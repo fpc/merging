@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 92cc78e723496ec16475848d6339bd8ddbcad9cd
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Sun Oct 30 23:31:57 2022 +0100
+
+    Allow cycle to finish successfully with -dEXTDEBUG without ALLOW_WARNINGS=1
+
+M	compiler/pass_2.pas
+
+******************************************************************************
 commit 6d3e3d06e2bc18dc15000093869e821a050d9b60
 Author: Jonas Maebe <jonas@freepascal.org>
 Date:   Sun Oct 30 21:56:29 2022 +0100
