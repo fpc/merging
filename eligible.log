@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 3f7bf0fd70b339a43889898efa59af4fec33ea84
+Author: florian <florian@freepascal.org>
+Date:   Tue Nov 1 21:15:49 2022 +0100
+
+      * stop generation of typed array constants if the size does not match, resolves #39980
+
+M	compiler/ngtcon.pas
+A	tests/webtbf/tw39980.pp
+
+******************************************************************************
 commit d351b78821fe7c1a5e4c6680d5928683a1a8f55c
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Tue Nov 1 13:06:52 2022 +0100
