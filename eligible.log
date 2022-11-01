@@ -1,4 +1,22 @@
 ******************************************************************************
+commit d351b78821fe7c1a5e4c6680d5928683a1a8f55c
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Tue Nov 1 13:06:52 2022 +0100
+
+    * Fix typo in author
+
+M	packages/gstreamer/fpmake.pp
+
+******************************************************************************
+commit 78666090c2673dd7eeb75864797301aea9adcab1
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Tue Nov 1 13:05:59 2022 +0100
+
+    * Remove wrong unit
+
+M	packages/gstreamer/src/gst.pp
+
+******************************************************************************
 commit 36073c1b6511134bc0a2312abc943844d22261ae
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Tue Nov 1 11:39:12 2022 +0100
@@ -37786,7 +37804,6 @@ Date:   Fri Nov 16 17:52:27 2018 +0000
     git-svn-id: branches/unicodekvm@40332 -
 
 M	packages/rtl-console/src/win/keyboard.pp
-
 ******************************************************************************
 commit 55c9af86f44712251fccf54d518205b5c39bad5d
 Author: nickysn <nickysn@gmail.com>
@@ -37809,6 +37826,7 @@ Date:   Fri Nov 16 17:00:17 2018 +0000
 
 M	.gitattributes
 A	packages/rtl-console/tests/kbd2.pp
+
 ******************************************************************************
 commit 5648bd9bdc283697604608f4c9b43f18f85ad047
 Author: nickysn <nickysn@gmail.com>
