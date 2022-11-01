@@ -1,4 +1,99 @@
 ******************************************************************************
+commit 36073c1b6511134bc0a2312abc943844d22261ae
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Tue Nov 1 11:39:12 2022 +0100
+
+    * Add gstreamer library import unit (gst)
+
+M	packages/fpmake_add.inc
+M	packages/fpmake_proc.inc
+A	packages/gstreamer/Makefile
+A	packages/gstreamer/Makefile.fpc
+A	packages/gstreamer/example/playmp3.lpi
+A	packages/gstreamer/example/playmp3.pp
+A	packages/gstreamer/fpmake.pp
+A	packages/gstreamer/src/.inc.h.prep
+A	packages/gstreamer/src/.inc.h.raw
+A	packages/gstreamer/src/elementfactory.inc
+A	packages/gstreamer/src/gst.pp
+A	packages/gstreamer/src/gstaliases.inc
+A	packages/gstreamer/src/gstallocator.inc
+A	packages/gstreamer/src/gstatomicqueue.inc
+A	packages/gstreamer/src/gstbin.inc
+A	packages/gstreamer/src/gstbin_impl.inc
+A	packages/gstreamer/src/gstbuffer.inc
+A	packages/gstreamer/src/gstbufferlist.inc
+A	packages/gstreamer/src/gstbufferpool.inc
+A	packages/gstreamer/src/gstbus.inc
+A	packages/gstreamer/src/gstcaps.inc
+A	packages/gstreamer/src/gstcapsfeatures.inc
+A	packages/gstreamer/src/gstchildproxy.inc
+A	packages/gstreamer/src/gstclock.inc
+A	packages/gstreamer/src/gstcontext.inc
+A	packages/gstreamer/src/gstcontrolbinding.inc
+A	packages/gstreamer/src/gstcontrolsource.inc
+A	packages/gstreamer/src/gstdatetime.inc
+A	packages/gstreamer/src/gstdebugutils.inc
+A	packages/gstreamer/src/gstdevice.inc
+A	packages/gstreamer/src/gstdevicemonitor.inc
+A	packages/gstreamer/src/gstdeviceprovider.inc
+A	packages/gstreamer/src/gstdeviceproviderfactory.inc
+A	packages/gstreamer/src/gstdynamictypefactory.inc
+A	packages/gstreamer/src/gstelement.inc
+A	packages/gstreamer/src/gstelementfactory.inc
+A	packages/gstreamer/src/gstelementmetadata.inc
+A	packages/gstreamer/src/gstenum.inc
+A	packages/gstreamer/src/gstenumtypes.inc
+A	packages/gstreamer/src/gsterror.inc
+A	packages/gstreamer/src/gstevent.inc
+A	packages/gstreamer/src/gstformat.inc
+A	packages/gstreamer/src/gstformat.pp
+A	packages/gstreamer/src/gstghostpad.inc
+A	packages/gstreamer/src/gstinfo.inc
+A	packages/gstreamer/src/gstiterator.inc
+A	packages/gstreamer/src/gstmemory.inc
+A	packages/gstreamer/src/gstmessage.inc
+A	packages/gstreamer/src/gstmessage_impl.inc
+A	packages/gstreamer/src/gstmeta.inc
+A	packages/gstreamer/src/gstminiobject.inc
+A	packages/gstreamer/src/gstobject.inc
+A	packages/gstreamer/src/gstpad.inc
+A	packages/gstreamer/src/gstpadtemplate.inc
+A	packages/gstreamer/src/gstparamspecs.inc
+A	packages/gstreamer/src/gstparse.inc
+A	packages/gstreamer/src/gstpipeline.inc
+A	packages/gstreamer/src/gstplugin.inc
+A	packages/gstreamer/src/gstpluginfeature.inc
+A	packages/gstreamer/src/gstpoll.inc
+A	packages/gstreamer/src/gstpreset.inc
+A	packages/gstreamer/src/gstpromise.inc
+A	packages/gstreamer/src/gstprotection.inc
+A	packages/gstreamer/src/gstquery.inc
+A	packages/gstreamer/src/gstrec.inc
+A	packages/gstreamer/src/gstregistry.inc
+A	packages/gstreamer/src/gstsample.inc
+A	packages/gstreamer/src/gstsegment.inc
+A	packages/gstreamer/src/gststreamcollection.inc
+A	packages/gstreamer/src/gststreams.inc
+A	packages/gstreamer/src/gststructure.inc
+A	packages/gstreamer/src/gstsystemclock.inc
+A	packages/gstreamer/src/gsttaglist.inc
+A	packages/gstreamer/src/gsttagsetter.inc
+A	packages/gstreamer/src/gsttask.inc
+A	packages/gstreamer/src/gsttaskpool.inc
+A	packages/gstreamer/src/gsttoc.inc
+A	packages/gstreamer/src/gsttocsetter.inc
+A	packages/gstreamer/src/gsttracer.inc
+A	packages/gstreamer/src/gsttracerfactory.inc
+A	packages/gstreamer/src/gsttracerrecord.inc
+A	packages/gstreamer/src/gsttypefind.inc
+A	packages/gstreamer/src/gsttypefindfactory.inc
+A	packages/gstreamer/src/gsturi.inc
+A	packages/gstreamer/src/gstutils.inc
+A	packages/gstreamer/src/gstvalue.inc
+A	packages/gstreamer/src/gstversion.inc
+
+******************************************************************************
 commit 0eee70ac816afaebbc567e00a5c18a6ee46873e1
 Author: florian <florian@freepascal.org>
 Date:   Mon Oct 31 20:19:10 2022 +0100
@@ -37714,7 +37809,6 @@ Date:   Fri Nov 16 17:00:17 2018 +0000
 
 M	.gitattributes
 A	packages/rtl-console/tests/kbd2.pp
-
 ******************************************************************************
 commit 5648bd9bdc283697604608f4c9b43f18f85ad047
 Author: nickysn <nickysn@gmail.com>
@@ -37725,6 +37819,7 @@ Date:   Fri Nov 16 16:51:20 2018 +0000
     git-svn-id: branches/unicodekvm@40328 -
 
 M	packages/rtl-console/src/inc/keybrdh.inc
+
 ******************************************************************************
 commit baa6525a9e73f885381e94a7a8acf03c2d4f406f
 Author: nickysn <nickysn@gmail.com>
