@@ -1,4 +1,23 @@
 ******************************************************************************
+commit 342524c31234981a48e52659d07ff2e52cbd81b4
+Author: florian <florian@freepascal.org>
+Date:   Wed Nov 2 22:14:12 2022 +0100
+
+    * run dead store elimination multiple times if needed
+
+M	compiler/optdeadstore.pas
+M	compiler/psub.pas
+
+******************************************************************************
+commit a0366d7d28f806b3bf825d6613040e38d3bdd64f
+Author: florian <florian@freepascal.org>
+Date:   Wed Nov 2 22:13:40 2022 +0100
+
+    * dead store elimnation should not remove statements which can cause an exception
+
+M	compiler/optdeadstore.pas
+
+******************************************************************************
 commit 05c45486e8db45b8025cef2047c14c9f47fd6b66
 Author: Ondrej Pokorny <lazarus@kluug.net>
 Date:   Wed Oct 26 13:36:50 2022 +0200
