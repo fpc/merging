@@ -1,4 +1,19 @@
 ******************************************************************************
+commit 05c45486e8db45b8025cef2047c14c9f47fd6b66
+Author: Ondrej Pokorny <lazarus@kluug.net>
+Date:   Wed Oct 26 13:36:50 2022 +0200
+
+    fcl-image/pasjpeg: handle Exif orientation flag automatically
+
+M	packages/fcl-image/src/fpreadjpeg.pas
+M	packages/pasjpeg/src/jdmarker.pas
+M	packages/pasjpeg/src/jpeglib.pas
+A	tests/test/packages/fcl-image/dots-5.jpg
+A	tests/test/packages/fcl-image/dots-8.jpg
+A	tests/test/packages/fcl-image/dots.rc
+A	tests/test/packages/fcl-image/timage_jpegorientation.pp
+
+******************************************************************************
 commit 3f7bf0fd70b339a43889898efa59af4fec33ea84
 Author: florian <florian@freepascal.org>
 Date:   Tue Nov 1 21:15:49 2022 +0100
@@ -37803,7 +37818,6 @@ Date:   Fri Feb 15 15:45:45 2019 +0000
     git-svn-id: branches/unicodekvm@41322 -
 
 M	utils/fpcm/revision.inc
-
 ******************************************************************************
 commit ac81dc399611d348fe81df7a4a96288b2f6d1e13
 Author: nickysn <nickysn@gmail.com>
@@ -37814,6 +37828,7 @@ Date:   Fri Nov 16 17:52:27 2018 +0000
     git-svn-id: branches/unicodekvm@40332 -
 
 M	packages/rtl-console/src/win/keyboard.pp
+
 ******************************************************************************
 commit 55c9af86f44712251fccf54d518205b5c39bad5d
 Author: nickysn <nickysn@gmail.com>
