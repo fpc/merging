@@ -1,4 +1,13 @@
 ******************************************************************************
+commit c5f4fe28826b3018bbbff3fa1de3822b35583f3b
+Author: Ondrej Pokorny <lazarus@kluug.net>
+Date:   Thu Nov 3 08:14:52 2022 +0100
+
+    httpserver: add KeepConnectionIdleTimeout property and OnKeepConnectionIdle event. Fix KeepConnectionTimeout to match the meaning from the comment and the name
+
+M	packages/fcl-web/src/base/fphttpserver.pp
+
+******************************************************************************
 commit 342524c31234981a48e52659d07ff2e52cbd81b4
 Author: florian <florian@freepascal.org>
 Date:   Wed Nov 2 22:14:12 2022 +0100
