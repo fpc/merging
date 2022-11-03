@@ -1,4 +1,13 @@
 ******************************************************************************
+commit e67670fa70b7f92724ad4c55f5fedbb3b4231615
+Author: florian <florian@freepascal.org>
+Date:   Thu Nov 3 19:01:02 2022 +0100
+
+      * changed of do_optdeadstoreelim must be passed by reference as noted by Alexey Torgashin
+
+M	compiler/optdeadstore.pas
+
+******************************************************************************
 commit c5f4fe28826b3018bbbff3fa1de3822b35583f3b
 Author: Ondrej Pokorny <lazarus@kluug.net>
 Date:   Thu Nov 3 08:14:52 2022 +0100
