@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 9b6926c5f514ab5a66abb78bdd0c31cc7770d99e
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Fri Nov 4 22:21:29 2022 +0000
+
+    Introduce CTYPES_INLINE, enabled by default but which can be disabled using -dDISABLE_INLINE for ctypes unit
+
+M	rtl/inc/ctypes.pp
+
+******************************************************************************
 commit e67670fa70b7f92724ad4c55f5fedbb3b4231615
 Author: florian <florian@freepascal.org>
 Date:   Thu Nov 3 19:01:02 2022 +0100
@@ -37844,7 +37853,6 @@ M	.gitattributes
 M	packages/rtl-console/fpmake.pp
 A	packages/rtl-console/src/unix/unixkvmbase.pp
 M	packages/rtl-console/src/unix/video.pp
-
 ******************************************************************************
 commit 43db73cb54e82f5d40448969c090cda730e5ecd1
 Author: nickysn <nickysn@gmail.com>
@@ -37855,6 +37863,7 @@ Date:   Fri Feb 15 15:45:45 2019 +0000
     git-svn-id: branches/unicodekvm@41322 -
 
 M	utils/fpcm/revision.inc
+
 ******************************************************************************
 commit ac81dc399611d348fe81df7a4a96288b2f6d1e13
 Author: nickysn <nickysn@gmail.com>
