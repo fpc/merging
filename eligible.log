@@ -1,4 +1,23 @@
 ******************************************************************************
+commit 3db1415a449212d8c3ab5a9085106c9f11acaa0d
+Author: florian <florian@freepascal.org>
+Date:   Sat Nov 5 16:56:05 2022 +0100
+
+      * generate correct dfa for subroutines declared as safecall
+
+M	compiler/nutils.pas
+M	compiler/optdfa.pas
+
+******************************************************************************
+commit 031c16dd3cd6a8b7b85a747225899d34898ef0a8
+Author: ccrause <christo.crause@gmail.com>
+Date:   Sat Nov 5 11:19:58 2022 +0200
+
+    Fix potential overflow when incrementing 8 bit high value of res.
+
+M	rtl/inc/generic.inc
+
+******************************************************************************
 commit 9b6926c5f514ab5a66abb78bdd0c31cc7770d99e
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Fri Nov 4 22:21:29 2022 +0000
@@ -37835,7 +37854,6 @@ Date:   Sun Feb 17 23:32:29 2019 +0000
 
 M	packages/rtl-console/fpmake.pp
 M	packages/rtl-console/src/unix/keyboard.pp
-
 ******************************************************************************
 commit 4ea55963ef78a168686761578fc8a3e840279ee6
 Author: nickysn <nickysn@gmail.com>
@@ -37853,6 +37871,7 @@ M	.gitattributes
 M	packages/rtl-console/fpmake.pp
 A	packages/rtl-console/src/unix/unixkvmbase.pp
 M	packages/rtl-console/src/unix/video.pp
+
 ******************************************************************************
 commit 43db73cb54e82f5d40448969c090cda730e5ecd1
 Author: nickysn <nickysn@gmail.com>
