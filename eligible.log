@@ -1,4 +1,87 @@
 ******************************************************************************
+commit 0dbf40a24c9e8db931875d659c38f975c06bd208
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Wed Nov 2 22:30:47 2022 +0000
+
+      * Added new tests for BZHI optimisations
+
+A	tests/test/cg/tbzhi1.pp
+A	tests/test/cg/tbzhi1a.pp
+A	tests/test/cg/tbzhi1b.pp
+A	tests/test/cg/tbzhi1c.pp
+A	tests/test/cg/tbzhi1d.pp
+A	tests/test/cg/tbzhi1e.pp
+A	tests/test/cg/tbzhi1f.pp
+A	tests/test/cg/tbzhi1g.pp
+A	tests/test/cg/tbzhi2.pp
+A	tests/test/cg/tbzhi2a.pp
+A	tests/test/cg/tbzhi2b.pp
+A	tests/test/cg/tbzhi2c.pp
+A	tests/test/cg/tbzhi2d.pp
+
+******************************************************************************
+commit c40f518de4c9ee3c4e6bafd2ec909dc4ca286b24
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Wed Nov 2 16:39:47 2022 +0000
+
+      * x86: "x and ((1 shl y) - 1)" to BZHI adapted for in_and_assign_x_y
+
+M	compiler/x86/nx86inl.pas
+
+******************************************************************************
+commit 7da9b4a98858e6d82f297b12757b32e62c8491d7
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Wed Nov 2 13:48:54 2022 +0000
+
+      * x86: The code generator will now attempt to manipulate "x and ((1 shl y) - 1)" to use BZHI
+
+M	compiler/x86/nx86add.pas
+
+******************************************************************************
+commit e748e4c7ab79a4dcacee4f106f53c5699d55dda1
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Wed Nov 2 13:47:15 2022 +0000
+
+      * x86: Added new emit_reg_ref_reg routine and related methods to support BMI2 instructions
+
+M	compiler/x86/aasmcpu.pas
+M	compiler/x86/cga.pas
+
+******************************************************************************
+commit 95f94a279c1807554ec2c865ca045aa29bd9e5b7
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sun Nov 6 16:09:45 2022 +0100
+
+    llvmdbg: fixes for method debug info
+    
+    Mark "self" parameter as artificial
+    
+    Add methods to the scope of the class/record rather than to the file scope
+    
+    Add the vmt field, strip the "($)hidden" prefix from its name, and emit its
+    real type
+
+M	compiler/llvm/dbgllvm.pas
+
+******************************************************************************
+commit c5cdfbd9c03c0d443e5a4f4a7eafd5ea1c2b0e21
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Thu Nov 3 21:27:41 2022 +0100
+
+    dwarf-eh: don't emit header if there's no data to emit
+
+M	compiler/cfidwarf.pas
+
+******************************************************************************
+commit 1b08b89b7b552beecc90672f8ed0b1a858169658
+Author: florian <florian@freepascal.org>
+Date:   Sun Nov 6 16:38:01 2022 +0100
+
+      * check if a target really supports safecall before calling load_safecallresult_node
+
+M	compiler/optdfa.pas
+
+******************************************************************************
 commit 3db1415a449212d8c3ab5a9085106c9f11acaa0d
 Author: florian <florian@freepascal.org>
 Date:   Sat Nov 5 16:56:05 2022 +0100
@@ -37806,7 +37889,6 @@ Date:   Wed Feb 20 13:55:11 2019 +0000
     git-svn-id: branches/unicodekvm@41399 -
 
 M	packages/rtl-console/src/unix/keyboard.pp
-
 ******************************************************************************
 commit 2b1297c3970f9815a35c3694920c634e0a30c3e3
 Author: nickysn <nickysn@gmail.com>
@@ -37854,6 +37936,7 @@ Date:   Sun Feb 17 23:32:29 2019 +0000
 
 M	packages/rtl-console/fpmake.pp
 M	packages/rtl-console/src/unix/keyboard.pp
+
 ******************************************************************************
 commit 4ea55963ef78a168686761578fc8a3e840279ee6
 Author: nickysn <nickysn@gmail.com>
