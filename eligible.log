@@ -1,4 +1,86 @@
 ******************************************************************************
+commit eab28cdd2eb66c32f7e8d6ec186c479d3a70e519
+Author: Ondrej Pokorny <lazarus@kluug.net>
+Date:   Thu Nov 3 06:54:56 2022 +0100
+
+    clean up
+
+M	packages/fcl-web/src/base/fphttpclientasyncpool.pas
+
+******************************************************************************
+commit 029ea37ed940e20e6b491649da808397bb0c96c2
+Author: Ondrej Pokorny <lazarus@kluug.net>
+Date:   Thu Nov 3 06:12:40 2022 +0100
+
+    * simplify implementation (almost) without touching the public interface
+    * make function references an option to classic events
+
+M	packages/fcl-web/src/base/fphttpclientasyncpool.pas
+
+******************************************************************************
+commit 6bb59c66cb311a871a7a334362edfa925dac7dc8
+Author: Ondrej Pokorny <lazarus@kluug.net>
+Date:   Wed Nov 2 15:13:31 2022 +0100
+
+    clean up
+
+M	packages/fcl-web/src/base/fphttpclientasyncpool.pas
+
+******************************************************************************
+commit 56cb11e3efbecf83b509a7709238fa55dc2c6748
+Author: Ondrej Pokorny <lazarus@kluug.net>
+Date:   Wed Nov 2 15:12:48 2022 +0100
+
+    both callback interfaces: classic events and function references
+
+M	packages/fcl-web/src/base/fphttpclientasyncpool.pas
+
+******************************************************************************
+commit dab6c48b472f83e14173ee55bd3393bbd44222da
+Author: Ondrej Pokorny <lazarus@kluug.net>
+Date:   Wed Nov 2 10:01:06 2022 +0100
+
+    clean up
+
+M	packages/fcl-web/src/base/fphttpclientasyncpool.pas
+
+******************************************************************************
+commit 7ee1dea027dc045e8227822987e89db4d592584a
+Author: Ondrej Pokorny <lazarus@kluug.net>
+Date:   Wed Nov 2 10:00:00 2022 +0100
+
+    use function references for callbacks + change TNotifyEvent to TFPHTTPClientPoolSimpleCallback
+
+M	packages/fcl-web/src/base/fphttpclientasyncpool.pas
+
+******************************************************************************
+commit 28a8279d91f1c56e470aae5624c1f3d891fe81a8
+Author: Ondrej Pokorny <lazarus@kluug.net>
+Date:   Thu Nov 3 06:31:56 2022 +0100
+
+    remove unused private variable
+
+M	packages/fcl-net/src/ssockets.pp
+
+******************************************************************************
+commit b881deeb9fcdbb69995eba2b0aa4f5fad40209ab
+Author: Ondrej Pokorny <lazarus@kluug.net>
+Date:   Thu Nov 3 06:31:12 2022 +0100
+
+    fix TServerSocketStream.CanRead result when FServer is gone (this happens on closing the server with open connections)
+
+M	packages/fcl-net/src/ssockets.pp
+
+******************************************************************************
+commit a1a30876d596e9bca2a5409b53b0fc637eda5dfd
+Author: Ondrej Pokorny <lazarus@kluug.net>
+Date:   Thu Nov 3 12:35:40 2022 +0100
+
+    disable KeepAlive flag in CloseConnectionSocket to close hanging keep-alive connections
+
+M	packages/fcl-web/src/base/fphttpserver.pp
+
+******************************************************************************
 commit 0dbf40a24c9e8db931875d659c38f975c06bd208
 Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
 Date:   Wed Nov 2 22:30:47 2022 +0000
@@ -37845,7 +37927,6 @@ Date:   Tue Feb 26 17:50:55 2019 +0000
     git-svn-id: branches/unicodekvm@41486 -
 
 M	packages/rtl-console/src/unix/keyboard.pp
-
 ******************************************************************************
 commit ac4f00af1eaf877d9d6288b9df0b3e5be5e2eb6e
 Author: nickysn <nickysn@gmail.com>
@@ -37889,6 +37970,7 @@ Date:   Wed Feb 20 13:55:11 2019 +0000
     git-svn-id: branches/unicodekvm@41399 -
 
 M	packages/rtl-console/src/unix/keyboard.pp
+
 ******************************************************************************
 commit 2b1297c3970f9815a35c3694920c634e0a30c3e3
 Author: nickysn <nickysn@gmail.com>
