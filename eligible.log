@@ -1,4 +1,31 @@
 ******************************************************************************
+commit c96bb0f4164d45afe3a0cc8d4e306f0b5c14dbeb
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Sun Nov 6 22:14:38 2022 +0000
+
+    Handle unaligned references in 64-bit a_load_ref_reg and a_load_reg_ref methods
+
+M	compiler/mips/cgcpu.pas
+
+******************************************************************************
+commit 36afcbf7fea3dd51e292b20594ef994f683d26b0
+Author: florian <florian@freepascal.org>
+Date:   Sun Nov 6 22:48:18 2022 +0100
+
+      * only i386 uses same special fastcall calling convention
+
+M	compiler/dbgdwarf.pas
+
+******************************************************************************
+commit 9c8f362accb973d6b1ea109e2b71b29649301d3b
+Author: florian <florian@freepascal.org>
+Date:   Sun Nov 6 22:33:38 2022 +0100
+
+      * more robust calculation of TBITS_SHIFT
+
+M	rtl/objpas/classes/bits.inc
+
+******************************************************************************
 commit 236febb14891bb2a46f273f69aef5cc7212982c6
 Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
 Date:   Wed Apr 20 16:12:31 2022 +0100
@@ -37904,7 +37931,6 @@ Date:   Wed Feb 27 12:49:38 2019 +0000
     git-svn-id: branches/unicodekvm@41509 -
 
 M	packages/rtl-console/src/unix/keyboard.pp
-
 ******************************************************************************
 commit 97995773a0fd567f3528d0729285420715460a87
 Author: nickysn <nickysn@gmail.com>
@@ -37926,6 +37952,7 @@ Date:   Wed Feb 27 12:40:56 2019 +0000
     git-svn-id: branches/unicodekvm@41507 -
 
 M	packages/rtl-console/src/unix/keyboard.pp
+
 ******************************************************************************
 commit 1961c8f27c62a67561d9844f433ef6db5175a548
 Author: nickysn <nickysn@gmail.com>
