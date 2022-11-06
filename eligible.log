@@ -1,4 +1,91 @@
 ******************************************************************************
+commit 236febb14891bb2a46f273f69aef5cc7212982c6
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Wed Apr 20 16:12:31 2022 +0100
+
+      * x86: Fixed bugs in and refactored and renamed
+        DoSubAddOpt optimisation method
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
+commit 9e3483fbeb8743afdb32df31c859753adfc96039
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Sun Nov 6 21:59:44 2022 +0100
+
+    * fix #39977: allow a capturer to access any method independant of visibility as the visibility checks are supposed to have been done before the captured symbol was converted
+    + added test
+
+M	compiler/symtable.pas
+A	tests/webtbs/tw39977.pp
+
+******************************************************************************
+commit b051e7667c5051b3ae9dd511ad235aea19f2c0d5
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Sun Nov 6 21:58:07 2022 +0100
+
+    * fix #39978: ensure that Self is captured when a method of the current class is captured into a function reference
+    + added test
+
+M	compiler/procdefutil.pas
+A	tests/webtbs/tw39978.pp
+
+******************************************************************************
+commit d221f42a578316c99fc74674b037e54725bfbdbc
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Sun Nov 6 21:56:41 2022 +0100
+
+    * ensure that the correct overload is picked for function reference parameters
+    + added tests
+
+M	compiler/htypechk.pas
+A	tests/test/tfuncref50.pp
+A	tests/test/tfuncref51.pp
+
+******************************************************************************
+commit 19cee9b8415bce777f012d5ec7634497f0cd53e3
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Sun Nov 6 21:08:31 2022 +0100
+
+    + mark the def for a capturer class with a corresponding object option
+
+M	compiler/procdefutil.pas
+M	compiler/symconst.pas
+M	compiler/utils/ppuutils/ppudump.pp
+
+******************************************************************************
+commit a714e2ff35e78233486f4549d646980ead04c4a5
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Sun Nov 6 16:52:38 2022 +0100
+
+    * fix #39981: retrieve the symbol that returns the desired procdef/procvardef not maybe the Self or something else as we need that symbol to differentiate the procdefs
+    + added test
+
+M	compiler/procdefutil.pas
+A	tests/webtbs/tw39981.pp
+
+******************************************************************************
+commit 3c2703787cff417098cd01d1c51b4b5cf70f2677
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Sun Nov 6 16:49:06 2022 +0100
+
+    * ensure that newly created tloadparentfpnodes have a valid resultdef as they might be created in situation where the loadnode itself is no longer typechecked
+
+M	compiler/ncnv.pas
+M	compiler/nld.pas
+
+******************************************************************************
+commit 7243befdb7fdb80e4257009497a4321f5241a3c7
+Author: Rika Ichinose <rrunewalsh@gmail.com>
+Date:   Tue Oct 25 15:12:36 2022 +0300
+
+    Better TBits.
+
+M	rtl/objpas/classes/bits.inc
+M	rtl/objpas/classes/classesh.inc
+M	tests/test/units/classes/ttbits.pp
+
+******************************************************************************
 commit eab28cdd2eb66c32f7e8d6ec186c479d3a70e519
 Author: Ondrej Pokorny <lazarus@kluug.net>
 Date:   Thu Nov 3 06:54:56 2022 +0100
@@ -37839,7 +37926,6 @@ Date:   Wed Feb 27 12:40:56 2019 +0000
     git-svn-id: branches/unicodekvm@41507 -
 
 M	packages/rtl-console/src/unix/keyboard.pp
-
 ******************************************************************************
 commit 1961c8f27c62a67561d9844f433ef6db5175a548
 Author: nickysn <nickysn@gmail.com>
@@ -37927,6 +38013,7 @@ Date:   Tue Feb 26 17:50:55 2019 +0000
     git-svn-id: branches/unicodekvm@41486 -
 
 M	packages/rtl-console/src/unix/keyboard.pp
+
 ******************************************************************************
 commit ac4f00af1eaf877d9d6288b9df0b3e5be5e2eb6e
 Author: nickysn <nickysn@gmail.com>
