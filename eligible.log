@@ -1,4 +1,22 @@
 ******************************************************************************
+commit a2789d611f74b71fefbf8a3bc0c66f3f3ec3eaa3
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Mon Nov 7 23:33:31 2022 +0100
+
+    * fix crash in debug output in TX86AsmOptimizer.DoArithCombineOpt for DEC/INC $reg
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
+commit d18ff64ed7931161230f036170af3f7998d6611f
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Mon Nov 7 22:24:34 2022 +0000
+
+    Fix a_load64_reg_ref and a_load64_ref_reg mips methods
+
+M	compiler/mips/cgcpu.pas
+
+******************************************************************************
 commit c96bb0f4164d45afe3a0cc8d4e306f0b5c14dbeb
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Sun Nov 6 22:14:38 2022 +0000
@@ -37909,7 +37927,6 @@ Date:   Wed Feb 27 12:54:31 2019 +0000
     git-svn-id: branches/unicodekvm@41511 -
 
 M	packages/rtl-console/src/unix/keyboard.pp
-
 ******************************************************************************
 commit 0f1a20b8a48722ff00214869c30a7e99883bdb4c
 Author: nickysn <nickysn@gmail.com>
@@ -37931,6 +37948,7 @@ Date:   Wed Feb 27 12:49:38 2019 +0000
     git-svn-id: branches/unicodekvm@41509 -
 
 M	packages/rtl-console/src/unix/keyboard.pp
+
 ******************************************************************************
 commit 97995773a0fd567f3528d0729285420715460a87
 Author: nickysn <nickysn@gmail.com>
