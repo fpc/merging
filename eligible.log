@@ -1,4 +1,15 @@
 ******************************************************************************
+commit 12aa48602bcd35b2013f97782520ca209bd4bd30
+Author: florian <florian@freepascal.org>
+Date:   Tue Nov 8 21:14:56 2022 +0100
+
+      + CMOVSupport function
+
+M	rtl/i386/cpu.pp
+M	rtl/x86_64/cpu.pp
+M	tests/test/units/cpu/tcpu1.pp
+
+******************************************************************************
 commit a2789d611f74b71fefbf8a3bc0c66f3f3ec3eaa3
 Author: Sven/Sarah Barth <pascaldragon@gmail.com>
 Date:   Mon Nov 7 23:33:31 2022 +0100
@@ -37916,7 +37927,6 @@ Date:   Wed Feb 27 12:58:06 2019 +0000
     git-svn-id: branches/unicodekvm@41512 -
 
 M	packages/rtl-console/src/unix/keyboard.pp
-
 ******************************************************************************
 commit 2d68b7c7a9e175fed0ea5607fa78e8a766041859
 Author: nickysn <nickysn@gmail.com>
@@ -37927,6 +37937,7 @@ Date:   Wed Feb 27 12:54:31 2019 +0000
     git-svn-id: branches/unicodekvm@41511 -
 
 M	packages/rtl-console/src/unix/keyboard.pp
+
 ******************************************************************************
 commit 0f1a20b8a48722ff00214869c30a7e99883bdb4c
 Author: nickysn <nickysn@gmail.com>
