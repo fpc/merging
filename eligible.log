@@ -1,4 +1,15 @@
 ******************************************************************************
+commit 3e6d4bf1cc120e5885356af1cc3b0e93101fddaf
+Author: florian <florian@freepascal.org>
+Date:   Wed Nov 9 23:09:07 2022 +0100
+
+      * new cpu feature tests
+
+M	rtl/i386/cpu.pp
+M	rtl/x86_64/cpu.pp
+M	tests/test/units/cpu/tcpu1.pp
+
+******************************************************************************
 commit 12aa48602bcd35b2013f97782520ca209bd4bd30
 Author: florian <florian@freepascal.org>
 Date:   Tue Nov 8 21:14:56 2022 +0100
@@ -37914,7 +37925,6 @@ Date:   Wed Feb 27 13:05:45 2019 +0000
     git-svn-id: branches/unicodekvm@41513 -
 
 M	packages/rtl-console/src/unix/keyboard.pp
-
 ******************************************************************************
 commit af12abc939bf12fbb48bd2ff4759f5021c057311
 Author: nickysn <nickysn@gmail.com>
@@ -37927,6 +37937,7 @@ Date:   Wed Feb 27 12:58:06 2019 +0000
     git-svn-id: branches/unicodekvm@41512 -
 
 M	packages/rtl-console/src/unix/keyboard.pp
+
 ******************************************************************************
 commit 2d68b7c7a9e175fed0ea5607fa78e8a766041859
 Author: nickysn <nickysn@gmail.com>
