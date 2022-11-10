@@ -1,4 +1,16 @@
 ******************************************************************************
+commit cfc77315ca53adea20b838be4bcc919ec3f9c39a
+Author: marcoonthegit <marco@freepascal.org>
+Date:   Thu Nov 10 10:41:49 2022 +0100
+
+    * getlongpath as per https://forum.lazarus.freepascal.org/index.php/topic,60972.0/topicseen.html
+
+M	rtl/win/wininc/ascdef.inc
+M	rtl/win/wininc/ascfun.inc
+M	rtl/win/wininc/unidef.inc
+M	rtl/win/wininc/unifun.inc
+
+******************************************************************************
 commit 3e6d4bf1cc120e5885356af1cc3b0e93101fddaf
 Author: florian <florian@freepascal.org>
 Date:   Wed Nov 9 23:09:07 2022 +0100
@@ -37914,7 +37926,6 @@ Date:   Wed Feb 27 13:07:04 2019 +0000
     git-svn-id: branches/unicodekvm@41514 -
 
 M	packages/rtl-console/src/unix/keyboard.pp
-
 ******************************************************************************
 commit 9a82b32cde500d92b029746ad3c0847612f64187
 Author: nickysn <nickysn@gmail.com>
@@ -37925,6 +37936,7 @@ Date:   Wed Feb 27 13:05:45 2019 +0000
     git-svn-id: branches/unicodekvm@41513 -
 
 M	packages/rtl-console/src/unix/keyboard.pp
+
 ******************************************************************************
 commit af12abc939bf12fbb48bd2ff4759f5021c057311
 Author: nickysn <nickysn@gmail.com>
