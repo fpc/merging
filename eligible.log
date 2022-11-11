@@ -1,4 +1,35 @@
 ******************************************************************************
+commit d3abd339b7cf9b3c7e70679ee65a4732b56ca37d
+Author: florian <florian@freepascal.org>
+Date:   Fri Nov 11 23:45:52 2022 +0100
+
+      + cpu switch for zen
+
+M	compiler/i386/cpuinfo.pas
+M	compiler/x86/agx86nsm.pas
+M	compiler/x86_64/cpuinfo.pas
+
+******************************************************************************
+commit e942c00f8259a6d9505d1ed849b36399e9def989
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Wed Nov 9 21:18:06 2022 +0000
+
+      x86: MovMovMov2XChg optimisation now makes use of the CPUX86_HAS_FAST_XCHG flag
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
+commit aa5517d44228f2909b25744ed2fb90770d45dfe6
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Wed Nov 9 21:03:52 2022 +0000
+
+      * x86: New CPU feature flags in cpuinfo units
+
+M	compiler/i386/cpuinfo.pas
+M	compiler/i8086/cpuinfo.pas
+M	compiler/x86_64/cpuinfo.pas
+
+******************************************************************************
 commit 71df6b83c64d331a3a7347f762e80755088639e2
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Fri Nov 11 22:20:10 2022 +0000
@@ -37891,7 +37922,6 @@ Date:   Thu Feb 28 14:51:04 2019 +0000
     git-svn-id: branches/unicodekvm@41523 -
 
 M	packages/rtl-console/src/unix/keyboard.pp
-
 ******************************************************************************
 commit 774317788f1b2c3442ef78a759d9a60a8c7aff89
 Author: nickysn <nickysn@gmail.com>
@@ -37924,6 +37954,7 @@ Date:   Wed Feb 27 13:09:08 2019 +0000
     git-svn-id: branches/unicodekvm@41515 -
 
 M	packages/rtl-console/src/unix/keyboard.pp
+
 ******************************************************************************
 commit 7e16f651ea41f4657d327d97f266ec196dcb40db
 Author: nickysn <nickysn@gmail.com>
