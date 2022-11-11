@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 71df6b83c64d331a3a7347f762e80755088639e2
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Fri Nov 11 22:20:10 2022 +0000
+
+     Avoidd to use hp1 after calling RemoveInstruction, as the VMT is invalidated
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
 commit cfc77315ca53adea20b838be4bcc919ec3f9c39a
 Author: marcoonthegit <marco@freepascal.org>
 Date:   Thu Nov 10 10:41:49 2022 +0100
@@ -37915,7 +37924,6 @@ Date:   Wed Feb 27 13:09:08 2019 +0000
     git-svn-id: branches/unicodekvm@41515 -
 
 M	packages/rtl-console/src/unix/keyboard.pp
-
 ******************************************************************************
 commit 7e16f651ea41f4657d327d97f266ec196dcb40db
 Author: nickysn <nickysn@gmail.com>
@@ -37926,6 +37934,7 @@ Date:   Wed Feb 27 13:07:04 2019 +0000
     git-svn-id: branches/unicodekvm@41514 -
 
 M	packages/rtl-console/src/unix/keyboard.pp
+
 ******************************************************************************
 commit 9a82b32cde500d92b029746ad3c0847612f64187
 Author: nickysn <nickysn@gmail.com>
