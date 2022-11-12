@@ -1,4 +1,23 @@
 ******************************************************************************
+commit a0c87be0fc75cb242378c1029e5fc58e7dd41a18
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Sat Nov 12 07:25:05 2022 +0000
+
+      * x86: Zen processors now marked with CPUX86_HAS_FAST_BT_MEM flag
+
+M	compiler/i386/cpuinfo.pas
+M	compiler/x86_64/cpuinfo.pas
+
+******************************************************************************
+commit 0f30af07e5dd34acd7bbee812a92a13078ad1428
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Tue Nov 8 20:57:44 2022 +0000
+
+    Fix test to succeed for big endian mips
+
+M	tests/test/tcustomvar1.pp
+
+******************************************************************************
 commit d3abd339b7cf9b3c7e70679ee65a4732b56ca37d
 Author: florian <florian@freepascal.org>
 Date:   Fri Nov 11 23:45:52 2022 +0100
@@ -37911,7 +37930,6 @@ Date:   Thu Feb 28 14:56:16 2019 +0000
     git-svn-id: branches/unicodekvm@41524 -
 
 M	packages/rtl-console/src/unix/keyboard.pp
-
 ******************************************************************************
 commit da978acfd97eaf08a66038b151f7f83cca83d769
 Author: nickysn <nickysn@gmail.com>
@@ -37922,6 +37940,7 @@ Date:   Thu Feb 28 14:51:04 2019 +0000
     git-svn-id: branches/unicodekvm@41523 -
 
 M	packages/rtl-console/src/unix/keyboard.pp
+
 ******************************************************************************
 commit 774317788f1b2c3442ef78a759d9a60a8c7aff89
 Author: nickysn <nickysn@gmail.com>
