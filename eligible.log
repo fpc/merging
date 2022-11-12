@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 57466587c5470ed174144263608febae128895af
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Mon Nov 7 21:23:08 2022 +0100
+
+    llvmdbg: remove unnecessary typedef intermediates
+
+M	compiler/llvm/aasmllvmmetadata.pas
+M	compiler/llvm/dbgllvm.pas
+
+******************************************************************************
 commit a0c87be0fc75cb242378c1029e5fc58e7dd41a18
 Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
 Date:   Sat Nov 12 07:25:05 2022 +0000
@@ -37919,7 +37929,6 @@ Date:   Thu Feb 28 17:38:31 2019 +0000
     git-svn-id: branches/unicodekvm@41525 -
 
 M	packages/rtl-console/src/unix/keyboard.pp
-
 ******************************************************************************
 commit 982a4f4c63a4fcf424b9ff998f8aab846bced537
 Author: nickysn <nickysn@gmail.com>
@@ -37930,6 +37939,7 @@ Date:   Thu Feb 28 14:56:16 2019 +0000
     git-svn-id: branches/unicodekvm@41524 -
 
 M	packages/rtl-console/src/unix/keyboard.pp
+
 ******************************************************************************
 commit da978acfd97eaf08a66038b151f7f83cca83d769
 Author: nickysn <nickysn@gmail.com>
