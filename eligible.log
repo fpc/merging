@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 1853e94b98100336410c9093ce5f6ff2c63a3bf4
+Author: florian <florian@freepascal.org>
+Date:   Sat Nov 12 22:07:58 2022 +0100
+
+      * attempt to fix #39900
+
+M	packages/rtl-console/src/unix/mouse.pp
+
+******************************************************************************
 commit 57466587c5470ed174144263608febae128895af
 Author: Jonas Maebe <jonas@freepascal.org>
 Date:   Mon Nov 7 21:23:08 2022 +0100
@@ -37918,7 +37927,6 @@ Date:   Fri Mar 1 14:26:38 2019 +0000
     git-svn-id: branches/unicodekvm@41532 -
 
 M	packages/rtl-console/src/inc/keybrdh.inc
-
 ******************************************************************************
 commit 1e94304bf04a36497098ff282bdb0d64de6bb3db
 Author: nickysn <nickysn@gmail.com>
@@ -37929,6 +37937,7 @@ Date:   Thu Feb 28 17:38:31 2019 +0000
     git-svn-id: branches/unicodekvm@41525 -
 
 M	packages/rtl-console/src/unix/keyboard.pp
+
 ******************************************************************************
 commit 982a4f4c63a4fcf424b9ff998f8aab846bced537
 Author: nickysn <nickysn@gmail.com>
