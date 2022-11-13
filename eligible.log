@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 9b58545fb7a244c527ca30f71db7d4f4e4fdc780
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Sun Nov 13 12:39:14 2022 +0100
+
+    fcl-css: comments and warnings
+
+M	packages/fcl-css/src/fpcssparser.pp
+M	packages/fcl-css/src/fpcssresolver.pas
+
+******************************************************************************
 commit 1853e94b98100336410c9093ce5f6ff2c63a3bf4
 Author: florian <florian@freepascal.org>
 Date:   Sat Nov 12 22:07:58 2022 +0100
