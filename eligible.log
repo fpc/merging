@@ -1,4 +1,49 @@
 ******************************************************************************
+commit 75c252fd8f754788a4ab2f9ca8da110f6dd6aa86
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sun Nov 13 23:46:52 2022 +0100
+
+    * Extra linux fcntl constants
+
+M	rtl/linux/ostypes.inc
+
+******************************************************************************
+commit 9cda1666a6129b613770a93799ae57b77630d6c1
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sun Nov 13 23:45:40 2022 +0100
+
+    * Modifier for allowed schemas
+
+M	packages/fcl-web/src/restbridge/sqldbrestschema.pp
+
+******************************************************************************
+commit d38c3f8073f8e954b1e0224c5e46141eeae63da5
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sun Nov 13 23:45:00 2022 +0100
+
+    * Fix loading schemas
+
+M	packages/fcl-web/src/restbridge/sqldbrestbridge.pp
+
+******************************************************************************
+commit 71f8893366881e86e16f15dcb7a4befcd0bd6261
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sun Nov 13 23:44:26 2022 +0100
+
+    * Allow to specify DB connection params on command-line
+
+M	packages/fcl-web/examples/restbridge/demorestbridge.pp
+
+******************************************************************************
+commit 9145565895b7b8ea393d1818e9c590cfa6c34cfc
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sun Nov 13 23:42:20 2022 +0100
+
+    * Some extra published properties. Fix issue #39994
+
+M	packages/fcl-web/src/base/fphttpserver.pp
+
+******************************************************************************
 commit 3b43bd027c51f7914bc8fe7f938a7a21d58c1d85
 Author: florian <florian@freepascal.org>
 Date:   Sun Nov 13 22:28:08 2022 +0100
@@ -37893,7 +37938,6 @@ Date:   Tue Mar 5 13:37:20 2019 +0000
     git-svn-id: branches/unicodekvm@41596 -
 
 M	packages/rtl-console/src/unix/keyboard.pp
-
 ******************************************************************************
 commit 0e7f562d19387dfd8e60a6f67dd1754496927888
 Author: nickysn <nickysn@gmail.com>
@@ -37937,6 +37981,7 @@ Date:   Fri Mar 1 15:04:07 2019 +0000
     git-svn-id: branches/unicodekvm@41534 -
 
 M	packages/fv/src/drivers.pas
+
 ******************************************************************************
 commit 5c6d6b030d0ef310f3b83470474c25c2f9332d3c
 Author: nickysn <nickysn@gmail.com>
