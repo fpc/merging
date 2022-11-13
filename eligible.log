@@ -1,4 +1,16 @@
 ******************************************************************************
+commit c9461b73139c742a7a86af045212e08dea83c72b
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Sun Nov 13 01:39:24 2022 +0000
+
+      * x86: Flags that relate to optimization hints rather than features have been moved to a separate set
+
+M	compiler/i386/cpuinfo.pas
+M	compiler/i8086/cpuinfo.pas
+M	compiler/x86/aoptx86.pas
+M	compiler/x86_64/cpuinfo.pas
+
+******************************************************************************
 commit 9b58545fb7a244c527ca30f71db7d4f4e4fdc780
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Sun Nov 13 12:39:14 2022 +0100
@@ -37926,7 +37938,6 @@ Date:   Fri Mar 1 14:28:33 2019 +0000
     git-svn-id: branches/unicodekvm@41533 -
 
 M	packages/fv/src/drivers.pas
-
 ******************************************************************************
 commit 41b93832c0ffe6c05cd2b14796642a9979414a6e
 Author: nickysn <nickysn@gmail.com>
@@ -37937,6 +37948,7 @@ Date:   Fri Mar 1 14:26:38 2019 +0000
     git-svn-id: branches/unicodekvm@41532 -
 
 M	packages/rtl-console/src/inc/keybrdh.inc
+
 ******************************************************************************
 commit 1e94304bf04a36497098ff282bdb0d64de6bb3db
 Author: nickysn <nickysn@gmail.com>
