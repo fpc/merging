@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 94368d06ee17f513eaa45519b5e5b79e1ff86980
+Author: Marcus Sackrow <alb42@web.de>
+Date:   Mon Nov 14 17:55:52 2022 +0100
+
+    Amiga: Bugfix for Tagged Version of OpenWindow at WB1.2/1.3
+
+M	packages/amunits/src/coreunits/intuition.pas
+
+******************************************************************************
 commit 75c252fd8f754788a4ab2f9ca8da110f6dd6aa86
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Sun Nov 13 23:46:52 2022 +0100
