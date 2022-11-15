@@ -1,4 +1,59 @@
 ******************************************************************************
+commit 3cf8ae8433acbc20e09eb6bee6c6e1e1000e6b9c
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Sat Nov 12 04:00:50 2022 +0000
+
+      * x86: New XOR->BTC peephole optimisation
+
+M	compiler/i386/aoptcpu.pas
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
+commit f2bd099afba70273fb8ef60dd42226feda3808bc
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Sat Nov 12 01:40:52 2022 +0000
+
+      * x86: Converted BTR and BTS tests to use a new utility function to check if BTx instructions are acceptable to use
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
+commit 822022186611aa62d08c8a328f69f37bad2dd38f
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Mon Nov 7 18:39:31 2022 +0000
+
+      * x86: New AND(NOT X)->BTR peephole optimisation
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
+commit 827fe2bd83a9ee5d77b49cf4eb8cdc3ce0369859
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Mon Nov 7 05:20:33 2022 +0000
+
+      * x86: New OR->BTS peephole optimisation
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
+commit 314f632377306065e939fb1b17593168bca3982b
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Mon Nov 7 04:30:54 2022 +0000
+
+      * x86: New TEST->BT peephole optimisation
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
+commit a27cb35fa83d995a33f90474c2481d367cf6b14b
+Author: florian <florian@freepascal.org>
+Date:   Tue Nov 15 22:06:38 2022 +0100
+
+      * propagate life info properly
+
+M	compiler/optdfa.pas
+
+******************************************************************************
 commit 94368d06ee17f513eaa45519b5e5b79e1ff86980
 Author: Marcus Sackrow <alb42@web.de>
 Date:   Mon Nov 14 17:55:52 2022 +0100
@@ -37890,7 +37945,6 @@ Date:   Tue Mar 5 17:09:49 2019 +0000
     git-svn-id: branches/unicodekvm@41604 -
 
 M	packages/rtl-console/src/win/keyboard.pp
-
 ******************************************************************************
 commit 1c86c0de48b20fdb2dd80fe4c867f4243eb1aa9e
 Author: nickysn <nickysn@gmail.com>
@@ -37947,6 +38001,7 @@ Date:   Tue Mar 5 13:37:20 2019 +0000
     git-svn-id: branches/unicodekvm@41596 -
 
 M	packages/rtl-console/src/unix/keyboard.pp
+
 ******************************************************************************
 commit 0e7f562d19387dfd8e60a6f67dd1754496927888
 Author: nickysn <nickysn@gmail.com>
