@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 5e0eb521c4dfd2430e77ba4f8d01b8a887afedda
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Tue Nov 15 21:48:34 2022 +0000
+
+    Fix use of unaligned for big endian code
+
+M	rtl/inc/ctypes.pp
+
+******************************************************************************
 commit 3cf8ae8433acbc20e09eb6bee6c6e1e1000e6b9c
 Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
 Date:   Sat Nov 12 04:00:50 2022 +0000
@@ -37934,7 +37943,6 @@ Date:   Tue Mar 5 17:14:42 2019 +0000
     git-svn-id: branches/unicodekvm@41605 -
 
 M	packages/rtl-console/src/win/keyboard.pp
-
 ******************************************************************************
 commit eaa60e45465f1ab252030ee8fb79d201a6872a3c
 Author: nickysn <nickysn@gmail.com>
@@ -37945,6 +37953,7 @@ Date:   Tue Mar 5 17:09:49 2019 +0000
     git-svn-id: branches/unicodekvm@41604 -
 
 M	packages/rtl-console/src/win/keyboard.pp
+
 ******************************************************************************
 commit 1c86c0de48b20fdb2dd80fe4c867f4243eb1aa9e
 Author: nickysn <nickysn@gmail.com>
