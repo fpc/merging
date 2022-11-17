@@ -1,4 +1,13 @@
 ******************************************************************************
+commit c1ec558d0aeda85edd81e095678952b34250d208
+Author: florian <florian@freepascal.org>
+Date:   Thu Nov 17 23:10:00 2022 +0100
+
+      * first (modified, added a comment) patch by Rika to improve generic Index*, part of #39996
+
+M	rtl/inc/generic.inc
+
+******************************************************************************
 commit 5e0eb521c4dfd2430e77ba4f8d01b8a887afedda
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Tue Nov 15 21:48:34 2022 +0000
@@ -37932,7 +37941,6 @@ Date:   Tue Mar 5 17:38:30 2019 +0000
     git-svn-id: branches/unicodekvm@41606 -
 
 M	packages/rtl-console/src/win/keyboard.pp
-
 ******************************************************************************
 commit 4034dcc2c68797c8159978fe6d5a68b550a589c6
 Author: nickysn <nickysn@gmail.com>
@@ -37943,6 +37951,7 @@ Date:   Tue Mar 5 17:14:42 2019 +0000
     git-svn-id: branches/unicodekvm@41605 -
 
 M	packages/rtl-console/src/win/keyboard.pp
+
 ******************************************************************************
 commit eaa60e45465f1ab252030ee8fb79d201a6872a3c
 Author: nickysn <nickysn@gmail.com>
