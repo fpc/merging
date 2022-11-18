@@ -1,4 +1,13 @@
 ******************************************************************************
+commit ef53f9bc25aad1cef20f3cd7e7e248dd5d172e25
+Author: florian <florian@freepascal.org>
+Date:   Fri Nov 18 23:21:58 2022 +0100
+
+      + FstpFldFstp2Fstp optimization
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
 commit e7e4044bf053846dbc1fa692b9d559225e385f06
 Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
 Date:   Thu Nov 17 11:14:04 2022 +0000
@@ -37920,7 +37929,6 @@ Date:   Tue Jul 2 15:32:11 2019 +0000
     git-svn-id: branches/unicodekvm@42320 -
 
 M	packages/rtl-console/src/unix/unixkvmbase.pp
-
 ******************************************************************************
 commit 837659f4201aab4fee9c8678fe51ac8a3218ca16
 Author: nickysn <nickysn@gmail.com>
@@ -37932,6 +37940,7 @@ Date:   Tue Mar 5 18:51:25 2019 +0000
     git-svn-id: branches/unicodekvm@41609 -
 
 M	packages/rtl-console/src/win/keyboard.pp
+
 ******************************************************************************
 commit e583341877ff53bff386d038c2e387a224751121
 Author: nickysn <nickysn@gmail.com>
