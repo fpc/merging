@@ -1,4 +1,31 @@
 ******************************************************************************
+commit e7e4044bf053846dbc1fa692b9d559225e385f06
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Thu Nov 17 11:14:04 2022 +0000
+
+      * CollapseZeroDistJump no longer updates registers or strips dead labels, instead just setting p to p.Next
+
+M	compiler/aoptobj.pas
+
+******************************************************************************
+commit c21bf747fb3d5750ce62ef49ad5334528e2880ba
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Wed Nov 16 18:25:01 2022 +0000
+
+      * x86: Extension to Cmp1Jl2Cmp0Jle to catch inverted variant
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
+commit e57ef24e37be92ca117302735b9e3584254483d9
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Tue Nov 15 16:20:09 2022 +0000
+
+      * x86: TEST and CMP optimisations now perform jump optimisations prematurely to remove unnecessary TEST/CMPs
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
 commit c1ec558d0aeda85edd81e095678952b34250d208
 Author: florian <florian@freepascal.org>
 Date:   Thu Nov 17 23:10:00 2022 +0100
@@ -37905,7 +37932,6 @@ Date:   Tue Mar 5 18:51:25 2019 +0000
     git-svn-id: branches/unicodekvm@41609 -
 
 M	packages/rtl-console/src/win/keyboard.pp
-
 ******************************************************************************
 commit e583341877ff53bff386d038c2e387a224751121
 Author: nickysn <nickysn@gmail.com>
@@ -37941,6 +37967,7 @@ Date:   Tue Mar 5 17:38:30 2019 +0000
     git-svn-id: branches/unicodekvm@41606 -
 
 M	packages/rtl-console/src/win/keyboard.pp
+
 ******************************************************************************
 commit 4034dcc2c68797c8159978fe6d5a68b550a589c6
 Author: nickysn <nickysn@gmail.com>
