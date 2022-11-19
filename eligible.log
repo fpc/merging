@@ -14432,17 +14432,6 @@ M	packages/fcl-js/tests/tcwriter.pp
 M	packages/pastojs/tests/tcmodules.pas
 
 ******************************************************************************
-commit cb2704dfb22c30aca8cd64b171d47e3a740f12bc
-Author: florian <florian@freepascal.org>
-Date:   Thu Mar 31 22:32:04 2022 +0200
-
-      * some more use of __libc_csu_* removed
-
-M	rtl/linux/i386/si_c21.inc
-M	rtl/linux/riscv64/si_c.inc
-M	rtl/linux/riscv64/si_g.inc
-
-******************************************************************************
 commit a01dc282067e70f9e693e3272ba5aeb526336a3c
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Thu Mar 31 11:52:09 2022 +0200
