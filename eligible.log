@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 47789734923810f9363f0ef384c2aca27171dde8
+Author: florian <florian@freepascal.org>
+Date:   Sat Nov 19 21:05:22 2022 +0100
+
+      * further look ahead for temp. deallocation for FstpFldFstp2Fstp and FstpFld2<Nop>
+
+M	compiler/aoptobj.pas
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
 commit ef53f9bc25aad1cef20f3cd7e7e248dd5d172e25
 Author: florian <florian@freepascal.org>
 Date:   Fri Nov 18 23:21:58 2022 +0100
