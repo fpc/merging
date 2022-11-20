@@ -14063,15 +14063,6 @@ Date:   Mon Apr 18 23:22:47 2022 +0200
 M	compiler/x86/aasmcpu.pas
 
 ******************************************************************************
-commit 143c2ec232764523ba89d003169f6fede138feeb
-Author: florian <florian@freepascal.org>
-Date:   Sun Apr 17 21:25:51 2022 +0200
-
-      * powerpc-linux: provide also local __libc_csu_* routines
-
-M	rtl/linux/powerpc/cprt0.as
-
-******************************************************************************
 commit 366d1332d18eece8de310aef2b9bb7af07d12e7d
 Author: florian <florian@freepascal.org>
 Date:   Sat Apr 16 21:40:33 2022 +0200
@@ -14153,15 +14144,6 @@ M	compiler/fppu.pas
 M	compiler/msg/errore.msg
 M	compiler/msgidx.inc
 M	compiler/msgtxt.inc
-
-******************************************************************************
-commit 7ff6d7854346861f18eca51819c0dd15da72ba0f
-Author: florian <florian@freepascal.org>
-Date:   Mon Apr 11 22:22:34 2022 +0200
-
-      * mips(el)-linux: provide __libc_csu_* as weak symbols
-
-M	rtl/linux/mips/cprt0.as
 
 ******************************************************************************
 commit 971d7baa8a050489fe3f45db09669076d2c61b4b
@@ -22196,26 +22178,6 @@ Date:   Wed Jan 5 23:07:09 2022 +0200
 M	compiler/msg/errore.msg
 M	compiler/msgidx.inc
 M	compiler/msgtxt.inc
-
-******************************************************************************
-commit b00fe0e4e42526afb7a11e9964f8cae49b10da44
-Author: florian <florian@freepascal.org>
-Date:   Wed Jan 5 21:42:17 2022 +0100
-
-      * all references to libc_csu_ cleaned, should resolve #39295
-
-M	rtl/linux/powerpc64/si_c.inc
-M	rtl/linux/powerpc64/si_g.inc
-
-******************************************************************************
-commit abee68df9237f05da64d0608570c3c1de768a120
-Author: florian <florian@freepascal.org>
-Date:   Wed Jan 5 21:33:32 2022 +0100
-
-      * powerpc64-linux: libc_csu_* are not available anymore in newer glibc,
-        make them dummy calls, x86_64-linux does the same for years
-
-M	rtl/linux/powerpc64/si_c.inc
 
 ******************************************************************************
 commit 0b2a58027c3171a3ba2962d472653e2f8839e1f2
@@ -37928,6 +37890,7 @@ Date:   Tue Jul 2 15:32:11 2019 +0000
     git-svn-id: branches/unicodekvm@42320 -
 
 M	packages/rtl-console/src/unix/unixkvmbase.pp
+
 ******************************************************************************
 commit 837659f4201aab4fee9c8678fe51ac8a3218ca16
 Author: nickysn <nickysn@gmail.com>
@@ -37975,7 +37938,6 @@ Date:   Tue Mar 5 17:38:30 2019 +0000
     git-svn-id: branches/unicodekvm@41606 -
 
 M	packages/rtl-console/src/win/keyboard.pp
-
 ******************************************************************************
 commit 4034dcc2c68797c8159978fe6d5a68b550a589c6
 Author: nickysn <nickysn@gmail.com>
