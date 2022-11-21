@@ -1,4 +1,25 @@
 ******************************************************************************
+commit 735f297f5b187f5d92a88ed1d836311602ac8003
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Mon Nov 21 13:35:00 2022 +0000
+
+      * Range check fixes to BZHI tests
+
+M	tests/test/cg/tbzhi1.pp
+M	tests/test/cg/tbzhi1a.pp
+M	tests/test/cg/tbzhi1b.pp
+M	tests/test/cg/tbzhi1c.pp
+M	tests/test/cg/tbzhi1d.pp
+M	tests/test/cg/tbzhi1e.pp
+M	tests/test/cg/tbzhi1f.pp
+M	tests/test/cg/tbzhi1g.pp
+M	tests/test/cg/tbzhi2.pp
+M	tests/test/cg/tbzhi2a.pp
+M	tests/test/cg/tbzhi2b.pp
+M	tests/test/cg/tbzhi2c.pp
+M	tests/test/cg/tbzhi2d.pp
+
+******************************************************************************
 commit 47789734923810f9363f0ef384c2aca27171dde8
 Author: florian <florian@freepascal.org>
 Date:   Sat Nov 19 21:05:22 2022 +0100
@@ -37926,7 +37947,6 @@ Date:   Tue Mar 5 17:46:15 2019 +0000
     git-svn-id: branches/unicodekvm@41607 -
 
 M	packages/rtl-console/src/win/keyboard.pp
-
 ******************************************************************************
 commit ead1eab3d7342ac6476ee87e871f6214872e5b1f
 Author: nickysn <nickysn@gmail.com>
@@ -37938,6 +37958,7 @@ Date:   Tue Mar 5 17:38:30 2019 +0000
     git-svn-id: branches/unicodekvm@41606 -
 
 M	packages/rtl-console/src/win/keyboard.pp
+
 ******************************************************************************
 commit 4034dcc2c68797c8159978fe6d5a68b550a589c6
 Author: nickysn <nickysn@gmail.com>
