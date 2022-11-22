@@ -1,4 +1,36 @@
 ******************************************************************************
+commit d38c24fee753c550c27239f9e111c4cbef11ca4e
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Tue Nov 22 22:48:27 2022 +0100
+
+    Add test for avx2 support using cpu unit function avx2support
+
+M	tests/test/cg/tbzhi1.pp
+M	tests/test/cg/tbzhi1a.pp
+M	tests/test/cg/tbzhi1b.pp
+M	tests/test/cg/tbzhi1c.pp
+M	tests/test/cg/tbzhi1d.pp
+M	tests/test/cg/tbzhi1e.pp
+M	tests/test/cg/tbzhi1f.pp
+M	tests/test/cg/tbzhi1g.pp
+M	tests/test/cg/tbzhi2.pp
+M	tests/test/cg/tbzhi2a.pp
+M	tests/test/cg/tbzhi2b.pp
+M	tests/test/cg/tbzhi2c.pp
+M	tests/test/cg/tbzhi2d.pp
+
+******************************************************************************
+commit 0ba4cee279b0bd8b13dfa27ff9a32b6b80397d79
+Author: florian <florian@freepascal.org>
+Date:   Tue Nov 22 22:41:58 2022 +0100
+
+      * convert n-n mod const into n div const*const, resolves #39615
+
+M	compiler/nadd.pas
+A	tests/webtbs/tw39615a.pp
+A	tests/webtbs/tw39615b.pp
+
+******************************************************************************
 commit 7da8c774be6670d6cfe3dd9b707d4e47c0a4870b
 Author: florian <florian@freepascal.org>
 Date:   Sun Nov 20 23:31:08 2022 +0100
@@ -37929,7 +37961,6 @@ Date:   Tue Jul 2 15:32:11 2019 +0000
     git-svn-id: branches/unicodekvm@42320 -
 
 M	packages/rtl-console/src/unix/unixkvmbase.pp
-
 ******************************************************************************
 commit 837659f4201aab4fee9c8678fe51ac8a3218ca16
 Author: nickysn <nickysn@gmail.com>
@@ -37941,6 +37972,7 @@ Date:   Tue Mar 5 18:51:25 2019 +0000
     git-svn-id: branches/unicodekvm@41609 -
 
 M	packages/rtl-console/src/win/keyboard.pp
+
 ******************************************************************************
 commit e583341877ff53bff386d038c2e387a224751121
 Author: nickysn <nickysn@gmail.com>
