@@ -1,4 +1,22 @@
 ******************************************************************************
+commit 9cbcd399b1b95b0357a7dd8964d3200f633c8cd0
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Wed Nov 23 21:50:31 2022 +0100
+
+    * Accept I option
+
+M	packages/fcl-web/examples/simpleserver/simpleserver.pas
+
+******************************************************************************
+commit 5288194d3c3bf538d50b0558890256dc14da70f2
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Wed Nov 23 21:50:03 2022 +0100
+
+    * Simulate position
+
+M	packages/fcl-base/src/lzwstream.pp
+
+******************************************************************************
 commit dbd87a3cfc7136d5140abfc683f3815d5673dc80
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Wed Nov 23 19:11:58 2022 +0100
@@ -38033,7 +38051,6 @@ Date:   Tue Jul 2 15:37:02 2019 +0000
     git-svn-id: branches/unicodekvm@42321 -
 
 M	packages/rtl-console/src/unix/unixkvmbase.pp
-
 ******************************************************************************
 commit c964eab85d726ede55c745c4a0b9187fada7c858
 Author: nickysn <nickysn@gmail.com>
@@ -38044,6 +38061,7 @@ Date:   Tue Jul 2 15:32:11 2019 +0000
     git-svn-id: branches/unicodekvm@42320 -
 
 M	packages/rtl-console/src/unix/unixkvmbase.pp
+
 ******************************************************************************
 commit 837659f4201aab4fee9c8678fe51ac8a3218ca16
 Author: nickysn <nickysn@gmail.com>
