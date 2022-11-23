@@ -1,4 +1,13 @@
 ******************************************************************************
+commit d9f5c47d2a9730b4b5cc6d7059b069cd0867414e
+Author: Ondrej Pokorny <lazarus@kluug.net>
+Date:   Wed Nov 23 10:25:43 2022 +0100
+
+    fix broken JPEG loading. Issue #40001
+
+M	packages/pasjpeg/src/jdmarker.pas
+
+******************************************************************************
 commit d338206814796306ab4dc428f1a398326ee0a4df
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Wed Nov 23 09:02:01 2022 +0100
