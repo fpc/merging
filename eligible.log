@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 00dc7930978dd2e6a8d9b4ef88f0e22191cae871
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Wed Nov 23 12:55:03 2022 +0100
+
+    * Some improvements as proposed by Alexey Torgashin
+
+M	packages/fcl-base/src/chainstream.pp
+M	packages/fcl-base/tests/utcchainstream.pp
+
+******************************************************************************
 commit d9f5c47d2a9730b4b5cc6d7059b069cd0867414e
 Author: Ondrej Pokorny <lazarus@kluug.net>
 Date:   Wed Nov 23 10:25:43 2022 +0100
