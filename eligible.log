@@ -1,4 +1,34 @@
 ******************************************************************************
+commit d338206814796306ab4dc428f1a398326ee0a4df
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Wed Nov 23 09:02:01 2022 +0100
+
+    * Version number for compatibility with lazarus webserver
+
+M	packages/fcl-web/examples/simpleserver/simpleserver.pas
+
+******************************************************************************
+commit a1fae7a767d004ee50d4c170129d00e1e3ef4154
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Wed Nov 23 09:01:27 2022 +0100
+
+    * Chained stream implementation
+
+M	packages/fcl-base/fpmake.pp
+A	packages/fcl-base/src/chainstream.pp
+M	packages/fcl-base/tests/fclbase-unittests.pp
+A	packages/fcl-base/tests/utcchainstream.pp
+
+******************************************************************************
+commit 1a19fe1f033a7d4571f62a4506cf3a60d37e3080
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Wed Nov 23 08:43:28 2022 +0100
+
+    Use correct class typecast for commit ba4cee279b
+
+M	compiler/nadd.pas
+
+******************************************************************************
 commit d38c24fee753c550c27239f9e111c4cbef11ca4e
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Tue Nov 22 22:48:27 2022 +0100
