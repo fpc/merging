@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 84be45f55d92a379c237d76f7b2db9e55e0603d7
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Thu Nov 24 17:01:37 2022 +0000
+
+    Fix compilation failure of RTL with -Co option for x86_64-linux target
+
+M	compiler/nadd.pas
+
+******************************************************************************
 commit 9cbcd399b1b95b0357a7dd8964d3200f633c8cd0
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Wed Nov 23 21:50:31 2022 +0100
@@ -38039,7 +38048,6 @@ M	compiler/x86_64/x8664ats.inc
 M	compiler/x86_64/x8664nop.inc
 M	compiler/x86_64/x8664tab.inc
 M	tests/utils/avx/avxopcodes.pas
-
 ******************************************************************************
 commit 6aa8b718f46b6926836aff4e40cda9e868701eb8
 Author: nickysn <nickysn@gmail.com>
@@ -38051,6 +38059,7 @@ Date:   Tue Jul 2 15:37:02 2019 +0000
     git-svn-id: branches/unicodekvm@42321 -
 
 M	packages/rtl-console/src/unix/unixkvmbase.pp
+
 ******************************************************************************
 commit c964eab85d726ede55c745c4a0b9187fada7c858
 Author: nickysn <nickysn@gmail.com>
