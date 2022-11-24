@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 247423400f0d0686f2eaaf5de7d95a99b258419e
+Author: florian <florian@freepascal.org>
+Date:   Thu Nov 24 22:43:27 2022 +0100
+
+      * create muln with create instead of create_internal when converting "n - n mod const)" so pass1 works properly, resolves #40004
+
+M	compiler/nadd.pas
+A	tests/webtbs/tw40004.pp
+
+******************************************************************************
 commit 84be45f55d92a379c237d76f7b2db9e55e0603d7
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Thu Nov 24 17:01:37 2022 +0000
