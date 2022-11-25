@@ -1,4 +1,35 @@
 ******************************************************************************
+commit 170c112301ab3bcdba04a12657ae61dd275496cc
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Wed Nov 23 00:03:30 2022 +0000
+
+      * x86: Added FMA as an FPU target distinct from AVX and AVX2 (the latter of which has a new FPUX86_HAS_AVX2 flag)
+
+M	compiler/i386/cpuinfo.pas
+M	compiler/i8086/cpuinfo.pas
+M	compiler/x86_64/cpuinfo.pas
+
+******************************************************************************
+commit 69c78385718462de06ac5af39e5b1c2829582bc0
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Tue Nov 22 23:46:37 2022 +0000
+
+      * x86: Addition of AMD CPUs: Bobcat, Jaguar, Piledriver, Excavator, Zen2 and Zen3 (and supporting flags)
+
+M	compiler/i386/cpuinfo.pas
+M	compiler/x86/agx86nsm.pas
+M	compiler/x86_64/cpuinfo.pas
+
+******************************************************************************
+commit 74bef61b9966c53270b025d8e9fda669142bfa93
+Author: florian <florian@freepascal.org>
+Date:   Fri Nov 25 23:11:11 2022 +0100
+
+      * try to improve result stability by longer runtime
+
+M	packages/rtl-generics/tests/tqsort_killer.pp
+
+******************************************************************************
 commit 247423400f0d0686f2eaaf5de7d95a99b258419e
 Author: florian <florian@freepascal.org>
 Date:   Thu Nov 24 22:43:27 2022 +0100
@@ -38008,7 +38039,6 @@ Date:   Wed Nov 25 11:50:10 2020 +0000
 
 M	tests/utils/avx/asmtestgenerator.pas
 M	tests/utils/avx/avxopcodes.pas
-
 ******************************************************************************
 commit 912f8e8817dd15d27d7dddffcc471737c23050ef
 Author: tg74 <tg74@idefix.freepascal.org>
@@ -38058,6 +38088,7 @@ M	compiler/x86_64/x8664ats.inc
 M	compiler/x86_64/x8664nop.inc
 M	compiler/x86_64/x8664tab.inc
 M	tests/utils/avx/avxopcodes.pas
+
 ******************************************************************************
 commit 6aa8b718f46b6926836aff4e40cda9e868701eb8
 Author: nickysn <nickysn@gmail.com>
