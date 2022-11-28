@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 348fbfde9d524108e94ea970caf00c2be38bbe98
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Mon Nov 28 10:39:10 2022 +0100
+
+    * Add stub for IsManagedType
+
+M	rtl/inc/system.fpd
+
+******************************************************************************
 commit f8f824aa8d30279cc6d8130a3ba2380582f8a4ff
 Author: florian <florian@freepascal.org>
 Date:   Sat Nov 26 23:26:28 2022 +0100
@@ -38021,7 +38030,6 @@ Date:   Fri Nov 27 15:54:47 2020 +0000
 
 M	tests/utils/avx/avxopcodes.pas
 M	tests/utils/avx/avxtestgenerator.lpi
-
 ******************************************************************************
 commit 3af6a9826347573ff8a33b50748e48541e41a1e9
 Author: tg74 <tg74@idefix.freepascal.org>
@@ -38033,6 +38041,7 @@ Date:   Fri Nov 27 05:45:44 2020 +0000
 
 M	compiler/x86/rax86.pas
 M	tests/utils/avx/avxopcodes.pas
+
 ******************************************************************************
 commit 5207d0ee25a8bb2f37088e654b25dae2a5ade454
 Author: tg74 <tg74@idefix.freepascal.org>
