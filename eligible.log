@@ -1,4 +1,22 @@
 ******************************************************************************
+commit 5704626762d217e886f23b582d9b5628603d6c5a
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Sun Nov 27 16:33:50 2022 +0000
+
+      * New test to catch issue identified in #40003
+
+A	tests/webtbs/tw40003.pp
+
+******************************************************************************
+commit cc27576339115108f045222df45a8acb3d91723e
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Sun Nov 27 03:58:45 2022 +0000
+
+      * x86: Fixed movzwl/movzbl bug in OptPass2Movx (resolves i40003)
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
 commit 348fbfde9d524108e94ea970caf00c2be38bbe98
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Mon Nov 28 10:39:10 2022 +0100
@@ -38005,7 +38023,6 @@ Date:   Mon Nov 30 16:31:51 2020 +0000
 
 M	compiler/x86/rax86.pas
 M	tests/utils/avx/avxopcodes.pas
-
 ******************************************************************************
 commit 0a3d980f7e883862dec13db1745e75646c5f6f09
 Author: tg74 <tg74@idefix.freepascal.org>
@@ -38030,6 +38047,7 @@ Date:   Fri Nov 27 15:54:47 2020 +0000
 
 M	tests/utils/avx/avxopcodes.pas
 M	tests/utils/avx/avxtestgenerator.lpi
+
 ******************************************************************************
 commit 3af6a9826347573ff8a33b50748e48541e41a1e9
 Author: tg74 <tg74@idefix.freepascal.org>
