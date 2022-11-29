@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 2c3b78682ad065b9aa677322b4d050b07df5f9c3
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Tue Nov 29 09:05:37 2022 +0100
+
+    * Add IsConstValue
+
+M	rtl/inc/system.fpd
+
+******************************************************************************
 commit 5704626762d217e886f23b582d9b5628603d6c5a
 Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
 Date:   Sun Nov 27 16:33:50 2022 +0000
@@ -38011,7 +38020,6 @@ Date:   Tue Dec 1 05:43:17 2020 +0000
     git-svn-id: branches/tg74/avx512-0037785@47654 -
 
 M	compiler/x86/rax86.pas
-
 ******************************************************************************
 commit ae71ab728462e24367107623c19c4ba6aaaf8716
 Author: tg74 <tg74@idefix.freepascal.org>
@@ -38023,6 +38031,7 @@ Date:   Mon Nov 30 16:31:51 2020 +0000
 
 M	compiler/x86/rax86.pas
 M	tests/utils/avx/avxopcodes.pas
+
 ******************************************************************************
 commit 0a3d980f7e883862dec13db1745e75646c5f6f09
 Author: tg74 <tg74@idefix.freepascal.org>
