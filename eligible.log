@@ -1,4 +1,40 @@
 ******************************************************************************
+commit aff133cac2c4ca04dd68c4e6ac02f2e44946b799
+Author: florian <florian@freepascal.org>
+Date:   Thu Dec 1 22:56:42 2022 +0100
+
+      * disable timing check as it causes too much false negatives on machines under load
+
+M	packages/rtl-generics/tests/tqsort_killer.pp
+
+******************************************************************************
+commit c5f4a6acd0d48a567e2d11bb0041c92a2a8db897
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Wed Nov 30 22:52:12 2022 +0100
+
+    LLVM: fix variant records when alignment of first part is not the highest
+    
+    Resolves #40015
+
+M	compiler/symtable.pas
+
+******************************************************************************
+commit f1abd2c2f00c69ae25a02df3d06d394c8dfdb546
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Wed Nov 30 22:50:07 2022 +0100
+
+    Linux: fix pthread types
+    
+    Remove legacy implementation-specific fields (they don't match the current
+    glibc fields anymore since a long time) and fix alignment fields (they are
+    union fields that overlap with the rest of the record).
+    
+    All platforms now use the modern opaque array-based definitions.
+
+M	rtl/linux/pmutext.inc
+M	rtl/linux/ptypes.inc
+
+******************************************************************************
 commit b202fb2b0a2e89006dc3ff98befaa7459041b0f0
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Wed Nov 30 13:52:40 2022 +0100
@@ -37963,7 +37999,6 @@ Date:   Thu Dec 10 04:43:24 2020 +0000
     git-svn-id: branches/tg74/avx512-0037785@47745 -
 
 M	compiler/x86/rax86.pas
-
 ******************************************************************************
 commit 7aa94f6191bb586ebf69cd93e13c3bebdf10001e
 Author: tg74 <tg74@idefix.freepascal.org>
@@ -37998,6 +38033,7 @@ Date:   Fri Dec 4 16:19:48 2020 +0000
 M	compiler/x86/rax86.pas
 M	tests/utils/avx/asmtestgenerator.pas
 M	tests/utils/avx/avxopcodes.pas
+
 ******************************************************************************
 commit d8d472cf68aaa59c255456d23a5698d70858c45f
 Author: tg74 <tg74@idefix.freepascal.org>
