@@ -1,4 +1,16 @@
 ******************************************************************************
+commit e0eff8bd89aa0aa3d631a197f33863241c6b13c2
+Author: florian <florian@freepascal.org>
+Date:   Fri Dec 2 23:34:25 2022 +0100
+
+      + more change information fixed
+
+M	compiler/i386/i386prop.inc
+M	compiler/i8086/i8086prop.inc
+M	compiler/x86/x86ins.dat
+M	compiler/x86_64/x8664pro.inc
+
+******************************************************************************
 commit 7a34677b2ab134fab30a19c6bb6249425e802daf
 Author: Sven/Sarah Barth <pascaldragon@gmail.com>
 Date:   Fri Dec 2 17:06:18 2022 +0100
@@ -37987,7 +37999,6 @@ Date:   Wed Dec 16 11:02:14 2020 +0000
     git-svn-id: branches/tg74/avx512-0037785@47785 -
 
 M	compiler/x86/x86ins.dat
-
 ******************************************************************************
 commit 324032941a3b4171b59c99a1663c2a6407dbeec0
 Author: tg74 <tg74@idefix.freepascal.org>
@@ -38002,6 +38013,7 @@ M	tests/utils/avx/avxopcodes.pas
 M	tests/utils/avx/avxtestgenerator.lpi
 M	tests/utils/avx/avxtestgenerator.pp
 M	tests/utils/avx/options.pas
+
 ******************************************************************************
 commit 8c98be824df6e28fad2a957e4908cf96be65d400
 Author: tg74 <tg74@idefix.freepascal.org>
