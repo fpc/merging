@@ -1,4 +1,18 @@
 ******************************************************************************
+commit 7a34677b2ab134fab30a19c6bb6249425e802daf
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Fri Dec 2 17:06:18 2022 +0100
+
+    * as long as the type passed into a TypeInfo() is not an undefined or error def the resulting value will always be constant at compile time, so it can be compared to another then no matter if typenode or not
+    + added tests
+
+M	compiler/nadd.pas
+A	tests/tbs/tb0699.pp
+A	tests/tbs/tb0700.pp
+A	tests/tbs/tb0701.pp
+A	tests/tbs/tb0702.pp
+
+******************************************************************************
 commit aff133cac2c4ca04dd68c4e6ac02f2e44946b799
 Author: florian <florian@freepascal.org>
 Date:   Thu Dec 1 22:56:42 2022 +0100
@@ -37988,7 +38002,6 @@ M	tests/utils/avx/avxopcodes.pas
 M	tests/utils/avx/avxtestgenerator.lpi
 M	tests/utils/avx/avxtestgenerator.pp
 M	tests/utils/avx/options.pas
-
 ******************************************************************************
 commit 8c98be824df6e28fad2a957e4908cf96be65d400
 Author: tg74 <tg74@idefix.freepascal.org>
@@ -37999,6 +38012,7 @@ Date:   Thu Dec 10 04:43:24 2020 +0000
     git-svn-id: branches/tg74/avx512-0037785@47745 -
 
 M	compiler/x86/rax86.pas
+
 ******************************************************************************
 commit 7aa94f6191bb586ebf69cd93e13c3bebdf10001e
 Author: tg74 <tg74@idefix.freepascal.org>
