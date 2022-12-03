@@ -1,4 +1,28 @@
 ******************************************************************************
+commit 88ae6721c65e5eb62e16627c6ec9555674c6f04c
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sat Dec 3 20:59:59 2022 +0100
+
+    Linux mutex: restored the __m_kind field
+    
+    This particular field is at the same offset on all architectures with the same
+    bit width, and is guaranteed by glibc to remain at this offset for backward
+    compatibility with static initialisers.
+    
+    Resolves #40021
+
+M	rtl/linux/pmutext.inc
+
+******************************************************************************
+commit 230142e183d986fc9a4b1f8f32b42816bef6be26
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sat Dec 3 14:50:08 2022 +0100
+
+    AArch64 cgcpu: add missing brackets around and/or expression
+
+M	compiler/aarch64/aasmcpu.pas
+
+******************************************************************************
 commit ebb4de1441be4e6b3d6e7df5633db7898a367b2b
 Author: Sven/Sarah Barth <pascaldragon@gmail.com>
 Date:   Sat Dec 3 19:41:34 2022 +0100
@@ -37970,7 +37994,6 @@ Date:   Fri Dec 18 05:27:56 2020 +0000
     git-svn-id: branches/tg74/avx512-0037785@47807 -
 
 M	tests/utils/avx/asmtestgenerator.pas
-
 ******************************************************************************
 commit 25b27281375284e07b7b9047d7cfcb14f2805555
 Author: tg74 <tg74@idefix.freepascal.org>
@@ -37997,6 +38020,7 @@ Date:   Wed Dec 16 15:39:19 2020 +0000
     git-svn-id: branches/tg74/avx512-0037785@47788 -
 
 M	compiler/x86/x86ins.dat
+
 ******************************************************************************
 commit d6fdb384590bf8306e16b990dac52ca86f90deab
 Author: tg74 <tg74@idefix.freepascal.org>
