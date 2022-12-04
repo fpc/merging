@@ -59113,17 +59113,6 @@ M	compiler/options.pas
 M	compiler/rescmn.pas
 
 ******************************************************************************
-commit 61d44bba17591fa9fdf8eb65f3c1beae4092aef0
-Author: florian <florian@freepascal.org>
-Date:   Wed Aug 12 19:07:23 2020 +0000
-
-      * allow iso gotos within a procedure
-    
-    git-svn-id: trunk@46396 -
-
-M	compiler/nflw.pas
-
-******************************************************************************
 commit ff34fb16455ed861cd81137997c187b4906e7011
 Author: florian <florian@freepascal.org>
 Date:   Tue Aug 11 18:17:56 2020 +0000
@@ -90039,6 +90028,7 @@ Date:   Sat Jan 12 14:44:54 2019 +0000
     git-svn-id: trunk@40849 -
 
 M	compiler/x86/cpubase.pas
+
 ******************************************************************************
 commit 1b16ff3629c51a305b9808e751456f7eff1a5df8
 Author: pierre <pierre@freepascal.org>
@@ -90049,7 +90039,6 @@ Date:   Thu Jan 10 14:40:05 2019 +0000
     git-svn-id: trunk@40835 -
 
 M	compiler/systems/i_haiku.pas
-
 ******************************************************************************
 commit 193df0204ae176fff24978cb00539cf7481a1245
 Author: pierre <pierre@freepascal.org>
