@@ -59135,20 +59135,6 @@ Date:   Tue Aug 11 18:17:56 2020 +0000
 M	compiler/nutils.pas
 
 ******************************************************************************
-commit 6dac888ae5f3ff333d12ba8ecb17c124329342b5
-Author: florian <florian@freepascal.org>
-Date:   Tue Aug 11 12:05:13 2020 +0000
-
-      * 0 is a valid label in iso mode, resolves #37428
-    
-    git-svn-id: trunk@46362 -
-
-M	.gitattributes
-M	compiler/pdecl.pas
-M	compiler/pstatmnt.pas
-A	tests/webtbs/tw37428.pp
-
-******************************************************************************
 commit cfff96f44ce391ecd5cf16bb7c8dec76142cd1b0
 Author: ondrej <ondrej@idefix.freepascal.org>
 Date:   Mon Aug 10 20:42:13 2020 +0000
@@ -90042,6 +90028,7 @@ Date:   Sun Jan 13 10:32:00 2019 +0000
 M	.gitattributes
 M	compiler/ncgset.pas
 A	tests/webtbs/tw34818.pp
+
 ******************************************************************************
 commit b223d1c3048a22c1d2bdb3e8d933414e2843a737
 Author: florian <florian@freepascal.org>
@@ -90052,7 +90039,6 @@ Date:   Sat Jan 12 14:44:54 2019 +0000
     git-svn-id: trunk@40849 -
 
 M	compiler/x86/cpubase.pas
-
 ******************************************************************************
 commit 1b16ff3629c51a305b9808e751456f7eff1a5df8
 Author: pierre <pierre@freepascal.org>
