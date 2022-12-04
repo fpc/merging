@@ -1,4 +1,23 @@
 ******************************************************************************
+commit f54917d600979a7cb719f3be7af476e548912385
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Sat Dec 3 19:56:05 2022 +0000
+
+      * New test to catch stack overflow in compiler (#40010)
+
+A	tests/webtbf/tw40010.pp
+
+******************************************************************************
+commit f00a932cc6fec80533ad821192d4be8266446839
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Sat Dec 3 19:21:38 2022 +0000
+
+      * New is_cyclic function to detect if def references itself - fixes #40010
+
+M	compiler/defcmp.pas
+M	compiler/defutil.pas
+
+******************************************************************************
 commit 42d91c02bdf7c57fb2df8887d92e0fa298c4d8ef
 Author: florian <florian@freepascal.org>
 Date:   Sat Dec 3 23:35:55 2022 +0100
@@ -37973,7 +37992,6 @@ M	compiler/ppcx64.lpi
 M	compiler/x86/rax86.pas
 M	compiler/x86/x86ins.dat
 M	compiler/x86_64/x8664ats.inc
-
 ******************************************************************************
 commit 213f84ad6ce093b49829e9411b597b626fb113b8
 Author: tg74 <tg74@idefix.freepascal.org>
@@ -37995,6 +38013,7 @@ Date:   Fri Dec 18 16:24:57 2020 +0000
     git-svn-id: branches/tg74/avx512-0037785@47811 -
 
 M	compiler/x86/rax86.pas
+
 ******************************************************************************
 commit 76dd6ff6e784410972d33fdd3aa77d0252a46ea5
 Author: tg74 <tg74@idefix.freepascal.org>
