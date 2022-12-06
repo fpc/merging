@@ -1,4 +1,16 @@
 ******************************************************************************
+commit 851af5033fb80d4e19c4a7b5c44d50a36f456374
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Tue Dec 6 21:38:16 2022 +0100
+
+    Darwin/AArch64: adjust alignment info of custom-aligned paralocs
+    
+    Resolves #40019
+
+M	compiler/aarch64/cpupara.pas
+A	tests/webtbs/tw40019.pp
+
+******************************************************************************
 commit 8ad7decaa39dac87fab7f37f75b7da0aea49b2a1
 Author: florian <florian@freepascal.org>
 Date:   Sun Dec 4 23:17:41 2022 +0100
@@ -37972,7 +37984,6 @@ Date:   Tue Dec 29 04:49:52 2020 +0000
 M	compiler/x86/aasmcpu.pas
 M	compiler/x86/rax86.pas
 M	tests/utils/avx/asmtestgenerator.pas
-
 ******************************************************************************
 commit 9b2bed6fdf168b694b7c62751b208bc82d075c16
 Author: tg74 <tg74@idefix.freepascal.org>
@@ -37983,6 +37994,7 @@ Date:   Mon Dec 28 05:00:58 2020 +0000
     git-svn-id: branches/tg74/avx512-0037785@47865 -
 
 M	compiler/x86/rax86.pas
+
 ******************************************************************************
 commit 402f0d348e68536880a06507689e175ab7428226
 Author: tg74 <tg74@idefix.freepascal.org>
