@@ -1,4 +1,16 @@
 ******************************************************************************
+commit 14466ee9d99918072db8982765e621c2de309a9d
+Author: florian <florian@freepascal.org>
+Date:   Tue Dec 6 22:41:20 2022 +0100
+
+      * change table updates
+
+M	compiler/i386/i386prop.inc
+M	compiler/i8086/i8086prop.inc
+M	compiler/x86/x86ins.dat
+M	compiler/x86_64/x8664pro.inc
+
+******************************************************************************
 commit 851af5033fb80d4e19c4a7b5c44d50a36f456374
 Author: Jonas Maebe <jonas@freepascal.org>
 Date:   Tue Dec 6 21:38:16 2022 +0100
@@ -37971,7 +37983,6 @@ Date:   Tue Dec 29 05:12:47 2020 +0000
     git-svn-id: branches/tg74/avx512-0037785@47886 -
 
 M	compiler/x86/rax86.pas
-
 ******************************************************************************
 commit 2452e991b86091045a296ca6251b66ca3f6cea5d
 Author: tg74 <tg74@idefix.freepascal.org>
@@ -37984,6 +37995,7 @@ Date:   Tue Dec 29 04:49:52 2020 +0000
 M	compiler/x86/aasmcpu.pas
 M	compiler/x86/rax86.pas
 M	tests/utils/avx/asmtestgenerator.pas
+
 ******************************************************************************
 commit 9b2bed6fdf168b694b7c62751b208bc82d075c16
 Author: tg74 <tg74@idefix.freepascal.org>
