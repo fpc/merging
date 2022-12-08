@@ -1,4 +1,14 @@
 ******************************************************************************
+commit b787203db79b52ecb5a47c224386ae091d2e4897
+Author: Ondrej Pokorny <lazarus@kluug.net>
+Date:   Thu Dec 8 11:50:14 2022 +0100
+
+    webidl: add Document/DocumentFragment/Node types
+
+M	packages/webidl/src/webidldefs.pp
+M	packages/webidl/src/webidltopas.pp
+
+******************************************************************************
 commit 14466ee9d99918072db8982765e621c2de309a9d
 Author: florian <florian@freepascal.org>
 Date:   Tue Dec 6 22:41:20 2022 +0100
@@ -37972,7 +37982,6 @@ Date:   Wed Dec 30 07:10:37 2020 +0000
     git-svn-id: branches/tg74/avx512-0037785@47899 -
 
 M	compiler/x86/aasmcpu.pas
-
 ******************************************************************************
 commit 507f0b3362db9513e09255168306a3c46d35f0b3
 Author: tg74 <tg74@idefix.freepascal.org>
@@ -37983,6 +37992,7 @@ Date:   Tue Dec 29 05:12:47 2020 +0000
     git-svn-id: branches/tg74/avx512-0037785@47886 -
 
 M	compiler/x86/rax86.pas
+
 ******************************************************************************
 commit 2452e991b86091045a296ca6251b66ca3f6cea5d
 Author: tg74 <tg74@idefix.freepascal.org>
