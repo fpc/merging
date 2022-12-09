@@ -1,4 +1,16 @@
 ******************************************************************************
+commit 663ee7bc2007a22c48f97927afd4086cc8e56490
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Fri Dec 9 01:43:25 2022 +0000
+
+      * Fix to TObjectOpenAddressingLP in generics.collections where SetValue
+        would free the object if the current value is the same as the new value
+        (fixes #40024)
+
+M	packages/rtl-generics/src/inc/generics.dictionaries.inc
+M	packages/rtl-generics/src/inc/generics.dictionariesh.inc
+
+******************************************************************************
 commit b787203db79b52ecb5a47c224386ae091d2e4897
 Author: Ondrej Pokorny <lazarus@kluug.net>
 Date:   Thu Dec 8 11:50:14 2022 +0100
@@ -37971,7 +37983,6 @@ M	compiler/x86/aasmcpu.pas
 M	compiler/x86/rax86.pas
 M	compiler/x86/x86ins.dat
 M	compiler/x86_64/x8664ats.inc
-
 ******************************************************************************
 commit 7bba64854b52c877aac354180ba7928a903ff23f
 Author: tg74 <tg74@idefix.freepascal.org>
@@ -37982,6 +37993,7 @@ Date:   Wed Dec 30 07:10:37 2020 +0000
     git-svn-id: branches/tg74/avx512-0037785@47899 -
 
 M	compiler/x86/aasmcpu.pas
+
 ******************************************************************************
 commit 507f0b3362db9513e09255168306a3c46d35f0b3
 Author: tg74 <tg74@idefix.freepascal.org>
