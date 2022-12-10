@@ -1,4 +1,23 @@
 ******************************************************************************
+commit bf2911a562ed7ccfd3cec8871de3655b2dffa478
+Author: florian <florian@freepascal.org>
+Date:   Sat Dec 10 21:35:07 2022 +0100
+
+      + test for #40025 by Rika, resolves #40025
+
+A	tests/test/units/math/tfrldexp.pp
+
+******************************************************************************
+commit 2c77416da0bf340fdafd5fb0acb896ca43c02ec6
+Author: florian <florian@freepascal.org>
+Date:   Sat Dec 10 21:26:17 2022 +0100
+
+      - remove apparently accidently added files
+
+D	rtl/core
+D	rtl/solaris/core
+
+******************************************************************************
 commit 96c63c4443cae99de5e1a48a89d18791db441764
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Sat Dec 10 19:59:05 2022 +0000
@@ -37945,7 +37964,6 @@ Date:   Tue Jan 19 11:01:32 2021 +0000
 M	tests/utils/avx/asmtestgenerator.pas
 M	tests/utils/avx/avxopcodes.pas
 M	tests/utils/avx/avxtestgenerator.lpi
-
 ******************************************************************************
 commit 555ecd826bd9b6d28784f7e285eb648d49e251ee
 Author: tg74 <tg74@idefix.freepascal.org>
@@ -37969,6 +37987,7 @@ Date:   Tue Jan 12 16:27:07 2021 +0000
     git-svn-id: branches/tg74/avx512-0037785@48149 -
 
 M	compiler/x86/rax86.pas
+
 ******************************************************************************
 commit ecdac1dd399df3d5dade5151e320686db821ef9e
 Author: tg74 <tg74@idefix.freepascal.org>
