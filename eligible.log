@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 13548088b7687916e1d12d213995fc2b639c3ff8
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Dec 10 15:18:18 2022 +0100
+
+    * Implement case-insensitive version of Equals & Contains. Fix issue #40029
+
+M	rtl/objpas/sysutils/syshelp.inc
+M	rtl/objpas/sysutils/syshelph.inc
+
+******************************************************************************
 commit 06b0927f1e4e763d62fb1a34da215cf1f03a399c
 Author: florian <florian@freepascal.org>
 Date:   Fri Dec 9 22:29:35 2022 +0100
@@ -37957,7 +37967,6 @@ Date:   Tue Jan 5 13:52:29 2021 +0000
     git-svn-id: branches/tg74/avx512-0037785@48085 -
 
 M	compiler/x86/aasmcpu.pas
-
 ******************************************************************************
 commit 09c009868604cb1a9a065ea9c739a37c41c93923
 Author: florian <florian@freepascal.org>
@@ -37973,6 +37982,7 @@ Date:   Tue Jan 5 13:13:43 2021 +0000
     git-svn-id: branches/tg74/avx512-0037785@48084 -
 
 M	compiler/ppcx64.lpi
+
 ******************************************************************************
 commit f8fc0073248b2be95224d2419bb844b4bec0d5e9
 Author: tg74 <tg74@idefix.freepascal.org>
