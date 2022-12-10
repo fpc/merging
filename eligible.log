@@ -1,4 +1,32 @@
 ******************************************************************************
+commit 96c63c4443cae99de5e1a48a89d18791db441764
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Sat Dec 10 19:59:05 2022 +0000
+
+     Fix fcmove instruction for external assemblers
+
+M	tests/test/units/cpu/tcpu1.pp
+
+******************************************************************************
+commit e2905b8fad1750fed539e32f40cd69619beeae39
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Sat Dec 10 19:50:47 2022 +0000
+
+    Refuse A_Jcc, A_SETcc, and A_CMOVcc without condition
+
+M	compiler/x86/rax86att.pas
+M	compiler/x86/rax86int.pas
+
+******************************************************************************
+commit a592636d9c07ad615223957b57b83a8c502c80e5
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Sat Dec 10 17:06:35 2022 +0000
+
+    Use CMOV and FCMOV with a condition, the parser should reject without a condition
+
+M	tests/test/units/cpu/tcpu1.pp
+
+******************************************************************************
 commit d65de901db648e6a8254722bbddc6be1075cd119
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Sat Dec 10 17:46:15 2022 +0100
@@ -37941,7 +37969,6 @@ Date:   Tue Jan 12 16:27:07 2021 +0000
     git-svn-id: branches/tg74/avx512-0037785@48149 -
 
 M	compiler/x86/rax86.pas
-
 ******************************************************************************
 commit ecdac1dd399df3d5dade5151e320686db821ef9e
 Author: tg74 <tg74@idefix.freepascal.org>
@@ -37974,6 +38001,7 @@ Date:   Tue Jan 12 10:57:15 2021 +0000
     git-svn-id: branches/tg74/avx512-0037785@48146 -
 
 M	tests/utils/avx/avxopcodes.pas
+
 ******************************************************************************
 commit 64e796ace2f58eda26c7c732c8d592029f5cf297
 Author: tg74 <tg74@idefix.freepascal.org>
