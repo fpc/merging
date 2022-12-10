@@ -1,4 +1,34 @@
 ******************************************************************************
+commit d65de901db648e6a8254722bbddc6be1075cd119
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Sat Dec 10 17:46:15 2022 +0100
+
+    Add PIC code for solaris/i386/start.inc
+
+A	rtl/core
+A	rtl/solaris/core
+M	rtl/solaris/i386/start.inc
+
+******************************************************************************
+commit af04a523bb4881f106908e231b94561d889f2d81
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Sat Dec 10 17:41:33 2022 +0100
+
+      * Fix testing of A_JCC and A_SETCC, add A_CMOVCC
+      * Add $PIC for i386 and x86_64 solaris assemblers
+
+M	compiler/x86/agx86att.pas
+
+******************************************************************************
+commit b9a8e6832f8db6bee1abeb9e5e958de8821d949e
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Sat Dec 10 17:41:05 2022 +0100
+
+     Do not set usesectionprogbits and usesectionflags to true for solaris assembler
+
+M	compiler/aggas.pas
+
+******************************************************************************
 commit 13548088b7687916e1d12d213995fc2b639c3ff8
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Sat Dec 10 15:18:18 2022 +0100
@@ -37944,7 +37974,6 @@ Date:   Tue Jan 12 10:57:15 2021 +0000
     git-svn-id: branches/tg74/avx512-0037785@48146 -
 
 M	tests/utils/avx/avxopcodes.pas
-
 ******************************************************************************
 commit 64e796ace2f58eda26c7c732c8d592029f5cf297
 Author: tg74 <tg74@idefix.freepascal.org>
@@ -37967,6 +37996,7 @@ Date:   Tue Jan 5 13:52:29 2021 +0000
     git-svn-id: branches/tg74/avx512-0037785@48085 -
 
 M	compiler/x86/aasmcpu.pas
+
 ******************************************************************************
 commit 09c009868604cb1a9a065ea9c739a37c41c93923
 Author: florian <florian@freepascal.org>
