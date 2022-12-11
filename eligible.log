@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 3b4c396edd21db35f2c4834514e0866e840c94a1
+Author: marcoonthegit <marco@freepascal.org>
+Date:   Sun Dec 11 21:36:11 2022 +0100
+
+    * fix for issue #40006
+      set jwadhcpcsdk packing to 8 for win64.
+
+M	packages/winunits-jedi/src/jwadhcpcsdk.pas
+
+******************************************************************************
 commit c92056fcac53d1e0fcac9d6de4cab18c53b33b41
 Author: florian <florian@freepascal.org>
 Date:   Sun Dec 11 20:04:46 2022 +0100
@@ -37950,7 +37960,6 @@ Date:   Thu Jan 21 04:57:47 2021 +0000
     git-svn-id: branches/tg74/avx512-0037785@48261 -
 
 M	tests/utils/avx/asmtestgenerator.pas
-
 ******************************************************************************
 commit 149f8ddfe9965e73e3e0acb94b46c623a9c0c087
 Author: tg74 <tg74@idefix.freepascal.org>
@@ -37961,6 +37970,7 @@ Date:   Wed Jan 20 16:30:38 2021 +0000
     git-svn-id: branches/tg74/avx512-0037785@48230 -
 
 M	tests/utils/avx/asmtestgenerator.pas
+
 ******************************************************************************
 commit c2a3f03093d6a4814d0d740244afa7800194781d
 Author: tg74 <tg74@idefix.freepascal.org>
