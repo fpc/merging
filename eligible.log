@@ -1,4 +1,14 @@
 ******************************************************************************
+commit c92056fcac53d1e0fcac9d6de4cab18c53b33b41
+Author: florian <florian@freepascal.org>
+Date:   Sun Dec 11 20:04:46 2022 +0100
+
+      * patches by Rika: Fix a bug in LdExp(extended), and test Math.Frexp/Ldexp implementations instead of own, resolves #40030
+
+M	rtl/objpas/math.pp
+M	tests/test/units/math/tfrldexp.pp
+
+******************************************************************************
 commit bf2911a562ed7ccfd3cec8871de3655b2dffa478
 Author: florian <florian@freepascal.org>
 Date:   Sat Dec 10 21:35:07 2022 +0100
@@ -37951,7 +37961,6 @@ Date:   Wed Jan 20 16:30:38 2021 +0000
     git-svn-id: branches/tg74/avx512-0037785@48230 -
 
 M	tests/utils/avx/asmtestgenerator.pas
-
 ******************************************************************************
 commit c2a3f03093d6a4814d0d740244afa7800194781d
 Author: tg74 <tg74@idefix.freepascal.org>
@@ -37964,6 +37973,7 @@ Date:   Tue Jan 19 11:01:32 2021 +0000
 M	tests/utils/avx/asmtestgenerator.pas
 M	tests/utils/avx/avxopcodes.pas
 M	tests/utils/avx/avxtestgenerator.lpi
+
 ******************************************************************************
 commit 555ecd826bd9b6d28784f7e285eb648d49e251ee
 Author: tg74 <tg74@idefix.freepascal.org>
