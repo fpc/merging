@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 7917cbed22e42bb7483d2546b2c46808050c7beb
+Author: florian <florian@freepascal.org>
+Date:   Mon Dec 12 22:53:14 2022 +0100
+
+      + (negative) test for cmov/j/set without condition
+
+A	tests/tbf/tb0296.pp
+
+******************************************************************************
 commit 3b4c396edd21db35f2c4834514e0866e840c94a1
 Author: marcoonthegit <marco@freepascal.org>
 Date:   Sun Dec 11 21:36:11 2022 +0100
@@ -37949,7 +37958,6 @@ M	tests/utils/avx/asmtestgenerator.pas
 M	tests/utils/avx/avxopcodes.pas
 M	tests/utils/avx/avxtestgenerator.lpi
 M	tests/utils/avx/options.pas
-
 ******************************************************************************
 commit 22e8cd3fd3ebf6b1747cb17064419d9d90450985
 Author: tg74 <tg74@idefix.freepascal.org>
@@ -37960,6 +37968,7 @@ Date:   Thu Jan 21 04:57:47 2021 +0000
     git-svn-id: branches/tg74/avx512-0037785@48261 -
 
 M	tests/utils/avx/asmtestgenerator.pas
+
 ******************************************************************************
 commit 149f8ddfe9965e73e3e0acb94b46c623a9c0c087
 Author: tg74 <tg74@idefix.freepascal.org>
