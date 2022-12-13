@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 725da25477e1284c44a0fecb9ee709da592ee895
+Author: florian <florian@freepascal.org>
+Date:   Tue Dec 13 19:39:42 2022 +0100
+
+      * patch by Rika to improve IntPower, resolves #40036
+
+M	rtl/objpas/math.pp
+
+******************************************************************************
 commit 44a2d4a1eb57711b0050279cc9f4a5cf558bd38b
 Author: Luiz Américo Pereira Câmara <camara_luiz@yahoo.com.br>
 Date:   Mon Dec 12 21:03:54 2022 -0300
@@ -37942,7 +37951,6 @@ Date:   Mon Jan 25 16:23:56 2021 +0000
     git-svn-id: branches/tg74/avx512-0037785@48420 -
 
 M	tests/utils/avx/asmtestgenerator.pas
-
 ******************************************************************************
 commit 684bdb0245b603c5c116d90f5fe2438089e1201f
 Author: tg74 <tg74@idefix.freepascal.org>
@@ -37954,6 +37962,7 @@ Date:   Mon Jan 25 16:01:01 2021 +0000
 
 M	tests/utils/avx/asmtestgenerator.pas
 M	tests/utils/avx/avxtestgenerator.lpi
+
 ******************************************************************************
 commit 0a254b46bc0c01773778e93497609b5e27d139a9
 Author: tg74 <tg74@idefix.freepascal.org>
