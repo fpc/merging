@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 44a2d4a1eb57711b0050279cc9f4a5cf558bd38b
+Author: Luiz Américo Pereira Câmara <camara_luiz@yahoo.com.br>
+Date:   Mon Dec 12 21:03:54 2022 -0300
+
+    fcl-json: add support to create JSONObject with QWord values
+
+M	packages/fcl-json/src/fpjson.pp
+M	packages/fcl-json/tests/testjsondata.pas
+
+******************************************************************************
 commit 7917cbed22e42bb7483d2546b2c46808050c7beb
 Author: florian <florian@freepascal.org>
 Date:   Mon Dec 12 22:53:14 2022 +0100
@@ -37944,7 +37954,6 @@ Date:   Mon Jan 25 16:01:01 2021 +0000
 
 M	tests/utils/avx/asmtestgenerator.pas
 M	tests/utils/avx/avxtestgenerator.lpi
-
 ******************************************************************************
 commit 0a254b46bc0c01773778e93497609b5e27d139a9
 Author: tg74 <tg74@idefix.freepascal.org>
@@ -37958,6 +37967,7 @@ M	tests/utils/avx/asmtestgenerator.pas
 M	tests/utils/avx/avxopcodes.pas
 M	tests/utils/avx/avxtestgenerator.lpi
 M	tests/utils/avx/options.pas
+
 ******************************************************************************
 commit 22e8cd3fd3ebf6b1747cb17064419d9d90450985
 Author: tg74 <tg74@idefix.freepascal.org>
