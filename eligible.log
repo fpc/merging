@@ -1,4 +1,22 @@
 ******************************************************************************
+commit 3b1220e3230a040425fc872a1a6933a5742b95ee
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Wed Dec 14 17:20:04 2022 +0100
+
+    * Fix wong extension for fpcssresolver.pas
+
+M	packages/fcl-css/fpmake.pp
+
+******************************************************************************
+commit 3eab1c1c028360576a6d928fe7d35afbba66e512
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Wed Dec 14 17:16:55 2022 +0100
+
+    * Fix loglevel for ListMode
+
+M	packages/fpmkunit/src/fpmkunit.pp
+
+******************************************************************************
 commit 4b5c7ab0f571f3c2b4b6d1d63fb3f767bf038fb7
 Author: Michael VAN CANNEYT <mvancanneyt@tixeo.com>
 Date:   Wed Dec 14 15:17:49 2022 +0100
@@ -37919,7 +37937,6 @@ Date:   Sun Jan 31 14:28:41 2021 +0000
     git-svn-id: branches/unicodekvm@48468 -
 
 M	packages/rtl-console/src/inc/videoh.inc
-
 ******************************************************************************
 commit 3f852e1444278f8d146f93cd39cdf239f0fc93e2
 Author: nickysn <nickysn@gmail.com>
@@ -37950,6 +37967,7 @@ Date:   Sun Jan 31 14:11:29 2021 +0000
     git-svn-id: branches/unicodekvm@48466 -
 
 M	packages/rtl-console/src/inc/videoh.inc
+
 ******************************************************************************
 commit b8dfa1b8e68946db2ce52deb37c681eccba73418
 Author: nickysn <nickysn@gmail.com>
