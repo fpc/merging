@@ -1,4 +1,14 @@
 ******************************************************************************
+commit e1bbcf70500983698781253033976259b00ad461
+Author: florian <florian@freepascal.org>
+Date:   Wed Dec 14 21:56:04 2022 +0100
+
+      * patch by ab: Optimized default hash asm in generics.hashes, resolves #40035
+      * generic.hashes now uses the cpu unit to detect crc32 cpu support
+
+M	packages/rtl-generics/src/generics.hashes.pas
+
+******************************************************************************
 commit 3b1220e3230a040425fc872a1a6933a5742b95ee
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Wed Dec 14 17:20:04 2022 +0100
@@ -37926,7 +37936,6 @@ Date:   Mon Feb 1 03:26:56 2021 +0000
 
 M	packages/rtl-console/src/inc/video.inc
 M	packages/rtl-console/src/inc/videoh.inc
-
 ******************************************************************************
 commit 0d1fef96a1d0b4c7c70f9eed24b6a8997e3e109b
 Author: nickysn <nickysn@gmail.com>
@@ -37937,6 +37946,7 @@ Date:   Sun Jan 31 14:28:41 2021 +0000
     git-svn-id: branches/unicodekvm@48468 -
 
 M	packages/rtl-console/src/inc/videoh.inc
+
 ******************************************************************************
 commit 3f852e1444278f8d146f93cd39cdf239f0fc93e2
 Author: nickysn <nickysn@gmail.com>
