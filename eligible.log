@@ -1,4 +1,50 @@
 ******************************************************************************
+commit 4b5c7ab0f571f3c2b4b6d1d63fb3f767bf038fb7
+Author: Michael VAN CANNEYT <mvancanneyt@tixeo.com>
+Date:   Wed Dec 14 15:17:49 2022 +0100
+
+    * Fix compiler warnings: switch to TStrings for external command options
+
+M	packages/fpmkunit/src/fpmkunit.pp
+M	packages/gdbint/fpmake.pp
+
+******************************************************************************
+commit 7762897d320c5e0ee57e9d9dee57308813173033
+Author: Michael VAN CANNEYT <mvancanneyt@tixeo.com>
+Date:   Wed Dec 14 15:16:58 2022 +0100
+
+    * Fix some compiler warnings
+
+M	packages/ide/fpmake.pp
+
+******************************************************************************
+commit 929b6ff18b3bdebebfdce018fd84f7135df2b6f3
+Author: Michael VAN CANNEYT <mvancanneyt@tixeo.com>
+Date:   Wed Dec 14 15:16:26 2022 +0100
+
+    * Fix some compiler warnings
+
+M	packages/gitlab/fpmake.pp
+
+******************************************************************************
+commit 6605248b2d58c15760480ee404b4731b9ef16a2c
+Author: Michael VAN CANNEYT <mvancanneyt@tixeo.com>
+Date:   Wed Dec 14 15:16:06 2022 +0100
+
+    * Fix some compiler warnings
+
+M	packages/rtl-unicode/fpmake.pp
+
+******************************************************************************
+commit 59807472aac504bd2acc0d64af0ad1988f3a2ff9
+Author: Michael VAN CANNEYT <mvancanneyt@tixeo.com>
+Date:   Wed Dec 14 15:15:53 2022 +0100
+
+    * Fix some compiler warnings
+
+M	packages/dblib/fpmake.pp
+
+******************************************************************************
 commit 725da25477e1284c44a0fecb9ee709da592ee895
 Author: florian <florian@freepascal.org>
 Date:   Tue Dec 13 19:39:42 2022 +0100
@@ -37904,7 +37950,6 @@ Date:   Sun Jan 31 14:11:29 2021 +0000
     git-svn-id: branches/unicodekvm@48466 -
 
 M	packages/rtl-console/src/inc/videoh.inc
-
 ******************************************************************************
 commit b8dfa1b8e68946db2ce52deb37c681eccba73418
 Author: nickysn <nickysn@gmail.com>
@@ -37951,6 +37996,7 @@ Date:   Mon Jan 25 16:23:56 2021 +0000
     git-svn-id: branches/tg74/avx512-0037785@48420 -
 
 M	tests/utils/avx/asmtestgenerator.pas
+
 ******************************************************************************
 commit 684bdb0245b603c5c116d90f5fe2438089e1201f
 Author: tg74 <tg74@idefix.freepascal.org>
