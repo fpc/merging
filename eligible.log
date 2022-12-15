@@ -1,4 +1,15 @@
 ******************************************************************************
+commit 5b0669d036cfef022030c9f36bf455161c0fd9a7
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Thu Dec 15 10:47:26 2022 +0100
+
+    aros: build the CPU unit for i386 and x86_64 aros
+
+M	rtl/aros/Makefile
+M	rtl/aros/Makefile.fpc
+M	rtl/aros/buildrtl.pp
+
+******************************************************************************
 commit e1bbcf70500983698781253033976259b00ad461
 Author: florian <florian@freepascal.org>
 Date:   Wed Dec 14 21:56:04 2022 +0100
