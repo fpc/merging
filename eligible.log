@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 9cceb41c04c2b60bdf17da13e73e7ede25069343
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Thu Dec 15 11:56:46 2022 +0100
+
+    * Some improvements by Rolf Wetjen
+
+M	packages/fcl-process/src/dbugintf.pp
+
+******************************************************************************
 commit 5b0669d036cfef022030c9f36bf455161c0fd9a7
 Author: Karoly Balogh <karoly@freepascal.org>
 Date:   Thu Dec 15 10:47:26 2022 +0100
@@ -37935,7 +37944,6 @@ Date:   Mon Feb 1 05:10:39 2021 +0000
 M	.gitattributes
 A	packages/rtl-console/tests/video1.pp
 A	packages/rtl-console/tests/video1_unix.lpi
-
 ******************************************************************************
 commit b13c8e3ef68607a7a37694fc1605dbb743e8650b
 Author: nickysn <nickysn@gmail.com>
@@ -37947,6 +37955,7 @@ Date:   Mon Feb 1 03:26:56 2021 +0000
 
 M	packages/rtl-console/src/inc/video.inc
 M	packages/rtl-console/src/inc/videoh.inc
+
 ******************************************************************************
 commit 0d1fef96a1d0b4c7c70f9eed24b6a8997e3e109b
 Author: nickysn <nickysn@gmail.com>
