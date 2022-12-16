@@ -1,4 +1,14 @@
 ******************************************************************************
+commit f1b071bbba978ee95389fcc557b6d06680d7a9c0
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Fri Dec 16 09:52:15 2022 +0100
+
+    aros: fixed typo/naming mismatch in 5b0669d0, spotted by Alexey Torgashin
+
+M	rtl/aros/Makefile
+M	rtl/aros/Makefile.fpc
+
+******************************************************************************
 commit 9cceb41c04c2b60bdf17da13e73e7ede25069343
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Thu Dec 15 11:56:46 2022 +0100
@@ -37931,7 +37941,6 @@ Date:   Mon Feb 1 06:08:13 2021 +0000
 
 M	packages/rtl-console/src/inc/video.inc
 M	packages/rtl-console/src/inc/videoh.inc
-
 ******************************************************************************
 commit 90113ef819430c8dc471551e5c953fec06cce03c
 Author: nickysn <nickysn@gmail.com>
@@ -37944,6 +37953,7 @@ Date:   Mon Feb 1 05:10:39 2021 +0000
 M	.gitattributes
 A	packages/rtl-console/tests/video1.pp
 A	packages/rtl-console/tests/video1_unix.lpi
+
 ******************************************************************************
 commit b13c8e3ef68607a7a37694fc1605dbb743e8650b
 Author: nickysn <nickysn@gmail.com>
