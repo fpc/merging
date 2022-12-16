@@ -1,4 +1,13 @@
 ******************************************************************************
+commit a5eba4b14f51a52d4d12fa95dda1a3a920d4088e
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Fri Dec 16 19:11:24 2022 +0100
+
+    * Revert merge
+
+M	packages/fcl-web/src/base/fphttpclientasyncpool.pas
+
+******************************************************************************
 commit af4578f8ca12acd094b39f8a263ea6cbefd3e4d5
 Author: Ondrej Pokorny <lazarus@kluug.net>
 Date:   Mon Nov 14 09:16:39 2022 +0100
@@ -37921,7 +37930,6 @@ Date:   Mon Feb 1 11:29:09 2021 +0000
 M	.gitattributes
 A	packages/rtl-console/tests/video1_windows.lpi
 A	packages/rtl-console/tests/video2_windows.lpi
-
 ******************************************************************************
 commit d5283cae7fa84ede4b82743a762bebd51ede8a55
 Author: nickysn <nickysn@gmail.com>
@@ -37932,6 +37940,7 @@ Date:   Mon Feb 1 06:19:12 2021 +0000
     git-svn-id: branches/unicodekvm@48487 -
 
 M	packages/rtl-console/src/inc/video.inc
+
 ******************************************************************************
 commit cb6ba25e1b1a23ac2dfb3c17afb6ada075b54b9b
 Author: nickysn <nickysn@gmail.com>
