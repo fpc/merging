@@ -1,4 +1,31 @@
 ******************************************************************************
+commit af4578f8ca12acd094b39f8a263ea6cbefd3e4d5
+Author: Ondrej Pokorny <lazarus@kluug.net>
+Date:   Mon Nov 14 09:16:39 2022 +0100
+
+    fix whitespace
+
+M	packages/fcl-web/src/base/fphttpclientasyncpool.pas
+
+******************************************************************************
+commit 2fc71285f4f709e0ce764dae6616ae67da4056c4
+Author: Ondrej Pokorny <lazarus@kluug.net>
+Date:   Sat Nov 12 03:18:18 2022 +0100
+
+    async pool: procedure references simpler
+
+M	packages/fcl-web/src/base/fphttpclientasyncpool.pas
+
+******************************************************************************
+commit 9e5cdc2abeb9de41e630e3aa6fbe197b7d37c0f7
+Author: Ondrej Pokorny <lazarus@kluug.net>
+Date:   Sat Nov 12 02:12:26 2022 +0100
+
+    Revert recent changes
+
+M	packages/fcl-web/src/base/fphttpclientasyncpool.pas
+
+******************************************************************************
 commit f1b071bbba978ee95389fcc557b6d06680d7a9c0
 Author: Karoly Balogh <karoly@freepascal.org>
 Date:   Fri Dec 16 09:52:15 2022 +0100
@@ -37905,7 +37932,6 @@ Date:   Mon Feb 1 06:19:12 2021 +0000
     git-svn-id: branches/unicodekvm@48487 -
 
 M	packages/rtl-console/src/inc/video.inc
-
 ******************************************************************************
 commit cb6ba25e1b1a23ac2dfb3c17afb6ada075b54b9b
 Author: nickysn <nickysn@gmail.com>
@@ -37941,6 +37967,7 @@ Date:   Mon Feb 1 06:08:13 2021 +0000
 
 M	packages/rtl-console/src/inc/video.inc
 M	packages/rtl-console/src/inc/videoh.inc
+
 ******************************************************************************
 commit 90113ef819430c8dc471551e5c953fec06cce03c
 Author: nickysn <nickysn@gmail.com>
