@@ -1,4 +1,21 @@
 ******************************************************************************
+commit 6e7869bea03f9dc5121de4ed44e76b713793c84d
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Fri Dec 16 20:22:16 2022 +0100
+
+    * PDF reader, initial implementation
+
+A	packages/fcl-pdf/examples/pdfdump.lpi
+A	packages/fcl-pdf/examples/pdfdump.pp
+M	packages/fcl-pdf/fpmake.pp
+A	packages/fcl-pdf/src/fppdfconsts.pp
+A	packages/fcl-pdf/src/fppdfobjects.pp
+A	packages/fcl-pdf/src/fppdfparser.pp
+A	packages/fcl-pdf/src/fppdfpredict.pp
+A	packages/fcl-pdf/src/fppdfscanner.pp
+A	packages/fcl-pdf/src/fppdfsource.pp
+
+******************************************************************************
 commit a5eba4b14f51a52d4d12fa95dda1a3a920d4088e
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Fri Dec 16 19:11:24 2022 +0100
@@ -37917,7 +37934,6 @@ Date:   Mon Feb 1 14:54:18 2021 +0000
     git-svn-id: branches/tg74/avx512-0037785@48491 -
 
 M	tests/utils/avx/avxopcodes.pas
-
 ******************************************************************************
 commit c907f4cb28fdd9f561086372f7f7f1404f99e916
 Author: nickysn <nickysn@gmail.com>
@@ -37930,6 +37946,7 @@ Date:   Mon Feb 1 11:29:09 2021 +0000
 M	.gitattributes
 A	packages/rtl-console/tests/video1_windows.lpi
 A	packages/rtl-console/tests/video2_windows.lpi
+
 ******************************************************************************
 commit d5283cae7fa84ede4b82743a762bebd51ede8a55
 Author: nickysn <nickysn@gmail.com>
