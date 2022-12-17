@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 5109f0ba444c85d2577023ce5fbdc2ddffc267c8
+Author: Ondrej Pokorny <lazarus@kluug.net>
+Date:   Fri Dec 16 13:57:51 2022 +0100
+
+    add missing TSizeF, TRectF properties and features
+
+M	rtl/objpas/types.pp
+
+******************************************************************************
 commit 0b0a5cb458e8179972ff83911535e0c784851856
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Sat Dec 17 12:13:52 2022 +0100
@@ -37929,7 +37938,6 @@ Date:   Wed Feb 3 09:03:04 2021 +0000
     git-svn-id: branches/tg74/avx512-0037785@48505 -
 
 M	tests/utils/avx/asmtestgenerator.pas
-
 ******************************************************************************
 commit 66cdab722370350681f7b381b815a23033ce7602
 Author: tg74 <tg74@idefix.freepascal.org>
@@ -37941,6 +37949,7 @@ Date:   Tue Feb 2 16:24:36 2021 +0000
 
 M	tests/utils/avx/asmtestgenerator.pas
 M	tests/utils/avx/avxopcodes.pas
+
 ******************************************************************************
 commit e844f748825dc710c80277804bddfe65b90e1ec9
 Author: tg74 <tg74@idefix.freepascal.org>
