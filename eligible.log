@@ -1,4 +1,44 @@
 ******************************************************************************
+commit 394a4ba6a03e829749d168d2a9ac2db7f222cf91
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Dec 17 17:19:04 2022 +0100
+
+    * Remove debug define
+
+M	packages/fcl-pdf/src/fppdfparser.pp
+
+******************************************************************************
+commit 4e5eaaf52e2fec86b12b77baa22cd4685f92c1f2
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Dec 17 17:18:45 2022 +0100
+
+    * Fix GetFulltext when unicodemap is nil
+
+M	packages/fcl-pdf/src/fppdfobjects.pp
+
+******************************************************************************
+commit 5e996d83900df33987029e049a543d67815d66d3
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Dec 17 17:13:33 2022 +0100
+
+    * Fix compilation
+
+M	packages/fcl-pdf/examples/pdfdump.pp
+
+******************************************************************************
+commit bdcfbca0b13fa93cd2c2f3b79236b4b0459c38b5
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Dec 17 16:19:18 2022 +0100
+
+    * Patch by Alexey Torgashin to make identifiers more distinguished
+
+M	packages/fcl-pdf/src/fppdfobjects.pp
+M	packages/fcl-pdf/src/fppdfparser.pp
+M	packages/fcl-pdf/src/fppdfpredict.pp
+M	packages/fcl-pdf/src/fppdfscanner.pp
+M	packages/fcl-pdf/src/fppdfsource.pp
+
+******************************************************************************
 commit 1b4616c22d70111178528bbf30ff8acf9b637e46
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Sat Dec 17 16:06:45 2022 +0100
@@ -37893,7 +37933,6 @@ Date:   Mon Feb 8 11:18:22 2021 +0000
 
 M	packages/rtl-console/tests/video1_windows.lpi
 M	packages/rtl-console/tests/video2_windows.lpi
-
 ******************************************************************************
 commit 3634e7823f3b50deecc14b4c9734501cb2567c7e
 Author: nickysn <nickysn@gmail.com>
@@ -37931,6 +37970,7 @@ M	compiler/x86/aasmcpu.pas
 M	compiler/x86/rax86.pas
 M	compiler/x86/x86ins.dat
 M	compiler/x86_64/x8664ats.inc
+
 ******************************************************************************
 commit e309c47ed619cf7161ef355b4d1fa3128efaaa38
 Author: tg74 <tg74@idefix.freepascal.org>
