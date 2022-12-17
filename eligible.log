@@ -1,4 +1,13 @@
 ******************************************************************************
+commit f1e391fb415239d926c4f23babe812e67824ef95
+Author: florian <florian@freepascal.org>
+Date:   Sat Dec 17 18:20:24 2022 +0100
+
+      * patch by Make TPointF * TPointF a component-wise multiplication, resolves #40042
+
+M	rtl/objpas/types.pp
+
+******************************************************************************
 commit 394a4ba6a03e829749d168d2a9ac2db7f222cf91
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Sat Dec 17 17:19:04 2022 +0100
