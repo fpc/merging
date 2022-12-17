@@ -1,4 +1,34 @@
 ******************************************************************************
+commit 0b0a5cb458e8179972ff83911535e0c784851856
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Sat Dec 17 12:13:52 2022 +0100
+
+    Regenerate the three Makefile's modified by the two previous commits
+
+M	rtl/aros/Makefile
+M	rtl/haiku/Makefile
+M	rtl/wince/Makefile
+
+******************************************************************************
+commit 355c63beb1dc34299d9a33a8cdc71a7094d37ec2
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Sat Dec 17 12:12:48 2022 +0100
+
+     Add cpu and mmx to CPU_UNITS for i386-wince target
+
+M	rtl/wince/Makefile.fpc
+
+******************************************************************************
+commit 6bc25c1e89734c1e93d828cd5027a6be0a07a074
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Sat Dec 17 12:11:56 2022 +0100
+
+     Homogenize with other OSes by also using CPU_UNITS make variable
+
+M	rtl/aros/Makefile.fpc
+M	rtl/haiku/Makefile.fpc
+
+******************************************************************************
 commit 6e7869bea03f9dc5121de4ed44e76b713793c84d
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Fri Dec 16 20:22:16 2022 +0100
@@ -37911,7 +37941,6 @@ Date:   Tue Feb 2 16:24:36 2021 +0000
 
 M	tests/utils/avx/asmtestgenerator.pas
 M	tests/utils/avx/avxopcodes.pas
-
 ******************************************************************************
 commit e844f748825dc710c80277804bddfe65b90e1ec9
 Author: tg74 <tg74@idefix.freepascal.org>
@@ -37934,6 +37963,7 @@ Date:   Mon Feb 1 14:54:18 2021 +0000
     git-svn-id: branches/tg74/avx512-0037785@48491 -
 
 M	tests/utils/avx/avxopcodes.pas
+
 ******************************************************************************
 commit c907f4cb28fdd9f561086372f7f7f1404f99e916
 Author: nickysn <nickysn@gmail.com>
