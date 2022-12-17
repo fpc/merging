@@ -1,4 +1,13 @@
 ******************************************************************************
+commit d1616cb0d1210c44ab76807346e10dcba9ab6a63
+Author: Ondrej Pokorny <lazarus@kluug.net>
+Date:   Fri Dec 16 17:37:15 2022 +0100
+
+    Extend System.UITypes
+
+M	packages/rtl-objpas/src/inc/system.uitypes.pp
+
+******************************************************************************
 commit 5109f0ba444c85d2577023ce5fbdc2ddffc267c8
 Author: Ondrej Pokorny <lazarus@kluug.net>
 Date:   Fri Dec 16 13:57:51 2022 +0100
@@ -37927,7 +37936,6 @@ Date:   Wed Feb 3 16:30:41 2021 +0000
 
 M	tests/utils/avx/asmtestgenerator.pas
 M	tests/utils/avx/avxopcodes.pas
-
 ******************************************************************************
 commit bc9629c446de8fbfec27dcd77e348adca0b1c218
 Author: tg74 <tg74@idefix.freepascal.org>
@@ -37938,6 +37946,7 @@ Date:   Wed Feb 3 09:03:04 2021 +0000
     git-svn-id: branches/tg74/avx512-0037785@48505 -
 
 M	tests/utils/avx/asmtestgenerator.pas
+
 ******************************************************************************
 commit 66cdab722370350681f7b381b815a23033ce7602
 Author: tg74 <tg74@idefix.freepascal.org>
