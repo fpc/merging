@@ -1,4 +1,22 @@
 ******************************************************************************
+commit 1b4616c22d70111178528bbf30ff8acf9b637e46
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Dec 17 16:06:45 2022 +0100
+
+    * Pages -> page
+
+M	packages/fcl-pdf/src/fppdfparser.pp
+
+******************************************************************************
+commit 024ab7b26fb1895422fcac752d0ee18b0f6ed42a
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Dec 17 16:05:33 2022 +0100
+
+    * Fix some warnings, add enumerators
+
+M	packages/fcl-pdf/src/fppdfobjects.pp
+
+******************************************************************************
 commit d1616cb0d1210c44ab76807346e10dcba9ab6a63
 Author: Ondrej Pokorny <lazarus@kluug.net>
 Date:   Fri Dec 16 17:37:15 2022 +0100
@@ -37913,7 +37931,6 @@ M	compiler/x86/aasmcpu.pas
 M	compiler/x86/rax86.pas
 M	compiler/x86/x86ins.dat
 M	compiler/x86_64/x8664ats.inc
-
 ******************************************************************************
 commit e309c47ed619cf7161ef355b4d1fa3128efaaa38
 Author: tg74 <tg74@idefix.freepascal.org>
@@ -37936,6 +37953,7 @@ Date:   Wed Feb 3 16:30:41 2021 +0000
 
 M	tests/utils/avx/asmtestgenerator.pas
 M	tests/utils/avx/avxopcodes.pas
+
 ******************************************************************************
 commit bc9629c446de8fbfec27dcd77e348adca0b1c218
 Author: tg74 <tg74@idefix.freepascal.org>
