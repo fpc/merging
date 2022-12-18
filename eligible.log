@@ -1,4 +1,23 @@
 ******************************************************************************
+commit ca97f25979f43629c159fa18e380afa615b8798c
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sun Dec 18 12:57:10 2022 +0100
+
+    * Simple examples for reading
+
+A	packages/fcl-pdf/examples/simpleread.pp
+A	packages/fcl-pdf/examples/simpleread2.pp
+
+******************************************************************************
+commit bd4b3af8b6761b52699c2836e1b3b79783475836
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sun Dec 18 12:54:11 2022 +0100
+
+    * Type helper for easier loading
+
+M	packages/fcl-pdf/src/fppdfparser.pp
+
+******************************************************************************
 commit f1e391fb415239d926c4f23babe812e67824ef95
 Author: florian <florian@freepascal.org>
 Date:   Sat Dec 17 18:20:24 2022 +0100
@@ -37918,7 +37937,6 @@ Date:   Mon Feb 8 13:53:19 2021 +0000
     git-svn-id: branches/unicodekvm@48532 -
 
 M	packages/rtl-console/src/win/video.pp
-
 ******************************************************************************
 commit 2746b0e035f558d7b67366a5633f929e73ed452e
 Author: nickysn <nickysn@gmail.com>
@@ -37942,6 +37960,7 @@ Date:   Mon Feb 8 11:18:22 2021 +0000
 
 M	packages/rtl-console/tests/video1_windows.lpi
 M	packages/rtl-console/tests/video2_windows.lpi
+
 ******************************************************************************
 commit 3634e7823f3b50deecc14b4c9734501cb2567c7e
 Author: nickysn <nickysn@gmail.com>
