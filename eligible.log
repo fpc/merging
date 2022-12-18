@@ -1,4 +1,14 @@
 ******************************************************************************
+commit d1f999100b449adf175104b355b9e52ae2441fb4
+Author: Ondrej Pokorny <lazarus@kluug.net>
+Date:   Sun Dec 18 14:22:35 2022 +0100
+
+    Add SetToArray and ArrayToSet functions for more general RTTI Set handling
+
+M	rtl/objpas/typinfo.pp
+A	tests/test/trtti24.pp
+
+******************************************************************************
 commit ca97f25979f43629c159fa18e380afa615b8798c
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Sun Dec 18 12:57:10 2022 +0100
@@ -37926,7 +37936,6 @@ Date:   Mon Feb 8 14:06:44 2021 +0000
     git-svn-id: branches/unicodekvm@48533 -
 
 M	packages/rtl-console/src/inc/video.inc
-
 ******************************************************************************
 commit 453bdaaafc71dcc467528063395aa3188886df6d
 Author: nickysn <nickysn@gmail.com>
@@ -37937,6 +37946,7 @@ Date:   Mon Feb 8 13:53:19 2021 +0000
     git-svn-id: branches/unicodekvm@48532 -
 
 M	packages/rtl-console/src/win/video.pp
+
 ******************************************************************************
 commit 2746b0e035f558d7b67366a5633f929e73ed452e
 Author: nickysn <nickysn@gmail.com>
