@@ -1,4 +1,13 @@
 ******************************************************************************
+commit bc17da25e17d2c3f980427e3587661da33dda827
+Author: Andrew Haines <andrewd207@aol.com>
+Date:   Sun Dec 18 16:53:40 2022 -0500
+
+    fphttpclient allow to override supported protocols from url
+
+M	packages/fcl-web/src/base/fphttpclient.pp
+
+******************************************************************************
 commit d1f999100b449adf175104b355b9e52ae2441fb4
 Author: Ondrej Pokorny <lazarus@kluug.net>
 Date:   Sun Dec 18 14:22:35 2022 +0100
@@ -37925,7 +37934,6 @@ Date:   Mon Feb 8 14:13:40 2021 +0000
     git-svn-id: branches/unicodekvm@48534 -
 
 M	packages/rtl-console/src/win/video.pp
-
 ******************************************************************************
 commit 11db30ab3d347f358f6ca5e86bc1640f8930c11c
 Author: nickysn <nickysn@gmail.com>
@@ -37936,6 +37944,7 @@ Date:   Mon Feb 8 14:06:44 2021 +0000
     git-svn-id: branches/unicodekvm@48533 -
 
 M	packages/rtl-console/src/inc/video.inc
+
 ******************************************************************************
 commit 453bdaaafc71dcc467528063395aa3188886df6d
 Author: nickysn <nickysn@gmail.com>
