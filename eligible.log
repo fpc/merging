@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 68cdd7073f13f85d8cc192aea7af17afde91cbee
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Mon Dec 19 09:56:50 2022 +0100
+
+    * Patch from Ondrej to implement SameArray
+
+M	tests/test/trtti24.pp
+
+******************************************************************************
 commit bc17da25e17d2c3f980427e3587661da33dda827
 Author: Andrew Haines <andrewd207@aol.com>
 Date:   Sun Dec 18 16:53:40 2022 -0500
@@ -37923,7 +37932,6 @@ Date:   Mon Feb 8 14:20:29 2021 +0000
     git-svn-id: branches/unicodekvm@48535 -
 
 M	packages/rtl-console/src/win/video.pp
-
 ******************************************************************************
 commit 4864aba47a325c28674bc9581ed2cde92b94b016
 Author: nickysn <nickysn@gmail.com>
@@ -37934,6 +37942,7 @@ Date:   Mon Feb 8 14:13:40 2021 +0000
     git-svn-id: branches/unicodekvm@48534 -
 
 M	packages/rtl-console/src/win/video.pp
+
 ******************************************************************************
 commit 11db30ab3d347f358f6ca5e86bc1640f8930c11c
 Author: nickysn <nickysn@gmail.com>
