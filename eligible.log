@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 1761d3c09d93c61f3854022e4cc12392a27906ef
+Author: florian <florian@freepascal.org>
+Date:   Mon Dec 19 22:56:49 2022 +0100
+
+      + operator TPointF./, resolves #40046
+
+M	rtl/objpas/types.pp
+
+******************************************************************************
 commit 68cdd7073f13f85d8cc192aea7af17afde91cbee
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Mon Dec 19 09:56:50 2022 +0100
@@ -37921,7 +37930,6 @@ Date:   Mon Feb 8 14:26:52 2021 +0000
     git-svn-id: branches/unicodekvm@48536 -
 
 M	packages/rtl-console/src/win/video.pp
-
 ******************************************************************************
 commit 6109c5606624c41923a1b3bb5ba2107e586ef2a9
 Author: nickysn <nickysn@gmail.com>
@@ -37932,6 +37940,7 @@ Date:   Mon Feb 8 14:20:29 2021 +0000
     git-svn-id: branches/unicodekvm@48535 -
 
 M	packages/rtl-console/src/win/video.pp
+
 ******************************************************************************
 commit 4864aba47a325c28674bc9581ed2cde92b94b016
 Author: nickysn <nickysn@gmail.com>
