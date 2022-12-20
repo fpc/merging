@@ -1,4 +1,23 @@
 ******************************************************************************
+commit 310db2ce9203623d2e1c18d0212e834f524ad842
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Tue Dec 20 15:45:02 2022 +0100
+
+    * Add const to string args where possible. Fix issue #40050
+
+M	packages/fcl-base/src/avl_tree.pp
+M	packages/fcl-base/src/custapp.pp
+M	packages/fcl-base/src/fpexprpars.pp
+M	packages/fcl-base/src/fpobserver.pp
+M	packages/fcl-base/src/fptemplate.pp
+M	packages/fcl-base/src/gettext.pp
+M	packages/fcl-base/src/inicol.pp
+M	packages/fcl-base/src/inifiles.pp
+M	packages/fcl-base/src/pascodegen.pp
+M	packages/fcl-base/src/rtfpars.pp
+M	packages/fcl-base/src/streamcoll.pp
+
+******************************************************************************
 commit e1747381219360a06b66960ba7221ea74df78492
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Tue Dec 20 15:21:17 2022 +0100
@@ -37898,7 +37917,6 @@ Date:   Mon Feb 8 20:35:35 2021 +0000
 
 M	.gitattributes
 A	packages/fv/src/views.pas
-
 ******************************************************************************
 commit c5541e9376af14246897f7013d1a72a62da7032f
 Author: nickysn <nickysn@gmail.com>
@@ -37910,6 +37928,7 @@ Date:   Mon Feb 8 20:34:42 2021 +0000
 
 M	.gitattributes
 R100	packages/fv/src/views.pas	packages/fv/src/views.inc
+
 ******************************************************************************
 commit 3d4a242974f5290302e7afc1f18cb462ce6942a7
 Author: nickysn <nickysn@gmail.com>
