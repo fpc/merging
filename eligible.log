@@ -1,4 +1,29 @@
 ******************************************************************************
+commit 3c2ab09a481b237c5b3fab6ef8b399250404cb8f
+Author: Michael Van Canneyt <michael@freepascal.org>
+Date:   Tue Dec 20 00:49:45 2022 +0100
+
+    * Use const string where possible. Fix issue #40052
+
+M	packages/fcl-extra/src/daemonapp.pp
+M	packages/fcl-extra/src/fileinfo.pp
+M	packages/fcl-extra/src/win/ServiceManager.pas
+
+******************************************************************************
+commit 817ec09ec01e4e8134dd5b0175e2ce390cf8d973
+Author: Michael Van Canneyt <michael@freepascal.org>
+Date:   Tue Dec 20 00:37:18 2022 +0100
+
+    * Add const to string params where possible. Fix issue #40053
+
+M	packages/fcl-fpcunit/src/DUnitCompatibleInterface.inc
+M	packages/fcl-fpcunit/src/consoletestrunner.pas
+M	packages/fcl-fpcunit/src/exampletests/fpcunittests.pp
+M	packages/fcl-fpcunit/src/exampletests/money.pp
+M	packages/fcl-fpcunit/src/fpcunit.pp
+M	packages/fcl-fpcunit/src/testregistry.pp
+
+******************************************************************************
 commit 1761d3c09d93c61f3854022e4cc12392a27906ef
 Author: florian <florian@freepascal.org>
 Date:   Mon Dec 19 22:56:49 2022 +0100
@@ -37908,7 +37933,6 @@ M	packages/fv/src/stddlg.pas
 M	packages/fv/src/tabs.pas
 M	packages/fv/src/validate.pas
 M	packages/fv/src/views.pas
-
 ******************************************************************************
 commit 834a6579d7ea7caab3b8e40d2a94ab6bda4dc198
 Author: nickysn <nickysn@gmail.com>
@@ -37930,6 +37954,7 @@ Date:   Mon Feb 8 14:26:52 2021 +0000
     git-svn-id: branches/unicodekvm@48536 -
 
 M	packages/rtl-console/src/win/video.pp
+
 ******************************************************************************
 commit 6109c5606624c41923a1b3bb5ba2107e586ef2a9
 Author: nickysn <nickysn@gmail.com>
