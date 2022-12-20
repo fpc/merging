@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 48b97514193933e20c354a459c1cb37ca8edeb6c
+Author: florian <florian@freepascal.org>
+Date:   Tue Dec 20 21:46:33 2022 +0100
+
+      * patch by Alexey Torgashin to resolve #40054
+
+M	rtl/objpas/math.pp
+
+******************************************************************************
 commit 310db2ce9203623d2e1c18d0212e834f524ad842
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Tue Dec 20 15:45:02 2022 +0100
@@ -37905,7 +37914,6 @@ Date:   Mon Feb 8 20:36:06 2021 +0000
     git-svn-id: branches/unicodekvm@48545 -
 
 M	packages/fv/fpmake.pp
-
 ******************************************************************************
 commit 1f3e903c107ef366b8c1ed2d57e4e1efdad13d02
 Author: nickysn <nickysn@gmail.com>
@@ -37917,6 +37925,7 @@ Date:   Mon Feb 8 20:35:35 2021 +0000
 
 M	.gitattributes
 A	packages/fv/src/views.pas
+
 ******************************************************************************
 commit c5541e9376af14246897f7013d1a72a62da7032f
 Author: nickysn <nickysn@gmail.com>
