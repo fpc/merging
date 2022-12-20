@@ -1,4 +1,57 @@
 ******************************************************************************
+commit e1747381219360a06b66960ba7221ea74df78492
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Tue Dec 20 15:21:17 2022 +0100
+
+    * Some missing consts
+
+M	packages/fcl-fpcunit/src/DUnitCompatibleInterface.inc
+M	packages/fcl-fpcunit/src/fpcunit.pp
+
+******************************************************************************
+commit ade9ac865ea361864128fdd8043bacd0b69c8663
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Tue Dec 20 15:18:47 2022 +0100
+
+    * Add const to string args where possible. Fix issue #40049
+
+M	packages/fcl-net/src/netdb.pp
+M	packages/fcl-net/src/resolve.pp
+M	packages/fcl-net/src/sslbase.pp
+M	packages/fcl-net/src/sslsockets.pp
+M	packages/fcl-net/src/ssockets.pp
+
+******************************************************************************
+commit fbe1db32abda9fccb5bc52aac593efafd89770c5
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Tue Dec 20 15:01:30 2022 +0100
+
+    * Remove debug statement
+
+M	packages/fpindexer/src/sqldbindexdb.pp
+
+******************************************************************************
+commit 125dc64b1eb9883711d84acfa144eb2fcd14fe87
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Tue Dec 20 15:00:35 2022 +0100
+
+    * Add const to string args where possible. Fix issue #40048
+
+M	packages/fcl-js/src/jssrcmap.pas
+M	packages/fcl-js/src/jstree.pp
+M	packages/fcl-js/src/tstopas.pp
+
+******************************************************************************
+commit c34eedb9cf70b2ad9f4d9dc2a99c6c8be1cf68b5
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Tue Dec 20 14:53:44 2022 +0100
+
+    * Free cached queries when committing
+
+M	packages/fpindexer/src/pgindexdb.pp
+M	packages/fpindexer/src/sqldbindexdb.pp
+
+******************************************************************************
 commit 3c2ab09a481b237c5b3fab6ef8b399250404cb8f
 Author: Michael Van Canneyt <michael@freepascal.org>
 Date:   Tue Dec 20 00:49:45 2022 +0100
@@ -37857,7 +37910,6 @@ Date:   Mon Feb 8 20:34:42 2021 +0000
 
 M	.gitattributes
 R100	packages/fv/src/views.pas	packages/fv/src/views.inc
-
 ******************************************************************************
 commit 3d4a242974f5290302e7afc1f18cb462ce6942a7
 Author: nickysn <nickysn@gmail.com>
@@ -37933,6 +37985,7 @@ M	packages/fv/src/stddlg.pas
 M	packages/fv/src/tabs.pas
 M	packages/fv/src/validate.pas
 M	packages/fv/src/views.pas
+
 ******************************************************************************
 commit 834a6579d7ea7caab3b8e40d2a94ab6bda4dc198
 Author: nickysn <nickysn@gmail.com>
