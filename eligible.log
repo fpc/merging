@@ -1,4 +1,14 @@
 ******************************************************************************
+commit e0fef23d77e43c36d6d6ad474a21e5d1235742c5
+Author: florian <florian@freepascal.org>
+Date:   Wed Dec 21 22:34:46 2022 +0100
+
+      * properly transform a+const1-const2 into a+const1+(-const2), resolves #40041
+
+M	compiler/nadd.pas
+A	tests/webtbs/tw40041.pp
+
+******************************************************************************
 commit 48b97514193933e20c354a459c1cb37ca8edeb6c
 Author: florian <florian@freepascal.org>
 Date:   Tue Dec 20 21:46:33 2022 +0100
@@ -37903,7 +37913,6 @@ M	.gitattributes
 M	packages/fv/fpmake.pp
 A	packages/fv/src/uviews.pas
 M	packages/fv/src/views.inc
-
 ******************************************************************************
 commit be64fd707a6ed1aa52ce366872b302dd18270a44
 Author: nickysn <nickysn@gmail.com>
@@ -37914,6 +37923,7 @@ Date:   Mon Feb 8 20:36:06 2021 +0000
     git-svn-id: branches/unicodekvm@48545 -
 
 M	packages/fv/fpmake.pp
+
 ******************************************************************************
 commit 1f3e903c107ef366b8c1ed2d57e4e1efdad13d02
 Author: nickysn <nickysn@gmail.com>
