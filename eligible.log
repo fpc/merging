@@ -1,4 +1,17 @@
 ******************************************************************************
+commit 30e0df384d5961c5525c70f2878963f04ec9bafd
+Author: florian <florian@freepascal.org>
+Date:   Thu Dec 22 22:41:17 2022 +0100
+
+      * second part of #40041 fixed
+      + tests
+
+M	compiler/nadd.pas
+M	tests/webtbs/tw39785.pp
+A	tests/webtbs/tw40041b.pp
+R100	tests/webtbs/tw40041.pp	tw40041a.pp
+
+******************************************************************************
 commit d9f05d341da1da407344839e874b69addd64aef9
 Author: Ondrej Pokorny <lazarus@kluug.net>
 Date:   Sun Dec 18 11:56:03 2022 +0100
@@ -37905,7 +37918,6 @@ Date:   Tue Feb 9 14:08:25 2021 +0000
     git-svn-id: branches/unicodekvm@48550 -
 
 M	packages/fv/src/views.inc
-
 ******************************************************************************
 commit 4b0edb61153aa71dea42c1f6e270daf72753384e
 Author: nickysn <nickysn@gmail.com>
@@ -37917,6 +37929,7 @@ Date:   Tue Feb 9 10:56:27 2021 +0000
 
 M	packages/fv/src/platform.inc
 M	packages/fv/src/stddlg.pas
+
 ******************************************************************************
 commit b564e400fc76fa5f429922849a96580d6494bfac
 Author: nickysn <nickysn@gmail.com>
