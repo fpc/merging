@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 3203eac6d370f7b53749b338cc2fd12d5bb288d1
+Author: florian <florian@freepascal.org>
+Date:   Sat Dec 24 17:07:27 2022 +0100
+
+      + missing -O4 option added
+
+M	tests/webtbs/tw40041.pp
+
+******************************************************************************
 commit 28b4189a9a704b284e75ff7436d1cb808e569382
 Author: florian <florian@freepascal.org>
 Date:   Fri Dec 23 18:16:52 2022 +0100
@@ -37913,7 +37922,6 @@ Date:   Tue Feb 9 15:38:03 2021 +0000
     git-svn-id: branches/unicodekvm@48554 -
 
 M	packages/fv/src/drivers.inc
-
 ******************************************************************************
 commit ae339ed8fb7d5678db9d5f9db3df4002a21074c7
 Author: nickysn <nickysn@gmail.com>
@@ -37924,6 +37932,7 @@ Date:   Tue Feb 9 14:36:14 2021 +0000
     git-svn-id: branches/unicodekvm@48553 -
 
 M	packages/fv/src/drivers.inc
+
 ******************************************************************************
 commit 3297a453ea0717b1c4858015adc494c4dd467239
 Author: nickysn <nickysn@gmail.com>
