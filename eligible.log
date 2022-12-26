@@ -1,4 +1,13 @@
 ******************************************************************************
+commit cf41a549b93d72cd414f19526abeab7e23b4dd8a
+Author: florian <florian@freepascal.org>
+Date:   Mon Dec 26 21:47:47 2022 +0100
+
+      * patch by Bart B and Rika for *H functions, part of #40055
+
+M	rtl/objpas/math.pp
+
+******************************************************************************
 commit ef4a1c74cb71abe10041522cf1aceb0c6b6d9c45
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Mon Dec 26 14:00:19 2022 +0100
@@ -37903,7 +37912,6 @@ Date:   Tue Feb 9 20:36:17 2021 +0000
     git-svn-id: branches/unicodekvm@48560 -
 
 M	packages/fv/src/views.inc
-
 ******************************************************************************
 commit 6198d4a0a1eabe00f5ba947f24747f5c1bab9f94
 Author: nickysn <nickysn@gmail.com>
@@ -37914,6 +37922,7 @@ Date:   Tue Feb 9 20:30:02 2021 +0000
     git-svn-id: branches/unicodekvm@48559 -
 
 M	packages/fv/src/views.inc
+
 ******************************************************************************
 commit c9cc530d948d4270e528b63ba2bb13493366d907
 Author: nickysn <nickysn@gmail.com>
