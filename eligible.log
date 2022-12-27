@@ -1,4 +1,40 @@
 ******************************************************************************
+commit a5f49c1cefffcee2e9552407f428a9d01f79cac2
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Tue Dec 27 09:43:40 2022 +0100
+
+    * RFC states that client must use mask: enforce mask on connect
+
+M	packages/fcl-web/src/websocket/fpwebsocketclient.pp
+
+******************************************************************************
+commit 546919972600998b4d719f123473cde1d5b4b451
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Tue Dec 27 09:32:58 2022 +0100
+
+    * Sample program from Andrew Haines to test echo servers
+
+A	packages/fcl-web/examples/websocket/echoclient/echoclient.pp
+
+******************************************************************************
+commit 4f054f4097fa0e30083f6e4657867c20e031dde3
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Tue Dec 27 09:30:07 2022 +0100
+
+    * Patch from Andrew Haines: do not send close connection message if already closed
+
+M	packages/fcl-web/src/websocket/fpwebsocketclient.pp
+
+******************************************************************************
+commit 23d61350bdf694f77ccd3015274d3e24ec20f970
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Tue Dec 27 09:27:58 2022 +0100
+
+    * Patch from Andrew Haines to actually pass OutgoingFrameMask to frames. Add woSendErrClosesConn flag
+
+M	packages/fcl-web/src/websocket/fpwebsocket.pp
+
+******************************************************************************
 commit cf41a549b93d72cd414f19526abeab7e23b4dd8a
 Author: florian <florian@freepascal.org>
 Date:   Mon Dec 26 21:47:47 2022 +0100
@@ -37868,7 +37904,6 @@ Date:   Tue Feb 9 20:54:26 2021 +0000
     git-svn-id: branches/unicodekvm@48565 -
 
 M	packages/fv/src/views.inc
-
 ******************************************************************************
 commit 763124567d20c79d6bdd9ca550899588367bad2a
 Author: nickysn <nickysn@gmail.com>
@@ -37912,6 +37947,7 @@ Date:   Tue Feb 9 20:36:17 2021 +0000
     git-svn-id: branches/unicodekvm@48560 -
 
 M	packages/fv/src/views.inc
+
 ******************************************************************************
 commit 6198d4a0a1eabe00f5ba947f24747f5c1bab9f94
 Author: nickysn <nickysn@gmail.com>
