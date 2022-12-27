@@ -1,4 +1,22 @@
 ******************************************************************************
+commit 535f11886de9ddcc3bb52a38f6d7cae06e557e96
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Tue Dec 27 21:59:03 2022 +0100
+
+    * Fix missing semi-colon
+
+M	packages/fcl-web/src/restbridge/sqldbrestschema.pp
+
+******************************************************************************
+commit 234a9551258b94eebed481ee535a523597cde7db
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Tue Dec 27 21:49:02 2022 +0100
+
+    * Fix missing fields in TSQLDBRestResource.Assign
+
+M	packages/fcl-web/src/restbridge/sqldbrestschema.pp
+
+******************************************************************************
 commit a5f49c1cefffcee2e9552407f428a9d01f79cac2
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Tue Dec 27 09:43:40 2022 +0100
@@ -37882,7 +37900,6 @@ Date:   Tue Feb 9 21:55:33 2021 +0000
     git-svn-id: branches/unicodekvm@48567 -
 
 M	packages/fv/src/views.inc
-
 ******************************************************************************
 commit 3d74e5a5243c4302102d62592ac4c7ceb3e49c4d
 Author: nickysn <nickysn@gmail.com>
@@ -37904,6 +37921,7 @@ Date:   Tue Feb 9 20:54:26 2021 +0000
     git-svn-id: branches/unicodekvm@48565 -
 
 M	packages/fv/src/views.inc
+
 ******************************************************************************
 commit 763124567d20c79d6bdd9ca550899588367bad2a
 Author: nickysn <nickysn@gmail.com>
