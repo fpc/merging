@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 9e48addff52b3a5d398dec64030e026a45665d4d
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Wed Dec 28 15:39:23 2022 +0000
+
+    Specify correct include files used in ptcwrapper unit, not in ptceventqueue
+
+M	packages/ptc/fpmake.pp
+
+******************************************************************************
 commit ea68c97f5048973b8ba9eed354be828fe14a42f9
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Wed Dec 28 13:38:55 2022 +0000
@@ -37881,7 +37890,6 @@ M	.gitattributes
 M	packages/fv/fpmake.pp
 M	packages/fv/src/outline.inc
 A	packages/fv/src/uoutline.pas
-
 ******************************************************************************
 commit 074f72b64b551ac877d216da62b17fa1dfb10aec
 Author: nickysn <nickysn@gmail.com>
@@ -37892,6 +37900,7 @@ Date:   Tue Feb 9 22:02:09 2021 +0000
     git-svn-id: branches/unicodekvm@48570 -
 
 M	packages/fv/fpmake.pp
+
 ******************************************************************************
 commit 8b0747f5529cafaf0823adcb7d9c1184f09a2f04
 Author: nickysn <nickysn@gmail.com>
