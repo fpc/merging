@@ -1,4 +1,31 @@
 ******************************************************************************
+commit ea68c97f5048973b8ba9eed354be828fe14a42f9
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Wed Dec 28 13:38:55 2022 +0000
+
+    Remove convert.inc from fpmake include list as it was removed in commit 15ff16d85218ad77941878493af4b120cb11da47
+
+M	packages/rtl-console/fpmake.pp
+
+******************************************************************************
+commit 20f649b7e9670c947eb54bca12e0e2b5ef8bb679
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Wed Dec 28 13:34:42 2022 +0000
+
+    Add missing include directory src/ptcwrapper
+
+M	packages/ptc/fpmake.pp
+
+******************************************************************************
+commit 9f2f4a6574516cd64cfb213174710013ad0d86f7
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Wed Dec 28 13:11:29 2022 +0000
+
+    Remove include files for collation_ru source, as they are gone since commit 27ed2808dcb4c95b101cada579f32ea3325e08d3
+
+M	packages/rtl-unicode/fpmake.pp
+
+******************************************************************************
 commit 535f11886de9ddcc3bb52a38f6d7cae06e557e96
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Tue Dec 27 21:59:03 2022 +0100
@@ -37865,7 +37892,6 @@ Date:   Tue Feb 9 22:02:09 2021 +0000
     git-svn-id: branches/unicodekvm@48570 -
 
 M	packages/fv/fpmake.pp
-
 ******************************************************************************
 commit 8b0747f5529cafaf0823adcb7d9c1184f09a2f04
 Author: nickysn <nickysn@gmail.com>
@@ -37900,6 +37926,7 @@ Date:   Tue Feb 9 21:55:33 2021 +0000
     git-svn-id: branches/unicodekvm@48567 -
 
 M	packages/fv/src/views.inc
+
 ******************************************************************************
 commit 3d74e5a5243c4302102d62592ac4c7ceb3e49c4d
 Author: nickysn <nickysn@gmail.com>
