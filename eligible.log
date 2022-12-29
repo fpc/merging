@@ -1,4 +1,15 @@
 ******************************************************************************
+commit 69eebe4c0c013f2825cceefede5bf778c4561024
+Author: florian <florian@freepascal.org>
+Date:   Thu Dec 29 15:19:59 2022 +0100
+
+      + patch by Rika to implement missing TPointF methods, resolves #40057
+      + test by Rika
+
+M	rtl/objpas/types.pp
+A	tests/test/units/types/ttpointf1.pp
+
+******************************************************************************
 commit d7870c81e929f5869ee9e1c7d3666033cbe01bd4
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Thu Dec 29 09:49:35 2022 +0100
@@ -37881,7 +37892,6 @@ M	.gitattributes
 M	packages/fv/fpmake.pp
 M	packages/fv/src/menus.inc
 A	packages/fv/src/umenus.pas
-
 ******************************************************************************
 commit e9024877110a89323c818a9d49979c6c627f62c4
 Author: nickysn <nickysn@gmail.com>
@@ -37892,6 +37902,7 @@ Date:   Tue Feb 9 23:38:59 2021 +0000
     git-svn-id: branches/unicodekvm@48575 -
 
 M	packages/fv/fpmake.pp
+
 ******************************************************************************
 commit 08c5d9b00773c9f1bbf7d703109ba9cab2b89654
 Author: nickysn <nickysn@gmail.com>
