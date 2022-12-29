@@ -1,4 +1,13 @@
 ******************************************************************************
+commit d7870c81e929f5869ee9e1c7d3666033cbe01bd4
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Thu Dec 29 09:49:35 2022 +0100
+
+    * Example program to print unit dependencies
+
+A	packages/fcl-passrc/examples/showdeps.pp
+
+******************************************************************************
 commit 721e988da2298e426c5ebc78205b2917c7169816
 Author: Karoly Balogh <karoly@freepascal.org>
 Date:   Thu Dec 29 05:08:46 2022 +0100
@@ -37883,7 +37892,6 @@ Date:   Tue Feb 9 23:38:59 2021 +0000
     git-svn-id: branches/unicodekvm@48575 -
 
 M	packages/fv/fpmake.pp
-
 ******************************************************************************
 commit 08c5d9b00773c9f1bbf7d703109ba9cab2b89654
 Author: nickysn <nickysn@gmail.com>
@@ -37895,6 +37903,7 @@ Date:   Tue Feb 9 23:38:24 2021 +0000
 
 M	.gitattributes
 A	packages/fv/src/menus.pas
+
 ******************************************************************************
 commit 17b748ef9ae87cdff765ff1aedfdf23f643f7367
 Author: nickysn <nickysn@gmail.com>
