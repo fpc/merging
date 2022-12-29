@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 721e988da2298e426c5ebc78205b2917c7169816
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Thu Dec 29 05:08:46 2022 +0100
+
+    m68k: add some initial CPU-specifc boilerplate for an internal ELF writer
+
+A	compiler/m68k/cpuelf.pas
+M	compiler/systems.inc
+
+******************************************************************************
 commit e19f60503b81a4752596a845e9dba035d4510550
 Author: Karoly Balogh <karoly@freepascal.org>
 Date:   Thu Dec 29 03:36:51 2022 +0100
@@ -37885,7 +37895,6 @@ Date:   Tue Feb 9 23:38:24 2021 +0000
 
 M	.gitattributes
 A	packages/fv/src/menus.pas
-
 ******************************************************************************
 commit 17b748ef9ae87cdff765ff1aedfdf23f643f7367
 Author: nickysn <nickysn@gmail.com>
@@ -37897,6 +37906,7 @@ Date:   Tue Feb 9 23:37:31 2021 +0000
 
 M	.gitattributes
 R100	packages/fv/src/menus.pas	packages/fv/src/menus.inc
+
 ******************************************************************************
 commit 346cf6a32ff9d360f363715b940d081d713a475c
 Author: nickysn <nickysn@gmail.com>
