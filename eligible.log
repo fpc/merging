@@ -1,4 +1,16 @@
 ******************************************************************************
+commit e19f60503b81a4752596a845e9dba035d4510550
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Thu Dec 29 03:36:51 2022 +0100
+
+    m68k: updated instruction tables to match vasm release 1.9a
+
+M	compiler/m68k/m68kins.dat
+M	compiler/m68k/m68knop.inc
+M	compiler/m68k/m68ktab.inc
+M	compiler/utils/mk68kins.pp
+
+******************************************************************************
 commit 4430422489633ac2fcd7c8833267ecf9cfbb9361
 Author: florian <florian@freepascal.org>
 Date:   Wed Dec 28 22:05:23 2022 +0100
