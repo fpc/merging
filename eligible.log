@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 7bd56139540c86c521e66be74469749a2dc62b89
+Author: florian <florian@freepascal.org>
+Date:   Fri Dec 30 22:28:49 2022 +0100
+
+      * fix error on win64 and concerns about pulling math into the windows unit by a local arctan2 copy
+
+M	rtl/inc/typshrd.inc
+M	rtl/win32/windows.pp
+
+******************************************************************************
 commit 7affd789045f9bf2a141cb96c50c08cc484e0100
 Author: florian <florian@freepascal.org>
 Date:   Fri Dec 30 21:52:24 2022 +0100
@@ -37872,7 +37882,6 @@ Date:   Wed Feb 10 09:59:06 2021 +0000
     git-svn-id: branches/unicodekvm@48579 -
 
 M	packages/fv/fpmake.pp
-
 ******************************************************************************
 commit ad35f14017ab89059ee8c608c77a34d93f902cd9
 Author: nickysn <nickysn@gmail.com>
@@ -37884,6 +37893,7 @@ Date:   Wed Feb 10 09:58:19 2021 +0000
 
 M	.gitattributes
 A	packages/fv/src/histlist.pas
+
 ******************************************************************************
 commit 4ff66758ee71ffdc5a99b86c3b824a0ab5f81b66
 Author: nickysn <nickysn@gmail.com>
