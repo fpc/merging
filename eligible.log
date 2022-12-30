@@ -1673,18 +1673,6 @@ Date:   Fri Nov 11 22:20:10 2022 +0000
 M	compiler/x86/aoptx86.pas
 
 ******************************************************************************
-commit cfc77315ca53adea20b838be4bcc919ec3f9c39a
-Author: marcoonthegit <marco@freepascal.org>
-Date:   Thu Nov 10 10:41:49 2022 +0100
-
-    * getlongpath as per https://forum.lazarus.freepascal.org/index.php/topic,60972.0/topicseen.html
-
-M	rtl/win/wininc/ascdef.inc
-M	rtl/win/wininc/ascfun.inc
-M	rtl/win/wininc/unidef.inc
-M	rtl/win/wininc/unifun.inc
-
-******************************************************************************
 commit 3e6d4bf1cc120e5885356af1cc3b0e93101fddaf
 Author: florian <florian@freepascal.org>
 Date:   Wed Nov 9 23:09:07 2022 +0100
@@ -37886,6 +37874,7 @@ Date:   Wed Feb 10 09:58:19 2021 +0000
 
 M	.gitattributes
 A	packages/fv/src/histlist.pas
+
 ******************************************************************************
 commit 4ff66758ee71ffdc5a99b86c3b824a0ab5f81b66
 Author: nickysn <nickysn@gmail.com>
@@ -37897,7 +37886,6 @@ Date:   Wed Feb 10 09:57:26 2021 +0000
 
 M	.gitattributes
 R100	packages/fv/src/histlist.pas	packages/fv/src/histlist.inc
-
 ******************************************************************************
 commit eb6d1dc73f9b2694fe6baf692936a65939c026b3
 Author: nickysn <nickysn@gmail.com>
