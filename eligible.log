@@ -1,4 +1,13 @@
 ******************************************************************************
+commit bfb904640ac51a4f4b7ce2d06f241225d32e8377
+Author: marcoonthegit <marco@freepascal.org>
+Date:   Fri Dec 30 15:41:47 2022 +0100
+
+    * fix for  #40069 add swapdimensions
+
+M	rtl/objpas/types.pp
+
+******************************************************************************
 commit 69eebe4c0c013f2825cceefede5bf778c4561024
 Author: florian <florian@freepascal.org>
 Date:   Thu Dec 29 15:19:59 2022 +0100
@@ -37878,7 +37887,6 @@ Date:   Wed Feb 10 09:57:26 2021 +0000
 
 M	.gitattributes
 R100	packages/fv/src/histlist.pas	packages/fv/src/histlist.inc
-
 ******************************************************************************
 commit eb6d1dc73f9b2694fe6baf692936a65939c026b3
 Author: nickysn <nickysn@gmail.com>
@@ -37892,6 +37900,7 @@ M	.gitattributes
 M	packages/fv/fpmake.pp
 M	packages/fv/src/menus.inc
 A	packages/fv/src/umenus.pas
+
 ******************************************************************************
 commit e9024877110a89323c818a9d49979c6c627f62c4
 Author: nickysn <nickysn@gmail.com>
