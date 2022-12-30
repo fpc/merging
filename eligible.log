@@ -1,4 +1,116 @@
 ******************************************************************************
+commit 4b659175d9043c58f5fc78f3ef159a09167d45ca
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Fri Dec 30 22:52:40 2022 +0100
+
+    - remove no longer required readonly functionality from tparasymtable
+
+M	compiler/symtable.pas
+
+******************************************************************************
+commit e1288897f3639a08330dea060b23283d9e455558
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Fri Dec 30 22:51:24 2022 +0100
+
+    * fix #40031: with support for inline specializations it no longer makes sense to make the parameter symtable of a procedure variable type readonly as there *are* defs that are added to it
+    + add adjusted test
+
+M	compiler/ptype.pas
+A	tests/webtbs/tw40031.pp
+
+******************************************************************************
+commit b6b2785b66023ad48242b2a7bc55e445ccd48238
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Fri Dec 30 22:50:04 2022 +0100
+
+    * also skip high parameters when pc_normal_no_hidden is given to tprocdef.getcopyas
+
+M	compiler/symdef.pas
+
+******************************************************************************
+commit 430bcac389c29a5ceca7759cfca69454aa31abf9
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Fri Dec 30 22:48:44 2022 +0100
+
+    * ensure that all hidden parameter symbols are removed when adding an anonymous function to a capturer (they'll be added again later on)
+
+M	compiler/procdefutil.pas
+
+******************************************************************************
+commit d7d65fe0d7b62c61f4751b896eb6ab9271d03a0c
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Fri Dec 30 21:50:50 2022 +0100
+
+    * fix typo in comment
+
+M	compiler/symdef.pas
+
+******************************************************************************
+commit 4510945465e4e8cd483c64d316d1d43005ffb585
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Fri Dec 30 20:30:28 2022 +0100
+
+    * fix #40062: ensure that Self is only added to anonymous functions when dealing with method pointers
+    + added test
+
+M	compiler/ncnv.pas
+M	compiler/pparautl.pas
+M	compiler/symconst.pas
+A	tests/webtbs/tw40062.pp
+
+******************************************************************************
+commit d410deb7ae8f405e9451bd10db24a65ec5f30a33
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Fri Dec 30 20:28:07 2022 +0100
+
+    * when assigning an anonymous function to a method pointer move the function to the normal function level to avoid potential problems when accessing other variables
+
+M	compiler/ncnv.pas
+
+******************************************************************************
+commit a6ddea87b7eb020c03692d383d9592dea2be0cef
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Fri Dec 30 19:17:42 2022 +0100
+
+    * don't free the old, captured Self symbol as that does not belong to the anonymous function
+
+M	compiler/ncnv.pas
+
+******************************************************************************
+commit 1d73dab2b0e61165ec2100a21dfd4071fffb2145
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Fri Dec 30 16:16:03 2022 +0100
+
+    * a callnode for an anonymous function can have its procdefinition fixed, thus avoid the need to check for overloads
+
+M	compiler/pexpr.pas
+
+******************************************************************************
+commit 5d7e3ca24005a3b76d307c879d76d05e99ae59b8
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Fri Dec 30 15:26:33 2022 +0100
+
+    * fix #40060: ensure that Self is not added for anonymous functions that are part of a static class method
+    + added test
+
+M	compiler/pdecsub.pas
+M	compiler/procdefutil.pas
+A	tests/webtbs/tw40060.pp
+
+******************************************************************************
+commit 4c6338207f4b13eee54c34e67502630efc4d2459
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Thu Dec 29 22:48:43 2022 +0100
+
+    * fix #40061: the Self of types that aren't implicit pointers (recods, TP-style objects, primitive types (for helpers)) needs to be stored as a Pointer in the Capturer so that modifications are correctly visible
+    + added tests
+
+M	compiler/procdefutil.pas
+A	tests/test/tanonfunc71.pp
+A	tests/test/tanonfunc72.pp
+A	tests/webtbs/tw40061.pp
+
+******************************************************************************
 commit 7bd56139540c86c521e66be74469749a2dc62b89
 Author: florian <florian@freepascal.org>
 Date:   Fri Dec 30 22:28:49 2022 +0100
@@ -37735,7 +37847,6 @@ Date:   Wed Feb 10 13:30:38 2021 +0000
     git-svn-id: branches/unicodekvm@48591 -
 
 M	packages/fv/fpmake.pp
-
 ******************************************************************************
 commit 78862011b2dc79757a001c92b0e7bfa975ce5723
 Author: nickysn <nickysn@gmail.com>
@@ -37882,6 +37993,7 @@ Date:   Wed Feb 10 09:59:06 2021 +0000
     git-svn-id: branches/unicodekvm@48579 -
 
 M	packages/fv/fpmake.pp
+
 ******************************************************************************
 commit ad35f14017ab89059ee8c608c77a34d93f902cd9
 Author: nickysn <nickysn@gmail.com>
