@@ -1,4 +1,13 @@
 ******************************************************************************
+commit e9ce3be110edd8df93b4f693ab6096eb54db6988
+Author: Tomas Hajny <XHajT03@hajny.biz>
+Date:   Sat Dec 31 14:13:25 2022 +0100
+
+      * fix for bug #40071 (corrected integer size redefined due to use of objfpc)
+
+M	rtl/os2/pmwin.pas
+
+******************************************************************************
 commit 32f8dc7ef5916443ececb9742d4ddf5ee8abeed6
 Author: Jonas Maebe <jonas@freepascal.org>
 Date:   Sat Dec 31 11:59:05 2022 +0100
@@ -37831,7 +37840,6 @@ Date:   Wed Feb 10 13:37:21 2021 +0000
 M	packages/fv/examples/testapp.lpi
 M	packages/fv/fpmake.pp
 M	packages/fv/src/drivers.inc
-
 ******************************************************************************
 commit 90b422b2d44eb1b54cd9c98d9bed8e6f97686296
 Author: nickysn <nickysn@gmail.com>
@@ -37842,6 +37850,7 @@ Date:   Wed Feb 10 13:35:11 2021 +0000
     git-svn-id: branches/unicodekvm@48593 -
 
 M	packages/fv/src/fvcommon.inc
+
 ******************************************************************************
 commit 29dfb6131e6e1819591bf69a009387c6c8dfd07d
 Author: nickysn <nickysn@gmail.com>
