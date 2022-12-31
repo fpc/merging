@@ -1,4 +1,23 @@
 ******************************************************************************
+commit 1bb4003984c399f8a9d881ec1d1a231d907c41b2
+Author: Tomas Hajny <9055380-xhajt03@users.noreply.gitlab.com>
+Date:   Sat Dec 31 17:31:31 2022 +0100
+
+      * messages regenerated after fixing #40008
+
+M	compiler/msgidx.inc
+M	compiler/msgtxt.inc
+
+******************************************************************************
+commit baf950bf76b7becc2a13fdd4d2814a744ee9b52e
+Author: Tomas Hajny <9055380-xhajt03@users.noreply.gitlab.com>
+Date:   Sat Dec 31 17:27:06 2022 +0100
+
+      * improved consistency as suggested in bug #40008
+
+M	compiler/msg/errore.msg
+
+******************************************************************************
 commit abbec0eb9b78621b03948bf3f72381f1aaa87a0f
 Author: Tomas Hajny <XHajT03@hajny.biz>
 Date:   Sat Dec 31 15:26:00 2022 +0100
@@ -37806,7 +37825,6 @@ Date:   Wed Feb 10 13:46:42 2021 +0000
 
 M	packages/fv/fpmake.pp
 M	packages/fv/src/dialogs.inc
-
 ******************************************************************************
 commit a9a0dfeae387f49a9108263f5498f78cbe024ca2
 Author: nickysn <nickysn@gmail.com>
@@ -37830,6 +37848,7 @@ Date:   Wed Feb 10 13:44:05 2021 +0000
 
 M	packages/fv/fpmake.pp
 M	packages/fv/src/histlist.inc
+
 ******************************************************************************
 commit 88e960cd00ee0f4efc259fce11e6c0eec287c0a9
 Author: nickysn <nickysn@gmail.com>
