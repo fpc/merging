@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 6c5f9537b36d95ea91686af22b34c2087634ec80
+Author: florian <florian@freepascal.org>
+Date:   Sat Dec 31 18:27:27 2022 +0100
+
+      * avoid to generate bt [mem], reg, resolves #40039
+
+M	compiler/x86/nx86set.pas
+
+******************************************************************************
 commit 1bb4003984c399f8a9d881ec1d1a231d907c41b2
 Author: Tomas Hajny <9055380-xhajt03@users.noreply.gitlab.com>
 Date:   Sat Dec 31 17:31:31 2022 +0100
@@ -37813,7 +37822,6 @@ Date:   Wed Feb 10 13:55:04 2021 +0000
     git-svn-id: branches/unicodekvm@48601 -
 
 M	packages/fv/src/views.inc
-
 ******************************************************************************
 commit 79aac426fd35f18a52a986656abd7de8cdf84c95
 Author: nickysn <nickysn@gmail.com>
@@ -37825,6 +37833,7 @@ Date:   Wed Feb 10 13:46:42 2021 +0000
 
 M	packages/fv/fpmake.pp
 M	packages/fv/src/dialogs.inc
+
 ******************************************************************************
 commit a9a0dfeae387f49a9108263f5498f78cbe024ca2
 Author: nickysn <nickysn@gmail.com>
