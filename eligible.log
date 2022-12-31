@@ -1,4 +1,13 @@
 ******************************************************************************
+commit a1abe51f2a760d47c2a12641f7b7fcf9c634d4ec
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Sun Dec 4 20:32:45 2022 +0000
+
+      * Refactor of is_cyclic to use a linked list on the stack instead of a dynamic array
+
+M	compiler/defutil.pas
+
+******************************************************************************
 commit 4b659175d9043c58f5fc78f3ef159a09167d45ca
 Author: Sven/Sarah Barth <pascaldragon@gmail.com>
 Date:   Fri Dec 30 22:52:40 2022 +0100
@@ -37836,7 +37845,6 @@ M	.gitattributes
 M	packages/fv/fpmake.pp
 M	packages/fv/src/fvcommon.inc
 A	packages/fv/src/ufvcommon.pas
-
 ******************************************************************************
 commit e60b41f2ab405edaa1cb4020e6ca4503ac50b4fb
 Author: nickysn <nickysn@gmail.com>
@@ -37847,6 +37855,7 @@ Date:   Wed Feb 10 13:30:38 2021 +0000
     git-svn-id: branches/unicodekvm@48591 -
 
 M	packages/fv/fpmake.pp
+
 ******************************************************************************
 commit 78862011b2dc79757a001c92b0e7bfa975ce5723
 Author: nickysn <nickysn@gmail.com>
