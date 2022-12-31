@@ -1,4 +1,42 @@
 ******************************************************************************
+commit abbec0eb9b78621b03948bf3f72381f1aaa87a0f
+Author: Tomas Hajny <XHajT03@hajny.biz>
+Date:   Sat Dec 31 15:26:00 2022 +0100
+
+      * fixed test program - bug #40072
+
+M	rtl/os2/tests/calc_e.pas
+M	rtl/os2/tests/modeinfo.pas
+
+******************************************************************************
+commit 45b15c57504017951b26b61123100c18314e308a
+Author: Tomas Hajny <XHajT03@hajny.biz>
+Date:   Sat Dec 31 15:17:58 2022 +0100
+
+      * fixed test program - bug #40072
+
+M	rtl/os2/tests/pmdemo1.pp
+M	rtl/os2/tests/pmdemo1.rc
+
+******************************************************************************
+commit 092bc17cb29be794702cff046fdf48b63d987d43
+Author: Tomas Hajny <XHajT03@hajny.biz>
+Date:   Sat Dec 31 15:10:44 2022 +0100
+
+      * fixed test program - bug #40072
+
+A	rtl/emx/tests/helloos2.pas
+
+******************************************************************************
+commit c631d86122bd52e50bcb1a7345e80879c2fed1a8
+Author: Tomas Hajny <XHajT03@hajny.biz>
+Date:   Sat Dec 31 15:06:44 2022 +0100
+
+      * fixed test program - bug #40072
+
+A	rtl/emx/tests/heapsize.pas
+
+******************************************************************************
 commit e9ce3be110edd8df93b4f693ab6096eb54db6988
 Author: Tomas Hajny <XHajT03@hajny.biz>
 Date:   Sat Dec 31 14:13:25 2022 +0100
@@ -37792,7 +37830,6 @@ Date:   Wed Feb 10 13:44:05 2021 +0000
 
 M	packages/fv/fpmake.pp
 M	packages/fv/src/histlist.inc
-
 ******************************************************************************
 commit 88e960cd00ee0f4efc259fce11e6c0eec287c0a9
 Author: nickysn <nickysn@gmail.com>
@@ -37840,6 +37877,7 @@ Date:   Wed Feb 10 13:37:21 2021 +0000
 M	packages/fv/examples/testapp.lpi
 M	packages/fv/fpmake.pp
 M	packages/fv/src/drivers.inc
+
 ******************************************************************************
 commit 90b422b2d44eb1b54cd9c98d9bed8e6f97686296
 Author: nickysn <nickysn@gmail.com>
