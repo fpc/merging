@@ -1,4 +1,15 @@
 ******************************************************************************
+commit 32f8dc7ef5916443ececb9742d4ddf5ee8abeed6
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sat Dec 31 11:59:05 2022 +0100
+
+    symcreat: add hidden high parameters in create_procdef_alias
+    
+    No longer happens automatically for pc_bareproc procdef copies
+
+M	compiler/symcreat.pas
+
+******************************************************************************
 commit a1abe51f2a760d47c2a12641f7b7fcf9c634d4ec
 Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
 Date:   Sun Dec 4 20:32:45 2022 +0000
@@ -37831,7 +37842,6 @@ Date:   Wed Feb 10 13:35:11 2021 +0000
     git-svn-id: branches/unicodekvm@48593 -
 
 M	packages/fv/src/fvcommon.inc
-
 ******************************************************************************
 commit 29dfb6131e6e1819591bf69a009387c6c8dfd07d
 Author: nickysn <nickysn@gmail.com>
@@ -37845,6 +37855,7 @@ M	.gitattributes
 M	packages/fv/fpmake.pp
 M	packages/fv/src/fvcommon.inc
 A	packages/fv/src/ufvcommon.pas
+
 ******************************************************************************
 commit e60b41f2ab405edaa1cb4020e6ca4503ac50b4fb
 Author: nickysn <nickysn@gmail.com>
