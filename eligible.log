@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 60c80a45a0fad2e6316b6e04340951f00fe07d1a
+Author: florian <florian@freepascal.org>
+Date:   Sun Jan 1 22:52:57 2023 +0100
+
+      * patch by Bart B to complete missing functions in the math unit, resolves #40055
+
+M	rtl/objpas/math.pp
+
+******************************************************************************
 commit 6c5f9537b36d95ea91686af22b34c2087634ec80
 Author: florian <florian@freepascal.org>
 Date:   Sat Dec 31 18:27:27 2022 +0100
@@ -37811,7 +37820,6 @@ Date:   Wed Feb 10 14:03:08 2021 +0000
 
 M	packages/fv/fpmake.pp
 M	packages/fv/src/menus.inc
-
 ******************************************************************************
 commit ddde3628ba2c1da90fd28622221996cb341ba59f
 Author: nickysn <nickysn@gmail.com>
@@ -37822,6 +37830,7 @@ Date:   Wed Feb 10 13:55:04 2021 +0000
     git-svn-id: branches/unicodekvm@48601 -
 
 M	packages/fv/src/views.inc
+
 ******************************************************************************
 commit 79aac426fd35f18a52a986656abd7de8cdf84c95
 Author: nickysn <nickysn@gmail.com>
