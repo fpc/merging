@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 99981040483b28e0ba00379b1fa9b4b0919a731c
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Mon Jan 2 16:09:08 2023 +0100
+
+    * Add PATCH method to router
+
+M	packages/fcl-web/src/base/httproute.pp
+
+******************************************************************************
 commit 60c80a45a0fad2e6316b6e04340951f00fe07d1a
 Author: florian <florian@freepascal.org>
 Date:   Sun Jan 1 22:52:57 2023 +0100
@@ -37808,7 +37817,6 @@ Date:   Wed Feb 10 14:05:40 2021 +0000
     git-svn-id: branches/unicodekvm@48603 -
 
 M	packages/fv/src/histlist.inc
-
 ******************************************************************************
 commit 5dae243ffd4b2820b7e0bb54eeeefdb4e3bb2a30
 Author: nickysn <nickysn@gmail.com>
@@ -37820,6 +37828,7 @@ Date:   Wed Feb 10 14:03:08 2021 +0000
 
 M	packages/fv/fpmake.pp
 M	packages/fv/src/menus.inc
+
 ******************************************************************************
 commit ddde3628ba2c1da90fd28622221996cb341ba59f
 Author: nickysn <nickysn@gmail.com>
