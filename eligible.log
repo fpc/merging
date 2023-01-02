@@ -1,4 +1,14 @@
 ******************************************************************************
+commit cfbdf90ab02f618d6c23980b74ed3bea1ee70284
+Author: florian <florian@freepascal.org>
+Date:   Mon Jan 2 18:55:23 2023 +0100
+
+      * patch by Rika to optimize ArcCos, resolves #40078
+
+M	rtl/objpas/math.pp
+M	tests/test/units/math/tsincos.pp
+
+******************************************************************************
 commit 99981040483b28e0ba00379b1fa9b4b0919a731c
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Mon Jan 2 16:09:08 2023 +0100
@@ -37806,7 +37816,6 @@ Date:   Wed Feb 10 14:10:28 2021 +0000
     git-svn-id: branches/unicodekvm@48604 -
 
 M	packages/fv/src/dialogs.inc
-
 ******************************************************************************
 commit 2cfab10cb1f9f6f6e44d438576db61d56f5aac99
 Author: nickysn <nickysn@gmail.com>
@@ -37817,6 +37826,7 @@ Date:   Wed Feb 10 14:05:40 2021 +0000
     git-svn-id: branches/unicodekvm@48603 -
 
 M	packages/fv/src/histlist.inc
+
 ******************************************************************************
 commit 5dae243ffd4b2820b7e0bb54eeeefdb4e3bb2a30
 Author: nickysn <nickysn@gmail.com>
