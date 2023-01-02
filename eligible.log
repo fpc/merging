@@ -1,4 +1,22 @@
 ******************************************************************************
+commit aced88e43cc720fc7aabf3b083682893316f82e4
+Author: Marcus Sackrow <alb42@web.de>
+Date:   Mon Jan 2 19:51:20 2023 +0100
+
+    Amiga: 32 bit set color functions for OS 1.x
+
+M	packages/amunits/src/coreunits/agraphics.pas
+
+******************************************************************************
+commit cd8aa3f0e0716b44cf14ee24b4463f1c12b77de7
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Mon Jan 2 18:22:49 2023 +0000
+
+    Avoid generation of invalid 'cb(n)z sp,label' instruction
+
+M	compiler/aarch64/aoptcpu.pas
+
+******************************************************************************
 commit cfbdf90ab02f618d6c23980b74ed3bea1ee70284
 Author: florian <florian@freepascal.org>
 Date:   Mon Jan 2 18:55:23 2023 +0100
@@ -37794,7 +37812,6 @@ Date:   Wed Feb 10 14:13:30 2021 +0000
     git-svn-id: branches/tg74/avx512-0037785@48606 -
 
 M	tests/utils/avx/avxopcodes.pas
-
 ******************************************************************************
 commit 5e9ba29d89a34e1cc14f95f6ce47b7b87e6e683e
 Author: nickysn <nickysn@gmail.com>
@@ -37816,6 +37833,7 @@ Date:   Wed Feb 10 14:10:28 2021 +0000
     git-svn-id: branches/unicodekvm@48604 -
 
 M	packages/fv/src/dialogs.inc
+
 ******************************************************************************
 commit 2cfab10cb1f9f6f6e44d438576db61d56f5aac99
 Author: nickysn <nickysn@gmail.com>
