@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 84ea64e59ceabc9c6b8051a133a00031539f71d2
+Author: marcoonthegit <marco@freepascal.org>
+Date:   Tue Jan 3 19:37:07 2023 +0100
+
+    * timespan unit based on Delphi documentation declarations and an own implementation based on Microsoft documentation.
+
+M	packages/rtl-objpas/fpmake.pp
+A	packages/rtl-objpas/src/inc/system.timespan.pp
+
+******************************************************************************
 commit aced88e43cc720fc7aabf3b083682893316f82e4
 Author: Marcus Sackrow <alb42@web.de>
 Date:   Mon Jan 2 19:51:20 2023 +0100
@@ -37801,7 +37811,6 @@ Date:   Wed Feb 10 14:23:48 2021 +0000
     git-svn-id: branches/unicodekvm@48607 -
 
 M	packages/fv/src/dialogs.inc
-
 ******************************************************************************
 commit dfc65acfa8a117265260964da616d70a7f4d80bf
 Author: tg74 <tg74@idefix.freepascal.org>
@@ -37812,6 +37821,7 @@ Date:   Wed Feb 10 14:13:30 2021 +0000
     git-svn-id: branches/tg74/avx512-0037785@48606 -
 
 M	tests/utils/avx/avxopcodes.pas
+
 ******************************************************************************
 commit 5e9ba29d89a34e1cc14f95f6ce47b7b87e6e683e
 Author: nickysn <nickysn@gmail.com>
