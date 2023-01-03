@@ -1,4 +1,31 @@
 ******************************************************************************
+commit a260f1987c8a302522e006d822ae96b644831191
+Author: florian <florian@freepascal.org>
+Date:   Tue Jan 3 23:12:48 2023 +0100
+
+      * patch by Rika: Improve Math.CotH, resolves #40084
+
+M	rtl/objpas/math.pp
+
+******************************************************************************
+commit a641860fa84fb2686b1360723b13625f6ac1866e
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Tue Jan 3 21:17:58 2023 +0100
+
+    Implicit specialisation: use regular array parameters for array constructors
+    
+    Fixes compilation of test/timpfuncspez5 with LLVM and debug info, as the LLVM
+    debug info writer internalerror's when you try to generate debug info for
+    an array constructor (since those types should never appear as parameter/
+    variable types).
+    
+    Replace them with reusable regular array types, so that multiple invocations
+    of the same generic function with array constructors of the same type and
+    number of elements are collapsed into the same specialisation
+
+M	compiler/pgenutil.pas
+
+******************************************************************************
 commit 84ea64e59ceabc9c6b8051a133a00031539f71d2
 Author: marcoonthegit <marco@freepascal.org>
 Date:   Tue Jan 3 19:37:07 2023 +0100
@@ -37789,7 +37816,6 @@ Date:   Wed Feb 10 14:33:20 2021 +0000
 
 M	packages/fv/fpmake.pp
 M	packages/fv/src/msgbox.inc
-
 ******************************************************************************
 commit 4d7538a0da03e8c177c4367d1e7080bc73fd04f2
 Author: nickysn <nickysn@gmail.com>
@@ -37811,6 +37837,7 @@ Date:   Wed Feb 10 14:23:48 2021 +0000
     git-svn-id: branches/unicodekvm@48607 -
 
 M	packages/fv/src/dialogs.inc
+
 ******************************************************************************
 commit dfc65acfa8a117265260964da616d70a7f4d80bf
 Author: tg74 <tg74@idefix.freepascal.org>
