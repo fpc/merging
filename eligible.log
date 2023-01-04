@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 96eb5da93988646fca88865a682c5f6e644327c8
+Author: florian <florian@freepascal.org>
+Date:   Wed Jan 4 17:04:10 2023 +0100
+
+      * patch by Bart B: Implement sinh(), cosh() and tanh() for single, double and extended parameters, resolves #40083
+
+M	rtl/objpas/math.pp
+
+******************************************************************************
 commit a260f1987c8a302522e006d822ae96b644831191
 Author: florian <florian@freepascal.org>
 Date:   Tue Jan 3 23:12:48 2023 +0100
@@ -37804,7 +37813,6 @@ Date:   Wed Feb 10 14:41:11 2021 +0000
 
 M	packages/fv/src/app.inc
 M	packages/fv/src/fvcommon.inc
-
 ******************************************************************************
 commit 5b5f6b71581e282d9e7b68f953eb682269f9c79e
 Author: nickysn <nickysn@gmail.com>
@@ -37816,6 +37824,7 @@ Date:   Wed Feb 10 14:33:20 2021 +0000
 
 M	packages/fv/fpmake.pp
 M	packages/fv/src/msgbox.inc
+
 ******************************************************************************
 commit 4d7538a0da03e8c177c4367d1e7080bc73fd04f2
 Author: nickysn <nickysn@gmail.com>
