@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 9889a810628091c1b7a542e832e1238efdcb9f2d
+Author: florian <florian@freepascal.org>
+Date:   Wed Jan 4 19:04:40 2023 +0100
+
+      * patch by Rika: Improve SinH and TanH, resolves #40086
+
+M	rtl/objpas/math.pp
+
+******************************************************************************
 commit 96eb5da93988646fca88865a682c5f6e644327c8
 Author: florian <florian@freepascal.org>
 Date:   Wed Jan 4 17:04:10 2023 +0100
@@ -37801,7 +37810,6 @@ Date:   Wed Feb 10 14:57:38 2021 +0000
     git-svn-id: branches/unicodekvm@48611 -
 
 M	packages/fv/src/app.inc
-
 ******************************************************************************
 commit 0d844aaa4150d4884ebd1ad411c791fe779e41db
 Author: nickysn <nickysn@gmail.com>
@@ -37813,6 +37821,7 @@ Date:   Wed Feb 10 14:41:11 2021 +0000
 
 M	packages/fv/src/app.inc
 M	packages/fv/src/fvcommon.inc
+
 ******************************************************************************
 commit 5b5f6b71581e282d9e7b68f953eb682269f9c79e
 Author: nickysn <nickysn@gmail.com>
