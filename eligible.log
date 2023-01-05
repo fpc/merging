@@ -1,4 +1,13 @@
 ******************************************************************************
+commit ea91170a81abd667ab4aabc46eec37bb9109f561
+Author: wsherman <wayne@systemdesignworks.com>
+Date:   Thu Jan 5 11:04:03 2023 -0800
+
+    * Add opensslsockets to uses so googleapiconv works with HTTPS
+
+M	packages/googleapi/generator/googleapiconv.pp
+
+******************************************************************************
 commit 459dc68ab9a7ff969a121ab5e22e18efe41b9854
 Author: Karoly Balogh <karoly@freepascal.org>
 Date:   Thu Jan 5 13:31:53 2023 +0100
@@ -37923,7 +37932,6 @@ Date:   Wed Feb 10 16:15:33 2021 +0000
     git-svn-id: branches/unicodekvm@48615 -
 
 M	packages/fv/src/dialogs.inc
-
 ******************************************************************************
 commit d5ef64fb91cddc665f25bf57c93d1d442604843a
 Author: nickysn <nickysn@gmail.com>
@@ -37934,6 +37942,7 @@ Date:   Wed Feb 10 16:11:55 2021 +0000
     git-svn-id: branches/unicodekvm@48614 -
 
 M	packages/fv/src/dialogs.inc
+
 ******************************************************************************
 commit 25cf57b085ad8043e1a7a82ac4ea5f1335a8b537
 Author: nickysn <nickysn@gmail.com>
