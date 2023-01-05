@@ -1,4 +1,143 @@
 ******************************************************************************
+commit 17fab24221cf84180221592b978174f9b4719a2a
+Author: wsherman <wayne@systemdesignworks.com>
+Date:   Tue Jan 3 16:26:12 2023 -0800
+
+    * Reorganize packages/googleapi/ directory.
+    
+       Separate hand coded files to a new directory "src/base"
+         (googlebase.pp, googleservice.pp, googleclient.pp)
+       Move generated api files to a new directory "src/bindings"
+       Move the the bindings generator program out of /examples to /generator
+       Move the unit googlediscoverytopas.pp to /generator
+       Fix paths in /generator/googleapiconv.lpi
+       Regenerate Makefile (using fpcmake -w -Tall)
+       Edit fpmake.pp
+         - remove src path
+         - add src/base path
+         - add src/bindings path
+         - fix bad path for unit googleadexchangebuyer.pp
+         - do not include unit googlediscoverytopas.pp (commented out)
+           (add this later if the generator is setup to be
+           included in the build)
+
+M	packages/googleapi/Makefile
+M	packages/googleapi/fpmake.pp
+R088	packages/googleapi/examples/generator/googleapiconv.lpi	packages/googleapi/generator/googleapiconv.lpi
+R100	packages/googleapi/examples/generator/googleapiconv.pp	packages/googleapi/generator/googleapiconv.pp
+R100	packages/googleapi/src/googlediscoverytopas.pp	packages/googleapi/generator/googlediscoverytopas.pp
+R100	packages/googleapi/src/googlebase.pp	packages/googleapi/src/base/googlebase.pp
+R100	packages/googleapi/src/googleclient.pp	packages/googleapi/src/base/googleclient.pp
+R100	packages/googleapi/src/googleservice.pp	packages/googleapi/src/base/googleservice.pp
+R100	packages/googleapi/src/googleacceleratedmobilepageurl.pp	packages/googleapi/src/bindings/googleacceleratedmobilepageurl.pp
+R100	packages/googleapi/src/googleadexchangebuyer.pp	packages/googleapi/src/bindings/googleadexchangebuyer.pp
+R100	packages/googleapi/src/googleadexchangebuyer2.pp	packages/googleapi/src/bindings/googleadexchangebuyer2.pp
+R100	packages/googleapi/src/googleadexchangeseller.pp	packages/googleapi/src/bindings/googleadexchangeseller.pp
+R100	packages/googleapi/src/googleadmin.pp	packages/googleapi/src/bindings/googleadmin.pp
+R100	packages/googleapi/src/googleadsense.pp	packages/googleapi/src/bindings/googleadsense.pp
+R100	packages/googleapi/src/googleadsensehost.pp	packages/googleapi/src/bindings/googleadsensehost.pp
+R100	packages/googleapi/src/googleanalytics.pp	packages/googleapi/src/bindings/googleanalytics.pp
+R100	packages/googleapi/src/googleanalyticsreporting.pp	packages/googleapi/src/bindings/googleanalyticsreporting.pp
+R100	packages/googleapi/src/googleandroidenterprise.pp	packages/googleapi/src/bindings/googleandroidenterprise.pp
+R100	packages/googleapi/src/googleandroidpublisher.pp	packages/googleapi/src/bindings/googleandroidpublisher.pp
+R100	packages/googleapi/src/googleappengine.pp	packages/googleapi/src/bindings/googleappengine.pp
+R100	packages/googleapi/src/googleappsactivity.pp	packages/googleapi/src/bindings/googleappsactivity.pp
+R100	packages/googleapi/src/googleappstate.pp	packages/googleapi/src/bindings/googleappstate.pp
+R100	packages/googleapi/src/googleaudit.pp	packages/googleapi/src/bindings/googleaudit.pp
+R100	packages/googleapi/src/googleautoscaler.pp	packages/googleapi/src/bindings/googleautoscaler.pp
+R100	packages/googleapi/src/googlebigquery.pp	packages/googleapi/src/bindings/googlebigquery.pp
+R100	packages/googleapi/src/googleblogger.pp	packages/googleapi/src/bindings/googleblogger.pp
+R100	packages/googleapi/src/googlebooks.pp	packages/googleapi/src/bindings/googlebooks.pp
+R100	packages/googleapi/src/googlecalendar.pp	packages/googleapi/src/bindings/googlecalendar.pp
+R100	packages/googleapi/src/googlecivicinfo.pp	packages/googleapi/src/bindings/googlecivicinfo.pp
+R100	packages/googleapi/src/googleclassroom.pp	packages/googleapi/src/bindings/googleclassroom.pp
+R100	packages/googleapi/src/googlecloudbilling.pp	packages/googleapi/src/bindings/googlecloudbilling.pp
+R100	packages/googleapi/src/googlecloudbuild.pp	packages/googleapi/src/bindings/googlecloudbuild.pp
+R100	packages/googleapi/src/googleclouddebugger.pp	packages/googleapi/src/bindings/googleclouddebugger.pp
+R100	packages/googleapi/src/googleclouderrorreporting.pp	packages/googleapi/src/bindings/googleclouderrorreporting.pp
+R100	packages/googleapi/src/googlecloudlatencytest.pp	packages/googleapi/src/bindings/googlecloudlatencytest.pp
+R100	packages/googleapi/src/googlecloudmonitoring.pp	packages/googleapi/src/bindings/googlecloudmonitoring.pp
+R100	packages/googleapi/src/googlecloudresourcemanager.pp	packages/googleapi/src/bindings/googlecloudresourcemanager.pp
+R100	packages/googleapi/src/googlecloudsearch.pp	packages/googleapi/src/bindings/googlecloudsearch.pp
+R100	packages/googleapi/src/googlecloudtrace.pp	packages/googleapi/src/bindings/googlecloudtrace.pp
+R100	packages/googleapi/src/googleclouduseraccounts.pp	packages/googleapi/src/bindings/googleclouduseraccounts.pp
+R100	packages/googleapi/src/googlecompute.pp	packages/googleapi/src/bindings/googlecompute.pp
+R100	packages/googleapi/src/googlecomputeaccounts.pp	packages/googleapi/src/bindings/googlecomputeaccounts.pp
+R100	packages/googleapi/src/googleconsumersurveys.pp	packages/googleapi/src/bindings/googleconsumersurveys.pp
+R100	packages/googleapi/src/googlecontainer.pp	packages/googleapi/src/bindings/googlecontainer.pp
+R100	packages/googleapi/src/googlecontent.pp	packages/googleapi/src/bindings/googlecontent.pp
+R100	packages/googleapi/src/googlecoordinate.pp	packages/googleapi/src/bindings/googlecoordinate.pp
+R100	packages/googleapi/src/googlecustomsearch.pp	packages/googleapi/src/bindings/googlecustomsearch.pp
+R100	packages/googleapi/src/googledataflow.pp	packages/googleapi/src/bindings/googledataflow.pp
+R100	packages/googleapi/src/googledataproc.pp	packages/googleapi/src/bindings/googledataproc.pp
+R100	packages/googleapi/src/googledatastore.pp	packages/googleapi/src/bindings/googledatastore.pp
+R100	packages/googleapi/src/googledeploymentmanager.pp	packages/googleapi/src/bindings/googledeploymentmanager.pp
+R100	packages/googleapi/src/googledfareporting.pp	packages/googleapi/src/bindings/googledfareporting.pp
+R100	packages/googleapi/src/googlediscovery.pp	packages/googleapi/src/bindings/googlediscovery.pp
+R100	packages/googleapi/src/googledns.pp	packages/googleapi/src/bindings/googledns.pp
+R100	packages/googleapi/src/googledoubleclickbidmanager.pp	packages/googleapi/src/bindings/googledoubleclickbidmanager.pp
+R100	packages/googleapi/src/googledoubleclicksearch.pp	packages/googleapi/src/bindings/googledoubleclicksearch.pp
+R100	packages/googleapi/src/googledrive.pp	packages/googleapi/src/bindings/googledrive.pp
+R100	packages/googleapi/src/googlefirebaserules.pp	packages/googleapi/src/bindings/googlefirebaserules.pp
+R100	packages/googleapi/src/googlefitness.pp	packages/googleapi/src/bindings/googlefitness.pp
+R100	packages/googleapi/src/googlefreebase.pp	packages/googleapi/src/bindings/googlefreebase.pp
+R100	packages/googleapi/src/googlefusiontables.pp	packages/googleapi/src/bindings/googlefusiontables.pp
+R100	packages/googleapi/src/googlegames.pp	packages/googleapi/src/bindings/googlegames.pp
+R100	packages/googleapi/src/googlegamesconfiguration.pp	packages/googleapi/src/bindings/googlegamesconfiguration.pp
+R100	packages/googleapi/src/googlegamesmanagement.pp	packages/googleapi/src/bindings/googlegamesmanagement.pp
+R100	packages/googleapi/src/googlegan.pp	packages/googleapi/src/bindings/googlegan.pp
+R100	packages/googleapi/src/googlegenomics.pp	packages/googleapi/src/bindings/googlegenomics.pp
+R100	packages/googleapi/src/googlegmail.pp	packages/googleapi/src/bindings/googlegmail.pp
+R100	packages/googleapi/src/googlegroupsmigration.pp	packages/googleapi/src/bindings/googlegroupsmigration.pp
+R100	packages/googleapi/src/googlegroupssettings.pp	packages/googleapi/src/bindings/googlegroupssettings.pp
+R100	packages/googleapi/src/googleiam.pp	packages/googleapi/src/bindings/googleiam.pp
+R100	packages/googleapi/src/googleidentitytoolkit.pp	packages/googleapi/src/bindings/googleidentitytoolkit.pp
+R100	packages/googleapi/src/googlekgsearch.pp	packages/googleapi/src/bindings/googlekgsearch.pp
+R100	packages/googleapi/src/googlelicensing.pp	packages/googleapi/src/bindings/googlelicensing.pp
+R100	packages/googleapi/src/googlelogging.pp	packages/googleapi/src/bindings/googlelogging.pp
+R100	packages/googleapi/src/googlemanager.pp	packages/googleapi/src/bindings/googlemanager.pp
+R100	packages/googleapi/src/googlemapsengine.pp	packages/googleapi/src/bindings/googlemapsengine.pp
+R100	packages/googleapi/src/googlemirror.pp	packages/googleapi/src/bindings/googlemirror.pp
+R100	packages/googleapi/src/googlemonitoring.pp	packages/googleapi/src/bindings/googlemonitoring.pp
+R100	packages/googleapi/src/googleoauth2.pp	packages/googleapi/src/bindings/googleoauth2.pp
+R100	packages/googleapi/src/googlepagespeedonline.pp	packages/googleapi/src/bindings/googlepagespeedonline.pp
+R100	packages/googleapi/src/googlepartners.pp	packages/googleapi/src/bindings/googlepartners.pp
+R100	packages/googleapi/src/googlepeople.pp	packages/googleapi/src/bindings/googlepeople.pp
+R100	packages/googleapi/src/googleplaymoviespartner.pp	packages/googleapi/src/bindings/googleplaymoviespartner.pp
+R100	packages/googleapi/src/googleplus.pp	packages/googleapi/src/bindings/googleplus.pp
+R100	packages/googleapi/src/googleplusdomains.pp	packages/googleapi/src/bindings/googleplusdomains.pp
+R100	packages/googleapi/src/googleprediction.pp	packages/googleapi/src/bindings/googleprediction.pp
+R100	packages/googleapi/src/googleproximitybeacon.pp	packages/googleapi/src/bindings/googleproximitybeacon.pp
+R100	packages/googleapi/src/googlepubsub.pp	packages/googleapi/src/bindings/googlepubsub.pp
+R100	packages/googleapi/src/googleqpxexpress.pp	packages/googleapi/src/bindings/googleqpxexpress.pp
+R100	packages/googleapi/src/googlereplicapool.pp	packages/googleapi/src/bindings/googlereplicapool.pp
+R100	packages/googleapi/src/googlereplicapoolupdater.pp	packages/googleapi/src/bindings/googlereplicapoolupdater.pp
+R100	packages/googleapi/src/googlereseller.pp	packages/googleapi/src/bindings/googlereseller.pp
+R100	packages/googleapi/src/googleresourceviews.pp	packages/googleapi/src/bindings/googleresourceviews.pp
+R100	packages/googleapi/src/googleruntimeconfig.pp	packages/googleapi/src/bindings/googleruntimeconfig.pp
+R100	packages/googleapi/src/googlesafebrowsing.pp	packages/googleapi/src/bindings/googlesafebrowsing.pp
+R100	packages/googleapi/src/googlescript.pp	packages/googleapi/src/bindings/googlescript.pp
+R100	packages/googleapi/src/googleserviceregistry.pp	packages/googleapi/src/bindings/googleserviceregistry.pp
+R100	packages/googleapi/src/googlesheets.pp	packages/googleapi/src/bindings/googlesheets.pp
+R100	packages/googleapi/src/googlesiteverification.pp	packages/googleapi/src/bindings/googlesiteverification.pp
+R100	packages/googleapi/src/googlespectrum.pp	packages/googleapi/src/bindings/googlespectrum.pp
+R100	packages/googleapi/src/googlesqladmin.pp	packages/googleapi/src/bindings/googlesqladmin.pp
+R100	packages/googleapi/src/googlestorage.pp	packages/googleapi/src/bindings/googlestorage.pp
+R100	packages/googleapi/src/googlestoragetransfer.pp	packages/googleapi/src/bindings/googlestoragetransfer.pp
+R100	packages/googleapi/src/googletagmanager.pp	packages/googleapi/src/bindings/googletagmanager.pp
+R100	packages/googleapi/src/googletaskqueue.pp	packages/googleapi/src/bindings/googletaskqueue.pp
+R100	packages/googleapi/src/googletasks.pp	packages/googleapi/src/bindings/googletasks.pp
+R100	packages/googleapi/src/googletoolresults.pp	packages/googleapi/src/bindings/googletoolresults.pp
+R100	packages/googleapi/src/googletranslate.pp	packages/googleapi/src/bindings/googletranslate.pp
+R100	packages/googleapi/src/googleurlshortener.pp	packages/googleapi/src/bindings/googleurlshortener.pp
+R100	packages/googleapi/src/googlevision.pp	packages/googleapi/src/bindings/googlevision.pp
+R100	packages/googleapi/src/googlewebfonts.pp	packages/googleapi/src/bindings/googlewebfonts.pp
+R100	packages/googleapi/src/googlewebmasters.pp	packages/googleapi/src/bindings/googlewebmasters.pp
+R100	packages/googleapi/src/googleyoutube.pp	packages/googleapi/src/bindings/googleyoutube.pp
+R100	packages/googleapi/src/googleyoutubeanalytics.pp	packages/googleapi/src/bindings/googleyoutubeanalytics.pp
+R100	packages/googleapi/src/googleyoutubereporting.pp	packages/googleapi/src/bindings/googleyoutubereporting.pp
+
+******************************************************************************
 commit 9889a810628091c1b7a542e832e1238efdcb9f2d
 Author: florian <florian@freepascal.org>
 Date:   Wed Jan 4 19:04:40 2023 +0100
@@ -37799,7 +37938,6 @@ Date:   Wed Feb 10 15:28:44 2021 +0000
     git-svn-id: branches/unicodekvm@48612 -
 
 M	packages/fv/src/app.inc
-
 ******************************************************************************
 commit 7cf1d227fb2435978788ec6f283a7410d5e544e8
 Author: nickysn <nickysn@gmail.com>
@@ -37810,6 +37948,7 @@ Date:   Wed Feb 10 14:57:38 2021 +0000
     git-svn-id: branches/unicodekvm@48611 -
 
 M	packages/fv/src/app.inc
+
 ******************************************************************************
 commit 0d844aaa4150d4884ebd1ad411c791fe779e41db
 Author: nickysn <nickysn@gmail.com>
