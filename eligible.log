@@ -1,4 +1,23 @@
 ******************************************************************************
+commit 459dc68ab9a7ff969a121ab5e22e18efe41b9854
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Thu Jan 5 13:31:53 2023 +0100
+
+    m68k: more boiler plate and refactor for a future internal assembler
+
+M	compiler/m68k/aasmcpu.pas
+M	compiler/m68k/cpubase.pas
+
+******************************************************************************
+commit f2d6b4d530b0e7f7429bbb1a7c6459f23ce36b24
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Mon Jan 2 11:17:21 2023 +0100
+
+    m68k: added a helper function to check if a register is an FPU register
+
+M	compiler/m68k/cpubase.pas
+
+******************************************************************************
 commit 17fab24221cf84180221592b978174f9b4719a2a
 Author: wsherman <wayne@systemdesignworks.com>
 Date:   Tue Jan 3 16:26:12 2023 -0800
@@ -37915,7 +37934,6 @@ Date:   Wed Feb 10 16:11:55 2021 +0000
     git-svn-id: branches/unicodekvm@48614 -
 
 M	packages/fv/src/dialogs.inc
-
 ******************************************************************************
 commit 25cf57b085ad8043e1a7a82ac4ea5f1335a8b537
 Author: nickysn <nickysn@gmail.com>
@@ -37938,6 +37956,7 @@ Date:   Wed Feb 10 15:28:44 2021 +0000
     git-svn-id: branches/unicodekvm@48612 -
 
 M	packages/fv/src/app.inc
+
 ******************************************************************************
 commit 7cf1d227fb2435978788ec6f283a7410d5e544e8
 Author: nickysn <nickysn@gmail.com>
