@@ -1,4 +1,22 @@
 ******************************************************************************
+commit 05f5e9ad12d1d647bc4ea7e50619c48fc8a492d6
+Author: Kevin Jesshope <kevinofoz@gmail.com>
+Date:   Wed Jan 4 06:36:31 2023 +0000
+
+    Update file fpwebfile.pp
+
+M	packages/fcl-web/src/base/fpwebfile.pp
+
+******************************************************************************
+commit cee45ea6fc855ac2bf43f3c373cefb0116c238d6
+Author: Kevin Jesshope <kevinofoz@gmail.com>
+Date:   Wed Jan 4 06:16:00 2023 +0000
+
+    The test for '' after getting the location into BaseDir should test BaseDir not BaseURL.
+
+M	packages/fcl-web/src/base/fpwebfile.pp
+
+******************************************************************************
 commit ea91170a81abd667ab4aabc46eec37bb9109f561
 Author: wsherman <wayne@systemdesignworks.com>
 Date:   Thu Jan 5 11:04:03 2023 -0800
@@ -37910,7 +37928,6 @@ Date:   Wed Feb 10 16:27:23 2021 +0000
     git-svn-id: branches/unicodekvm@48617 -
 
 M	packages/fv/src/dialogs.inc
-
 ******************************************************************************
 commit 1d0ec1b96671437913c86e35deffd2f28a1ac153
 Author: nickysn <nickysn@gmail.com>
@@ -37932,6 +37949,7 @@ Date:   Wed Feb 10 16:15:33 2021 +0000
     git-svn-id: branches/unicodekvm@48615 -
 
 M	packages/fv/src/dialogs.inc
+
 ******************************************************************************
 commit d5ef64fb91cddc665f25bf57c93d1d442604843a
 Author: nickysn <nickysn@gmail.com>
