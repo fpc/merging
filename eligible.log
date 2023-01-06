@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 899bdc00168a7f3a66cab452ae84c20a46860f40
+Author: florian <florian@freepascal.org>
+Date:   Fri Jan 6 23:03:14 2023 +0100
+
+      * first approach to fix tfrldexp on i386-win32
+
+M	tests/test/units/math/tfrldexp.pp
+
+******************************************************************************
 commit 05f5e9ad12d1d647bc4ea7e50619c48fc8a492d6
 Author: Kevin Jesshope <kevinofoz@gmail.com>
 Date:   Wed Jan 4 06:36:31 2023 +0000
@@ -37917,7 +37926,6 @@ Date:   Wed Feb 10 16:28:54 2021 +0000
     git-svn-id: branches/unicodekvm@48618 -
 
 M	packages/fv/src/dialogs.inc
-
 ******************************************************************************
 commit 5013e7039a3dc30df510941eac1cd365a50fe10a
 Author: nickysn <nickysn@gmail.com>
@@ -37928,6 +37936,7 @@ Date:   Wed Feb 10 16:27:23 2021 +0000
     git-svn-id: branches/unicodekvm@48617 -
 
 M	packages/fv/src/dialogs.inc
+
 ******************************************************************************
 commit 1d0ec1b96671437913c86e35deffd2f28a1ac153
 Author: nickysn <nickysn@gmail.com>
