@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 4deb23ba584b8e3d87e57fbae9f898034f908c2e
+Author: florian <florian@freepascal.org>
+Date:   Sat Jan 7 22:51:26 2023 +0100
+
+      * makefile regenerated with current fpcmake, resolves #40092
+
+M	packages/googleapi/Makefile
+
+******************************************************************************
 commit b0f5d5a4e19e6f1cd5bca6a1c0e00440c725999d
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Sat Jan 7 10:10:21 2023 +0100
@@ -37910,7 +37919,6 @@ Date:   Wed Feb 10 17:25:53 2021 +0000
     git-svn-id: branches/unicodekvm@48621 -
 
 M	packages/fv/src/dialogs.inc
-
 ******************************************************************************
 commit d41d6de6ec40a38ef495924e4cb77fb2cd5f3d15
 Author: nickysn <nickysn@gmail.com>
@@ -37922,6 +37930,7 @@ Date:   Wed Feb 10 17:11:02 2021 +0000
 
 M	packages/fv/src/dialogs.inc
 M	packages/fv/src/fvcommon.inc
+
 ******************************************************************************
 commit f64bd5c07974559809148d0872f786122b881b1f
 Author: nickysn <nickysn@gmail.com>
