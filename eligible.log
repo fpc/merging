@@ -1,4 +1,24 @@
 ******************************************************************************
+commit b0f5d5a4e19e6f1cd5bca6a1c0e00440c725999d
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Sat Jan 7 10:10:21 2023 +0100
+
+    rtl: TBinaryObjectWriter.Version
+
+M	rtl/objpas/classes/classesh.inc
+M	rtl/objpas/classes/writer.inc
+
+******************************************************************************
+commit b641c564c6dff6785fec81e38c4d29b1d0767988
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Wed Jan 4 19:02:59 2023 +0100
+
+    rtl: TReader: FindComponentClass using field name and classname
+
+M	rtl/objpas/classes/classesh.inc
+M	rtl/objpas/classes/reader.inc
+
+******************************************************************************
 commit 899bdc00168a7f3a66cab452ae84c20a46860f40
 Author: florian <florian@freepascal.org>
 Date:   Fri Jan 6 23:03:14 2023 +0100
@@ -37902,7 +37922,6 @@ Date:   Wed Feb 10 17:11:02 2021 +0000
 
 M	packages/fv/src/dialogs.inc
 M	packages/fv/src/fvcommon.inc
-
 ******************************************************************************
 commit f64bd5c07974559809148d0872f786122b881b1f
 Author: nickysn <nickysn@gmail.com>
@@ -37926,6 +37945,7 @@ Date:   Wed Feb 10 16:28:54 2021 +0000
     git-svn-id: branches/unicodekvm@48618 -
 
 M	packages/fv/src/dialogs.inc
+
 ******************************************************************************
 commit 5013e7039a3dc30df510941eac1cd365a50fe10a
 Author: nickysn <nickysn@gmail.com>
