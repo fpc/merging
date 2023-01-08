@@ -1,4 +1,17 @@
 ******************************************************************************
+commit c1f39603889e52ffc0eb9a392ff9b4f8b093de74
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Sun Jan 8 15:46:49 2023 +0100
+
+    rtl: added overload GetClass(UnitName,ClassName), implemented UnregisterClass, overload TStream.WriteComponent(Instance,WriteUnitName)
+
+M	rtl/objpas/classes/classesh.inc
+M	rtl/objpas/classes/cregist.inc
+M	rtl/objpas/classes/reader.inc
+M	rtl/objpas/classes/streams.inc
+M	rtl/objpas/classes/writer.inc
+
+******************************************************************************
 commit ed894b40c9c25ee8942149cf3da06ddb715f44d9
 Author: wsherman <wayne@systemdesignworks.com>
 Date:   Sun Jan 8 00:28:09 2023 -0800
@@ -37930,7 +37943,6 @@ Date:   Wed Feb 10 17:55:36 2021 +0000
     git-svn-id: branches/unicodekvm@48627 -
 
 M	packages/fv/src/dialogs.inc
-
 ******************************************************************************
 commit b8baf3bb85be26c3e10dfcb44ab61d3d98bd7738
 Author: nickysn <nickysn@gmail.com>
@@ -37941,6 +37953,7 @@ Date:   Wed Feb 10 17:51:56 2021 +0000
     git-svn-id: branches/unicodekvm@48626 -
 
 M	packages/fv/src/dialogs.inc
+
 ******************************************************************************
 commit 8a0a97576a5e762d6e6be33b82ea40acc06e8009
 Author: nickysn <nickysn@gmail.com>
