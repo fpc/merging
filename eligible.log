@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 0b45cd95f745a2cfc485062e1bdc171984d68568
+Author: florian <florian@freepascal.org>
+Date:   Sun Jan 8 21:28:57 2023 +0100
+
+      + introduce long forms for $E, $F and $S, resolves #39889
+
+M	compiler/scandir.pas
+
+******************************************************************************
 commit c1f39603889e52ffc0eb9a392ff9b4f8b093de74
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Sun Jan 8 15:46:49 2023 +0100
@@ -37932,7 +37941,6 @@ Date:   Wed Feb 10 20:44:38 2021 +0000
     git-svn-id: branches/unicodekvm@48629 -
 
 M	packages/rtl-extra/src/inc/objects.pp
-
 ******************************************************************************
 commit 7da5856dbd930ff246d76ec588438b7cceb87b49
 Author: nickysn <nickysn@gmail.com>
@@ -37943,6 +37951,7 @@ Date:   Wed Feb 10 17:55:36 2021 +0000
     git-svn-id: branches/unicodekvm@48627 -
 
 M	packages/fv/src/dialogs.inc
+
 ******************************************************************************
 commit b8baf3bb85be26c3e10dfcb44ab61d3d98bd7738
 Author: nickysn <nickysn@gmail.com>
