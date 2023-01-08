@@ -1,4 +1,82 @@
 ******************************************************************************
+commit ed894b40c9c25ee8942149cf3da06ddb715f44d9
+Author: wsherman <wayne@systemdesignworks.com>
+Date:   Sun Jan 8 00:28:09 2023 -0800
+
+    * minor updates to googleapiconv helper scripts (ref #40094)
+
+M	packages/googleapi/generator/fetch_google_json.sh
+M	packages/googleapi/generator/run_google_api_bindings_gen.sh
+M	packages/googleapi/generator/test_bindings_gen_all.sh
+
+******************************************************************************
+commit 3224f2c8b5051b038a43d5a1782177913a633fe4
+Author: wsherman <wayne@systemdesignworks.com>
+Date:   Sun Jan 8 00:25:13 2023 -0800
+
+    * more fixes to googleapiconv (ref #40094)
+    
+    (googlediscoverytopas)
+      -Fix unit clause and "uses" for generated units
+    
+    (googleapiconv)
+      -Add --version parameter
+      -Fix logging messages
+      -Set OutputUnitName so units have correct clause
+    
+    (restbase)
+      -Add #todo notes for follow up
+      -Move function RFC3339ToDateTime next to related functions
+
+M	packages/fcl-web/src/base/restbase.pp
+M	packages/googleapi/generator/googleapiconv.pp
+M	packages/googleapi/generator/googlediscoverytopas.pp
+
+******************************************************************************
+commit 731fd94b8c16cd7320a3c0e2671c9d0e4d5a21f0
+Author: wsherman <wayne@systemdesignworks.com>
+Date:   Sat Jan 7 19:44:20 2023 -0800
+
+    * bash scripts for testing and running googleapiconv (ref #40094)
+
+A	packages/googleapi/generator/fetch_google_json.sh
+A	packages/googleapi/generator/nomalize_json_files.sh
+A	packages/googleapi/generator/run_google_api_bindings_gen.sh
+A	packages/googleapi/generator/test_bindings_gen_all.sh
+
+******************************************************************************
+commit ab3aae149bf7c9782b851201b66c57ddae42ea26
+Author: wsherman <wayne@systemdesignworks.com>
+Date:   Sat Jan 7 18:50:02 2023 -0800
+
+    * googleapiconv fixes and cleanup (ref #40094)
+    
+      - Add updated URL for google api discovery
+      - Fix incorrect usage / help messages and put options in alpha order
+      - Replace "with .. do" statement with a local variable for clarity
+      - Add missing DiscoveryJSONToPas.Execute so output files are not empty
+      - Add FreeAndNil(Application) to clear a memory leak
+        (it now has a clean Heaptrc)
+      - Minor fix to .lpi file which had incorrect dependency.
+
+M	packages/googleapi/generator/googleapiconv.lpi
+M	packages/googleapi/generator/googleapiconv.pp
+
+******************************************************************************
+commit fba7595bb1ed577ce67c6a10ba466824e5ee0ee5
+Author: wsherman <wayne@systemdesignworks.com>
+Date:   Sat Jan 7 18:37:48 2023 -0800
+
+    * Fix dynamic array (managed types) handling in restbase.pp (Ref #40094)
+    
+      Fixes code in method TBaseObject.SetArrayProperty
+      and removes private method SetArrayElements
+    
+      This fixes AVs and memory leaks.
+
+M	packages/fcl-web/src/base/restbase.pp
+
+******************************************************************************
 commit 4deb23ba584b8e3d87e57fbae9f898034f908c2e
 Author: florian <florian@freepascal.org>
 Date:   Sat Jan 7 22:51:26 2023 +0100
@@ -37863,7 +37941,6 @@ Date:   Wed Feb 10 17:51:56 2021 +0000
     git-svn-id: branches/unicodekvm@48626 -
 
 M	packages/fv/src/dialogs.inc
-
 ******************************************************************************
 commit 8a0a97576a5e762d6e6be33b82ea40acc06e8009
 Author: nickysn <nickysn@gmail.com>
@@ -37919,6 +37996,7 @@ Date:   Wed Feb 10 17:25:53 2021 +0000
     git-svn-id: branches/unicodekvm@48621 -
 
 M	packages/fv/src/dialogs.inc
+
 ******************************************************************************
 commit d41d6de6ec40a38ef495924e4cb77fb2cd5f3d15
 Author: nickysn <nickysn@gmail.com>
