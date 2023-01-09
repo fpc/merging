@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 00e3cdddce16b60ec09df10da8f8d9da199f944d
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Mon Jan 9 09:37:23 2023 +0100
+
+    * Add NetAddrIsPrivate function from Ondrej Pokorny
+
+M	packages/rtl-extra/src/inc/sockets.inc
+M	packages/rtl-extra/src/inc/socketsh.inc
+
+******************************************************************************
 commit f43912a383fddc307750b8261b7fdab1ada0d33b
 Author: Ondrej Pokorny <lazarus@kluug.net>
 Date:   Fri Dec 16 18:29:03 2022 +0100
@@ -37939,7 +37949,6 @@ Date:   Wed Feb 10 21:36:56 2021 +0000
     git-svn-id: branches/unicodekvm@48633 -
 
 M	packages/fv/src/dialogs.inc
-
 ******************************************************************************
 commit edad510ad413c909eac9b1c102e72887c3c14d9d
 Author: nickysn <nickysn@gmail.com>
@@ -37950,6 +37959,7 @@ Date:   Wed Feb 10 21:34:22 2021 +0000
     git-svn-id: branches/unicodekvm@48632 -
 
 M	packages/rtl-extra/src/inc/objects.pp
+
 ******************************************************************************
 commit 7fc456c04f947f10d2de7615c4c3187a948b190a
 Author: nickysn <nickysn@gmail.com>
