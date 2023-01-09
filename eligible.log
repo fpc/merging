@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 0641ea33d1fea5499d414dd8d4e95c509bb3270a
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Sun Jan 8 23:48:14 2023 +0100
+
+    Both _STAT_VER_KERNEL and _STAT_VER_LINUX are equal to zero for aarch64-linux
+
+M	rtl/linux/ostypes.inc
+
+******************************************************************************
 commit 00e3cdddce16b60ec09df10da8f8d9da199f944d
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Mon Jan 9 09:37:23 2023 +0100
@@ -37938,7 +37947,6 @@ Date:   Wed Feb 10 21:44:19 2021 +0000
     git-svn-id: branches/unicodekvm@48634 -
 
 M	packages/fv/src/dialogs.inc
-
 ******************************************************************************
 commit 1c9c84d01eb06bc3550d67836db2926f54eebde2
 Author: nickysn <nickysn@gmail.com>
@@ -37949,6 +37957,7 @@ Date:   Wed Feb 10 21:36:56 2021 +0000
     git-svn-id: branches/unicodekvm@48633 -
 
 M	packages/fv/src/dialogs.inc
+
 ******************************************************************************
 commit edad510ad413c909eac9b1c102e72887c3c14d9d
 Author: nickysn <nickysn@gmail.com>
