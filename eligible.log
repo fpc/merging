@@ -1,4 +1,23 @@
 ******************************************************************************
+commit 3cea1706e9208fb739b0482519fe48420ca520ea
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Mon Jan 9 12:00:39 2023 +0100
+
+    m68k: more work on instruction validation for the internal assembler
+
+M	compiler/m68k/aasmcpu.pas
+
+******************************************************************************
+commit 69761839c0c2094d9ae69ae2d0283eb06d761df6
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Sun Jan 8 14:09:45 2023 +0100
+
+    m68k: removed the unused S_IQ opsize
+
+M	compiler/m68k/ag68kgas.pas
+M	compiler/m68k/cpubase.pas
+
+******************************************************************************
 commit 0641ea33d1fea5499d414dd8d4e95c509bb3270a
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Sun Jan 8 23:48:14 2023 +0100
@@ -37925,7 +37944,6 @@ Date:   Wed Feb 10 21:49:31 2021 +0000
     git-svn-id: branches/unicodekvm@48636 -
 
 M	packages/fv/src/dialogs.inc
-
 ******************************************************************************
 commit 6cbf84eca626981e19a379371614a77b1838a6fb
 Author: nickysn <nickysn@gmail.com>
@@ -37947,6 +37965,7 @@ Date:   Wed Feb 10 21:44:19 2021 +0000
     git-svn-id: branches/unicodekvm@48634 -
 
 M	packages/fv/src/dialogs.inc
+
 ******************************************************************************
 commit 1c9c84d01eb06bc3550d67836db2926f54eebde2
 Author: nickysn <nickysn@gmail.com>
