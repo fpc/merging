@@ -1,4 +1,42 @@
 ******************************************************************************
+commit f4d9082028cac807d4580fdc73e0bc1490abcb43
+Author: florian <florian@freepascal.org>
+Date:   Mon Jan 9 22:53:23 2023 +0100
+
+      * copyright for 2023 updated
+
+M	compiler/msg/errorct.msg
+M	compiler/msg/errord.msg
+M	compiler/msg/errorda.msg
+M	compiler/msg/errordu.msg
+M	compiler/msg/errore.msg
+M	compiler/msg/errores.msg
+M	compiler/msg/errorf.msg
+M	compiler/msg/errorfi.msg
+M	compiler/msg/errorhe.msg
+M	compiler/msg/errorheu.msg
+M	compiler/msg/errorid.msg
+M	compiler/msg/erroriu.msg
+M	compiler/msg/errorn.msg
+M	compiler/msg/errorpl.msg
+M	compiler/msg/errorpli.msg
+M	compiler/msg/errorpt.msg
+M	compiler/msg/errorptu.msg
+M	compiler/msg/errorr.msg
+M	compiler/msg/errorru.msg
+M	compiler/msg/errorues.msg
+M	compiler/msgtxt.inc
+
+******************************************************************************
+commit 30e3d93d5716b60ca4fa07319725a74d6c974830
+Author: Rika Ichinose <rrunewalsh@gmail.com>
+Date:   Fri Jan 6 17:46:12 2023 +0300
+
+    Make generic Index* faster and denser.
+
+M	rtl/inc/generic.inc
+
+******************************************************************************
 commit 3cea1706e9208fb739b0482519fe48420ca520ea
 Author: Karoly Balogh <karoly@freepascal.org>
 Date:   Mon Jan 9 12:00:39 2023 +0100
@@ -37922,7 +37960,6 @@ Date:   Wed Feb 10 21:59:30 2021 +0000
 
 M	.gitattributes
 A	tests/test/units/objects/testobj3.pp
-
 ******************************************************************************
 commit c466caa0c8b439e563c41259d98a872abb77b0d2
 Author: nickysn <nickysn@gmail.com>
@@ -37944,6 +37981,7 @@ Date:   Wed Feb 10 21:49:31 2021 +0000
     git-svn-id: branches/unicodekvm@48636 -
 
 M	packages/fv/src/dialogs.inc
+
 ******************************************************************************
 commit 6cbf84eca626981e19a379371614a77b1838a6fb
 Author: nickysn <nickysn@gmail.com>
