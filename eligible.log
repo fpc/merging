@@ -1,4 +1,35 @@
 ******************************************************************************
+commit f43912a383fddc307750b8261b7fdab1ada0d33b
+Author: Ondrej Pokorny <lazarus@kluug.net>
+Date:   Fri Dec 16 18:29:03 2022 +0100
+
+    add SSL functions
+
+M	packages/openssl/src/openssl.pas
+
+******************************************************************************
+commit b56ebfa93d381940ffb31102805afee44b5ae7ba
+Author: wsherman <wayne@systemdesignworks.com>
+Date:   Sun Jan 8 21:38:38 2023 -0800
+
+    * Remove conditional code for compiling googleapiconv with v2.6.4 on i386
+    
+    (restbase.pp)
+      - Remove {$ifdef ver2_6} directives and associated code
+      - Remove {$ifndef ver2_6} directives (but keep code)
+    
+    (googleapiconv.pp)
+      - Remove {$ifdef ver2_6} directives and associated code
+      - Remove synapse defines and associated code line
+    
+    (googlediscoverytopas.pp)
+      - Remove {$ifdef ver2_6} directives and associated code
+
+M	packages/fcl-web/src/base/restbase.pp
+M	packages/googleapi/generator/googleapiconv.pp
+M	packages/googleapi/generator/googlediscoverytopas.pp
+
+******************************************************************************
 commit 0b45cd95f745a2cfc485062e1bdc171984d68568
 Author: florian <florian@freepascal.org>
 Date:   Sun Jan 8 21:28:57 2023 +0100
@@ -37919,7 +37950,6 @@ Date:   Wed Feb 10 21:34:22 2021 +0000
     git-svn-id: branches/unicodekvm@48632 -
 
 M	packages/rtl-extra/src/inc/objects.pp
-
 ******************************************************************************
 commit 7fc456c04f947f10d2de7615c4c3187a948b190a
 Author: nickysn <nickysn@gmail.com>
@@ -37941,6 +37971,7 @@ Date:   Wed Feb 10 20:44:38 2021 +0000
     git-svn-id: branches/unicodekvm@48629 -
 
 M	packages/rtl-extra/src/inc/objects.pp
+
 ******************************************************************************
 commit 7da5856dbd930ff246d76ec588438b7cceb87b49
 Author: nickysn <nickysn@gmail.com>
