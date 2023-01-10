@@ -1,4 +1,88 @@
 ******************************************************************************
+commit b997e41366bb9f6d70be3fd027a4d93fa20220c5
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Wed Sep 14 11:07:17 2022 +0100
+
+      * New tests that evaluate CMOVcc using a reference even if IfRefSafe returns False because the previous condition reads it
+
+A	tests/test/cg/tcond2.pp
+A	tests/test/cg/tcond2a.pp
+
+******************************************************************************
+commit 891723111cdeb36c8cab0fea41f6dd3ed1648e2d
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Tue Sep 13 00:30:19 2022 +0100
+
+      * New test for extended CMOVcc optimisations
+
+A	tests/test/cg/tcond1.pp
+
+******************************************************************************
+commit df80d4e6120edd441361bcf9e2e64045ec042c2c
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Tue Nov 8 00:28:47 2022 +0000
+
+      * x86: CMOV optimisations now check optimizecputype rather than cputype
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
+commit 4d57dee8d9e98e005a94fcd744aa3047a20e3a98
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Tue Apr 19 17:21:14 2022 +0100
+
+      * x86: Extension to CanBeCMOV that permits a potentially unsafe reference if it appears in the previous comparison
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
+commit b108608b2918674762ed04b436604bffad4bd58b
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Fri Apr 15 03:01:26 2022 +0100
+
+      * x86: New CMP optimisation that mimics some of the CMOV optimisations and removes unnecessary conditions.
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
+commit bab60d819ffdd3c7fa6081634ebf89ee130cc61e
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Tue Oct 5 04:23:33 2021 +0100
+
+      * x86: Refactored CMOV optimisations and permitted the use of constants in some cases.
+
+M	compiler/aoptobj.pas
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
+commit 5f3749dc49b9a7a8d68af715d51070c8903d1ddf
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Sun Apr 17 05:40:40 2022 +0100
+
+      * x86: Introduced TrySwapMovOp method, and redesigned TrySwapMovCmp
+        to use it while also trying to move one more instruction back
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
+commit 6af886c2b961d5a4ed7772f81d6348b8634ab385
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Sat Apr 16 06:56:58 2022 +0100
+
+      * Removed foolish inline from StripLabelFast
+
+M	compiler/aoptobj.pas
+
+******************************************************************************
+commit 5cdef8050bb607ca65845f79a35c95f3cae518e0
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Tue Apr 26 04:13:32 2022 +0100
+
+      * Fixed bug in register preservation tracking
+
+M	compiler/cgobj.pas
+
+******************************************************************************
 commit 6453af40d8827c60f611879f706911dcd519c7b1
 Author: wsherman <wayne@systemdesignworks.com>
 Date:   Mon Jan 9 23:45:23 2023 -0800
@@ -37873,7 +37957,6 @@ Date:   Thu Feb 11 10:22:07 2021 +0000
     git-svn-id: branches/unicodekvm@48649 -
 
 M	packages/rtl-console/src/unix/video.pp
-
 ******************************************************************************
 commit 8dc55d82942d36a5723b2b97f4ec5699563edb14
 Author: nickysn <nickysn@gmail.com>
@@ -37974,6 +38057,7 @@ Date:   Wed Feb 10 22:14:20 2021 +0000
     git-svn-id: branches/unicodekvm@48640 -
 
 M	packages/fv/src/dialogs.inc
+
 ******************************************************************************
 commit 98f42567130bbd6e47b357b93137f516b7ee8d1a
 Author: nickysn <nickysn@gmail.com>
