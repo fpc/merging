@@ -1,4 +1,41 @@
 ******************************************************************************
+commit 6453af40d8827c60f611879f706911dcd519c7b1
+Author: wsherman <wayne@systemdesignworks.com>
+Date:   Mon Jan 9 23:45:23 2023 -0800
+
+    *fix compile warnings and hints in googleapiconv and googlediscoverytopas
+    
+      - Fix compiler warnings and hints and unused local variables
+      - Change deprecated ClassHeader to ClassComment
+      - Fix comment in helper script
+
+M	packages/googleapi/generator/googleapiconv.pp
+M	packages/googleapi/generator/googlediscoverytopas.pp
+M	packages/googleapi/generator/run_google_api_bindings_gen.sh
+
+******************************************************************************
+commit cf50f8ede09526008682cb308d51a2997cc44d26
+Author: wsherman <wayne@systemdesignworks.com>
+Date:   Mon Jan 9 23:38:27 2023 -0800
+
+    * More fixes and cleanups in restbase.pp (googleapiconv)
+    
+      - Move test functions out of class to local procedures and into
+        {$IFDEF DUMPARRAY} and change the parameters to match the rtl versions:
+          function GetDynArrayProp(P: PPropInfo) : Pointer; virtual;
+          procedure SetDynArrayProp(P: PPropInfo; AValue : Pointer); virtual;
+      - Add dyn arrays support to the ClearProperties method
+      - In SetArrayProperty, fix previous commit (fba7595b) because the
+          array properties were not being set and make the dyn array handling
+          code more typesafe.
+      - In SetObjectProperty use TObjectArray instead of Pointer to make the
+          dyn array handling code more typesafe.
+      - In ClearChildren use ClearProperty to do the work and simplify the code.
+      - Fix some compiler warnings and hints.
+
+M	packages/fcl-web/src/base/restbase.pp
+
+******************************************************************************
 commit f4d9082028cac807d4580fdc73e0bc1490abcb43
 Author: florian <florian@freepascal.org>
 Date:   Mon Jan 9 22:53:23 2023 +0100
@@ -37937,7 +37974,6 @@ Date:   Wed Feb 10 22:14:20 2021 +0000
     git-svn-id: branches/unicodekvm@48640 -
 
 M	packages/fv/src/dialogs.inc
-
 ******************************************************************************
 commit 98f42567130bbd6e47b357b93137f516b7ee8d1a
 Author: nickysn <nickysn@gmail.com>
@@ -37960,6 +37996,7 @@ Date:   Wed Feb 10 21:59:30 2021 +0000
 
 M	.gitattributes
 A	tests/test/units/objects/testobj3.pp
+
 ******************************************************************************
 commit c466caa0c8b439e563c41259d98a872abb77b0d2
 Author: nickysn <nickysn@gmail.com>
