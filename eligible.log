@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 51bb01734b3d683a64dd2d3dc391ec27d23dbe8f
+Author: florian <florian@freepascal.org>
+Date:   Wed Jan 11 22:16:42 2023 +0100
+
+      * patch by Alfred Glänzer: Prevent install of unnecessary files during cross-install, resolves #40101
+
+M	packages/ide/fpmake.pp
+
+******************************************************************************
 commit b997e41366bb9f6d70be3fd027a4d93fa20220c5
 Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
 Date:   Wed Sep 14 11:07:17 2022 +0100
@@ -37945,7 +37954,6 @@ Date:   Fri Feb 12 08:22:01 2021 +0000
 
 M	tests/utils/avx/asmtestgenerator.pas
 M	tests/utils/avx/avxopcodes.pas
-
 ******************************************************************************
 commit 818d3f2f6c112fd8c2fb70e7128e198eb7a0d1aa
 Author: nickysn <nickysn@gmail.com>
@@ -37957,6 +37965,7 @@ Date:   Thu Feb 11 10:22:07 2021 +0000
     git-svn-id: branches/unicodekvm@48649 -
 
 M	packages/rtl-console/src/unix/video.pp
+
 ******************************************************************************
 commit 8dc55d82942d36a5723b2b97f4ec5699563edb14
 Author: nickysn <nickysn@gmail.com>
