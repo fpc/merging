@@ -1,4 +1,13 @@
 ******************************************************************************
+commit e77ec69de4f3db4d89f2e9287672d46cd35c949e
+Author: florian <florian@freepascal.org>
+Date:   Thu Jan 12 23:05:51 2023 +0100
+
+      * avoid internal error in case of an illegal generic declaration
+
+M	compiler/pdecl.pas
+
+******************************************************************************
 commit 51bb01734b3d683a64dd2d3dc391ec27d23dbe8f
 Author: florian <florian@freepascal.org>
 Date:   Wed Jan 11 22:16:42 2023 +0100
