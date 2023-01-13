@@ -1,4 +1,13 @@
 ******************************************************************************
+commit a9dca3268982c53b363346f2ccbc716b7d695183
+Author: florian <florian@freepascal.org>
+Date:   Fri Jan 13 22:34:25 2023 +0100
+
+      * undid accidentely activated define
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
 commit e77ec69de4f3db4d89f2e9287672d46cd35c949e
 Author: florian <florian@freepascal.org>
 Date:   Thu Jan 12 23:05:51 2023 +0100
