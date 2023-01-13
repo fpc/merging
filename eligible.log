@@ -254,6 +254,15 @@ Date:   Sun Jan 8 21:28:57 2023 +0100
 M	compiler/scandir.pas
 
 ******************************************************************************
+commit ea4768456f894c4b9dfb65a5dc5a0c04d0ea4791
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Sun Jan 8 20:30:52 2023 +0100
+
+    rtl: ObjectBinaryToText, ObjectTextToBinary: support unitname/classname
+
+M	rtl/objpas/classes/classes.inc
+
+******************************************************************************
 commit c1f39603889e52ffc0eb9a392ff9b4f8b093de74
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Sun Jan 8 15:46:49 2023 +0100
@@ -37939,7 +37948,6 @@ Date:   Mon Feb 15 05:33:27 2021 +0000
 
 M	tests/utils/avx/asmtestgenerator.pas
 M	tests/utils/avx/avxopcodes.pas
-
 ******************************************************************************
 commit 8d21ab9d67d41f06f26a890ab7e346517c1f4f2d
 Author: tg74 <tg74@idefix.freepascal.org>
@@ -37963,6 +37971,7 @@ Date:   Fri Feb 12 08:22:01 2021 +0000
 
 M	tests/utils/avx/asmtestgenerator.pas
 M	tests/utils/avx/avxopcodes.pas
+
 ******************************************************************************
 commit 818d3f2f6c112fd8c2fb70e7128e198eb7a0d1aa
 Author: nickysn <nickysn@gmail.com>
