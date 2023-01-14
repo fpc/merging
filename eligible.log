@@ -1,4 +1,22 @@
 ******************************************************************************
+commit 5cedecbe25d5a2493e54cd01bf7cf13499a99065
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Tue Dec 6 22:50:50 2022 +0000
+
+     Avoid float_raise call in FPC_SOFT_FPUX80 code
+
+M	compiler/assemble.pas
+
+******************************************************************************
+commit 977ca19dc013324096e5ef2ac6d9e2ccff824d42
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Fri Dec 2 22:53:19 2022 +0000
+
+    Set current_filepos in Internal assembler class also if DEBUG macro is set
+
+M	compiler/assemble.pas
+
+******************************************************************************
 commit a9dca3268982c53b363346f2ccbc716b7d695183
 Author: florian <florian@freepascal.org>
 Date:   Fri Jan 13 22:34:25 2023 +0100
@@ -37945,7 +37963,6 @@ Date:   Mon Feb 15 16:03:49 2021 +0000
     git-svn-id: branches/tg74/avx512-0037785@48683 -
 
 M	tests/utils/avx/asmtestgenerator.pas
-
 ******************************************************************************
 commit 1cd0364c50e44b6d2b7d859b4e4bc556bfd3593a
 Author: tg74 <tg74@idefix.freepascal.org>
@@ -37957,6 +37974,7 @@ Date:   Mon Feb 15 05:33:27 2021 +0000
 
 M	tests/utils/avx/asmtestgenerator.pas
 M	tests/utils/avx/avxopcodes.pas
+
 ******************************************************************************
 commit 8d21ab9d67d41f06f26a890ab7e346517c1f4f2d
 Author: tg74 <tg74@idefix.freepascal.org>
