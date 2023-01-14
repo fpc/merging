@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 46ab62fbb94646e4413856a9bb738a7771f10e9c
+Author: florian <florian@freepascal.org>
+Date:   Sat Jan 14 20:59:26 2023 +0100
+
+      * alternative declaration for SDL_CreateThread added to keep old code working, resolves #40112
+
+M	packages/sdl/src/sdl.pas
+
+******************************************************************************
 commit 5cedecbe25d5a2493e54cd01bf7cf13499a99065
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Tue Dec 6 22:50:50 2022 +0000
@@ -37952,7 +37961,6 @@ Date:   Thu Feb 18 21:10:39 2021 +0000
     git-svn-id: branches/unicodekvm@48713 -
 
 M	packages/fv/src/drivers.inc
-
 ******************************************************************************
 commit 1f12cdefb98091c855b0e61d2f899204f943f0ca
 Author: tg74 <tg74@idefix.freepascal.org>
@@ -37963,6 +37971,7 @@ Date:   Mon Feb 15 16:03:49 2021 +0000
     git-svn-id: branches/tg74/avx512-0037785@48683 -
 
 M	tests/utils/avx/asmtestgenerator.pas
+
 ******************************************************************************
 commit 1cd0364c50e44b6d2b7d859b4e4bc556bfd3593a
 Author: tg74 <tg74@idefix.freepascal.org>
