@@ -1,4 +1,14 @@
 ******************************************************************************
+commit fdea66d2171915c3b3ec135bf391a442c9e3169b
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Sun Jan 15 10:56:58 2023 +0100
+
+    rtl: added TBinaryObjectReader.BeginComponent
+
+M	rtl/objpas/classes/classesh.inc
+M	rtl/objpas/classes/reader.inc
+
+******************************************************************************
 commit 46ab62fbb94646e4413856a9bb738a7771f10e9c
 Author: florian <florian@freepascal.org>
 Date:   Sat Jan 14 20:59:26 2023 +0100
