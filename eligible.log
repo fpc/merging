@@ -1,4 +1,17 @@
 ******************************************************************************
+commit 8b08486fa1ffa3f84aa6715bebe98895dd83a0ee
+Author: florian <florian@freepascal.org>
+Date:   Sun Jan 15 23:05:32 2023 +0100
+
+      * do not warn on lea e/rsp with negative address offset, part of #40113
+      + tests
+
+M	compiler/rautils.pas
+M	compiler/x86/rax86.pas
+A	tests/webtbf/tw40113b.pp
+A	tests/webtbs/tw40113a.pp
+
+******************************************************************************
 commit fdea66d2171915c3b3ec135bf391a442c9e3169b
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Sun Jan 15 10:56:58 2023 +0100
@@ -37960,7 +37973,6 @@ Date:   Sat Feb 20 01:38:49 2021 +0000
     git-svn-id: branches/unicodekvm@48728 -
 
 M	packages/fv/fpmake.pp
-
 ******************************************************************************
 commit a7e63b66ae0197943a89d4be7431acf61d302407
 Author: nickysn <nickysn@gmail.com>
@@ -37971,6 +37983,7 @@ Date:   Thu Feb 18 21:10:39 2021 +0000
     git-svn-id: branches/unicodekvm@48713 -
 
 M	packages/fv/src/drivers.inc
+
 ******************************************************************************
 commit 1f12cdefb98091c855b0e61d2f899204f943f0ca
 Author: tg74 <tg74@idefix.freepascal.org>
