@@ -1,4 +1,31 @@
 ******************************************************************************
+commit eb1905a60735fed693aacc0a3cc65c1a8cd421ac
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Mon Jan 16 14:01:52 2023 +0100
+
+    * Correct exception handling
+
+M	utils/fpdoc/fpdoc.pp
+
+******************************************************************************
+commit 98404eab49cc4f844df7595a3392378fae8556b5
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Mon Jan 16 14:00:03 2023 +0100
+
+    * Fix alias typed documentation
+
+M	utils/fpdoc/dw_basehtml.pp
+
+******************************************************************************
+commit dcd7758e4c2527d5fae90b782e12c5d29e83da4a
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Mon Jan 16 13:59:31 2023 +0100
+
+    * Debug statement
+
+M	utils/fpdoc/dglobals.pp
+
+******************************************************************************
 commit 8b08486fa1ffa3f84aa6715bebe98895dd83a0ee
 Author: florian <florian@freepascal.org>
 Date:   Sun Jan 15 23:05:32 2023 +0100
@@ -37962,7 +37989,6 @@ Date:   Sat Feb 20 01:46:42 2021 +0000
 
 M	packages/fv/examples/testuapp.lpi
 M	packages/fv/src/drivers.inc
-
 ******************************************************************************
 commit a202b86f37a18c6bdd6b9d346ed20a481caf3c94
 Author: nickysn <nickysn@gmail.com>
@@ -37973,6 +37999,7 @@ Date:   Sat Feb 20 01:38:49 2021 +0000
     git-svn-id: branches/unicodekvm@48728 -
 
 M	packages/fv/fpmake.pp
+
 ******************************************************************************
 commit a7e63b66ae0197943a89d4be7431acf61d302407
 Author: nickysn <nickysn@gmail.com>
