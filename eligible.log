@@ -1,4 +1,16 @@
 ******************************************************************************
+commit 5598ffc210c387da7e4e166aea1c018bf6b3f185
+Author: florian <florian@freepascal.org>
+Date:   Tue Jan 17 23:09:09 2023 +0100
+
+      * x86_64: warn only on negative offsets if rsp is involed, second part of #40113
+      + tests
+
+M	compiler/x86/rax86.pas
+A	tests/webtbf/tw40113c.pp
+A	tests/webtbs/tw40113d.pp
+
+******************************************************************************
 commit b5763eb4124f86ab55e84fd7d2dce87724b734ae
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Tue Jan 17 14:32:38 2023 +0100
@@ -37976,7 +37988,6 @@ M	packages/fv/src/menus.inc
 M	packages/fv/src/views.inc
 M	packages/rtl-console/src/inc/video.inc
 M	packages/rtl-console/src/unix/video.pp
-
 ******************************************************************************
 commit 545dd0353bfc15751c6d317370fb790d304647c8
 Author: nickysn <nickysn@gmail.com>
@@ -37987,6 +37998,7 @@ Date:   Sat Feb 20 01:56:11 2021 +0000
     git-svn-id: branches/unicodekvm@48730 -
 
 M	packages/fv/src/drivers.inc
+
 ******************************************************************************
 commit e583ba6cfaff78c2b890a32fbf00fd96bbc71237
 Author: nickysn <nickysn@gmail.com>
