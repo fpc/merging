@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 55deefbab5a5f3f203587cfdb1f065251d3321f4
+Author: florian <florian@freepascal.org>
+Date:   Wed Jan 18 23:03:28 2023 +0100
+
+      * do not crash on illegal with statement, resolves #40118
+
+M	compiler/pstatmnt.pas
+A	tests/webtbf/tw40118.pp
+
+******************************************************************************
 commit 5598ffc210c387da7e4e166aea1c018bf6b3f185
 Author: florian <florian@freepascal.org>
 Date:   Tue Jan 17 23:09:09 2023 +0100
@@ -37972,7 +37982,6 @@ Date:   Sun Feb 21 01:10:46 2021 +0000
     git-svn-id: branches/unicodekvm@48735 -
 
 M	packages/fv/examples/testuapp.lpi
-
 ******************************************************************************
 commit 89c7ae42afc2511a8cb40000db251f8fbfec4c9a
 Author: nickysn <nickysn@gmail.com>
@@ -37988,6 +37997,7 @@ M	packages/fv/src/menus.inc
 M	packages/fv/src/views.inc
 M	packages/rtl-console/src/inc/video.inc
 M	packages/rtl-console/src/unix/video.pp
+
 ******************************************************************************
 commit 545dd0353bfc15751c6d317370fb790d304647c8
 Author: nickysn <nickysn@gmail.com>
