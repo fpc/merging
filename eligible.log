@@ -1,4 +1,23 @@
 ******************************************************************************
+commit 06a7610a3518ab62c032824abf246d11d18803dc
+Author: Michael Van Canneyt <michael@freepascal.org>
+Date:   Thu Jan 19 12:21:43 2023 +0100
+
+    * Stream writer
+
+M	packages/fcl-base/src/streamex.pp
+
+******************************************************************************
+commit 32884082e3299ca4a73e64582039affc9bcfc727
+Author: Michael Van Canneyt <michael@freepascal.org>
+Date:   Thu Jan 19 12:20:46 2023 +0100
+
+    * Checks for directory and special directories
+
+M	rtl/objpas/sysutils/filutil.inc
+M	rtl/objpas/sysutils/filutilh.inc
+
+******************************************************************************
 commit 55deefbab5a5f3f203587cfdb1f065251d3321f4
 Author: florian <florian@freepascal.org>
 Date:   Wed Jan 18 23:03:28 2023 +0100
@@ -37960,7 +37979,6 @@ Date:   Sun Feb 21 06:31:00 2021 +0000
     git-svn-id: branches/unicodekvm@48738 -
 
 M	packages/fv/examples/testuapp.pas
-
 ******************************************************************************
 commit f04d87bc3da1959e635b1645c4f8bfb36ef7f5f6
 Author: nickysn <nickysn@gmail.com>
@@ -37982,6 +38000,7 @@ Date:   Sun Feb 21 01:10:46 2021 +0000
     git-svn-id: branches/unicodekvm@48735 -
 
 M	packages/fv/examples/testuapp.lpi
+
 ******************************************************************************
 commit 89c7ae42afc2511a8cb40000db251f8fbfec4c9a
 Author: nickysn <nickysn@gmail.com>
