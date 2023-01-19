@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 218da184e633d5268d80fcf12d1f2158c7dd2618
+Author: florian <florian@freepascal.org>
+Date:   Thu Jan 19 22:43:59 2023 +0100
+
+      * patch by Rika: Improve generic CompareByte, resolves #40120
+
+M	rtl/inc/generic.inc
+
+******************************************************************************
 commit 06a7610a3518ab62c032824abf246d11d18803dc
 Author: Michael Van Canneyt <michael@freepascal.org>
 Date:   Thu Jan 19 12:21:43 2023 +0100
