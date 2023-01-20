@@ -1,4 +1,85 @@
 ******************************************************************************
+commit 00a5d30300e91ebe54ab99d4b64922d5e6e39850
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sat Jan 7 22:11:36 2023 +0100
+
+    LLVM: remove use of getelementptr in make_simple_ref_ptr
+    
+    We cannot safely infer whether it needs to be indirect or not there,
+    it should be done at a higher level if appropriate.
+
+M	compiler/llvm/hlcgllvm.pas
+
+******************************************************************************
+commit 51fdbb5524512dc3279d0cca38d44b38160b8111
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Tue Jan 3 21:42:55 2023 +0100
+
+    macOS: set max var/constalign to 64
+    
+    For all non-ppc(64) targets. Fixes test/talignrec1.
+
+M	compiler/systems/i_darwin.pas
+
+******************************************************************************
+commit 29bae2297fa3cebc09fd9d18a823a683aa67daed
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sun Jan 1 12:11:30 2023 +0100
+
+    tcginnode.pass_generate_code: use tlhcgobj.g_undefined_ok
+    
+    Also override the code that uses this for LLVM with a variant that does not
+    need it for LLVM versions that do not support the freeze instruction.
+
+M	compiler/llvm/nllvmset.pas
+M	compiler/ncgset.pas
+
+******************************************************************************
+commit ab581c5c301090d6c68c24437af404c0a5962990
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sun Jan 1 12:09:43 2023 +0100
+
+    LLVM: override thlcgobj.g_undefined_ok
+    
+    Uses the freeze instruction available in LLVM 10.0+. If we don't freeze undef/
+    poison values before using them in a calculation (even if that calculation is
+    something like "and 0", which masks the result completely), the result will
+    still be undef/poison and will keep propagating.
+
+M	compiler/llvm/aasmllvm.pas
+M	compiler/llvm/hlcgllvm.pas
+M	compiler/llvm/itllvm.pas
+M	compiler/llvm/llvmbase.pas
+M	compiler/llvm/llvminfo.pas
+
+******************************************************************************
+commit ee0ad3ff86723cc14eac57aa8f5f625976b557fb
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sun Jan 1 12:06:31 2023 +0100
+
+    thlcgobj.g_undefined_ok: new method
+    
+    Specify that a register's contents may be undefined because of previous
+    operations (e.g. shifting by more bits than the register has, whose result
+    depends on the target architecture), but that the code generator will
+    later on ensure that if this is the case, that result will be overwritten/
+    masked.
+
+M	compiler/hlcgobj.pas
+
+******************************************************************************
+commit 0b6942de8ac5b69d48a07cca22539945cbe5d201
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sat Dec 31 12:45:55 2022 +0100
+
+    llvm:a fix opaque ptr IR for Objective-C protocol
+    
+    Also for interfacecom functions and properties. Fixes test/tobjc9 and
+    test/tobjc9b with LLVM 15.0+
+
+M	compiler/llvm/llvmdef.pas
+
+******************************************************************************
 commit 218da184e633d5268d80fcf12d1f2158c7dd2618
 Author: florian <florian@freepascal.org>
 Date:   Thu Jan 19 22:43:59 2023 +0100
@@ -37922,7 +38003,6 @@ Date:   Sun Feb 21 06:44:16 2021 +0000
     git-svn-id: branches/unicodekvm@48744 -
 
 M	packages/fv/src/menus.inc
-
 ******************************************************************************
 commit 83e492235e99c1ae079c87995be30b5d624370c9
 Author: nickysn <nickysn@gmail.com>
@@ -37988,6 +38068,7 @@ Date:   Sun Feb 21 06:31:00 2021 +0000
     git-svn-id: branches/unicodekvm@48738 -
 
 M	packages/fv/examples/testuapp.pas
+
 ******************************************************************************
 commit f04d87bc3da1959e635b1645c4f8bfb36ef7f5f6
 Author: nickysn <nickysn@gmail.com>
