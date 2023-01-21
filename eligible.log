@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 55c5c7e122826bc6574db1e57e319f194fcf9d54
+Author: Marcus Sackrow <alb42@web.de>
+Date:   Sat Jan 21 23:50:06 2023 +0100
+
+    Fixed system.ioutils for windows and other non-unix systems
+
+M	packages/vcl-compat/src/system.ioutils.pp
+
+******************************************************************************
 commit 5691f2a2c0e00943762aa4dbf85b165f438da3df
 Author: florian <florian@freepascal.org>
 Date:   Sat Jan 21 21:46:01 2023 +0100
@@ -38005,7 +38014,6 @@ Date:   Sun Feb 21 21:48:10 2021 +0000
     git-svn-id: branches/unicodekvm@48768 -
 
 M	packages/fv/src/drivers.inc
-
 ******************************************************************************
 commit cc643608a22e9410c9d6391f40a7ffd9480aa9eb
 Author: nickysn <nickysn@gmail.com>
@@ -38017,6 +38025,7 @@ Date:   Sun Feb 21 21:46:50 2021 +0000
 
 M	packages/rtl-console/src/inc/video.inc
 M	packages/rtl-console/src/inc/videoh.inc
+
 ******************************************************************************
 commit 8751e983397d0712e92c7d19bd2c8f7a8d02a41c
 Author: nickysn <nickysn@gmail.com>
