@@ -1,4 +1,33 @@
 ******************************************************************************
+commit 5691f2a2c0e00943762aa4dbf85b165f438da3df
+Author: florian <florian@freepascal.org>
+Date:   Sat Jan 21 21:46:01 2023 +0100
+
+      + support of octal literals
+
+M	utils/h2pas/scan.l
+M	utils/h2pas/scan.pas
+
+******************************************************************************
+commit 184d20cb06bf7429d1a867fafdd8b6c484a87c12
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Jan 21 21:43:12 2023 +0100
+
+    * Fix some tests after recent changes, better test for special dirs
+
+M	packages/vcl-compat/tests/tciotuils.pas
+
+******************************************************************************
+commit 87321a0e67ceaac9859cf7aaf92f6d3c515bac44
+Author: florian <florian@freepascal.org>
+Date:   Sat Jan 21 21:35:18 2023 +0100
+
+      * fix one test failure for unixes
+
+M	packages/vcl-compat/src/system.ioutils.pp
+M	packages/vcl-compat/tests/tciotuils.pas
+
+******************************************************************************
 commit d4d4498fc04b92635fce045dcb44a91cc3443ac1
 Author: florian <florian@freepascal.org>
 Date:   Sat Jan 21 21:19:24 2023 +0100
@@ -37988,7 +38017,6 @@ Date:   Sun Feb 21 21:46:50 2021 +0000
 
 M	packages/rtl-console/src/inc/video.inc
 M	packages/rtl-console/src/inc/videoh.inc
-
 ******************************************************************************
 commit 8751e983397d0712e92c7d19bd2c8f7a8d02a41c
 Author: nickysn <nickysn@gmail.com>
@@ -38013,6 +38041,7 @@ M	packages/rtl-console/fpmake.pp
 M	packages/rtl-console/src/inc/video.inc
 M	packages/rtl-console/src/inc/videoh.inc
 M	packages/rtl-console/src/unix/video.pp
+
 ******************************************************************************
 commit 1bedcef063aa9e1753f6905afa4d1a65cc378a04
 Author: nickysn <nickysn@gmail.com>
