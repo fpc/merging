@@ -1,4 +1,29 @@
 ******************************************************************************
+commit 0b5eaa50fbd664f60f9b1b5a0fd00cfd7e16ebf3
+Author: Michael Van Canneyt <michael@freepascal.org>
+Date:   Sat Jan 21 13:44:36 2023 +0100
+
+    * Sysutils compatibility unit
+
+M	packages/vcl-compat/fpmake.pp
+A	packages/vcl-compat/src/system.ioutils.pp
+A	packages/vcl-compat/tests/tciotuils.pas
+M	packages/vcl-compat/tests/testcompat.lpi
+M	packages/vcl-compat/tests/testcompat.lpr
+
+******************************************************************************
+commit d1b2fe1659f9007bef0f62f7cbc00ae414405489
+Author: Michael Van Canneyt <michael@freepascal.org>
+Date:   Sat Jan 21 13:38:51 2023 +0100
+
+    * Date/Time info for files (Delphi compatibility)
+
+M	rtl/objpas/sysutils/filutil.inc
+M	rtl/objpas/sysutils/filutilh.inc
+M	rtl/unix/sysutils.pp
+M	rtl/win/sysutils.pp
+
+******************************************************************************
 commit a06c034189304457633b01adbc978231674b7498
 Author: florian <florian@freepascal.org>
 Date:   Fri Jan 20 23:30:52 2023 +0100
@@ -37983,7 +38008,6 @@ Date:   Sun Feb 21 06:53:50 2021 +0000
     git-svn-id: branches/unicodekvm@48748 -
 
 M	packages/fv/src/menus.inc
-
 ******************************************************************************
 commit 91167f41a6f53a6db27085ab0ed9e930ede13ea9
 Author: nickysn <nickysn@gmail.com>
@@ -38005,6 +38029,7 @@ Date:   Sun Feb 21 06:46:20 2021 +0000
     git-svn-id: branches/unicodekvm@48746 -
 
 M	packages/fv/src/menus.inc
+
 ******************************************************************************
 commit 60a7eac72b9292decc314749d9f5a12f4d48ac20
 Author: nickysn <nickysn@gmail.com>
