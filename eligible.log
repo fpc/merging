@@ -1,4 +1,31 @@
 ******************************************************************************
+commit d4d4498fc04b92635fce045dcb44a91cc3443ac1
+Author: florian <florian@freepascal.org>
+Date:   Sat Jan 21 21:19:24 2023 +0100
+
+      * building on darwin (and most likely other BSDs) fixed
+
+M	rtl/bsd/ostypes.inc
+
+******************************************************************************
+commit 77ade8b74f845ecc6ea1cdca5d9ce3df4537527b
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Jan 21 20:41:24 2023 +0100
+
+    * Improve TPath initialization
+
+M	packages/vcl-compat/src/system.ioutils.pp
+
+******************************************************************************
+commit 770c21c0ddcc948a6f84349a0c6b47c72c5b239c
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Jan 21 20:21:29 2023 +0100
+
+    * Fix compile error for i386-linux
+
+M	rtl/unix/sysutils.pp
+
+******************************************************************************
 commit 0b5eaa50fbd664f60f9b1b5a0fd00cfd7e16ebf3
 Author: Michael Van Canneyt <michael@freepascal.org>
 Date:   Sat Jan 21 13:44:36 2023 +0100
@@ -37986,7 +38013,6 @@ M	packages/rtl-console/fpmake.pp
 M	packages/rtl-console/src/inc/video.inc
 M	packages/rtl-console/src/inc/videoh.inc
 M	packages/rtl-console/src/unix/video.pp
-
 ******************************************************************************
 commit 1bedcef063aa9e1753f6905afa4d1a65cc378a04
 Author: nickysn <nickysn@gmail.com>
@@ -38008,6 +38034,7 @@ Date:   Sun Feb 21 06:53:50 2021 +0000
     git-svn-id: branches/unicodekvm@48748 -
 
 M	packages/fv/src/menus.inc
+
 ******************************************************************************
 commit 91167f41a6f53a6db27085ab0ed9e930ede13ea9
 Author: nickysn <nickysn@gmail.com>
