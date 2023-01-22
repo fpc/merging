@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 789031a6e638a733e34cfda80ec8c355e2fdea63
+Author: florian <florian@freepascal.org>
+Date:   Sun Jan 22 20:07:40 2023 +0100
+
+      * compile float*2 as float+float if possible as proposed by Rika, resolves #40116
+
+M	compiler/nadd.pas
+
+******************************************************************************
 commit ec28b7586c4b74823555f196772743fe9bfa3dde
 Author: florian <florian@freepascal.org>
 Date:   Sun Jan 22 16:23:57 2023 +0100
@@ -37995,7 +38004,6 @@ Date:   Sun Feb 21 23:31:28 2021 +0000
     git-svn-id: branches/unicodekvm@48775 -
 
 M	packages/fv/src/menus.inc
-
 ******************************************************************************
 commit 75e42870ae10ee5d446ab6d4d8335aa7eb02269e
 Author: nickysn <nickysn@gmail.com>
@@ -38006,6 +38014,7 @@ Date:   Sun Feb 21 23:21:18 2021 +0000
     git-svn-id: branches/unicodekvm@48774 -
 
 M	packages/fv/src/views.inc
+
 ******************************************************************************
 commit 4944e9296fc9c3b55367babf31928e8fa7169369
 Author: nickysn <nickysn@gmail.com>
