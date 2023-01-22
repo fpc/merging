@@ -1,4 +1,13 @@
 ******************************************************************************
+commit e54197e9d2b5c595cf77d884fec32f0639dafb8e
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sat Jan 21 22:02:10 2023 +0100
+
+    Darwin: support -Xg for DWARFv4
+
+M	compiler/options.pas
+
+******************************************************************************
 commit 789031a6e638a733e34cfda80ec8c355e2fdea63
 Author: florian <florian@freepascal.org>
 Date:   Sun Jan 22 20:07:40 2023 +0100
@@ -37993,7 +38002,6 @@ Date:   Mon Feb 22 02:08:08 2021 +0000
 
 M	packages/fv/examples/testuapp.pas
 M	packages/fv/src/dialogs.inc
-
 ******************************************************************************
 commit b6d2c6ccb721bc8707fc992c407cb695a5c5eef7
 Author: nickysn <nickysn@gmail.com>
@@ -38004,6 +38012,7 @@ Date:   Sun Feb 21 23:31:28 2021 +0000
     git-svn-id: branches/unicodekvm@48775 -
 
 M	packages/fv/src/menus.inc
+
 ******************************************************************************
 commit 75e42870ae10ee5d446ab6d4d8335aa7eb02269e
 Author: nickysn <nickysn@gmail.com>
