@@ -1,4 +1,14 @@
 ******************************************************************************
+commit ec28b7586c4b74823555f196772743fe9bfa3dde
+Author: florian <florian@freepascal.org>
+Date:   Sun Jan 22 16:23:57 2023 +0100
+
+      + support procvar[] in tp/mac procvar mode if the procvar returns an array type
+
+M	compiler/pexpr.pas
+A	tests/tbs/tb0703.pp
+
+******************************************************************************
 commit a57e34403c5e0aecaa998b04f747cf7a4b05d0cd
 Author: Marcus Sackrow <alb42@web.de>
 Date:   Sun Jan 22 14:50:58 2023 +0100
@@ -37996,7 +38006,6 @@ Date:   Sun Feb 21 23:21:18 2021 +0000
     git-svn-id: branches/unicodekvm@48774 -
 
 M	packages/fv/src/views.inc
-
 ******************************************************************************
 commit 4944e9296fc9c3b55367babf31928e8fa7169369
 Author: nickysn <nickysn@gmail.com>
@@ -38008,6 +38017,7 @@ Date:   Sun Feb 21 22:04:09 2021 +0000
 
 M	packages/fv/examples/testuapp.pas
 M	packages/rtl-console/src/unix/video.pp
+
 ******************************************************************************
 commit e539696f29a48912a4e2cd92b9f8b0210a5e0535
 Author: nickysn <nickysn@gmail.com>
