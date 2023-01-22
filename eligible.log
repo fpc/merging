@@ -1,4 +1,22 @@
 ******************************************************************************
+commit f3f9c68ddbea571e5cc95625a7a14fee620c09b8
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Tue Nov 22 01:03:12 2022 +0000
+
+      * x86-64: Extended the movl/movq optimisation to cover more distance
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
+commit 42b052eb83682e0bc5dcbb2c8d47e045c462dcfa
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Mon Nov 21 20:29:43 2022 +0000
+
+      * x86-64: movl/movq -> movl/movl zero-extension optimisation
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
 commit 55c5c7e122826bc6574db1e57e319f194fcf9d54
 Author: Marcus Sackrow <alb42@web.de>
 Date:   Sat Jan 21 23:50:06 2023 +0100
@@ -37992,7 +38010,6 @@ Date:   Sun Feb 21 21:54:08 2021 +0000
     git-svn-id: branches/unicodekvm@48770 -
 
 M	packages/fv/src/drivers.inc
-
 ******************************************************************************
 commit 17f7cb0e45ac10f19dcb7e883365c2c365d1c16d
 Author: nickysn <nickysn@gmail.com>
@@ -38014,6 +38031,7 @@ Date:   Sun Feb 21 21:48:10 2021 +0000
     git-svn-id: branches/unicodekvm@48768 -
 
 M	packages/fv/src/drivers.inc
+
 ******************************************************************************
 commit cc643608a22e9410c9d6391f40a7ffd9480aa9eb
 Author: nickysn <nickysn@gmail.com>
