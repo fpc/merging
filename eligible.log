@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 735fd20a6a48da586b49b43d1034f950b5ba49bf
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Mon Jan 23 10:05:18 2023 +0100
+
+    * (Hopefully) fix compilation for non-win,non-unix platforms
+
+M	rtl/objpas/sysutils/filutilh.inc
+
+******************************************************************************
 commit e54197e9d2b5c595cf77d884fec32f0639dafb8e
 Author: Jonas Maebe <jonas@freepascal.org>
 Date:   Sat Jan 21 22:02:10 2023 +0100
@@ -37990,7 +37999,6 @@ Date:   Mon Feb 22 03:03:34 2021 +0000
     git-svn-id: branches/unicodekvm@48777 -
 
 M	packages/fv/examples/testuapp.pas
-
 ******************************************************************************
 commit 646ddb82173c7a55d7b4fa34c7b2cc75e9fa7c87
 Author: nickysn <nickysn@gmail.com>
@@ -38002,6 +38010,7 @@ Date:   Mon Feb 22 02:08:08 2021 +0000
 
 M	packages/fv/examples/testuapp.pas
 M	packages/fv/src/dialogs.inc
+
 ******************************************************************************
 commit b6d2c6ccb721bc8707fc992c407cb695a5c5eef7
 Author: nickysn <nickysn@gmail.com>
