@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 8c888d97448caf47d94704bd9a219491f9d93bd1
+Author: marcoonthegit <marco@freepascal.org>
+Date:   Mon Jan 23 18:48:08 2023 +0100
+
+    * free doc before calling a readxmlfile procedure routine with OUT parameter. Fixes  #40126
+
+M	packages/fcl-xml/src/xmlconf.pp
+
+******************************************************************************
 commit 0bad315dafc027649333ae3ed76fbee3c1426734
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Mon Jan 23 18:09:43 2023 +0100
@@ -37985,7 +37994,6 @@ Date:   Mon Feb 22 03:33:48 2021 +0000
     git-svn-id: branches/unicodekvm@48779 -
 
 M	packages/fv/examples/testuapp.pas
-
 ******************************************************************************
 commit d4be82e87988cfe921c8843cbe6856176a1209d1
 Author: nickysn <nickysn@gmail.com>
@@ -37998,6 +38006,7 @@ Date:   Mon Feb 22 03:23:10 2021 +0000
 M	packages/fv/examples/testuapp.pas
 M	packages/fv/src/drivers.inc
 M	packages/fv/src/views.inc
+
 ******************************************************************************
 commit 2ecca003dd15e8f7c082eeb3c2ff6ea141487017
 Author: nickysn <nickysn@gmail.com>
