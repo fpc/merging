@@ -1,4 +1,23 @@
 ******************************************************************************
+commit 84e7a17b67acab49f6db6c821ffcced4ec3dcd95
+Author: florian <florian@freepascal.org>
+Date:   Mon Jan 23 22:51:40 2023 +0100
+
+      * patch by Rika: optimize Pos(), resolves #40088
+
+M	rtl/inc/astrings.inc
+M	rtl/inc/ustrings.inc
+
+******************************************************************************
+commit 821c22a38f8c172e3a6eca20e28027d86f854876
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Mon Jan 23 22:44:25 2023 +0100
+
+    LLVM: workaround to fix make all
+
+M	compiler/llvm/hlcgllvm.pas
+
+******************************************************************************
 commit 8c888d97448caf47d94704bd9a219491f9d93bd1
 Author: marcoonthegit <marco@freepascal.org>
 Date:   Mon Jan 23 18:48:08 2023 +0100
@@ -37972,7 +37991,6 @@ Date:   Mon Feb 22 03:58:10 2021 +0000
     git-svn-id: branches/unicodekvm@48781 -
 
 M	packages/rtl-console/src/unix/video.pp
-
 ******************************************************************************
 commit ca1b315e2799cc3c94e9485312d1b7d2b36a60fb
 Author: nickysn <nickysn@gmail.com>
@@ -37994,6 +38012,7 @@ Date:   Mon Feb 22 03:33:48 2021 +0000
     git-svn-id: branches/unicodekvm@48779 -
 
 M	packages/fv/examples/testuapp.pas
+
 ******************************************************************************
 commit d4be82e87988cfe921c8843cbe6856176a1209d1
 Author: nickysn <nickysn@gmail.com>
