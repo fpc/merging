@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 8ef0f590250b9d1f374dfee8409827fcb3020d4d
+Author: florian <florian@freepascal.org>
+Date:   Tue Jan 24 22:36:26 2023 +0100
+
+      * mark constant symbols used in preprocessor expressions as used, resolves #40108
+
+M	compiler/scanner.pas
+A	tests/webtbs/tw40108.pp
+
+******************************************************************************
 commit 84e7a17b67acab49f6db6c821ffcced4ec3dcd95
 Author: florian <florian@freepascal.org>
 Date:   Mon Jan 23 22:51:40 2023 +0100
@@ -37980,7 +37990,6 @@ Date:   Mon Feb 22 04:09:13 2021 +0000
     git-svn-id: branches/unicodekvm@48782 -
 
 M	packages/rtl-console/src/unix/video.pp
-
 ******************************************************************************
 commit 7b71eefbdfeab44a93695f93dfefac81fa8d09fb
 Author: nickysn <nickysn@gmail.com>
@@ -37991,6 +38000,7 @@ Date:   Mon Feb 22 03:58:10 2021 +0000
     git-svn-id: branches/unicodekvm@48781 -
 
 M	packages/rtl-console/src/unix/video.pp
+
 ******************************************************************************
 commit ca1b315e2799cc3c94e9485312d1b7d2b36a60fb
 Author: nickysn <nickysn@gmail.com>
