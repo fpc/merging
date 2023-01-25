@@ -1,4 +1,31 @@
 ******************************************************************************
+commit 0907628b73ebee55fde0ea0670f43e5aa3ebd4df
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Tue Jan 24 23:49:11 2023 +0000
+
+    Add missing S_ISUID and S_ISGID constants
+
+M	rtl/haiku/ostypes.inc
+
+******************************************************************************
+commit 7cca82185e63ef2f2ce1def59bf6b7f08cd42152
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Wed Jan 25 00:31:29 2023 +0100
+
+    Add missing S_ISUID and S_ISGID constants
+
+M	rtl/solaris/ostypes.inc
+
+******************************************************************************
+commit 9feeb18b15b333c9855488853a14dd1cc4cd61a3
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Tue Jan 24 15:33:18 2023 -0800
+
+    Add missing S_ISUID and S_ISGID constants
+
+M	rtl/aix/ostypes.inc
+
+******************************************************************************
 commit 8ef0f590250b9d1f374dfee8409827fcb3020d4d
 Author: florian <florian@freepascal.org>
 Date:   Tue Jan 24 22:36:26 2023 +0100
@@ -37957,7 +37984,6 @@ Date:   Mon Feb 22 04:21:34 2021 +0000
 
 M	packages/fv/examples/testuapp.pas
 M	packages/fv/src/dialogs.inc
-
 ******************************************************************************
 commit ea0213810b5f08a5c8df9ec16c160547101b0151
 Author: nickysn <nickysn@gmail.com>
@@ -37990,6 +38016,7 @@ Date:   Mon Feb 22 04:09:13 2021 +0000
     git-svn-id: branches/unicodekvm@48782 -
 
 M	packages/rtl-console/src/unix/video.pp
+
 ******************************************************************************
 commit 7b71eefbdfeab44a93695f93dfefac81fa8d09fb
 Author: nickysn <nickysn@gmail.com>
