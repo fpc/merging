@@ -1,4 +1,31 @@
 ******************************************************************************
+commit dfb8794d4d2cad05b61dc07402610bde5febf506
+Author: florian <florian@freepascal.org>
+Date:   Wed Jan 25 20:44:34 2023 +0100
+
+      * compilation after merge fixed
+
+M	compiler/aarch64/cgcpu.pas
+
+******************************************************************************
+commit aaa6f0d9c5ea729efccfb200f4ee0125cfa6c847
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Thu Jan 12 22:48:43 2023 +0100
+
+    Only signed extension is needed
+
+M	compiler/aarch64/cgcpu.pas
+
+******************************************************************************
+commit 4793447be120d6d3d9fa2e53d50b45b4b00ba2f5
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Tue Jan 10 23:53:31 2023 +0100
+
+     Add sign extension to 32-bit for unaligned OS_8 and OS_16 types (to try to solve #40102)
+
+M	compiler/aarch64/cgcpu.pas
+
+******************************************************************************
 commit f9b1a5acfb871f5a3fd4bf98285d0f3e2a50a1ba
 Author: Ondrej Pokorny <lazarus@kluug.net>
 Date:   Wed Jan 25 13:48:17 2023 +0100
@@ -37949,7 +37976,6 @@ Date:   Mon Feb 22 06:30:39 2021 +0000
     git-svn-id: branches/unicodekvm@48789 -
 
 M	packages/rtl-console/src/inc/video.inc
-
 ******************************************************************************
 commit fe7324a04ca69b5d3f76fded91041f21111c671c
 Author: nickysn <nickysn@gmail.com>
@@ -37982,6 +38008,7 @@ Date:   Mon Feb 22 04:22:48 2021 +0000
     git-svn-id: branches/unicodekvm@48786 -
 
 M	packages/fv/examples/testuapp.pas
+
 ******************************************************************************
 commit 6bef792f3303eba2da048ad8a9950cac2c2a787b
 Author: nickysn <nickysn@gmail.com>
