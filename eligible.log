@@ -1,4 +1,14 @@
 ******************************************************************************
+commit f9b1a5acfb871f5a3fd4bf98285d0f3e2a50a1ba
+Author: Ondrej Pokorny <lazarus@kluug.net>
+Date:   Wed Jan 25 13:48:17 2023 +0100
+
+    Postgres: more information in EPQDatabaseError
+
+M	packages/fcl-db/src/sqldb/postgres/pqconnection.pp
+M	packages/postgres/src/postgres3types.inc
+
+******************************************************************************
 commit 0907628b73ebee55fde0ea0670f43e5aa3ebd4df
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Tue Jan 24 23:49:11 2023 +0000
@@ -37972,7 +37982,6 @@ Date:   Mon Feb 22 04:22:48 2021 +0000
     git-svn-id: branches/unicodekvm@48786 -
 
 M	packages/fv/examples/testuapp.pas
-
 ******************************************************************************
 commit 6bef792f3303eba2da048ad8a9950cac2c2a787b
 Author: nickysn <nickysn@gmail.com>
@@ -37984,6 +37993,7 @@ Date:   Mon Feb 22 04:21:34 2021 +0000
 
 M	packages/fv/examples/testuapp.pas
 M	packages/fv/src/dialogs.inc
+
 ******************************************************************************
 commit ea0213810b5f08a5c8df9ec16c160547101b0151
 Author: nickysn <nickysn@gmail.com>
