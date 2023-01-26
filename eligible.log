@@ -1,4 +1,22 @@
 ******************************************************************************
+commit e8fcc5343beea4180e7e1f83bef6e27e19dde242
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Thu Jan 26 07:06:11 2023 +0100
+
+    * use new chartype_for_stringlike function to retrieve the char type for a stringlike def instead of casting to a stringdef
+
+M	compiler/pgenutil.pas
+
+******************************************************************************
+commit ea417fbaaf750b7e1fdf1dd1150416785501e270
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Thu Jan 26 07:05:34 2023 +0100
+
+    + add utility function to retrieve the char type def from a stringlike def
+
+M	compiler/defutil.pas
+
+******************************************************************************
 commit dfb8794d4d2cad05b61dc07402610bde5febf506
 Author: florian <florian@freepascal.org>
 Date:   Wed Jan 25 20:44:34 2023 +0100
@@ -37953,7 +37971,6 @@ Date:   Wed Feb 24 06:38:29 2021 +0000
     git-svn-id: branches/unicodekvm@48796 -
 
 M	packages/fv/src/dialogs.inc
-
 ******************************************************************************
 commit e430c92fcbb5b00680ac84579d6f969a4aa1c1c4
 Author: tg74 <tg74@idefix.freepascal.org>
@@ -37976,6 +37993,7 @@ Date:   Mon Feb 22 06:30:39 2021 +0000
     git-svn-id: branches/unicodekvm@48789 -
 
 M	packages/rtl-console/src/inc/video.inc
+
 ******************************************************************************
 commit fe7324a04ca69b5d3f76fded91041f21111c671c
 Author: nickysn <nickysn@gmail.com>
