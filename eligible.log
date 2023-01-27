@@ -1,4 +1,15 @@
 ******************************************************************************
+commit 3e75ba52f32d1e826b9dce0c406f22628a1ebf0d
+Author: florian <florian@freepascal.org>
+Date:   Fri Jan 27 22:38:53 2023 +0100
+
+      * initial preparations for riscv32-freertos
+
+M	compiler/systems.inc
+M	packages/fpmkunit/src/fpmkunit.pp
+M	utils/fpcm/fpcmmain.pp
+
+******************************************************************************
 commit b95bfd07d9fff57970901c224d038e3266ddf49f
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Fri Jan 27 14:42:05 2023 +0000
@@ -37958,7 +37969,6 @@ Date:   Wed Feb 24 16:29:26 2021 +0000
     git-svn-id: branches/tg74/avx512-0037785@48804 -
 
 M	tests/utils/avx/asmtestgenerator.pas
-
 ******************************************************************************
 commit 3dfefc25efa6ebced10e2e2dbde187130bbab2cc
 Author: nickysn <nickysn@gmail.com>
@@ -37969,6 +37979,7 @@ Date:   Wed Feb 24 06:54:54 2021 +0000
     git-svn-id: branches/unicodekvm@48797 -
 
 M	packages/fv/src/dialogs.inc
+
 ******************************************************************************
 commit 1c9fb8ec7dc83230dd264147ddc167eb5f323804
 Author: nickysn <nickysn@gmail.com>
