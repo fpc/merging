@@ -1,4 +1,13 @@
 ******************************************************************************
+commit b95bfd07d9fff57970901c224d038e3266ddf49f
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Fri Jan 27 14:42:05 2023 +0000
+
+    Fix sysutils unit compilation failure for wasm32-wasi wince and possibly more targets
+
+M	rtl/objpas/sysutils/filutil.inc
+
+******************************************************************************
 commit e8fcc5343beea4180e7e1f83bef6e27e19dde242
 Author: Sven/Sarah Barth <pascaldragon@gmail.com>
 Date:   Thu Jan 26 07:06:11 2023 +0100
@@ -37960,7 +37969,6 @@ Date:   Wed Feb 24 06:54:54 2021 +0000
     git-svn-id: branches/unicodekvm@48797 -
 
 M	packages/fv/src/dialogs.inc
-
 ******************************************************************************
 commit 1c9fb8ec7dc83230dd264147ddc167eb5f323804
 Author: nickysn <nickysn@gmail.com>
@@ -37971,6 +37979,7 @@ Date:   Wed Feb 24 06:38:29 2021 +0000
     git-svn-id: branches/unicodekvm@48796 -
 
 M	packages/fv/src/dialogs.inc
+
 ******************************************************************************
 commit e430c92fcbb5b00680ac84579d6f969a4aa1c1c4
 Author: tg74 <tg74@idefix.freepascal.org>
