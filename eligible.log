@@ -1,4 +1,31 @@
 ******************************************************************************
+commit fc6c3cf487947f4fa07a7255b6e4003b1df0ae99
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Jan 28 16:26:01 2023 +0100
+
+    * Create container with unique name, improve thread-safety
+
+M	packages/fcl-web/src/jsonrpc/fpjsonrpc.pp
+
+******************************************************************************
+commit cdc6ff0a30253c0745a098a89f22771f3b52b7c4
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Jan 28 16:23:39 2023 +0100
+
+    * Avoid error by checking if content was already sent
+
+M	packages/fcl-web/src/jsonrpc/webjsonrpc.pp
+
+******************************************************************************
+commit 0e77ef6ebf0f9898b92aee0c8bc7a7573824b96e
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Jan 28 16:20:09 2023 +0100
+
+    * Set result correctly in  TCORSSupport.HandleRequest
+
+M	packages/fcl-web/src/base/httpdefs.pp
+
+******************************************************************************
 commit d2ddf47d192814026880d94a3734c52e612d3ed9
 Author: marcoonthegit <marco@freepascal.org>
 Date:   Sat Jan 28 15:22:35 2023 +0100
@@ -37930,7 +37957,6 @@ Date:   Fri Feb 26 15:24:52 2021 +0000
 
 M	packages/fv/src/dialogs.inc
 M	packages/fv/src/views.inc
-
 ******************************************************************************
 commit 00beafae5be8d267469128964c6e901a6817e0c3
 Author: nickysn <nickysn@gmail.com>
@@ -37966,6 +37992,7 @@ Date:   Fri Feb 26 12:15:01 2021 +0000
     git-svn-id: branches/unicodekvm@48810 -
 
 M	packages/fv/src/dialogs.inc
+
 ******************************************************************************
 commit 41399354ce3fdfa9683f310e168427480c01f9d1
 Author: tg74 <tg74@idefix.freepascal.org>
