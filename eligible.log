@@ -1,4 +1,13 @@
 ******************************************************************************
+commit ffd14f449d554e9c4a8ac67cca773f47a14c9eae
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Jan 28 23:06:42 2023 +0100
+
+    * 32 bit counter
+
+M	packages/fcl-web/src/jsonrpc/fpjsonrpc.pp
+
+******************************************************************************
 commit bedd4edc727d8f31b9eef0a40403b811656f5c04
 Author: florian <florian@freepascal.org>
 Date:   Sat Jan 28 21:28:19 2023 +0100
@@ -37947,7 +37956,6 @@ Date:   Sat Feb 27 09:08:31 2021 +0000
 
 M	packages/rtl-console/tests/video1_windows.lpi
 M	packages/rtl-console/tests/video2_windows.lpi
-
 ******************************************************************************
 commit 38ef18b4f4af21230d751a546f71065ecd3512af
 Author: nickysn <nickysn@gmail.com>
@@ -37958,6 +37966,7 @@ Date:   Sat Feb 27 08:19:58 2021 +0000
     git-svn-id: branches/unicodekvm@48817 -
 
 M	packages/rtl-console/src/win/video.pp
+
 ******************************************************************************
 commit 1b1facf87991774ff536acd4bddbd00faac243bc
 Author: nickysn <nickysn@gmail.com>
