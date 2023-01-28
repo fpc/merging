@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 048385fd7f3ff8573ef72b00fbd02c20c21e0710
+Author: florian <florian@freepascal.org>
+Date:   Sat Jan 28 11:42:52 2023 +0100
+
+      * compilation fixed
+
+M	compiler/utils/ppuutils/ppudump.pp
+M	utils/fpcm/revision.inc
+
+******************************************************************************
 commit 3e75ba52f32d1e826b9dce0c406f22628a1ebf0d
 Author: florian <florian@freepascal.org>
 Date:   Fri Jan 27 22:38:53 2023 +0100
@@ -37958,7 +37968,6 @@ Date:   Thu Feb 25 05:30:42 2021 +0000
     git-svn-id: branches/tg74/avx512-0037785@48807 -
 
 M	tests/utils/avx/asmtestgenerator.pas
-
 ******************************************************************************
 commit ca0d11e308a6c64fa6494d7c904032280ec83111
 Author: tg74 <tg74@idefix.freepascal.org>
@@ -37969,6 +37978,7 @@ Date:   Wed Feb 24 16:29:26 2021 +0000
     git-svn-id: branches/tg74/avx512-0037785@48804 -
 
 M	tests/utils/avx/asmtestgenerator.pas
+
 ******************************************************************************
 commit 3dfefc25efa6ebced10e2e2dbde187130bbab2cc
 Author: nickysn <nickysn@gmail.com>
