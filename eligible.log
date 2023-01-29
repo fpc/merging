@@ -1,4 +1,23 @@
 ******************************************************************************
+commit 68c52cf02549c6d527b20f139f9233c823d0815f
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sun Jan 29 21:26:24 2023 +0100
+
+    * Refactored to be able to solve threadsafety problem
+
+M	packages/fcl-db/src/sqldb/postgres/pqconnection.pp
+
+******************************************************************************
+commit 1790b0c466e9693e3d08e8cfcb6d7ffb537add47
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sun Jan 29 21:25:38 2023 +0100
+
+    * SQLDB Database connection pool
+
+M	packages/fcl-db/fpmake.pp
+A	packages/fcl-db/src/sqldb/sqldbpool.pp
+
+******************************************************************************
 commit e9ec4a8bb3c08c399fc5f674e07e9876b5f9411c
 Author: florian <florian@freepascal.org>
 Date:   Sun Jan 29 19:30:11 2023 +0100
@@ -37938,7 +37957,6 @@ Date:   Sat Feb 27 10:27:20 2021 +0000
     git-svn-id: branches/unicodekvm@48822 -
 
 M	packages/rtl-console/src/inc/video.inc
-
 ******************************************************************************
 commit 306cfa83e4f044665e23369d2ddd1bb513c8b839
 Author: nickysn <nickysn@gmail.com>
@@ -37960,6 +37978,7 @@ Date:   Sat Feb 27 09:55:24 2021 +0000
     git-svn-id: branches/unicodekvm@48820 -
 
 M	packages/rtl-console/src/inc/video.inc
+
 ******************************************************************************
 commit 3c3f43ac665385b2c259c5930da9452682ba3cb8
 Author: nickysn <nickysn@gmail.com>
