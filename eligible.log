@@ -1,4 +1,15 @@
 ******************************************************************************
+commit 09b435cdab4e310bb7d0f4d6e4aa0fad3e916ad2
+Author: florian <florian@freepascal.org>
+Date:   Sun Jan 29 13:49:33 2023 +0100
+
+      * transform a/a only into 1 if fastmath is on
+
+M	compiler/nadd.pas
+A	tests/tbs/tb0704.pp
+A	tests/tbs/tb0705.pp
+
+******************************************************************************
 commit ffd14f449d554e9c4a8ac67cca773f47a14c9eae
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Sat Jan 28 23:06:42 2023 +0100
@@ -37944,7 +37955,6 @@ Date:   Sat Feb 27 09:43:02 2021 +0000
     git-svn-id: branches/unicodekvm@48819 -
 
 M	packages/rtl-console/src/inc/video.inc
-
 ******************************************************************************
 commit a203313bbf29d192763141b828b0077fec440f08
 Author: nickysn <nickysn@gmail.com>
@@ -37956,6 +37966,7 @@ Date:   Sat Feb 27 09:08:31 2021 +0000
 
 M	packages/rtl-console/tests/video1_windows.lpi
 M	packages/rtl-console/tests/video2_windows.lpi
+
 ******************************************************************************
 commit 38ef18b4f4af21230d751a546f71065ecd3512af
 Author: nickysn <nickysn@gmail.com>
