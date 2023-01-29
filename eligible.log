@@ -1,4 +1,20 @@
 ******************************************************************************
+commit e9ec4a8bb3c08c399fc5f674e07e9876b5f9411c
+Author: florian <florian@freepascal.org>
+Date:   Sun Jan 29 19:30:11 2023 +0100
+
+      * more riscv32-freertos-esp32c3 stuff added
+
+M	compiler/globals.pas
+M	compiler/options.pas
+M	compiler/riscv32/cpuinfo.pas
+M	compiler/systems/t_freertos.pas
+M	rtl/freertos/Makefile
+M	rtl/freertos/Makefile.fpc
+A	rtl/freertos/riscv32/esp32c3.pp
+A	rtl/freertos/riscv32/esp32c3idf_50000.pp
+
+******************************************************************************
 commit 09b435cdab4e310bb7d0f4d6e4aa0fad3e916ad2
 Author: florian <florian@freepascal.org>
 Date:   Sun Jan 29 13:49:33 2023 +0100
@@ -37944,7 +37960,6 @@ Date:   Sat Feb 27 09:55:24 2021 +0000
     git-svn-id: branches/unicodekvm@48820 -
 
 M	packages/rtl-console/src/inc/video.inc
-
 ******************************************************************************
 commit 3c3f43ac665385b2c259c5930da9452682ba3cb8
 Author: nickysn <nickysn@gmail.com>
@@ -37955,6 +37970,7 @@ Date:   Sat Feb 27 09:43:02 2021 +0000
     git-svn-id: branches/unicodekvm@48819 -
 
 M	packages/rtl-console/src/inc/video.inc
+
 ******************************************************************************
 commit a203313bbf29d192763141b828b0077fec440f08
 Author: nickysn <nickysn@gmail.com>
