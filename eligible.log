@@ -1,4 +1,14 @@
 ******************************************************************************
+commit b38d13577f94364b4c7ba6f4d6b032eae404e934
+Author: Rika Ichinose <rrunewalsh@gmail.com>
+Date:   Tue Oct 18 02:43:40 2022 +0300
+
+    Make Utf8CodepointLen adhere to the Unicode standard somewhat more and know all of the Unicode 15.0 combining characters.
+
+M	rtl/inc/generic.inc
+M	tests/test/tutf8cpl.pp
+
+******************************************************************************
 commit eb62a71a5fe3008b5ba53a5d6609f0f5354706af
 Author: Bi0T1N <9175580-Bi0T1N@users.noreply.gitlab.com>
 Date:   Sat Jan 14 17:43:37 2023 +0100
@@ -37929,7 +37939,6 @@ M	.gitattributes
 M	packages/fv/fpmake.pp
 M	packages/fv/src/timeddlg.inc
 A	packages/fv/src/utimeddlg.pas
-
 ******************************************************************************
 commit 4b6eea19189dce34125eb0e3de74b07de5cf8e43
 Author: nickysn <nickysn@gmail.com>
@@ -37942,6 +37951,7 @@ Date:   Sat Feb 27 13:39:41 2021 +0000
 M	.gitattributes
 M	packages/fv/fpmake.pp
 A	packages/fv/src/timeddlg.pas
+
 ******************************************************************************
 commit 78c3b698b183c690592e3f63fa8b2e6c12618607
 Author: nickysn <nickysn@gmail.com>
