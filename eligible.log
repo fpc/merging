@@ -1,4 +1,14 @@
 ******************************************************************************
+commit a9f9996dc87b2ee7ae1be6cf3cd8d45a939c20b4
+Author: florian <florian@freepascal.org>
+Date:   Mon Jan 30 22:39:01 2023 +0100
+
+      + support leap seconds in TryEncodeTime, resolves #40121
+
+M	rtl/objpas/sysutils/dati.inc
+A	tests/webtbs/tw40121.pp
+
+******************************************************************************
 commit 9db751daff4f001f8baab8c1f93134fec89de5bb
 Author: Marcus Sackrow <alb42@web.de>
 Date:   Mon Jan 30 18:03:05 2023 +0100
@@ -37922,7 +37932,6 @@ Date:   Sat Feb 27 17:22:59 2021 +0000
 M	.gitattributes
 M	packages/fv/fpmake.pp
 A	packages/fv/src/inplong.pas
-
 ******************************************************************************
 commit 6ca821950d7dcd8579bd1e87ca22049aaf9e8b8d
 Author: nickysn <nickysn@gmail.com>
@@ -37934,6 +37943,7 @@ Date:   Sat Feb 27 17:21:16 2021 +0000
 
 M	.gitattributes
 R100	packages/fv/src/inplong.pas	packages/fv/src/inplong.inc
+
 ******************************************************************************
 commit 40870af6a7dc39322622f7c4646b974c0d0800be
 Author: nickysn <nickysn@gmail.com>
