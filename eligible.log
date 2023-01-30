@@ -1,4 +1,22 @@
 ******************************************************************************
+commit bdf5343770f8b1b2ef9170d7c571681d700653f4
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Mon Jan 30 10:45:52 2023 +0100
+
+    ID only 32 bit
+
+M	packages/fcl-db/src/sqldb/postgres/pqconnection.pp
+
+******************************************************************************
+commit 01d3af48a171f7162a608f75a5ba9643c5f084f3
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Mon Jan 30 10:38:31 2023 +0100
+
+    * Fix compilation on non-unix. fix issue #40132
+
+M	packages/fcl-db/src/sqldb/sqldbpool.pp
+
+******************************************************************************
 commit 6bbb10e64d1f3c5e613e9242b3598c30d41888cc
 Author: Karoly Balogh <karoly@freepascal.org>
 Date:   Mon Jan 30 09:53:02 2023 +0100
@@ -37926,7 +37944,6 @@ Date:   Sat Feb 27 13:37:43 2021 +0000
 
 M	.gitattributes
 R100	packages/fv/src/timeddlg.pas	packages/fv/src/timeddlg.inc
-
 ******************************************************************************
 commit 0c2a1ffba8bb86294b226db30e4f744eb2b1da9c
 Author: nickysn <nickysn@gmail.com>
@@ -37955,6 +37972,7 @@ M	packages/rtl-console/src/netware/video.pp
 M	packages/rtl-console/src/netwlibc/video.pp
 M	packages/rtl-console/src/os2commn/video.pp
 M	packages/rtl-console/src/win16/video.pp
+
 ******************************************************************************
 commit 2181e7c61d14e894cabe6bae050720561164b685
 Author: nickysn <nickysn@gmail.com>
