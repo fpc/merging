@@ -1,4 +1,24 @@
 ******************************************************************************
+commit 6bbb10e64d1f3c5e613e9242b3598c30d41888cc
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Mon Jan 30 09:53:02 2023 +0100
+
+    m68k: do not generate LEA instructions with explicitly specified size. only long is possible anyway.
+
+M	compiler/m68k/aoptcpu.pas
+M	compiler/m68k/cgcpu.pas
+
+******************************************************************************
+commit c577ac5ce9329a112fbc31e3360092f445752615
+Author: Karoly Balogh <karoly@freepascal.org>
+Date:   Mon Jan 30 09:50:35 2023 +0100
+
+    m68k: add tables to convert from some stub opcodes + condition into real opcodes. Use them in the external assembler writer for now. Later the internal assembler will need these tables too.
+
+M	compiler/m68k/ag68kgas.pas
+M	compiler/m68k/cpubase.pas
+
+******************************************************************************
 commit 68c52cf02549c6d527b20f139f9233c823d0815f
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Sun Jan 29 21:26:24 2023 +0100
@@ -37935,7 +37955,6 @@ M	packages/rtl-console/src/netware/video.pp
 M	packages/rtl-console/src/netwlibc/video.pp
 M	packages/rtl-console/src/os2commn/video.pp
 M	packages/rtl-console/src/win16/video.pp
-
 ******************************************************************************
 commit 2181e7c61d14e894cabe6bae050720561164b685
 Author: nickysn <nickysn@gmail.com>
@@ -37957,6 +37976,7 @@ Date:   Sat Feb 27 10:27:20 2021 +0000
     git-svn-id: branches/unicodekvm@48822 -
 
 M	packages/rtl-console/src/inc/video.inc
+
 ******************************************************************************
 commit 306cfa83e4f044665e23369d2ddd1bb513c8b839
 Author: nickysn <nickysn@gmail.com>
