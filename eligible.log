@@ -1,4 +1,14 @@
 ******************************************************************************
+commit eb62a71a5fe3008b5ba53a5d6609f0f5354706af
+Author: Bi0T1N <9175580-Bi0T1N@users.noreply.gitlab.com>
+Date:   Sat Jan 14 17:43:37 2023 +0100
+
+    Add Delphi-compatible TCurrencyHelper
+
+M	rtl/objpas/sysutils/syshelp.inc
+M	rtl/objpas/sysutils/syshelph.inc
+
+******************************************************************************
 commit bdf5343770f8b1b2ef9170d7c571681d700653f4
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Mon Jan 30 10:45:52 2023 +0100
@@ -37932,7 +37942,6 @@ Date:   Sat Feb 27 13:39:41 2021 +0000
 M	.gitattributes
 M	packages/fv/fpmake.pp
 A	packages/fv/src/timeddlg.pas
-
 ******************************************************************************
 commit 78c3b698b183c690592e3f63fa8b2e6c12618607
 Author: nickysn <nickysn@gmail.com>
@@ -37944,6 +37953,7 @@ Date:   Sat Feb 27 13:37:43 2021 +0000
 
 M	.gitattributes
 R100	packages/fv/src/timeddlg.pas	packages/fv/src/timeddlg.inc
+
 ******************************************************************************
 commit 0c2a1ffba8bb86294b226db30e4f744eb2b1da9c
 Author: nickysn <nickysn@gmail.com>
