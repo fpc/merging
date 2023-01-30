@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 9db751daff4f001f8baab8c1f93134fec89de5bb
+Author: Marcus Sackrow <alb42@web.de>
+Date:   Mon Jan 30 18:03:05 2023 +0100
+
+    fcl-db: removed sqldbpool for atari, because no threading and no syncobjs
+
+M	packages/fcl-db/fpmake.pp
+
+******************************************************************************
 commit b38d13577f94364b4c7ba6f4d6b032eae404e934
 Author: Rika Ichinose <rrunewalsh@gmail.com>
 Date:   Tue Oct 18 02:43:40 2022 +0300
@@ -37925,7 +37934,6 @@ Date:   Sat Feb 27 17:21:16 2021 +0000
 
 M	.gitattributes
 R100	packages/fv/src/inplong.pas	packages/fv/src/inplong.inc
-
 ******************************************************************************
 commit 40870af6a7dc39322622f7c4646b974c0d0800be
 Author: nickysn <nickysn@gmail.com>
@@ -37939,6 +37947,7 @@ M	.gitattributes
 M	packages/fv/fpmake.pp
 M	packages/fv/src/timeddlg.inc
 A	packages/fv/src/utimeddlg.pas
+
 ******************************************************************************
 commit 4b6eea19189dce34125eb0e3de74b07de5cf8e43
 Author: nickysn <nickysn@gmail.com>
