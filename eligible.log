@@ -1,4 +1,24 @@
 ******************************************************************************
+commit a9d38fd75893ccf22006747843d81b539883fdf2
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Tue Jan 31 19:08:24 2023 +0100
+
+    * Do not compile sqldbpool on uses that do not support sqldb
+
+M	packages/fcl-db/fpmake.pp
+
+******************************************************************************
+commit c5af4c420e788666915c47422c428b4ea3f881f4
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Tue Jan 31 19:05:42 2023 +0100
+
+    * Hopefully fixed GetFileStamps/FileGetDateTimeInfo
+
+M	packages/vcl-compat/src/system.ioutils.pp
+M	rtl/objpas/sysutils/filutil.inc
+M	rtl/objpas/sysutils/filutilh.inc
+
+******************************************************************************
 commit a9f9996dc87b2ee7ae1be6cf3cd8d45a939c20b4
 Author: florian <florian@freepascal.org>
 Date:   Mon Jan 30 22:39:01 2023 +0100
@@ -37908,7 +37928,6 @@ Date:   Mon Mar 1 13:30:12 2021 +0000
     git-svn-id: branches/unicodekvm@48848 -
 
 M	packages/rtl-console/src/inc/video.inc
-
 ******************************************************************************
 commit 493879d28cc1c2f76193c44458344f838ac17160
 Author: tg74 <tg74@idefix.freepascal.org>
@@ -37932,6 +37951,7 @@ Date:   Sat Feb 27 17:22:59 2021 +0000
 M	.gitattributes
 M	packages/fv/fpmake.pp
 A	packages/fv/src/inplong.pas
+
 ******************************************************************************
 commit 6ca821950d7dcd8579bd1e87ca22049aaf9e8b8d
 Author: nickysn <nickysn@gmail.com>
