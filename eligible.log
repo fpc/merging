@@ -1,4 +1,22 @@
 ******************************************************************************
+commit 03266e90574c6b03b5f7f60c695e39132f4c8399
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Tue Jan 31 19:42:29 2023 +0100
+
+    * Fix copy & paste error
+
+M	packages/vcl-compat/src/system.ioutils.pp
+
+******************************************************************************
+commit fead1ce8187a3c7173a3341ebee731825cf6ebaa
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Tue Jan 31 19:39:30 2023 +0100
+
+    * Fix compilation
+
+M	rtl/objpas/sysutils/filutil.inc
+
+******************************************************************************
 commit a9d38fd75893ccf22006747843d81b539883fdf2
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Tue Jan 31 19:08:24 2023 +0100
@@ -37917,7 +37935,6 @@ M	packages/fv/examples/testuapp.pas
 M	packages/fv/fpmake.pp
 M	packages/fv/src/inplong.inc
 A	packages/fv/src/uinplong.pas
-
 ******************************************************************************
 commit af19d2a98285e96995898cfee325f97cd706a9b2
 Author: nickysn <nickysn@gmail.com>
@@ -37928,6 +37945,7 @@ Date:   Mon Mar 1 13:30:12 2021 +0000
     git-svn-id: branches/unicodekvm@48848 -
 
 M	packages/rtl-console/src/inc/video.inc
+
 ******************************************************************************
 commit 493879d28cc1c2f76193c44458344f838ac17160
 Author: tg74 <tg74@idefix.freepascal.org>
