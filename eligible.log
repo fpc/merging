@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 66891b1d59177b7b6f32f3e3544c3f952b1f35cf
+Author: florian <florian@freepascal.org>
+Date:   Tue Jan 31 22:58:51 2023 +0100
+
+      * patch by Rika: Implement TCurrencyHelper.Ceil/Floor, resolves #40134
+
+M	rtl/objpas/sysutils/syshelp.inc
+
+******************************************************************************
 commit 03266e90574c6b03b5f7f60c695e39132f4c8399
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Tue Jan 31 19:42:29 2023 +0100
@@ -37920,7 +37929,6 @@ Date:   Mon Mar 1 15:31:37 2021 +0000
 
 M	.gitattributes
 R100	packages/fv/src/tabs.pas	packages/fv/src/tabs.inc
-
 ******************************************************************************
 commit 52a29e0ba7e6dbf5cdc6dc0ba9b60c88e2307856
 Author: nickysn <nickysn@gmail.com>
@@ -37935,6 +37943,7 @@ M	packages/fv/examples/testuapp.pas
 M	packages/fv/fpmake.pp
 M	packages/fv/src/inplong.inc
 A	packages/fv/src/uinplong.pas
+
 ******************************************************************************
 commit af19d2a98285e96995898cfee325f97cd706a9b2
 Author: nickysn <nickysn@gmail.com>
