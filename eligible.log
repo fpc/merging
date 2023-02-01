@@ -1,4 +1,13 @@
 ******************************************************************************
+commit e01da2408fb9c6a39f0b8c1fdad3fba31d8157fa
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Wed Feb 1 09:28:02 2023 +0100
+
+    * Limit webdata/sqldbrest to platforms that support sqldb
+
+M	packages/fcl-web/fpmake.pp
+
+******************************************************************************
 commit 66891b1d59177b7b6f32f3e3544c3f952b1f35cf
 Author: florian <florian@freepascal.org>
 Date:   Tue Jan 31 22:58:51 2023 +0100
@@ -37917,7 +37926,6 @@ Date:   Mon Mar 1 15:32:45 2021 +0000
 M	.gitattributes
 M	packages/fv/fpmake.pp
 A	packages/fv/src/tabs.pas
-
 ******************************************************************************
 commit 0b7d4801b077856035a56c7a67806210306df21d
 Author: nickysn <nickysn@gmail.com>
@@ -37929,6 +37937,7 @@ Date:   Mon Mar 1 15:31:37 2021 +0000
 
 M	.gitattributes
 R100	packages/fv/src/tabs.pas	packages/fv/src/tabs.inc
+
 ******************************************************************************
 commit 52a29e0ba7e6dbf5cdc6dc0ba9b60c88e2307856
 Author: nickysn <nickysn@gmail.com>
