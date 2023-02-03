@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 4871ad4707ea5283091201561d5c6450dc65a999
+Author: marcoonthegit <marcov@pascalprogramming.org>
+Date:   Fri Feb 3 10:34:57 2023 +0100
+
+    * SetThreadExecutionState
+
+M	rtl/win/wininc/defines.inc
+M	rtl/win/wininc/func.inc
+
+******************************************************************************
 commit e01da2408fb9c6a39f0b8c1fdad3fba31d8157fa
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Wed Feb 1 09:28:02 2023 +0100
@@ -37913,7 +37923,6 @@ M	packages/fv/examples/testuapp.pas
 M	packages/fv/fpmake.pp
 M	packages/fv/src/tabs.inc
 A	packages/fv/src/utabs.pas
-
 ******************************************************************************
 commit 3149506d7f82ed315a809a0c76c10daf9c4ce3f1
 Author: nickysn <nickysn@gmail.com>
@@ -37926,6 +37935,7 @@ Date:   Mon Mar 1 15:32:45 2021 +0000
 M	.gitattributes
 M	packages/fv/fpmake.pp
 A	packages/fv/src/tabs.pas
+
 ******************************************************************************
 commit 0b7d4801b077856035a56c7a67806210306df21d
 Author: nickysn <nickysn@gmail.com>
