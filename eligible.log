@@ -1,4 +1,18 @@
 ******************************************************************************
+commit e84e0a16e13a4b73192edafd2aa356254dc2ac88
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Feb 4 14:16:58 2023 +0100
+
+    * Different PUT/PATCH. Allow legacy PUT
+
+M	packages/fcl-web/src/restbridge/sqldbrestbridge.pp
+M	packages/fcl-web/src/restbridge/sqldbrestconst.pp
+M	packages/fcl-web/src/restbridge/sqldbrestdata.pp
+M	packages/fcl-web/src/restbridge/sqldbrestio.pp
+M	packages/fcl-web/src/restbridge/sqldbrestjson.pp
+M	packages/fcl-web/src/restbridge/sqldbrestschema.pp
+
+******************************************************************************
 commit 15b49f4609a377af7b778bd28f87827572377acd
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Sat Feb 4 13:09:33 2023 +0100
@@ -37890,7 +37904,6 @@ Date:   Wed Mar 3 05:26:29 2021 +0000
     git-svn-id: branches/tg74/avx512-0037785@48872 -
 
 M	tests/utils/avx/asmtestgenerator.pas
-
 ******************************************************************************
 commit 0569ab4a2859d1e5ff60e996deaa0bcf2fff737c
 Author: tg74 <tg74@idefix.freepascal.org>
@@ -37901,6 +37914,7 @@ Date:   Tue Mar 2 16:30:31 2021 +0000
     git-svn-id: branches/tg74/avx512-0037785@48870 -
 
 M	tests/utils/avx/asmtestgenerator.pas
+
 ******************************************************************************
 commit 063133f2f5726e0f71d74149c2f522ecd37a882e
 Author: nickysn <nickysn@gmail.com>
