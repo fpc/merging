@@ -1,4 +1,31 @@
 ******************************************************************************
+commit 869496b9e24472ef335bbbd2aedb115be0a0755c
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Feb 4 11:13:43 2023 +0100
+
+    * Allow to set LogEvents on created connections
+
+M	packages/fcl-db/src/sqldb/sqldbpool.pp
+
+******************************************************************************
+commit 9c0a59b069825507d4e751ceda57377c594d035c
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Feb 4 11:11:44 2023 +0100
+
+    * 32/64 bit, handle ExecPrepared result correctly
+
+M	packages/fcl-db/src/sqldb/postgres/pqconnection.pp
+
+******************************************************************************
+commit 4f029720be5ac7c4cc66cc2c0ae221656c34ca10
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Feb 4 10:42:32 2023 +0100
+
+    * Attempt to fix FileGetDateTimeInfo
+
+M	rtl/wince/sysutils.pp
+
+******************************************************************************
 commit 4871ad4707ea5283091201561d5c6450dc65a999
 Author: marcoonthegit <marcov@pascalprogramming.org>
 Date:   Fri Feb 3 10:34:57 2023 +0100
@@ -37886,7 +37913,6 @@ M	packages/fv/src/dialogs.inc
 M	packages/fv/src/inplong.inc
 M	packages/fv/src/menus.inc
 M	packages/fv/src/outline.inc
-
 ******************************************************************************
 commit a57bda94defdebc54a9ea26cbda85d7fe6ab377e
 Author: nickysn <nickysn@gmail.com>
@@ -37923,6 +37949,7 @@ M	packages/fv/examples/testuapp.pas
 M	packages/fv/fpmake.pp
 M	packages/fv/src/tabs.inc
 A	packages/fv/src/utabs.pas
+
 ******************************************************************************
 commit 3149506d7f82ed315a809a0c76c10daf9c4ce3f1
 Author: nickysn <nickysn@gmail.com>
