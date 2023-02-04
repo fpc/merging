@@ -1,4 +1,15 @@
 ******************************************************************************
+commit 9c10167b6fd114d4996debe4ce117b3df3d38a53
+Author: florian <florian@freepascal.org>
+Date:   Sat Feb 4 19:19:53 2023 +0100
+
+      + CPUX86_HAS_BSWAP
+
+M	compiler/i386/cpuinfo.pas
+M	compiler/i8086/cpuinfo.pas
+M	compiler/x86_64/cpuinfo.pas
+
+******************************************************************************
 commit e84e0a16e13a4b73192edafd2aa356254dc2ac88
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Sat Feb 4 14:16:58 2023 +0100
@@ -37893,7 +37904,6 @@ Date:   Wed Mar 3 16:27:21 2021 +0000
     git-svn-id: branches/tg74/avx512-0037785@48873 -
 
 M	tests/utils/avx/asmtestgenerator.pas
-
 ******************************************************************************
 commit fa8bbc43960c51ef1fa09ef630ab53c08e76ea29
 Author: tg74 <tg74@idefix.freepascal.org>
@@ -37904,6 +37914,7 @@ Date:   Wed Mar 3 05:26:29 2021 +0000
     git-svn-id: branches/tg74/avx512-0037785@48872 -
 
 M	tests/utils/avx/asmtestgenerator.pas
+
 ******************************************************************************
 commit 0569ab4a2859d1e5ff60e996deaa0bcf2fff737c
 Author: tg74 <tg74@idefix.freepascal.org>
