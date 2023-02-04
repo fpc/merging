@@ -1,4 +1,40 @@
 ******************************************************************************
+commit 15b49f4609a377af7b778bd28f87827572377acd
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Feb 4 13:09:33 2023 +0100
+
+    * Fix compiler warning
+
+M	packages/fcl-base/src/basenenc.pp
+
+******************************************************************************
+commit eaf665e8c470d83cda25559d443a562cd446441c
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Feb 4 13:04:39 2023 +0100
+
+    * Fix some compiler warnings
+
+M	packages/fcl-db/src/sqldb/postgres/pqconnection.pp
+
+******************************************************************************
+commit 1d9a17377d397d63cb54d6ff268c2ad6dddee1d5
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Feb 4 13:03:36 2023 +0100
+
+    * Fix compiler warning
+
+M	packages/fcl-db/src/sqldb/sqldbpool.pp
+
+******************************************************************************
+commit a33bd31734d0db7bbe0373d8cdb2f3d9454c02de
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Feb 4 12:55:04 2023 +0100
+
+    * Remove baseunix
+
+M	packages/fcl-db/src/sqldb/sqldbpool.pp
+
+******************************************************************************
 commit 869496b9e24472ef335bbbd2aedb115be0a0755c
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Sat Feb 4 11:13:43 2023 +0100
@@ -37865,7 +37901,6 @@ Date:   Tue Mar 2 16:30:31 2021 +0000
     git-svn-id: branches/tg74/avx512-0037785@48870 -
 
 M	tests/utils/avx/asmtestgenerator.pas
-
 ******************************************************************************
 commit 063133f2f5726e0f71d74149c2f522ecd37a882e
 Author: nickysn <nickysn@gmail.com>
@@ -37913,6 +37948,7 @@ M	packages/fv/src/dialogs.inc
 M	packages/fv/src/inplong.inc
 M	packages/fv/src/menus.inc
 M	packages/fv/src/outline.inc
+
 ******************************************************************************
 commit a57bda94defdebc54a9ea26cbda85d7fe6ab377e
 Author: nickysn <nickysn@gmail.com>
