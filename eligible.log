@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 524589231fb1fc8b21c9c76f6dffb61190f44f45
+Author: Rika Ichinose <rrunewalsh@gmail.com>
+Date:   Sat Jan 28 16:52:14 2023 +0300
+
+    Improved CompareByte for i386 and x86_64.
+
+M	rtl/i386/i386.inc
+M	rtl/x86_64/x86_64.inc
+
+******************************************************************************
 commit d07e34297f55768911c82fa9690511f7bcb07e80
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Sun Feb 5 12:53:14 2023 +0100
@@ -37895,7 +37905,6 @@ Date:   Mon Mar 8 15:00:37 2021 +0000
     git-svn-id: branches/unicodekvm@48910 -
 
 M	packages/rtl-console/src/inc/video.inc
-
 ******************************************************************************
 commit 2abcf62a958476ba80b78b3c7875d9272d9f7e90
 Author: nickysn <nickysn@gmail.com>
@@ -37908,6 +37917,7 @@ Date:   Mon Mar 8 14:30:06 2021 +0000
 
 M	packages/rtl-console/src/inc/video.inc
 M	packages/rtl-console/src/inc/videoh.inc
+
 ******************************************************************************
 commit ad753c0bbd52d42685ef5cdb0406c2c7e369c605
 Author: tg74 <tg74@idefix.freepascal.org>
