@@ -1,4 +1,703 @@
 ******************************************************************************
+commit 783bbb66f9324152ba2f2914c8a2a9a1884c37e4
+Author: Jinyang He <hejinyang@loongson.cn>
+Date:   Sat Nov 5 10:50:57 2022 +0800
+
+    Update Makefiles
+
+M	Makefile
+M	compiler/Makefile
+M	compiler/utils/Makefile
+M	installer/Makefile
+M	packages/Makefile
+M	packages/a52/Makefile
+M	packages/ami-extra/Makefile
+M	packages/amunits/Makefile
+M	packages/arosunits/Makefile
+M	packages/aspell/Makefile
+M	packages/bfd/Makefile
+M	packages/bzip2/Makefile
+M	packages/cairo/Makefile
+M	packages/cdrom/Makefile
+M	packages/cdrom/examples/Makefile
+M	packages/chm/Makefile
+M	packages/cocoaint/Makefile
+M	packages/dblib/Makefile
+M	packages/dbus/Makefile
+M	packages/dbus/examples/Makefile
+M	packages/dts/Makefile
+M	packages/fastcgi/Makefile
+M	packages/fcl-async/Makefile
+M	packages/fcl-base/Makefile
+M	packages/fcl-base/examples/Makefile
+M	packages/fcl-css/Makefile
+M	packages/fcl-db/Makefile
+M	packages/fcl-db/src/base/Makefile
+M	packages/fcl-db/src/codegen/Makefile
+M	packages/fcl-db/src/datadict/Makefile
+M	packages/fcl-db/src/dbase/Makefile
+M	packages/fcl-db/src/export/Makefile
+M	packages/fcl-db/src/json/Makefile
+M	packages/fcl-db/src/memds/Makefile
+M	packages/fcl-db/src/paradox/Makefile
+M	packages/fcl-db/src/sdf/Makefile
+M	packages/fcl-db/src/sql/Makefile
+M	packages/fcl-db/src/sqldb/Makefile
+M	packages/fcl-db/src/sqldb/interbase/Makefile
+M	packages/fcl-db/src/sqldb/mssql/Makefile
+M	packages/fcl-db/src/sqldb/mysql/Makefile
+M	packages/fcl-db/src/sqldb/odbc/Makefile
+M	packages/fcl-db/src/sqldb/oracle/Makefile
+M	packages/fcl-db/src/sqldb/postgres/Makefile
+M	packages/fcl-db/src/sqldb/sqlite/Makefile
+M	packages/fcl-db/src/sqlite/Makefile
+M	packages/fcl-db/tests/Makefile
+M	packages/fcl-extra/Makefile
+M	packages/fcl-extra/examples/Makefile
+M	packages/fcl-fpcunit/Makefile
+M	packages/fcl-fpcunit/src/exampletests/Makefile
+M	packages/fcl-fpcunit/src/tests/Makefile
+M	packages/fcl-hash/Makefile
+M	packages/fcl-image/Makefile
+M	packages/fcl-image/examples/Makefile
+M	packages/fcl-js/Makefile
+M	packages/fcl-json/Makefile
+M	packages/fcl-mustache/Makefile
+M	packages/fcl-net/Makefile
+M	packages/fcl-net/examples/Makefile
+M	packages/fcl-passrc/Makefile
+M	packages/fcl-pdf/Makefile
+M	packages/fcl-process/Makefile
+M	packages/fcl-registry/Makefile
+M	packages/fcl-registry/tests/Makefile
+M	packages/fcl-report/Makefile
+M	packages/fcl-res/Makefile
+M	packages/fcl-sdo/Makefile
+M	packages/fcl-sound/Makefile
+M	packages/fcl-stl/Makefile
+M	packages/fcl-web/Makefile
+M	packages/fcl-web/src/base/Makefile
+M	packages/fcl-web/src/jsonrpc/Makefile
+M	packages/fcl-web/src/webdata/Makefile
+M	packages/fcl-xml/Makefile
+M	packages/fftw/Makefile
+M	packages/fpgtk/Makefile
+M	packages/fpgtk/examples/Makefile
+M	packages/fpindexer/Makefile
+M	packages/fpmkunit/Makefile
+M	packages/fppkg/Makefile
+M	packages/fuse/Makefile
+M	packages/fv/Makefile
+M	packages/fv/examples/Makefile
+M	packages/gdbint/Makefile
+M	packages/gdbm/Makefile
+M	packages/gdbm/examples/Makefile
+M	packages/ggi/Makefile
+M	packages/ggi/examples/Makefile
+M	packages/gitlab/Makefile
+M	packages/gmp/Makefile
+M	packages/gmp/examples/Makefile
+M	packages/gnome1/Makefile
+M	packages/gnutls/Makefile
+M	packages/googleapi/Makefile
+M	packages/graph/Makefile
+M	packages/gstreamer/Makefile
+M	packages/gtk1/Makefile
+M	packages/gtk1/examples/Makefile
+M	packages/gtk1/examples/tutorial/Makefile
+M	packages/gtk1/src/gtkgl/Makefile
+M	packages/gtk2/Makefile
+M	packages/gtk2/examples/Makefile
+M	packages/gtk2/examples/filechooser/Makefile
+M	packages/gtk2/examples/gettingstarted/Makefile
+M	packages/gtk2/examples/gtk_demo/Makefile
+M	packages/gtk2/examples/gtkglext/Makefile
+M	packages/gtk2/examples/helloworld/Makefile
+M	packages/gtk2/examples/helloworld2/Makefile
+M	packages/gtk2/examples/plugins/Makefile
+M	packages/gtk2/examples/scribble_simple/Makefile
+M	packages/hash/Makefile
+M	packages/hash/examples/Makefile
+M	packages/hermes/Makefile
+M	packages/httpd13/Makefile
+M	packages/httpd20/Makefile
+M	packages/httpd20/examples/Makefile
+M	packages/httpd22/Makefile
+M	packages/httpd22/examples/Makefile
+M	packages/httpd24/Makefile
+M	packages/httpd24/examples/Makefile
+M	packages/ibase/Makefile
+M	packages/ibase/examples/Makefile
+M	packages/iconvenc/Makefile
+M	packages/iconvenc/examples/Makefile
+M	packages/ide/Makefile
+M	packages/ide/compiler/Makefile
+M	packages/ide/fakegdb/Makefile
+M	packages/imagemagick/Makefile
+M	packages/imlib/Makefile
+M	packages/iosxlocale/Makefile
+M	packages/jni/Makefile
+M	packages/ldap/Makefile
+M	packages/libc/Makefile
+M	packages/libcups/Makefile
+M	packages/libcurl/Makefile
+M	packages/libcurl/examples/Makefile
+M	packages/libenet/Makefile
+M	packages/libffi/Makefile
+M	packages/libfontconfig/Makefile
+M	packages/libgbafpc/Makefile
+M	packages/libgbafpc/examples/Makefile
+M	packages/libgbafpc/examples/audio/Makefile
+M	packages/libgbafpc/examples/audio/PlayBoyScout/Makefile
+M	packages/libgbafpc/examples/graphics/Makefile
+M	packages/libgbafpc/examples/graphics/PCXView/Makefile
+M	packages/libgbafpc/examples/graphics/SimpleBGScroll/Makefile
+M	packages/libgbafpc/examples/graphics/ansi_console/Makefile
+M	packages/libgbafpc/examples/template/Makefile
+M	packages/libgc/Makefile
+M	packages/libgd/Makefile
+M	packages/libgd/examples/Makefile
+M	packages/libmagic/Makefile
+M	packages/libmicrohttpd/Makefile
+M	packages/libndsfpc/Makefile
+M	packages/libndsfpc/examples/Makefile
+M	packages/libndsfpc/examples/audio/Makefile
+M	packages/libndsfpc/examples/audio/maxmod/Makefile
+M	packages/libndsfpc/examples/audio/maxmod/audio_modes/Makefile
+M	packages/libndsfpc/examples/audio/maxmod/basic_sound/Makefile
+M	packages/libndsfpc/examples/audio/maxmod/reverb/Makefile
+M	packages/libndsfpc/examples/audio/maxmod/song_events_example/Makefile
+M	packages/libndsfpc/examples/audio/maxmod/song_events_example2/Makefile
+M	packages/libndsfpc/examples/audio/maxmod/streaming/Makefile
+M	packages/libndsfpc/examples/audio/micrecord/Makefile
+M	packages/libndsfpc/examples/card/Makefile
+M	packages/libndsfpc/examples/card/eeprom/Makefile
+M	packages/libndsfpc/examples/debugging/Makefile
+M	packages/libndsfpc/examples/debugging/exceptionTest/Makefile
+M	packages/libndsfpc/examples/ds_motion/Makefile
+M	packages/libndsfpc/examples/dswifi/Makefile
+M	packages/libndsfpc/examples/dswifi/ap_search/Makefile
+M	packages/libndsfpc/examples/dswifi/autoconnect/Makefile
+M	packages/libndsfpc/examples/dswifi/httpget/Makefile
+M	packages/libndsfpc/examples/filesystem/Makefile
+M	packages/libndsfpc/examples/filesystem/embedded_gbfs/Makefile
+M	packages/libndsfpc/examples/filesystem/libfat/Makefile
+M	packages/libndsfpc/examples/filesystem/libfat/access_dir/Makefile
+M	packages/libndsfpc/examples/filesystem/libfat/access_file/Makefile
+M	packages/libndsfpc/examples/filesystem/libfat/libfatdir/Makefile
+M	packages/libndsfpc/examples/filesystem/nitrofs/Makefile
+M	packages/libndsfpc/examples/filesystem/nitrofs/nitrodir/Makefile
+M	packages/libndsfpc/examples/gl2d/2Dplus3D/Makefile
+M	packages/libndsfpc/examples/gl2d/Makefile
+M	packages/libndsfpc/examples/gl2d/dual_screen/Makefile
+M	packages/libndsfpc/examples/gl2d/fonts/Makefile
+M	packages/libndsfpc/examples/gl2d/primitives/Makefile
+M	packages/libndsfpc/examples/gl2d/scrolling/Makefile
+M	packages/libndsfpc/examples/gl2d/sprites/Makefile
+M	packages/libndsfpc/examples/graphics/3D/3D_Both_Screens/Makefile
+M	packages/libndsfpc/examples/graphics/3D/BoxTest/Makefile
+M	packages/libndsfpc/examples/graphics/3D/Display_List/Makefile
+M	packages/libndsfpc/examples/graphics/3D/Display_List_2/Makefile
+M	packages/libndsfpc/examples/graphics/3D/Env_Mapping/Makefile
+M	packages/libndsfpc/examples/graphics/3D/Makefile
+M	packages/libndsfpc/examples/graphics/3D/Mixed_Text_3D/Makefile
+M	packages/libndsfpc/examples/graphics/3D/Ortho/Makefile
+M	packages/libndsfpc/examples/graphics/3D/Paletted_Cube/Makefile
+M	packages/libndsfpc/examples/graphics/3D/Picking/Makefile
+M	packages/libndsfpc/examples/graphics/3D/Simple_Quad/Makefile
+M	packages/libndsfpc/examples/graphics/3D/Simple_Tri/Makefile
+M	packages/libndsfpc/examples/graphics/3D/Textured_Cube/Makefile
+M	packages/libndsfpc/examples/graphics/3D/Textured_Quad/Makefile
+M	packages/libndsfpc/examples/graphics/3D/Toon_Shading/Makefile
+M	packages/libndsfpc/examples/graphics/3D/nehe/Makefile
+M	packages/libndsfpc/examples/graphics/3D/nehe/lesson01/Makefile
+M	packages/libndsfpc/examples/graphics/3D/nehe/lesson02/Makefile
+M	packages/libndsfpc/examples/graphics/3D/nehe/lesson03/Makefile
+M	packages/libndsfpc/examples/graphics/3D/nehe/lesson04/Makefile
+M	packages/libndsfpc/examples/graphics/3D/nehe/lesson05/Makefile
+M	packages/libndsfpc/examples/graphics/3D/nehe/lesson06/Makefile
+M	packages/libndsfpc/examples/graphics/3D/nehe/lesson07/Makefile
+M	packages/libndsfpc/examples/graphics/3D/nehe/lesson08/Makefile
+M	packages/libndsfpc/examples/graphics/3D/nehe/lesson09/Makefile
+M	packages/libndsfpc/examples/graphics/3D/nehe/lesson10/Makefile
+M	packages/libndsfpc/examples/graphics/3D/nehe/lesson10b/Makefile
+M	packages/libndsfpc/examples/graphics/3D/nehe/lesson11/Makefile
+M	packages/libndsfpc/examples/graphics/Backgrounds/16bit_color_bmp/Makefile
+M	packages/libndsfpc/examples/graphics/Backgrounds/256_color_bmp/Makefile
+M	packages/libndsfpc/examples/graphics/Backgrounds/Double_Buffer/Makefile
+M	packages/libndsfpc/examples/graphics/Backgrounds/Makefile
+M	packages/libndsfpc/examples/graphics/Backgrounds/all_in_one/Makefile
+M	packages/libndsfpc/examples/graphics/Backgrounds/rotation/Makefile
+M	packages/libndsfpc/examples/graphics/Effects/Makefile
+M	packages/libndsfpc/examples/graphics/Effects/windows/Makefile
+M	packages/libndsfpc/examples/graphics/Ext_Palettes/Makefile
+M	packages/libndsfpc/examples/graphics/Ext_Palettes/backgrounds/Makefile
+M	packages/libndsfpc/examples/graphics/Makefile
+M	packages/libndsfpc/examples/graphics/Printing/Makefile
+M	packages/libndsfpc/examples/graphics/Printing/ansi_console/Makefile
+M	packages/libndsfpc/examples/graphics/Printing/console_windows/Makefile
+M	packages/libndsfpc/examples/graphics/Printing/custom_font/Makefile
+M	packages/libndsfpc/examples/graphics/Printing/print_both_screens/Makefile
+M	packages/libndsfpc/examples/graphics/Printing/rotscale_text/Makefile
+M	packages/libndsfpc/examples/graphics/Sprites/Makefile
+M	packages/libndsfpc/examples/graphics/Sprites/allocation_test/Makefile
+M	packages/libndsfpc/examples/graphics/Sprites/animate_simple/Makefile
+M	packages/libndsfpc/examples/graphics/Sprites/bitmap_sprites/Makefile
+M	packages/libndsfpc/examples/graphics/Sprites/fire_and_sprites/Makefile
+M	packages/libndsfpc/examples/graphics/Sprites/simple/Makefile
+M	packages/libndsfpc/examples/graphics/Sprites/sprite_extended_palettes/Makefile
+M	packages/libndsfpc/examples/graphics/Sprites/sprite_rotate/Makefile
+M	packages/libndsfpc/examples/graphics/grit/256colorTilemap/Makefile
+M	packages/libndsfpc/examples/graphics/grit/Makefile
+M	packages/libndsfpc/examples/hello_world/Makefile
+M	packages/libndsfpc/examples/input/Makefile
+M	packages/libndsfpc/examples/input/Touch_Pad/Makefile
+M	packages/libndsfpc/examples/input/Touch_Pad/touch_area/Makefile
+M	packages/libndsfpc/examples/input/Touch_Pad/touch_look/Makefile
+M	packages/libndsfpc/examples/input/Touch_Pad/touch_test/Makefile
+M	packages/libndsfpc/examples/input/keyboard/Makefile
+M	packages/libndsfpc/examples/input/keyboard/keyboard_async/Makefile
+M	packages/libndsfpc/examples/input/keyboard/keyboard_stdin/Makefile
+M	packages/libndsfpc/examples/time/Makefile
+M	packages/libndsfpc/examples/time/RealTimeClock/Makefile
+M	packages/libndsfpc/examples/time/stopwatch/Makefile
+M	packages/libndsfpc/examples/time/timercallback/Makefile
+M	packages/libnettle/Makefile
+M	packages/libogcfpc/Makefile
+M	packages/libogcfpc/examples/Makefile
+M	packages/libogcfpc/examples/audio/Makefile
+M	packages/libogcfpc/examples/audio/modplay/Makefile
+M	packages/libogcfpc/examples/audio/mp3player/Makefile
+M	packages/libogcfpc/examples/devices/Makefile
+M	packages/libogcfpc/examples/devices/network/Makefile
+M	packages/libogcfpc/examples/devices/network/sockettest/Makefile
+M	packages/libogcfpc/examples/devices/usbgecko/Makefile
+M	packages/libogcfpc/examples/devices/usbgecko/gdbstub/Makefile
+M	packages/libogcfpc/examples/devices/usbkeyboard/Makefile
+M	packages/libogcfpc/examples/devices/usbkeyboard/basic_stdin/Makefile
+M	packages/libogcfpc/examples/filesystem/Makefile
+M	packages/libogcfpc/examples/filesystem/directory/Makefile
+M	packages/libogcfpc/examples/graphics/Makefile
+M	packages/libogcfpc/examples/graphics/gx/Makefile
+M	packages/libogcfpc/examples/graphics/gx/gxSprites/Makefile
+M	packages/libogcfpc/examples/graphics/gx/neheGX/Makefile
+M	packages/libogcfpc/examples/graphics/gx/neheGX/lesson1/Makefile
+M	packages/libogcfpc/examples/graphics/gx/neheGX/lesson2/Makefile
+M	packages/libogcfpc/examples/graphics/gx/neheGX/lesson3/Makefile
+M	packages/libogcfpc/examples/graphics/gx/neheGX/lesson4/Makefile
+M	packages/libogcfpc/examples/graphics/gx/neheGX/lesson5/Makefile
+M	packages/libogcfpc/examples/graphics/gx/neheGX/lesson6/Makefile
+M	packages/libogcfpc/examples/graphics/gx/neheGX/lesson7/Makefile
+M	packages/libogcfpc/examples/graphics/gx/neheGX/lesson8/Makefile
+M	packages/libogcfpc/examples/graphics/gx/neheGX/lesson9/Makefile
+M	packages/libogcfpc/examples/graphics/gx/triangle/Makefile
+M	packages/libogcfpc/examples/template/Makefile
+M	packages/libpng/Makefile
+M	packages/librsvg/Makefile
+M	packages/libsee/Makefile
+M	packages/libsee/examples/Makefile
+M	packages/libtar/Makefile
+M	packages/libusb/Makefile
+M	packages/libvlc/Makefile
+M	packages/libxml/Makefile
+M	packages/libxml/examples/Makefile
+M	packages/lua/Makefile
+M	packages/mad/Makefile
+M	packages/matroska/Makefile
+M	packages/modplug/Makefile
+M	packages/morphunits/Makefile
+M	packages/mysql/Makefile
+M	packages/mysql/examples/Makefile
+M	packages/ncurses/Makefile
+M	packages/ncurses/examples/Makefile
+M	packages/newt/Makefile
+M	packages/newt/examples/Makefile
+M	packages/numlib/Makefile
+M	packages/numlib/examples/Makefile
+M	packages/nvapi/Makefile
+M	packages/objcrtl/Makefile
+M	packages/odata/Makefile
+M	packages/odbc/Makefile
+M	packages/odbc/examples/Makefile
+M	packages/oggvorbis/Makefile
+M	packages/openal/Makefile
+M	packages/openal/examples/Makefile
+M	packages/opencl/Makefile
+M	packages/opengl/Makefile
+M	packages/opengl/examples/Makefile
+M	packages/opengles/Makefile
+M	packages/opengles/examples/Makefile
+M	packages/openssl/Makefile
+M	packages/oracle/Makefile
+M	packages/oracle/examples/Makefile
+M	packages/os2units/Makefile
+M	packages/os2units/examples/Makefile
+M	packages/os4units/Makefile
+M	packages/palmunits/Makefile
+M	packages/pasjpeg/Makefile
+M	packages/pastojs/Makefile
+M	packages/paszlib/Makefile
+M	packages/paszlib/examples/Makefile
+M	packages/pcap/Makefile
+M	packages/postgres/Makefile
+M	packages/postgres/examples/Makefile
+M	packages/proj4/Makefile
+M	packages/ptc/Makefile
+M	packages/ptc/examples/Makefile
+M	packages/pthreads/Makefile
+M	packages/pxlib/Makefile
+M	packages/pxlib/examples/Makefile
+M	packages/qlunits/Makefile
+M	packages/regexpr/Makefile
+M	packages/regexpr/examples/Makefile
+M	packages/rexx/Makefile
+M	packages/rexx/examples/Makefile
+M	packages/rtl-console/Makefile
+M	packages/rtl-extra/Makefile
+M	packages/rtl-generics/Makefile
+M	packages/rtl-objpas/Makefile
+M	packages/rtl-unicode/Makefile
+M	packages/sdl/Makefile
+M	packages/sndfile/Makefile
+M	packages/sqlite/Makefile
+M	packages/svgalib/Makefile
+M	packages/svgalib/examples/Makefile
+M	packages/symbolic/Makefile
+M	packages/symbolic/examples/Makefile
+M	packages/syslog/Makefile
+M	packages/syslog/examples/Makefile
+M	packages/tcl/Makefile
+M	packages/tosunits/Makefile
+M	packages/tplylib/Makefile
+M	packages/univint/Makefile
+M	packages/univint/examples/Makefile
+M	packages/unixutil/Makefile
+M	packages/unzip/Makefile
+M	packages/users/Makefile
+M	packages/users/examples/Makefile
+M	packages/utmp/Makefile
+M	packages/utmp/examples/Makefile
+M	packages/uuid/Makefile
+M	packages/uuid/examples/Makefile
+M	packages/vcl-compat/Makefile
+M	packages/wasmtime/Makefile
+M	packages/webidl/Makefile
+M	packages/winceunits/Makefile
+M	packages/winunits-base/Makefile
+M	packages/winunits-jedi/Makefile
+M	packages/x11/Makefile
+M	packages/xforms/Makefile
+M	packages/xforms/examples/Makefile
+M	packages/zlib/Makefile
+M	packages/zorba/Makefile
+M	rtl/Makefile
+M	rtl/aix/Makefile
+M	rtl/amiga/Makefile
+M	rtl/android/Makefile
+M	rtl/android/jvm/Makefile
+M	rtl/aros/Makefile
+M	rtl/atari/Makefile
+M	rtl/beos/Makefile
+M	rtl/darwin/Makefile
+M	rtl/dragonfly/Makefile
+M	rtl/embedded/Makefile
+M	rtl/emx/Makefile
+M	rtl/freebsd/Makefile
+M	rtl/freertos/Makefile
+M	rtl/gba/Makefile
+M	rtl/go32v2/Makefile
+M	rtl/haiku/Makefile
+M	rtl/java/Makefile
+M	rtl/linux/Makefile
+M	rtl/macos/Makefile
+M	rtl/morphos/Makefile
+M	rtl/msdos/Makefile
+M	rtl/msxdos/Makefile
+M	rtl/nativent/Makefile
+M	rtl/nds/Makefile
+M	rtl/netbsd/Makefile
+M	rtl/netware/Makefile
+M	rtl/netwlibc/Makefile
+M	rtl/openbsd/Makefile
+M	rtl/os2/Makefile
+M	rtl/palmos/Makefile
+M	rtl/qnx/Makefile
+M	rtl/sinclairql/Makefile
+M	rtl/solaris/Makefile
+M	rtl/symbian/Makefile
+M	rtl/wasi/Makefile
+M	rtl/watcom/Makefile
+M	rtl/wii/Makefile
+M	rtl/win16/Makefile
+M	rtl/win32/Makefile
+M	rtl/win64/Makefile
+M	rtl/wince/Makefile
+M	rtl/zxspectrum/Makefile
+M	tests/Makefile
+M	tests/tstunits/Makefile
+M	tests/utils/Makefile
+M	tests/utils/testsuite/Makefile
+M	utils/Makefile
+M	utils/debugsvr/Makefile
+M	utils/debugsvr/console/Makefile
+M	utils/debugsvr/gtk/Makefile
+M	utils/dxegen/Makefile
+M	utils/fpcm/Makefile
+M	utils/fpcm/fpcmake.inc
+M	utils/fpcm/revision.inc
+M	utils/fpcmkcfg/Makefile
+M	utils/fpcres/Makefile
+M	utils/fpcreslipo/Makefile
+M	utils/fpdoc/Makefile
+M	utils/fpdoc/fpde/Makefile
+M	utils/fpmc/Makefile
+M	utils/fppkg/Makefile
+M	utils/fprcp/Makefile
+M	utils/h2pas/Makefile
+M	utils/ihxutil/Makefile
+M	utils/importtl/Makefile
+M	utils/instantfpc/Makefile
+M	utils/json2pas/Makefile
+M	utils/mksymbian/Makefile
+M	utils/pas2fpm/Makefile
+M	utils/pas2jni/Makefile
+M	utils/pas2js/Makefile
+M	utils/pas2ut/Makefile
+M	utils/rmwait/Makefile
+M	utils/tply/Makefile
+M	utils/unicode/Makefile
+M	utils/wasmbin/Makefile
+
+******************************************************************************
+commit e2d86ad66a13ed9fece73ed3afa086a728441da9
+Author: Jinyang He <hejinyang@loongson.cn>
+Date:   Sat Nov 5 15:39:27 2022 +0800
+
+    add ppsuf so that we can compiler loongarch fpc now
+
+M	Makefile.fpc
+
+******************************************************************************
+commit 176462c39a2a15a2e68a34babaf4915a66668ebc
+Author: Jinyang He <hejinyang@loongson.cn>
+Date:   Mon Oct 17 09:30:55 2022 +0800
+
+    add loongarch64 tests support
+
+M	tests/Makefile
+M	tests/Makefile.fpc
+M	tests/tbs/tb0072.pp
+M	tests/tbs/tb0193.pp
+A	tests/test/cg/obj/linux/loongarch64/cpptcl1.o
+A	tests/test/cg/obj/linux/loongarch64/cpptcl2.o
+A	tests/test/cg/obj/linux/loongarch64/ctest.o
+A	tests/test/cg/obj/linux/loongarch64/tcext3.o
+A	tests/test/cg/obj/linux/loongarch64/tcext4.o
+A	tests/test/cg/obj/linux/loongarch64/tcext5.o
+A	tests/test/cg/obj/linux/loongarch64/tcext6.o
+A	tests/test/treturn1.pp
+M	tests/webtbs/tw11563.pp
+
+******************************************************************************
+commit 7cde8df8c78c3e7f7af2758c53e57e2867680baa
+Author: Jinyang He <hejinyang@loongson.cn>
+Date:   Sat Nov 5 10:11:22 2022 +0800
+
+    Add loongarch64 packages support
+
+M	packages/fcl-res/src/elfconsts.pp
+M	packages/fcl-res/src/elfreader.pp
+M	packages/fcl-res/src/elfsubwriter.inc
+M	packages/fcl-res/src/elfwriter.pp
+M	packages/fpmkunit/src/fpmkunit.pp
+M	packages/gtk2/src/glib/glib2.pas
+M	packages/ide/fpmake.pp
+M	packages/libffi/src/ffi.pp
+M	packages/rtl-extra/src/linux/unixsock.inc
+M	packages/rtl-extra/src/unix/ipc.pp
+M	packages/rtl-generics/src/generics.hashes.pas
+M	packages/rtl-objpas/src/inc/rtti.pp
+M	utils/fpcres/fpcres.pas
+M	utils/fpcres/target.pas
+
+******************************************************************************
+commit 92e60d210759a6250e1820f891c8aade6214ad20
+Author: Jinyang He <hejinyang@loongson.cn>
+Date:   Sat Nov 5 10:06:34 2022 +0800
+
+    add loongarch64 linux rtl support
+
+M	compiler/systems.pas
+M	rtl/linux/Makefile.fpc
+A	rtl/linux/loongarch64/bsyscall.inc
+A	rtl/linux/loongarch64/si_c.inc
+A	rtl/linux/loongarch64/si_dll.inc
+A	rtl/linux/loongarch64/si_g.inc
+A	rtl/linux/loongarch64/si_prc.inc
+A	rtl/linux/loongarch64/sighnd.inc
+A	rtl/linux/loongarch64/sighndh.inc
+A	rtl/linux/loongarch64/stat.inc
+A	rtl/linux/loongarch64/syscall.inc
+A	rtl/linux/loongarch64/syscallh.inc
+A	rtl/linux/loongarch64/sysnr.inc
+M	rtl/linux/osdefs.inc
+M	rtl/linux/ostypes.inc
+M	rtl/linux/system.pp
+M	rtl/linux/termios.inc
+M	rtl/unix/cthreads.pp
+
+******************************************************************************
+commit 664c613d960ed04fb02ab85475032e6f09c4e902
+Author: Jinyang He <hejinyang@loongson.cn>
+Date:   Sat Nov 5 10:05:58 2022 +0800
+
+    add loongarch64 rtl support
+
+M	rtl/inc/system.inc
+M	rtl/inc/systemh.inc
+A	rtl/loongarch64/cpuh.inc
+A	rtl/loongarch64/int64p.inc
+A	rtl/loongarch64/loongarch64.inc
+A	rtl/loongarch64/makefile.cpu
+A	rtl/loongarch64/math.inc
+A	rtl/loongarch64/mathu.inc
+A	rtl/loongarch64/set.inc
+A	rtl/loongarch64/setjump.inc
+A	rtl/loongarch64/setjumph.inc
+A	rtl/loongarch64/strings.inc
+A	rtl/loongarch64/stringss.inc
+
+******************************************************************************
+commit f737860763db3e6e581eea342f2ff148a700ec86
+Author: Jinyang He <hejinyang@loongson.cn>
+Date:   Sat Nov 5 10:05:07 2022 +0800
+
+    Add loongarch64 fpcmake support
+
+M	utils/fpcm/fpcmake.ini
+M	utils/fpcm/fpcmmain.pp
+
+******************************************************************************
+commit 3d2c96ebbfb8ba47349db24d327fb1b577ab12e8
+Author: Jinyang He <hejinyang@loongson.cn>
+Date:   Sat Nov 5 10:04:19 2022 +0800
+
+    Add loongarch64 linux support to compiler
+
+M	compiler/loongarch64/agcpugas.pas
+M	compiler/systems.inc
+M	compiler/systems.pas
+M	compiler/systems/i_linux.pas
+M	compiler/systems/t_linux.pas
+M	compiler/utils/ppuutils/ppudump.pp
+
+******************************************************************************
+commit 12c4290ffe114161fca1a0c5ecdcac5cfd7f87a2
+Author: Jinyang He <hejinyang@loongson.cn>
+Date:   Sat Nov 5 10:02:25 2022 +0800
+
+    Add loongarch64 architecture support to compiler
+
+M	compiler/Makefile.fpc
+M	compiler/aggas.pas
+M	compiler/aoptobj.pas
+M	compiler/cfidwarf.pas
+M	compiler/cgbase.pas
+M	compiler/entfile.pas
+M	compiler/fpcdefs.inc
+M	compiler/globals.pas
+A	compiler/loongarch64/aasmcpu.pas
+A	compiler/loongarch64/agcpugas.pas
+A	compiler/loongarch64/aoptcpu.pas
+A	compiler/loongarch64/aoptcpub.pas
+A	compiler/loongarch64/aoptcpuc.pas
+A	compiler/loongarch64/aoptcpud.pas
+A	compiler/loongarch64/cgcpu.pas
+A	compiler/loongarch64/cpubase.pas
+A	compiler/loongarch64/cpuinfo.pas
+A	compiler/loongarch64/cpunode.pas
+A	compiler/loongarch64/cpupara.pas
+A	compiler/loongarch64/cpupi.pas
+A	compiler/loongarch64/cputarg.pas
+A	compiler/loongarch64/hlcgcpu.pas
+A	compiler/loongarch64/itcpugas.pas
+A	compiler/loongarch64/loongarch64att.inc
+A	compiler/loongarch64/loongarch64nop.inc
+A	compiler/loongarch64/loongarch64op.inc
+A	compiler/loongarch64/loongarchins.dat
+A	compiler/loongarch64/loongarchreg.dat
+A	compiler/loongarch64/ncpuadd.pas
+A	compiler/loongarch64/ncpucnv.pas
+A	compiler/loongarch64/ncpuinl.pas
+A	compiler/loongarch64/ncpumat.pas
+A	compiler/loongarch64/ncpuset.pas
+A	compiler/loongarch64/racpu.pas
+A	compiler/loongarch64/racpugas.pas
+A	compiler/loongarch64/rgcpu.pas
+A	compiler/loongarch64/rloongarch64abi.inc
+A	compiler/loongarch64/rloongarch64con.inc
+A	compiler/loongarch64/rloongarch64dwa.inc
+A	compiler/loongarch64/rloongarch64nor.inc
+A	compiler/loongarch64/rloongarch64num.inc
+A	compiler/loongarch64/rloongarch64rni.inc
+A	compiler/loongarch64/rloongarch64sri.inc
+A	compiler/loongarch64/rloongarch64sta.inc
+A	compiler/loongarch64/rloongarch64std.inc
+A	compiler/loongarch64/rloongarch64sup.inc
+A	compiler/loongarch64/symcpu.pas
+A	compiler/loongarch64/tripletcpu.pas
+M	compiler/ncgcnv.pas
+M	compiler/options.pas
+M	compiler/pp.pas
+M	compiler/psystem.pas
+M	compiler/raatt.pas
+M	compiler/systems.inc
+M	compiler/systems.pas
+M	compiler/tgobj.pas
+M	compiler/utils/fpc.pp
+A	compiler/utils/mkloongarch64ins.pp
+A	compiler/utils/mkloongarch64reg.pp
+M	compiler/utils/ppuutils/ppudump.pp
+M	compiler/version.pas
+
+******************************************************************************
+commit 8fac3d62ce2a37cfc11f16ed5d47761c6cfd57d2
+Author: Jinyang He <hejinyang@loongson.cn>
+Date:   Sat Nov 5 09:51:29 2022 +0800
+
+    add has_double_field
+
+M	compiler/symtable.pas
+
+******************************************************************************
+commit 96f43001588a2a88d10cf2e2a8d5e8561e98a774
+Author: Jinyang He <hejinyang@loongson.cn>
+Date:   Sat Nov 5 09:49:49 2022 +0800
+
+    Fix the edge of first_imaginary in move op
+
+M	compiler/rgobj.pas
+
+******************************************************************************
+commit 2d680afab7ce6d66ee736c93761c82141229ab67
+Author: Jinyang He <hejinyang@loongson.cn>
+Date:   Sat Nov 5 09:48:55 2022 +0800
+
+    Fix the ~ is NOR rather than NOT
+
+M	compiler/raatt.pas
+
+******************************************************************************
+commit cda8971baaeb240bb7c5075faa96dd4be02d923a
+Author: Jinyang He <hejinyang@loongson.cn>
+Date:   Sat Nov 5 09:48:02 2022 +0800
+
+    Add dwarf cfa support
+
+M	compiler/aasmdata.pas
+M	compiler/cfidwarf.pas
+
+******************************************************************************
 commit 524589231fb1fc8b21c9c76f6dffb61190f44f45
 Author: Rika Ichinose <rrunewalsh@gmail.com>
 Date:   Sat Jan 28 16:52:14 2023 +0300
@@ -37738,7 +38437,6 @@ Date:   Tue Mar 9 16:31:02 2021 +0000
 
 M	tests/utils/avx/asmtestgenerator.pas
 M	tests/utils/avx/avxopcodes.pas
-
 ******************************************************************************
 commit 15ff16d85218ad77941878493af4b120cb11da47
 Author: nickysn <nickysn@gmail.com>
@@ -37905,6 +38603,7 @@ Date:   Mon Mar 8 15:00:37 2021 +0000
     git-svn-id: branches/unicodekvm@48910 -
 
 M	packages/rtl-console/src/inc/video.inc
+
 ******************************************************************************
 commit 2abcf62a958476ba80b78b3c7875d9272d9f7e90
 Author: nickysn <nickysn@gmail.com>
