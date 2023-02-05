@@ -1,4 +1,13 @@
 ******************************************************************************
+commit d07e34297f55768911c82fa9690511f7bcb07e80
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sun Feb 5 12:53:14 2023 +0100
+
+    * Fix interlockedincrement
+
+M	packages/fcl-web/src/jsonrpc/fpjsonrpc.pp
+
+******************************************************************************
 commit 2619e6b87008ce336c7b64823c22cb322880ebb4
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Sun Feb 5 11:59:06 2023 +0100
