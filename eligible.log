@@ -1,4 +1,26 @@
 ******************************************************************************
+commit ffa14ee4485dbb452fe4a89b9c7a6340ea359c7f
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sun Feb 5 10:46:38 2023 +0100
+
+    Utf8CodePointLen: remove pointer arithmetic to fix JVM compatibility
+
+M	rtl/inc/generic.inc
+
+******************************************************************************
+commit 7f41bb4718f238a86ab07aeef677d27c16a43c5a
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sat Feb 4 12:23:29 2023 +0100
+
+    JVM: add typesym for anonymous record typed constants
+    
+    Fixes compilation of system unit with JVM compiler after b38d13577f943
+
+M	compiler/pdecl.pas
+M	compiler/pdecvar.pas
+M	compiler/symutil.pas
+
+******************************************************************************
 commit 9c10167b6fd114d4996debe4ce117b3df3d38a53
 Author: florian <florian@freepascal.org>
 Date:   Sat Feb 4 19:19:53 2023 +0100
@@ -37882,7 +37904,6 @@ Date:   Thu Mar 4 15:54:43 2021 +0000
     git-svn-id: branches/tg74/avx512-0037785@48877 -
 
 M	tests/utils/avx/asmtestgenerator.pas
-
 ******************************************************************************
 commit 798eb0e768dee97be6c729e35445765dbedb7d36
 Author: tg74 <tg74@idefix.freepascal.org>
@@ -37904,6 +37925,7 @@ Date:   Wed Mar 3 16:27:21 2021 +0000
     git-svn-id: branches/tg74/avx512-0037785@48873 -
 
 M	tests/utils/avx/asmtestgenerator.pas
+
 ******************************************************************************
 commit fa8bbc43960c51ef1fa09ef630ab53c08e76ea29
 Author: tg74 <tg74@idefix.freepascal.org>
