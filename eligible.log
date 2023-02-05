@@ -1,4 +1,32 @@
 ******************************************************************************
+commit 2619e6b87008ce336c7b64823c22cb322880ebb4
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sun Feb 5 11:59:06 2023 +0100
+
+    * Fix compiler warning
+
+M	packages/fcl-mustache/src/fpmustache.pp
+
+******************************************************************************
+commit cb0ed2b6f0f06783a77b505b08a49e817eddd56c
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sun Feb 5 11:35:11 2023 +0100
+
+    * Correct params checking in case of array
+
+M	packages/fcl-web/src/jsonrpc/fpjsonrpc.pp
+
+******************************************************************************
+commit 6e5c5f599e5c8d12a7c8da81f949adf7f61e6916
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sun Feb 5 11:32:50 2023 +0100
+
+    * Completion of put/patch split
+
+M	packages/fcl-web/src/restbridge/sqldbrestbridge.pp
+M	packages/fcl-web/src/restbridge/sqldbrestdata.pp
+
+******************************************************************************
 commit ffa14ee4485dbb452fe4a89b9c7a6340ea359c7f
 Author: Jonas Maebe <jonas@freepascal.org>
 Date:   Sun Feb 5 10:46:38 2023 +0100
@@ -37871,7 +37899,6 @@ Date:   Mon Mar 8 14:30:06 2021 +0000
 
 M	packages/rtl-console/src/inc/video.inc
 M	packages/rtl-console/src/inc/videoh.inc
-
 ******************************************************************************
 commit ad753c0bbd52d42685ef5cdb0406c2c7e369c605
 Author: tg74 <tg74@idefix.freepascal.org>
@@ -37904,6 +37931,7 @@ Date:   Thu Mar 4 15:54:43 2021 +0000
     git-svn-id: branches/tg74/avx512-0037785@48877 -
 
 M	tests/utils/avx/asmtestgenerator.pas
+
 ******************************************************************************
 commit 798eb0e768dee97be6c729e35445765dbedb7d36
 Author: tg74 <tg74@idefix.freepascal.org>
