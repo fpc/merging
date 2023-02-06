@@ -1,4 +1,15 @@
 ******************************************************************************
+commit 2ac86ab662ea92dd008447d7fea7727ea291f134
+Author: marcoonthegit <marco@freepascal.org>
+Date:   Mon Feb 6 14:04:46 2023 +0100
+
+    * some extra constants and added typing to setexecutionstate
+
+M	rtl/win/wininc/base.inc
+M	rtl/win/wininc/defines.inc
+M	rtl/win/wininc/func.inc
+
+******************************************************************************
 commit 0639ec476d126a95917a72d3bbf1c81cb3b53066
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Mon Feb 6 09:53:30 2023 +0100
@@ -38432,7 +38443,6 @@ Date:   Fri Jun 18 14:06:55 2021 +0000
     git-svn-id: branches/tg74/avx512-0037785@49512 -
 
 M	compiler/x86/x86ins.dat
-
 ******************************************************************************
 commit 314e55204655aaa8f2db239bcf34399e52a04718
 Author: nickysn <nickysn@gmail.com>
@@ -38443,6 +38453,7 @@ Date:   Sun Mar 14 21:49:17 2021 +0000
     git-svn-id: branches/unicodekvm@48975 -
 
 M	utils/fpcm/revision.inc
+
 ******************************************************************************
 commit b4a002e3e777f7a26040bf42a2372a8f1908e9ba
 Author: tg74 <tg74@idefix.freepascal.org>
