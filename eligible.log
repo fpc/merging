@@ -1,4 +1,35 @@
 ******************************************************************************
+commit 33dfb6cb4e38fbb9f960c900f3c57a8aa7faffc0
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Thu Feb 2 15:47:35 2023 +0000
+
+      * x86: Converted bit-test optimisations to use
+             debug_hexstr so comments aren't truncated
+             (and put $ before BTx values)
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
+commit ae47cc2c88688f9daaeec061d870db8f88bedd52
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Thu Feb 2 15:48:14 2023 +0000
+
+      * x86: New debug_hexstr instruction to help produce concise debug comments
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
+commit 6e84ee580668f9df9fe5cd9219fb2f1858fe5d98
+Author: florian <florian@freepascal.org>
+Date:   Mon Feb 6 22:26:02 2023 +0100
+
+      * patch by Jinyang He to fix building loongarch64 with -Oodfa/-O4
+
+M	compiler/loongarch64/cgcpu.pas
+M	compiler/loongarch64/cpupara.pas
+M	compiler/loongarch64/racpugas.pas
+
+******************************************************************************
 commit 2ac86ab662ea92dd008447d7fea7727ea291f134
 Author: marcoonthegit <marco@freepascal.org>
 Date:   Mon Feb 6 14:04:46 2023 +0100
