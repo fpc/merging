@@ -1,4 +1,22 @@
 ******************************************************************************
+commit 0639ec476d126a95917a72d3bbf1c81cb3b53066
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Mon Feb 6 09:53:30 2023 +0100
+
+    * No symlink support on WinCE
+
+M	rtl/wince/sysutils.pp
+
+******************************************************************************
+commit 9a08966d77e588cc35d55eddc277a7e115bcc683
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Mon Feb 6 09:46:53 2023 +0100
+
+    * Removed debug define
+
+M	packages/fcl-db/src/sqldb/postgres/pqconnection.pp
+
+******************************************************************************
 commit 783bbb66f9324152ba2f2914c8a2a9a1884c37e4
 Author: Jinyang He <hejinyang@loongson.cn>
 Date:   Sat Nov 5 10:50:57 2022 +0800
@@ -38425,7 +38443,6 @@ Date:   Sun Mar 14 21:49:17 2021 +0000
     git-svn-id: branches/unicodekvm@48975 -
 
 M	utils/fpcm/revision.inc
-
 ******************************************************************************
 commit b4a002e3e777f7a26040bf42a2372a8f1908e9ba
 Author: tg74 <tg74@idefix.freepascal.org>
@@ -38437,6 +38454,7 @@ Date:   Tue Mar 9 16:31:02 2021 +0000
 
 M	tests/utils/avx/asmtestgenerator.pas
 M	tests/utils/avx/avxopcodes.pas
+
 ******************************************************************************
 commit 15ff16d85218ad77941878493af4b120cb11da47
 Author: nickysn <nickysn@gmail.com>
