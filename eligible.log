@@ -1,4 +1,22 @@
 ******************************************************************************
+commit 73f11c71cbee01dae6a9a27aca85513e8fe81eb5
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Tue Feb 7 22:19:43 2023 +0000
+
+     Commit new revision.inc file after f737860763
+
+M	utils/fpcm/revision.inc
+
+******************************************************************************
+commit f79448a9ffff84ffeb2242e7ec442477ad6a022c
+Author: florian <florian@freepascal.org>
+Date:   Tue Feb 7 22:59:33 2023 +0100
+
+      * target cpu type fixed
+
+M	compiler/systems/i_freertos.pas
+
+******************************************************************************
 commit 33dfb6cb4e38fbb9f960c900f3c57a8aa7faffc0
 Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
 Date:   Thu Feb 2 15:47:35 2023 +0000
