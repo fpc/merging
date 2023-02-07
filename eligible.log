@@ -1,4 +1,13 @@
 ******************************************************************************
+commit c29018d0acd2ba6835e578d6c4db95c25364527a
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Tue Feb 7 22:35:26 2023 +0000
+
+    Fix compilation of system.ioutils unit for wince system
+
+M	packages/vcl-compat/src/system.ioutils.pp
+
+******************************************************************************
 commit 73f11c71cbee01dae6a9a27aca85513e8fe81eb5
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Tue Feb 7 22:19:43 2023 +0000
