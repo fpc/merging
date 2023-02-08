@@ -1,4 +1,24 @@
 ******************************************************************************
+commit 71e0c12c88dea98b02812f8b9c6b15b766486332
+Author: florian <florian@freepascal.org>
+Date:   Wed Feb 8 22:38:17 2023 +0100
+
+      * set fpu type correctly for riscv32-freertos
+
+M	compiler/options.pas
+
+******************************************************************************
+commit 87ec3d6fad48ec2179019ba0789c8616ecb47e5c
+Author: florian <florian@freepascal.org>
+Date:   Wed Feb 8 22:26:58 2023 +0100
+
+      + completed identifiers for RiscV ABIs
+
+M	compiler/systems.inc
+M	compiler/systems.pas
+M	compiler/systems/i_freertos.pas
+
+******************************************************************************
 commit 7e3bdd501c189f7446bf34600add137a2be25cbe
 Author: florian <florian@freepascal.org>
 Date:   Wed Feb 8 21:33:21 2023 +0100
@@ -38543,7 +38563,6 @@ M	packages/x11/fpmake.pp
 A	packages/x11/src/evi.inc
 A	packages/x11/src/xevi.pp
 A	packages/x11/tests/xevi_linktest.pp
-
 ******************************************************************************
 commit 7368fcf4c5a6845a0c2257ae0479556850184565
 Author: tg74 <tg74@idefix.freepascal.org>
@@ -38556,6 +38575,7 @@ Date:   Fri Jun 18 14:07:13 2021 +0000
 M	compiler/i386/i386tab.inc
 M	compiler/i8086/i8086tab.inc
 M	compiler/x86_64/x8664tab.inc
+
 ******************************************************************************
 commit 43b29375899276a2734571d2be8daef68e5b9008
 Author: tg74 <tg74@idefix.freepascal.org>
