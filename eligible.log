@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 7ec5e24541b5a5d5167d8832a5d837e1bf86743c
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Wed Feb 8 12:44:30 2023 +0000
+
+     Add missing FILE_ATTRIBUTE_XXX constants as found in WinCE 5.0 headers (only FILE_ATTRIBUTE_DEVICE is not defined)
+
+M	packages/vcl-compat/src/system.ioutils.pp
+M	rtl/wince/wininc/defines.inc
+
+******************************************************************************
 commit c29018d0acd2ba6835e578d6c4db95c25364527a
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Tue Feb 7 22:35:26 2023 +0000
