@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 7e3bdd501c189f7446bf34600add137a2be25cbe
+Author: florian <florian@freepascal.org>
+Date:   Wed Feb 8 21:33:21 2023 +0100
+
+      * enable to check the existing of environment variables in config files
+
+M	compiler/options.pas
+
+******************************************************************************
 commit 910fc7215dbabcee683ebb75ef0dbda911b7edbf
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Wed Feb 8 15:48:35 2023 +0100
@@ -38547,7 +38556,6 @@ Date:   Fri Jun 18 14:07:13 2021 +0000
 M	compiler/i386/i386tab.inc
 M	compiler/i8086/i8086tab.inc
 M	compiler/x86_64/x8664tab.inc
-
 ******************************************************************************
 commit 43b29375899276a2734571d2be8daef68e5b9008
 Author: tg74 <tg74@idefix.freepascal.org>
@@ -38558,6 +38566,7 @@ Date:   Fri Jun 18 14:06:55 2021 +0000
     git-svn-id: branches/tg74/avx512-0037785@49512 -
 
 M	compiler/x86/x86ins.dat
+
 ******************************************************************************
 commit 314e55204655aaa8f2db239bcf34399e52a04718
 Author: nickysn <nickysn@gmail.com>
