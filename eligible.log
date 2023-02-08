@@ -1,4 +1,35 @@
 ******************************************************************************
+commit 910fc7215dbabcee683ebb75ef0dbda911b7edbf
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Wed Feb 8 15:48:35 2023 +0100
+
+    * Added additional constants for enumerated, fix build
+
+M	packages/pastojs/src/pas2jsfiler.pp
+
+******************************************************************************
+commit 047e360538318cf4fb6df9d2f1a29cf590311026
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Wed Feb 8 15:22:29 2023 +0100
+
+    * Improvements so whole RTL can be parsed
+
+M	packages/fcl-passrc/src/pparser.pp
+M	packages/fcl-passrc/src/pscanner.pp
+M	packages/fcl-passrc/tests/tcclasstype.pas
+M	packages/fcl-passrc/tests/tcprocfunc.pas
+M	packages/fcl-passrc/tests/tcscanner.pas
+
+******************************************************************************
+commit 08f396f64e990b96939676623dbe361c5218fd1e
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Wed Feb 8 14:45:56 2023 +0100
+
+    * Additional modifiers
+
+M	packages/fcl-passrc/src/pastree.pp
+
+******************************************************************************
 commit aa7f1f9667130731816a064ba872c04b55f65bc6
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Wed Feb 8 13:47:58 2023 +0000
