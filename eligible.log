@@ -1,4 +1,20 @@
 ******************************************************************************
+commit aa7f1f9667130731816a064ba872c04b55f65bc6
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Wed Feb 8 13:47:58 2023 +0000
+
+      This change might generate failure to compile
+      older code for BeOS, because of field name changes.
+    
+      Rename stat structure fields according to information in
+    https://www.haiku-os.org/legacy-docs/bebook/TheStorageKit_DefinedTypes.html#stat
+    
+      Add S_ISUID and S_ISGID constants with value zero
+    as these features do not seem to be supported by BeOS.
+
+M	rtl/beos/ostypes.inc
+
+******************************************************************************
 commit 7ec5e24541b5a5d5167d8832a5d837e1bf86743c
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Wed Feb 8 12:44:30 2023 +0000
