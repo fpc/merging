@@ -1,4 +1,18 @@
 ******************************************************************************
+commit 0e05e908d54113f40a6d4ce0870e2fb9f87a5d6f
+Author: florian <florian@freepascal.org>
+Date:   Thu Feb 9 21:29:06 2023 +0100
+
+    riscv32-freertos:
+     * unit name fixed
+     * linker script fixed
+     * assembler supports dwarf
+
+M	compiler/riscv/agrvgas.pas
+M	compiler/systems/t_freertos.pas
+M	rtl/freertos/riscv32/esp32c3.pp
+
+******************************************************************************
 commit 71e0c12c88dea98b02812f8b9c6b15b766486332
 Author: florian <florian@freepascal.org>
 Date:   Wed Feb 8 22:38:17 2023 +0100
@@ -38551,7 +38565,6 @@ M	packages/x11/fpmake.pp
 A	packages/x11/src/lbx.inc
 A	packages/x11/src/xlbx.pp
 A	packages/x11/tests/xlbx_linktest.pp
-
 ******************************************************************************
 commit cf1d3539feebe1e8726a42a1929b19449defec2a
 Author: Nikolay Nikolov <nickysn@gmail.com>
@@ -38563,6 +38576,7 @@ M	packages/x11/fpmake.pp
 A	packages/x11/src/evi.inc
 A	packages/x11/src/xevi.pp
 A	packages/x11/tests/xevi_linktest.pp
+
 ******************************************************************************
 commit 7368fcf4c5a6845a0c2257ae0479556850184565
 Author: tg74 <tg74@idefix.freepascal.org>
