@@ -1,4 +1,22 @@
 ******************************************************************************
+commit f1f84a292c9478a02bb2ea40b4c368fa15047e21
+Author: florian <florian@freepascal.org>
+Date:   Fri Feb 10 21:28:39 2023 +0100
+
+      * don't not generate non-constant leb128 entriesm for riscv32-freertos
+
+M	compiler/dbgdwarf.pas
+
+******************************************************************************
+commit 2ad22a3f32243337754a8080dc74c786232984ab
+Author: florian <florian@freepascal.org>
+Date:   Fri Feb 10 21:16:03 2023 +0100
+
+      * unit name fixed
+
+M	rtl/freertos/riscv32/esp32c3idf_50000.pp
+
+******************************************************************************
 commit 0e05e908d54113f40a6d4ce0870e2fb9f87a5d6f
 Author: florian <florian@freepascal.org>
 Date:   Thu Feb 9 21:29:06 2023 +0100
@@ -38541,7 +38559,6 @@ A	packages/x11/src/cup.inc
 A	packages/x11/src/xcup.pp
 M	packages/x11/src/xlib.pp
 A	packages/x11/tests/xcup_linktest.pp
-
 ******************************************************************************
 commit 9846fd3f37424ef692f286dac238da33de9cd31b
 Author: Nikolay Nikolov <nickysn@gmail.com>
@@ -38565,6 +38582,7 @@ M	packages/x11/fpmake.pp
 A	packages/x11/src/lbx.inc
 A	packages/x11/src/xlbx.pp
 A	packages/x11/tests/xlbx_linktest.pp
+
 ******************************************************************************
 commit cf1d3539feebe1e8726a42a1929b19449defec2a
 Author: Nikolay Nikolov <nickysn@gmail.com>
