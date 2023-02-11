@@ -1,4 +1,52 @@
 ******************************************************************************
+commit def475f889d886c05f8de0b3c85b4e6ae4f58e35
+Author: florian <florian@freepascal.org>
+Date:   Sat Feb 11 21:21:21 2023 +0100
+
+      * arm compilation fixed
+
+M	compiler/systems/t_freertos.pas
+
+******************************************************************************
+commit d06852e6e9b50422f9a7173119f7d64d1755011e
+Author: florian <florian@freepascal.org>
+Date:   Sat Feb 11 21:07:01 2023 +0100
+
+      + exec_e_cant_call_linker shows now the error message
+
+M	compiler/link.pas
+M	compiler/msg/errore.msg
+M	compiler/msgidx.inc
+M	compiler/msgtxt.inc
+
+******************************************************************************
+commit d3ccd10674a7c3d3e4aab9025f98d7f71299b5cc
+Author: florian <florian@freepascal.org>
+Date:   Sat Feb 11 21:06:40 2023 +0100
+
+      * call esptool.py properly on Darwin
+
+M	compiler/systems/t_freertos.pas
+
+******************************************************************************
+commit 67864b662a9ab677d2653500daed0b40a49b28ac
+Author: florian <florian@freepascal.org>
+Date:   Sat Feb 11 20:49:52 2023 +0100
+
+      * fix systems_freertos
+
+M	compiler/systems.pas
+
+******************************************************************************
+commit c7a0c0bbb4984f935eec3b933c1a00db7b511052
+Author: florian <florian@freepascal.org>
+Date:   Sat Feb 11 20:42:31 2023 +0100
+
+      * set FPU type properly for riscv32-freertos
+
+M	compiler/options.pas
+
+******************************************************************************
 commit f1f84a292c9478a02bb2ea40b4c368fa15047e21
 Author: florian <florian@freepascal.org>
 Date:   Fri Feb 10 21:28:39 2023 +0100
@@ -38502,7 +38550,6 @@ M	packages/x11/fpmake.pp
 A	packages/x11/src/multibuf.pp
 A	packages/x11/src/multibufconst.inc
 A	packages/x11/tests/multibuf_linktest.pp
-
 ******************************************************************************
 commit 68c964bf59c8380843fda383273a05d5aa44b27d
 Author: Nikolay Nikolov <nickysn@gmail.com>
@@ -38559,6 +38606,7 @@ A	packages/x11/src/cup.inc
 A	packages/x11/src/xcup.pp
 M	packages/x11/src/xlib.pp
 A	packages/x11/tests/xcup_linktest.pp
+
 ******************************************************************************
 commit 9846fd3f37424ef692f286dac238da33de9cd31b
 Author: Nikolay Nikolov <nickysn@gmail.com>
