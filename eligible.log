@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 22243058345dc952492a1846fb13c2f7357616c8
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Thu Feb 2 07:15:46 2023 +0000
+
+      * x86: Fixed bad register tracking in OptPass2JMP
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
 commit def475f889d886c05f8de0b3c85b4e6ae4f58e35
 Author: florian <florian@freepascal.org>
 Date:   Sat Feb 11 21:21:21 2023 +0100
@@ -38538,7 +38547,6 @@ A	packages/x11/src/secur.inc
 A	packages/x11/src/security.pp
 A	packages/x11/src/xauth.inc
 A	packages/x11/tests/security_linktest.pp
-
 ******************************************************************************
 commit d33e6d639b70ace8f97c4a47953b0b910612d2a1
 Author: Nikolay Nikolov <nickysn@gmail.com>
@@ -38550,6 +38558,7 @@ M	packages/x11/fpmake.pp
 A	packages/x11/src/multibuf.pp
 A	packages/x11/src/multibufconst.inc
 A	packages/x11/tests/multibuf_linktest.pp
+
 ******************************************************************************
 commit 68c964bf59c8380843fda383273a05d5aa44b27d
 Author: Nikolay Nikolov <nickysn@gmail.com>
