@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 63199a096610f3d7b1d1dc07d1715357dccf11b1
+Author: florian <florian@freepascal.org>
+Date:   Sun Feb 12 20:55:38 2023 +0100
+
+      * memory sizes updated
+
+M	compiler/riscv32/cpuinfo.pas
+
+******************************************************************************
 commit eff26797abf1d1eec6b68c6ec1895ae4cbc9547e
 Author: Rika Ichinose <rrunewalsh@gmail.com>
 Date:   Thu Feb 9 05:44:30 2023 +0300
@@ -38531,7 +38540,6 @@ M	packages/x11/fpmake.pp
 A	packages/x11/src/xtestext1.pp
 A	packages/x11/src/xtestext1const.inc
 A	packages/x11/tests/xtestext1_linktest.pp
-
 ******************************************************************************
 commit 68e026ab2dc225e950bdd85a59d9106cd9de77aa
 Author: Nikolay Nikolov <nickysn@gmail.com>
@@ -38543,6 +38551,7 @@ M	packages/x11/fpmake.pp
 A	packages/x11/src/sync.pp
 A	packages/x11/src/syncconst.inc
 A	packages/x11/tests/sync_linktest.pp
+
 ******************************************************************************
 commit 650d2fcaa9a463f90e17de0b719c41b7cdb4e8ed
 Author: Nikolay Nikolov <nickysn@gmail.com>
