@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 86c4b160e24f9a8b6620dc164ae10463741db584
+Author: Ondrej Pokorny <lazarus@kluug.net>
+Date:   Mon Feb 13 15:56:13 2023 +0100
+
+    add all peflags
+
+M	rtl/win/wininc/defines.inc
+
+******************************************************************************
 commit 61bee98af90f0c17fe8b4600955b192f1a067271
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Mon Feb 13 16:30:38 2023 +0000
@@ -38537,7 +38546,6 @@ Date:   Fri Aug 6 21:29:05 2021 +0300
     * Prevent double release of a temp.
 
 M	compiler/x86/nx86cnv.pas
-
 ******************************************************************************
 commit 5350ac7d65f1f595ba4e3b6d582829fc9ad3bca1
 Author: Marcus Sackrow <alb42@web.de>
@@ -38546,6 +38554,7 @@ Date:   Fri Aug 6 17:41:51 2021 +0100
     fpts2junit: prevent double entries in junit xml (in test log are double entries, one for compiles, one for runs)
 
 M	tests/utils/fpts2junit.pp
+
 ******************************************************************************
 commit b3744bf11fc50891c3769b1268f72dc93824d5bb
 Author: Nikolay Nikolov <nickysn@gmail.com>
