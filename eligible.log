@@ -1,4 +1,13 @@
 ******************************************************************************
+commit c8b2a36bb1671e6347fe7ecb7312856321b608ea
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Mon Feb 13 13:01:21 2023 +0000
+
+    Add support for -Ploongarch64 option
+
+M	compiler/utils/fpc.pp
+
+******************************************************************************
 commit 63199a096610f3d7b1d1dc07d1715357dccf11b1
 Author: florian <florian@freepascal.org>
 Date:   Sun Feb 12 20:55:38 2023 +0100
@@ -38528,7 +38537,6 @@ Date:   Fri Aug 6 04:30:09 2021 +0300
     + added dependency on unit xmd for unit dpms
 
 M	packages/x11/fpmake.pp
-
 ******************************************************************************
 commit a061b2e76386729992137803cb9259df66202ab9
 Author: Nikolay Nikolov <nickysn@gmail.com>
@@ -38540,6 +38548,7 @@ M	packages/x11/fpmake.pp
 A	packages/x11/src/xtestext1.pp
 A	packages/x11/src/xtestext1const.inc
 A	packages/x11/tests/xtestext1_linktest.pp
+
 ******************************************************************************
 commit 68e026ab2dc225e950bdd85a59d9106cd9de77aa
 Author: Nikolay Nikolov <nickysn@gmail.com>
