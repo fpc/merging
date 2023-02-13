@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 61bee98af90f0c17fe8b4600955b192f1a067271
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Mon Feb 13 16:30:38 2023 +0000
+
+    Fix compilation error for loongarch64 system unit with -dFPC_USE_LIBC option
+
+M	rtl/loongarch64/loongarch64.inc
+
+******************************************************************************
 commit b49c3fe4f8e3396aec1469fa072cd105a5db2965
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Mon Feb 13 15:50:04 2023 +0100
