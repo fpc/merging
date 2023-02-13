@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 513c8983e0b7fa03529185436c6da150346f5f11
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Mon Feb 13 22:43:26 2023 +0000
+
+     Fix compilation error with -dFPC_USE_LIBC for loongarch64 cpu
+
+M	rtl/loongarch64/math.inc
+
+******************************************************************************
 commit 86c4b160e24f9a8b6620dc164ae10463741db584
 Author: Ondrej Pokorny <lazarus@kluug.net>
 Date:   Mon Feb 13 15:56:13 2023 +0100
@@ -38537,7 +38546,6 @@ Date:   Fri Aug 6 21:43:10 2021 +0300
     * It is still needed to release the temp allocated for the result of an assembler function if the result is not referenced. This fixes some EXTDEBUG warnings.
 
 M	compiler/hlcgobj.pas
-
 ******************************************************************************
 commit 5920d169c096737ad6288a96a37a9377fd8697dc
 Author: Yuriy Sydorov <jura@cp-lab.com>
@@ -38546,6 +38554,7 @@ Date:   Fri Aug 6 21:29:05 2021 +0300
     * Prevent double release of a temp.
 
 M	compiler/x86/nx86cnv.pas
+
 ******************************************************************************
 commit 5350ac7d65f1f595ba4e3b6d582829fc9ad3bca1
 Author: Marcus Sackrow <alb42@web.de>
