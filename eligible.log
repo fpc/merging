@@ -1,4 +1,40 @@
 ******************************************************************************
+commit 2780b5f830c4bfe647d985d791c9b23a8bf8495a
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Tue Feb 14 22:40:51 2023 +0100
+
+    fcl-web: updated lpi
+
+M	packages/fcl-web/examples/simpleserver/simpleserver.lpi
+
+******************************************************************************
+commit b292e19862ac103fbab1fbe57b91b05dcde3337e
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Tue Feb 14 22:40:24 2023 +0100
+
+    fcl-web: simpleserver: fixed parsing config file
+
+M	packages/fcl-web/examples/simpleserver/simpleserver.pas
+
+******************************************************************************
+commit 21897ff46c6db3bfbf5243fe875d4bc520066ba6
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Tue Feb 14 22:39:05 2023 +0100
+
+    fcl-web: gitignore for linux
+
+A	packages/fcl-web/examples/simpleserver/.gitignore
+
+******************************************************************************
+commit 93a47ddada3fce302dd726ed01dcc373a7925605
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Tue Feb 14 22:38:42 2023 +0100
+
+    pas2js: fixed compileserver compile with fpc 3.2.2
+
+M	utils/pas2js/httpcompiler.pp
+
+******************************************************************************
 commit 513c8983e0b7fa03529185436c6da150346f5f11
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Mon Feb 13 22:43:26 2023 +0000
@@ -38498,7 +38534,6 @@ Date:   Mon Aug 9 10:55:13 2021 +0200
     * Some additional filters
 
 M	packages/gitlab/examples/closetodo/closetodo.pp
-
 ******************************************************************************
 commit c5a128fae7e1c7671b05bbe286b4bf927a6c67b2
 Author: Michaël Van Canneyt <michael.vancanneyt@cquel.be>
@@ -38546,6 +38581,7 @@ Date:   Fri Aug 6 21:43:10 2021 +0300
     * It is still needed to release the temp allocated for the result of an assembler function if the result is not referenced. This fixes some EXTDEBUG warnings.
 
 M	compiler/hlcgobj.pas
+
 ******************************************************************************
 commit 5920d169c096737ad6288a96a37a9377fd8697dc
 Author: Yuriy Sydorov <jura@cp-lab.com>
