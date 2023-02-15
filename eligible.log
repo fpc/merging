@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 811c68377596fdebf8bfcee8e8ce773df42593f7
+Author: florian <florian@freepascal.org>
+Date:   Wed Feb 15 22:14:35 2023 +0100
+
+      * set rangedef of dyn. arrays correctly, resolves #40149
+
+M	compiler/ptype.pas
+A	tests/webtbs/tw40149.pp
+
+******************************************************************************
 commit 11cf24891dee700e81bbb9eeca61f867502f6d7b
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Wed Feb 15 00:52:42 2023 +0100
@@ -38525,7 +38535,6 @@ Date:   Mon Aug 9 16:34:35 2021 +0200
     * Fix error in calclookupvalue
 
 M	packages/fcl-db/src/base/fields.inc
-
 ******************************************************************************
 commit 352435cb75c53e081baf0dd311fc6cf90a804884
 Author: Michaël Van Canneyt <michael.vancanneyt@cquel.be>
@@ -38534,6 +38543,7 @@ Date:   Mon Aug 9 11:49:44 2021 +0200
     * only .pp is needed
 
 D	packages/gitlab/examples/closetodo/closetodo.lpr
+
 ******************************************************************************
 commit 5d826cfe3cf1bcb0c5da68e0d584ddeb6a3220f9
 Author: Michaël Van Canneyt <michael.vancanneyt@cquel.be>
