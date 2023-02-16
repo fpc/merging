@@ -1,4 +1,13 @@
 ******************************************************************************
+commit ece59f25341cc47a1f3c38919844ca5b0904af2e
+Author: florian <florian@freepascal.org>
+Date:   Thu Feb 16 23:01:40 2023 +0100
+
+      * also count the use of enum syms in preprocessor expressions correctly
+
+M	compiler/scanner.pas
+
+******************************************************************************
 commit 811c68377596fdebf8bfcee8e8ce773df42593f7
 Author: florian <florian@freepascal.org>
 Date:   Wed Feb 15 22:14:35 2023 +0100
@@ -38526,7 +38535,6 @@ Date:   Mon Aug 9 18:38:31 2021 +0300
     * optimize tests for a single bit "(a and one_bit_mask_const) = <> one_bit_mask_const" into "(a and one_bit_mask_const) <> = 0" to enable further CPU specific optimizations.
 
 M	compiler/nadd.pas
-
 ******************************************************************************
 commit 3cfec8f905a3edc27473e9ddf12f888e74d19bb5
 Author: Michaël Van Canneyt <michael.vancanneyt@cquel.be>
@@ -38535,6 +38543,7 @@ Date:   Mon Aug 9 16:34:35 2021 +0200
     * Fix error in calclookupvalue
 
 M	packages/fcl-db/src/base/fields.inc
+
 ******************************************************************************
 commit 352435cb75c53e081baf0dd311fc6cf90a804884
 Author: Michaël Van Canneyt <michael.vancanneyt@cquel.be>
