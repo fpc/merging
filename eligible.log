@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 22f1289b2a1a04c81e9421ed2a1d36216f0fb73e
+Author: florian <florian@freepascal.org>
+Date:   Fri Feb 17 23:02:02 2023 +0100
+
+      * post/pre inc/decrement references modify obviously the base register on avr, resolves #40153
+
+M	compiler/avr/aoptcpub.pas
+
+******************************************************************************
 commit ece59f25341cc47a1f3c38919844ca5b0904af2e
 Author: florian <florian@freepascal.org>
 Date:   Thu Feb 16 23:01:40 2023 +0100
@@ -38526,7 +38535,6 @@ Date:   Sun Aug 8 14:49:27 2021 +0100
 
 M	packages/amunits/src/coreunits/amigados.pas
 M	packages/rtl-console/src/amicommon/video.pp
-
 ******************************************************************************
 commit 6a3f32ba6983dfda5250d03b9b2d33c8ffc6022a
 Author: Yuriy Sydorov <jura@cp-lab.com>
@@ -38535,6 +38543,7 @@ Date:   Mon Aug 9 18:38:31 2021 +0300
     * optimize tests for a single bit "(a and one_bit_mask_const) = <> one_bit_mask_const" into "(a and one_bit_mask_const) <> = 0" to enable further CPU specific optimizations.
 
 M	compiler/nadd.pas
+
 ******************************************************************************
 commit 3cfec8f905a3edc27473e9ddf12f888e74d19bb5
 Author: Michaël Van Canneyt <michael.vancanneyt@cquel.be>
