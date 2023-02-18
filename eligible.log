@@ -1,4 +1,13 @@
 ******************************************************************************
+commit a221f2af79ac6f13b4b74cab79037bda1430327a
+Author: florian <florian@freepascal.org>
+Date:   Sat Feb 18 11:14:34 2023 +0100
+
+      * completed post/pre inc/decrement addressing mode instructions in TAoptBaseCpu.RegModifiedByInstruction
+
+M	compiler/avr/aoptcpub.pas
+
+******************************************************************************
 commit e4ad313f8b87fdac3aead3e546799348b18ca52e
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Sat Feb 18 09:48:44 2023 +0100
@@ -38526,7 +38535,6 @@ Date:   Mon Aug 9 17:20:48 2021 +0100
     amiga: removed some debugging settings
 
 M	packages/rtl-console/src/amicommon/video.pp
-
 ******************************************************************************
 commit 8117c97d921cb0b56f4e958a0ddb7b6d34acf0dd
 Author: Marcus Sackrow <alb42@web.de>
@@ -38535,6 +38543,7 @@ Date:   Sun Aug 8 14:50:25 2021 +0100
     amiga: FPC_DOKEYCONVERSION env var if key conversation Ansi to IBM should be done for every key
 
 M	packages/rtl-console/src/amicommon/keyboard.pp
+
 ******************************************************************************
 commit e1a75bf6588284851b11c20f55791b496a764a86
 Author: Marcus Sackrow <alb42@web.de>
