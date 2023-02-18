@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 5fe9ed18d972a6890e7d8092827864bc831dbe81
+Author: Marcus Sackrow <alb42@web.de>
+Date:   Sat Feb 18 20:19:46 2023 +0100
+
+    Amiga: System CloseList() and CleanupThreadProcChain() are called after the memory manager is already shut down changed to native os memory allocation
+
+M	rtl/amicommon/sysfile.inc
+M	rtl/amicommon/sysos.inc
+
+******************************************************************************
 commit a221f2af79ac6f13b4b74cab79037bda1430327a
 Author: florian <florian@freepascal.org>
 Date:   Sat Feb 18 11:14:34 2023 +0100
@@ -38526,7 +38536,6 @@ Date:   Mon Aug 9 23:49:58 2021 +0300
     * x86: Added the "test $-1,%reg" condition to the MovAndTest2Test optimization.
 
 M	compiler/x86/aoptx86.pas
-
 ******************************************************************************
 commit c0d57d03c232bafa06d80fee74b07e91300944c5
 Author: Marcus Sackrow <alb42@web.de>
@@ -38535,6 +38544,7 @@ Date:   Mon Aug 9 17:20:48 2021 +0100
     amiga: removed some debugging settings
 
 M	packages/rtl-console/src/amicommon/video.pp
+
 ******************************************************************************
 commit 8117c97d921cb0b56f4e958a0ddb7b6d34acf0dd
 Author: Marcus Sackrow <alb42@web.de>
