@@ -1,4 +1,14 @@
 ******************************************************************************
+commit e4ad313f8b87fdac3aead3e546799348b18ca52e
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sat Feb 18 09:48:44 2023 +0100
+
+    * Better transaction handling, improved ranking mechanism speed
+
+M	packages/fpindexer/src/fpindexer.pp
+M	packages/fpindexer/src/sqldbindexdb.pp
+
+******************************************************************************
 commit 22f1289b2a1a04c81e9421ed2a1d36216f0fb73e
 Author: florian <florian@freepascal.org>
 Date:   Fri Feb 17 23:02:02 2023 +0100
@@ -38525,7 +38535,6 @@ Date:   Sun Aug 8 14:50:25 2021 +0100
     amiga: FPC_DOKEYCONVERSION env var if key conversation Ansi to IBM should be done for every key
 
 M	packages/rtl-console/src/amicommon/keyboard.pp
-
 ******************************************************************************
 commit e1a75bf6588284851b11c20f55791b496a764a86
 Author: Marcus Sackrow <alb42@web.de>
@@ -38535,6 +38544,7 @@ Date:   Sun Aug 8 14:49:27 2021 +0100
 
 M	packages/amunits/src/coreunits/amigados.pas
 M	packages/rtl-console/src/amicommon/video.pp
+
 ******************************************************************************
 commit 6a3f32ba6983dfda5250d03b9b2d33c8ffc6022a
 Author: Yuriy Sydorov <jura@cp-lab.com>
