@@ -1,4 +1,34 @@
 ******************************************************************************
+commit 090e4fea96b068652de95b4a4b4eb9ad95311e95
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Thu Feb 16 22:44:59 2023 +0000
+
+      * New test for i40122
+
+A	tests/webtbs/tw40122.pp
+
+******************************************************************************
+commit dd7320ec137055b4d1992b5a0b65d4068a86d1c5
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Thu Feb 16 10:49:17 2023 +0000
+
+      * x86: PostPeepholeOptCmp and PostPeepholeOptTestOr
+             now do a final attempt of TrySwapMovCmp to
+             clean up Pass 2 optimisations
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
+commit 4d676cd6fa2995248eb969a7861168c20a78c175
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Wed Feb 15 20:44:13 2023 +0000
+
+      * x86: JccMovJmpMov2CMovCMov will no longer move
+             MOV instructions (fixes i40122)
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
 commit 8f7e61eef68f532103387b9d88d23dfdaaeb3cad
 Author: florian <florian@freepascal.org>
 Date:   Sun Feb 19 20:19:20 2023 +0100
@@ -38540,7 +38570,6 @@ Date:   Wed Aug 11 22:03:36 2021 +0200
     * Correct reader signatures
 
 M	packages/fcl-db/src/base/bufdataset.pas
-
 ******************************************************************************
 commit 2f81580e04990ab194d0beb6fc8a4681c084cffc
 Author: Michaël Van Canneyt <michael.vancanneyt@cquel.be>
@@ -38558,6 +38587,7 @@ Date:   Wed Aug 11 21:53:00 2021 +0200
     * Rework packet handling
 
 M	packages/fcl-db/src/base/bufdataset.pas
+
 ******************************************************************************
 commit a55794d80d6f8af398d44f26c94b7abba55a6634
 Author: Ondrej Pokorny <lazarus@kluug.net>
