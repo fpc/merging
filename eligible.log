@@ -1,4 +1,23 @@
 ******************************************************************************
+commit d36e96ea74202f3a5d22e691ca6046e356b0ef67
+Author: Rika Ichinose <rrunewalsh@gmail.com>
+Date:   Wed Feb 8 06:29:36 2023 +0300
+
+    Improved CompareDWord for i386 and x86_64.
+
+M	rtl/i386/i386.inc
+M	rtl/x86_64/x86_64.inc
+
+******************************************************************************
+commit ee5b9e53a9dbb247e34372cfd2eb862a5967bdac
+Author: Rika Ichinose <rrunewalsh@gmail.com>
+Date:   Wed Feb 8 06:29:12 2023 +0300
+
+    Improve generic CompareDWord.
+
+M	rtl/inc/generic.inc
+
+******************************************************************************
 commit 4e8ef448eda713f0b54d8ff02b2c195c6f66dccb
 Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
 Date:   Tue Jan 17 01:37:12 2023 +0000
@@ -38528,7 +38547,6 @@ Date:   Wed Aug 11 11:57:53 2021 +0200
     DateTimeToString: do not write #0 separators
 
 M	rtl/objpas/sysutils/dati.inc
-
 ******************************************************************************
 commit 0ae0e741cfbbe66e0a87f5162608075bb359244f
 Author: Ondrej Pokorny <lazarus@kluug.net>
@@ -38546,6 +38564,7 @@ Date:   Wed Aug 11 11:06:17 2021 +0200
     win: fix default ShortDateFormat and LongDateFormat
 
 M	rtl/win/sysutils.pp
+
 ******************************************************************************
 commit 10acbca82824b6a3ebf5dd829941da61211f947c
 Author: Yuriy Sydorov <jura@cp-lab.com>
