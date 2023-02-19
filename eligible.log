@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 1cacbeff1e2d74df8030c4ebf4bc46b46516d020
+Author: Marcus Sackrow <alb42@web.de>
+Date:   Sun Feb 19 14:09:29 2023 +0100
+
+    AThreads: ThreadInfo for the main thread move to a global var to prevent problems with heap manager
+
+M	rtl/amicommon/athreads.pp
+
+******************************************************************************
 commit 5fe9ed18d972a6890e7d8092827864bc831dbe81
 Author: Marcus Sackrow <alb42@web.de>
 Date:   Sat Feb 18 20:19:46 2023 +0100
@@ -38527,7 +38536,6 @@ Date:   Wed Aug 11 11:06:17 2021 +0200
     win: fix default ShortDateFormat and LongDateFormat
 
 M	rtl/win/sysutils.pp
-
 ******************************************************************************
 commit 10acbca82824b6a3ebf5dd829941da61211f947c
 Author: Yuriy Sydorov <jura@cp-lab.com>
@@ -38536,6 +38544,7 @@ Date:   Mon Aug 9 23:49:58 2021 +0300
     * x86: Added the "test $-1,%reg" condition to the MovAndTest2Test optimization.
 
 M	compiler/x86/aoptx86.pas
+
 ******************************************************************************
 commit c0d57d03c232bafa06d80fee74b07e91300944c5
 Author: Marcus Sackrow <alb42@web.de>
