@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 4e8ef448eda713f0b54d8ff02b2c195c6f66dccb
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Tue Jan 17 01:37:12 2023 +0000
+
+      * i386: Bug fix where EBP was marked as preserved when it wasn't, causing faulty optimisations
+
+M	compiler/i386/cgcpu.pas
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
 commit 1cacbeff1e2d74df8030c4ebf4bc46b46516d020
 Author: Marcus Sackrow <alb42@web.de>
 Date:   Sun Feb 19 14:09:29 2023 +0100
