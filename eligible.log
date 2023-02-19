@@ -1,4 +1,24 @@
 ******************************************************************************
+commit 8f7e61eef68f532103387b9d88d23dfdaaeb3cad
+Author: florian <florian@freepascal.org>
+Date:   Sun Feb 19 20:19:20 2023 +0100
+
+      * patch by ccrause: do not load .fpc* sections into avr microcontroller to save space, resolves #40160
+
+M	compiler/systems/t_embed.pas
+
+******************************************************************************
+commit b72317811792b2332741e8a7b15d07e0a1939d6b
+Author: Rika Ichinose <rrunewalsh@gmail.com>
+Date:   Thu Feb 16 07:36:35 2023 +0300
+
+    Even better CompareByte for x64.
+    
+    Tries to handle tails with a SIMD unit as well.
+
+M	rtl/x86_64/x86_64.inc
+
+******************************************************************************
 commit d36e96ea74202f3a5d22e691ca6046e356b0ef67
 Author: Rika Ichinose <rrunewalsh@gmail.com>
 Date:   Wed Feb 8 06:29:36 2023 +0300
@@ -38538,7 +38558,6 @@ Date:   Wed Aug 11 21:53:00 2021 +0200
     * Rework packet handling
 
 M	packages/fcl-db/src/base/bufdataset.pas
-
 ******************************************************************************
 commit a55794d80d6f8af398d44f26c94b7abba55a6634
 Author: Ondrej Pokorny <lazarus@kluug.net>
@@ -38547,6 +38566,7 @@ Date:   Wed Aug 11 11:57:53 2021 +0200
     DateTimeToString: do not write #0 separators
 
 M	rtl/objpas/sysutils/dati.inc
+
 ******************************************************************************
 commit 0ae0e741cfbbe66e0a87f5162608075bb359244f
 Author: Ondrej Pokorny <lazarus@kluug.net>
