@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 586a7d30abb173acab88226edeb9a2c4549caeda
+Author: florian <florian@freepascal.org>
+Date:   Mon Feb 20 22:48:15 2023 +0100
+
+      * patch by ccrause: fixes another .fpc* section problem for AVR, resolves #40162
+
+M	compiler/systems/t_embed.pas
+
+******************************************************************************
 commit 090e4fea96b068652de95b4a4b4eb9ad95311e95
 Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
 Date:   Thu Feb 16 22:44:59 2023 +0000
@@ -38561,7 +38570,6 @@ Date:   Wed Aug 11 22:59:40 2021 +0200
       * patch by J. Gareth Moreton: AND/CMP optimisation, resolves #39287
 
 M	compiler/x86/aoptx86.pas
-
 ******************************************************************************
 commit 25e937b0c92ee809951e29942089dda9e77d4675
 Author: Michaël Van Canneyt <michael.vancanneyt@cquel.be>
@@ -38570,6 +38578,7 @@ Date:   Wed Aug 11 22:03:36 2021 +0200
     * Correct reader signatures
 
 M	packages/fcl-db/src/base/bufdataset.pas
+
 ******************************************************************************
 commit 2f81580e04990ab194d0beb6fc8a4681c084cffc
 Author: Michaël Van Canneyt <michael.vancanneyt@cquel.be>
