@@ -1,4 +1,61 @@
 ******************************************************************************
+commit a5702d89e8703ed2e5c4bdcd246ff9421fd551d7
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Fri Nov 25 02:46:56 2022 +0000
+
+      * More complex uses of the pruning methods in TAddNode.Simplify
+
+M	compiler/nadd.pas
+
+******************************************************************************
+commit 9d8fd6d55e486d7234c597a89823e0dcafd91331
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Fri Nov 25 00:15:17 2022 +0000
+
+      * TAddNode.Simplify now uses pruning methods
+
+M	compiler/nadd.pas
+
+******************************************************************************
+commit 7488f1e3f886d215ca392e47bb7c2e5754c18985
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Fri Nov 25 00:28:10 2022 +0000
+
+      * New node pruning methods
+
+M	compiler/node.pas
+
+******************************************************************************
+commit 2a44ffe51bf56f86ad3043e9f578e268b860e4dc
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Thu Nov 24 21:30:03 2022 +0000
+
+      * x86: BZHI optimisation now sets the subtract and shift nodes to 'do not execute' as they are skipped over.
+
+M	compiler/x86/nx86add.pas
+
+******************************************************************************
+commit 16bd996e74560b716938e825ad216ff57b9a51aa
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Thu Nov 24 21:19:13 2022 +0000
+
+      * x86: 'and not' optimisation now sets the NOT node to 'do not execute' as it is skipped over
+
+M	compiler/x86/nx86add.pas
+
+******************************************************************************
+commit 1b439134083d3f032eab1ed5ec5c016bf4be84db
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Thu Nov 24 21:16:47 2022 +0000
+
+      * New 'do not execute' flag for notes and respective internal error triggering
+
+M	compiler/node.pas
+M	compiler/pass_1.pas
+M	compiler/pass_2.pas
+M	compiler/ppu.pas
+
+******************************************************************************
 commit 586a7d30abb173acab88226edeb9a2c4549caeda
 Author: florian <florian@freepascal.org>
 Date:   Mon Feb 20 22:48:15 2023 +0100
@@ -38532,7 +38589,6 @@ Date:   Sat Aug 14 23:48:45 2021 +0200
 
 M	compiler/msg/errord.msg
 M	compiler/msg/errordu.msg
-
 ******************************************************************************
 commit a7d608dd431df9e641b147bb9370daae4750f723
 Author: Michaël Van Canneyt <michael@freepascal.org>
@@ -38570,6 +38626,7 @@ Date:   Wed Aug 11 22:59:40 2021 +0200
       * patch by J. Gareth Moreton: AND/CMP optimisation, resolves #39287
 
 M	compiler/x86/aoptx86.pas
+
 ******************************************************************************
 commit 25e937b0c92ee809951e29942089dda9e77d4675
 Author: Michaël Van Canneyt <michael.vancanneyt@cquel.be>
