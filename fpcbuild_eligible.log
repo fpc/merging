@@ -1,4 +1,16 @@
 ******************************************************************************
+commit 380094f12a3b15865c79cea9724571a9a9fb3fc8
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Wed Feb 22 13:41:25 2023 +0100
+
+      Regenerate Makefile with trunk fpcmake
+    
+      To add mips64-linux, aarch64-embedded, riscv32-freertos,
+      and loongarch64-linux new supported targets.
+
+M	Makefile
+
+******************************************************************************
 commit 569d4449ce6ca92a66b653e4bc3808f2e17e396d
 Author: FPK <florian@freepascal.org>
 Date:   Sun Jan 9 17:56:47 2022 +0000
