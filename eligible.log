@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 905c485ff413cd48f98891e2075c814759d0c6f1
+Author: Michalis Kamburelis <michalis.kambi@gmail.com>
+Date:   Wed Feb 22 00:43:57 2023 +0000
+
+    Fix glDebugMessageXxx to use extdecl
+
+M	packages/opengl/src/glext.pp
+
+******************************************************************************
 commit a5702d89e8703ed2e5c4bdcd246ff9421fd551d7
 Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
 Date:   Fri Nov 25 02:46:56 2022 +0000
@@ -38579,7 +38588,6 @@ Date:   Sun Aug 15 11:39:05 2021 +0000
     fphttpclient keepalive: failed socket operations raise exceptions - try to reconnect also in this case
 
 M	packages/fcl-web/src/base/fphttpclient.pp
-
 ******************************************************************************
 commit dd4b4af6a53514749c8ed329cbd9c41ab6f1b7b5
 Author: Karl-Michael Schindler <609203+kamischi@users.noreply.github.com>
@@ -38589,6 +38597,7 @@ Date:   Sat Aug 14 23:48:45 2021 +0200
 
 M	compiler/msg/errord.msg
 M	compiler/msg/errordu.msg
+
 ******************************************************************************
 commit a7d608dd431df9e641b147bb9370daae4750f723
 Author: Michaël Van Canneyt <michael@freepascal.org>
