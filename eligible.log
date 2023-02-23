@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 7cc94fc000e6c6631ebb706044ef0349b3006c50
+Author: florian <florian@freepascal.org>
+Date:   Thu Feb 23 22:46:05 2023 +0100
+
+      * patch by Rika: Trivial adjustments to !379, resolves #40168
+
+M	rtl/x86_64/x86_64.inc
+
+******************************************************************************
 commit 905c485ff413cd48f98891e2075c814759d0c6f1
 Author: Michalis Kamburelis <michalis.kambi@gmail.com>
 Date:   Wed Feb 22 00:43:57 2023 +0000
@@ -38579,7 +38588,6 @@ Date:   Sun Aug 15 11:47:01 2021 +0000
 M	packages/fcl-web/src/base/fphttpserver.pp
 M	packages/fcl-web/src/base/fphttpstatus.pas
 M	packages/fcl-web/src/base/httpprotocol.pp
-
 ******************************************************************************
 commit c64c0e617d070de85b11e171d895886c064b1bec
 Author: Ondrej Pokorny <ondrej@kluug.net>
@@ -38588,6 +38596,7 @@ Date:   Sun Aug 15 11:39:05 2021 +0000
     fphttpclient keepalive: failed socket operations raise exceptions - try to reconnect also in this case
 
 M	packages/fcl-web/src/base/fphttpclient.pp
+
 ******************************************************************************
 commit dd4b4af6a53514749c8ed329cbd9c41ab6f1b7b5
 Author: Karl-Michael Schindler <609203+kamischi@users.noreply.github.com>
