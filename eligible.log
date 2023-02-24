@@ -1,4 +1,22 @@
 ******************************************************************************
+commit 62c24b375626ad02e6697107f4c69011c38d9b79
+Author: Sergey Larin <sergy.larin@gmail.com>
+Date:   Fri Jan 28 13:10:48 2022 +0300
+
+    Added test to check WideChar const to UTF8String const conversion
+
+A	tests/test/tutf8charconst.pp
+
+******************************************************************************
+commit de58691e75b64891a12b106fcc243a79b63f15a6
+Author: Sergey Larin <sergy.larin@gmail.com>
+Date:   Fri Jan 28 13:09:52 2022 +0300
+
+    Allow WideChar const to UTF8String const conversion
+
+M	compiler/ncnv.pas
+
+******************************************************************************
 commit 4d33e5f137bce78e1d14a02cee370fd42e6adebe
 Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
 Date:   Fri Jan 7 09:09:06 2022 +0000
@@ -38558,7 +38576,6 @@ Date:   Mon Aug 16 11:33:53 2021 +0200
     TFPHTTPConnection: clear FBuffer when read from it in ReadRequestContent
 
 M	packages/fcl-web/src/base/fphttpserver.pp
-
 ******************************************************************************
 commit 675312c201c678c8446482f7e53b1209684b45bd
 Author: Ondrej Pokorny <lazarus@kluug.net>
@@ -38577,6 +38594,7 @@ Date:   Mon Aug 16 00:40:06 2021 +0300
       the register(s) on function exit if assembler blocks are present.
 
 M	compiler/pstatmnt.pas
+
 ******************************************************************************
 commit c78e9557f81f7711a60400f8709b5b1fe017bdd5
 Author: Yuriy Sydorov <jura@cp-lab.com>
