@@ -1,4 +1,31 @@
 ******************************************************************************
+commit 4d33e5f137bce78e1d14a02cee370fd42e6adebe
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Fri Jan 7 09:09:06 2022 +0000
+
+      * x86: OptPass1_V_MOVAP now uses GetNextInstructionUsingReg and UpdateUsedRegsBetween
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
+commit 9ee672f9eb8584c4d2de627aa131f6299711776f
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Fri Jan 7 08:43:41 2022 +0000
+
+      * New UpdateUsedRegsBetween utility subroutine
+
+M	compiler/aoptobj.pas
+
+******************************************************************************
+commit 95e5eeb2262ed56d2c617ac5e45a626b7a4bb3a3
+Author: florian <florian@freepascal.org>
+Date:   Fri Feb 24 20:39:13 2023 +0100
+
+      * fix compilation with -dEXTDEBUG
+
+M	compiler/pass_1.pas
+
+******************************************************************************
 commit 7cc94fc000e6c6631ebb706044ef0349b3006c50
 Author: florian <florian@freepascal.org>
 Date:   Thu Feb 23 22:46:05 2023 +0100
@@ -38550,7 +38577,6 @@ Date:   Mon Aug 16 00:40:06 2021 +0300
       the register(s) on function exit if assembler blocks are present.
 
 M	compiler/pstatmnt.pas
-
 ******************************************************************************
 commit c78e9557f81f7711a60400f8709b5b1fe017bdd5
 Author: Yuriy Sydorov <jura@cp-lab.com>
@@ -38588,6 +38614,7 @@ Date:   Sun Aug 15 11:47:01 2021 +0000
 M	packages/fcl-web/src/base/fphttpserver.pp
 M	packages/fcl-web/src/base/fphttpstatus.pas
 M	packages/fcl-web/src/base/httpprotocol.pp
+
 ******************************************************************************
 commit c64c0e617d070de85b11e171d895886c064b1bec
 Author: Ondrej Pokorny <ondrej@kluug.net>
