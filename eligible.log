@@ -1,4 +1,23 @@
 ******************************************************************************
+commit da12cfc867e3c522d7af9ff0cf3b6b7924d7be99
+Author: Rika Ichinose <rrunewalsh@gmail.com>
+Date:   Mon Feb 6 22:20:03 2023 +0300
+
+    Improved CompareWord for i386 and x86_64.
+
+M	rtl/i386/i386.inc
+M	rtl/x86_64/x86_64.inc
+
+******************************************************************************
+commit f0811e448daf681e70d7761353c3b19cb79e41fb
+Author: Rika Ichinose <rrunewalsh@gmail.com>
+Date:   Mon Feb 6 22:16:29 2023 +0300
+
+    Improve generic CompareWord.
+
+M	rtl/inc/generic.inc
+
+******************************************************************************
 commit 15f29b8fa06a5b5d25a0d4783d7940fdf73b00d2
 Author: florian <florian@freepascal.org>
 Date:   Sat Feb 25 19:57:50 2023 +0100
@@ -38558,7 +38577,6 @@ Date:   Mon Aug 16 17:35:23 2021 +0300
     * In TP-style INLINE, allowed the > modifier for global vars and relaxed range checks.
 
 M	compiler/pstatmnt.pas
-
 ******************************************************************************
 commit fdaa1a12d03ab0af27d783a6ebd8c989673f145b
 Author: Ondrej Pokorny <ondrej@kluug.net>
@@ -38576,6 +38594,7 @@ Date:   Mon Aug 16 16:12:21 2021 +0300
     + Added a test for the TP-style INLINE() statement.
 
 A	tests/test/ttpinl.pp
+
 ******************************************************************************
 commit d502a38f2044a641fac2eb94501f1b49d3b698a5
 Author: Ondrej Pokorny <lazarus@kluug.net>
