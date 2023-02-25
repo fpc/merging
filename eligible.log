@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 15f29b8fa06a5b5d25a0d4783d7940fdf73b00d2
+Author: florian <florian@freepascal.org>
+Date:   Sat Feb 25 19:57:50 2023 +0100
+
+      * patch by Rika: Perform 32-bit random if the bound fits into 32 bits at runtime, resolves #40171
+
+M	rtl/inc/system.inc
+
+******************************************************************************
 commit 62c24b375626ad02e6697107f4c69011c38d9b79
 Author: Sergey Larin <sergy.larin@gmail.com>
 Date:   Fri Jan 28 13:10:48 2022 +0300
@@ -38567,7 +38576,6 @@ Date:   Mon Aug 16 16:12:21 2021 +0300
     + Added a test for the TP-style INLINE() statement.
 
 A	tests/test/ttpinl.pp
-
 ******************************************************************************
 commit d502a38f2044a641fac2eb94501f1b49d3b698a5
 Author: Ondrej Pokorny <lazarus@kluug.net>
@@ -38576,6 +38584,7 @@ Date:   Mon Aug 16 11:33:53 2021 +0200
     TFPHTTPConnection: clear FBuffer when read from it in ReadRequestContent
 
 M	packages/fcl-web/src/base/fphttpserver.pp
+
 ******************************************************************************
 commit 675312c201c678c8446482f7e53b1209684b45bd
 Author: Ondrej Pokorny <lazarus@kluug.net>
