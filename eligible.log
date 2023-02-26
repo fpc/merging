@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 159fa785147c8b71b60922cae2c8ea5bb6a52972
+Author: florian <florian@freepascal.org>
+Date:   Sun Feb 26 10:52:35 2023 +0100
+
+      * patch by Rika: fix for 15f29b8fa06a5b5d25a0d4783d7940fdf73b00d2
+
+M	rtl/inc/system.inc
+
+******************************************************************************
 commit da12cfc867e3c522d7af9ff0cf3b6b7924d7be99
 Author: Rika Ichinose <rrunewalsh@gmail.com>
 Date:   Mon Feb 6 22:20:03 2023 +0300
@@ -38568,7 +38577,6 @@ Date:   Mon Aug 16 17:42:01 2021 +0200
     TFPCustomHTTPClient: do not reconnect when terminated
 
 M	packages/fcl-web/src/base/fphttpclient.pp
-
 ******************************************************************************
 commit 3ca73da91282ae5ea53ab61ece3301dacb454a43
 Author: Yuriy Sydorov <jura@cp-lab.com>
@@ -38577,6 +38585,7 @@ Date:   Mon Aug 16 17:35:23 2021 +0300
     * In TP-style INLINE, allowed the > modifier for global vars and relaxed range checks.
 
 M	compiler/pstatmnt.pas
+
 ******************************************************************************
 commit fdaa1a12d03ab0af27d783a6ebd8c989673f145b
 Author: Ondrej Pokorny <ondrej@kluug.net>
