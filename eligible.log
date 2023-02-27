@@ -1,4 +1,14 @@
 ******************************************************************************
+commit ee16fc7b96129dfb1eb6ca7e11fb54e2eafc852b
+Author: florian <florian@freepascal.org>
+Date:   Mon Feb 27 22:07:06 2023 +0100
+
+      * patch by Rika, trivial adjustments to !373, resolves #40172
+
+M	rtl/i386/i386.inc
+M	rtl/x86_64/x86_64.inc
+
+******************************************************************************
 commit 159fa785147c8b71b60922cae2c8ea5bb6a52972
 Author: florian <florian@freepascal.org>
 Date:   Sun Feb 26 10:52:35 2023 +0100
@@ -38568,7 +38578,6 @@ Date:   Mon Aug 16 21:53:17 2021 +0300
 M	compiler/ncon.pas
 M	compiler/ninl.pas
 M	compiler/pexpr.pas
-
 ******************************************************************************
 commit 40c359a5510fdbda573a1eb75a50977382f0996d
 Author: Ondrej Pokorny <lazarus@kluug.net>
@@ -38577,6 +38586,7 @@ Date:   Mon Aug 16 17:42:01 2021 +0200
     TFPCustomHTTPClient: do not reconnect when terminated
 
 M	packages/fcl-web/src/base/fphttpclient.pp
+
 ******************************************************************************
 commit 3ca73da91282ae5ea53ab61ece3301dacb454a43
 Author: Yuriy Sydorov <jura@cp-lab.com>
