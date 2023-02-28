@@ -1,4 +1,32 @@
 ******************************************************************************
+commit c4899b5dc080d09fdb5ba48fcecdf1f9cdbdb5e3
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Thu Dec 1 19:22:12 2022 +0000
+
+      * Dead code in TAddNode.Simplify has been stripped
+
+M	compiler/nadd.pas
+
+******************************************************************************
+commit 487ca08cf31ab89695d703d45cc7861868251c94
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Thu Dec 1 16:49:01 2022 +0000
+
+      * In TAddNode.Simplify, commutative operations now ensure integer constant operands go on the right for simplicity
+
+M	compiler/nadd.pas
+
+******************************************************************************
+commit 6a902660a52f622042d6aa005a1f60f2845e1b70
+Author: florian <florian@freepascal.org>
+Date:   Tue Feb 28 21:54:05 2023 +0100
+
+      * patch by Rika: Make more use of fpc_*_array (mainly fpc_addref_array) in rtl/inc/dynarr.inc, resolves #40174
+
+M	rtl/inc/aliases.inc
+M	rtl/inc/dynarr.inc
+
+******************************************************************************
 commit ee16fc7b96129dfb1eb6ca7e11fb54e2eafc852b
 Author: florian <florian@freepascal.org>
 Date:   Mon Feb 27 22:07:06 2023 +0100
@@ -38543,7 +38571,6 @@ Date:   Tue Aug 17 16:25:24 2021 +0200
     * Add thread pool to fpmake
 
 M	packages/fcl-base/fpmake.pp
-
 ******************************************************************************
 commit 2e0a88901e2b1ee57dae1caa5b803c012cbf315c
 Author: Michaël Van Canneyt <michael@freepascal.org>
@@ -38578,6 +38605,7 @@ Date:   Mon Aug 16 21:53:17 2021 +0300
 M	compiler/ncon.pas
 M	compiler/ninl.pas
 M	compiler/pexpr.pas
+
 ******************************************************************************
 commit 40c359a5510fdbda573a1eb75a50977382f0996d
 Author: Ondrej Pokorny <lazarus@kluug.net>
