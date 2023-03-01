@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 40f23030dc4600301936f826949704112feb440f
+Author: florian <florian@freepascal.org>
+Date:   Wed Mar 1 23:01:19 2023 +0100
+
+      * check if a linker with the postfix .bfd exists, if yes, use it, resolves #40175
+
+M	compiler/systems/t_android.pas
+M	compiler/systems/t_linux.pas
+
+******************************************************************************
 commit c4899b5dc080d09fdb5ba48fcecdf1f9cdbdb5e3
 Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
 Date:   Thu Dec 1 19:22:12 2022 +0000
@@ -38562,7 +38572,6 @@ Date:   Tue Aug 17 16:47:00 2021 +0200
     * Allocate min threads
 
 M	packages/fcl-base/src/fpthreadpool.pp
-
 ******************************************************************************
 commit 6e8775f2a9934349c3f13921aaeed6945f9f919c
 Author: Michaël Van Canneyt <michael@freepascal.org>
@@ -38571,6 +38580,7 @@ Date:   Tue Aug 17 16:25:24 2021 +0200
     * Add thread pool to fpmake
 
 M	packages/fcl-base/fpmake.pp
+
 ******************************************************************************
 commit 2e0a88901e2b1ee57dae1caa5b803c012cbf315c
 Author: Michaël Van Canneyt <michael@freepascal.org>
