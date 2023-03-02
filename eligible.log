@@ -1,4 +1,15 @@
 ******************************************************************************
+commit 708aaa7b97f598f0c378578e491a6e16f5a4bda7
+Author: florian <florian@freepascal.org>
+Date:   Thu Mar 2 22:56:23 2023 +0100
+
+      * fix (hopefully) build without an ld.bfd variant
+
+M	compiler/link.pas
+M	compiler/systems/t_android.pas
+M	compiler/systems/t_linux.pas
+
+******************************************************************************
 commit 40f23030dc4600301936f826949704112feb440f
 Author: florian <florian@freepascal.org>
 Date:   Wed Mar 1 23:01:19 2023 +0100
@@ -38563,7 +38574,6 @@ M	packages/fcl-passrc/src/pasresolveeval.pas
 M	packages/fcl-passrc/src/pasresolver.pp
 M	packages/pastojs/src/fppas2js.pp
 M	packages/pastojs/tests/tcmodules.pas
-
 ******************************************************************************
 commit 6b36229d3c1e202665ca7b34d731194534fccdf9
 Author: Michaël Van Canneyt <michael@freepascal.org>
@@ -38572,6 +38582,7 @@ Date:   Tue Aug 17 16:47:00 2021 +0200
     * Allocate min threads
 
 M	packages/fcl-base/src/fpthreadpool.pp
+
 ******************************************************************************
 commit 6e8775f2a9934349c3f13921aaeed6945f9f919c
 Author: Michaël Van Canneyt <michael@freepascal.org>
