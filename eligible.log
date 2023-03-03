@@ -1,4 +1,31 @@
 ******************************************************************************
+commit 7854152304110571f6c1a950f3828b4aceded90b
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Mon Dec 5 23:25:21 2022 +0000
+
+      * Adjustment to TBLockNode.pass_1 to actually strip nothing nodes
+
+M	compiler/nbas.pas
+
+******************************************************************************
+commit ecf2ad3e53c1ca9ce9486ba1adbd82c117a8473d
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Fri Mar 3 12:38:04 2023 +0000
+
+      x86: Some oversights fixed where another iteration of pass 1 wasn't performed when it should have been
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
+commit 1fad287896873b48a7bd93789babfca4028e2f35
+Author: florian <florian@freepascal.org>
+Date:   Fri Mar 3 21:45:35 2023 +0100
+
+      * patch by Werner Pamler: Typo in TFPCustomCanvas.Draw, resolves #40176
+
+M	packages/fcl-image/src/fpcanvas.inc
+
+******************************************************************************
 commit 708aaa7b97f598f0c378578e491a6e16f5a4bda7
 Author: florian <florian@freepascal.org>
 Date:   Thu Mar 2 22:56:23 2023 +0100
@@ -38543,7 +38570,6 @@ Date:   Sat Aug 14 02:55:15 2021 +0200
     comment
 
 M	packages/fcl-net/src/ssockets.pp
-
 ******************************************************************************
 commit 8bf5eb83229a05e2c630bc4015b9c622ff8e48df
 Author: Ondrej Pokorny <lazarus@kluug.net>
@@ -38574,6 +38600,7 @@ M	packages/fcl-passrc/src/pasresolveeval.pas
 M	packages/fcl-passrc/src/pasresolver.pp
 M	packages/pastojs/src/fppas2js.pp
 M	packages/pastojs/tests/tcmodules.pas
+
 ******************************************************************************
 commit 6b36229d3c1e202665ca7b34d731194534fccdf9
 Author: Michaël Van Canneyt <michael@freepascal.org>
