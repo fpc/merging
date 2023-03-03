@@ -1,4 +1,23 @@
 ******************************************************************************
+commit 3cec86390a07ac742c50cf0d4649608fbf09d7c4
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Fri Mar 3 23:17:55 2023 +0100
+
+    fcl-js: fixed writing small floats
+
+M	packages/fcl-js/src/jswriter.pp
+M	packages/pastojs/tests/tcmodules.pas
+
+******************************************************************************
+commit acb1e598620b6286da9e0dec38db7e27cbfb4015
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Fri Mar 3 22:18:41 2023 +0100
+
+    pastojs: allow readonly modeswitch functionreferences and anonymousfunctions
+
+M	packages/pastojs/src/fppas2js.pp
+
+******************************************************************************
 commit 7854152304110571f6c1a950f3828b4aceded90b
 Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
 Date:   Mon Dec 5 23:25:21 2022 +0000
@@ -38552,7 +38571,6 @@ Date:   Sat Aug 14 04:44:20 2021 +0200
     Read out KeepAlive only if enabled
 
 M	packages/fcl-web/src/base/fphttpserver.pp
-
 ******************************************************************************
 commit 3814df5b4a052afb5b0d28e761c8836212b353d9
 Author: Ondrej Pokorny <lazarus@kluug.net>
@@ -38570,6 +38588,7 @@ Date:   Sat Aug 14 02:55:15 2021 +0200
     comment
 
 M	packages/fcl-net/src/ssockets.pp
+
 ******************************************************************************
 commit 8bf5eb83229a05e2c630bc4015b9c622ff8e48df
 Author: Ondrej Pokorny <lazarus@kluug.net>
