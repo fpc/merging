@@ -1,4 +1,13 @@
 ******************************************************************************
+commit ccbdfa91505dfde79e981b12030205933e1b20b4
+Author: florian <florian@freepascal.org>
+Date:   Sat Mar 4 21:19:45 2023 +0100
+
+      + x86: AND/CMP -> CMP optimiziation
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
 commit b8933dd267c554ca4f5441f23f14a822ea6ecde7
 Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
 Date:   Mon Feb 13 15:49:58 2023 +0000
@@ -38564,7 +38573,6 @@ Date:   Sat Aug 14 04:46:50 2021 +0200
 M	packages/fcl-web/examples/httpserver/simplehttpserver.pas
 A	packages/fcl-web/examples/httpserver/testhttpserver.pas
 A	packages/fcl-web/examples/httpserver/threadedhttpserver.pas
-
 ******************************************************************************
 commit 676c9a7bf6e181662c5838ced35d0326fe5da564
 Author: Ondrej Pokorny <lazarus@kluug.net>
@@ -38573,6 +38581,7 @@ Date:   Sat Aug 14 04:46:12 2021 +0200
     Rename KeepAliveSupport->KeepAliveEnabled
 
 M	packages/fcl-web/src/base/fphttpserver.pp
+
 ******************************************************************************
 commit c67a44c07a699e9c70b71f28370f875e1e010bb1
 Author: Ondrej Pokorny <lazarus@kluug.net>
