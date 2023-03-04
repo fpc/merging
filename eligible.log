@@ -1,4 +1,15 @@
 ******************************************************************************
+commit b8933dd267c554ca4f5441f23f14a822ea6ecde7
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Mon Feb 13 15:49:58 2023 +0000
+
+      * x86: Some refactoring to use aoc_ForceNewIteration instead of manually advancing p
+
+M	compiler/i386/aoptcpu.pas
+M	compiler/x86/aoptx86.pas
+M	compiler/x86_64/aoptcpu.pas
+
+******************************************************************************
 commit 3cec86390a07ac742c50cf0d4649608fbf09d7c4
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Fri Mar 3 23:17:55 2023 +0100
@@ -38562,7 +38573,6 @@ Date:   Sat Aug 14 04:46:12 2021 +0200
     Rename KeepAliveSupport->KeepAliveEnabled
 
 M	packages/fcl-web/src/base/fphttpserver.pp
-
 ******************************************************************************
 commit c67a44c07a699e9c70b71f28370f875e1e010bb1
 Author: Ondrej Pokorny <lazarus@kluug.net>
@@ -38571,6 +38581,7 @@ Date:   Sat Aug 14 04:44:20 2021 +0200
     Read out KeepAlive only if enabled
 
 M	packages/fcl-web/src/base/fphttpserver.pp
+
 ******************************************************************************
 commit 3814df5b4a052afb5b0d28e761c8836212b353d9
 Author: Ondrej Pokorny <lazarus@kluug.net>
