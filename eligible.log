@@ -1,4 +1,14 @@
 ******************************************************************************
+commit bf8746ed101c4603ea005db72ef9743ee8cf3a11
+Author: florian <florian@freepascal.org>
+Date:   Sun Mar 5 21:24:50 2023 +0100
+
+      * fixed comment
+      * shortened code
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
 commit ccbdfa91505dfde79e981b12030205933e1b20b4
 Author: florian <florian@freepascal.org>
 Date:   Sat Mar 4 21:19:45 2023 +0100
@@ -38562,7 +38572,6 @@ Date:   Sat Aug 14 05:44:44 2021 +0200
 
 M	packages/fcl-web/examples/httpserver/threadedhttpserver.pas
 M	packages/fcl-web/src/base/fphttpserver.pp
-
 ******************************************************************************
 commit af47d108af4e289f6018b2a386b9c96b2a65c12d
 Author: Ondrej Pokorny <lazarus@kluug.net>
@@ -38573,6 +38582,7 @@ Date:   Sat Aug 14 04:46:50 2021 +0200
 M	packages/fcl-web/examples/httpserver/simplehttpserver.pas
 A	packages/fcl-web/examples/httpserver/testhttpserver.pas
 A	packages/fcl-web/examples/httpserver/threadedhttpserver.pas
+
 ******************************************************************************
 commit 676c9a7bf6e181662c5838ced35d0326fe5da564
 Author: Ondrej Pokorny <lazarus@kluug.net>
