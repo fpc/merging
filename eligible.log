@@ -1,4 +1,15 @@
 ******************************************************************************
+commit 99b01f66343d9d28c1231953d186a4e5f34b3210
+Author: florian <florian@freepascal.org>
+Date:   Mon Mar 6 23:19:34 2023 +0100
+
+      * second mul might get called with a zero operand if the other has a side effect,
+        handle this correctly in ti386addnode.second_mul64bit, resolves #40182
+
+M	compiler/i386/n386add.pas
+A	tests/webtbs/tw40182.pp
+
+******************************************************************************
 commit bf8746ed101c4603ea005db72ef9743ee8cf3a11
 Author: florian <florian@freepascal.org>
 Date:   Sun Mar 5 21:24:50 2023 +0100
@@ -38562,7 +38573,6 @@ Date:   Sat Aug 14 06:17:46 2021 +0200
 
 M	packages/fcl-net/src/ssockets.pp
 M	packages/fcl-web/src/base/fphttpserver.pp
-
 ******************************************************************************
 commit 6a2f596b8eb7efa8fb672451a7afe0a00b5a03e9
 Author: Ondrej Pokorny <lazarus@kluug.net>
@@ -38572,6 +38582,7 @@ Date:   Sat Aug 14 05:44:44 2021 +0200
 
 M	packages/fcl-web/examples/httpserver/threadedhttpserver.pas
 M	packages/fcl-web/src/base/fphttpserver.pp
+
 ******************************************************************************
 commit af47d108af4e289f6018b2a386b9c96b2a65c12d
 Author: Ondrej Pokorny <lazarus@kluug.net>
