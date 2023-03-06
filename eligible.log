@@ -1,4 +1,51 @@
 ******************************************************************************
+commit d6d693696e030786f4031c102ed4965d18cca72a
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Mon Mar 6 23:29:04 2023 +0100
+
+    + add test for fixed #40077
+
+A	tests/webtbs/tw40077.pp
+
+******************************************************************************
+commit 4823ca71145f3e592b27a72b9bd2e0a7fe7bde55
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Mon Mar 6 23:23:40 2023 +0100
+
+    * fix #40074: adjust Generics.Defaults to make use of the new ConstParamIsRef<> utility function to correctly determine how a generic binary parameter needs to be compared
+
+M	packages/rtl-generics/src/generics.defaults.pas
+A	tests/webtbs/tw40074.pp
+
+******************************************************************************
+commit b0e9b9d7052ff7a0102d80217e57b6193ed9c01b
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Mon Mar 6 23:14:31 2023 +0100
+
+    * don't use size specific binary comparers
+
+M	packages/rtl-generics/src/generics.defaults.pas
+
+******************************************************************************
+commit d40a2dbb1271ca1964fdfd8b34efb55c580724b9
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Mon Mar 6 23:03:06 2023 +0100
+
+    + add generic utility function ConstParamIsRef<> to determine whether a specific type is passed by-value or by-reference as a const parameter
+
+M	rtl/objpas/rtlconst.inc
+M	rtl/objpas/typinfo.pp
+
+******************************************************************************
+commit b878a0d39057fcdcf4d8dc64eb04ca133eb99b54
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Mon Mar 6 23:00:17 2023 +0100
+
+    * fix typo in resource string
+
+M	rtl/objpas/rtlconst.inc
+
+******************************************************************************
 commit 99b01f66343d9d28c1231953d186a4e5f34b3210
 Author: florian <florian@freepascal.org>
 Date:   Mon Mar 6 23:19:34 2023 +0100
@@ -38527,7 +38574,6 @@ Date:   Sat Aug 14 02:12:40 2021 +0200
 
 M	packages/fcl-net/src/ssockets.pp
 M	packages/fcl-web/src/base/fphttpserver.pp
-
 ******************************************************************************
 commit c68c22e9e88413abd80866aa3293e553fb0c5b95
 Author: Ondrej Pokorny <lazarus@kluug.net>
@@ -38573,6 +38619,7 @@ Date:   Sat Aug 14 06:17:46 2021 +0200
 
 M	packages/fcl-net/src/ssockets.pp
 M	packages/fcl-web/src/base/fphttpserver.pp
+
 ******************************************************************************
 commit 6a2f596b8eb7efa8fb672451a7afe0a00b5a03e9
 Author: Ondrej Pokorny <lazarus@kluug.net>
