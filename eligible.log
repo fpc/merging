@@ -1,4 +1,22 @@
 ******************************************************************************
+commit 8dcabc5796aeac40f559cfa2d56c586242100e0d
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Tue Mar 7 13:48:40 2023 +0100
+
+    * Fix default classname property
+
+M	packages/fcl-web/src/jsonrpc/fpjsonrpc.pp
+
+******************************************************************************
+commit f9a96e5e63a93340d2c9406023f2a5ac0581581d
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Tue Mar 7 11:42:58 2023 +0100
+
+    * Avoid useless exceptions by checking existence of resource
+
+M	rtl/objpas/classes/classes.inc
+
+******************************************************************************
 commit d383f6102df663aa550a26f2838388ea574792b4
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Tue Mar 7 10:52:52 2023 +0100
@@ -38557,7 +38575,6 @@ Date:   Sat Aug 14 04:46:50 2021 +0200
     add threadedhttpserver demo
 
 M	packages/fcl-web/examples/httpserver/threadedhttpserver.pas
-
 ******************************************************************************
 commit 722a37ab2f8b008c750a4a143d49aae8563032cd
 Author: Ondrej Pokorny <lazarus@kluug.net>
@@ -38575,6 +38592,7 @@ Date:   Sat Aug 14 04:44:20 2021 +0200
     Read out KeepAlive only if enabled
 
 M	packages/fcl-web/src/base/fphttpserver.pp
+
 ******************************************************************************
 commit 1d18f2fdbf2b190f9abefd954bcea71795de8bc3
 Author: Ondrej Pokorny <lazarus@kluug.net>
