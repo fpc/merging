@@ -1,4 +1,22 @@
 ******************************************************************************
+commit d383f6102df663aa550a26f2838388ea574792b4
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Tue Mar 7 10:52:52 2023 +0100
+
+    fcl-hash: fixed HOTPCalculateToken on non utf8 platform
+
+M	packages/fcl-hash/src/onetimepass.pp
+
+******************************************************************************
+commit bfa3e156d234b569db886879211ea12279362d4e
+Author: mattias <nc-gaertnma@netcologne.de>
+Date:   Tue Mar 7 10:25:48 2023 +0100
+
+    fcl-hash: fixed start without params, show config filename
+
+M	packages/fcl-hash/examples/authenticator.lpi
+
+******************************************************************************
 commit 93816c379b3207d11c6a84e0251d39b9f970b94f
 Author: mattias <nc-gaertnma@netcologne.de>
 Date:   Tue Mar 7 10:10:18 2023 +0100
@@ -38557,7 +38575,6 @@ Date:   Sat Aug 14 04:44:20 2021 +0200
     Read out KeepAlive only if enabled
 
 M	packages/fcl-web/src/base/fphttpserver.pp
-
 ******************************************************************************
 commit 1d18f2fdbf2b190f9abefd954bcea71795de8bc3
 Author: Ondrej Pokorny <lazarus@kluug.net>
@@ -38575,6 +38592,7 @@ Date:   Sat Aug 14 02:55:01 2021 +0200
     TFPCustomHttpServer KeepAlive* properties
 
 M	packages/fcl-web/src/base/fphttpserver.pp
+
 ******************************************************************************
 commit 9d9128a747adcbdc2a7a3fafb17237f895dbff21
 Author: Ondrej Pokorny <lazarus@kluug.net>
