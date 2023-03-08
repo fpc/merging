@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 0e2102e17249645b441c377219a9e7c69bf32e24
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Wed Mar 8 16:12:59 2023 +0100
+
+    * Resource handle is not resource ID
+
+M	rtl/objpas/classes/classes.inc
+
+******************************************************************************
 commit c3c3bd347112393a0de03a7efeb8bae127a619bf
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Wed Mar 8 10:09:58 2023 +0100
@@ -38565,7 +38574,6 @@ Date:   Sat Aug 14 06:17:46 2021 +0200
 
 M	packages/fcl-net/src/ssockets.pp
 M	packages/fcl-web/src/base/fphttpserver.pp
-
 ******************************************************************************
 commit da10b8141c184e592b1d8d4ab65d675c0755fbcc
 Author: Ondrej Pokorny <lazarus@kluug.net>
@@ -38575,6 +38583,7 @@ Date:   Sat Aug 14 05:44:44 2021 +0200
 
 M	packages/fcl-web/examples/httpserver/threadedhttpserver.pas
 M	packages/fcl-web/src/base/fphttpserver.pp
+
 ******************************************************************************
 commit bf2e3bf51a1e9a5c2156edf112fbb8a83aabe42c
 Author: Ondrej Pokorny <lazarus@kluug.net>
