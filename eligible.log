@@ -1,4 +1,13 @@
 ******************************************************************************
+commit c3c3bd347112393a0de03a7efeb8bae127a619bf
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Wed Mar 8 10:09:58 2023 +0100
+
+    * Fix windows compilation
+
+M	rtl/objpas/classes/classes.inc
+
+******************************************************************************
 commit 8dcabc5796aeac40f559cfa2d56c586242100e0d
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Tue Mar 7 13:48:40 2023 +0100
@@ -38566,7 +38575,6 @@ Date:   Sat Aug 14 05:44:44 2021 +0200
 
 M	packages/fcl-web/examples/httpserver/threadedhttpserver.pas
 M	packages/fcl-web/src/base/fphttpserver.pp
-
 ******************************************************************************
 commit bf2e3bf51a1e9a5c2156edf112fbb8a83aabe42c
 Author: Ondrej Pokorny <lazarus@kluug.net>
@@ -38575,6 +38583,7 @@ Date:   Sat Aug 14 04:46:50 2021 +0200
     add threadedhttpserver demo
 
 M	packages/fcl-web/examples/httpserver/threadedhttpserver.pas
+
 ******************************************************************************
 commit 722a37ab2f8b008c750a4a143d49aae8563032cd
 Author: Ondrej Pokorny <lazarus@kluug.net>
