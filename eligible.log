@@ -1,4 +1,41 @@
 ******************************************************************************
+commit 3f25438d35d772669aa2ada696c23d51f14c004a
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Tue Feb 14 15:07:48 2023 +0000
+
+      * x86: TEST/Jcc/TEST optimisations can now look beyond the next instruction under -O3
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
+commit d3722861599383de61f0d09158917a8aa691553c
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Fri Feb 25 00:53:57 2022 +0000
+
+      * x86: RegModifiedByInstruction and RegInInstruction
+             are now more accurate for (I)MUL and (I)DIV.
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
+commit 3635f7cd6fa703a23ff6b93b5264b527b1846c81
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Wed Feb 22 07:02:58 2023 +0000
+
+      * x86: Fixed oversight in RegModifiedByInstruction not checking W0, W1 and WU-type flags
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
+commit b637a3a022e7f959f07f9c60efb619621890499b
+Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
+Date:   Thu Feb 24 22:30:54 2022 +0000
+
+      * x86: Fix to MOV/CMP register deallocation positioning
+
+M	compiler/x86/aoptx86.pas
+
+******************************************************************************
 commit b2b2606e36f0c4e4d9b24b85cacfff4d82be019f
 Author: Sven/Sarah Barth <pascaldragon@gmail.com>
 Date:   Sat Mar 11 17:07:40 2023 +0100
@@ -38540,7 +38577,6 @@ Date:   Wed Aug 18 16:03:32 2021 +0200
     fcl-json: fixed testjson.lpi
 
 M	packages/fcl-json/tests/testjson.lpi
-
 ******************************************************************************
 commit db0d1501e0bfe9166e94f8eb0204b31023f92940
 Author: Michaël Van Canneyt <michael@freepascal.org>
@@ -38576,6 +38612,7 @@ Date:   Wed Aug 18 14:11:22 2021 +0200
     Thread pool start
 
 M	packages/fcl-web/src/base/fphttpserver.pp
+
 ******************************************************************************
 commit f6c476ae79112ef1866dab22cee7c307fc8ec98f
 Author: Michaël Van Canneyt <michael@freepascal.org>
