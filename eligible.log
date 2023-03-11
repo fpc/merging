@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 73b528d17028e361229070ebd241f9980d4f8892
+Author: florian <florian@freepascal.org>
+Date:   Sat Mar 11 11:55:14 2023 +0100
+
+      * patch by Rika: Remove dead code in DynArrayIndex, resolves #40194
+
+M	rtl/inc/dynarr.inc
+
+******************************************************************************
 commit 77f53ebde3c14b1e26734fc0a57629e5149743f7
 Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
 Date:   Wed Nov 9 04:41:49 2022 +0000
@@ -38567,7 +38576,6 @@ Date:   Wed Aug 18 11:44:47 2021 +0200
 
 M	packages/fcl-web/examples/httpserver/simplehttpserver.lpi
 M	packages/fcl-web/src/base/fphttpserver.pp
-
 ******************************************************************************
 commit ed861e5343dba6e3e10d75a6db8919deaf4b350f
 Author: Ondrej Pokorny <lazarus@kluug.net>
@@ -38576,6 +38584,7 @@ Date:   Sat Aug 14 08:05:14 2021 +0200
     don't keep alive connections that failed
 
 M	packages/fcl-web/src/base/fphttpserver.pp
+
 ******************************************************************************
 commit 410916ab6bfad9c66f396fb94fef0a256f9610a6
 Author: Ondrej Pokorny <lazarus@kluug.net>
