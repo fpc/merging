@@ -1,4 +1,14 @@
 ******************************************************************************
+commit b2b2606e36f0c4e4d9b24b85cacfff4d82be019f
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Sat Mar 11 17:07:40 2023 +0100
+
+    + add function reference suitable overload of TThread.ForceQueue()
+
+M	rtl/objpas/classes/classes.inc
+M	rtl/objpas/classes/classesh.inc
+
+******************************************************************************
 commit 73b528d17028e361229070ebd241f9980d4f8892
 Author: florian <florian@freepascal.org>
 Date:   Sat Mar 11 11:55:14 2023 +0100
@@ -38566,7 +38576,6 @@ Date:   Wed Aug 18 14:11:22 2021 +0200
     Thread pool start
 
 M	packages/fcl-web/src/base/fphttpserver.pp
-
 ******************************************************************************
 commit f6c476ae79112ef1866dab22cee7c307fc8ec98f
 Author: Michaël Van Canneyt <michael@freepascal.org>
@@ -38576,6 +38585,7 @@ Date:   Wed Aug 18 11:44:47 2021 +0200
 
 M	packages/fcl-web/examples/httpserver/simplehttpserver.lpi
 M	packages/fcl-web/src/base/fphttpserver.pp
+
 ******************************************************************************
 commit ed861e5343dba6e3e10d75a6db8919deaf4b350f
 Author: Ondrej Pokorny <lazarus@kluug.net>
