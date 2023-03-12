@@ -1,4 +1,14 @@
 ******************************************************************************
+commit f0ac02cb2e2ec6b54666372f01e94702f717bf15
+Author: florian <florian@freepascal.org>
+Date:   Sun Mar 12 22:15:39 2023 +0100
+
+      * patch by Rika: Remove wrong paranoia (and add correct one (and shorten in general (and fix a bug in))) fpc_dynarray_setlength, resolves #40193
+
+M	rtl/inc/dynarr.inc
+M	tests/test/tmoperator7.pp
+
+******************************************************************************
 commit be1cc68a9908cfc0e68d5dc8d45bd9eecd1ba4e4
 Author: Pierre Muller <pierre@freepascal.org>
 Date:   Sun Mar 12 16:28:06 2023 +0100
@@ -38571,7 +38581,6 @@ Date:   Wed Aug 18 16:36:29 2021 +0200
     * Smaller idle timeout
 
 M	packages/fcl-web/examples/httpserver/simplehttpserver.pas
-
 ******************************************************************************
 commit ab7de664719e8421f17c32307eae700c832f2787
 Author: Michaël Van Canneyt <michael@freepascal.org>
@@ -38580,6 +38589,7 @@ Date:   Wed Aug 18 16:10:30 2021 +0200
     * Working thread pool
 
 M	packages/fcl-web/src/base/fphttpserver.pp
+
 ******************************************************************************
 commit aa9ff6c225997c84ded257d33219b60374470786
 Author: mattias <nc-gaertnma@netcologne.de>
