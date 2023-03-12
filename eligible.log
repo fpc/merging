@@ -1,4 +1,22 @@
 ******************************************************************************
+commit b30256ad6be6ccbf3a303450c2cc15e0ead643b6
+Author: florian <florian@freepascal.org>
+Date:   Sun Mar 12 23:21:01 2023 +0100
+
+      * typo fixed
+
+M	rtl/freertos/riscv32/esp32c3idf_50000.pp
+
+******************************************************************************
+commit be99dea38bdffe725f38afaa56f1a5faf7cbc238
+Author: florian <florian@freepascal.org>
+Date:   Sun Mar 12 23:15:10 2023 +0100
+
+      * library list for esp32c3 for IDF 5.0
+
+M	rtl/freertos/riscv32/esp32c3idf_50000.pp
+
+******************************************************************************
 commit f0ac02cb2e2ec6b54666372f01e94702f717bf15
 Author: florian <florian@freepascal.org>
 Date:   Sun Mar 12 22:15:39 2023 +0100
@@ -38561,7 +38579,6 @@ Date:   Wed Aug 18 22:24:41 2021 +0200
     * Fix some debug output
 
 M	packages/fcl-base/src/fpthreadpool.pp
-
 ******************************************************************************
 commit a68a6415f2f559afbde579f1333043090ff5db8d
 Author: Michaël Van Canneyt <michael@freepascal.org>
@@ -38581,6 +38598,7 @@ Date:   Wed Aug 18 16:36:29 2021 +0200
     * Smaller idle timeout
 
 M	packages/fcl-web/examples/httpserver/simplehttpserver.pas
+
 ******************************************************************************
 commit ab7de664719e8421f17c32307eae700c832f2787
 Author: Michaël Van Canneyt <michael@freepascal.org>
