@@ -1,4 +1,16 @@
 ******************************************************************************
+commit be1cc68a9908cfc0e68d5dc8d45bd9eecd1ba4e4
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Sun Mar 12 16:28:06 2023 +0100
+
+    Change libc statx function to weakexternal
+    
+     Test if statx is nil before call
+
+M	rtl/linux/linux.pp
+M	rtl/unix/sysutils.pp
+
+******************************************************************************
 commit 3f25438d35d772669aa2ada696c23d51f14c004a
 Author: J. Gareth "Curious Kit" Moreton <gareth@moreton-family.com>
 Date:   Tue Feb 14 15:07:48 2023 +0000
@@ -38568,7 +38580,6 @@ Date:   Wed Aug 18 16:10:30 2021 +0200
     * Working thread pool
 
 M	packages/fcl-web/src/base/fphttpserver.pp
-
 ******************************************************************************
 commit aa9ff6c225997c84ded257d33219b60374470786
 Author: mattias <nc-gaertnma@netcologne.de>
@@ -38577,6 +38588,7 @@ Date:   Wed Aug 18 16:03:32 2021 +0200
     fcl-json: fixed testjson.lpi
 
 M	packages/fcl-json/tests/testjson.lpi
+
 ******************************************************************************
 commit db0d1501e0bfe9166e94f8eb0204b31023f92940
 Author: Michaël Van Canneyt <michael@freepascal.org>
