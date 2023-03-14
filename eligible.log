@@ -1,4 +1,16 @@
 ******************************************************************************
+commit 9acf1921414cef154677d7dbfa444d811e11878f
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Tue Mar 14 22:19:01 2023 +0100
+
+    * Add possibility to read updated data
+
+M	packages/fcl-web/src/restbridge/sqldbrestbridge.pp
+M	packages/fcl-web/src/restbridge/sqldbrestdata.pp
+M	packages/fcl-web/src/restbridge/sqldbrestio.pp
+M	packages/fcl-web/src/restbridge/sqldbrestschema.pp
+
+******************************************************************************
 commit b30256ad6be6ccbf3a303450c2cc15e0ead643b6
 Author: florian <florian@freepascal.org>
 Date:   Sun Mar 12 23:21:01 2023 +0100
@@ -38570,7 +38582,6 @@ Date:   Wed Aug 18 22:25:28 2021 +0200
 A	packages/fcl-web/examples/intercept/simpleserver.lpi
 A	packages/fcl-web/examples/intercept/simpleserver.pas
 M	packages/fcl-web/src/base/httproute.pp
-
 ******************************************************************************
 commit 5a6bea6180fc8b7f37a3cdfa7b62d8e85efa47eb
 Author: Michaël Van Canneyt <michael@freepascal.org>
@@ -38579,6 +38590,7 @@ Date:   Wed Aug 18 22:24:41 2021 +0200
     * Fix some debug output
 
 M	packages/fcl-base/src/fpthreadpool.pp
+
 ******************************************************************************
 commit a68a6415f2f559afbde579f1333043090ff5db8d
 Author: Michaël Van Canneyt <michael@freepascal.org>
