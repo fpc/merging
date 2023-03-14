@@ -1,4 +1,22 @@
 ******************************************************************************
+commit 2b0317f400596561c986147c61c9ed7248c4a7e9
+Author: florian <florian@freepascal.org>
+Date:   Tue Mar 14 23:10:32 2023 +0100
+
+      * compilation fixed with -Oodfa
+
+M	compiler/systems/t_freertos.pas
+
+******************************************************************************
+commit 30cb20bccd1e2ad966d107c43da4e799463d0bf1
+Author: florian <florian@freepascal.org>
+Date:   Tue Mar 14 22:21:40 2023 +0100
+
+      + riscv32-freertos: first version of TlinkerFreeRTOS.GenerateDefaultLinkerScripts
+
+M	compiler/systems/t_freertos.pas
+
+******************************************************************************
 commit 9acf1921414cef154677d7dbfa444d811e11878f
 Author: Michaël Van Canneyt <michael@freepascal.org>
 Date:   Tue Mar 14 22:19:01 2023 +0100
@@ -38562,7 +38580,6 @@ Date:   Wed Aug 18 23:08:14 2021 +0200
 
 M	packages/fcl-base/examples/testthreadpool.pp
 M	packages/fcl-base/src/fpthreadpool.pp
-
 ******************************************************************************
 commit e6f40c196a4a76aeda73632a67eff84f56c2d7bb
 Author: Michaël Van Canneyt <michael@freepascal.org>
@@ -38582,6 +38599,7 @@ Date:   Wed Aug 18 22:25:28 2021 +0200
 A	packages/fcl-web/examples/intercept/simpleserver.lpi
 A	packages/fcl-web/examples/intercept/simpleserver.pas
 M	packages/fcl-web/src/base/httproute.pp
+
 ******************************************************************************
 commit 5a6bea6180fc8b7f37a3cdfa7b62d8e85efa47eb
 Author: Michaël Van Canneyt <michael@freepascal.org>
