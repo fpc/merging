@@ -1,4 +1,30 @@
 ******************************************************************************
+commit 7909f00c834b31579aa4a9cb50c5cd719c379732
+Author: florian <florian@freepascal.org>
+Date:   Wed Mar 15 23:01:44 2023 +0100
+
+      * project files updated
+
+M	compiler/ppcaarch64.lpi
+M	compiler/ppcarm.lpi
+M	compiler/ppcavr.lpi
+M	compiler/ppcjvm.lpi
+M	compiler/ppcmips.lpi
+M	compiler/ppcmips64el.lpi
+M	compiler/ppcmipsel.lpi
+M	compiler/ppcppc.lpi
+M	compiler/ppcppc64.lpi
+M	compiler/ppcppc64le.lpi
+M	compiler/ppcriscv32.lpi
+M	compiler/ppcriscv64.lpi
+M	compiler/ppcsparc.lpi
+M	compiler/ppcsparc64.lpi
+M	compiler/ppcx64.lpi
+M	compiler/ppcx64llvm.lpi
+M	compiler/ppcxtensa.lpi
+M	compiler/ppcz80.lpi
+
+******************************************************************************
 commit 2b0317f400596561c986147c61c9ed7248c4a7e9
 Author: florian <florian@freepascal.org>
 Date:   Tue Mar 14 23:10:32 2023 +0100
@@ -38570,7 +38596,6 @@ M	packages/fcl-web/examples/httpserver/testhttpserver.pas
 M	packages/fcl-web/examples/httpserver/threadedhttpserver.pas
 M	packages/fcl-web/src/base/fphttpserver.pp
 M	packages/fcl-web/src/base/httpdefs.pp
-
 ******************************************************************************
 commit c632736197642d2265e48731a22dfa8bda3d5a46
 Author: Michaël Van Canneyt <michael@freepascal.org>
@@ -38580,6 +38605,7 @@ Date:   Wed Aug 18 23:08:14 2021 +0200
 
 M	packages/fcl-base/examples/testthreadpool.pp
 M	packages/fcl-base/src/fpthreadpool.pp
+
 ******************************************************************************
 commit e6f40c196a4a76aeda73632a67eff84f56c2d7bb
 Author: Michaël Van Canneyt <michael@freepascal.org>
