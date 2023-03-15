@@ -1,4 +1,24 @@
 ******************************************************************************
+commit 6aab856213554cb5f5c64c87f494e6bae868141d
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Wed Mar 15 23:38:08 2023 +0100
+
+    + add test for already fixed #37380
+
+A	tests/webtbs/tw37380.pp
+
+******************************************************************************
+commit c1ecfc323ae3c259aa3c085dc7bdb2abb5b0f3e7
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Wed Mar 15 23:35:30 2023 +0100
+
+    * ensure that a procvar (especially a "REFERENCE TO") begins either with FUNCTION or PROCEDURE
+    + added test
+
+M	compiler/ptype.pas
+A	tests/tbf/tb0297.pp
+
+******************************************************************************
 commit 7909f00c834b31579aa4a9cb50c5cd719c379732
 Author: florian <florian@freepascal.org>
 Date:   Wed Mar 15 23:01:44 2023 +0100
@@ -38574,7 +38594,6 @@ Date:   Fri Aug 20 10:06:38 2021 +0200
     * Allow to compile also non-windows,linux
 
 M	packages/fcl-net/src/ssockets.pp
-
 ******************************************************************************
 commit 74ebc15596a6ba09eb663919c340df005291924c
 Author: Michaël Van Canneyt <michael@freepascal.org>
@@ -38596,6 +38615,7 @@ M	packages/fcl-web/examples/httpserver/testhttpserver.pas
 M	packages/fcl-web/examples/httpserver/threadedhttpserver.pas
 M	packages/fcl-web/src/base/fphttpserver.pp
 M	packages/fcl-web/src/base/httpdefs.pp
+
 ******************************************************************************
 commit c632736197642d2265e48731a22dfa8bda3d5a46
 Author: Michaël Van Canneyt <michael@freepascal.org>
