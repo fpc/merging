@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 5fe8fbd43aa5edd3fe4f1c67c3bf587528a5f4b8
+Author: florian <florian@freepascal.org>
+Date:   Thu Mar 16 22:23:39 2023 +0100
+
+      * take care of mips64* when calling gcc for the libgcc path
+
+M	packages/fpmkunit/src/fpmkunit.pp
+
+******************************************************************************
 commit 7d31e25ba646791c200e1365b2578bdc8c21c551
 Author: Mikhail Novosyolov <m.novosyolov@rosalinux.ru>
 Date:   Thu Mar 16 19:38:23 2023 +0300
@@ -38586,7 +38595,6 @@ Date:   Sat Aug 21 09:03:56 2021 +0200
     * Allow to read handler
 
 M	packages/fcl-net/src/ssockets.pp
-
 ******************************************************************************
 commit 61a3f6603d2fac4f4b88cabb5c1ab1361bf6429b
 Author: florian <florian@freepascal.org>
@@ -38598,6 +38606,7 @@ M	compiler/i386/i386prop.inc
 M	compiler/i8086/i8086prop.inc
 M	compiler/x86/x86ins.dat
 M	compiler/x86_64/x8664pro.inc
+
 ******************************************************************************
 commit 58b252705ea9be56262b384f2b633e386b41f69a
 Author: Michaël Van Canneyt <michael@freepascal.org>
