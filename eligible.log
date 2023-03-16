@@ -1,4 +1,17 @@
 ******************************************************************************
+commit 7d31e25ba646791c200e1365b2578bdc8c21c551
+Author: Mikhail Novosyolov <m.novosyolov@rosalinux.ru>
+Date:   Thu Mar 16 19:38:23 2023 +0300
+
+    Fix messages about not found gcc
+    
+    Code actually looks for the gcc executable inside $PATH, not for libgcc.
+    fpc works without the libgcc.so devel symlink.
+
+M	packages/fpmkunit/src/fpmkunit.pp
+M	packages/fppkg/src/fpmkunitsrc.inc
+
+******************************************************************************
 commit 6aab856213554cb5f5c64c87f494e6bae868141d
 Author: Sven/Sarah Barth <pascaldragon@gmail.com>
 Date:   Wed Mar 15 23:38:08 2023 +0100
@@ -38585,7 +38598,6 @@ M	compiler/i386/i386prop.inc
 M	compiler/i8086/i8086prop.inc
 M	compiler/x86/x86ins.dat
 M	compiler/x86_64/x8664pro.inc
-
 ******************************************************************************
 commit 58b252705ea9be56262b384f2b633e386b41f69a
 Author: Michaël Van Canneyt <michael@freepascal.org>
@@ -38594,6 +38606,7 @@ Date:   Fri Aug 20 10:06:38 2021 +0200
     * Allow to compile also non-windows,linux
 
 M	packages/fcl-net/src/ssockets.pp
+
 ******************************************************************************
 commit 74ebc15596a6ba09eb663919c340df005291924c
 Author: Michaël Van Canneyt <michael@freepascal.org>
