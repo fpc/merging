@@ -1,4 +1,13 @@
 ******************************************************************************
+commit e774a6275c99cf57f11a046de42b59d35364f270
+Author: Sven/Sarah Barth <pascaldragon@gmail.com>
+Date:   Fri Mar 17 15:53:25 2023 +0100
+
+    * change Result of CheckSynchronize to true when at least one method was executed (matches with both FPC and Delphi documentation)
+
+M	rtl/objpas/classes/classes.inc
+
+******************************************************************************
 commit 5fe8fbd43aa5edd3fe4f1c67c3bf587528a5f4b8
 Author: florian <florian@freepascal.org>
 Date:   Thu Mar 16 22:23:39 2023 +0100
@@ -38586,7 +38595,6 @@ Date:   Sat Aug 21 09:05:23 2021 +0200
     * Remove spurious var, prevents fpdoc from handling record
 
 M	rtl/objpas/types.pp
-
 ******************************************************************************
 commit 87e9958429835f501f83e8714f2a407c2ffffd12
 Author: Michaël Van Canneyt <michael@freepascal.org>
@@ -38595,6 +38603,7 @@ Date:   Sat Aug 21 09:03:56 2021 +0200
     * Allow to read handler
 
 M	packages/fcl-net/src/ssockets.pp
+
 ******************************************************************************
 commit 61a3f6603d2fac4f4b88cabb5c1ab1361bf6429b
 Author: florian <florian@freepascal.org>
