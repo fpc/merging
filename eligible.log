@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 98fa292b202f6da868eed12fa9a538ad8d3d7143
+Author: Rika Ichinose <rrunewalsh@gmail.com>
+Date:   Thu Mar 16 19:13:56 2023 +0300
+
+    SSE2 Index* and Compare* for i386, chosen at runtime.
+
+M	rtl/i386/i386.inc
+M	rtl/inc/systemh.inc
+
+******************************************************************************
 commit e774a6275c99cf57f11a046de42b59d35364f270
 Author: Sven/Sarah Barth <pascaldragon@gmail.com>
 Date:   Fri Mar 17 15:53:25 2023 +0100
@@ -38586,7 +38596,6 @@ Date:   Sat Aug 21 09:05:57 2021 +0200
     * Remove unneeded diagnostic output
 
 M	utils/fpdoc/dw_html.pp
-
 ******************************************************************************
 commit 7b6f273023059d3a905fd35897f2db9eb5bf46d0
 Author: Michaël Van Canneyt <michael@freepascal.org>
@@ -38595,6 +38604,7 @@ Date:   Sat Aug 21 09:05:23 2021 +0200
     * Remove spurious var, prevents fpdoc from handling record
 
 M	rtl/objpas/types.pp
+
 ******************************************************************************
 commit 87e9958429835f501f83e8714f2a407c2ffffd12
 Author: Michaël Van Canneyt <michael@freepascal.org>
