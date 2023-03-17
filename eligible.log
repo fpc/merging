@@ -1,4 +1,14 @@
 ******************************************************************************
+commit 64319dc019b03af26fff3b35bb3cb2853e540909
+Author: florian <florian@freepascal.org>
+Date:   Fri Mar 17 22:30:36 2023 +0100
+
+      * PopCount takes care only of the bit pattern, so take the uvalue to avoid an internal error, resolves #40190
+
+M	compiler/nadd.pas
+A	tests/webtbs/tw40190.pp
+
+******************************************************************************
 commit 98fa292b202f6da868eed12fa9a538ad8d3d7143
 Author: Rika Ichinose <rrunewalsh@gmail.com>
 Date:   Thu Mar 16 19:13:56 2023 +0300
@@ -38587,7 +38597,6 @@ Date:   Sat Aug 21 09:11:24 2021 +0200
     * fix compilation
 
 M	rtl/objpas/types.pp
-
 ******************************************************************************
 commit 06d99b1e6822a8c8cbf63b0af2b820068feb530b
 Author: Michaël Van Canneyt <michael@freepascal.org>
@@ -38596,6 +38605,7 @@ Date:   Sat Aug 21 09:05:57 2021 +0200
     * Remove unneeded diagnostic output
 
 M	utils/fpdoc/dw_html.pp
+
 ******************************************************************************
 commit 7b6f273023059d3a905fd35897f2db9eb5bf46d0
 Author: Michaël Van Canneyt <michael@freepascal.org>
