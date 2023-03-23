@@ -1,4 +1,13 @@
 ******************************************************************************
+commit 8cd10d88cc81868bce6f03f481b0bc83946d6ace
+Author: florian <florian@freepascal.org>
+Date:   Thu Mar 23 22:44:00 2023 +0100
+
+      * revert use of DW_AT_external for types as this is not covered by the dwarf standard
+
+M	compiler/dbgdwarf.pas
+
+******************************************************************************
 commit 4848327300b0580f23eed91842ea767e0cc60227
 Author: florian <florian@freepascal.org>
 Date:   Wed Mar 22 21:14:22 2023 +0100
@@ -38606,7 +38615,6 @@ Date:   Sun Aug 29 13:33:39 2021 +0200
     * fphttpclient: add new OnIdle event to keep the client responsive in case the server needs a lot of time to respond (and to be able to terminate the request while waiting for data)
 
 M	packages/fcl-web/src/base/fphttpclient.pp
-
 ******************************************************************************
 commit f6587d950520e36b23d412c1b370b861e21e62a6
 Author: Ondrej Pokorny <lazarus@kluug.net>
@@ -38615,6 +38623,7 @@ Date:   Sun Aug 29 13:33:39 2021 +0200
     * fphttpclient: add new OnIdle event to keep the client responsive in case the server needs a lot of time to respond (and to be able to terminate the request while waiting for data)
 
 M	packages/fcl-web/src/base/fphttpclient.pp
+
 ******************************************************************************
 commit 56c3b5b2cd0acd8f0aa531049f7d5b5fc86849e6
 Author: Michaël Van Canneyt <michael@freepascal.org>
