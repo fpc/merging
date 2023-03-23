@@ -1,4 +1,165 @@
 ******************************************************************************
+commit 4848327300b0580f23eed91842ea767e0cc60227
+Author: florian <florian@freepascal.org>
+Date:   Wed Mar 22 21:14:22 2023 +0100
+
+      * write types declared in the interface section with a DW_AT_external tag, should resolve #40210
+
+M	compiler/dbgdwarf.pas
+
+******************************************************************************
+commit 3e3b96e08878da9b828a3530b0f70bfd2bcf376f
+Author: florian <florian@freepascal.org>
+Date:   Tue Mar 21 22:37:40 2023 +0100
+
+      * fix of Erroneous reading of the value of the StackLength variable at program start based on issue report by Sergey Larin, resolves #40211
+
+M	rtl/linux/x86_64/si_c.inc
+M	rtl/linux/x86_64/si_g.inc
+M	rtl/linux/x86_64/si_prc.inc
+A	tests/webtbs/tw40211.pp
+
+******************************************************************************
+commit 488c389b9b8e6bff675fd486d601efe17f3b52d4
+Author: florian <florian@freepascal.org>
+Date:   Mon Mar 20 23:15:51 2023 +0100
+
+      + support FILEEXISTS(...) in preprocessor expressions, resolves #39527
+      + tests
+      * tscannerfile.readpreproc sets preproc_pattern correctly for quoted strings
+
+M	compiler/scanner.pas
+A	tests/test/tfileexists1.pp
+A	tests/test/tfileexists2.pp
+A	tests/test/tfileexists3.pp
+
+******************************************************************************
+commit 4ed8182c753a5bb0e10190fddc1c45627e059f1d
+Author: Pierre Muller <pierre@freepascal.org>
+Date:   Mon Mar 20 14:51:18 2023 +0100
+
+    Fix interactive information log error
+
+M	packages/fpmkunit/src/fpmkunit.pp
+
+******************************************************************************
+commit 33071fd1792a7430f8a6a83abde1c2a56ebe63be
+Author: marcoonthegit <marco@freepascal.org>
+Date:   Mon Mar 20 11:29:31 2023 +0100
+
+    * Add ptr types for fixed(u)int, fixes #40205
+
+M	rtl/objpas/objpas.pp
+
+******************************************************************************
+commit 0d3ec87492b9d2918608839746c34836ba19d3c0
+Author: florian <florian@freepascal.org>
+Date:   Sun Mar 19 21:19:10 2023 +0100
+
+      * also initalize default helper variables of initialization sections, resolves #40183
+
+M	compiler/psub.pas
+A	tests/webtbs/tw40183.pp
+A	tests/webtbs/uw40183.pp
+
+******************************************************************************
+commit 86ffe6938012c52d4a31dc791b06ba933cfdf2c0
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sun Mar 19 15:22:45 2023 +0100
+
+    * Better signature for Initialize/Finalize dummies
+
+M	rtl/inc/system.fpd
+
+******************************************************************************
+commit a35f66a73071c6f985bdb21fcfca4b6e9e629fcd
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sun Mar 19 15:22:12 2023 +0100
+
+    * Add support for select query parameters
+
+M	packages/fcl-web/src/restbridge/sqldbrestbridge.pp
+M	packages/fcl-web/src/restbridge/sqldbrestconst.pp
+M	packages/fcl-web/src/restbridge/sqldbrestdata.pp
+M	packages/fcl-web/src/restbridge/sqldbrestio.pp
+M	packages/fcl-web/src/restbridge/sqldbrestschema.pp
+
+******************************************************************************
+commit 1da1a6736960a2a502dfe3e1b82e0e1aca2a9f08
+Author: Michaël Van Canneyt <michael@freepascal.org>
+Date:   Sun Mar 19 10:22:45 2023 +0100
+
+    * Port in small letters, postgres requires lowercase port setting
+
+M	packages/fcl-db/src/sqldb/sqldbpool.pp
+
+******************************************************************************
+commit 42e202f791cb3fa3193559084cf3cb8fcb3c1186
+Author: Marcus Sackrow <alb42@web.de>
+Date:   Sun Mar 19 11:43:33 2023 +0100
+
+    Arosunits: rexx unit added
+
+M	packages/arosunits/fpmake.pp
+A	packages/arosunits/src/rexx.pas
+
+******************************************************************************
+commit 0ea0b69a30d32333ffa6d336bb3c0ef7aebf8f5a
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sat Mar 18 23:14:25 2023 +0100
+
+    LLVM: cleaned up some comments
+
+M	compiler/llvm/llvminfo.pas
+
+******************************************************************************
+commit e41bfa04951efd43e7b89c16594e994702d33f5a
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sat Mar 18 23:13:58 2023 +0100
+
+    LLVM: LLVM 16 support
+    
+    No changes compared to LLVM 15 that affect us
+
+M	compiler/llvm/llvminfo.pas
+
+******************************************************************************
+commit 839849085b397690e4337e22fa6f51ef1bd88b5b
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sat Mar 18 23:13:03 2023 +0100
+
+    LLVM: don't use type names in ctor/dtor arrays
+    
+    Workaround for https://github.com/llvm/llvm-project/issues/56809
+
+M	compiler/llvm/llvmdef.pas
+M	compiler/llvm/nllvmutil.pas
+M	compiler/symconst.pas
+M	compiler/utils/ppuutils/ppudump.pp
+
+******************************************************************************
+commit 0e46041717a2d5fd81d4a5881c50a2fcce8aad3e
+Author: Jonas Maebe <jonas@freepascal.org>
+Date:   Sat Mar 18 15:07:24 2023 +0100
+
+    WPO: also consider NewInstance to detect class instancing
+    
+    Resolves #40200
+
+M	compiler/ncal.pas
+M	compiler/psub.pas
+A	tests/webtbs/tw40200.pp
+
+******************************************************************************
+commit 71863e1b2cd5e954df0d2988b7e1ea33fdd73718
+Author: Rika Ichinose <rrunewalsh@gmail.com>
+Date:   Thu Feb 9 00:11:10 2023 +0300
+
+    IndexWord and IndexDWord for i386 without REP SCAS.
+
+M	rtl/i386/i386.inc
+
+******************************************************************************
 commit 64319dc019b03af26fff3b35bb3cb2853e540909
 Author: florian <florian@freepascal.org>
 Date:   Fri Mar 17 22:30:36 2023 +0100
@@ -38454,7 +38615,6 @@ Date:   Sun Aug 29 13:33:39 2021 +0200
     * fphttpclient: add new OnIdle event to keep the client responsive in case the server needs a lot of time to respond (and to be able to terminate the request while waiting for data)
 
 M	packages/fcl-web/src/base/fphttpclient.pp
-
 ******************************************************************************
 commit 56c3b5b2cd0acd8f0aa531049f7d5b5fc86849e6
 Author: Michaël Van Canneyt <michael@freepascal.org>
@@ -38597,6 +38757,7 @@ Date:   Sat Aug 21 09:11:24 2021 +0200
     * fix compilation
 
 M	rtl/objpas/types.pp
+
 ******************************************************************************
 commit 06d99b1e6822a8c8cbf63b0af2b820068feb530b
 Author: Michaël Van Canneyt <michael@freepascal.org>
